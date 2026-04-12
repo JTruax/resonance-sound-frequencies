@@ -1,0 +1,2963 @@
+REVIEW ARTICLE
+10.1029/2023GH000805
+
+Yongho Lee and Seunghyun Lee contributed equally to this work.
+Key Points:
+
+• N
+ oise is common harmful factor in
+our work and environment
+• Few studies have focused on the
+extra-auditory effects of noise
+• Various extra-auditory health effects
+of noise exposure have been reported,
+such as circulatory, respiratory,
+immunological, gastrointestinal, and
+oncologic effects
+Correspondence to:
+
+W. Lee,
+wanhyung@gmail.com
+Citation:
+
+Lee, Y., Lee, S., & Lee, W. (2023).
+Occupational and environmental noise
+exposure and extra-auditory effects on
+humans: A systematic literature review.
+GeoHealth, 7, e2023GH000805. https://
+doi.org/10.1029/2023GH000805
+Received 15 FEB 2023
+Accepted 22 APR 2023
+
+Occupational and Environmental Noise Exposure and
+Extra-Auditory Effects on Humans: A Systematic Literature
+Review
+Yongho Lee1
+
+, Seunghyun Lee2, and Wanhyung Lee1,2
+
+Department of Occupational and Environmental Medicine, Gil Medical Center, Incheon, Republic of Korea, 2Department of
+Occupational and Environmental Medicine, Gachon University College of Medicine, Incheon, Republic of Korea
+1
+
+Abstract Noise is a common harmful factor in our work and the environment. Most studies have
+investigated the auditory effects of noise exposure; however, few studies have focused on the extra-auditory
+effects of exposure to occupational or environmental noise. This study aimed to systematically review
+published studies on the extra-auditory effects of noise exposure. We reviewed literature from PubMed
+and Google Scholar databases up to July 2022, using the Patient, Intervention, Comparison, and Outcome
+criteria and Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines to identify
+studies that reported extra-auditory effects of occupational or environmental noise exposure. Studies
+were evaluated utilizing validated reporting tools (CONSORT, STROBE) appropriate to study design. A
+total of 263 articles were identified, of which 36 were finally selected and reviewed. Upon conducting a
+review of the articles, exposure to noise can elicit a variety of extra-auditory effects on humans. These
+effects include circulatory effects linked to higher risk of cardiovascular disease and decreased endothelial
+function, nervous system effects correlated with sleep disturbance, cognitive impairment, and mental health
+problems, immunological and endocrinal effects connected to increased physiological stress response and
+metabolic disorders, oncological and respiratory effects associated with an elevated risk of acoustic neuroma
+and respiratory disorders, gastrointestinal effects linked to an increased risk of gastric or duodenal ulcer,
+and obstetric effects connected to the risk of preterm birth. Our review suggests that there are numerous
+extra-auditory effects of noise exposure on human, and further investigations are needed to fully understand
+these effects.
+Plain Language Summary Noise is a common harmful factor in both our work and environment.
+While many studies have focused on the auditory effects of noise exposure, few have examined the
+extra-auditory effects of exposure to occupational or environmental noise. This study aimed to systematically
+review published studies on the extra-auditory effects of noise exposure. We searched the PubMed and Google
+Scholar databases, following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses
+guidelines, to identify studies that reported extra-auditory effects of occupational or environmental noise
+exposure. We found 262 articles, of which 36 were ultimately selected. These studies have reported various
+health effects associated with noise exposure, such as circulatory, respiratory, immunological, gastrointestinal,
+and oncologic effects. The findings suggest that there are various extra-auditory effects of noise exposure on
+human health, and further investigations are necessary.
+1. Introduction
+
+© 2023 The Authors. GeoHealth
+published by Wiley Periodicals LLC on
+behalf of American Geophysical Union.
+This is an open access article under
+the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivs
+License, which permits use and
+distribution in any medium, provided the
+original work is properly cited, the use is
+non-commercial and no modifications or
+adaptations are made.
+
+LEE ET AL.
+
+Noise is one of the most common work-related risk factors, and in addition to occupational exposure, it may be
+caused by noise in urban environments, such as road traffic or aircraft noise. Noise exposure can adversely affect
+human health, especially with negative consequences for hearing. First, exposure to loud noises damages the
+auditory sensory cells of the cochlea, and the hair cells of the inner ear cannot be regenerated, resulting in hearing
+loss (Mcgill & Schuknecht, 1976). This noise-induced hearing loss causes a decrease in attention while working,
+which leads to accidents and falls and increases the possibility of injury and death (Girard et al., 2015; Picard
+et al., 2008). Another auditory effect caused by noise is tinnitus, which often occurs in people who are persistently
+affected by noise (Koester et al., 2004). The difference in the degree of damage between inner and outer hair cells
+exposed to noise causes an imbalance in the auditory system, which can cause tinnitus and negatively affect the
+quality of life (Adrian & El Refaie, 2000; Eggermont, 2006).
+
+1 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Table 1
+Population, Intervention, Comparison, and Outcome (PICO) Criteria for Study Selection and Research Keywords
+PICO
+
+Inclusion criteria
+
+Population (P)
+
+General population
+
+Intervention (I)
+
+Occupational or environmental exposure to noise
+
+Comparison (C)
+
+General population without noise exposure or with lesser noise exposure
+
+Outcome (O)
+
+Extra-auditory effects on human
+
+In addition to affecting hearing, noise exposure has been reported to be associated with various extra-auditory
+effects. Noise exposure acutely affects the autonomic nervous and endocrine systems, changing the blood pressure (BP) level and heart rate (Lusk et al., 2004). Chronic exposure to noise affects not only the BP level but
+also the concentrations of lipids and blood glucose, which have been related to cardiovascular disease (CVD)
+(Babisch, 2011). In addition, mental disorders or disturbances in the nervous system (such as sleep disturbance
+and cognitive impairment), endocrine or immune system problems (such as hormonal changes in the body and
+changes in immune-related indicators), gastrointestinal problems (such as gastric dysmotility), problems or disorders of the respiratory system (such as bronchitis and asthma), and obstetric problems (such as premature birth)
+have been reported in the literature (Elmenhorst et al., 2010; Eze et al., 2018; Fujioka et al., 2006; Halperin, 2014;
+Kirschbaum & Hellhammer, 1999; Rehm & Jansen, 1978; Tomei et al., 1994).
+Traditionally, most studies have extensively focused on the auditory effects of noise. Few studies have simultaneously summarized the extra-auditory effects of exposure to occupational or environmental noise. The purpose of
+this study was to systematically review published studies on the extra-auditory effects of occupational and environmental noise. We have demonstrated the extra-auditory effects when people are exposed to noise according
+to the human organ system. This review will provide insight into the correlation between noise exposure and its
+effects on human health, including underlying mechanisms of diseases, and can serve as a valuable resource for
+future research.
+
+2. Methods
+2.1. Search Strategy
+A literature search was conducted using the PubMed and Google Scholar databases via Population, Intervention,
+Comparison, and Outcome (PICO) criteria (Table 1). All research was conducted following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines (Moher et al., 2009). We used search terms in
+PubMed such as “(noise [Medical Subject Headings (MeSH) Terms] or noise, occupational [MeSH Terms])
+AND (worker*[Title/Abstract] odds ratio [OR] occupation*[Title/Abstract] or environment*[Title/Abstract] or
+Environmental Exposure [MeSH]) NOT (Hearing Loss, Noise-Induced [MeSH Terms]).” Publication periods
+were from an unlimited initial year to 31 July 2022.
+2.2. Inclusion and Exclusion Criteria
+Exclusion criteria were as follows: (a) a study of auditory effects, (b) the main exposure was not occupational or
+environmental noise, (c) the effect was not on human health, (d) not an original article, or (e) the research was not
+reported in English in a peer-reviewed journal.
+2.3. Selection and Organization
+We used multiple search engines (PubMed and Google Scholar), duplicated papers were removed from both databases. All authors contributed to literature screening, independently. Initial screening was conducted to exclude
+studies based on titles and abstracts. The full-text screening was performed for the final inclusion of articles that
+fulfilled the inclusion criteria and achieved the purpose of the review. A flowchart of the review and the process
+of article selection is shown in Figure 1. The final selected articles were divided into eight categories according to
+extra-auditory effects: circulatory, nervous, immunological, endocrine, oncological, respiratory, gastrointestinal,
+and obstetric effects.
+LEE ET AL.
+
+2 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Figure 1. Flow diagram illustrating the article selection process by the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines.
+
+2.4. Quality Assessment
+The quality of the included studies was assessed using the Consolidated Standards of Reporting Trials
+(CONSORT) criteria for randomized controlled trial studies, and the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) criteria for nonrandomized observational studies.
+
+3. Results
+A total of 263 articles were screened after removing duplicates. We conducted an initial screening, and 62 articles
+were removed because they were out of scope.
+Following the full-text article review, 36 articles were excluded because the focus was not on the auditory effect
+on humans, and 59 articles were excluded because of the definition of non-matched exposure. We excluded 42
+articles that were based on the noise effect on non-human health, 17 articles that were not original research, and
+6 articles that lacked qualifications.
+Finally, 36 articles were included and were divided into eight categories according to extra-auditory effects (13
+articles for circulatory system effects, seven articles for nervous system effects, five articles for immunological responses, three articles for endocrine system effects, three articles for oncological effects, two articles for
+respiratory system effects, two articles for gastrointestinal system effects, and one article for obstetrics effects).
+3.1. Circulatory System
+Two studies examined the effects of noise exposure on flow-mediated dilatation (FMD) of the brachial artery
+(Table 2). When exposed to 60 and 120 noise events per night (noise60 and noise120, respectively) designed with
+equal average sound pressure levels (Leq 45 dBA) compared to the control (Leq 37 dBA), decreased FMD of the
+brachial artery was associated with noise events (p < 0.001). Moreover, an increase in the E/e′ ratio (the ratio
+of the early transmitral filling velocity to early diastolic mitral annular velocity) was observed during the three
+exposure nights (p = 0.043) (Schmidt et al., 2021). In a case-control study with similar exposure patterns and
+LEE ET AL.
+
+3 of 27
+
+Year
+
+2021
+
+2017
+
+2013
+
+2013
+
+First author
+
+Schmidt, FP
+
+Dzhambov,
+AM
+
+LEE ET AL.
+
+Correia, AW
+
+Schmidt, FP
+
+Germany
+
+USA
+
+Bulgaria
+
+Germany
+
+Country
+
+Case-control
+study
+
+Retrospective
+cohort
+study
+
+Crosssectional
+study
+
+Randomized
+crossover
+study
+
+Study design
+
+Aircraft noise (mean
+noise level 60
+dBA) 30 or 60
+aircraft noise
+events per night
+
+Aircraft noise
+(>45 dB)
+
+Road traffic noise
+
+Aircraft noise (mean
+noise level <45
+dbA) 60 or 120
+aircraft noise
+events per night
+
+Noise exposure
+
+75 healthy participants
+(non-smokers
+between 20 and
+60 years of age)
+
+n = 6,027,363 (aged
+≥65 years)
+
+217 patients (aged
+>18 years)
+
+70 volunteered
+participants
+(mean age:
+62.8 ± 7.06 years)
+
+Participants
+
+FMD of brachial
+artery
+
+Hospitalization
+admission rate
+for cardiovascular
+disease
+
+Hypertension or
+ischemic heart
+disease
+
+FMD of brachial
+artery
+
+Health outcome
+
+Table 2
+Summary of Published Studies Meeting Inclusion Criteria for Noise Exposure and Extra-Auditory Effects on Humans
+
+Statistically significant
+difference between
+noise scenarios
+(p = 0.052)
+
+Noise60: 9.5% ± 4.3%
+
+Noise30: 9.7% ± 4.1%
+
+Control: 10.4% ± 3.8%
+
+Area with 10 dB
+higher noise
+exposure had a
+3.5% higher (95%
+CI = 0.2%–7.0%)
+cardiovascular
+hospital admission
+rate (Using the
+90th centile noise
+exposure metric)
+
+Increase in SBP was
+significant among
+people with CVD
+in outdoor night
+noise [Change
+(95% CI): 2.55
+(−0.02, 5.12)]
+
+Higher traffic noise
+was associated
+with an increase
+in SBP (mmHg)
+[Change (95% CI):
+1.11 (0.44, 1.78)]
+
+Statistically significant
+difference between
+noise scenarios
+(p < 0.001)
+
+Noise120:
+7.21 ± 3.58%
+
+Noise60: 7.27 ± 3.21%
+
+Control:
+10.02 ± 3.75%
+
+Main results
+
+Noise exposure
+has significant
+association
+with decreased
+FMD compared
+to unexposed
+group
+
+Higher noise
+exposure was
+associated
+with increased
+cardiovascular
+hospital
+admission rate
+
+An increase in SBP
+were associated
+with traffic
+noise and night
+noise
+
+Noise exposure
+group showed
+significantly
+lower FMD
+level than
+non-noise
+exposure group
+
+Key finding
+
+Circulatory
+system
+
+Circulatory
+system
+
+Circulatory
+system
+
+Circulatory
+system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+4 of 27
+
+Year
+
+2013
+
+2013
+
+2011
+
+First author
+
+Floud, S
+
+de Kluizenaar,
+Y
+
+Koskinen, HL
+
+Table 2
+Continued
+
+LEE ET AL.
+
+Finland
+
+Netherlands
+
+Six European
+Countries
+(UK,
+Germany,
+The
+Netherlands,
+Sweden,
+Italy, and
+Greece)
+
+Country
+
+Cohort study
+
+Prospective
+cohort
+study
+
+Crosssectional
+study
+
+Study design
+
+Occupational noise
+(continuous
+or impulse) in
+FINJEM
+
+Road traffic noise
+
+Aircraft noise
+
+Road traffic noise
+
+Noise exposure
+
+1,502 men (employed
+in industry without
+treated gemfibrozil,
+aged 40–56 years)
+
+18,973 individuals
+(aged 15–74 years)
+
+4,861 persons living
+near seven airports
+in six European
+countries (2,404
+men, 2,457 women,
+aged 45–70 years)
+
+Participants
+
+MetS and CHD
+
+Hospital admissions
+for IHD
+
+Heart disease, stroke
+
+Health outcome
+
+Workload and noise
+increased CHD
+risk defining MetS
+with increased
+blood pressure,
+glucose, and
+BMI (RR: 5.21,
+2.70–10.05), with
+elevated BMI, high
+TG, and low HDL
+cholesterol (RR:
+2.19, 1.11–4.30),
+and MetS only
+(RR: 1.20,
+0.61–2.35)
+
+RR 1.12 (95%
+CI = 1.04–1.21),
+1.27 (1.09–1.47)
+
+Significantly elevated
+risk for the
+incidence of IHD
+or cerebrovascular
+disease
+
+Road traffic noise level
+(10 dB increase
+in Lden and a5th
+to 95th percentile
+interval increase)
+
+Nighttime average
+aircraft noise and
+“heart disease
+and stroke”
+was associated
+after adjustment
+OR 1.25 (95%
+CI = 1.03–1.51)
+24-hr average
+road traffic noise
+exposure was
+associated with
+“heart disease
+and stroke”
+OR 1.19 (95%
+CI = 1.00–1.41)
+
+Main results
+
+Noise exposure
+is associated
+with an
+increased risk
+of developing
+CHD,
+particularly in
+those with MetS
+
+Increased road
+traffic noise is
+associated with
+a higher risk
+of developing
+ischemic heart
+disease or
+cerebrovascular
+disease
+
+Significant
+association
+between noise
+exposure and
+heart disease
+and stroke has
+shown
+
+Key finding
+
+Circulatory
+system
+
+Circulatory
+system
+
+Circulatory
+system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+5 of 27
+
+Year
+
+2011
+
+2010
+
+2006
+
+First author
+
+Floud, S
+
+Sobotova, L
+
+McNamee, R
+
+Table 2
+Continued
+
+LEE ET AL.
+
+UK
+
+Slovakia
+
+Six European
+Countries
+(UK,
+Germany,
+The
+Netherlands,
+Sweden,
+Italy, and
+Greece)
+
+Country
+
+Case-control
+study
+
+Case-control
+study
+
+Crosssectional
+survey
+
+Study design
+
+Measurement of 8-hr
+average daily
+personal noise
+exposure
+
+Outdoor noise
+measured
+manually
+
+Aircraft noise
+
+Road traffic noise
+
+Noise exposure
+
+1,101 case-control
+pairs (nuclear
+power workers,
+aged 15–50 years)
+
+659 students living
+in the Bratislava
+agglomeration
+(mean age:
+22.83 ± 1.56 years)
+
+4,861 persons living
+near seven airports
+in six European
+countries (2,404
+men, 2,457 women,
+aged 45–70 years)
+
+Participants
+
+The risk of IHD
+
+Cardiovascular risk
+scores
+
+The use of
+medication
+
+Health outcome
+Increased noise
+exposure is
+associated
+with a higher
+likelihood of
+antihypertensive
+medication use
+
+Key finding
+
+Compared to
+unexposed men,
+the ORs for
+ischemic heart
+disease mortality
+among low,
+medium, and
+high exposure
+categories were
+1.15 (95%
+CI = 0.81–1.65),
+1.45 (1.02–2.06),
+and 1.37
+(0.96–1.96)
+
+An increased risk
+of ischemic
+heart disease
+mortality is
+associated with
+noise exposure
+
+Cardiovascular risk
+Noise exposure
+scores were
+is associated
+significantly higher
+with higher
+in the exposed
+cardiovascular
+group based on the
+risk scores and
+Framingham scores
+increased risk of
+projected to the age
+IHD mortality
+of 60, SCORE60
+(AOR = 2.72 (95%
+CI = 1.21–6.15))
+and the relative
+risk SCORE chart
+(AOR = 2.81
+(1.46–5.41))
+
+A 10 dB increase in
+nighttime aircraft
+noise exposure was
+associated with
+antihypertensive
+use for the UK
+(OR: 1.34,
+1.14–1.57) and The
+Netherlands (OR:
+1.19, 1.02–1.38)
+
+Main results
+
+Circulatory
+system
+
+Circulatory
+system
+
+Circulatory
+system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+6 of 27
+
+Year
+
+2006
+
+2000
+
+1996
+
+First author
+
+Willich, SN
+
+Tomei, F
+
+Saha, S
+
+Table 2
+Continued
+
+LEE ET AL.
+
+India
+
+Italy
+
+Germany
+
+Country
+
+Case-control
+study
+
+Case-control
+study
+
+Case-control
+study
+
+Study design
+
+Occupational noise
+(thermal power
+station)
+
+Measurement of
+workplace sound
+level
+
+Environmental or
+occupational
+noise annoyance
+
+Noise exposure
+
+156 males (aged
+22–58 years)
+
+68 hearing-impaired
+males who worked
+at a metal bedframe
+factory (aged
+>23 years)
+
+4,115 patients (3,054
+men, 1,061 women,
+age <70)
+
+Participants
+
+HR, blood pressure
+level
+
+Blood pressure level
+
+Incidence of
+myocardial
+infarction
+
+Health outcome
+
+Compared to
+control group,
+Experimental
+group showed a
+significant increase
+in HR, SBP, and
+DBP
+
+Exposed to daily
+noise level (>90
+dBA) compared
+to workers (<90
+dBA) had a higher
+mean diastolic
+blood pressure and
+a higher frequency
+of diastolic
+hypertension
+
+Environmental
+sound level was
+associated with
+increased risk
+of myocardial
+infarction in men
+(OR: 1.46, 95%
+CI = 1.02–2.09,
+I = 0.040) and
+women (OR:
+3.36, 1.40–8.06,
+p = 0.007) Work
+sound levels were
+associated only
+in men (OR:
+1.31, 1.01–1.70,
+p = 0.045)
+
+Main results
+Circulatory
+system
+
+Category
+
+Exposure to
+occupational
+noise is
+associated with
+increased HR
+and BP
+
+Circulatory
+system
+
+Noise exposure
+Circulatory
+above 90 dBA is
+system
+associated with
+diastolic HTN
+
+Increased level of
+occupational
+and
+environmental
+noise are
+associated with
+a higher risk
+of myocardial
+infarction
+
+Key finding
+
+GeoHealth
+10.1029/2023GH000805
+
+7 of 27
+
+Year
+
+2022
+
+First author
+
+Dunbar, C
+
+Table 2
+Continued
+
+Australia
+
+Country
+Randomized
+crossover
+study
+
+Study design
+
+LEE ET AL.
+Road traffic noise
+
+Wind turbine noise
+
+Noise exposure
+23 participants (aged
+18–29 years)
+
+Participants
+EEG
+
+Health outcome
+
+Key finding
+
+Wind turbine noise
+had significantly
+lower delta, theta,
+and beta activity
+compared to
+road traffic noise
+(p < 0.05), and
+high alpha activity
+at lower sound
+pressure levels
+during N2 sleep
+compared to road
+traffic noise
+
+Wind turbine and
+Compared to N2
+road traffic noise
+sleep, the effect
+produced timeof sleep stage
+dependent and
+on arousal
+sound pressure
+probability had
+level-dependent
+a significant
+increases in
+effect with
+EEG power with
+fewer arousals
+significant noise
+to noise
+type by sound
+exposure
+pressure level
+interactions in beta,
+alpha, theta, and
+delta frequency
+bands (p < 0.05)
+
+Main results
+Nervous system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+8 of 27
+
+Year
+
+2016
+
+2016
+
+2015
+
+First author
+
+Beutel, ME
+
+McGuire, S
+
+Popp, RF
+
+Table 2
+Continued
+
+LEE ET AL.
+
+Germany
+
+Germany
+
+Germany
+
+Country
+
+Randomized
+crossover
+study
+
+Case-control
+study
+
+Crosssectional
+study
+
+Study design
+
+Traffic noise
+
+Road, rail, and air
+traffic noise
+events
+
+Noise annoyance
+(questionnaire)
+
+Noise exposure
+
+10 long-haul truck
+drivers (aged
+25–50 years)
+
+69 participants (aged
+18–68 years)
+
+14,635 participants
+(aged 35–74 years)
+
+Participants
+
+• Sleep quality
+(polysomnography
+score)
+• sleepiness
+(Karolinska
+Sleepiness Scale)
+• vigilant attention
+(Mackworth Clock
+test)
+
+EEG arousal
+probability
+
+Depression (PHQ-9)
+Anxiety (GAD-7)
+
+Health outcome
+
+Sleep quality was
+better during nights
+without noise
+(p = 0.092)
+
+On noisy nights,
+greater latencies
+(p = 0.074) to the
+REM phase and
+higher percentages
+of sleep stage 1
+(p = 0.092) were
+revealed
+
+10% increase in
+spontaneous EEG
+arousal probability
+was associated
+with a statistically
+significant 7.7%
+increase in noiseinduced EEG
+arousal probability
+(SE 1.7%;
+p < 0.0001)
+
+• Slight: 1.18
+(0.95–1.46)
+• Moderate: 1.42
+(1.15–1.74)
+• Strong: 1.75
+(1.41–2.16)
+• Extreme: 2.14
+(1.71–2.67)
+
+• Anxiety PR
+(95% CI), Noise
+annoyance level
+
+• Slight: 0.98
+(0.81–1.18)
+• Moderate: 1.20
+(1.0–1.45)
+• Strong: 1.59
+(1.32–1.91)
+• Extreme: 1.97
+(1.62–2.39)
+
+Depression PR
+(95% CI), Noise
+annoyance level
+
+Main results
+
+Exposure to night
+noise leads to
+poorer sleep
+quality with
+longer latencies
+to REM sleep
+and higher
+percentage of
+sleep stage 1
+
+Night noise
+exposure is
+associated
+with increased
+EEG arousal
+related to sleep
+fragmentation
+
+Increasing levels
+of noise
+annoyance were
+associated with
+higher rates of
+depression and
+anxiety.
+
+Key finding
+
+Nervous system
+
+Nervous system
+
+Nervous system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+9 of 27
+
+Year
+
+2010
+
+2010
+
+2005
+
+First author
+
+Matheson, M
+
+Stansfeld, SA
+
+Stansfeld, SA
+
+Table 2
+Continued
+
+LEE ET AL.
+
+Europe
+
+Europe
+
+Europe
+
+Country
+
+Crosssectional
+study
+
+Crosssectional
+study
+
+Case-control
+study
+
+Study design
+
+Aircraft and road
+traffic noise
+
+Aircraft and road
+traffic noise
+
+Aircraft and road
+traffic noise
+
+Noise exposure
+
+2,844 children (aged
+9–10 years)
+
+330 children (aged
+9–10 years)
+
+2,844 children (aged
+between 8 years
+10 months
+and 12 years
+10 months)
+
+Participants
+
+Cognitive
+performance and
+health in children
+
+Cognitive
+performance
+
+Classroom-based
+tests of cued
+recall, recognition
+memory, and
+prospective
+memory
+
+Health outcome
+
+Exposure to road
+traffic noise was
+linearly associated
+with increases in
+episodic memory
+(conceptual recall
+p = 0.0066;
+information recall
+p = 0.0489)
+and annoyance
+(p = 0.0047)
+
+Exposure to chronic
+aircraft noise was
+linearly associated
+with impairment
+of reading
+comprehension
+(p = 0.0097)
+and recognition
+memory
+(p < 0.0001),
+and non-linearly
+associated with
+annoyance
+(p < 0.0001)
+
+Night noise exposure
+was significantly
+associated with
+impaired reading
+(p = 0.03) and
+recognition
+memory (p = 0.01)
+
+Chronic aircraft
+noise exposure
+was significantly
+related to poorer
+recognition
+memory
+(p = 0.0141)
+Chronic road
+traffic noise
+exposure was
+related to improved
+information recall
+(p = 0.0489) and
+conceptual recall
+(p = 0.0066)
+
+Main results
+
+Chronic aircraft
+and road noise
+exposure was
+associated
+with memory
+impairment
+
+Exposure to
+nighttime
+aircraft noise
+was associated
+with lower
+cognitive
+performance in
+children
+
+Chronic exposure
+to noise was
+associated
+with poorer
+recognition
+memory
+
+Key finding
+
+Nervous system
+
+Nervous system
+
+Nervous system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+10 of 27
+
+Year
+
+2019
+
+2017
+
+2016
+
+2009
+
+2000
+
+First author
+
+Tait, JL
+
+Cai, Y
+
+Pouryaghoub,
+G
+
+Selander, J
+
+Evans, G. W
+
+Table 2
+Continued
+
+LEE ET AL.
+
+USA
+
+Europe
+
+Iran
+
+Europe
+
+Australia
+
+Country
+
+Experimental
+study
+
+Crosssectional
+study
+
+Randomized
+Controlled
+Trial
+
+Cohort
+
+Randomized
+Controlled
+Trial
+
+Study design
+
+Office noise
+
+aircraft noise
+
+Acute Noise
+Exposure (90
+dBA noise for
+20 min)
+
+Road traffic noise
+
+Emergency alarm
+105 dB
+
+Noise exposure
+
+Health outcome
+
+40 female clerical
+workers (mean age:
+36.5 years)
+
+4,861 persons, 2,404
+male, 2,457 female,
+aged 45–70 years
+
+50 male volunteers
+aged 20–40 years
+
+n = 144,082, (50,805
+Norway residents
+aged ≥20 years,
+93,277 Netherlands
+health-related
+behaviors of people
+aged 25–50 years)
+
+Epinephrine,
+cortisol level,
+or behavioral
+aftereffects
+
+Salivary Cortisol
+
+Salivary Cortisol
+
+hsCRP, triglycerides,
+HDL
+
+16 healthy males (mean Pro and antiage: 25 ± 4 years)
+inflammatory
+cytokine response
+
+Participants
+
+Open-office
+noise elevated
+workers' urinary
+epinephrine
+levels, behavioral
+aftereffects
+
+Exposure to 24-hr
+sound level (LAeq,
+24-hr) >60 dB was
+elevation cortisol
+level in women
+
+Salivary cortisol level
+was significantly
+increased to
+4.17 ng/ml after
+noise exposure
+
+Higher daytime
+noise (5.1 dB(A))
+was associated
+with 1.1%
+higher hsCRP,
+0.7% higher
+triglycerides, 0.5%
+higher HDL
+
+IL-4 was 84%
+significantly
+greater following
+night alarm
+mobilization
+compared to a
+night control of
+gentle awakening
+
+Main results
+
+Simulated noise
+exposure did
+not result in
+a significant
+increase in
+cortisol levels in
+women
+
+Exposure to aircraft
+noise was
+associated with
+increased level
+of salivary
+cortisol
+in women
+compared to
+lesser exposed
+group
+
+Acute noise
+exposure led to
+a significantly
+higher salivary
+cortisol
+response
+compared to
+nonexposed
+group
+
+High noise level
+were associated
+with increased
+level of hsCRP,
+TG, HDL
+
+The level of
+IL-4 was
+significantly
+higher after
+a night alarm
+mobilization
+
+Key finding
+
+Immune
+response
+
+Immune
+response
+
+Immune
+response
+
+Immune
+response
+
+Immune
+response
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+11 of 27
+
+Year
+
+2021
+
+2020
+
+2016
+
+2014
+
+2009
+
+First author
+
+Kim, S
+
+Cai, Y
+
+Dzhambov,
+A. M
+
+Fisher, JL
+
+Hours, M
+
+Table 2
+Continued
+
+LEE ET AL.
+
+France
+
+Sweden
+
+Bulgaria
+
+UK
+
+Korea
+
+Country
+
+Case-control
+study
+
+Case-control
+study
+
+Crosssectional
+study
+
+Prospective
+cohort
+study
+
+Retrospective
+cohort
+study
+
+Study design
+
+Noise exposure
+at work and
+leisure activities
+(questionnaire)
+
+Occupational and
+leisure-time loud
+noise exposure
+(questionnaire)
+
+Road traffic noise
+
+Road noise
+
+Occupational noise
+exposure
+
+Noise exposure
+
+108 participants
+(diagnosed with
+acoustic neuroma,
+aged 30–59 years)
+
+451 acoustic neuroma
+cases, 710 controls
+(aged 20–69 years)
+
+513 residents of
+Plovdiv city
+
+504,271 adults from
+the UK, The
+Netherlands, and
+Norway) (mean
+age: 43–56 years)
+
+43,858 workers
+
+Participants
+
+Acoustic neuroma
+
+Acoustic neuroma
+
+T2DM
+
+Obesity
+
+High FBG
+
+Health outcome
+
+Continuous and
+explosive noises
+were significantly
+associated with
+neuroma risk (OR:
+3.27, 1.24–8.61;
+2.39, 1.17–4.92)
+
+Association with loud
+noise exposure
+(OR: 2.55, 95%
+CI = 1.35–4.82),
+listening to loud
+music (OR: 3.88,
+1.48–10.17), and
+at noise exposure
+work (OR: 2.26,
+1.08–4.72)
+
+Association with any
+loud-noise leisure
+activity without
+(OR: 1.47, 95%
+CI = 1.06–2.03)
+Women (OR:
+1.74, 1.07–2.81)
+Men (OR: 1.23,
+0.78–1.93)
+
+Road traffic noise
+(Lden, 71–80 dB)
+was associated
+with T2DM
+compared to
+51–70 dB)
+OR: 4.49 (95%
+CI = 1.38–14.68)
+
+Obesity OR: 1.06
+(1.04–1.08),
+Central obesity
+OR: 1.05
+(1.04–1.07)
+
+Occupational noise
+was associated
+with high FBG in
+male workers, HR:
+1.28 (1.16–1.41)
+
+Main results
+
+Acoustic neuroma
+was associated
+with loud
+noise exposure
+at work and
+leisure
+
+Acoustic neuroma
+was associated
+with loud
+noise exposure
+at leisure
+without hearing
+protection
+
+Exposure to road
+traffic noise
+was associated
+with T2DM
+compare to
+lesser exposure
+group
+
+Exposure to road
+noise was
+associated with
+an increased
+risk of obesity
+and central
+obesity
+
+Exposure to
+hazardous noise
+was associated
+with an
+increased risk of
+hyperglycemia
+
+Key finding
+
+Cancer
+
+Cancer
+
+Endocrine
+system
+
+Endocrine
+system
+
+Endocrine
+system
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+12 of 27
+
+Year
+
+2006
+
+2008
+
+2006
+
+First author
+
+Edwards CG
+
+Bockelbrin, A
+
+Niemann, H
+
+Table 2
+Continued
+
+LEE ET AL.
+
+Europe
+
+Germany
+
+Sweden
+
+Country
+
+Crosssectional
+study
+
+Cohort study
+
+Case-control
+study
+
+Study design
+
+Noise annoyance
+in the housing
+environment
+
+Noise annoyance
+at night or by
+domestic sources
+
+Occupational and
+non-occupational
+loud noise
+exposure
+(questionnaire)
+
+Noise exposure
+
+Elderly (n = 1,818,
+aged ≥60 years),
+Adults (n = 5,101,
+aged 18–59 years),
+and children
+(n = 1,596, aged
+≤18 years)
+
+336 boys and 316 girls
+(12 years old)
+
+146 acoustic neuroma
+cases, 564 controls
+(aged 20–69 years)
+
+Participants
+
+Medically diagnosed
+asthma, bronchitis
+
+Asthma
+
+Acoustic neuroma
+
+Health outcome
+
+The effects of noiseinduced annoyance
+from trafﬁc, as well
+as neighborhood
+noise, are evident
+in the respiratory
+system of children
+
+A signiﬁcantly
+increased risk for
+bronchitis was
+seen in association
+with strong
+neighborhood
+noise annoyance in
+adults (OR: 1.63;
+trend p = 0.062)
+
+Significantly
+associated with
+increased total
+noise annoyance at
+night (AOR: 1.5,
+1.1–2.1), for noise
+within the home/
+apartment (AOR:
+3.5, 1.5–8.0), and
+in or around the
+house (AOR: 3.3,
+1.7–6.3)
+
+Exposure to loud noise
+from machines,
+power tools, and/
+or construction
+increased the
+risk for acoustic
+neuroma (OR:
+1.79, 1.11–2.89),
+as did exposure to
+loud music (OR:
+2.25, 1.20–4.23)
+
+Loud noise exposure
+from any source
+was at increased
+risk for acoustic
+neuroma (OR:
+1.55, 1.04–2.30)
+
+Main results
+
+Noise annoyance
+was
+significantly
+associated with
+respiratory
+symptoms and
+bronchitis
+
+The prevalence of
+asthma in girls
+associated with
+increased total
+noise annoyance
+at night after
+adjustment
+
+Acoustic neuroma
+was associated
+with any source
+of loud noise
+exposure
+
+Key finding
+
+Respiratory
+system
+
+Respiratory
+system
+
+Cancer
+
+Category
+
+GeoHealth
+10.1029/2023GH000805
+
+13 of 27
+
+LEE ET AL.
+
+2018
+
+2007
+
+2017
+
+Min, J.
+
+Castle, J. S
+
+BarbaVasseur,
+M
+
+France
+
+USA
+
+Korea
+
+Country
+
+Case-control
+study
+
+Experimental
+study
+
+Cohort study
+
+Study design
+
+Road traffic,
+rail traffic,
+pedestrian
+streets, and
+fountains
+
+Hospital noise,
+conversation
+babble, and
+traffic noise for
+20 min
+
+Nighttime noise
+
+Noise exposure
+
+Women (n = 1,506,
+case = 302,
+control = 1,204,
+aged ≥18 years)
+
+21 male (aged
+22–71 years)
+
+Duodenal ulcer
+(n = 249,513)
+
+Gastric ulcer
+(n = 217,308)
+
+Participants
+
+Preterm birth
+
+GMA
+
+Diagnostic gastric
+ulcer or duodenal
+ulcer
+
+Health outcome
+
+Lden >55 dB: 1.05
+(0.77–1.45)
+
+Lden night >55 dB:
+0.93 (0.68–1.28)
+
+Lden 24 hr > 55 dB:
+0.96 (0.72–1.28)
+
+OR (95% CI)
+
+Noise exposure was
+estimated risk
+of preterm birth
+compared with the
+nonexposed group
+
+Exposure to hospital
+noise, traffic noise,
+and conversation
+babble decreased
+3 CPM activity by
+22.9%, 19.0%, and
+15.5%, respectively
+
+With increases in
+the increase in
+IQR of nighttime
+noise, HR (95%
+CI) gastric ulcer:
+1.12 (1.10–1.13)
+duodenal ulcer:
+1.17 (1.15–1.20)
+
+Main results
+
+The risk of preterm
+birth was
+estimated to be
+associated with
+noise exposure
+compared to
+nonexposed
+group
+
+Exposure to
+noise caused
+a significant
+decrease
+in gastric
+myoelectrical
+activity
+
+Exposure to noise
+was associated
+with an
+increased risk
+of gastric or
+duodenal ulcer
+
+Key finding
+
+Obstetrics
+
+Gastrointestinal
+system
+
+Gastrointestinal
+system
+
+Category
+
+Note. dB, Decibel; dBA, A-weighted decibel; OR, Odds ratio; AOR, Adjusted odds ratio; HR, Hazard ratio; PR, Prevalence ratio; SE, Standard error; FMD, Flow-mediated dilation; PHQ-9, Patient
+Health Questionnaire-9; GAD-7, General Anxiety Disorder-7; SBP, Systolic blood pressure; DBP, Diastolic blood pressure; IHD, Ischemic heart disease; CVD, Cardiovascular disease; CHD, Coronary
+heart disease; Lden, day-evening-night noise level; MetS, Metabolic syndrome; FINJEM, Finnish Job-Exposure matrix; BMI, Body mass index; TG, Triglycerides; HDL, High-density lipoprotein; WC,
+Waist circumference; FBG, Fasting blood glucose; EEG, Electroencephalogram; REM, Rapid eye movement; HR, Heart rate; IL, Interleukin; hsCRP, high-sensitivity C-reactive protein; CPM, Cycles
+per minute; SCORE, Systematic coronary risk evaluation; GMA, Gastric myoelectrical activity; IQR, Interquartile range.
+
+Year
+
+First author
+
+Table 2
+Continued
+
+GeoHealth
+10.1029/2023GH000805
+
+14 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+three levels of noise exposure (control, noise30, noise60), a linear relationship between FMD and exposure was
+found (p = 0.020). In addition, a marked increase in plasma adrenaline levels among the three noise levels was
+reported (p = 0.0099) (Schmidt et al., 2013).
+Four studies examined the effects of noise on BP changes and hypertension. In a cross-sectional study, a
+1.11 mmHg increase in systolic blood pressure (SBP) (95% confidence interval [CI] = 0.44–1.78, p < 0.05), and
+a 0.62 mmHg increase in diastolic blood pressure (DBP) (95% CI = 0.21–1.03, p < 0.05) were associated with
+higher traffic noise, and a 2.55 mmHg increase in SBP (95% CI = −0.02–5.12, p < 0.1) per 5 dB was significant
+among people with CVD such as ischemic heart disease (IHD) or stroke exposed to outdoor nighttime noise
+with adjustment variables (age, sex, body mass index (BMI), smoking status, alcohol consumption, physical
+activity, education level, employment status, and use of antihypertensive medication) (Dzhambov et al., 2017).
+In a case-control study, noise-exposed workers had higher mean SBP (p < 0.05), DBP (p < 0.001), and diastolic
+hypertension (HTN) (p < 0.001) than the control groups (nonexposed group and office workers). Furthermore,
+workers who were exposed to daily noise levels (>90 dBA) had a higher mean DBP (99.6 vs. 91.1 mmHg,
+p < 0.05) and frequency of diastolic HTN (100 vs. 60%, p < 0.05) compared to the control group (<90 dBA)
+(Tomei et al., 2000). Another case-control study showed that workers exposed to noise (thermal power station,
+mean 95 ± 5 dBA) had a higher heart rate, SBP, and DBP than those in the control groups (office or laboratory
+staff exposed to a mean of 55 ± 4 dBA). As the duration of noise exposure increased, the prevalence of HTN also
+increased significantly (p < 0.05). The 10–20 year and the >20 year exposure duration groups showed 4.1-fold
+and 5.3-fold higher risks, respectively, of developing HTN compared to the control group (Saha et al., 1996). In a
+cross-sectional study, a 10 dB increase in nighttime aircraft noise was associated with antihypertensive use in the
+UK (OR: 1.34, 95% CI = 1.14–1.57) and The Netherlands (OR: 1.19, 95% CI = 1.02–1.38) (Floud et al., 2011).
+In a retrospective study, areas near airports in the USA with 10 dB higher aircraft noise exposure had a 3.5%
+(95% CI = 0.2%–7.0%) higher admission rate of CVD such as heart failure, heart rhythm disturbances, cerebrovascular events, and IHD, without adjustment for any covariate (Correia et al., 2013). Studies in European
+countries revealed that nighttime average aircraft noise was associated with self-reported “heart disease” (angina
+pectoris, myocardial infarction) and stroke in those who had lived for ≥20 years in their area (OR: 1.25, 95%
+CI = 1.03–1.51). For road traffic noise, 24-hr average noise exposure was associated with self-reported “heart
+disease and stroke” (OR: 1.19; 95% CI = 1.00–1.41) (Floud et al., 2013). In a cohort study in The Netherlands,
+the relative risk (RR) (5th to 95th percentile interval increase) of hospital admission for IHD and cerebrovascular
+disease was 1.12 (95% CI = 1.04–1.21) and 1.27 (95% CI = 1.09–1.47) without adjustment for a 10 dB increase
+in road traffic noise level, respectively (De Kluizenaar et al., 2013). Among nuclear power workers in the UK,
+men exposed to medium noise compared to unexposed men had a significant OR for IHD mortality (OR: 1.45,
+95% CI = 1.02–2.06) (McNamee et al., 2006). In a case-control study in Germany, both men and women had
+increased risks of myocardial infarction when exposed to environmental sound (OR: 1.46, 95% CI = 1.02–2.09),
+after adjusting for age, sex, smoking, alcohol consumption, physical activity, education, hypertension, hyperlipidemia, diabetes mellitus, and family history of coronary heart disease (CHD). Only men had an increased risk
+when exposed to work sound (OR: 1.31, 95% CI = 1.01–1.70) after adjusting for the same covariates (Willich
+et al., 2006). A cohort study in Finland showed occupational noise, as well as workload, increased the risk of
+CHD with joint effects of elevated BP, glucose, and BMI (RR: 5.21, 95% CI = 2.70–10.05); also, noise exposure
+markedly increased the RR due to elevated BP from 1.73 (95% CI = 1.15–2.58) to 2.60 (95% CI = 1.55–4.35) and
+glucose from 1.74 (95% CI = 1.19–2.56) to 2.92 (95% CI = 1.70–5.00) (Koskinen et al., 2011).
+One study assessed the cardiovascular risk score using the Framingham score at the projected age of 60 years
+(adjusted odds ratio: 2.04, 95% CI = 1.14–3.64), systematic coronary risk evaluation (SCORE) (AOR: 2.72, 95%
+CI = 1.21–6.15), and RR SCORE (AOR: 2.81, 95% CI = 1.46–5.41), which were significantly higher in the group
+exposed to road traffic noise than in the control group (Sobotova et al., 2010).
+3.2. Nervous System (Sleep and Mental Health)
+Several studies have suggested that noise exposure affects the nervous system, particularly sleep, psychiatric
+disorders, and cognitive performance. Three studies reported the effects of noise exposure on sleep. A significant interaction between noise and arousal probability using an electroencephalogram (EEG) was reported in
+two of these studies. In an experimental study, the effect of sleep stage on the probability of arousal in N3 stage
+(deep sleep or slow-wave sleep) was compared to that in N2 stage, which begins to attenuate vital signals, and
+LEE ET AL.
+
+15 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+it was found to have a significant effect, with fewer arousals to noise. A significant interaction between noise
+SPL and sleep stage on arousal duration (p = 0.033) was found; however, only 33 dBA SPL produced longer
+arousals during N2 sleep compared with N3 sleep (p < 0.001). In addition, wind turbine noise had significantly
+lower delta, theta, and beta activities (p < 0.05) and higher alpha activity at lower SPLs (33 and 38 dBA) during
+N2 sleep compared to road traffic noise (Dunbar et al., 2022). In a case-control study, there was a significant
+association between a 10% increase in spontaneous EEG and noise-induced EEG arousal probability, with a
+7.7% increase (standard error of 1.7%, p < 0.0001) (McGuire et al., 2016). In a German study of long-haul truck
+drivers, exposure to night noise resulted in greater latencies to the rapid eye movement (REM) phase (p = 0.074)
+and higher percentages of sleep stage 1 (p = 0.092). Moreover, better sleep quality was reported during the night
+compared to the silent group (Popp et al., 2015). The following three studies examined cognitive performance
+when exposed to noise. Some studies have shown that night noise exposure and chronic noise exposure (aircraft,
+road traffic) are significantly associated with impairment of reading comprehension, memory recognition, and
+annoyance in children (Matheson et al., 2010; Stansfeld et al., 2010). In the case of road traffic noise, chronic
+exposure, annoyance (p = 0.0047), and improved episodic memory (conceptual and information recall, p < 0.05
+in two studies) were significantly associated with children after adjusting for age, sex, parental education, and
+socioeconomic status (Stansfeld et al., 2005). One study revealed an association between psychiatric disorders
+and noise, depression, and anxiety, assessed using the Patient Health Questionnaire-9 (PHQ-9) and the General
+Anxiety Disorder-7 (GAD-7) questionnaire, and its Prevalence ratio (PR) significantly increased from moderate
+to extreme noise annoyance (Beutel et al., 2016).
+3.3. Immune Response
+Exposure to traffic noise has been associated with a systematic inflammatory response in some studies. In
+a randomized controlled trial study, healthy men exposed to alarm mobilization at night had an 84% greater
+change in the level of anti-inflammatory cytokines compared to the control condition group (Tait et al., 2019).
+Higher long-term exposure to daytime noise significantly elevated the change in the level of high-sensitivity
+C-reactive protein (hsCRP) (1.1%, 95% CI = 0.02%–2.2%) as well as metabolic syndrome risk factors in two
+large European population-based cohorts (Cai et al., 2017). Furthermore, the salivary cortisol response, a type of
+anti-inflammatory and trigger immune system, increased by 4.17 ng/mL after acute noise exposure compared with
+a non-exposure group, whose levels increased by only 3.05 ng/mL (Pouryaghoub et al., 2016). In a cross-sectional
+study, reported that women exposed to aircraft noise at an average 24-hr sound level (LAeq, 24-hr) >60 dB had
+significantly elevated salivary cortisol levels (34% increase) compared to those exposed to ≤50 dB (Selander
+et al., 2009). However, an experimental study showed that simulated noise does not significantly increase cortisol
+levels in women (Evans & Johnson, 2000). These results suggest that noise exposure may influence changes in
+the immune response.
+3.4. Endocrine System
+A retrospective cohort study of 43,858 Korean workers found that after adjusting for potential confounders,
+including age, sex, education, smoking, alcohol consumption, and physical activity, exposure to hazardous noise
+in the workplace (≥85 dB) was associated with an increased risk of hyperglycemia (Hazard Ratio [HR]: 1.28,
+95% CI = 1.16–1.41) (Kim et al., 2021). Similarly, a cross-sectional small-scale observational study in Bulgaria
+reported that exposure to road traffic noise of 71–80 dB was associated with type 2 diabetes (OR: 4.49, 95%
+CI = 1.38–14.68) compared to the noise of 51–70 dB (Dzhambov & Dimitrova, 2016). In a prospective cohort
+study based on 504,271 Europeans, exposure to road noise was associated with an increased risk of obesity (OR:
+1.06, 95% CI = 1.04–1.08) as well as central obesity (OR: 1.05, 95% CI = 1.04–1.07) (Cai et al., 2020). These
+results suggest that noise exposure may influence endocrine system development.
+3.5. Cancer
+Three case-control studies examined the effect of noise on acoustic neuromas. In a case-control study in France,
+acoustic neuroma was associated with loud noise exposure (OR: 2.55, 95% CI = 1.35–4.82), listening to loud
+music (OR: 3.88, 95% CI = 1.48–10.17), and noise exposure at work (OR: 2.26, 95% CI = 1.08–4.72), where
+the noise exposures were assessed using a questionnaire. Furthermore, continuous and explosive noises were
+LEE ET AL.
+
+16 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+significantly associated with neuroma risk (OR: 3.27, 95% CI = 1.24–8.61; OR: 2.39, 95% CI = 1.17–4.92)
+(Hours et al., 2009). Similarly, one study in Sweden also showed an increased risk for acoustic neuroma with any
+source of loud noise exposure (OR: 1.55, 95% CI = 1.04–2.30) (Edwards et al., 2006). However, a case-control
+study conducted in Sweden did not find a significant association between occupational noise exposure and acoustic neuroma. Nonetheless, an association was observed between the risk of acoustic neuroma and loud noise
+exposure from leisure activities without hearing protection (OR: 1.47, 95% CI = 1.06–2.03), and this association
+was shown to be significant only for women (OR: 1.74, 95% CI = 1.07–2.81) (Fisher et al., 2014).
+3.6. Respiratory System
+Two studies examined the effect of noise on asthma and bronchitis. In a 12-year cohort study, the prevalence of
+asthma diagnosed by a doctor was significantly higher in boys than in girls (13% vs. 5%, p = 0.001). However,
+only in girls was the prevalence of asthma associated with increased total noise annoyance at night after adjusting for age, parental allergy, parental smoking, and socioeconomic status (AOR: 1.5, 95% CI = 1.1–2.1), noise
+within the home or apartment (AOR: 3.5, 95% CI = 1.5–8.0), and noise in or around the house (AOR: 3.3,
+95% CI = 1.7–6.3) (Bockelbrink et al., 2008). In a cross-sectional study, the OR of respiratory symptoms (OR:
+1.78) and bronchitis (OR: 1.68) were significantly associated with severe annoyance from traffic noise in adults.
+For children, OR of respiratory symptoms and bronchitis were 2.11 and 2.31 for severe annoyance from traffic
+noise, and 2.33 and 3.60 for severe annoyance from neighborhood noise with statistical significance (Niemann
+et al., 2006).
+3.7. Gastrointestinal System
+Biological mechanisms suggest that noise exposure may increase the risk of gastrointestinal dysfunction. An
+experimental study has suggested that gastric myoelectrical activity is affected by noise exposure. In 2018, a
+cohort study found an increased risk of gastric or duodenal ulcer in Koreans (HR: 1.12, 95% CI = 1.10–1.13
+for gastric ulcer and HR: 1.17, 95% CI = 1.15–1.20 for duodenal ulcer) after adjustments for age, sex, household income, residential area, BMI, exercise, smoking, alcohol consumption, chronic constriction injury (CCI),
+defined daily dose (DDD) of Non-steroidal anti-inflammatory drugs, DDD of aspirin, disposable income per
+person, percentage of the economically active portion of the population, and even exposure to particular matter
+(Min & Min, 2018). Another study showed that the overall percentage of three cycles per minute activity was
+significantly decreased during exposure to hospital noise, traffic noise, and conversation babble by 22.9%, 19%,
+and 15.5%, respectively (Castle et al., 2007). Given the hormone-dependent nature of gastrointestinal dysfunction, noise exposure may have an impact, but evidence for this association will need to be better evaluated in
+further studies.
+3.8. Obstetrics
+Some environmental factors may be associated with preterm delivery. A case-control study observed 1,175
+women with environmental exposure during pregnancy (Barba-Vasseur et al., 2017). Regardless of the temporal
+or spatial modulations used to define exposure assessments, the authors found no association between preterm
+delivery and noise exposure. The literature on the effect of noise exposure on obstetrics is limited and does not
+allow any definite conclusions to be drawn regarding the relationship between noise exposure and the risk of
+obstetric and gynecologic diseases.
+
+4. Discussion
+To date, most epidemiological and clinical studies have investigated the effects of noise exposure on auditory
+health. This systematic review provides an overview of the current knowledge on the impact of noise exposure
+on extra-auditory systems. To our knowledge, this study is the most comprehensive review of the literature on
+noise exposure in relation to extra-auditory systems, including circulatory and nervous disorders, gastrointestinal
+and endocrine dysfunction, and cancer risk.
+4.1. Circulatory System
+Studies, including six case-control studies, three cohort studies, one randomized crossover studies, and three
+cross-sectional studies, collectively support that noise exposure has some detrimental effects on cardiovascular
+LEE ET AL.
+
+17 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+health. Studies provide compelling evidence of a significant association between noise exposure and decreased
+FMD of the brachial artery, along with an increase in the E/e′ ratio. Furthermore, noise exposure is positively
+associated with elevated BP, hypertension, and an increased risk of developing cardiovascular diseases such as
+IHD, stroke, and heart failure.
+FMD which is a noninvasive index of vascular health and endothelial function was lower than that of the control
+group when exposed to aircraft noise; however, there was no difference in the degree of FMD regardless of
+the level of noise or the increase or decrease in the frequency of aircraft noise events. Although there were
+no differences in left ventricle (LV) size, LV ejection, left atrial volume, and other parameters, the E/e′ ratio
+was statistically significant as the frequency of aircraft noise with a similar Leq (control 6.83 ± 2.26, noise60
+7.21 ± 2.33, and noise120 7.83 ± 3.07), indicated that diastolic dysfunction was prominent (p = 0.043). This E/e′
+ratio increase can be regarded as an impairment of diastolic function, and it is already known that impairment of
+diastolic function leads to CVD such as HTN and heart failure (Lalande & Johnson, 2008). A study limited to
+patients with systemic lupus erythematosus showed an association between diastolic and endothelial functions
+(Chin et al., 2014). In other words, noise induces a decrease in endothelial and diastolic functions and affects the
+cardiovascular system (Münzel et al., 2018).
+Studies have shown that a decrease in endothelial function is related to oxidative stress in the endothelium through
+endothelial nitric oxide synthase or increased catecholamines induced by noise (Amir et al., 2004; Heinrich
+et al., 2005; Kaplon et al., 2011). In particular, the oxidative stress that occurs in the endothelium can be inferred
+from the result of FMD recovery when vitamin C, an antioxidant, is administered (Schmidt et al., 2013).
+Additionally, this study showed decreased levels of three biomarkers (follistatin, glyoxalase I, and angiotensin
+converting enzyme-2) upon exposure to aircraft noise (Schmidt et al., 2021). Follistatin is known to be an important substance in the regulation and improvement of inflammation and fibrotic disorders while inhibiting activin,
+which stimulates fibrosis or tissue remodeling (de Kretser et al., 2012). Glyoxalase I mediates detoxification
+against metabolic stress (Mey & Haus, 2018). The reduction in substances that control inflammation or fibrosis
+in blood vessels and metabolic stress, such as noise-induced oxidative stress, seems to be related to a decrease
+in endothelial function to some extent. ACE-2 is an enzyme found in the lungs, arteries, kidneys, and heart and
+plays a role in lowering BP by reducing the level of angiotensin II, a vasoconstrictor, and can indirectly increase
+BP by decreasing it (Lin et al., 2017). Elevated BP is an important risk factor for CVD because it decreases heart
+function over the long term. The reduction in these three biomarkers also suggests that noise can decrease vascular and cardiac function.
+In the group exposed to noise, both SBP and DBP significantly increased, as did the prevalence and risk of
+HTN. A meta-analysis of 24 cross-sectional studies showed an OR of 1.07 (95% CI = 1.02–1.12) for every
+10 dB increase in road noise exposure (LAeq 16-hr <50 and >75 dB) in adults (Haralabidis et al., 2008). In
+particular, studies showing increases in both SBP and DBP have been cross-sectional or case-control studies. In
+a cohort study, middle-aged men exposed to noise showed a significant increase in SBP but not DBP (Sørensen
+et al., 2011). Another cohort study showed that the prevalence of HTN increased by 14% (95% CI = 1.01–1.29;
+p = 0.031) for every 10 dB increase in aircraft noise during the night (Jarup et al., 2008). In a study analyzing
+the risk of HTN when chronically exposed to environmental noise, there was no significant association with road
+traffic noise; however, it showed that the risk of HTN increased when exposed to railway noise and aircraft noise
+(Eriksson et al., 2010; Sørensen et al., 2011).
+Previous studies have shown that acute exposure to noise increases the concentration of stress hormones such
+as catecholamines and increases BP, HR, and cardiac output. Low noise levels, if not necessarily high noise
+levels, can have the same effect as acute noise exposure when concentration or sleep processes are disturbed
+(Babisch, 2003, 2011; Basner et al., 2006). Noise is a stress stimulator that releases adrenaline or noradrenaline from the adrenal medulla through the fight-or-flight reaction, causing changes in heart rate, BP, cardiac
+output, blood glucose or lipid levels, electrolytes, and other parameters (Ising & Braun, 2000; Lundberg, 1999;
+Spreng, 2000b, 2000a). In the case of chronic noise exposure, it has been suggested that this change may flow
+in the direction of an increase or activation, increasing the risk factors and leading to cardiovascular diseases
+(Babisch, 2011; Babisch et al., 2003, 2013). Endothelial dysfunction occurs due to oxidative stress and vascular
+inflammation induced by activation of the autonomic nervous system and increased cortisol levels, which are
+known to contribute to the onset or progression of CVD (Charakida & Deanfield, 2013; Schmidt et al., 2015).
+LEE ET AL.
+
+18 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+4.2. Nervous System
+Several studies, including three cross-sectional studies, two case-control studies, and two randomized crossover
+studies, have demonstrated that noise exposure has detrimental effects on the nervous system, including sleep,
+cognitive performance, and mental health problems. Specifically, investigations of the impact of noise exposure
+on sleep have revealed a significant interaction between noise and arousal probability using EEG. Additionally,
+studies have shown an association between noise exposure and psychiatric disorders, assessed using the PHQ-9
+and GAD-7 questionnaires, with a significantly increasing PR.
+Studies have shown that noise exposure is associated with sleep, cognitive and mental health problems. Changes
+in EEG or polysomnography at specific sleeping stages were observed, and a lack of sleep through a self-reported
+questionnaire was found to be statistically significant. The effects of noise exposure on sleep have also shown
+associations with insomnia; traffic noise or locations close to busy highways have been implicated (Jakovljević
+et al., 2006; Kageyama et al., 1997). Increased arousal in non-rapid eye movement and the arousal duration during
+the sleep period may reduce the proportion of slow-wave sleep, which may deteriorate or interfere with sleep
+quality (Okada & Inaba, 1990; Smith et al., 2019). Although there are limitations in interpretation due to individual sensitivity, a decrease in REM sleep and quality of sleep occurred in a group exposed to loud noises at night
+(Abel, 1990; Jurrens, 1983). Moreover, one study also reported that sleeping in a noisy environment was significantly associated with an arousal increase, a decrease in both REM and latency periods of REM, and a decrease
+in sleep quality (Vallet et al., 1983). Although REM sleep is described as essential for maintaining a good quality
+of sleep, it is important that a quantitative assessment, such as the sleep quality index, be used to evaluate sleep
+since small changes in REM sleep are not considered sleep disturbances (D. B. Cohen, 1980). These quantified
+questionnaires were also used as indicators of noise exposure (Kawada & Suzuki, 1999). The decrease in delta,
+theta, and beta wave activity and the increase in alpha wave activity can be explained as an increase in the arousal
+state, which may be related to sleep disorders and was revealed when exposed to wind turbines represented by
+low-frequency noise. Low-frequency noise has been shown to have a low speed and frequency, so it can be transmitted over long distances without attenuation and has almost no attenuation even through walls or windows.
+Moreover, the SPL of low-frequency noise in a room can be increased through resonance, which can cause sleep
+disturbances (Berglund et al., 1996; Waye, 2004). Although the sample size is small, the study suggests that the
+cortisol awakening response is disrupted by low-frequency noise exposure (Waye et al., 2003, 2004).
+Although studies have been limited to children, noise exposure may cause cognitive decline. More than 20 other
+studies have also reported that noise adversely affects children's memory and recognition (Evans & Hygge, 2007),
+and chronic noise exposure has lowered reading comprehension and memory represented by cognitive process
+rather than unexposed group (S. Cohen et al., 1981; Haines, Stansfeld, Brentnall, et al., 2001; Haines, Stansfeld,
+Job, et al., 2001). Some hypotheses suggest that the cognitive impairment that occurs when people are chronically exposed to noise is caused by peroxidation and changes in the hippocampus (Jafari et al., 2018). This
+cognitive impairment is explained by the upregulation of the hypothalamus-pituitary-adrenal (HPA) axis as a
+result of hyperphosphorylation of tau protein, neuronal cell death, and increased expression of inflammation in
+the auditory cortex and hippocampus, which change according to the accelerated change in the redox state (Li
+et al., 2014; Wang et al., 2019; Zhuang et al., 2020). Cognitive impairment in children caused by noise exposure
+is reversible (Hygge et al., 2002), but studies claiming to be related to catecholamine and cortisol secretion do not
+show consistent results. Further research will be necessary to establish a mechanism (Stansfeld & Clark, 2015).
+Several studies have consistently reported that noise affects psychiatric disorders such as depression and anxiety. As an environmental stressor, repeated exposure to noise stimulates the endocrine and autonomic nervous
+systems, leading to an increase in hormones such as adrenaline and cortisol, dysregulation of the HPA axis,
+and atrophy of the hippocampus, which cause mental illness or psychiatric disorders (Hahad et al., 2019; Karin
+et al., 2020; Lan et al., 2020).
+The action of noise exposure on the nervous system may lead to structural changes in the brain. While previous
+studies have suggested changes in brain structure in certain diseases such as insomnia, cognitive impairment,
+Alzheimer's disease, and mental health problems, most studies that have directly linked changes in brain structure
+to noise exposure have been limited to animal tests, with only a few studies conducted on humans. Studies using
+MRI showed a decrease in the volume of the hippocampus in patients with insomnia (Riemann et al., 2007, 2010),
+with a particular decrease in the volume of gray matter and hippocampus reported in patients with cognitive
+impairment (Geerligs et al., 2015; Ries et al., 2008). Previous studies have also shown that cognitive impairment,
+LEE ET AL.
+
+19 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+sleep disturbance, and mental health problems such as depression, anxiety are all associated with increased cortisol levels, and high concentrations of cortisol have been linked to reduced gray matter, as well as atrophy of the
+hippocampus (Ouanes & Popp, 2019; Tatomir et al., 2014). Based on these studies, it can be hypothesized that
+increased cortisol levels due to noise exposure may lead to structural changes in the gray matter or hippocampus.
+However, the specific mechanisms for this require further investigation in future studies.
+4.3. Immune Response
+The observed effect of noise exposure on the immune response was consistent with the results of several studies (two randomized controlled trial studies, one cohort study, one experimental study, and one cross-sectional
+study) regarding the inflammatory cytokine response, hsCRP, triacylglycerol, cortisol, and epinephrine levels
+(Cai et al., 2017; Evans & Johnson, 2000; Pouryaghoub et al., 2016; Selander et al., 2009; Tait et al., 2019).
+A proposed biological mechanism is that stress-induced anti-inflammatory cytokine release plays a role in
+the balance of antibody-mediated immunity by increasing the level of glucocorticoids in the blood (Decker
+et al., 1996). Furthermore, chronic noise exposure may be linked to the release of psychological stress or related
+hormones such as cortisol and catecholamines. These induce the continuous release of a low dose of hsCRP or
+the breakdown of triacylglycerol (Cai et al., 2017; Selander et al., 2009).
+4.4. Endocrine System
+Studies, consist of two cohort studies and one cross-sectional study, have suggested an association between noise
+exposure and various metabolic conditions. There are several possible explanations for the negative effects of
+environmental noise on the endocrine system that could be mediated through psychological mechanisms. As a
+physiological stressor, environmental noise activates the HPA axis and the sympathetic nervous system, known
+as the sympathetic-adrenal-medulla axis. These stress hormones can trigger counter-regulatory hormones such
+as adrenaline and cortisol, which could be linked to the release of insulin resistance, resulting in increased food
+consumption and abdominal fat distribution (Kim et al., 2021). Furthermore, sleep deprivation and endocrine
+explosion due to noise exposure can affect adverse immune responses, control of stress hormones, and gastrointestinal function (Cai et al., 2020).
+4.5. Cancer
+Noise exposure, especially exposure to loud or explosive noise, has been associated with acoustic neuroma, which
+is known as a vestibular schwannoma or benign tumor of the vestibular division of the eighth cranial nerve, based
+on case-control studies. Several studies have also showed the increased risk of acoustic neuroma when exposed
+to loud noise, as in our reviewed studies (Preston-Martin et al., 1989; Schlehofer et al., 2007). The study we
+reviewed also demonstrated a significant association between long-term exposure to loud noise and acoustic
+neuroma in women (≥15 years of exposure to loud noise; OR: 3.34, 95% CI = 1.32–8.43) (Edwards et al., 2006).
+Although not definitive, the study suggests that female hormones, such as estrogen, may increase the risk of
+acoustic neuroma. However, one study reported a higher incidence of acoustic neuroma in men than in women
+(53% men and 46% women in 97 cases), but did not demonstrate any gender-specific effect of noise exposure
+in the analysis (Schlehofer et al., 2007). In some of the studies reviewed, conflicting results were founded, with
+some indicating that there was no relationship between occupational exposure and the risk of acoustic neuroma
+(Fisher et al., 2014). Moreover, reviewed studies may have limitations due to recall bias, as past noise exposure
+was estimated using questionnaires (Edwards et al., 2006; Fisher et al., 2014; Hours et al., 2009).
+In addition to noise, studies have shown that ionizing radiation and female hormones affect the pathogenesis of
+acoustic neuroma (Ron et al., 1988; Schlehofer et al., 1992), and the hypothesis that noise-induced damage to
+cochlear hair cells affects the development of acoustic neuromas seems more convincing (Oosterveld et al., 1982).
+The results of animal experiments suggest that noise-induced damage to cochlear hair cells promotes cell division
+and contributes to the formation of acoustic neuromas (Corwin & Cotanche, 1988; Ryals & Rubel, 1988). Moreover, it has been suggested that DNA damage caused by oxidative stress and DNA replication errors in the
+cell repair process caused by traumatic damage to cochlear hair cells are related to pathogenesis (Van Campen
+et al., 2002). In another study, because they share the same common arterial blood supply and membranous
+labyrinth, noise damages the vascular system of the body, causing the mixing of cochlear fluid, which leads to
+LEE ET AL.
+
+20 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+electrolyte imbalance, degeneration of nerve fibers, and alteration of Schwann cells, which protect the fibers and
+help them regenerate (Henderson & Hamernik, 1995).
+4.6. Respiratory System
+The effects of noise exposure on the asthma and bronchitis were reported in two studies including cohort study
+and cross-sectional study. In a cohort study, the prevalence of asthma was associated with noise exposure at
+night and noise in and around houses or apartments. Although the results were significant only for girls, it could
+be considered that exposure to noise at night or from residential areas has some degree of effect on the respiratory system. Another study showed a significant increase in cardiovascular mortality in noise-sensitive women;
+however, the exact reason for this difference between men and women is unclear (Willich et al., 2006). A noisy
+neighborhood can be represented by low housing quality, which is also a well-known risk factor for asthma
+(Wright & Fisher, 2003). In addition, in children, these results may not be caused by the noise itself but by providing the cause of the noise due to a fight with parents, siblings, or stress. However, none of these studies provided
+interpretations or results on sex-specific differences (Gustafsson et al., 2002; Slattery et al., 2002; Subramanian
+et al., 2007). In a cross-sectional study, chronic annoyance from neighborhood noise had a significant effect on
+children's respiratory systems and was not associated with asthma but was associated with bronchitis. In addition,
+the RR for respiratory symptoms and bronchitis was much higher than that of adults, and the risk was significantly
+increased, except for asthma. In particular, the association between bronchitis and traffic noise was also shown in
+other studies in Germany, and the results were found to be significant for traffic volume (Ising et al., 2005). This
+can be considered a result of an increase in noise and air pollution as the traffic volume increases.
+Emotional stress is considered to be the cause of respiratory stress in children. Emotional stress induces an
+increase in the production of endogenous opiates, such as endorphins and enkephalins, which can lead to suppression of the immune system with a decrease in natural killer cell activity. It is suggested that this can cause asthma
+psycho-neuroimmunologically (Ader & Cohen, 1985; Shavit & Martin, 1987; Shavit et al., 1985). Furthermore, it
+has been shown that chronic stress can affect connective tissue, such as the synthesis of a non-physiological collagen structure by fibroblasts, by causing dysfunction of the basic substances of the extracellular matrix (Aguas
+et al., 1999). These changes could be explained, to some extent, by the development of asthma.
+4.7. Gastrointestinal System
+Given the interactions between the brain and gut, and the fact that the gastrointestinal system is considered to
+react adversely to stress, the association between noise exposure and the gastrointestinal tract, such as gastrointestinal dysfunction, seems reasonable. Similar to the endocrine system, biologically plausible mechanisms have
+consistently demonstrated the effect of noise on the gastrointestinal system. Noise exposure triggers annoyance
+and stress, and induced stress activates the HPA axis and circulates stress hormones. Moreover, noise exposure
+significantly decreases gastrointestinal movement and increases gastric acid secretion (Castle et al., 2007; Tomei
+et al., 1994). An animal study reported that noise exposure increased basal and pentagastrin-stimulated gastric
+acid secretion and weakened gastric mucosal barriers (Moslehi et al., 2010). Although a few studies have reported
+the effects of environmental noise on the gastrointestinal system, supportive data suggest that noise exposure may
+be a risk factor for the development of gastrointestinal dysfunction.
+4.8. Obstetrics
+Since some evidence supports the notion that environmental exposure is associated with preterm birth, the
+hazardous environment appears to act as a risk factor for preterm birth (Etzel, 2020). However, the relevant literature showed a lack of connection between preterm delivery and low to moderate exposure to noise (Barba-Vasseur
+et al., 2017). A review suggested a plausible mechanism of noise and pregnancy that can explain pathophysiological pathways involved in the immune system (Prasher, 2009). Exposure to noise during pregnancy can induce
+a pro-inflammatory and pro-thrombotic state (Martinelli et al., 2013). Inflammatory state leads to placental
+hypoperfusion, which could lead to intrauterine growth restriction, gestational hypertension, fetal death in utero
+(Babisch & Van Kamp, 2009; Erickson & Arbour, 2014). As it may now be time to consider primordial prevention to inhibit adverse environmental conditions, further epidemiological and clinical research with more accurate
+and detailed information about noise exposure is required.
+LEE ET AL.
+
+21 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+4.9. Limitations
+The reviewed studies had some limitations that need to be addressed in future studies. One limitation is related
+to the method and evaluation of noise exposure, as some studies assessed noise exposure using noise annoyance
+scales or questionnaires instead of quantified or structured measurement methods (Beutel et al., 2016; Dzhambov
+et al., 2017; Edwards et al., 2006; Hours et al., 2009; Willich et al., 2006). As a result, accurate assessment
+of individual exposures was not possible, and inherent limitations and information bias (e.g., recall bias) may
+have affected their results due to the questionnaire-based approach. Another limitations was the small sample
+size in some studies, which may have resulted in selection bias and influenced the generalizability of the findings due to the clinical nature of these studies (Castle et al., 2007; Dunbar et al., 2022; Dzhambov et al., 2017;
+Edwards et al., 2006; Evans & Johnson, 2000; Hours et al., 2009; McGuire et al., 2016; Popp et al., 2015;
+Pouryaghoub et al., 2016; Saha et al., 1996; Schmidt et al., 2013, 2021; Stansfeld et al., 2010; Tait et al., 2019;
+Tomei et al., 2000). Moreover, some studies were analyzed using cross-sectional study design, which precluded
+the establishment of a causal relationship. In addition, some studies that did not focus on noise exposure as a
+primary exposure were excluded from this review. As there may be results contrary to those presented in this
+analysis, some results should be interpreted more cautiously. Further review and analysis with modified criteria
+including all kinds of noise exposure should be performed to overcome these limitations.
+Besides the aforementioned limitations, our systematic review has some strengths. One significant strength is the
+consideration of extra-auditory effects, rather than solely auditory effects, resulting from occupational or environmental noise exposure. Prior reviews typically focused on one or two types of health effects of noise exposure.
+Additionally, our review encompasses studies from a range of global locations, rather than being confined to a
+specific region. Given these strengths, our review will offer valuable insight into the association between noise
+exposure and human health, and represent a valuable resource for future research.
+
+5. Conclusions
+The current study reported that occupational or environmental noise exposure has an extra-auditory effect on
+human health. Various human health effects have been reported to be related to noise exposure, such as circulatory, respiratory, immunological, gastrointestinal, and oncologic effects. Further studies are needed to investigate
+the effects of noise exposure on extra-auditory human health.
+
+Abbreviations
+dB
+Leq
+LAeq
+Lden
+BMI
+BP
+CPM
+DBP
+FMD
+HPA
+HR
+IHD
+LV
+MeSH
+NIHL
+OR
+PRISMA
+PICO
+CONSORT
+STROBE
+REM
+LEE ET AL.
+
+Decibel
+equivalent continuous sound pressure level
+Equivalent continuous A-weighted sound pressure level
+Day-evening-night noise level
+Body mass index
+Blood pressure
+Cycles per minute
+Diastolic blood pressure
+Flow-mediated dilatation
+Hypothalamus-pituitary-adrenal
+Hazard Ratio
+Ischemic heart disease
+Left ventricle
+Medical Subject Headings
+Noise-induced hearing loss
+Odds ratio
+Preferred Reporting Items for Systematic reviews and Meta-Analyses
+Population, Intervention, Comparison, and Outcome
+Consolidated Standards of Reporting Trials
+Strengthening the Reporting of Observational Studies in Epidemiology
+Rapid eye movement
+22 of 27
+
+GeoHealth
+GAD-7
+PHQ-9
+RR
+SBP
+SCORE
+SPL
+FBG
+FINJEM
+GMA
+HDL
+HTN
+IL
+IQR
+MetS
+hsCRP
+TG
+WC
+CHD
+CVD
+E/e′
+EEG
+CCI
+DDD
+NSAIDs
+NK cell
+ACE-2
+NOS
+
+10.1029/2023GH000805
+
+General Anxiety Disorder-7
+Patient Health Questionnaire-9
+Relative risk
+Systolic blood pressure
+Systematic coronary risk evaluation
+Sound pressure level
+Fasting blood glucose
+Finnish Job-Exposure matrix
+Gastric myoelectrical activity
+High-density lipoprotein
+Hypertension
+Interleukin
+Interquartile range
+Metabolic syndrome
+High-sensitivity C-reactive protein
+Triglycerides
+Waist circumference
+Coronary heart disease
+Cardiovascular disease
+Early mitral inflow velocity/early diastolic velocity of the mitral valve annulus velocity
+Electroencephalogram
+Chronic constriction injury
+Defined daily dose
+Non-steroidal anti-inflammatory drugs
+Natural killer cell
+Angiotensin converting enzyme-2
+Nitric oxide synthase
+
+Conflict of Interest
+The authors declare no conflicts of interest relevant to this study.
+
+Data Availability Statement
+Only published data was used in this work. Reference to each data can be found in Table 2.
+Acknowledgments
+This study was supported by the Occupational Safety and Health Research Institute, Korea and the Gachon University Gil
+Medical Center Research Fund of 2021
+(FRD2021-09). The funding body had no
+role in the design, analysis, or interpretation of this study.
+
+LEE ET AL.
+
+References
+Abel, S. M. (1990). The extra-auditory effects of noise and annoyance: An overview of research. Journal of Otolaryngology, 19, 1–13.
+Ader, R., & Cohen, N. (1985). CNS–immune system interactions: Conditioning phenomena. Behavioral and Brain Sciences, 8(3), 379–395.
+https://doi.org/10.1017/s0140525x00000765
+Adrian, D., & El Refaie, A. (2000). The epidemiology of tinnitus. In The handbook of tinnitus (pp. 1–23). Singular.
+Aguas, A. P., Esaguy, N., Grande, N. R., Castro, A. P., & Castelo Branco, N. A. (1999). Acceleration of lupus erythematosus-like processes by low
+frequency noise in the hybrid NZB/W mouse model. Aviation Space & Environmental Medicine, 70(3 Pt 2), A132–A136.
+Amir, O., Alroy, S., Schliamser, J. E., Asmir, I., Shiran, A., Flugelman, M. Y., et al. (2004). Brachial artery endothelial function in residents and
+fellows working night shifts. The American Journal of Cardiology, 93(7), 947–949. https://doi.org/10.1016/j.amjcard.2003.12.032
+Babisch, W. (2003). Stress hormones in the research on cardiovascular effects of noise. Noise and Health, 5(18), 1–11.
+Babisch, W. (2011). Cardiovascular effects of noise. Noise and Health, 13(52), 201. https://doi.org/10.4103/1463-1741.80148
+Babisch, W., Ising, H., & Gallacher, J. (2003). Health status as a potential effect modifier of the relation between noise annoyance and incidence
+of ischaemic heart disease. Occupational and Environmental Medicine, 60(10), 739–745. https://doi.org/10.1136/oem.60.10.739
+Babisch, W., Pershagen, G., Selander, J., Houthuijs, D., Breugelmans, O., Cadum, E., et al. (2013). Noise annoyance—A modifier of the association
+between noise level and cardiovascular health? Science of the Total Environment, 452, 50–57. https://doi.org/10.1016/j.scitotenv.2013.02.034
+Babisch, W., & Van Kamp, I. (2009). Exposure-response relationship of the association between aircraft noise and the risk of hypertension. Noise
+and Health, 11(44), 161. https://doi.org/10.4103/1463-1741.53363
+Barba-Vasseur, M., Bernard, N., Pujol, S., Sagot, P., Riethmuller, D., Thiriez, G., et al. (2017). Does low to moderate environmental exposure to
+noise and air pollution influence preterm delivery in medium-sized cities? International Journal of Epidemiology, 46(6), 2017–2027. https://
+doi.org/10.1093/ije/dyx121
+Basner, M., Samel, A., & Isermann, U. (2006). Aircraft noise effects on sleep: Application of the results of a large polysomnographic field study.
+Journal of the Acoustical Society of America, 52(5), 109–123. https://doi.org/10.1121/1.2184247
+
+23 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Berglund, B., Hassmén, P., & Job, R. S. (1996). Sources and effects of low-frequency noise. Journal of the Acoustical Society of America, 99(5),
+2985–3002. https://doi.org/10.1121/1.414863
+Beutel, M. E., Jünger, C., Klein, E. M., Wild, P., Lackner, K., Blettner, M., et al. (2016). Noise annoyance is associated with depression and
+anxiety in the general population-the contribution of aircraft noise. PLoS One, 11(5), e0155357. https://doi.org/10.1371/journal.pone.0155357
+Bockelbrink, A., Willich, S. N., Dirzus, I., Reich, A., Lau, S., Wahn, U., & Keil, T. (2008). Environmental noise and asthma in children:
+Sex-specific differences. Journal of Asthma, 45(9), 770–773. https://doi.org/10.1080/02770900802252127
+Cai, Y., Hansell, A. L., Blangiardo, M., Burton, P. R., BioShaRede Hoogh, K., Doiron, D., et al. (2017). Long-term exposure to road traffic noise,
+ambient air pollution, and cardiovascular risk factors in the HUNT and lifelines cohorts. European Heart Journal, 38(29), 2290–2296. https://
+doi.org/10.1093/eurheartj/ehx263
+Cai, Y., Zijlema, W. L., Sørgjerd, E. P., Doiron, D., de Hoogh, K., Hodgson, S., et al. (2020). Impact of road traffic noise on obesity measures:
+Observational study of three European cohorts. Environmental Research, 191, 110013. https://doi.org/10.1016/j.envres.2020.110013
+Castle, J. S., Xing, J.-H., Warner, M. R., & Korsten, M. A. (2007). Environmental noise alters gastric myoelectrical activity: Effect of age. World
+Journal of Gastroenterology: WJG, 13(3), 403. https://doi.org/10.3748/wjg.v13.i3.403
+Charakida, M., & Deanfield, J. E. (2013). In Nighttime aircraft noise exposure: Flying towards arterial disease (Vol. 34, pp. 3472–3474). Oxford
+University Press.
+Chin, C. W., Chin, C.-Y., Ng, M. X., Le, T.-T., Huang, F.-Q., Fong, K.-Y., et al. (2014). Endothelial function is associated with myocardial
+diastolic function in women with systemic lupus erythematosus. Rheumatology International, 34(9), 1281–1285. https://doi.org/10.1007/
+s00296-014-2968-4
+Cohen, D. B. (1980). The cognitive activity of sleep. Progress in Brain Research, 53, 307–324.
+Cohen, S., Krantz, D. S., Evans, G. W., Stokols, D., & Kelly, S. (1981). Aircraft noise and children: Longitudinal and cross-sectional evidence
+on adaptation to noise and the effectiveness of noise abatement. Journal of Personality and Social Psychology, 40(2), 331–345. https://doi.
+org/10.1037/0022-3514.40.2.331
+Correia, A. W., Peters, J. L., Levy, J. I., Melly, S., & Dominici, F. (2013). Residential exposure to aircraft noise and hospital admissions for cardiovascular diseases: Multi-airport retrospective study. BMJ, 347, f5561. https://doi.org/10.1136/bmj.f5561
+Corwin, J. T., & Cotanche, D. A. (1988). Regeneration of sensory hair cells after acoustic trauma. Science, 240(4860), 1772–1774. https://doi.
+org/10.1126/science.3381100
+Decker, D., Schöndorf, M., Bidlingmaier, F., Hirner, A., & von Ruecker, A. A. (1996). Surgical stress induces a shift in the type-1/type-2 T-helper
+cell balance, suggesting down-regulation of cell-mediated and up-regulation of antibody-mediated immunity commensurate to the trauma.
+Surgery, 119(3), 316–325. https://doi.org/10.1016/s0039-6060(96)80118-8
+De Kluizenaar, Y., van Lenthe, F. J., Visschedijk, A. J., Zandveld, P. Y., Miedema, H. M., & Mackenbach, J. P. (2013). Road traffic noise, air
+pollution components and cardiovascular events. Noise and Health, 15(67), 388. https://doi.org/10.4103/1463-1741.121230
+de Kretser, D. M., O’Hehir, R. E., Hardy, C. L., & Hedger, M. P. (2012). The roles of activin A and its binding protein, follistatin, in inflammation
+and tissue repair. Molecular and Cellular Endocrinology, 359(1–2), 101–106. https://doi.org/10.1016/j.mce.2011.10.009
+Dunbar, C., Catcheside, P., Lechat, B., Hansen, K., Zajamsek, B., Liebich, T., et al. (2022). EEG power spectral responses to wind farm compared
+with road traffic noise during sleep: A laboratory study. Journal of Sleep Research, 31(3), e13517. https://doi.org/10.1111/jsr.13517
+Dzhambov, A. M., & Dimitrova, D. D. (2016). Exposures to road traffic, noise, and air pollution as risk factors for type 2 diabetes: A feasibility
+study in Bulgaria. Noise and Health, 18(82), 133. https://doi.org/10.4103/1463-1741.181996
+Dzhambov, A. M., Tokmakova, M. P., Gatseva, P. D., Zdravkov, N. G., Gencheva, D. G., Ivanova, N. G., et al. (2017). Community noise exposure
+and its effect on blood pressure and renal function in patients with hypertension and cardiovascular disease. Folia Medica, 59(3), 344–356.
+https://doi.org/10.1515/folmed-2017-0045
+Edwards, C. G., Schwartzbaum, J. A., Lönn, S., Ahlbom, A., & Feychting, M. (2006). Exposure to loud noise and risk of acoustic neuroma.
+American Journal of Epidemiology, 163(4), 327–333. https://doi.org/10.1093/aje/kwj044
+Eggermont, J. (2006). Cortical tonotopic map reorganization and its implications for treatment of tinnitus. Acta Oto-Laryngologica, 126(sup556),
+9–12. https://doi.org/10.1080/03655230600895259
+Elmenhorst, E.-M., Elmenhorst, D., Wenzel, J., Quehl, J., Mueller, U., Maass, H., et al. (2010). Effects of nocturnal aircraft noise on cognitive
+performance in the following morning: Dose–response relationships in laboratory and field. International Archives of Occupational and Environmental Health, 83(7), 743–751. https://doi.org/10.1007/s00420-010-0515-5
+Erickson, A. C., & Arbour, L. (2014). The shared pathoetiological effects of particulate air pollution and the social environment on fetal-placental
+development. Journal of Environmental and Public Health, 2014, 901017–901020. https://doi.org/10.1155/2014/901017
+Eriksson, C., Bluhm, G., Hilding, A., Östenson, C.-G., & Pershagen, G. (2010). Aircraft noise and incidence of hypertension—Gender specific
+effects. Environmental Research, 110(8), 764–772. https://doi.org/10.1016/j.envres.2010.09.001
+Etzel, R. A. (2020). Is the environment associated with preterm birth? JAMA Network Open, 3(4), e202239. https://doi.org/10.1001/
+jamanetworkopen.2020.2239
+Evans, G., & Hygge, S. (2007). Noise and cognitive performance in children and adults.
+Evans, G. W., & Johnson, D. (2000). Stress and open-office noise. Journal of Applied Psychology, 85(5), 779–783. https://doi.
+org/10.1037/0021-9010.85.5.779
+Eze, I. C., Foraster, M., Schaffner, E., Vienneau, D., Héritier, H., Pieren, R., et al. (2018). Transportation noise exposure, noise annoyance and
+respiratory health in adults: A repeated-measures study. Environment International, 121, 741–750. https://doi.org/10.1016/j.envint.2018.10.006
+Fisher, J. L., Pettersson, D., Palmisano, S., Schwartzbaum, J. A., Edwards, C. G., Mathiesen, T., et al. (2014). Loud noise exposure and acoustic
+neuroma. American Journal of Epidemiology, 180(1), 58–67. https://doi.org/10.1093/aje/kwu081
+Floud, S., Blangiardo, M., Clark, C., De Hoogh, K., Babisch, W., Houthuijs, D., et al. (2013). Exposure to aircraft and road traffic noise
+and associations with heart disease and stroke in six European countries: A cross-sectional study. Environmental Health, 12(1), 1–11.
+https://doi.org/10.1186/1476-069x-12-89
+Floud, S., Vigna-Taglianti, F., Hansell, A., Blangiardo, M., Houthuijs, D., Breugelmans, O., et al. (2011). Medication use in relation to noise from
+aircraft and road traffic in six European countries: Results of the HYENA study. Occupational and Environmental Medicine, 68(7), 518–524.
+https://doi.org/10.1136/oem.2010.058586
+Fujioka, M., Kanzaki, S., Okano, H. J., Masuda, M., Ogawa, K., & Okano, H. (2006). Proinflammatory cytokines expression in noise-induced
+damaged cochlea. Journal of Neuroscience Research, 83(4), 575–583. https://doi.org/10.1002/jnr.20764
+Geerligs, L., Renken, R. J., Saliasi, E., Maurits, N. M., & Lorist, M. M. (2015). A brain-wide study of age-related changes in functional connectivity. Cerebral Cortex, 25(7), 1987–1999. https://doi.org/10.1093/cercor/bhu012
+
+LEE ET AL.
+
+24 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Girard, S.-A., Leroux, T., Courteau, M., Picard, M., Turcotte, F., & Richer, O. (2015). Occupational noise exposure and noise-induced hearing
+loss are associated with work-related injuries leading to admission to hospital. Injury Prevention, 21(e1), e88–e92. https://doi.org/10.1136/
+injuryprev-2013-040828
+Gustafsson, P. A., Kjellman, N. I. M., & Björkstén, B. (2002). Family interaction and a supportive social network as salutogenic factors in childhood atopic illness. Pediatric Allergy & Immunology, 13(1), 51–57. https://doi.org/10.1034/j.1399-3038.2002.00086.x
+Hahad, O., Prochaska, J. H., Daiber, A., & Muenzel, T. (2019). Environmental noise-induced effects on stress hormones, oxidative stress, and
+vascular dysfunction: Key factors in the relationship between cerebrocardiovascular and psychological disorders. Oxidative Medicine and
+Cellular Longevity, 2019, 4623109. https://doi.org/10.1155/2019/4623109
+Haines, M. M., Stansfeld, S. A., Brentnall, S., Head, J., Berry, B., Jiggins, M., & Hygge, S. (2001). The West London Schools Study: The effects
+of chronic aircraft noise exposure on child health. Psychological Medicine, 31(8), 1385–1396. https://doi.org/10.1017/s003329170100469x
+Haines, M. M., Stansfeld, S. A., Job, R. S., Berglund, B., & Head, J. (2001). Chronic aircraft noise exposure, stress responses, mental health and
+cognitive performance in school children. Psychological Medicine, 31(2), 265–277. https://doi.org/10.1017/s0033291701003282
+Halperin, D. (2014). Environmental noise and sleep disturbances: A threat to health? Sleep Science, 7(4), 209–212. https://doi.org/10.1016/j.
+slsci.2014.11.003
+Haralabidis, A. S., Dimakopoulou, K., Vigna-Taglianti, F., Giampaolo, M., Borgini, A., Dudley, M.-L., et al. (2008). Acute effects of nighttime noise exposure on blood pressure in populations living near airports. European Heart Journal, 29(5), 658–664. https://doi.org/10.1093/
+eurheartj/ehn013
+Heinrich, U.-R., Selivanova, O., Feltens, R., Brieger, J., & Mann, W. (2005). Endothelial nitric oxide synthase upregulation in the Guinea pig
+organ of Corti after acute noise trauma. Brain Research, 1047(1), 85–96. https://doi.org/10.1016/j.brainres.2005.04.023
+Henderson, D., & Hamernik, R. P. (1995). Biologic bases of noise-induced hearing loss. Occupational Medicine-State of the Art Reviews, 10(3),
+513–534.
+Hours, M., Bernard, M., Arslan, M., Montestrucq, L., Richardson, L., Deltour, I., & Cardis, E. (2009). Can loud noise cause acoustic neuroma?
+Analysis of the INTERPHONE study in France. Occupational and Environmental Medicine, 66(7), 480–486. https://doi.org/10.1136/
+oem.2008.042101
+Hygge, S., Evans, G. W., & Bullinger, M. (2002). A prospective study of some effects of aircraft noise on cognitive performance in schoolchildren. Psychological Science, 13(5), 469–474. https://doi.org/10.1111/1467-9280.00483
+Ising, H., & Braun, C. (2000). Acute and chronic endocrine effects of noise: Review of the research conducted at the Institute for Water, Soil and
+Air Hygiene. Noise and Health, 2(7), 7.
+Ising, H., Lange-Asschenfeldt, H., Lieber, G.-F., Moriske, H.-J., & Weinhold, H. (2005). Exposure to traffic-related air pollution and noise and
+the development of respiratory diseases in children. Journal of Children's Health, 2(2), 145–157. https://doi.org/10.3109/15417060490906477
+Jafari, Z., Kolb, B. E., & Mohajerani, M. H. (2018). Chronic traffic noise stress accelerates brain impairment and cognitive decline in mice.
+Experimental Neurology, 308, 1–12. https://doi.org/10.1016/j.expneurol.2018.06.011
+Jakovljević, B., Belojević, G., Paunović, K., & Stojanov, V. (2006). Road traffic noise and sleep disturbances in an urban population:
+Cross-sectional study. Croatian Medical Journal, 47(1), 125–133.
+Jarup, L., Babisch, W., Houthuijs, D., Pershagen, G., Katsouyanni, K., Cadum, E., et al. (2008). Hypertension and exposure to noise near airports:
+The HYENA study. Environmental Health Perspectives, 116(3), 329–333. https://doi.org/10.1289/ehp.10775
+Jurrens, A. (1983). An essay in European research collaboration: Common results form the project on traffic noise and sleep in the home, Noise
+as a Public Health Problem.
+Kageyama, T., Kabuto, M., Nitta, N., Kurokawa, Y., Taira, K., Suzuki, S., & Takemoto, T. (1997). A cross-sectional study on insomnia among
+Japanese adult women in relation to night-time road traffic noise. Journal of Sound and Vibration, 205(4), 387–391. https://doi.org/10.1006/
+jsvi.1997.1003
+Kaplon, R. E., Walker, A. E., & Seals, D. R. (2011). Plasma norepinephrine is an independent predictor of vascular endothelial function with
+aging in healthy women. Journal of Applied Physiology, 111(5), 1416–1421. https://doi.org/10.1152/japplphysiol.00721.2011
+Karin, O., Raz, M., Tendler, A., Bar, A., Korem Kohanim, Y., Milo, T., & Alon, U. (2020). A new model for the HPA axis explains dysregulation
+of stress hormones on the timescale of weeks. Molecular Systems Biology, 16(7), e9510. https://doi.org/10.15252/msb.20209510
+Kawada, T., & Suzuki, S. (1999). Change in rapid eye movement (REM) sleep in response to exposure to all-night noise and transient noise.
+Archives of Environmental Health: An International Journal, 54(5), 336–340. https://doi.org/10.1080/00039899909602497
+Kim, S., Yun, B., Lee, S., Kim, C., Sim, J., Cho, A., et al. (2021). Occupational noise exposure and incidence of high fasting blood glucose:
+A 3-year, multicenter, retrospective study. International Journal of Environmental Research and Public Health, 18(17), 9388. https://doi.
+org/10.3390/ijerph18179388
+Kirschbaum, C., & Hellhammer, D. H. (1999). Noise and stress-salivary cortisol as a non-invasive measure of allostatic load. Noise and Health,
+1(4), 57.
+Koester, M., Storck, C., & Zorowka, P. (2004). Tinnitus—Classification, causes, diagnosis, treatment and prognosis. MMW - Fortschritte der
+Medizin, 146(1–2), 23–24.
+Koskinen, H.-L., Kauppinen, T., & Tenkanen, L. (2011). Dual role of physical workload and occupational noise in the association of the metabolic syndrome with risk of coronary heart disease: Findings from the Helsinki heart study. Occupational and Environmental Medicine, 68(9),
+666–673. https://doi.org/10.1136/oem.2010.057075
+Lalande, S., & Johnson, B. D. (2008). Diastolic dysfunction: A link between hypertension and heart failure. Drugs of Today, 44(7), 503–513.
+https://doi.org/10.1358/dot.2008.44.7.1221662
+Lan, Y., Roberts, H., Kwan, M.-P., & Helbich, M. (2020). Transportation noise exposure and anxiety: A systematic review and meta-analysis.
+Environmental Research, 191, 110118. https://doi.org/10.1016/j.envres.2020.110118
+Li, K., Jia, H., She, X., Cui, B., Zhang, N., Chen, X., et al. (2014). Role of NMDA receptors in noise-induced tau hyperphosphorylation in rat
+hippocampus and prefrontal cortex. Journal of the Neurological Sciences, 340(1–2), 191–197. https://doi.org/10.1016/j.jns.2014.03.027
+Lin, S., Pan, H., Wu, H., Ren, D., & Lu, J. (2017). Role of the ACE2-Ang-(1-7)-Mas axis in blood pressure regulation and its potential as an
+antihypertensive in functional foods. Molecular Medicine Reports, 16(4), 4403–4412. https://doi.org/10.3892/mmr.2017.7168
+Lundberg, U. (1999). Coping with stress: Neuroendocrine reactions and implications for health. Noise and Health, 1(4), 67.
+Lusk, S. L., Gillespie, B., Hagerty, B. M., & Ziemba, R. A. (2004). Acute effects of noise on blood pressure and heart rate. Archives of Environmental Health: An International Journal, 59(8), 392–399. https://doi.org/10.3200/aeoh.59.8.392-399
+Martinelli, N., Olivieri, O., & Girelli, D. (2013). Air particulate matter and cardiovascular disease: A narrative review. European Journal of
+Internal Medicine, 24(4), 295–302. https://doi.org/10.1016/j.ejim.2013.04.001
+Matheson, M., Clark, C., Martin, R., Van Kempen, E., Haines, M., Barrio, I. L., et al. (2010). The effects of road traffic and aircraft noise exposure
+on children's episodic memory: The RANCH Project. Noise and Health, 12(49), 244. https://doi.org/10.4103/1463-1741.70503
+
+LEE ET AL.
+
+25 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Mcgill, T. J., & Schuknecht, H. F. (1976). Human cochlear changes in noise induced hearing loss. The Laryngoscope, 86(9), 1293–1302. https://
+doi.org/10.1288/00005537-197609000-00001
+McGuire, S., Müller, U., Elmenhorst, E.-M., & Basner, M. (2016). Inter-individual differences in the effects of aircraft noise on sleep fragmentation. Sleep, 39(5), 1107–1110. https://doi.org/10.5665/sleep.5764
+McNamee, R., Burgess, G., Dippnall, W., & Cherry, N. (2006). Occupational noise exposure and ischaemic heart disease mortality. Occupational
+and Environmental Medicine, 63(12), 813–819. https://doi.org/10.1136/oem.2005.026245
+Mey, J. T., & Haus, J. M. (2018). Dicarbonyl stress and glyoxalase-1 in skeletal muscle: Implications for insulin resistance and type 2 diabetes.
+Frontiers in cardiovascular medicine, 5, 117. https://doi.org/10.3389/fcvm.2018.00117
+Min, J.-Y., & Min, K.-B. (2018). Cumulative exposure to nighttime environmental noise and the incidence of peptic ulcer. Environment International, 121, 1172–1178. https://doi.org/10.1016/j.envint.2018.10.035
+Moher, D., Liberati, A., Tetzlaff, J., Altman, D. G., & PRISMA Group. (2009). Preferred reporting items for systematic reviews and meta-analyses:
+The PRISMA statement. Annals of Internal Medicine, 151(4), 264–269. https://doi.org/10.7326/0003-4819-151-4-200908180-00135
+Moslehi, A., Nabavizadeh, R. F., Keshavarz, M., Rouhbakhsh, N., Sotudeh, M., & Salimi, E. (2010). Traffic noise exposure increases gastric
+acid secretion in rat.
+Münzel, T., Sørensen, M., Schmidt, F., Schmidt, E., Steven, S., Kröller-Schön, S., & Daiber, A. (2018). The adverse effects of environmental noise
+exposure on oxidative stress and cardiovascular risk. Antioxidants and Redox Signaling, 28(9), 873–908. https://doi.org/10.1089/ars.2017.7118
+Niemann, H., Bonnefoy, X., Braubach, M., Hecht, K., Maschke, C., Rodrigues, C., & Robbel, N. (2006). Noise-induced annoyance and morbidity
+results from the pan-European LARES study. Noise and Health, 8(31), 63. https://doi.org/10.4103/1463-1741.33537
+Okada, A., & Inaba, R. (1990). Comparative study of the effects of infrasound and low-frequency sound with those of audible sound on sleep.
+Environment International, 16(4–6), 483–490. https://doi.org/10.1016/0160-4120(90)90017-z
+Oosterveld, W., Polman, A., & Schoonheyt, J. (1982). Vestibular implications of noise-induced hearing loss. British Journal of Audiology, 16(4),
+227–232. https://doi.org/10.3109/03005368209081467
+Ouanes, S., & Popp, J. (2019). High cortisol and the risk of dementia and Alzheimer’s disease: A review of the literature. Frontiers in Aging
+Neuroscience, 11, 43. https://doi.org/10.3389/fnagi.2019.00043
+Picard, M., Girard, S. A., Simard, M., Larocque, R., Leroux, T., & Turcotte, F. (2008). Association of work-related accidents with noise exposure
+in the workplace and noise-induced hearing loss based on the experience of some 240,000 person-years of observation. Accident Analysis &
+Prevention, 40(5), 1644–1652. https://doi.org/10.1016/j.aap.2008.05.013
+Popp, R. F., Maier, S., Rothe, S., Zulley, J., Crönlein, T., Wetter, T. C., et al. (2015). Impact of overnight traffic noise on sleep quality, sleepiness, and
+vigilant attention in long-haul truck drivers: Results of a pilot study. Noise and Health, 17(79), 387. https://doi.org/10.4103/1463-1741.169698
+Pouryaghoub, G., Mehrdad, R., & Valipouri, A. (2016). Effect of acute noise exposure on salivary cortisol: A randomized controlled trial. Acta
+Medica Iranica, 54(10), 657–661.
+Prasher, D. (2009). Is there evidence that environmental noise is immunotoxic? Noise and Health, 11(44), 151. https://doi.
+org/10.4103/1463-1741.53361
+Preston-Martin, S., Thomas, D., Wright, W., & Henderson, B. (1989). Noise trauma in the aetiology of acoustic neuromas in men in Los Angeles
+County, 1978–1985. British Journal of Cancer, 59(5), 783–786. https://doi.org/10.1038/bjc.1989.163
+Rehm, S., & Jansen, G. (1978). Aircraft noise and premature birth. Journal of Sound and Vibration, 59(1), 133–135. https://doi.
+org/10.1016/0022-460x(78)90490-x
+Riemann, D., Spiegelhalder, K., Feige, B., Voderholzer, U., Berger, M., Perlis, M., & Nissen, C. (2010). The hyperarousal model of insomnia: A
+review of the concept and its evidence. Sleep Medicine Reviews, 14(1), 19–31. https://doi.org/10.1016/j.smrv.2009.04.002
+Riemann, D., Voderholzer, U., Spiegelhalder, K., Hornyak, M., Buysse, D. J., Nissen, C., et al. (2007). Chronic insomnia and MRI-measured
+hippocampal volumes: A pilot study. Sleep, 30(8), 955–958. https://doi.org/10.1093/sleep/30.8.955
+Ries, M. L., Carlsson, C. M., Rowley, H. A., Sager, M. A., Gleason, C. E., Asthana, S., & Johnson, S. C. (2008). Magnetic resonance imaging
+characterization of brain structure and function in mild cognitive impairment: A review. Journal of the American Geriatrics Society, 56(5),
+920–934. https://doi.org/10.1111/j.1532-5415.2008.01684.x
+Ron, E., Modan, B., Boice, J. D., Jr., Alfandary, E., Stovall, M., Chetrit, A., & Katz, L. (1988). Tumors of the brain and nervous system after
+radiotherapy in childhood. New England Journal of Medicine, 319(16), 1033–1039. https://doi.org/10.1056/nejm198810203191601
+Ryals, B. M., & Rubel, E. W. (1988). Hair cell regeneration after acoustic trauma in adult Coturnix quail. Science, 240(4860), 1774–1776. https://
+doi.org/10.1126/science.3381101
+Saha, S., Gandhi, A., Das, S., Kaur, P., & Singh, S. (1996). Effect of noise stress on some cardiovascular parameters and audiovisual reaction time.
+Indian Journal of Physiology & Pharmacology, 40, 35–40.
+Schlehofer, B., Blettner, M., & Wahrendorf, J. (1992). Association between brain tumors and menopausal status. JNCI: Journal of the National
+Cancer Institute, 84(17), 1346–1349. https://doi.org/10.1093/jnci/84.17.1346
+Schlehofer, B., Schlaefer, K., Blettner, M., Berg, G., Böhler, E., Hettinger, I., et al. (2007). Environmental risk factors for sporadic acoustic
+neuroma (Interphone Study Group, Germany). European Journal of Cancer, 43(11), 1741–1747. https://doi.org/10.1016/j.ejca.2007.05.008
+Schmidt, F., Kolle, K., Kreuder, K., Schnorbus, B., Wild, P., Hechtner, M., et al. (2015). Nighttime aircraft noise impairs endothelial function and
+increases blood pressure in patients with or at high risk for coronary artery disease. Clinical Research in Cardiology, 104(1), 23–30. https://
+doi.org/10.1007/s00392-014-0751-x
+Schmidt, F. P., Basner, M., Kröger, G., Weck, S., Schnorbus, B., Muttray, A., et al. (2013). Effect of nighttime aircraft noise exposure on endothelial function and stress hormone release in healthy adults. European Heart Journal, 34(45), 3508–3514. https://doi.org/10.1093/eurheartj/
+eht269
+Schmidt, F. P., Herzog, J., Schnorbus, B., Ostad, M. A., Lasetzki, L., Hahad, O., et al. (2021). The impact of aircraft noise on vascular and cardiac
+function in relation to noise event number: A randomized trial. Cardiovascular Research, 117(5), 1382–1390. https://doi.org/10.1093/cvr/
+cvaa204
+Selander, J., Bluhm, G., Theorell, T., Pershagen, G., Babisch, W., Seiffert, I., et al. (2009). Saliva cortisol and exposure to aircraft noise in six
+European countries. Environmental Health Perspectives, 117(11), 1713–1717. https://doi.org/10.1289/ehp.0900933
+Shavit, Y., & Martin, F. C. (1987). Opiates, stress, and immunity: Animal studies. Annals of Behavioral Medicine, 9(2), 11–15. https://doi.
+org/10.1207/s15324796abm0902_2
+Shavit, Y., Terman, G., Martin, F., Lewis, J., Liebeskind, J., & Gale, R. (1985). Stress, opioid peptides, the immune system, and cancer. Journal
+of Immunology, 135(2 Suppl), 834s–837s. https://doi.org/10.4049/jimmunol.135.2.834
+Slattery, M. J., Klein, D. F., Mannuzza, S., Moulton, J. L., III, Pine, D. S., & Klein, R. G. (2002). Relationship between separation anxiety
+disorder, parental panic disorder, and atopic disorders in children: A controlled high-risk study. Journal of the American Academy of Child &
+Adolescent Psychiatry, 41(8), 947–954. https://doi.org/10.1097/00004583-200208000-00013
+
+LEE ET AL.
+
+26 of 27
+
+GeoHealth
+
+10.1029/2023GH000805
+
+Smith, M., Younes, M., Aeschbach, D., Müller, U., & Basner, M. (2019). Traffic noise and its impact on sleep depth measured by the odds ratio
+product. In Proceedings of the 23rd International Congress on Acoustics (pp. 3671–3675).
+Sobotova, L., Jurkovicova, J., Stefanikova, Z., Sevcikova, L., & Aghova, L. (2010). Community response to environmental noise and the impact
+on cardiovascular risk score. Science of the Total Environment, 408(6), 1264–1270. https://doi.org/10.1016/j.scitotenv.2009.12.033
+Sørensen, M., Hvidberg, M., Hoffmann, B., Andersen, Z. J., Nordsborg, R. B., Lillelund, K. G., et al. (2011). Exposure to road traffic and railway
+noise and associations with blood pressure and self-reported hypertension: A cohort study. Environmental Health, 10(1), 1–11. https://doi.
+org/10.1186/1476-069x-10-92
+Spreng, M. (2000a). Central nervous system activation by noise. Noise and Health, 2(7), 49.
+Spreng, M. (2000b). Possible health effects of noise induced cortisol increase. Noise and Health, 2(7), 59.
+Stansfeld, S., & Clark, C. (2015). Health effects of noise exposure in children. Current environmental health reports, 2(2), 171–178. https://doi.
+org/10.1007/s40572-015-0044-1
+Stansfeld, S., Hygge, S., Clark, C., & Alfred, T. (2010). Night time aircraft noise exposure and children's cognitive performance. Noise and
+Health, 12(49), 255. https://doi.org/10.4103/1463-1741.70504
+Stansfeld, S. A., Berglund, B., Clark, C., Lopez-Barrio, I., Fischer, P., Öhrström, E., et al. (2005). Aircraft and road traffic noise and children's
+cognition and health: A cross-national study. The Lancet, 365(9475), 1942–1949. https://doi.org/10.1016/s0140-6736(05)66660-3
+Subramanian, S., Ackerson, L. K., Subramanyam, M. A., & Wright, R. J. (2007). Domestic violence is associated with adult and childhood asthma
+prevalence in India. International Journal of Epidemiology, 36(3), 569–579. https://doi.org/10.1093/ije/dym007
+Tait, J. L., Aisbett, B., Hall, S. J., & Main, L. C. (2019). The inflammatory response to simulated day and night emergency alarm mobilisations.
+PLoS One, 14(6), e0218732. https://doi.org/10.1371/journal.pone.0218732
+Tatomir, A., Micu, C., & Crivii, C. (2014). The impact of stress and glucocorticoids on memory. Clujul Medical, 87(1), 3–6. https://doi.
+org/10.15386/cjm.2014.8872.871.at1cm2
+Tomei, F., Fantini, S., Tomao, E., Baccolo, T. P., & Rosati, M. V. (2000). Hypertension and chronic exposure to noise. Archives of Environmental
+Health: An International Journal, 55(5), 319–325. https://doi.org/10.1080/00039890009604023
+Tomei, F., Papaleo, B., Baccolo, T. P., Persechino, B., Spanò, G., & Rosati, M. V. (1994). Noise and gastric secretion. American Journal of Industrial Medicine, 26(3), 367–372. https://doi.org/10.1002/ajim.4700260310
+Vallet, M., Gagneux, J.-M., Blanchet, V., Favre, B., & Labiale, G. (1983). Long term sleep disturbance due to traffic noise. Journal of Sound and
+Vibration, 90(2), 173–191. https://doi.org/10.1016/0022-460x(83)90527-8
+Van Campen, L. E., Murphy, W. J., Franks, J. R., Mathias, P. I., & Toraason, M. A. (2002). Oxidative DNA damage is associated with intense
+noise exposure in the rat. Hearing Research, 164(1–2), 29–38. https://doi.org/10.1016/s0378-5955(01)00391-4
+Wang, W., Zhang, L. S., Zinsmaier, A. K., Patterson, G., Leptich, E. J., Shoemaker, S. L., et al. (2019). Neuroinflammation mediates noise-induced
+synaptic imbalance and tinnitus in rodent models. PLoS Biology, 17(6), e3000307. https://doi.org/10.1371/journal.pbio.3000307
+Waye, K. P. (2004). Effects of low frequency noise on sleep. Noise and Health, 6(23), 87.
+Waye, K. P., Agge, A., Clow, A., & Hucklebridge, F. (2004). Cortisol response and subjective sleep disturbance after low-frequency noise exposure. Journal of Sound and Vibration, 277(3), 453–457. https://doi.org/10.1016/j.jsv.2004.03.004
+Waye, K. P., Clow, A., Edwards, S., Hucklebridge, F., & Rylander, R. (2003). Effects of nighttime low frequency noise on the cortisol response to
+awakening and subjective sleep quality. Life Sciences, 72(8), 863–875. https://doi.org/10.1016/s0024-3205(02)02336-6
+Willich, S. N., Wegscheider, K., Stallmann, M., & Keil, T. (2006). Noise burden and the risk of myocardial infarction. European Heart Journal,
+27(3), 276–282. https://doi.org/10.1093/eurheartj/ehi658
+Wright, R. J., & Fisher, E. B. (2003). Putting asthma into context: Community influences on risk, behavior, and intervention. Neighborhoods
+and Health, 233–264.
+Zhuang, H., Yang, J., Huang, Z., Liu, H., Li, X., Zhang, H., et al. (2020). Accelerated age-related decline in hippocampal neurogenesis in
+mice with noise-induced hearing loss is associated with hippocampal microglial degeneration. Aging (Albany NY), 12(19), 19493–19519.
+https://doi.org/10.18632/aging.103898
+
+LEE ET AL.
+
+27 of 27
+
+

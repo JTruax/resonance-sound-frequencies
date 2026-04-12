@@ -1,0 +1,1080 @@
+IBRO Reports 9 (2020) 290–301
+
+Contents lists available at ScienceDirect
+
+IBRO Reports
+journal homepage: www.journals.elsevier.com/ibro-reports
+
+Research Paper
+
+Large effects of brief meditation intervention on EEG spectra in
+meditation novices
+P. Stapleton a, *, J. Dispenza b, S. McGill c, D. Sabot a, M. Peach d, D. Raynor a
+a
+
+School of Psychology, Bond University, Gold Coast, Queensland, 4229, Australia
+Encephalon Inc., WA, USA
+c
+School of Psychology, University of Auckland, New Zealand
+d
+School of Psychology, Evexia Pty Ltd, Brisbane, Australia
+b
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Stress
+Brain waves
+Meditation
+States of consciousness
+Electroencephalogram (EEG)
+
+This study investigated the impact of a brief meditation workshop on a sample of 223 novice meditators. Par­
+ticipants attended a three-day workshop comprising daily guided seated meditation sessions using music without
+vocals that focused on various emotional states and intentions (open focus). Based on the theory of integrative
+consciousness, it was hypothesized that altered states of consciousness would be experienced by participants
+during the meditation intervention as assessed using electroencephalogram (EEG). Brainwave power bands
+patterns were measured throughout the meditation training workshop, producing a total of 5616 EEG scans.
+Changes in conscious states were analysed using pre-meditation and post-meditation session measures of delta
+through to gamma oscillations. Results suggested the meditation intervention had large varying effects on EEG
+spectra (up to 50 % increase and 24 % decrease), and the speed of change from pre-meditation to post-meditation
+state of the EEG co-spectra was significant (with 0.76 probability of entering end-meditation state within the first
+minute). There was a main 5 % decrease in delta power (95 % HDI = [− 0.07, − 0.03]); a global increase in theta
+power of 29 % (95 % HDI = [0.27, 0.33]); a global increase of 16 % (95 % HDI = [0.13, 0.19]) in alpha power; a
+main effect of condition, with global beta power increasing by 17 % (95 % HDI = [0.15, 0.19]); and an 11 %
+increase (95 % HDI = [0.08, 0.14]) in gamma power from pre-meditation to end-meditation. Findings provided
+preliminary support for brief meditation in altering states of consciousness in novice meditators. Future clinical
+examination of meditation was recommended as an intervention for mental health conditions particularly
+associated with hippocampal impairments.
+
+1. Introduction
+Mental stress is a global health epidemic being linked to more than
+23 million worldwide deaths each year (Fink, 2016; Go et al., 2004).
+Chronic stress is associated with cognitive impairments to the hippo­
+campal region of the brain that regulates memory and learning (Hains
+et al., 2009; Kooij et al., 2014) and with negative physiological effects
+including increased inflammation and reduced immunity (Marsland
+et al., 2017). A range of mindfulness-based techniques have been
+designed to reduce stress and enhance quality-of-life indicators (Bohl­
+meijer et al., 2010; Shapiro, 2009). In particular, there is increasing
+research interest on the effect of meditation on whole-health benefits (e.
+g., as a catalyst to improve immune function; Davidson et al., 2003;
+Jacobs et al., 2011). Meditation is a conscious and complex cognitive
+
+process, involving concentration and receptive attention (Tang et al.,
+2015). Examples of meditation include mantra meditation, tai chi, and
+chi gong (Ospina et al., 2007). Meditation is considered a mechanism
+that can elicit altered states typically associated with unconscious brain
+function (Shapiro, 2009). Focused-attention meditation practices
+require sustained attention on a specific range of inner or outer expe­
+rience. While open-awareness, open-monitoring, and mindfulness
+meditation practices incorporate a broader attentional spotlight on an
+array of dynamic stimuli (Cahn and Polich, 2006; Lutz et al., 2008).
+Further still, guided meditation approaches typically begin with relax­
+ation directed by another expert that guides the meditator toward spe­
+cific inner experiences (e.g., imaginative situations, thought processes).
+Guided meditation is considered particularly beneficial because the
+nature of instructions tend to relate to some specific purpose, such as
+
+* Corresponding author at: School of Psychology, Bond University, Gold Coast, Queensland, 4229, Australia.
+E-mail address: pstaplet@bond.edu.au (P. Stapleton).
+https://doi.org/10.1016/j.ibror.2020.10.006
+Received 13 January 2020; Accepted 26 October 2020
+Available online 27 October 2020
+2451-8301/© 2020 The Authors. Published by Elsevier Ltd on behalf of International Brain Research Organization. This is an open access article under the CC
+BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+healing or self-improvement. Examples of meditative goals include
+creating prosperity, improving relationships, fostering forgiveness, and
+evoking higher states of consciousness (Moral, 2017).
+Growing evidence suggests that meditation offers wide-ranging
+physiological and psychological benefits. Meditation practices are
+associated with enhanced executive function and working memory
+together with improvements in mental health condition severity (e.g.,
+anxiety, depression, eating disorders; (Fox et al., 2014; Perich et al.,
+2013; Shapiro, 2009; Vøllestad et al., 2012; Williams et al., 2014).
+Meditation encompasses a broad set of psychosomatic practices that
+are designed to enhance attentional regulation toward self-created
+mental images (interoceptive or exteroceptive foci) and to optimize
+the processing of present-moment experiences (Jain et al., 2015; Robins
+et al., 2012). These capabilities have been mapped to corresponding
+areas in the brain including the dorsal system (voluntary, top-down
+orienting) and the ventral system which is implicated in
+stimulus-driven, bottom-up attention (Shapiro, 2009). Studies using
+functional magnetic resonance imaging (fMRI) have helped delineate
+systemic maps of the physiological dimensions associated with medita­
+tion (Church, 2013). In particular, modern electroencephalogram (EEG)
+mapping and neuroimaging techniques have enabled the examination of
+differential brain function across a continuum of states including
+meditative experiences (Barinaga, 2003; Cahn and Polich, 2006).
+Distinct cognitive networks are linked to conscious processing tasks
+during attentional tasks (e.g., orientation, conflict monitoring; Davidson
+et al., 2003) and to objective and receptive attentional-basis of mind­
+fulness practice (e.g., non-judgement, acceptance; (Anderson et al.,
+2007; Shapiro and Schwartz, 2000). Increased attentional control has
+been observed in individuals with advanced meditation practice (Moore
+and Malinowski, 2009). One study examined meditation competence in
+participants with varying levels of meditation experience using EEG
+data. Event-related potentials (ERPs) were assessed during a stimulus
+discrimination and attention activity (Atchley et al., 2016). All partici­
+pants discriminated between target ‘tones’ with the use of ERP priming.
+Further, no performance difference was observed between novice and
+experienced meditator groups. This was one of the first studies to sug­
+gest that proficiency in attentional training using meditation practice
+can be achieved relatively quickly.
+Theoretical models of consciousness suggest that conscious and un­
+conscious processes depend on distributed neuronal components acting
+in functionally integrated ways (Schutter et al., 2004; Smith, 2012).
+Meditation is, therefore, thought to offer a unique vehicle for examining
+these processes. That is since both conscious and unconscious brain
+functioning simultaneously, meditation provides an opportunity to
+observe the transition from a normal awake state to an alert yet altered
+state of consciousness (Davidson et al., 2012). States of consciousness
+are described as conditions that differ qualitatively from others by the
+presence of, or conditions and characteristics that are, absent in other
+states (Tart, 1972). Since states of consciousness play a critical role in
+forming human experience across a range of cognitive and behavioural
+functioning, examinations of the underlying conscious and unconscious
+brain mechanisms are crucial (Merrick et al., 2014; Vieten et al., 2018;
+Winkelman, 2011). Such insights may offer clinical outcomes that can be
+directed to further assist psychological and physiological distress.
+The model of integrative consciousness has evolved from the theory
+that physiological mechanisms of “transcendent states” are based on a
+common neurochemical pathway involving the temporal lobe (Mandell,
+1980). From this theoretical perspective, meditation practice is thought
+to produce serotonin inhibition to the hippocampal cells, which in turn
+increases cell activity and the manifestation of hippocampal septal
+slow-wave EEG activity (i.e., alpha, delta, and theta) that imposes a
+synchronous slow-wave pattern across the lobes (Winkelman, 2010,
+2011). Integration is manifested in the entrainment of the frontal cortex
+by highly coherent and synchronized slow-waves discharges that
+emanate from the limbic system and related lower-brain structures.
+These entrainments occur at a variety of frequencies, but two
+
+predominant patterns are synchronised slow-wave theta bands (3–6
+cycles per second) and high-frequency gamma oscillations (40+cps).
+These synchronised brain wave patterns are referred to as an integrative
+mode of consciousness (Winkelman, 2011).
+Prior research has examined meditation effects in clinical samples
+and individuals with extensive meditation expertise (e.g., Buddhist
+monks, shamans, and practitioners with greater than 10 years’ experi­
+ence mindful practice, Flor-Henry et al., 2017; Tang et al., 2015). In
+particular, differential brain activations have been observed in experts
+during meditation, as a result of various styles of meditation frequently
+measured via EEG. Further, physiological measures of naïve meditators
+have mirrored those of highly experienced meditators after a single
+meditation session (Fennell et al., 2016). However, little research has
+offered an electrophysiological examination of the meditative experi­
+ence in individuals with limited meditation experience and with a
+guided meditation approach. To develop this research gap, the current
+study aimed to examine the impact of intensive meditation practice
+(2–4 h of meditation practice per day) on a sample of novice meditators.
+Factors of the intervention (including environment and meditation ap­
+proaches) were optimized to accelerate learning amongst participants.
+The current study aimed to assess participants’ altered states of con­
+sciousness during meditation by comparing the pattern of brainwave
+power bands at each meditation end-point with baseline measures (i.e.,
+alpha, delta and theta oscillations) and through assessment of
+high-frequency gamma synchronization. Drawing on the theory of
+integrative consciousness (Winkelman, 2011), it was hypothesized that
+altered states of consciousness would be detected by altered patterns of
+brainwaves across each meditation in the sample of novice meditators.
+2. Materials and method
+2.1. Participants and procedure
+The initial convenience sample consisted of 468 participants aged
+19–83 years (M = 50.56, SD = 14.52), of which 312 were female (71.4
+%) and 125 were male (28.6 %). All participants provided written
+consent to participate in the study. Participants were meditation novices
+or had limited previous exposure to forms of guided meditations. All
+participants attended meditation training workshops delivered by Dr
+Joseph Dispenza, D.C. held in various North American locations. The
+meditation training, known as “Advanced Workshop”, comprised twothree daily sessions across three days. In each session, participants
+attended psychoeducation-based talks (e.g., lecture about the role of
+hormones in stress; Dispenza, 2014) and participated in a guided seated
+meditation to music (without vocals and with open focus) that was
+approximately 60-min in duration. EEG brainwave data was recorded
+for each participant throughout the meditation session, with
+pre-meditation EEG data compared to end-point meditation EEG data
+for each session of the meditation training program.
+2.2. EEG analyses
+EEG was measured using a standard 10/20 19-electrode array. There
+was a main effect of meditation on EEG spectra, and an interaction be­
+tween electrode site and mediation condition. For example, Fig. 7 shows
+this interaction colour coded to show the most negative and positive
+changes in spectra from meditation. However, the model indicated that
+there were no evidence of systematic interactions between electrode
+location and meditation technique, Indicating that the sources may be
+the same across the meditation techniques but the intensity and com­
+bination of band power changes differed between techniques. The EEG
+setup process required 10-min per participant, in which head circum­
+ference measures were matched to an EEG cap (small, medium, and
+large sizes). The caps were calibrated approximately two-inches above
+the eyebrow and followed a line beginning at the middle of the forehead
+and continued around the head to meet at the designated beginning
+291
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+types on EEG spectra, and the EEG recorded during meditation was used
+to assess the neural dynamics of meditation. The R package ggplot2 and
+MNE-Python were used to create the figures (Hadley and Sievert, 2016).
+
+point. Baseline recordings were obtained, which included eyes closed (4min) and brain on task (4-min) before meditation sessions were
+recorded.
+2.3. Meditation types
+
+3.2. Model fitting
+
+Across the three-day workshop, 468 participants engaged in
+approximately three meditations per day (see Table 1), which produced
+a total of 5616 EEG scans. The seated guided meditation, led by the
+second author emphasized breathing, visualization, and focused con­
+centration (internalized attention).
+
+Bayesian parameter estimation was used to assess results (McGill
+et al., 2017). This analysis was selected since the intentions of the
+experimenter are stated explicitly via the model and the prior distribu­
+tions. Full distributions for credible values for all parameters in the
+model were provided rather than single values. As this procedure does
+not use p values or confidence intervals, Bayesian parameter estimation
+is considered to provide more information than null hypothesis signifi­
+cance testing (Kruschke, 2013). Posterior distributions were summa­
+rized with their median and highest density interval (HDI) (Kruschke
+and Liddell, 2015). The HDI contains the 95 % most likely values of the
+distribution. R version 3.5.1 (R Core Team, 2018) was used for all sta­
+tistical analyses. Stan 2.17.0 (Carpenter et al., 2017) with the RStan
+2.17.3 (Stan Development Team, 2018) interface to fit all models. Stan
+estimates the posterior distribution using a Hamiltonian Monte Carlo
+(HMC) procedure. For each model, four chains concurrently drew 2000
+samples, 1000 of which were warm-up. The resulting sample size was 4,
+000. The posterior samples for each parameter were evaluated for
+convergence via inspection of both the trace plots and the Gel­
+man–Rubin ̂r statistic (Gelman and Rubin, 1992), where ̂r near 1.00
+indicate that the chains have converged.
+
+3. Results
+3.1. Pre-processing
+Given the variability in pre-processing and montages, data from
+headsets recordings of linked ear reference with the 0.5− 80 Hz band
+pass pre-processing was used, which reduced the sample to 283 partic­
+ipants. Data for 60 participants were removed due to a short duration of
+in-session recordings (< 10 min) as durations of less than 10 min were
+not long enough to be viable for the neural dynamics assessment. This
+left a final sample of 223 participants. EEG data were exported in EDF
+format and imported into MNE-Python (Version 17.1; Gramfort et al.,
+2013, 2014) for subsequent analysis. The PREP pipeline was used to
+detect channels corrupted by noise (Bigdely-Shamlo et al., 2015) with all
+non-working electrodes interpolated via the Spherical splines (Perrin
+et al., 1989, 1990). The data were bandpass filtered to 1− 50-Hz with FIR
+filter (Rabiner et al., 1978). Potential eye blinks were detected using a
+moving median, with a median between 30–300 microvolts with a
+window of 15 samples (60-ms) labelled as a blink, as measured at Fp1
+and Fp2 electrodes. The data were transformed by the surface Laplacian
+(via spherical interpolation) to provide a more robust reference-free
+signal (Kayser and Tenke, 2006). The data surrounding the eye blink
+events were segmented int − 500 to 500 ms epochs. Independent
+component analysis was conducted using the Picard algorithm (Ablin
+et al., 2018) to isolate and removed EOG artefacts present in the data by
+selecting the component with the largest absolute Pearson r correlation
+coefficient to the eye blink epochs via find_bad_eog function in
+MNE-Python. The last five minutes of pre-meditation and meditation
+recordings were used to compare the effects of the various meditation
+
+3.3. Frequency comparison via machine learning
+To examine whether there was an effect of meditation on the EEG
+frequency spectra, machine learning classifiers were individually
+trained to discriminate between before meditation data and the last five
+minutes of meditation (condition). A Riemann-geometry based classifier
+(Congedo et al., 2017) using the co-spectra of the EEG between four and
+45-Hz (250-ms hanning window, 75 % overlap, 4-Hz resolution) for 2-s
+non-overlapping epochs for pre-meditation and the end-meditation data
+was used. Riemannian-geometry based classifier was selected due to this
+type of classifier being among the best in terms of performance in BCI
+classification, ease of implementation, and good generalisation capa­
+bility compared other options such as deep learning (Lotte et al., 2018).
+Additionally, the performance during validation was very high and thus
+was suitable for the purpose of estimating the neural dynamics of the
+meditation techniques. The classifier used tangent-space logistic
+regression (Congedo et al., 2017) to discriminate between the two states.
+Random-split (75 % train, 25 % test) 10 fold-cross validation was used to
+estimate performance measured by the classifier’s confusion matrix. To
+estimate overall performance a Multinomial-Dirichlet hierarchical
+model was fitted to the mean confusion matrix of each participant (See
+model description). Confusion matrix estimates were then summarized
+into accuracy and proficiency measures (White et al., 2004). Accuracy
+and proficiency were calculated from the confusion matrix using the
+standard procedure: Accuracy, by taking the sum of the True positives
+and True negatives divided by the total of the confusion matrix and
+proficiency, by calculating the mutual information of the expected and
+the predicted outcomes, divided by the entropy of the expected out­
+comes (Caelen, 2017; White et al., 2004).
+
+Table 1
+Meditation Sessions by Time of Day.
+S
+
+Time
+
+Meditation Type
+
+Day 1 Type
+1 (D1T1)
+
+Morning (9.00am)
+Meditation
+
+Day 1 Type
+2 (D1T2)
+Day 1 Type
+3 (D1T3)
+Day 2 Type
+1 (D2T1)
+
+Midday Meditation
+(12 noon)
+Afternoon Meditation
+(3.00 pm)
+Morning Meditation
+(9.00am)
+
+Focus on elevated emotion levels and
+liberating energy in body to attune, align
+and connect the associated chakra centres
+Focus on emotion of gratitude
+
+Day 2 Type
+2 (D2T2)
+Day 2 Type
+3 (D2T3)
+
+Midday Meditation
+(12 noon)
+Afternoon Meditation
+(3.00 pm)
+
+Day 3 Type
+1 (D3T1)
+
+Early Morning
+(6.30am) Meditation
+
+Day 3 Type
+2 (D3T2)
+Day 4
+(D4T1)
+
+Mid-morning
+Meditation (10.00am)
+Very early morning
+(4.00am) Meditation
+
+Focus on surrendering
+Focus on elevated emotion levels and
+liberating energy in body to attune, align
+and connect the associated chakra centres
+Focus on a specific intention to
+materialise a specific event in life
+Focus on elevated emotion and a sense of
+wholeness and oneness with the world
+(via an open focus meditation)
+Focus on elevated emotion levels and
+liberating energy in body to attune, align
+and connect the associated chakra centres
+Focus on creating a future intention
+
+3.4. Frequency comparison model description
+We were interested in how well the classifiers discriminated pre and
+end-meditation states, and whether there were any differences in per­
+formance between meditation techniques. A participant classifier’s
+̅→
+confusion matrix, Cp , was modelled as a random sample from a
+multinomial distribution:
+
+Focus on moving energy through the body
+to the brain to activate the pineal gland to
+induce a mystical experience (seated and
+laying down meditation)
+
+292
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+→
+̅→
+Cp ∼ Multinomial(θp )
+
+3.7. Neural dynamics model description
+
+̅→
+where Cp estimated the probabilities of true negatives, false positives,
+̅→
+false negatives, and true positives for an individual classifier. Cp was
+given a Dirichlet prior:
+
+We were interested in quantifying how meditation changes EEG cospectra and how effectively various meditation techniques facilitate this
+change. To assess this change logistic regression was carried out, pro­
+ducing intercept and slope values for each participant. Participants’
+intercept and slope, were modelled separately, yp[i] , as a draw from a
+Normal distribution:
+
+→
+̅→
+θp ∼ Dirichlet( θt × κt )
+̅→
+where θt measured the group probabilities for each cell in the confu­
+sion matrix for a particular meditation technique and κt estimated the
+̅→ ̅→
+concentration of θt . θt was also given a Dirichlet prior:
+→
+̅→
+̅→
+θt ∼ Dirichlet( θg × κg ) where θg estimated overall performance
+̅→
+and κg how closely the different meditation techniques matched the θg
+estimate. All κx parameters were given diffuse gamma priors:
+
+yp[i] ∼ Normal(μ[i] , σ[i] )
+Where μ was derived from the linear combination:
+μ[i] = β0[i] + βt[i] × xt[i] where β0 parameter estimates the group central
+
+tendency whereas βt measured the effect of technique on intercept and
+slope. β0 was given a normal prior centred on the mean of the data, with
+10 times the standard deviation of the data:
+( )
+β0[i] ∼ Normal(y[i] , Sd y[i] ) × Sd(y))
+
+κx ∼ Gamma(2, 0.1)
+
+σ parameter was given diffuse gamma prior as per :
+
+σ [i] ∼ Gamma(2.0, 0.1)
+
+3.5. Frequency comparison results
+
+βt was given a sum-to-zero constraint by zero-centring a simplex vector,
+̅→
+st[i] , and multiplying it by a scaling variable, σ t :
+β = σ × ( ̅→
+s − 1 ) where the simplex was given a uniform
+
+The model indicated that the classifiers were extremely accurate,
+with the overall accuracy of 97 % (95 % HDI = [0.96, 0.98]) and pro­
+ficiency of 0.81 (95 % HDI = [0.75, 0.86]). There was no evidence for a
+credible effect of meditation technique on accuracy or proficiency as
+displayed in Figs. 1 and 2. This invariance to meditation technique is
+important for the following neural dynamics analysis as differences
+between classifier performance could confound the results.
+
+t[i]
+
+t[i]
+
+t[i]
+
+nt
+
+Dirichlet prior and the scale given a gamma prior:
+(→)
+̅→
+st[i] ∼ Dirichlet 1
+
+σ t[i] ∼ Gamma(2.0, 0.1)
+Priors were chosen to be weakly informative to the scale of the data.
+
+3.6. Meditation neural dynamics
+Data during meditation was epoched in the same manner as the
+frequency comparison analysis and then classified as like pre-meditation
+or end-meditation. This created a binary time series for each individual,
+providing insight as to when meditation changed the EEG co-spectra and
+how the different techniques impacted this dynamic relationship. Lo­
+gistic regression was applied to each participants’ classification time
+series which summarised the series into intercept and slope pairs. These
+pairs were assessed with a Bayesian general linear model to quantify the
+effectiveness of each meditation technique at inducing the end-state EEG
+co-spectra (see model description).
+
+3.8. Neural dynamics results
+Results indicated that there was insufficient evidence to detect the
+effect of meditation technique on the logistic regression intercept values
+(see Fig. 3). However, the intercepts for each meditation technique were
+quite large (see Fig. 4), where the probability of EEG-co-spectra being
+like the end-meditation state was 0.76 (95 % HDI = [0.71, 0.81]) at the
+start of meditation.
+There was a significant effect of meditation technique on logistic
+regression slope with D2S2 0.0231 larger than the slope of D3S2 (95 %
+
+Fig. 1. Shows violin plots of posterior estimates for classifier accuracy by meditation technique, indicating invariance of accuracy across meditation techniques.
+293
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 2. Depicts violin plots of posterior estimates for classifier proficiency by meditation technique, indicating invariance of proficiency across medita­
+tion techniques.
+
+Fig. 3. Shows a violin plot of the posterior estimates of logistic regression intercept of classification series for each meditation technique. The intercepts are quite
+large indicating changes in EEG co-spectra occurred quite quickly and the figure also depicts the invariance of intercept across techniques.
+
+HDI = [0.0003, 0.04472], zero not included). This suggests that D2S2
+induced the meditation-end state faster than D3S2 technique, as dis­
+played in Fig. 5.
+
+(see Buzsaki, 2006) with all canonical power bands related to medita­
+tion (Lee et al., 2018).
+3.10. Power band analysis model description
+
+3.9. Power band analysis
+
+We were interested in measuring the effect of meditation on EEG
+power bands and whether there were any differences between medita­
+tion types. Each power band, y, was modelled separately, as a random
+draw from a log-normal distribution:
+y ∼ lognormal(μ, σ) ~ log-normal(
+where σ represented the standard deviation, and μ the mean esti­
+mate:
+
+Pre-meditation and end-meditation data were epoched to 2-s nonoverlapping windows and their power spectral density (PSD) were
+estimated using the multitaper method (Thomson, 1982). Band power
+were derived from PSD summing over 1− 4 Hz for Delta, 4− 8 Hz for
+theta, 8− 13 Hz for alpha, 15–25 for beta, and 35− 45 Hz for gamma
+using Simpson’s rule for integration. The mean was recorded for each
+participant, at each electrode, both for pre-meditation and
+end-meditation conditions. EEG power spectra are generated predomi­
+nantly from cortical sources with some input from subcortical structures
+
+μ = β0 + βp × xp + βe × xe + βc × xc + βt × xt + βe×c × xe×c + βe×t × xe×t
++ βc×t × xc×t + βe×c×t × xe×c×t
+294
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 4. Shows the median estimates for logistic regression of classification series for each meditation technique.
+
+Fig. 5. Illustrates a violin plot of the posterior estimates for logistic regression slopes of classification series for each meditation technique. D2S2 has a larger slope
+than D3S2 indicating end-meditation EEG co-spectra was achieved more rapidly for D2S2.
+
+given the log scale of the model:
+
+where β0 is the overall baseline, βp is baseline specific to a participant, βe
+estimates the effect of electrodes, βc measures the effect of meditation
+condition (before or end-meditation), t is parameter for the effect of
+meditation technique. The interaction parameters βe×c measured elec­
+trode within each condition, βe×t estimated the effect of electrode within
+each meditation technique, βc×t quantifies the interaction between
+condition and meditation technique, and βe×c×t is the parameter for the
+three-way interaction between electrode, condition and technique. The
+baseline parameter was given a normal prior:
+β0 ∼ Normal(mean(log(y) ), 10 × Sd(log(y))) whereas each other
+factor and interaction parameters were given sum-to-zero constraints
+using the k-1 procedure:
+
+σ x ∼ Gamma(1.64, 0.32)
+βe×t , βe×c , and βe×c×t were given fixed standard deviation of 1 to avoid
+problematic shrinkage which was adversely affecting the Hamilton
+Monte Carlo sampling.
+3.11. Delta
+There was a main 5 % decrease in delta power (95 % HDI = [− 0.07,
+− 0.03]) after meditation compared to pre-meditation. There was also a
+main effect of meditation where D1S2 had 72 % higher delta power than
+D2S1 (95 % HDI = [0.04, 1.48]). Furthermore, a credible interaction
+between the meditation technique and condition was found (see Fig. 6).
+D1S2, D3S1, and D4S1 had the highest increase (16 %, 18 %, and 18 %
+with 95 % HDI = [0.07, 0.25], [0.1, 0.26], and [0.08, 0.28], respec­
+tively), D2S2 had no evidence of a change in power (95 % HDI = [− 0.08,
+0.05] containing zero), and D1S1, D1S3, D2S1, D2S3, and D3S2 showed
+a decrease in delta (− 12 %, − 16 %, − 24 %, − 18 %, and − 12 % with 95
+
+αx ∼ Normal(0, σ x )βx[1:k− 1] = αx
+∑
+βx[k] = −
+
+αx[i]
+
+With interaction parameters constrained to sum to zero across each
+predictor. σx parameters were drawn from a diffuse gamma distribution,
+295
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 6. Depicts violin plots of the posterior estimates for percent change in Delta power for each meditation technique, and indicates a varied effect of technique,
+with groups showing increases (D1S2, D3S1, D4S1), invariance (D2S2) and decreases (D1S1, D1S3, D2S1, D2S3, D3S2) in power.
+
+3.13. Alpha
+
+% HDI = [− 0.19, − 0.05], [− 0.23, − 0.11], [− 0.29, − 0.19], [− 0.23,
+− 0.13], and [− 0.18, − 0.05], respectively). Fig. 7 illustrates the main
+effect of electrodes with central-parietal electrodes showing more delta
+power than occidental electrodes and more than frontal-temporal sites.
+No interactions involving electrode with the other predictors were found
+to be credible. Fig. 7 is therefore the change in proportion due to
+mediation for each power band as estimated by the model’s interaction
+between electrode and condition parameters. This effectively collapses
+across meditation technique including all data from all techniques as
+there was no credible evidence for a three-way interaction between
+electrode, condition, and technique.
+
+There was a global increase of 16 % (95 % HDI = [0.13, 0.19]) in
+alpha power due to meditation. There was no credible evidence for an
+effect of technique with all 95 % HDI including zero. There was a
+credible interaction for alpha power condition between meditation
+technique (see Fig. 9). D1S2, D2S3, and D3S2 had the largest increases in
+alpha (25 %, 32 %, and 39 % with 95 % HDI = [0.16, 0.34], [0.24, 0.39],
+and [0.29, 0.49]) followed by D1S1, D2S1, D2S2, D3S1 (16 %, 17 %, 13
+%, and 17 % with 95 % HDI = [0.07, 0.25], [0.09, 0.24], [0.06, 0.2], and
+[0.09, 0.24]) with no credible change for D1S3 and D4S1 (95 % HDI =
+[− 0.09, 0.05], [− 0.13, 0.03], zero included). Fig. 9 shows the effect of
+electrode on alpha power, with high alpha over the occipital and parietal
+electrodes, no change from baseline alpha in the frontal central chan­
+nels, and a decrease in the temporal sites. There were no interactions
+involving electrodes with the other predictors.
+
+3.12. Theta
+There was a global increase in theta power of 29 % (95 % HDI =
+[0.27, 0.33]) from meditation. Results also showed a main effect of
+meditation technique, where D1S2 had more theta power than D2S1 and
+D2S3. There was also an interaction between condition and meditation
+technique (see Fig. 8). D1S2, D3S1, and D3S2 had the largest increases
+(47 %, 50 %, and 43 % with 95 % HDI = [0.37, 0.58], [0.4, 0.59], and
+[0.34, 0.52], respectively) then D1S1, D2S2, and D4S1 (29 %, 33 %, and
+33 % with 95 % HDI = [0.2, 0.39], [0.26, 0.41], and [0.23, 0.44]) fol­
+lowed by D1S3 and D2S3 (19 % and 14 %, with 95 % HDI = [0.12, 0.27]
+and [0.08, 0.21]), with no credible change in theta for D2S1 (95 % HDI
+= [− 0.02, 0.11], zero included). Fig. 8 shows the effect of electrode on
+theta power, with midline electrodes having the most theta power fol­
+lowed by parietal and occipital channels, with less power at the frontaltemporal sites. There was no credible evidence for interactions involving
+electrode with the other predictors.
+
+3.14. Beta
+There was a main effect of condition, with global beta power
+increasing by 17 % (95 % HDI = [0.15, 0.19]) from pre-meditation to
+end-meditation. There was no main effect of meditation with all 95 %
+HDI including zero. However, there was an interaction between condi­
+tion and meditation technique (see Fig. 10), where D1S2, D2S2, D2S3,
+D3S1, and D3S2 had the greatest increase in beta power (30 %, 30 %, 20
+%, 32 %, and 33 % with 95 % HDI = [0.22, 0.39], [0.23, 0.38], [0.14,
+0.26], [0.24, 0.4], and [0.25, 0.41]) followed by D4S1 (11 % with 95 %
+HDI = [0.03, 0.19]). D1S1, D1S3, and D2S1 had no credible evidence for
+change in beta power (95 % HDI = [− 0.06, 0.08], [− 0.07, 0.04], and
+[-0.03, 0.09], zero included). There was also a main effect of electrodes
+
+Fig. 7. Shows the overall median posterior estimate for proportion change in power band topographies.
+296
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 8. Consists of violin plots of the posterior estimates for percent change in Theta power for each meditation technique. The majority of techniques increased
+theta power.
+
+Fig. 9. Shows violin plots of the posterior estimates for percent change in alpha power for each meditation technique. The majority of techniques increased
+alpha power.
+
+with more beta power over central-parietal and occipital electrodes
+compared to the frontal-temporal ones as shown in Fig. 10. Finally, there
+were no interactions involving electrodes with the other predictors.
+
+0.01], zero included), with D1S1 exhibiting a decrease in gamma (− 17
+% with 95 % HDI = [− 0.25, − 0.09]). There was an effect of electrode
+location with more gamma power over the parietal occipital electrodes
+compared to the frontal-central and temporal sites (see Fig. 11). Finally,
+there were no credible interactions involving electrodes with the other
+predictors.
+
+3.15. Gamma
+An 11 % increase (95 % HDI = [0.08, 0.14]) in gamma power was
+observed from pre-meditation to end-meditation. There was no credible
+evidence for a main effect of technique with all 95 % HDI including zero,
+indicating that the groups had similar gamma power. However, there
+was an interaction between technique and condition, where D1S2,
+D3S2, and D4S1 had the largest increase in gamma power (36 %, 31 %,
+and 27 % with 95 % HDI = [0.24, 0.49], [0.2, 0.42], and [0.14, 0.41]),
+followed by D2S2, D2S3, and D3S1 (10 %, 14 %, and 16 % with 95 %
+HDI = [0.02, 0.19], [0.06, 0.23], and [0.07, 0.26]), D1S3 and D2S1 did
+not change in gamma power (95 % HDI = [− 0.07, 0.1] and [− 0.14,
+
+3.16. Results summary
+The machine learning model showed a high degree of accuracy for
+discerning pre-mediation and end-meditation EEG co-spectra for each
+meditation technique. The neural dynamics of each mediation technique
+was then assessed by applying machine learning models to the EEG cospectra forming a classification series. This series was modelled with
+logistic regression, which showed the rapid transition and stabilization
+from pre-meditation to end-meditation EEG co-spectra. Subsequently,
+297
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 10. Depicts violin plots of the posterior estimates for percent change in beta power for each meditation technique. The majority of techniques increased beta
+power, while three techniques (D1S1, D1S3, D2S1) had no change in beta power.
+
+Fig. 11. Shows violin plots of the posterior estimates for percent change in gamma power for each meditation technique. The majority of techniques increased
+gamma power, with two techniques showing no change in gamma power and one showing a decrease.
+
+the effect of each meditation technique was assessed for each power
+band by fitting a generalised linear model. This showed the heteroge­
+neity of changes to the power bands resulting from the meditation
+techniques (summarised in Fig. 12).
+
+from lower brain structures, and high-frequency gamma oscillations
+(Winkelman, 2011). Present results indicated there was a global increase
+of 29 % of theta power and an 11 % increase in gamma power from preto end-meditation state.
+Alpha activity in EEG during meditation too, has been implicated as a
+form of integration in the brain that leads to high-level cognitive pro­
+cesses (Hebert et al., 2005). This activity has been suggested to underlie
+the concept of the integrative mode of consciousness; that of enhanced
+synchronization of brain wave patterns (Winkelman, 2011). The addi­
+tional aspect of meditation-induced integration in the brain is often re­
+flected in biphasic hypersynchronous high-frequency gamma waves and
+the presence of gamma in meditation is a direct confirmation of the
+integrative model (Winkelman, 2011). This relates to the binding of
+diverse signals within the brain; and that gamma synchronization is
+modulated by the theta and alpha rhythms (Fries, 2009). Overall this
+study results support this model.
+
+4. Discussion
+This study provided an electrophysiological examination of the
+impact of meditation on a sample comprising 223 novice meditators.
+Based on the theory of consciousness, it was hypothesized that partici­
+pants would achieve altered states of consciousness observed in EEG
+data indicated as transformed states of brainwaves across each guided
+meditation. Results supported this hypothesis. Consciousness typically
+corresponds to the capacity to integrate information (Tononi, 2004). An
+integrative mode of consciousness is often typified in slow-wave the­
+ta-wave patterns that synchronize the frontal cortex with discharges
+298
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+
+Fig. 12. Summarises the posterior estimates for percent change in power for each meditation technique and each power band. The pattern of power changes were
+quite varied for each technique.
+
+Analyses suggested that EEG machine learning classifications were
+high, discriminating pre-meditation and post-meditation with 97 %
+accuracy. Differences between EEG co-spectra for pre- and postmeditation conditions were found in the sample. A relationship be­
+tween time in meditation and probability of end-meditation classifica­
+tion was identified, with D2S2 (intending an event to materialise) faster
+at inducing end-meditation state than D3S2 (setting a future intention).
+Additionally, differences in the EEG power bands were identified, with
+each meditation technique inducing different patterns of changes in the
+power bands.
+Results suggested the changing of brainwave patterns from beta
+brain waves (high, mid, and low range) to alpha brain waves occurred in
+a relatively short period. This result is consistent prior work, in which
+participants achieved proficiency in the attentional training aspect of
+meditation practice relatively quickly (Atchley et al., 2016). In the
+majority of participant meditation sessions, increases in beta and alpha
+power were observed, with alpha power more posterior over the oc­
+cipital channels compared to a more parietal distribution for beta power.
+Further, an increase in theta power focused on the fronto-central to
+parietal mid-line electrodes was found.
+The finding of increased gamma power at the parietal and occipital
+electrodes possibly originated from Brodmann’s Area 30. While recent
+research suggests that EEG can detect subcortical sources (Seeber et al.,
+2019), EEG’s ability to measure activity generated from such deep
+sources is not supported universally in the field of neuroscience (Sej­
+nowski and Paulsen, 2006); therefore this explanation remains specu­
+lative. Regardless, this finding builds on previous studies finding
+increased gamma over parieto-occipital channels (Berkovich-ohana
+et al., 2012; Cahn et al., 2010; Martínez Vivot et al., 2020; Schoenberg
+et al., 2018) by quantifying the power changes and showing rapid state
+change in novice meditators. While the functional role of gamma power
+has yet to be determined (Braboszcz et al., 2017), within the context of
+guided meditation, there is building evidence for a relationship to
+improved awareness (Cahn et al., 2010). van Lutterveld et al. (2017)
+used a neurofeedback paradigm to train participants to alter their
+gamma oscillations from the posterior cingulate cortex during medita­
+tion. It was found that gamma power was related to the subjective
+
+experience of effortless awareness. Furthermore, a study by Voss et al.
+(2014) directly manipulated neural oscillations via transcranial alter­
+nating current stimulation during sleep, finding that stimulation within
+the gamma band increased people’s awareness while dreaming. Taken
+together, this provides a coherent explanation of the increase in gamma
+over the parieto-occipital electrodes.
+The demonstration of the heterogeneous effects that guided medi­
+tation techniques can have on EEG power bands underlines the rele­
+vance of using such techniques to elucidate the subjective experiences of
+meditators. A recent survey conducted by Vieten and colleagues (2018)
+showed the vast range of experiences possible during meditation. Such a
+range of subjective experience could be related to the differences
+brought about by the various meditation techniques in this study.
+Further research could integrate qualitative research to understand
+better the links among guided meditation techniques, EEG power
+spectra, and subjective experience.
+Finally, future research providing brain imaging assessment of
+guided meditation training could offer critical insights. Since mindful­
+ness has been identified as a protective factor against proactive inter­
+ference and increased in hippocampal volume (Greenberg et al., 2019),
+future examination of guided meditation in the treatment of mental
+conditions characterized by impairments to working memory and hip­
+pocampal volume could have important clinical implications.
+4.1. Limitations
+Although this study has contributed insight into the mechanisms of
+change that can occur through meditation, the present findings should
+be interpreted in light of several limitations. Meditation session duration
+was varied, ranging from six to 90-min. As variability was not evenly
+spread across conditions (i.e., Day 2, Session 1 and Day 3 Session 1 re­
+cordings were < 10 min in duration), analysis of dynamic changes
+throughout meditation for these sessions was limited. Further, the cur­
+rent study lacked clinical measures to screen for mental health disorders
+among study participants. Future studies could use EEG data together
+with self-report measures and behavioural data to examine the rela­
+tionship between the EEG patterns and positive meditation outcomes.
+299
+
+IBRO Reports 9 (2020) 290–301
+
+P. Stapleton et al.
+
+This study lacked a control or comparison intervention, and experi­
+menter allegiance and bias may have been present in delivering the
+guided meditation. Finally, this was a convenience sample making it
+highly vulnerable to selection bias and the potential for sampling error.
+
+Carpenter, B., Gelman, A., Hoffman, M.D., Lee, D., Goodrich, B., Betancourt, M., et al.,
+2017. Stan: a probabilistic programming language. Grantee Submission 76 (1), 1 doi:
+10.18637/jss.v076.i01.
+Church, D., 2013. Clinical EFT as an evidence-based practice for the treatment of
+psychological and physiological conditions. Psychology 4 (8), 645–654. https://doi.
+org/10.4236/psych.2013.48092.
+Congedo, M., Barachant, A., Bhatia, R., 2017. Riemannian geometry for EEG-based braincomputer interfaces; a primer and a review. Brain-Comput. Interfaces 4 (3),
+155–174. https://doi.org/10.1080/2326263X.2017.1297192.
+Davidson, R.J., Kabat-Zinn, J., Schumacher, J., Rosenkranz, M., Muller, D., Santorelli, S.
+F., et al., 2003. Alterations in brain and immune function produced by mindfulness
+meditation. Psychosom. Med. 65 (4), 564. https://doi.org/10.1097/01.
+PSY.0000077505.67574.E3.
+Davidson, R.J., Dunne, J., Eccles, J.S., Engle, A., Greenberg, M., Jennings, P., et al., 2012.
+Contemplative practices and mental training: prospects for American education.
+Child Dev. Perspect. 6 (2), 146–153. https://doi.org/10.1111/j.175018606.2012.00240.x.
+Dispenza, J., 2014. You Are the Placebo: Making Your Mind Matter. Hay House, Inc.
+Fennell, A.B., Benau, E.M., Atchley, R.A., 2016. A single session of meditation reduces of
+physiological indices of anger in both experienced and novice meditators. Conscious.
+Cogn. 40, 54–66. https://doi.org/10.1016/j.concog.2015.12.010.
+Fink, G., 2016. Chapter 1 - stress, definitions, mechanisms, and effects outlined: lessons
+from anxiety. Stress: Concepts, Cognition, Emotion, and Behavior. Elsevier Inc.,
+pp. 3–11. https://doi.org/10.1016/B978-0-12-800951-2.00001-7
+Flor-Henry, P., Shapiro, Y., Sombrun, C., 2017. Brain changes during a shamanic trance:
+altered modes of consciousness, hemispheric laterality, and systemic psychobiology.
+Cogent Psychol. 4 (1), 1313522. https://doi.org/10.1080/23311908.2017.1313522.
+Fox, K.C.R., Nijeboer, S., Dixon, M.L., Floman, J.L., Ellamil, M., Rumak, S.P., et al., 2014.
+Is meditation associated with altered brain structure? A systematic review and metaanalysis of morphometric neuroimaging in meditation practitioners. Neurosci.
+Biobehav. Rev. 43, 48–73. https://doi.org/10.1016/j.neubiorev.2014.03.016.
+Fries, P., 2009. Neuronal gamma-band synchronization as a fundamental pro-cess in
+cortical computation. Annu. Rev. Neurosci. 32, 209–224.
+Gelman, A., Rubin, D.B., 1992. Inference from iterative simulation using multiple
+sequences. Stat. Sci. 7 (4), 457–472. https://doi.org/10.1214/ss/1177011136.
+Go, A.S., Chertow, G.M., Fan, D., McCulloch, C.E., Hsu, C., 2004. Chronic kidney disease
+and the risks of death, cardiovascular events, and hospitalization. N. Engl. J. Med.
+351 (13), 1296–1305. https://doi.org/10.1056/NEJMoa041031.
+Gramfort, A., Luessi, M., Larson, E., Engemann, D.A., Strohmeier, D., Brodbeck, C., et al.,
+2013. MEG and EEG data analysis with MNE-python. Front. Neurosci. 7, 267.
+https://doi.org/10.3389/fnins.2013.00267 [doi].
+Gramfort, A., Luessi, M., Larson, E., Engemann, D.A., Strohmeier, D., Brodbeck, C., et al.,
+2014. MNE software for processing MEG and EEG data. NeuroImage 86, 446–460.
+https://doi.org/10.1016/j.neuroimage.2013.10.027 [doi].
+Greenberg, J., Romero, V.L., Elkin-Frankston, S., Bezdek, M.A., Schumacher, E.H.,
+Lazar, S.W., 2019. Correction to: reduced interference in working memory following
+mindfulness training is associated with increases in hippocampal volume. Brain
+Imaging Behav. 13 (3) https://doi.org/10.1007/s11682-018-9890-4 [doi], 87–4.
+Hadley, W., Sievert, C., 2016. Ggplot2 : Elegrant Graphics for Data Analysis, 2nd ed.
+Springer, Cham.
+Hains, A.B., Vu, M.A.T., Maciejewski, P.K., van Dyck, C.H., Gottron, M., Arnsten, A.F.T.,
+2009. Inhibition of protein kinase C signaling protects prefrontal cortex dendritic
+spines and cognition from the effects of chronic stress. Proc. Natl. Acad. Sci. U.S.A.
+106 (42), 17957–17962. https://doi.org/10.1073/pnas.0908563106.
+Hebert, R., Lehmann, D., Tan, G., Travis, F., Arenander, A., 2005. Enhanced EEG alphatime domain phase synchrony during transcendental meditation: implications for
+cortical integration theory. Signal Processing 85, 2213–2232.
+Jacobs, T.L., Epel, E.S., Lin, J., Blackburn, E.H., Wolkowitz, O.M., Bridwell, D.A., et al.,
+2011. Intensive meditation training, immune cell telomerase activity, and
+psychological mediators. Psychoneuroendocrinology 36 (5), 664–6681. https://doi.
+org/10.1016/j.psyneuen.2010.09.010.
+Jain, F.A., Walsh, R.N., Eisendrath, S.J., Christensen, S., Rael Cahn, B., 2015. Critical
+analysis of the efficacy of meditation therapies for acute and subacute phase
+treatment of depressive disorders: a systematic review. Psychosomatics 56 (2),
+140–152. https://doi.org/10.1016/j.psym.2014.10.007.
+Kayser, J., Tenke, C.E., 2006. Principal components analysis of laplacian waveforms as a
+generic method for identifying ERP generator patterns: II. Adequacy of low-density
+estimates. Clin. Neurophysiol. 117 (2), 369–380 doi:S1388-2457(05)00368-8 [pii].
+Kooij, M.A., Fantin, M., Rejmak, E., Grosse, J., Zanoletti, O., Fournier, C., et al., 2014.
+Role for MMP-9 in stress-induced downregulation of nectin-3 in hippocampal CA1
+and associated behavioural alterations. Nat. Commun. 5 https://doi.org/10.1038/
+ncomms5995.
+Kruschke, J.K., 2013. Bayesian estimation supersedes the t test. J. Exp. Psychol. Gen. 142
+(2), 573–603. https://doi.org/10.1037/a0029146.
+Kruschke, J.K., Liddell, T.M., 2015. The bayesian new statistics: Two historical trends
+converge. SSRN Electron. J. https://doi.org/10.2139/ssrn.2606016.
+Lee, D.J., Kulubya, E., Goldin, P., Goodarzi, A., Girgis, F., 2018. Review of the neural
+oscillations underlying meditation. Front. Neurosci. 12, 178.
+Lotte, F., Bougrain, L., Cichocki, A., Clerc, M., Congedo, M., Rakotomamonjy, A.,
+Yger, F., 2018. A review of classification algorithms for EEG-based brain–computer
+interfaces: a 10 year update. J. Neural Eng. 15 (3), 031005.
+Lutz, A., Slagter, H.A., Dunne, J.D., Davidson, R.J., 2008. Attention regulation and
+monitoring in meditation. Trends Cogn. Sci. 12 (4), 163–169. https://doi.org/
+10.1016/j.tics.2008.01.005 [doi].
+
+4.2. Conclusion
+The current study aimed to examine the effect of a brief guided
+meditation training workshop on novice meditators. Based on the theory
+of integrative consciousness, it was hypothesized that participants
+(novice meditators) would achieve altered states of consciousness
+detected using EEG brainwave data. Participants’ pattern of brainwave
+power bands at each meditation end-point were compared with baseline
+measures (i.e., alpha, delta, and theta oscillations). Meditation compe­
+tence via functional brain integration was evaluated using measures of
+high-frequency gamma synchronization. Overall results suggested the
+meditation intervention had large varying effects on EEG spectra, and
+the speed of change from pre-meditation to post-meditation states of the
+EEG co-spectra was significant therefore confirming the theory of con­
+sciousness.. Findings suggest that brief guided meditation intervention
+may offer positive and immediate health benefits to help combat stress.
+Conflicts of interest
+Peta Stapleton, Stuart McGill, Debbie Sabot, Megan Peach,
+Danielle Raynor: No conflicts to declare.
+Joe Dispenza: May be renumerated for the meditation training
+examined in this paper, due to expertise. Was not involved in the
+analysis in this paper to avoid bias.
+Funding
+This research did not receive any specific grant from funding
+agencies in the public, commercial, or not-for-profit sectors.
+CRediT authorship contribution statement
+P. Stapleton: Conceptualization, Methodology, Supervision, Writing
+- original draft. J. Dispenza: Conceptualization, Methodology. S.
+McGill: Formal analysis. D. Sabot: Writing - review & editing. M.
+Peach: Writing - review & editing. D. Raynor: Conceptualization.
+Acknowledgements
+Dr Oliver Baumann for his review of the final manuscript.
+References
+Ablin, P., Cardoso, J., Gramfort, A., 2018. Faster ICA under orthogonal constraint. April
+Paper Presented at the 4464-4468. https://doi.org/10.1109/ICASSP.2018.8461662.
+Anderson, N.D., Lau, M.A., Segal, Z.V., Bishop, S.R., 2007. Mindfulness-based stress
+reduction and attentional control. Clin. Psychol. Psychother. 14 (6), 449–463.
+https://doi.org/10.1002/cpp.544.
+Atchley, R., Klee, D., Memmott, T., Goodrich, E., Wahbeh, H., Oken, B., 2016. Eventrelated potential correlates of mindfulness meditation competence. Neuroscience
+320, 83–92. https://doi.org/10.1016/j.neuroscience.2016.01.051.
+Barinaga, M., 2003. Buddhism and neuroscience. studying the well-trained mind. Science
+(New York, N.Y.) 302 (5642), 44. https://doi.org/10.1126/science.302.5642.44.
+Bigdely-Shamlo, N., Mullen, T., Kothe, C., Su, K., Robbins, K.A., 2015. The PREP
+pipeline: standardized preprocessing for large-scale EEG analysis. Front.
+Neuroinform. 9 https://doi.org/10.3389/fninf.2015.00016.
+Bohlmeijer, E., Prenger, R., Taal, E., Cuijpers, P., 2010. The effects of mindfulness-based
+stress reduction therapy on mental health of adults with a chronic medical disease: a
+meta-analysis. J. Psychosom. Res. 68 (6), 539–544. https://doi.org/10.1016/j.
+jpsychores.2009.10.005 [doi].
+Buzsaki, G., 2006. Rhythms of the Brain. Oxford University Press.
+Caelen, O., 2017. A Bayesian interpretation of the confusion matrix. Ann. Math. Artif.
+Intell. 81 (3–4), 429–450.
+Cahn, B.R., Polich, J., 2006. Meditation states and traits: EEG, ERP, and neuroimaging
+studies. Psychol. Bull. 132 (2), 180–211 doi:2006-03023-002 [pii].
+
+300
+
+P. Stapleton et al.
+
+IBRO Reports 9 (2020) 290–301
+Sejnowski, T.J., Paulsen, O., 2006. Network oscillations: emerging computational
+principles. J. Neurosci. 26 (6), 1673–1676.
+Shapiro, S.L., 2009. The integration of mindfulness and psychology. J. Clin. Psychol. 65
+(6), 555–560. https://doi.org/10.1002/jclp.20602.
+Shapiro, S.L., Schwartz, G.E.R., 2000. Intentional systemic mindfulness: an integrative
+model for self-regulation and health. Adv. Mind. Med. 16 (2), 128–134.
+Altering consciousness: multidisciplinary perspectives. volume 1: history, culture, and
+the humanities. In: Smith, F.M. (Ed.), 2012. Biological and Psychological
+Perspectives, 2. Blackwell Publishing Asia. https://doi.org/10.1111/j.17480922.2012.01593.x.
+Stan Development Team, 2018. RStan: The R Interface to Stan. R Package Version 2.17,
+3.
+Tang, Y., Holzel, B., Posner, M., 2015. The neuroscience of mindfulness meditation.
+Nature reviews neuroscience. Nat. Rev. Neurosci. 16 (4), 213–U80. https://doi.org/
+10.1038/nrn3916.
+Tart, C.T., 1972. States of consciousness and state-specific sciences. Science 176 (4040),
+1203. https://doi.org/10.1126/science.176.4040.1203.
+Thomson, D.J., 1982. Spectrum estimation and harmonic analysis. Proc. IEEE 70 (9),
+1055–1096. https://doi.org/10.1109/PROC.1982.12433.
+Tononi, G., 2004. An information integration theory of consciousness. BMC Neurosci. 5,
+42. https://doi.org/10.1186/1471-2202-5-42.
+Vieten, C., Wahbeh, H., Cahn, B.R., MacLean, K., Estrada, M., Mills, P., et al., 2018.
+Future directions in meditation research: recommendations for expanding the field
+of contemplative science. PLoS One 13 (11), e0205740. https://doi.org/10.1371/
+journal.pone.0205740.
+Vøllestad, J., Nielsen, M.B., Nielsen, G.H., 2012. Mindfulness- and acceptance-based
+interventions for anxiety disorders: a systematic review and meta-analysis. Br. J.
+Clin. Psychol. 51 (3), 239–260. https://doi.org/10.1111/j.2044-8260.2011.02024.x.
+Voss, U., Holzmann, R., Hobson, A., et al., 2014. Induction of self awareness in dreams
+through frontal low current stimulation of gamma activity. Nat Neurosci 17,
+810–812. https://doi.org/10.1038/nn.3719.
+White, J.V., Steingold, S., Fournelle, C.G., 2004. Performance metrics for group-detection
+algorithms. In: Paper Presented at the Proceedings of Interface. Alphatech Inc,
+Burlington, MA.
+Williams, J.M., Crane, C., Barnhofer, T., Brennan, K., Duggan, D.S., Fennell, M.J., et al.,
+2014. Mindfulness-based cognitive therapy for preventing relapse in recurrent
+depression: a randomized dismantling trial. J. Consult. Clin. Psychol. 82 (2),
+275–286. https://doi.org/10.1037/a0035036.
+Winkelman, M., 2010. Shamanism: A biopsychosocial paradigm of consciousness and
+healing. Santa Barbara CA.
+Winkelman, M., 2011. A paradigm for understanding altered consciousness: the
+integrative mode of consciousness. Altering Consciousness: Multi. Perspect. 1,
+23–41.
+
+Mandell, A., 1980. Toward a psychobiology of transcendence: god in the brain. In:
+Davidson, D., Davidson, R. (Eds.), The Psychobiology of Consciousness. Plenum,
+New York, pp. 379–464.
+Marsland, A.L., Walsh, C., Lockwood, K., John-Henderson, N.A., 2017. The effects of
+acute psychological stress on circulating and stimulated inflammatory markers: a
+systematic review and meta-analysis. Brain Behav. Immun. 64, 208–219. https://doi.
+org/10.1016/j.bbi.2017.01.011.
+McGill, S., Buckley, J., Elliffe, D., Corballis, P.M., 2017. Choice predicts the feedback
+negativity. Psychophysiology 54 (12), 1800–1811. https://doi.org/10.1111/
+psyp.12961.
+Merrick, C., Godwin, C.A., Geisler, M.W., Morsella, E., 2014. The olfactory system as the
+gateway to the neural correlates of consciousness. Front. Psychol. 4, 1011. https://
+doi.org/10.3389/fpsyg.2013.01011 [doi].
+Moore, A., Malinowski, P., 2009. Meditation, mindfulness and cognitive flexibility.
+Conscious. Cogn. 18 (1), 176–186. https://doi.org/10.1016/j.concog.2008.12.008.
+Moral, A., 2017. Guided meditation: a regimen for mental health. Indian J. Health
+Wellbeing 8 (2), 180–182.
+Ospina, M.B., Bond, K., Karkhaneh, M., Tjosvold, L., Vandermeer, B., Liang, Y., et al.,
+2007. Meditation practices for health: state of the research. Evid. Rep./Technol.
+Assess. (155), 1.
+Perich, T., Manicavasagar, V., Mitchell, P.B., Ball, J.R., 2013. The association between
+meditation practice and treatment outcome in mindfulness-based cognitive therapy
+for bipolar disorder. Behav. Res. Ther. 51 (7), 338–343. https://doi.org/10.1016/j.
+brat.2013.03.006.
+Perrin, F., Pernier, J., Bertrand, O., Echallier, J.F., 1989. Spherical splines for scalp
+potential and current density mapping. Electroencephalogr. Clin. Neurophysiol. 72
+(2), 184–187. https://doi.org/10.1016/0013-4694(89)90180-6.
+Perrin, F., Pernier, J., Bertrand, O., Echallier, J.F., 1990. Corrigenda EEG 02274.
+Electroencephalogr. Clin. Neurophysiol. 76 (565).
+Rabiner, L.R., Gold, B., Yuen, C.K., 1978. Theory and application of digital signal
+processing. IEEE Trans. Syst. Man Cybern. 8 (2), 146. https://doi.org/10.1109/
+TSMC.1978.4309918.
+Robins, C.J., Keng, S., Ekblad, A.G., Brantley, J.G., 2012. Effects of mindfulness-based
+stress reduction on emotional experience and expression: a randomized controlled
+trial. J. Clin. Psychol. 68 (1), 117–131. https://doi.org/10.1002/jclp.20857.
+Schutter, D., Van Honk, J., Panksepp, J., 2004. Introducing transcranial magnetic
+stimulation (TMS) and its property of causal inference in investigating brainfunction relationships. Synthese 141 (2), 155–173. https://doi.org/10.1023/B:
+SYNT.0000042951.25087.16.
+Seeber, M., Cantonas, L., Hoevels, M., Sesia, T., Visser-Vandewalle, V., Michel, C.M.,
+2019. Subcortical electrophysiological activity is detectable with high-density EEG
+source imaging. Nat. Commun. 10 (1), 753–757. https://doi.org/10.1038/s41467019-08725-w.
+
+301
+
+

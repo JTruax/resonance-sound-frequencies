@@ -1,0 +1,1567 @@
+ORIGINAL RESEARCH
+published: 18 March 2021
+doi: 10.3389/fnhum.2021.610466
+
+Neural Correlates of the Shamanic
+State of Consciousness
+Emma R. Huels 1,2,3† , Hyoungkyu Kim 2,3† , UnCheol Lee 1,2,3 , Tarik Bel-Bahar 4 , Angelo
+V. Colmenero 5 , Amanda Nelson 2 , Stefanie Blain-Moraes 6 , George A. Mashour 1,2,3
+and Richard E. Harris 1,7 *
+1
+
+Edited by:
+
+Neuroscience Graduate Program, University of Michigan, Ann Arbor, MI, United States, 2 Department of Anesthesiology,
+University of Michigan, Ann Arbor, MI, United States, 3 Center for Consciousness Science, University of Michigan, Ann Arbor,
+MI, United States, 4 Division of Translational Epidemiology, New York State Psychiatric Institute, New York, NY, United States,
+5
+The Graduate Center, City University of New York, New York, NY, United States, 6 School of Physical and Occupational
+Therapy, McGill University, Montreal, QC, Canada, 7 Chronic Pain and Fatigue Research Center, Department of
+Anesthesiology, University of Michigan, Ann Arbor, MI, United States
+
+Gopikrishna Deshpande,
+Auburn University, United States
+Reviewed by:
+Lorenzo Pasquini,
+Klinikum rechts der Isar der
+Technischen Universität München,
+Germany
+David Luke,
+University of Greenwich,
+United Kingdom
+*Correspondence:
+Richard E. Harris
+reharris@med.umich.edu
+†
+
+These authors have contributed
+equally to this work
+
+Specialty section:
+This article was submitted to
+Cognitive Neuroscience,
+a section of the journal
+Frontiers in Human Neuroscience
+Received: 25 September 2020
+Accepted: 25 February 2021
+Published: 18 March 2021
+Citation:
+Huels ER, Kim H, Lee U, Bel-Bahar T,
+Colmenero AV, Nelson A,
+Blain-Moraes S, Mashour GA and
+Harris RE (2021) Neural Correlates of
+the Shamanic State
+of Consciousness.
+Front. Hum. Neurosci. 15:610466.
+doi: 10.3389/fnhum.2021.610466
+
+Psychedelics have been recognized as model interventions for studying altered states of
+consciousness. However, few empirical studies of the shamanic state of consciousness,
+which is anecdotally similar to the psychedelic state, exist. We investigated the neural
+correlates of shamanic trance using high-density electroencephalography (EEG) in
+24 shamanic practitioners and 24 healthy controls during rest, shamanic drumming, and
+classical music listening, followed by an assessment of altered states of consciousness.
+EEG data were used to assess changes in absolute power, connectivity, signal diversity,
+and criticality, which were correlated with assessment measures. We also compared
+assessment scores to those of individuals in a previous study under the influence of
+psychedelics. Shamanic practitioners were significantly different from controls in several
+domains of altered states of consciousness, with scores comparable to or exceeding that
+of healthy volunteers under the influence of psychedelics. Practitioners also displayed
+increased gamma power during drumming that positively correlated with elementary
+visual alterations. Furthermore, shamanic practitioners had decreased low alpha and
+increased low beta connectivity during drumming and classical music and decreased
+neural signal diversity in the gamma band during drumming that inversely correlated with
+insightfulness. Finally, criticality in practitioners was increased during drumming in the
+low and high beta and gamma bands, with increases in the low beta band correlating
+with complex imagery and elementary visual alterations. These findings suggest that
+psychedelic drug-induced and non-pharmacologic alterations in consciousness have
+overlapping phenomenal traits but are distinct states of consciousness, as reflected by
+the unique brain-related changes during shamanic trance compared to previous literature
+investigating the psychedelic state.
+Keywords: shamanism, consciousness, EEG, altered states of consciousness, Trance
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+1
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+addressed to compare this unique state of consciousness to other
+altered states.
+Thus, we investigated the shamanic state of consciousness
+using a validated assessment of altered states of consciousness
+and high-density electroencephalography (EEG) in both
+experienced shamanic practitioners and naïve control
+participants. While spectral analyses remain standard in
+many EEG studies, recent investigations regarding altered states
+of consciousness have utilized other computational measures to
+characterize brain activity, such as functional connectivity (Lee
+et al., 2017; Li et al., 2019), signal diversity (Li and Mashour,
+2019; Timmermann et al., 2019; Pal et al., 2020), and criticality
+(Kitzbichler et al., 2009; Kim et al., 2016, 2017; Lee et al., 2019).
+Each of these measures informs on various attributes of the
+neural signal—functional relationships, complexity (i.e., number
+of different patterns in the signal), and the balance between
+order and disorder, respectively—that better elucidate the neural
+correlates underlying brain states. Thus, we characterized EEG
+changes during shamanic drumming using spectral analysis,
+connectivity, signal diversity, and criticality and determined
+their relationship to changes in a variety of domains used to
+characterize altered states of consciousness. Furthermore, we
+compared these self-reported changes in consciousness during
+shamanic trance to the altered state of consciousness induced by
+psychedelic substances.
+
+INTRODUCTION
+Recent studies regarding the neuroscience of consciousness have
+leveraged altered states of consciousness as model systems,
+such as the psychedelic state (Johnson et al., 2019). However,
+the use of pharmacologic agents to induce altered states of
+consciousness introduces potential confounds by pharmacologic
+manipulation of ‘‘off-target’’ brain receptors. For example, while
+studies have reported the 5HT2A receptor as crucial for the
+induction of altered states of consciousness via serotonergic
+psychedelics (Kraehenmann et al., 2017; Preller et al., 2018),
+these compounds may also bind to other serotonergic and
+non-serotonergic receptor sites (Halberstadt and Geyer, 2011),
+or possibly 5HT2A receptor sites not crucial to the psychedelic
+experience. For example, 5HT2A receptors are present in the
+gut (Fiorica-Howells et al., 2002; O’Mahony et al., 2015) and
+it is reasonable to question the importance of such receptors
+in the induction of the psychedelic state. In contrast, shamanic
+trance, which is an altered state of consciousness anecdotally
+similar to the psychedelic state, can be achieved with or without
+the use of psychedelic substances by listening to repetitive
+drumming (Krippner, 2000). During shamanic trance, the
+shaman (in cases of indigenous tribes) or shamanic practitioner
+(in cases of neo-shamanism in the western world) enters an
+altered state of consciousness, termed the shamanic state of
+consciousness (Harner, 1980), to offer physical, psychological, or
+spiritual healing for others. In this state, shamanic practitioners
+endure changes in consciousness similar to individuals under
+the influence of psychedelic substances, such as mystical
+experiences, feelings of disembodiment or flight, or feelings
+of ego dissolution (Winkelman, 2013). Despite its universality
+in ancient civilizations (Tributsch, 2018), increasing popularity
+in the present day, and semblance to psychedelically-induced
+altered states, empirical studies of shamanic trance remain
+limited. Elucidating the neural correlates of this unique altered
+state of consciousness may offer valuable insights into the
+neurobiology of consciousness, particularly how changes in the
+phenomenal content of consciousness arise in the absence of
+pharmacologic intervention.
+To date, only two neuroimaging studies have investigated
+brain activity in shamanic practitioners during shamanic
+trance. Using functional MRI, Hove et al. found increased
+hub activity in key regions in default mode and controlrelated networks during the shamanic state (Hove et al.,
+2016). Functional connectivity between these regions was also
+increased during trance, suggesting an interaction between
+these networks. Research using electroencephalographic activity
+during the shamanic state of consciousness revealed increased
+low (13–20 Hz) and high (21–50 Hz) beta activity, as well as
+an anterior-posterior shift in power during the transition from
+normal to trance state (Flor-Henry et al., 2017). Although these
+studies contributed to our knowledge of the shamanic state of
+consciousness, the Hove et al. (2016) trial lacked non-shamanic
+practitioner controls and Flor-Henry et al. (2017) examined
+data from only a single shamanic practitioner. Furthermore,
+these past studies did not correlate neurobiological metrics with
+the subjective experiences of this state. These gaps must be
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+MATERIALS AND METHODS
+Ethics
+This study was approved by the University of Michigan
+Institutional Review Board (HUM00089064). Written informed
+consent was obtained from all participants before study
+procedures.
+
+Participants
+Two separate populations were recruited for this study:
+24 experienced shamanic healing practitioners and 24 ageand sex-matched control participants. Shamanic practitioner
+inclusion criteria were as follows: five or more years of practice
+in shamanic techniques; performed a minimum of 40 shamanic
+healing sessions over the last 5 years, primarily focused on
+healing individual people; received training in at least one
+shamanic tradition or style under expert supervision; used
+rhythmic drumming during shamanic journeying and healing
+practice; and possessed the ability to enter a shamanic trance
+in 15 min and complete a shamanic healing session in 30 min
+while sitting still and quiet. Practitioners were excluded if
+they had a history of traumatic brain injury or epilepsy.
+Control participants were age- and sex-matched to shamanic
+practitioners with the following inclusion criteria: no current
+or past experience or interest in shamanic practice or media
+involving shamanism; no current or past history of meditation,
+spiritual healing, or spiritual training; no current or past history
+of hallucinogen, entheogen, or psychedelic drug use; no current
+or past experience with trance or hypnosis, or interest relating
+to media of such themes; and no current or past history of
+being a drummer, frequent listening to drumming music, or a
+
+2
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+history of professional musicianship. Control participants were
+excluded if they had a current or past diagnosis of depression,
+anxiety, schizophrenia, or other serious psychological disorders,
+untreated major physical or psychological illness, a history
+of traumatic brain injury, or a history of epilepsy. Subjects
+were excluded from analyses for technical difficulties related to
+EEG acquisition (n = 5), EEG data quality issues (n = 4), or
+lack of questionnaire data (n = 2), resulting in 18 shamanic
+practitioners and 19 control participants in the final cohort for
+analysis. Demographics for these participants are illustrated in
+Supplementary Table 1.
+
+Classical Music Experiment
+The classical music experiment was meant to function as a
+negative control for the shamanic drumming experiment and
+entailed 15 min of classic music listening, which consisted
+of two songs played in succession. The first song, which was
+Beethoven’s ‘‘Sonata No.5 in F Major for Violin and Piano,
+Op. 24, ‘‘Spring’’: I. Allegro,’’ was a mixture of piano and
+violin (Beethoven, 1801/2013, track 20). The second piece,
+Mozart’s ‘‘Sonata for Piano No. 15 in F Major, K. 533: I.
+Allegro,’’ was piano only (Mozart, 1788/2009, track 43).
+These pieces were chosen because they had some degree of
+repetition, similar to the shamanic drumming recording.
+Additionally, unlike most musical options, classical music is
+free of language or singing, furthering its similarities to the
+shamanic drumming recording. Both shamanic practitioners
+and control participants were asked to listen with their
+eyes closed during this time and shamanic practitioners
+were explicitly asked to not enter a shamanic trance.
+Participants again filled out the OAV scale following classical
+music listening.
+
+Pre-study Procedures
+Before their study visit, shamanic practitioners were asked to
+practice entering a shamanic trance during the 25 min of
+rhythmic drumming music to be played during the experiment
+(Harner, 1997) while control participants were asked to listen
+to the same pre-recorded drumming without any attempts at
+entering a shamanic trance. This recording, entitled ‘‘30-min
+solo drumming journey with callback’’ from Michael Harner’s
+Shamanic Journey Solo and Double Drumming, consisted of
+rhythmic solo drumming without the accompaniment of other
+instruments. We combined the original 15-min drumming piece
+(Harner, 1997) with the middle 10 min of this piece repeated, for
+a total of 25 min.
+
+Qualitative Analysis
+The 66-item OAV Scale questionnaire data were pooled
+into 11 domains according to previous literature (Studerus
+et al., 2010) including experience of unity, spiritual experience,
+blissful state, insightfulness, disembodiment, impaired control
+and cognition, anxiety, complex imagery, elementary visual
+alterations, audio-visual synesthesia, and changed meaning of
+percepts. The percent of the theoretical scale maximum was
+calculated for each domain for each individual, followed by the
+mean and standard error of the mean for each group (shamanic
+practitioners or control participants).
+
+Study Design
+Participants underwent baseline EEG recordings with their eyes
+open for 5 mins and closed for 5 mins. Following baseline
+recordings, each participant underwent three experimental
+blocks: cognitive testing, shamanic drumming, and classical
+music listening. The order of blocks was counterbalanced
+between groups. Participants were asked to rest again with
+their eyes opened and closed for 5 min following the last
+experiment. EEG data were collected continuously throughout
+all experiments. Example study day timelines are illustrated in
+Figure 1A. Given that this manuscript is centered on brain
+activity during the shamanic state of consciousness, cognitive
+testing results will not be discussed.
+
+EEG Acquisition
+Participants were fitted with a 129-channel HydroCel Geodesic
+Sensor Net (Electrical Geodesics, Inc./Magstim EGI Eugene, OR,
+USA) according to head circumference. EEG data were acquired
+at a 500–1,000 Hz sampling rate with a vertex reference using
+NetAmps 400 amplifier and Netstation 4.5 software. Channel
+impedances were reduced to below 50 kΩ per the manufacturer’s
+instruction.
+
+Shamanic Healing Experiment
+During the shamanic healing experiment, shamanic practitioners
+and controls listened to the same pre-recorded drumming
+(Harner, 1997) they listened to at home before the study
+visit. Shamanic practitioners were asked to conduct shamanic
+healing during this time, during which they entered an altered
+state of consciousness to glean information to be used for the
+physical, psychological, or spiritual healing of a client not present
+during the study. Control participants were instructed to rest
+quietly and both groups were asked to keep their eyes closed
+during the drumming period. Following the drumming period,
+shamanic practitioners and controls completed an Altered
+States of Consciousness questionnaire known as the OAV scale
+(Bodmer et al., 1994), which contains 66 items about their
+subjective experience. Of note, we used the English version of this
+questionnaire, which has been previously validated in German
+(Bodmer et al., 1994).
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+EEG Analysis
+Using the MATLAB open-source toolbox EEGLab (Delorme
+and Makeig, 2004), data were visually inspected for artifact
+and preprocessed via resampling to 500 Hz as necessary,
+bandpass filtering between 1–45 Hz, and re-referencing to the
+global average. Data were epoched into 10-s non-overlapping
+windows; all analyses were conducted on sequential 10-s
+windows. Subsequent analyses focused on absolute power,
+functional connectivity, neural signal diversity, and criticality
+(Figure 1B) within each of the following frequency bands:
+delta 1–4 Hz, theta 4–8 Hz, low alpha 8–10 Hz, high alpha
+10–13 Hz, low beta 13–20 Hz, high beta 20–30 Hz, and
+gamma 30–45 Hz (except for connectivity, which was limited
+to 30–35 Hz to ensure the reliability of this measure). While
+we did not collect electromyography data to control for
+
+3
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 1 | Study design. (A) Example timelines of a typical study day based on a given experiment block. Each individual was randomized to the order they
+underwent cognitive testing, shamanic drumming, and classical music listening. Eyes open and eyes closed resting periods occurred at the beginning and end of the
+experimental day. The Altered States of Consciousness Questionnaire, known as the OAV scale, was administered following classical music and shamanic
+drumming. (B) All participants underwent high-density electroencephalogram (EEG) recordings during drumming, classical music, and periods of eye-opening and
+closure. Following preprocessing, EEG signals were used to compute subsequent measures within each frequency band, including the power spectrum, functional
+connectivity measured by weighted Phase Lag Index, signal diversity measured by Lempel-Ziv complexity (image referenced from Leemburg and Bassetti, 2018),
+and criticality measured by the pair correlation function.
+
+muscle artifact, we did not anticipate differences in muscle
+contamination across participants and conditions, meaning any
+differences in the gamma frequency band were presumably
+from electroencephalographic differences. EEG measures were
+computed for the full duration of periods of eye closure (5 min)
+and shamanic drumming (25 min). Analyses of brain activity
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+during classical music were performed on the first song period
+(∼10 min).
+
+Spectral Analysis
+Spectral power was calculated using the ‘‘spectrogram.m’’
+function in the MATLAB Signal Processing Toolbox (time
+
+4
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+Criticality
+Criticality, a balanced state between order and disorder (Bak
+et al., 1988), is observed ubiquitously in physical and biological
+systems and is accompanied by various functional benefits,
+including large information storage, optimal information
+transmission, and flexible response to external stimuli (Muñoz,
+2018). Many computational and experimental studies suggest
+that human and animal brain functioning resides near a
+critical point during conscious wakefulness (Lee and Mashour,
+2018) and a loss of criticality induces altered states of
+consciousness such as sleep, anesthesia, and unresponsive
+wakefulness syndrome (Kitzbichler et al., 2009; Kim et al., 2016,
+2017; Lee et al., 2019). We assessed criticality using the pair
+correlation function (PCF), which is the variance of network
+synchronization, reflecting network susceptibility to internal and
+external perturbations (e.g., from stimuli; Yoon et al., 2015).
+PCF is maximal at a critical point and gradually decreases as a
+system moves toward a sub- or super-critical state (Kim and Lee,
+2019). Recently, the reliability of PCF in evaluation of the level
+of consciousness was supported with a computational model and
+EEG during general anesthesia (Kim and Lee, 2019).
+
+window: 3 s hamming window, overlap: 50%) based on
+the short-time Fourier transform. For each state (eyes
+closed, classical music, drumming), absolute power within
+each frequency band was averaged across all time windows
+and channels.
+
+Functional Connectivity
+Functional connectivity was assessed using the average weighted
+Phase Lag Index (wPLI), which measures the phase lead-lag
+relationship between two signals. If two signals are found to be
+functionally coupled within a given frequency band, the resulting
+wPLI value will be high within that band. wPLI is robust to
+the EEG volume conduction problem (Stam et al., 2007; Vinck
+et al., 2011) and improves Phase Lag Index with weights of
+the imaginary part of the cross-spectrum, reducing noise and
+volume conduction effects. When the imaginary part of the crossspectrum is = [X],
+wPLI =
+
+|E{={X}}|
+|E{|={X}|sgn(={X})}|
+=
+E{|={X}|}
+E{|={X}|}
+
+where the signed Phase Lag Index is the numerator normalized
+by the denominator, the imaginary part of the cross-spectrum.
+The wPLI was calculated for each frequency band and averaged
+across time and all channels in each state.
+
+PCF = N {< Re2 [z(t)] >t − < Re[z(t)] >2t }
+where Re[z(t)] is the real part of the z(t).
+
+Neural Signal Diversity
+Recent studies examining psychedelic-induced altered states of
+consciousness have sought to characterize changes in signal
+diversity (Schartner et al., 2017; Timmermann et al., 2019),
+which reflects the number of unique (i.e., diverse) patterns
+within a signal. Given the aforementioned overlap between the
+psychedelic state and the shamanic state of consciousness, we
+measured and compared the neural signal diversity of each
+state using Lempel-Ziv complexity (LZc), which calculates the
+temporal complexity of the signal by computing the number of
+distinct subsequences through the whole signal (Lempel and Ziv,
+1976; Figure 1B, image referenced from Leemburg and Bassetti,
+2018). The time series of each EEG epoch was binarized using
+the median value (M) of each time series (Zhang et al., 2001;
+Leemburg and Bassetti, 2018) as a threshold.
+
+z = r eiψ =
+
+where Ψ is the order parameter phase. The absolute value r = |z|
+represents the degree of synchronization. The r is equal to zero
+when the phases of nodes are uniformly distributed and one
+when all the nodes have the same phase.
+
+Statistical Analysis
+For comparison of OAV domain scores, Wilcoxon signed-rank
+tests were used to assess differences in paired samples, and
+Wilcoxon rank-sum tests were used to assess differences between
+shamanic practitioners and controls. With permission from
+Studerus et al. (2010) and using open-access data, we used
+the mean and standard deviation to compare OAV domain
+scores of shamanic practitioners and individuals under the
+influence of psychedelic substances using unpaired t-tests.
+This comparison included data collected from 43 studies that
+administered psilocybin (115–350 µg/kg orally; low to high
+dose), ketamine (6–12 µg kg−1 min−1 intravenously; medium
+to high dose), or MDMA (1.5–1.7 mg/kg orally; medium dose)
+to healthy volunteers. Given the aggregation of studies, it is
+unclear to what degree these data included naive vs. experienced
+psychedelic users. A two-way mixed analysis of variance was
+used to assess differences in EEG measures between groups
+(shamanic practitioner vs. control; between-subject factor) and
+across conditions (eyes closed vs. classical music vs. drumming;
+within-subject factor), as well as any interaction between these
+two factors (group × condition). Exploratory post-hoc analysis
+of group differences within each condition was conducted
+using unpaired t-tests. Given our small sample size and the
+exploratory nature of post hoc tests, we did not adjust for multiple
+
+s(n) = {0 if x (n) < M, 1 if x (n) ≥ M
+where x(n) is each data point of the original time series and
+the median value is M. The median value of each epoch is
+used for the robustness to outliers and the invariance from the
+signal amplitude.
+A new subsequence of consecutive numbers (‘‘words’’) was
+counted as c(n) through the binarized time series and normalized
+by the theoretical maximum number of words b(n) = nlog2 n.
+C (n) = c (n) b (n)
+LZc was computed for each frequency band in each state and
+averaged across time and channels. To better compare changes
+in LZc during shamanic trance to those in previous literature
+(i.e., psychedelic states), we computed LZc of the broadband
+(1–45 Hz) signal, as well as within individual frequency bands.
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+1 XN
+eiθj ,
+j=1
+N
+
+5
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+Studerus et al. with our data from shamanic practitioners
+and compared each of the domains for each drug condition
+to shamanic practitioners using unpaired t-tests. As can be
+seen in Figure 2C, shamanic practitioners experienced several
+domains at or above the level of individuals under the influence
+of various psychedelics. Specifically, the domains of complex
+imagery (ketamine: p < 0.001; psilocybin: p = 0.0077; MDMA:
+p < 0.001), experience of unity (ketamine: p = 0.0052; psilocybin:
+p < 0.001; MDMA: p < 0.001), spiritual experience (ketamine:
+p < 0.001; psilocybin: p < 0.001; MDMA: p < 0.001), and
+insightfulness (ketamine: p < 0.001; psilocybin: p < 0.001;
+MDMA: p < 0.001) appear to be greater for shamanic
+practitioners during trance compared to healthy controls under
+any of these very potent psychedelic compounds. Shamanic
+practitioners were similar to MDMA in the domains of blissful
+state (ketamine: p < 0.001; psilocybin: p = 0.0036; MDMA:
+p = 0.14), audio-visual synesthesia (ketamine: p = 0.031;
+psilocybin: p = 0.0017; MDMA: p = 0.96), and impaired control
+and cognition (ketamine: p < 0.001; psilocybin: p = 0.0045;
+MDMA: p = 0.16), comparable to ketamine in the domain
+of disembodiment (ketamine: p = 0.46; psilocybin: p < 0.001;
+MDMA: p < 0.001), and similar to ketamine and psilocybin
+in elementary visual alterations (ketamine: p = 0.28; psilocybin:
+p = 0.27; MDMA: p < 0.001). Additionally, individuals under
+the influence of ketamine had significantly higher anxiety scores
+(ketamine: p = 0.037; psilocybin: p = 0.27; MDMA: p = 0.99)
+compared to shamanic practitioners during drumming. Finally,
+practitioners were similar to all three drugs in the domain of
+changed meaning of percepts (ketamine: p = 0.92; psilocybin:
+p = 0.52; MDMA: p = 0.63). Additional statistical output
+measures are detailed in Supplementary Table 2.
+
+comparisons. Spearman correlations were conducted to assess
+relationships between EEG measures during drumming that
+were statistically significantly different between groups and OAV
+domain scores in shamanic practitioners that were significantly
+different from the control group during shamanic drumming.
+Again, we did not adjust for multiple comparisons given the
+exploratory nature or the limited sample size. Findings were
+considered statistically significant if p < 0.05.
+
+Data Availability
+All data and code used for this project will be made available
+upon request of the authors with a data-sharing agreement
+between institutions.
+
+RESULTS
+Shamanic Practitioners Enter an Altered
+State of Consciousness During Drumming
+We first evaluated differences in OAV domain scores to
+verify that shamanic practitioners entered an altered state of
+consciousness. Shamanic practitioners had significantly greater
+scores than control participants in 8 of the 11 domains
+during shamanic healing, including complex imagery [Z = 4.22,
+p < 0.001, 95% CI (0.30, 0.57)], experience of unity [Z = 4.04,
+p < 0.001, 95% CI (0.33, 0.65)], spiritual experience [Z = 4.87,
+p < 0.001, 95% CI (0.33, 0.60)], blissful state [Z = 4.39, p < 0.001,
+95% CI (0.30, 0.60)], disembodiment [Z = 4.4, p < 0.001,
+95% CI (0.23, 0.67)], insightfulness [Z = 4.06, p < 0.001,
+95% CI (0.23, 0.57)], elementary visual alterations [Z = 2.43,
+p = 0.0159, 95% CI (0.033, 0.40)], and changed meaning of
+percepts [Z = 3.22, p = 0.00136, 95% CI (0.033, 0.40; Figure 2A)].
+These differences did not exist when comparing OAV domain
+scores during the classical music experiment (Figure 2B).
+Furthermore, shamanic practitioners were significantly different
+in all of the above domains except elementary visual alterations
+when comparing their scores during shamanic drumming to
+classical music (Z = 2.98 to Z = 3.62, p < 0.01 to p < 0.001),
+indicating a majority of the increased scores were specific to the
+shamanic drumming experiment. Finally, shamanic practitioners
+had increased scores in audio-visual synesthesia [Z = −2.35,
+p = 0.0199, 95% CI (−0.42, −0.033)] and control participants
+had increased scores in blissful state [Z = −2.42, p = 0.017, 95%
+CI (−0.23, −0.017)] during classical music listening compared
+to drumming.
+
+Absolute Gamma Power Increases During
+Drumming in Shamanic Practitioners and
+Correlates With Elementary Visual
+Alterations
+Next, we assessed differences in absolute power between
+shamanic practitioners and controls during eyes closed, classical
+music, and drumming (Figure 3A). There was a statistically
+significant interaction between group and condition on gamma
+power (Group × Condition: F (1.7,59.1) = 6.3, p = 0.005). Posthoc exploratory t-tests revealed shamanic practitioners had
+significantly greater gamma power during drumming compared
+to controls [t (29) = 2.16, p = 0.039, 95% CI (0.040, 1.43);
+Figure 3B]. Furthermore, gamma power during drumming
+positively correlated with the degree of elementary visual
+alterations (rs = 0.52, p = 0.025; Figure 3C) in shamanic
+practitioners.
+
+Shamanic Practitioners Endure Changes in
+Consciousness Similar to Yet Distinct
+From the Psychedelic State
+Given the overlap between the shamanic state of consciousness
+and the psychedelic experience, we thought it would be
+informative to compare the OAV domain scores from shamanic
+practitioners with those of individuals under the influence of
+psychedelic substances. Studerus et al. pooled OAV scores from
+healthy individuals under the influence of psilocybin, ketamine,
+and 3,4-Methyl-enedioxy-methamphetamine (MDMA; Studerus
+et al., 2010). With author permission, we replotted the mean
+and standard error of the mean for each drug condition from
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+Shamanic Practitioners Have Altered
+Functional Connectivity in the Low Alpha
+and Beta Bands During Drumming
+We also examined differences in functional connectivity within
+each state in shamanic practitioners and control participants
+(Figure 4A). There was a significant main effect of group
+on low alpha (F (1,35) = 5.6, p = 0.024) and low beta
+
+6
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 2 | Shamanic practitioners enter an altered state of consciousness during shamanic drumming. (A) Shamanic Practitioners (SP, purple, n = 18) were
+significantly different from control participants (CC, green, n = 19) during drumming in 8 of the 11 OAV domains. Each point represents the mean of all SP or CC for
+the percent of the theoretical scale maximum for that domain. Error bars represent the standard error of the mean. (B) SP did not differ from CC during classical
+music listening on any of the domains. (C) We replotted the OAV mean and standard error for healthy controls taking psilocybin (green, n = 327), ketamine (blue,
+n = 162), or MDMA (orange, n = 102) from Studerus et al. (2010) and compared these scores to those acquired from SP. Overall, SP had increased scores in several
+domains compared to all three drug conditions, as well as similar scores in the remaining domains compared to various drug conditions.
+
+(F (1,35) = 4.41, p = 0.043) connectivity. Post hoc t-tests
+revealed that shamanic practitioners had significantly decreased
+low alpha connectivity during drumming [t (27.2) = −2.45,
+p = 0.021, 95% CI (0.00731, 0.0828)] and music [t (27.8) = −2.22,
+p = 0.035, 95% CI (0.00374, 0.0938)] compared to control
+participants (Figure 4B). Additionally, shamanic practitioners
+had significantly greater connectivity in the low beta band during
+drumming [t (22.1) = 2.11, p = 0.047, 95% CI (0.000352, 0.0432)]
+and music [t (24.9) = 2.25, p = 0.033, 95% CI (0.00263, 0.0584)]
+compared to controls (Figure 4B). These statistically significant
+measures of connectivity did not correlate with any of the
+OAV domains.
+
+of broadband LZc revealed a statistically significant interaction
+between group and condition (Group × Condition: F (2,70) = 3.7,
+p = 0.03), post hoc t-tests did not reveal any significant differences
+between groups.
+
+Shamanic Practitioners Experience
+Increased Criticality in Beta and Gamma
+Bands During Drumming That Correlates
+With OAV Domain Scores
+Finally, we examined differences in criticality using the pair
+correlation function (PCF; Figure 6A) during eyes closed, music,
+and drumming. Given that the shamanic state of consciousness
+is characterized by a high level of mental activity (Figure 2A),
+we would anticipate increased PCF during shamanic trance
+which would suggest increased criticality and, in turn, increased
+metastability (i.e., patterns of global synchronization over time)
+and network susceptibility to internal and external perturbations.
+There was a main effect of group on PCF in the low beta
+(F (1,35) = 4.59, p = 0.039) and high beta bands (F (1,35) = 5.94,
+p = 0.02). For PCF in the gamma band, there were main
+effects of both group (F (1,35) = 10.09, p = 0.003) and condition
+(F (2, 70) = 5.93, p = 0.004). Exploratory post-hoc t-tests revealed
+that, during drumming, shamanic practitioners had greater
+PCF in the low beta (t (34.5) = 3.32, p = 0.00213, 95% CI
+[0.00176, 0.00729]; Figure 6B1), high beta (t (33.2) = 3.29,
+p = 0.00235, 95% CI [0.00273, 0.0115]; Figure 6B2), and
+
+Lempel-Ziv Complexity in the Gamma
+Band Decreases During Drumming in
+Shamanic Practitioners and Correlates
+With Feelings of Insightfulness
+We evaluated differences in EEG signal diversity using
+Lempel-Ziv complexity (LZc; Figure 5A). There was a significant
+main effect of group on LZc in the gamma band (F (1,35) = 4.79,
+p = 0.035). Post-hoc testing revealed that shamanic practitioners
+had decreased LZc in the gamma band during drumming
+(t (19.4) = −2.53, p = 0.02, 95% CI [−0.0274, −0.00262])
+compared to control participants (Figure 5B). Furthermore, LZc
+in the gamma band was negatively correlated with feelings of
+insightfulness (rs = 0.5, p = 0.034; Figure 5C). While analysis
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+7
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 3 | Gamma power is greater in shamanic practitioners during the drumming and correlates with elementary visual alterations. (A) Power spectrogram
+comparing the difference in power across frequencies (1–45 Hz) between shamanic practitioners (SP; n = 18) and control participants (CC; n = 19) during eyes
+closed, classical music, and drumming periods. Warmer colors represent greater power in SP and cooler colors indicate more power in CC. The dotted line
+represents the gamma frequency band (30–45 Hz), which was significantly different between groups during shamanic drumming. (B) Box plots representing the
+mean absolute power of SP (purple) or CC (green) during eyes closed, drumming, and music. Whiskers represent the lower (25%) and upper (75%) quartiles and the
+center band of each box represents the median for the group. SP had significantly greater gamma power during the drumming period compared to CC. Significance
+is indicated by the key in the lower righthand corner of the figure. (C) We correlated absolute gamma power with each of the eight ASC domain scores that were
+significantly different between groups during drumming in Figure 2A, revealing a positive correlation between absolute gamma power and the degree of elementary
+visual alterations.
+
+gamma (t (33.7) = 4.1, p < 0.001, 95% CI [0.00754, 0.0224];
+Figure 6B3) bands compared to controls. Furthermore, PCF
+in the low beta band positively correlated with the degree
+of complex imagery (rs = 0.53, p = 0.023; Figure 6C1) and
+elementary visual alterations (rs = 0.56, p = 0.015; Figure 6C2).
+Shamanic practitioners also had greater PCF in the high beta
+band during classical music (t (35) = 2.1, p = 0.043; Figure 6B2)
+and the gamma band during classic music (t (31.5) = 2.75,
+p = 0.00987) and eyes closed (t (31) = 2.16, p = 0.039;
+Figure 6B3).
+
+revealed that shamanic practitioners had increased absolute
+gamma power during drumming, which positively correlated
+with the degree of elementary visual alterations. Additionally,
+practitioners had decreased low alpha and increased low beta
+connectivity during drumming and classical music. Furthermore,
+signal diversity in the gamma band was decreased in shamanic
+practitioners during drumming, which negatively correlated
+with feelings of insightfulness. Finally, PCF was increased in
+the low beta, high beta, and gamma bands during drumming,
+with increases in the low beta band positively correlating
+with complex imagery and elementary visual alterations.
+Additionally, PCF in the high beta band was increased during
+classical music in shamanic practitioners compared to control
+participants, as was PCF in the gamma band during eyes
+closed and classical music. These findings suggest that, during
+shamanic trance, shamanic practitioners enter an altered state
+of consciousness that is accompanied by changes in a variety
+of EEG measures that correlate with self-reported changes in
+experience. Specifically, differences in gamma power, gamma
+complexity, and low beta PCF were exclusive to shamanic
+drumming and correlated with items on the OAV scale, meaning
+they likely represent changes in brain activity specific to the
+shamanic state of consciousness. In contrast, EEG changes
+spreading across drumming and classical music, such as changes
+in low alpha or low beta functional connectivity or high
+
+DISCUSSION
+Summary
+In the largest and most comprehensive neuroimaging study
+of shamanic practitioners to date, we characterized the
+shamanic state of consciousness using high-density EEG and
+a well-validated assessment for altered states of consciousness
+known as the OAV scale. We revealed shamanic practitioners
+to be significantly different from controls in a majority of the
+OAV domains during drumming. Furthermore, these differences
+were similar or greater in magnitude than those reported
+by individuals under the influence of ketamine, psilocybin,
+or MDMA. In addition to the main effects of the group
+on a variety of EEG measures, post-hoc exploratory analyses
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+8
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 4 | Shamanic practitioners have increased low beta and decreased low alpha connectivity during drumming and classical music. (A) Differences in
+functional connectivity, measured by weighted Phase Lag Index (wPLI), between shamanic practitioners (SP; n = 18) and control participants (CC; n = 19). Warmer
+colors represent greater connectivity in SP while cooler colors indicate greater connectivity in CC. The dotted lines represent the low alpha (8–10 Hz) and low beta
+(13–20 Hz) frequency bands, which were significantly different between groups. (B1,B2) Box plots illustrating the average wPLI in the low alpha (B1) or low beta (B2)
+frequency bands in SP (purple) and CC (green) during eyes closed, drumming, and music. Whiskers represent the lower (25%) and upper (75%) quartiles and the
+center band of each box represents the median for the group. SP experienced statistically significant decreases in wPLI in the low alpha band during classical music
+and drumming compared to CC (B1), as well as statistically significant increases in the low beta band (B2). Significance is indicated by the key in the lower righthand
+corner of the figure.
+
+et al., 2012; Braboszcz et al., 2017; Kakumanu et al., 2018), with
+some attributing elevations in gamma to enhanced perceptual
+clarity (Cahn et al., 2010), spontaneous visual imagery (Luft et al.,
+2019), or increased attentional effort (Braboszcz et al., 2017).
+Other trance states, such as possession trance, are frequently
+characterized by power changes in the theta, alpha, or beta bands
+(Oohashi et al., 2002; Bastos et al., 2016; Kawai et al., 2017),
+without analysis of the gamma band. Thus, while changes in
+the other frequency bands are absent during shamanic trance,
+it remains unknown whether our findings of increased gamma
+power are comparable. While it is difficult to pinpoint the exact
+reason for increased gamma power during shamanic trance, our
+findings are in agreement with previous literature regarding the
+shamanic state of consciousness and suggest similarities between
+shamanic trance and meditative states.
+In addition to increases in gamma power, shamanic
+practitioners demonstrated decreased neural signal diversity
+and increased criticality (i.e., PCF) in the gamma band during
+drumming when compared to control participants. While studies
+of signal diversity and criticality in non-pharmacologically
+induced altered states of consciousness remain scarce, a recent
+EEG study during meditation assessed changes in entropy and
+metastability (Martínez Vivot et al., 2020), which is directly
+related to criticality (e.g., increased metastability is associated
+with increased criticality). Martínez Vivot et al. (2020) revealed
+meditative practice to be characterized by increased entropy and
+
+beta or gamma PCF, may represent trait-related changes in
+shamanic practitioners.
+
+The Shamanic State of Consciousness,
+Gamma Oscillations, and Other Absorptive
+States of Consciousness
+To our knowledge, the only previous investigation of shamanic
+trance in shamanic practitioners using EEG was by Flor-Henry
+et al., who found increased absolute low (13–20 Hz) and high
+(21–50 Hz) beta power during shamanic drumming (FlorHenry et al., 2017). These findings are similar to those of the
+current study, as we found increased gamma power (30–45 Hz)
+during drumming in shamanic practitioners compared to control
+participants. While we did not see differences in the low
+beta band, the presence of increased gamma power in both
+investigations supports the involvement of gamma oscillations
+in the shamanic state of consciousness. Gamma oscillations have
+been implicated in a variety of cognitive processes, including
+consciousness (Havlík, 2017), maintenance of visual images
+within working memory (Ewerdwalbesloh et al., 2016), and visual
+perception (Martinovic and Busch, 2011), which is relevant given
+the correlation between gamma power and elementary visual
+alterations. Furthermore, previous investigations of brain activity
+during meditation have revealed increased gamma activity (Lutz
+et al., 2004; Cahn et al., 2010; Fell et al., 2010; Berkovich-Ohana
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+9
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 5 | Shamanic practitioners have decreased neural signal diversity in the gamma band during drumming which is negatively correlated with feelings of
+insightfulness. (A) Comparison of the Lempel-Ziv complexity (LZc), a surrogate measure of neural signal diversity, across frequencies in shamanic practitioners (SP;
+n = 18) and controls (CC; n = 19). Warmer colors represent greater LZc in SP while cooler colors indicate greater LZc in CC. The dotted lines represent the gamma
+band (30–45 Hz), which was significantly different between groups. (B) Box plots comparing the average LZc in the gamma band for SP (purple) and CC (green)
+during eyes closed, classical music, and drumming. Whiskers represent the lower (25%) and upper (75%) quartiles and the center band of each box represents the
+median for the group. SP experienced statistically significant decreases in LZc in the gamma band compared to CC. Significance is indicated by the key in the lower
+righthand corner of the figure. (C) Correlations between LZc in the gamma band and ASC domain scores revealed a negative correlation between gamma LZc and
+feelings of insightfulness.
+
+(Doufesh et al., 2012, 2014). While these findings related to
+Abrahamic religious practices differ from those of the current
+study, an investigation of EEG changes in Carmelite nuns
+during the recall of mystical experiences found changes in
+theta and gamma power (Beauregard and Paquette, 2008),
+with the authors attributing increases in gamma to individuals
+entering a more absorptive state. Thus, the shamanic state of
+consciousness appears to overlap more with religious or spiritual
+practices coupled with mystical experiences characterized by
+perturbations in conscious experience (i.e., unity with God,
+visual imagery) rather than solely religious actions. Future
+investigations of mystical experiences during religious or
+spiritual practice, as well as other absorptive or contemplative
+states, are needed.
+
+decreased metastability in the gamma band. This is the inverse
+of our findings, where shamanic practitioners had decreased
+neural signal diversity and increased criticality in the gamma
+band, which, by definition, indicates increased metastability
+and brain network susceptibility. Given the paucity of research
+evaluating these measures in the context of shamanic trance
+or other absorptive states, it is difficult to discern the reason
+for this difference. One such explanation could be a difference
+in computational methods, as Martínez Vivot et al. (2020)
+evaluated changes in sample entropy (compared to Lempel-Ziv
+complexity) and utilized different techniques for measuring
+metastability. Additionally, despite the similarities between
+shamanic trance and deep meditative trance, they are distinct
+states of consciousness that are achieved through different means
+and for different purposes, meaning an inverse of findings may
+not be surprising.
+The comparison of EEG changes during the shamanic state
+of consciousness and other spiritual or religious practices
+remains less clear. Previous studies have detailed increased alpha
+power (Abdullah and Omar, 2011; Al-Galal and Alshaikhli,
+2017) and changes in relative alpha and theta power (Vaghefi
+et al., 2015) while listening to the recitation of the Quran, as
+well as increased approximate and sample entropy (Vaghefi
+et al., 2019). Additionally, increased absolute alpha power has
+been noted during catholic prayer (Barcelona et al., 2020), as
+well as increased relative alpha power during Muslim prayer
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+Shamanic Practitioners Enter an Altered
+State of Consciousness Similar Yet
+Distinct From the Psychedelic State
+Our analyses revealed significant differences between shamanic
+practitioners and control participants in 8 of the 11 OAV
+domains during drumming, with elevations in those 8 domains
+mirroring or exceeding domains altered during the psychedelic
+state. This suggests that shamanic practitioners are entering
+an altered state of consciousness during trance and confirms
+the anecdotal overlap with the psychedelic state. However,
+
+10
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+FIGURE 6 | Shamanic practitioners have increased criticality in beta and gamma bands during drumming, with low beta increases correlating with complex imagery
+and elementary visual alterations. (A) Comparison of criticality, measured using a pair correlation function (PCF), across different frequencies between shamanic
+practitioners (SP; n = 18) and control participants (CC; n = 19). Warmer colors indicate greater PCF in SP while cooler colors represent increased PCF in CC. Dotted
+lines represent the low (13–20 Hz) and high (20–30 Hz) beta and gamma (30–45 Hz) bands, which were significantly different between SP and controls. (B1–B3) Box
+plots illustrating the average PCF value for the low (B1) and high (B2) beta and gamma (B3) bands in SP (purple) and CC (green) during eyes closed, classical music,
+and drumming. Whiskers represent the lower (25%) and upper (75%) quartiles and the center band of each box represents the median for the group. SP had greater
+PCF in the low and high beta (B1,B2) and gamma (B3) bands during drumming compared to CC, with increases extending to the classic music condition in high
+beta (B2) and gamma (B3) bands and the eyes closed condition in the gamma band (B3). Significance is indicated by the key in the lower righthand corner. (C1,C2)
+Spearman correlations revealed a positive correlation between PCF in the low beta band and both complex imagery (C1) and elementary visual alterations (C2).
+
+brew commonly used for shamanic practice that contains
+the psychoactive substance N,N-dimethyltryptamine—it was
+found to be unrelated to psychometric measures (Schenberg
+et al., 2015). Thus, while the shamanic state of consciousness
+involves similar changes in phenomenology as the psychedelic
+state, the underlying neurobiology of shamanic trance appears
+to be distinct from altered states of consciousness induced
+by psychedelics.
+While literature investigating functional connectivity during
+the psychedelic state using EEG and MEG remains scarce, one
+study did find changes in the lagged phase synchronization in
+the delta band during psilocybin to be associated with feelings
+of insightfulness and spiritual experience (Kometer et al., 2015).
+Our findings suggest that while shamanic practitioners differed
+from controls in low alpha and low beta connectivity, these
+changes are not associated with the degree of assessed altered
+states of consciousness. Furthermore, changes in connectivity
+also occurred during classical music and, according to Figure 4A,
+to some degree at baseline, possibly reflecting long-term
+(i.e., trait) changes in low alpha and low beta connectivity in
+shamanic practitioners.
+Previous literature examining changes in neural signal
+diversity during the psychedelic state have consistently revealed
+increases in LZc (Schartner et al., 2017; Timmermann et al., 2019)
+
+the shamanic state of consciousness was different from the
+drug response in multiple OAV domains, suggesting that
+shamanic trance is a distinct altered state and does not
+perfectly correlate with the drug experience of any of the
+three substances examined by Studerus et al. (2010), even ones
+used for shamanic practice (e.g., psilocybin). This assertion
+is supported by the lack of congruency between previous
+EEG and magnetoencephalographic (MEG) findings during the
+psychedelic state and the results of the current study. Past
+studies have demonstrated widespread decreases in broadband
+power (Riba et al., 2002, 2004; Muthukumaraswamy et al.,
+2013; Kometer et al., 2015; Carhart-Harris et al., 2016;
+Pallavicini et al., 2019), with an emphasis on decreases in
+the alpha band that correlate with the degree of subjective
+effects (Kometer et al., 2013; Carhart-Harris et al., 2016; Valle
+et al., 2016; Timmermann et al., 2019). Given our results
+demonstrating an overlap between self-reported changes in
+consciousness during shamanic trance and the psychedelic state,
+it is surprising that shamanic practitioners not only lacked
+changes in alpha power but experienced increases in power
+isolated to the gamma band that correlated with the degree of
+elementary visual alterations. Although increased gamma power
+has been reported during select studies of Ayahuasca exposure
+(Don et al., 1998; Schenberg et al., 2015)—an Amazonian
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+11
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+turn, increased brain network susceptibility to perturbations
+and metastability. Based on the assumption that the brain
+during normal waking consciousness resides near criticality,
+increased PCF of shamanic practitioners compared to the
+control group implies the shamanic state of consciousness
+shifts the brain state to the upper limit of the critical
+zone. With heightened criticality, the brains of shamanic
+practitioners may be more susceptible to internal and external
+perturbations, which produce more diverse spatiotemporal brain
+activity patterns and consequently allow for a ‘‘richer’’ or
+more ‘‘diverse’’ conscious experience. This is supported by the
+correlations between increased PCF in the low beta band and
+the OAV domains of complex imagery and elementary visual
+alterations. Furthermore, while PCF increases were greatest
+during shamanic drumming, PCF was also increased during
+classical music and eye closure in shamanic practitioners
+compared to the control group, suggesting that shamanic
+practice may induce enduring changes in criticality, shifting
+the brain to reside in the upper bounds of the critical zone
+long-term (i.e., over months or years). Future longitudinal
+studies could expand these findings by examining criticality and
+other EEG measures at various points within the lifetime of
+shamanic practitioners.
+
+that correlate with the strength of psychedelic-induced changes
+in phenomenal content (Schartner et al., 2017; Timmermann
+et al., 2019), particularly in visual domains. Yet, we found
+that the shamanic state of consciousness was characterized by
+decreases in neural signal diversity in the gamma band that
+negatively correlated with feelings of insightfulness, suggesting
+that decreased diversity in the neural signal was indicative
+of a more profound experience. One possible explanation for
+this discrepancy is that previous literature has focused on
+broadband signal diversity rather than diversity within a given
+frequency band. However, analysis of broadband LZc did not
+reveal any significant differences between groups. When coupled
+with the lack of decreased alpha power, our findings suggest
+that while shamanic trance may be anecdotally similar to the
+psychedelic state, they are discrete altered states of consciousness,
+most likely with different underlying mechanisms by which
+changes in the subjective experience originate. This is further
+supported by previous literature demonstrating increased activity
+in the default-mode network (DMN) during shamanic trance
+(Hove et al., 2016) rather than the characteristic decreases
+found during the psychedelic state (Carhart-Harris et al.,
+2012, 2016; Palhano-Fontes et al., 2015), with decreases in
+alpha power that correlated with feelings of ego dissolution
+localizing to nodes of the DMN (Muthukumaraswamy et al.,
+2013). Future studies should aim to investigate shamanic trance
+with and without the use of pharmacological intervention to
+further characterize the relationship between shamanic and
+psychedelic states.
+
+METHODOLOGIC STRENGTHS AND
+WEAKNESSES
+This study has many strengths. In addition to validating
+the spectral changes noted in the only previous EEG study
+of shamanic trance, we characterized the shamanic state of
+consciousness using a variety of computational methods used
+previously to assess other altered states of consciousness.
+Furthermore, we investigated the relationship between such
+measures and changes in consciousness reported by shamanic
+practitioners. This allowed for the most comprehensive
+characterization of the shamanic state of consciousness to
+date while using the largest cohort of shamanic practitioners
+reported in the literature. Finally, this study allowed for
+the investigation of changes in phenomenal content in the
+absence of pharmacologic manipulation. Given that psychedelic
+agents indiscriminately act on brain regions based solely
+on their receptor profile, the use of these substances may
+produce confounding results by altering attributes of cortical
+functioning unrelated to the altered state of consciousness being
+probed. Thus, the ability to study altered states while free of
+pharmacologic agents may provide a more direct approach to
+elucidating the neural correlates of consciousness.
+This study has some limitations. First, we did not collect
+electromyography data to control for movement, meaning it
+remains possible that our findings within the gamma band
+are contaminated by muscle artifact. Additionally, our sample
+size was small relative to many neuroimaging studies. This
+led to the lack of adjustment for multiple comparisons in our
+post hoc analyses due to their exploratory nature. Yet, it is
+important to note that trend relationships (p = 0.052–0.07)
+would remain for a majority of EEG measures (connectivity,
+signal diversity) and almost all PCF results, excluding in the
+
+The Shamanic State of Consciousness and
+the Entropic Brain Hypothesis
+According to the entropic brain hypothesis, consciousness
+arises within a critical zone rather than a critical point
+(Carhart-Harris et al., 2014), which is supported by a series
+of studies demonstrating that a hierarchical modular structure
+of the brain network extends a critical point to a critical
+region (Moretti and Muñoz, 2013). The extended critical
+region allows for increased sustainability, which in turn
+enables the brain to maintain criticality under perturbations.
+Furthermore, the entropic brain hypothesis suggests that normal
+waking consciousness exists within a band positioned in the
+middle of this critical zone and changes in consciousness
+occur when pushed beyond the lower or upper limits of
+this band. For example, sedatives and anesthetics shift the
+brain downward, closer to a lower limit (i.e., sub-critical
+or extremely ordered), and diminish conscious contents. On
+the contrary, psychedelics shift the brain upward, closer to
+the upper limit of the critical zone (i.e., super-critical or
+extremely disordered) with richer conscious contents (CarhartHarris et al., 2014). This was recently demonstrated by
+Atasoy et al., who provided empirical evidence for heightened
+criticality during Lysergic acid diethylamide (LSD) using
+human fMRI blood oxygen level-dependent (BOLD) signals
+(Atasoy et al., 2017).
+In the current study, we found that shamanic trance increased
+PCF in beta and gamma bands. As mentioned previously,
+increased PCF is indicative of increased criticality, and in
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+12
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+Studerus et al. (2010). Recent literature examining the impact
+of external stimulation during the psychedelic state found
+that the greatest changes in brain activity (i.e., brain entropy)
+occurred during eye closure (Mediano et al., 2020). Thus, the
+heightened OAV scores in shamanic practitioners compared
+to those of individuals under the influence of psychedelics
+may be due to the inclusion of less intense experiences due
+to eye-opening.
+Finally, there was a lack of blinding between experimental
+conditions or groups, which could have led to exaggerated OAV
+scores in shamanic practitioners or decreased OAV scores in
+the control group due to demand characteristics. However, we
+attempted to reduce expectancies by randomizing the order of
+experimental conditions.
+
+high beta band during music (p = 0.065), would remain
+significant (p < 0.05) after correction (Benjamini-Hochberg
+procedure). It is unknown whether the relationships between
+EEG measures and OAV domain scores would have survived
+adjustment for multiple comparisons, meaning these exploratory
+findings should be interpreted with a degree of caution.
+Future studies should aim to include a larger cohort of
+shamanic practitioners that is powered to formally investigate
+this relationship.
+Our cohort of shamanic practitioners had diverse
+backgrounds of shamanic practice and rituals, which introduced
+potential variability in our study population while also allowing
+for greater generalizability of findings and ease of recruitment. A
+summary of the shamanic traditions utilized by each practitioner
+during normal, non-study shamanic trance sessions is detailed
+in Supplementary Table 3.
+Another limitation of this study is that our control
+participants were asked to rest quietly during the shamanic
+drumming period while our shamanic practitioners were asked
+to enter a shamanic trance. This means shamanic practitioners
+were cognitively engaged during this time while controls were
+passively listening, which could have led to a difference in
+EEG changes. However, unlike previous studies of the shamanic
+state of consciousness, we collected data during classical music
+as a contrast condition to identify brain activity specific to
+shamanic trance rather than due to cognitive engagement.
+Furthermore, a recent study investigating the effects of rhythmic
+drumming on sparse EEG in healthy volunteers found that the
+suggestion to enter a trance state during rhythmic drumming
+elicited increased delta and decreased alpha activity, which
+the authors attributed to increased relaxation or drowsiness
+rather than effects of a trance state (Konopacki and Madison,
+2018). Thus, our instruction for healthy volunteers to only
+listen during shamanic drumming was likely still a comparable
+control condition.
+It is important to note that there were methodological
+differences between the current study and that of Studerus et al.
+that may potentially complicate the comparison of OAV domain
+scores from shamanic practitioners and healthy volunteers under
+the influence of psychedelics. First, the data used by Studerus
+et al. (2010) was aggregated from 43 studies which varied by
+methodology and dose. Specifically, doses for each of the three
+drugs varied as follows: psilocybin 115–350 µg/kg orally (low
+to high dose); ketamine 6–12 µg kg−1 min−1 intravenously
+(medium to high dose); MDMA varied from 1.5–1.7 mg/kg
+orally (medium dose; Studerus et al., 2010). Thus, the OAV
+scores from Studerus et al. represent the average dose across
+43 studies rather than OAV scores of individuals under a
+traditional low, medium, or high dose. However, given that
+we are unsure of the strength or ‘‘dose’’ of the shamanic
+trance each practitioner endured, this comparison is somewhat
+preferable. Some shamanic practitioners in our study may have
+entered a ‘‘high dose’’ trance during drumming (similar to
+a high dose of a psychedelic) whereas others may have had
+an experience equivalent to a ‘‘low dose’’. Additionally, while
+shamanic practitioners kept their eyes closed during shamanic
+drumming, methodology varied across the studies included by
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+CONCLUSION
+We found that shamanic practitioners entered an altered
+state of consciousness compared to control participants
+during drumming, with the magnitude of these changes in
+consciousness comparable to or greater than reports during
+the psychedelic state. Furthermore, shamanic practitioners
+evinced changes in a variety of EEG measures during shamanic
+drumming that correlated with measures of their altered states
+of consciousness. These findings suggest that shamanic trance
+and psychedelic drug-induced altered states of consciousness are
+‘‘distinct states with shared traits,’’ meaning that despite various
+overlapping phenomenal components, they are characterized by
+different changes in brain activity. This suggests the involvement
+of endogenous mechanisms for non-pharmacologically-induced
+altered states of consciousness that are distinct from those
+co-opted by psychedelic drugs.
+
+DATA AVAILABILITY STATEMENT
+The raw data supporting the conclusions of this article will be
+made available by the authors, without undue reservation.
+
+ETHICS STATEMENT
+The studies involving human participants were reviewed and
+approved by University of Michigan Institutional Review
+Board (HUM00089064). The patients/participants provided their
+written informed consent to participate in this study.
+
+AUTHOR CONTRIBUTIONS
+EH and HK: formal analysis, writing—original draft,
+writing—review
+and
+editing.
+UL:
+methodology,
+writing—review and editing. TB-B and AC: data
+curation, writing—review and editing. AN: data curation.
+SB-M: conceptualization, methodology, writing—review and
+editing. GM: conceptualization, funding acquisition, resources,
+writing—review and editing. RH: conceptualization, supervision,
+methodology, resources, writing—review and editing.
+
+13
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+This work was funded by the Center for Consciousness Science,
+Department of Anesthesiology, University of Michigan Medical
+School.
+
+of psychedelics. Additionally, we would like to thank Kate
+Durda and Stephanie Tighe, who offered invaluable insight
+as shamanic practitioners when designing our study. This
+manuscript has been released as a pre-print at bioRxiv
+(Huels et al., 2020).
+
+ACKNOWLEDGMENTS
+
+SUPPLEMENTARY MATERIAL
+
+We would like to thank Dr. Erich Studerus for his agreement
+to and helpful suggestions for comparing our data from
+shamanic practitioners to healthy volunteers under the influence
+
+The Supplementary Material for this article can be found
+online at: https://www.frontiersin.org/articles/10.3389/fnhum.
+2021.610466/full#supplementary-material.
+
+REFERENCES
+
+states informed by neuroimaging research with psychedelic drugs. Front. Hum.
+Neurosci. 8:20. doi: 10.3389/fnhum.2014.00020
+Carhart-Harris, R. L., Muthukumaraswamy, S., Roseman, L., Kaelen, M.,
+Droog, W., Murphy, K., et al. (2016). Neural correlates of the LSD experience
+revealed by multimodal neuroimaging. Proc. Natl. Acad. Sci. U S A 113,
+4853–4858. doi: 10.1073/pnas.1518377113
+Delorme, A., and Makeig, S. (2004). EEGLAB: an open source toolbox for analysis
+of single-trial EEG dynamics. J. Neurosci. Methods 134, 9–21. doi: 10.1016/j.
+jneumeth.2003.10.009
+Don, N. S., McDonough, B. E., Moura, G., Warren, C. A., Kawanishi, K.,
+Tomita, H., et al. (1998). Effects of Ayahuasca on the human EEG.
+Phytomedicine 5, 87–96. doi: 10.1016/S0944-7113(98)80003-2
+Doufesh, H., Faisal, T., Lim, K.-S., and Ibrahim, F. (2012). EEG spectral
+analysis on Muslim prayers. Appl. Psychophysiol. Biofeedback 37, 11–18.
+doi: 10.1007/s10484-011-9170-1
+Doufesh, H., Ibrahim, F., Ismail, N. A., and Wan Ahmad, W. A. (2014). Effect of
+Muslim prayer (Salat) on α electroencephalography and its relationship with
+autonomic nervous system activity. J. Altern. Complement. Med. 20, 558–562.
+doi: 10.1089/acm.2013.0426
+Ewerdwalbesloh, J. A., Palva, S., Rösler, F., and Khader, P. H. (2016).
+Neural correlates of maintaining generated images in visual working
+memory. Hum. Brain Mapp. 37, 4349–4362. doi: 10.1002/hbm.
+23313
+Fell, J., Axmacher, N., and Haupt, S. (2010). From α to γ: electrophysiological
+correlates of meditation-related states of consciousness. Med. Hypotheses 75,
+218–224. doi: 10.1016/j.mehy.2010.02.025
+Fiorica-Howells, E., Hen, R., Gingrich, J., Li, Z., and Gershon, M. D. (2002). 5 HT2A receptors: location and functional analysis in intestines of wild-type
+and 5-HT2A knockout mice. Am. J. Physiol. Gastrointest. Liver Physiol. 282,
+G877–G893. doi: 10.1152/ajpgi.00435.2001
+Flor-Henry, P., Shapiro, Y., and Sombrun, C. (2017). Brain changes during a
+shamanic trance: altered modes of consciousness, hemispheric laterality and
+systemic psychobiology. Cogent Psychol. 4:1313522. doi: 10.1080/23311908.
+2017.1313522
+Halberstadt, A. L., and Geyer, M. A. (2011). Multiple receptors contribute to
+the behavioral effects of indoleamine hallucinogens. Neuropharmacology 61,
+364–381. doi: 10.1016/j.neuropharm.2011.01.017
+Harner, M. (1980). The Way of the Shaman. 3rd Edn. San Francisco: Harper and
+Row.
+Harner, M. (1997). ‘‘15 minute solo drumming with call back’’, in Michael
+Harner’s Shamanic Journey Solo and Double Drumming. Mill Valley, CA: The
+Foundation for Shamanic Studies, Inc.
+Havlík, M. (2017). Missing piece of the puzzle in the science of consciousness:
+resting state and endogenous correlates of consciousness. Conscious. Cogn. 49,
+70–85. doi: 10.1016/j.concog.2017.01.006
+Hove, M. J., Stelzer, J., Nierhaus, T., Thiel, S. D., Gundlach, C., Margulies, D. S.,
+et al. (2016). Brain network reconfiguration and perceptual decoupling
+during an absorptive state of consciousness. Cereb. Cortex 26, 3116–3124.
+doi: 10.1093/cercor/bhv137
+Huels, E. R., Kim, H., Lee, U., Bel-Bahar, T., Colmenero, A., Nelson, A., et al.
+(2020). Neural correlates of the shamanic state of consciousness. bioRxiv
+[Preprint]. doi: 10.1101/2020.07.20.212522
+
+FUNDING
+
+Abdullah, A. A., and Omar, Z. (2011). The effect of temporal EEG signals while
+listening to quran recitation. Int. J. Adv. Sci. Eng. Inform. Technol. 1, 372–375.
+doi: 10.18517/ijaseit.1.4.77
+Al-Galal, S. A., and Alshaikhli, I. F. T. (2017). Analyzing brainwaves while
+listening to quranic recitation compared with listening to music based
+on EEG signals. Int. J. Percept. Cogn. Comput. 3:1. doi: 10.31436/ijpcc.
+v3i1.43
+Atasoy, S., Roseman, L., Kaelen, M., Kringelbach, M. L., Deco, G., and CarhartHarris, R. L. (2017). Connectome-harmonic decomposition of human brain
+activity reveals dynamical repertoire re-organization under LSD. Sci. Rep.
+7:17661. doi: 10.1038/s41598-017-17546-0
+Bak, P., Tang, C., and Wiesenfeld, K. (1988). Self-organized criticality. Phys. Rev.
+A Gen. Phys. 38, 364–374. doi: 10.1103/physreva.38.364
+Barcelona, J., Fahlman, M., Churakova, Y., Canjels, R., Mallare, J., and van den
+Heuvel, M. I. (2020). Frontal α asymmetry during prayerful and resting states:
+an EEG study in Catholic sisters. Int. J. Psychophysiol. 155, 9–15. doi: 10.1016/j.
+ijpsycho.2020.04.019
+Bastos, M. A. V. Jr., Bastos, P. R. H. O., Osório, I. H. S., Muass, K. A. R. C.,
+Iandoli, D. Jr., Lucchetti, G., et al. (2016). Frontal electroencephalographic
+(EEG) activity and mediumship: a comparative study between spiritist
+mediums and controls. Arch. Clin. Psychiatry 43, 20–26. doi: 10.1590/010160830000000076
+Beauregard, M., and Paquette, V. (2008). EEG activity in Carmelite nuns during
+a mystical experience. Neurosci. Lett. 444, 1–4. doi: 10.1016/j.neulet.2008.
+08.028
+Beethoven, L. (1801/2013). Sonata No.5 in F Major for Violin and Piano, Op. 24,
+‘‘Spring’’: I. Allegro. [Song recorded by N. Chastain and F. Rieger] On My First
+Beethoven Album. X5 Music Group.
+Berkovich-Ohana, A., Glicksohn, J., and Goldstein, A. (2012). Mindfulnessinduced changes in γ band activity—implications for the default mode
+network, self-reference and attention. Clin. Neurophysiol. 123, 700–710.
+doi: 10.1016/j.clinph.2011.07.048
+Bodmer, I., Dittrich, A., and Lamparter, D. (1994). Aussergewöhnliche
+Bewusstseinszustände—Ihre Gemeinsame Struktur und Messung [Altered
+States of Consciousness—Their Common Structure and Assessment]. In: Welten
+des Bewusstseins. Bd. 3 Experimentelle Psychologie, Neurobiologie und Chemie.
+Berlin: Germany.
+Braboszcz, C., Cahn, B. R., Levy, J., Fernandez, M., and Delorme, A. (2017).
+Increased γ brainwave amplitude compared to control in three different
+meditation traditions. PLoS One 12:e0170647. doi: 10.1371/journal.pone.
+0170647
+Cahn, B. R., Delorme, A., and Polich, J. (2010). Occipital γ activation during
+Vipassana meditation. Cogn. Process. 11, 39–56. doi: 10.1007/s10339-009
+-0352-1
+Carhart-Harris, R. L., Erritzoe, D., Williams, T., Stone, J. M., Reed, L. J.,
+Colasanti, A., et al. (2012). Neural correlates of the psychedelic state as
+determined by fMRI studies with psilocybin. Proc. Natl. Acad. Sci. U S A 109,
+2138–2143. doi: 10.1073/pnas.1119598109
+Carhart-Harris, R. L., Leech, R., Hellyer, P. J., Shanahan, M., Feilding, A.,
+Tagliazucchi, E., et al. (2014). The entropic brain: a theory of conscious
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+14
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+Johnson, M. W., Hendricks, P. S., Barrett, F. S., and Griffiths, R. R. (2019). Classic
+psychedelics: an integrative review of epidemiology, therapeutics, mystical
+experience, and brain network function. Pharmacol. Ther. 197, 83–102.
+doi: 10.1016/j.pharmthera.2018.11.010
+Kakumanu, R. J., Nair, A. K., Venugopal, R., Sasidharan, A., Ghosh, P. K.,
+John, J. P., et al. (2018). Dissociating meditation proficiency and experience
+dependent EEG changes during traditional Vipassana meditation practice. Biol.
+Psychol. 135, 65–75. doi: 10.1016/j.biopsycho.2018.03.004
+Kawai, N., Honda, M., Nishina, E., Yagi, R., and Oohashi, T. (2017).
+Electroencephalogram characteristics during possession trances in healthy
+individuals. Neuroreport 28, 949–955. doi: 10.1097/WNR.0000000000000857
+Kim, H., and Lee, U. (2019). Criticality as a determinant of integrated information
+Φ in human brain networks. Entropy 21:981. doi: 10.3390/e21100981
+Kim, M., Kim, S., Mashour, G. A., and Lee, U. (2017). Relationship of topology,
+multiscale phase synchronization, and state transitions in human brain
+networks. Front. Comput. Neurosci. 11:55. doi: 10.3389/fncom.2017.00055
+Kim, M., Mashour, G. A., Moraes, S.-B., Vanini, G., Tarnal, V., Janke, E., et al.
+(2016). Functional and topological conditions for explosive synchronization
+develop in human brain networks with the onset of anesthetic-induced
+unconsciousness. Front. Comput. Neurosci. 10:1. doi: 10.3389/fncom.2016.
+00001
+Kitzbichler, M. G., Smith, M. L., Christensen, S. R., and Bullmore, E. (2009).
+Broadband criticality of human brain network synchronization. PLoS Comput.
+Biol. 5:e1000314. doi: 10.1371/journal.pcbi.1000314
+Kometer, M., Pokorny, T., Seifritz, E., and Volleinweider, F. X. (2015).
+Psilocybin-induced spiritual experiences and insightfulness are associated with
+synchronization of neuronal oscillations. Psychopharmacology 232, 3663–3676.
+doi: 10.1007/s00213-015-4026-7
+Kometer, M., Schmidt, A., Jäncke, L., and Vollenweider, F. X. (2013).
+Activation of serotonin 2A receptors underlies the psilocybin-induced effects
+on α oscillations, N170 visual-evoked potentials and visual hallucinations.
+J. Neurosci. 33, 10544–10551. doi: 10.1523/JNEUROSCI.3007-12.2013
+Konopacki, M., and Madison, G. (2018). EEG responses to shamanic drumming.
+Does the suggestion of trance state moderate the strength of frequency
+components? J. Sleep Sleep Disord. Res. 1, 16–25. doi: 10.14302/issn.2574-4518.
+jsdr-17-1794
+Kraehenmann, R., Pokorny, D., Vollenweider, L., Preller, K. H., Pokorny, T.,
+Seifritz, E., et al. (2017). Dreamlike effects of LSD on waking imagery in
+humans depend on serotonin 2A receptor activation. Psychopharmacology 234,
+2031–2046. doi: 10.1007/s00213-017-4610-0
+Krippner, S. (2000). The epistemology and technologies of shamanic states of
+consciousness. J. Conscious. Stud. 7, 93–118.
+Lee, H., Golkowski, D., Jordan, D., Berger, S., Ilg, R., Lee, J., et al. (2019).
+Relationship of critical dynamics, functional connectivity and states of
+consciousness in large-scale human brain networks. NeuroImage 188, 228–238.
+doi: 10.1016/j.neuroimage.2018.12.011
+Lee, U., and Mashour, G. A. (2018). The role of network science in the study of
+anesthetic state transitions. Anesthesiology 129, 1029–1044. doi: 10.1097/ALN.
+0000000000002228
+Lee, M., Sanders, R. D., Yeom, S.-K., Won, D.-O., Kim, H.-J., Lee, B.-R.,
+et al. (2017). Change in functional networks for transitions between states of
+consciousness during midazolam-induced sedation. Conf. Proc. IEEE Eng. Med.
+Biol. Soc. 2017, 958–961. doi: 10.1109/EMBC.2017.8036984
+Leemburg, S., and Bassetti, C. L. (2018). Lempel-Ziv complexity of the EEG
+predicts long-term functional recovery after stroke in rats. bioRxiv [Preprint].
+doi: 10.1101/248039
+Lempel, A., and Ziv, J. (1976). On the complexity of finite sequences. IEEE Trans.
+Inform. Theor. 22, 75–81. doi: 10.1109/tit.1976.1055501
+Li, D., and Mashour, G. A. (2019). Cortical dynamics during psychedelic
+and anesthetized states induced by ketamine. NeuroImage 196, 32–40.
+doi: 10.1016/j.neuroimage.2019.03.076
+Li, D., Vlisides, P. E., Kelz, M. B., Avidan, M. S., Mashour, G. A., and ReCCognition
+Study Group. (2019). Dynamic cortical connectivity during general anesthesia
+in healthy volunteers. Anesthesiology 130, 870–884. doi: 10.1097/ALN.
+0000000000002656
+Luft, C. D. B., Zioga, I., Banissy, M. J., and Bhattacharya, J. (2019). Spontaneous
+visual imagery during meditation for creating visual art: an EEG and brain
+stimulation case study. Front Psychol 10:210. doi: 10.3389/fpsyg.2019.00210
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+Lutz, A., Greischar, L. L., Rawlings, N. B., Ricard, M., and Davidson, R. J. (2004).
+Long-term meditators self-induce high-amplitude γ synchrony during mental
+practice. Proc. Natl. Acad. Sci. U S A 101, 16369–16373. doi: 10.1073/pnas.
+0407401101
+Martínez Vivot, R., Pallavicini, C., Zamberlan, F., Vigo, D., and Tagliazucchi, E.
+(2020). Meditation increases the entropy of brain oscillatory activity.
+Neuroscience 431, 40–51. doi: 10.1016/j.neuroscience.2020.01.033
+Martinovic, J., and Busch, N. A. (2011). High frequency oscillations as a correlate
+of visual perception. Int. J. Psychophysiol. 79, 32–38. doi: 10.1016/j.ijpsycho.
+2010.07.004
+Mediano, P. A. M., Rosas, F. E., Timmermann, C., Roseman, L., Nutt, D. J.,
+Feilding, A., et al. (2020). Effects of external stimulation on psychedelic
+state neurodynamics. bioRxiv [Preprint]. doi: 10.1101/2020.11.01.
+356071
+Moretti, P., and Muñoz, M. A. (2013). Griffiths phases and the stretching of
+criticality in brain networks. Nat. Commun. 4:2521. doi: 10.1038/ncomms3521
+Mozart, W. A. (1788/2009). Sonata for Piano No. 15 in F Major, K. 533: I. Allegro.
+[Song recorded by C. Piazzini]. On Mozart: The Complete Piano Sonatas.
+Cascade.
+Muñoz, M. A. (2018). Colloquium: criticality and dynamical scaling in living
+systems. Rev. Mod. Phys. 90:031001. doi: 10.1103/revmodphys.90.031001
+Muthukumaraswamy, S. D., Carhart-Harris, R. L., Moran, R. J., Brookes, M. J.,
+Williams, T. M., Errtizoe, D., et al. (2013). Broadband cortical
+desynchronization underlies the human psychedelic state. J. Neurosci. 33,
+15171–15183. doi: 10.1523/JNEUROSCI.2063-13.2013
+O’Mahony, S. M., Clarke, G., Borre, Y. E., Dinan, T. G., and Cryan, J. F. (2015).
+Serotonin, tryptophan metabolism and the brain-gut-microbiome axis. Behav.
+Brain Res. 277, 32–48. doi: 10.1016/j.bbr.2014.07.027
+Oohashi, T., Kawai, N., Honda, M., Nakamura, S., Morimoto, M., Nishina, E.,
+et al. (2002). Electroencephalographic measurement of possession trance
+in the field. Clin. Neurophysiol. 113, 435–445. doi: 10.1016/s1388-2457(02)
+00002-0
+Pal, D., Li, D., Dean, J. G., Brito, M. A., Liu, T., Fryzel, A. M., et al. (2020).
+Level of consciousness is dissociable from electroencephalographic measures of
+cortical connectivity, slow oscillations and complexity. J. Neurosci. 40, 605–618.
+doi: 10.1523/JNEUROSCI.1910-19.2019
+Palhano-Fontes, F., Andrade, K. C., Tofoli, L. F., Santos, A. C., Crippa, J. A. S.,
+Hallak, J. E. C., et al. (2015). The psychedelic state induced by ayahuasca
+modulates the activity and connectivity of the default mode network. PLoS One
+10:e0118143. doi: 10.1371/journal.pone.0118143
+Pallavicini, C., Vilas, M. G., Villarreal, M., Zamberlan, F., Muthukumaraswamy, S.,
+Nutt, D., et al. (2019). Spectral signatures of serotonergic psychedelics
+and glutamatergic dissociatives. NeuroImage 200, 281–291. doi: 10.1016/j.
+neuroimage.2019.06.053
+Preller, K. H., Burt, J. B., Ji, J. L., Schleifer, C. H., Adkinson, B. D., Stämpfli, P.,
+et al. (2018). Changes in global and thalamic brain connectivity in LSD-induced
+altered states of consciousness are attributable to the 5-HT2A receptor. Elife
+7:e35082. doi: 10.7554/eLife.35082
+Riba, J., Anderer, P., Jané, F., Saletu, B., and Barbanoj, M. J. (2004).
+Effects of the South American psychoactive beverage ayahuasca on regional
+brain electrical activity in humans: a functional neuroimaging study using
+low-resolution electromagnetic tomography. Neuropsychobiology 50, 89–101.
+doi: 10.1159/000077946
+Riba, J., Anderer, P., Morte, A., Urbano, G., Jané, F., Saletu, B., et al. (2002).
+Topographic pharmaco-EEG mapping of the effects of the South American
+psychoactive beverage ayahuasca in healthy volunteers. Br. J. Clin. Pharmacol.
+53, 613–628. doi: 10.1046/j.1365-2125.2002.01609.x
+Schartner, M. M., Carhart-Harris, R. L., Barrett, A. B., Seth, A. K., and
+Muthukumaraswamy, S. D. (2017). Increased spontaneous MEG signal
+diversity for psychoactive doses of ketamine, LSD and psilocybin. Sci. Rep.
+7:46421. doi: 10.1038/srep46421
+Schenberg, E. E., Alexandre, J. F. M., Filev, R., Cravo, A. M., Sato, J. R.,
+Muthukumaraswamy, S. D., et al. (2015). Acute biphasic effects of ayahuasca.
+PLoS One 10:e0137202. doi: 10.1371/journal.pone.0137202
+Stam, C. J., Nolte, G., and Daffertshofer, A. (2007). Phase lag index:
+assessment of functional connectivity from multi channel EEG and MEG with
+diminished bias from common sources. Hum. Brain Mapp. 28, 1178–1193.
+doi: 10.1002/hbm.20346
+
+15
+
+March 2021 | Volume 15 | Article 610466
+
+Huels et al.
+
+Neural Correlates of Shamanic Consciousness
+
+Studerus, E., Gamma, A., and Vollenweider, F. X. (2010). Psychometric evaluation
+of the altered states of consciousness rating scale (OAV). PLoS One 5:e12412.
+doi: 10.1371/journal.pone.0012412
+Timmermann, C., Roseman, L., Schartner, M., Milliere, R., Williams, L. T. J.,
+Erritzoe, D., et al. (2019). Neural correlates of the DMT experience assessed
+with multivariate EEG. Sci. Rep. 9:16324. doi: 10.1038/s41598-019-51974-4
+Tributsch, H. (2018). Shamanic trance journey with animal spirits: ancient
+‘‘scientific’’ strategy dealing with inverted otherworld. Adv. Anthropol. 8,
+91–126. doi: 10.4236/aa.2018.83006
+Vaghefi, M., Nasrabadi, A. M., Golpayegani, S. M. R. H., Mohammadi, M.-R., and
+Gharibzadeh, S. (2015). Spirituality and brain waves. J. Med. Eng. Technol. 39,
+153–158. doi: 10.3109/03091902.2014.1001528
+Vaghefi, M., Nasrabadi, A. M., Hashemi Golpayegani, S. M. R.,
+Mohammadi, M. R., and Gharibzadeh, S. (2019). Nonlinear analysis of
+electroencephalogram signals while listening to the holy quran. J. Med. Signals
+Sens. 9, 100–110. doi: 10.4103/jmss.JMSS_37_18
+Valle, M., Maqueda, A. E., Rabella, M., Rodríguez-Pujadas, A., Antonijoan, R. M.,
+Romero, S., et al. (2016). Inhibition of α oscillations through serotonin-2A
+receptor activation underlies the visual effects of ayahuasca in humans.
+Eur. Neuropsychopharmacol. 26, 1161–1175. doi: 10.1016/j.euroneuro.
+2016.03.012
+Vinck, M., Oostenveld, R., van Wingerden, M., Battaglia, F., and Pennartz, C. M. A.
+(2011). An improved index of phase-synchronization for electrophysiological
+
+Frontiers in Human Neuroscience | www.frontiersin.org
+
+data in the presence of volume-conduction, noise and sample-size bias.
+NeuroImage 55, 1548–1565. doi: 10.1016/j.neuroimage.2011.01.055
+Winkelman, M. J. (2013). Shamanism and psychedelics: a biogenetic structuralist
+paradigm of ecopsychology. Eur. J. Ecopsychol. 4, 90–115.
+Yoon, S., Sorbaro Sindaci, M., Goltsev, A. V., and Mendes, J. F. F. (2015). Critical
+behavior of the relaxation rate, the susceptibility and a pair correlation function
+in the Kuramoto model on scale-free networks. Phys. Rev. E Stat. Nonlin. Soft
+Matter Phys. 91:032814. doi: 10.1103/PhysRevE.91.032814
+Zhang, X. S., Roy, R. J., and Jensen, E. W. (2001). EEG complexity as a measure
+of depth of anesthesia for patients. IEEE Trans. Biomed. Eng. 48, 1424–1433.
+doi: 10.1109/10.966601
+Conflict of Interest: The authors declare that the research was conducted in the
+absence of any commercial or financial relationships that could be construed as a
+potential conflict of interest.
+Copyright © 2021 Huels, Kim, Lee, Bel-Bahar, Colmenero, Nelson, Blain-Moraes,
+Mashour and Harris. This is an open-access article distributed under the terms
+of the Creative Commons Attribution License (CC BY). The use, distribution or
+reproduction in other forums is permitted, provided the original author(s) and the
+copyright owner(s) are credited and that the original publication in this journal
+is cited, in accordance with accepted academic practice. No use, distribution or
+reproduction is permitted which does not comply with these terms.
+
+16
+
+March 2021 | Volume 15 | Article 610466
+
+

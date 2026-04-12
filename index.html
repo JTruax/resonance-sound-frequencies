@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resonance — Therapeutic Sound Frequencies</title>
+  <style>
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    input[type="range"] { -webkit-appearance: none; appearance: none; }
+
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --bg-base:        #121212;
+      --bg-surface:     #181818;
+      --bg-interactive: #1f1f1f;
+      --bg-hover:       #2a2a2a;
+      --text-primary:   #ffffff;
+      --text-secondary: #b3b3b3;
+      --text-muted:     #6b7280;
+      --border-subtle:  rgba(255,255,255,0.06);
+      --border-mid:     rgba(255,255,255,0.12);
+      --shadow-sm:  0 2px 8px rgba(0,0,0,0.3);
+      --shadow-md:  0 4px 16px rgba(0,0,0,0.4);
+      --shadow-lg:  0 8px 32px rgba(0,0,0,0.5);
+      --radius-pill: 9999px;
+      --radius-card: 10px;
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --header-h: 64px;
+      --nav-h:    52px;
+      --bar-h:    88px;
+      /* Dynamic accent — overridden per category by JS */
+      --accent:      #8b5cf6;
+      --accent-rgb:  139,92,246;
+      --accent-glow: rgba(139,92,246,0.25);
+    }
+
+    /* ── BASE ── */
+    body {
+      background: var(--bg-base);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    #app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 var(--space-lg);
+      background: rgba(18,18,18,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    #app-title { display: flex; align-items: baseline; gap: 10px; }
+    #app-title h1 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--accent) 0%, rgba(var(--accent-rgb),0.6) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    #app-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Mode Toggle */
+    #mode-toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .mode-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .mode-label.active { color: var(--text-primary); }
+    #mode-toggle {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    .toggle-track {
+      width: 44px;
+      height: 24px;
+      background: var(--bg-interactive);
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-mid);
+      position: relative;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .toggle-thumb {
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--text-secondary);
+      transition: transform 0.2s ease, background 0.2s;
+    }
+    #mode-toggle[aria-checked="true"] .toggle-track {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    #mode-toggle[aria-checked="true"] .toggle-thumb {
+      transform: translateX(20px);
+      background: #fff;
+    }
+
+    /* ── CATEGORY NAV ── */
+    #category-nav {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 90;
+      height: var(--nav-h);
+      background: rgba(18,18,18,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+    }
+    #category-tags-scroll {
+      display: flex;
+      gap: var(--space-sm);
+      padding: 0 var(--space-lg);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    #category-tags-scroll::-webkit-scrollbar { display: none; }
+
+    .category-tag {
+      flex-shrink: 0;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-mid);
+      background: var(--bg-interactive);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+    .category-tag:hover {
+      background: var(--bg-hover);
+      color: var(--text-primary);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .category-tag.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    /* ── MAIN CONTENT ── */
+    #main-content {
+      padding: var(--space-lg);
+      padding-bottom: calc(var(--bar-h) + 120px);
+    }
+
+    #category-heading {
+      margin-bottom: var(--space-lg);
+    }
+    #category-heading h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    #category-heading p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    #cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: var(--space-md);
+    }
+
+    /* ── FREQUENCY CARDS ── */
+    .freq-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-card);
+      padding: var(--space-md);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid transparent;
+      transition: background 0.15s ease, box-shadow 0.2s ease, transform 0.15s ease, border-color 0.2s;
+      outline: none;
+    }
+    .freq-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .freq-card:hover {
+      background: var(--bg-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .freq-card:hover::before { opacity: 0.5; }
+    .freq-card:focus-visible {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-glow);
+    }
+    .freq-card.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(var(--accent-rgb),0.4), 0 0 24px var(--accent-glow);
+    }
+    .freq-card.active::before { opacity: 1; }
+
+    .freq-card .card-hz {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      display: flex;
+      align-items: baseline;
+      gap: 3px;
+    }
+    .freq-card .card-hz span {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0;
+    }
+    .freq-card .card-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 6px;
+    }
+    .freq-card .card-desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-binaural-badge {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      background: rgba(var(--accent-rgb),0.15);
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .card-playing-indicator {
+      position: absolute;
+      top: 12px; right: 12px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.2s;
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    .freq-card.active .card-playing-indicator { opacity: 1; }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+    }
+
+    /* ── INFO PANEL ── */
+    #info-panel {
+      margin-top: var(--space-lg);
+      background: var(--bg-surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border-mid);
+      padding: var(--space-lg);
+      display: none;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+    #info-panel.visible { display: block; }
+    #info-panel-inner {
+      display: flex;
+      gap: var(--space-lg);
+      align-items: flex-start;
+    }
+    #info-close {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--bg-interactive);
+      color: var(--text-secondary);
+      font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, color 0.15s;
+    }
+    #info-close:hover { background: var(--bg-hover); color: var(--text-primary); }
+    #info-viz-container {
+      flex-shrink: 0;
+      width: 120px;
+      height: 80px;
+      border-radius: 8px;
+      background: rgba(var(--accent-rgb),0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #info-pulse-canvas { display: block; }
+    #info-details { flex: 1; min-width: 0; }
+    #info-hz-badge {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      line-height: 1;
+    }
+    #info-hz-badge small {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    #info-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 4px;
+    }
+    #info-description {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-top: 8px;
+    }
+    #info-source {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      font-style: italic;
+    }
+    #info-binaural-indicator {
+      display: none;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 4px 12px;
+      background: rgba(var(--accent-rgb),0.1);
+      border-radius: var(--radius-pill);
+      width: fit-content;
+    }
+    #info-binaural-indicator.visible { display: block; }
+
+    /* ── LAYER PANEL ── */
+    #layer-panel {
+      position: fixed;
+      bottom: var(--bar-h);
+      left: 0; right: 0;
+      background: rgba(24,24,24,0.97);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-subtle);
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 150;
+      display: none;
+    }
+    #layer-panel.visible { display: block; }
+    #layer-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px 6px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    #layer-panel-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    #clear-all-btn {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ef4444;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(239,68,68,0.3);
+      transition: background 0.15s;
+    }
+    #clear-all-btn:hover { background: rgba(239,68,68,0.1); }
+    #layer-list { padding: 6px 20px 8px; }
+    .layer-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .layer-row:last-child { border-bottom: none; }
+    .layer-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    .layer-name {
+      font-size: 13px;
+      color: var(--text-primary);
+      font-weight: 500;
+      min-width: 120px;
+    }
+    .layer-hz {
+      font-size: 11px;
+      color: var(--text-muted);
+      min-width: 50px;
+    }
+    .layer-vol {
+      flex: 1;
+      height: 3px;
+      border-radius: 2px;
+      accent-color: var(--accent);
+    }
+    .layer-remove {
+      color: var(--text-muted);
+      font-size: 16px;
+      width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      transition: background 0.15s, color 0.15s;
+    }
+    .layer-remove:hover { background: rgba(239,68,68,0.1); color: #ef4444; }
+
+    /* ── NOW PLAYING BAR ── */
+    #now-playing-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      height: var(--bar-h);
+      background: rgba(24,24,24,0.98);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border-subtle);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: var(--space-md);
+      padding: 0 var(--space-lg);
+      z-index: 200;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+    }
+
+    /* Waveform canvas */
+    #waveform-canvas {
+      display: block;
+      border-radius: 6px;
+      background: rgba(var(--accent-rgb),0.05);
+    }
+
+    /* Now playing info */
+    #now-playing-info {
+      min-width: 0;
+    }
+    #now-playing-name {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #now-playing-sub {
+      display: block;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+    #binaural-indicator {
+      display: none;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    #binaural-indicator.visible { display: block; }
+
+    /* Controls */
+    #bar-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Wave type selector */
+    #waveform-selector {
+      display: flex;
+      background: var(--bg-interactive);
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-mid);
+      overflow: hidden;
+    }
+    .wave-btn {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .wave-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .wave-btn:hover:not(.active) { color: var(--text-primary); }
+
+    /* Play/Pause */
+    #play-pause-btn {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 16px;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+      box-shadow: 0 0 16px var(--accent-glow);
+      flex-shrink: 0;
+    }
+    #play-pause-btn:hover { transform: scale(1.08); }
+    #play-pause-btn:active { transform: scale(0.95); }
+    #play-pause-btn:disabled {
+      background: var(--bg-interactive);
+      color: var(--text-muted);
+      box-shadow: none;
+    }
+
+    /* Master volume */
+    #vol-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #vol-icon { font-size: 14px; color: var(--text-muted); }
+    #master-volume {
+      width: 80px;
+      height: 3px;
+      border-radius: 2px;
+      accent-color: var(--accent);
+    }
+
+    /* Timer */
+    #timer-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #timer-select {
+      background: var(--bg-interactive);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      cursor: pointer;
+      outline: none;
+      font-family: inherit;
+    }
+    #timer-select:focus { border-color: var(--accent); }
+    #timer-display {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 48px;
+      letter-spacing: 0.04em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Range input track */
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 3px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.15);
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: -4.5px;
+    }
+    input[type="range"]::-moz-range-track {
+      height: 3px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.15);
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      #app-subtitle { display: none; }
+      #cards-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+      #now-playing-bar {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        padding: 10px var(--space-md);
+        gap: 8px;
+      }
+      #waveform-canvas { display: none; }
+      #now-playing-info { grid-column: 1; }
+      #bar-controls { grid-column: 1; flex-wrap: wrap; gap: 8px; }
+      #master-volume { width: 60px; }
+      :root { --bar-h: 120px; }
+      #info-panel-inner { flex-direction: column; }
+      #info-viz-container { width: 100%; height: 60px; }
+    }
+    @media (max-width: 400px) {
+      #cards-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── CHAKRA GRADIENT ── */
+    body.cat-chakra .freq-card .card-hz,
+    body.cat-chakra #app-title h1 {
+      background: linear-gradient(135deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .freq-card {
+      animation: fade-in 0.2s ease both;
+    }
+    .freq-card:nth-child(2) { animation-delay: 0.03s; }
+    .freq-card:nth-child(3) { animation-delay: 0.06s; }
+    .freq-card:nth-child(4) { animation-delay: 0.09s; }
+    .freq-card:nth-child(5) { animation-delay: 0.12s; }
+    .freq-card:nth-child(6) { animation-delay: 0.15s; }
+    .freq-card:nth-child(7) { animation-delay: 0.18s; }
+    .freq-card:nth-child(n+8) { animation-delay: 0.2s; }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header id="app-header">
+    <div id="app-title">
+      <h1>Resonance</h1>
+      <span id="app-subtitle">Therapeutic Frequencies</span>
+    </div>
+    <div id="mode-toggle-wrap">
+      <span class="mode-label active" id="lbl-single">Single</span>
+      <button id="mode-toggle" role="switch" aria-checked="false" aria-label="Toggle layer mode">
+        <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      </button>
+      <span class="mode-label" id="lbl-layer">Layer</span>
+    </div>
+  </header>
+
+  <!-- ── CATEGORY NAV ── -->
+  <nav id="category-nav" aria-label="Frequency categories">
+    <div id="category-tags-scroll" role="tablist"></div>
+  </nav>
+
+  <!-- ── MAIN ── -->
+  <main id="main-content">
+    <div id="category-heading">
+      <h2 id="cat-title"></h2>
+      <p id="cat-desc"></p>
+    </div>
+
+    <div id="cards-grid" role="list"></div>
+
+    <!-- Info panel -->
+    <aside id="info-panel" aria-live="polite" aria-label="Frequency details">
+      <button id="info-close" aria-label="Close">✕</button>
+      <div id="info-panel-inner">
+        <div id="info-viz-container">
+          <canvas id="info-pulse-canvas" width="120" height="80"></canvas>
+        </div>
+        <div id="info-details">
+          <div id="info-hz-badge"></div>
+          <div id="info-name"></div>
+          <p id="info-description"></p>
+          <p id="info-source"></p>
+          <div id="info-binaural-indicator">🎧 Binaural — Use headphones</div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ── LAYER PANEL ── -->
+  <div id="layer-panel" aria-label="Active frequency layers">
+    <div id="layer-panel-header">
+      <span id="layer-panel-title">Active Layers</span>
+      <button id="clear-all-btn">Clear All</button>
+    </div>
+    <div id="layer-list"></div>
+  </div>
+
+  <!-- ── NOW PLAYING BAR ── -->
+  <div id="now-playing-bar" role="region" aria-label="Now playing">
+    <canvas id="waveform-canvas" width="140" height="52"></canvas>
+
+    <div id="now-playing-info">
+      <span id="now-playing-name">Select a frequency</span>
+      <span id="now-playing-sub"></span>
+      <div id="binaural-indicator">🎧 Binaural — Use headphones</div>
+    </div>
+
+    <div id="bar-controls">
+      <div id="waveform-selector" role="group" aria-label="Waveform type">
+        <button class="wave-btn active" data-wave="sine">Sine</button>
+        <button class="wave-btn" data-wave="binaural">Binaural</button>
+      </div>
+
+      <button id="play-pause-btn" aria-label="Play" disabled>▶</button>
+
+      <div id="vol-wrap">
+        <span id="vol-icon">🔊</span>
+        <input type="range" id="master-volume" min="0" max="1" step="0.01" value="0.3"
+               aria-label="Master volume">
+      </div>
+
+      <div id="timer-wrap">
+        <select id="timer-select" aria-label="Session timer">
+          <option value="0">∞</option>
+          <option value="300">5 min</option>
+          <option value="900">15 min</option>
+          <option value="1800">30 min</option>
+          <option value="3600">60 min</option>
+        </select>
+        <span id="timer-display"></span>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function () {
+'use strict';
+
+// ═══════════════════════════════════════════════
+// 1. DATA
+// ═══════════════════════════════════════════════
+
+const CATEGORIES = [
+  {
+    id: 'deep-sleep',
+    name: 'Deep Sleep & Restoration',
+    icon: '🌙',
+    color: '#6366f1',
+    rgb: '99,102,241',
+    glow: 'rgba(99,102,241,0.25)',
+    desc: 'Delta brainwave frequencies for deep sleep and cellular restoration.',
+  },
+  {
+    id: 'meditation',
+    name: 'Meditation & Trance',
+    icon: '🧘',
+    color: '#8b5cf6',
+    rgb: '139,92,246',
+    glow: 'rgba(139,92,246,0.25)',
+    desc: 'Theta frequencies used in shamanic and deep meditative traditions.',
+  },
+  {
+    id: 'relaxation',
+    name: 'Relaxation & Stress Relief',
+    icon: '🌊',
+    color: '#06b6d4',
+    rgb: '6,182,212',
+    glow: 'rgba(6,182,212,0.25)',
+    desc: 'Alpha frequencies for calm alertness, stress reduction, and rest.',
+  },
+  {
+    id: 'focus',
+    name: 'Focus & Cognition',
+    icon: '⚡',
+    color: '#f59e0b',
+    rgb: '245,158,11',
+    glow: 'rgba(245,158,11,0.25)',
+    desc: 'Low beta frequencies for sharpened concentration and active learning.',
+  },
+  {
+    id: 'neural',
+    name: 'Neural Coherence & Brain Health',
+    icon: '🧠',
+    color: '#3b82f6',
+    rgb: '59,130,246',
+    glow: 'rgba(59,130,246,0.25)',
+    desc: 'Gamma frequencies with documented therapeutic effects on brain health.',
+  },
+  {
+    id: 'pain',
+    name: 'Pain & Physical Healing',
+    icon: '💚',
+    color: '#22c55e',
+    rgb: '34,197,94',
+    glow: 'rgba(34,197,94,0.25)',
+    desc: 'Clinically studied frequencies for pain relief and physical restoration.',
+  },
+  {
+    id: 'chakra',
+    name: 'Chakra Frequencies',
+    icon: '🌈',
+    color: '#a855f7',
+    rgb: '168,85,247',
+    glow: 'rgba(168,85,247,0.25)',
+    desc: 'Frequencies derived from spectral analysis of the OM vibration, mapped to chakra centers.',
+  },
+  {
+    id: 'solfeggio',
+    name: 'Solfeggio Frequencies',
+    icon: '🎵',
+    color: '#ec4899',
+    rgb: '236,72,153',
+    glow: 'rgba(236,72,153,0.25)',
+    desc: 'Ancient solfège scale frequencies associated with healing and transformation.',
+  },
+  {
+    id: 'earth',
+    name: 'Earth & Cosmic Resonance',
+    icon: '🌍',
+    color: '#10b981',
+    rgb: '16,185,129',
+    glow: 'rgba(16,185,129,0.25)',
+    desc: "Schumann resonances — Earth's electromagnetic cavity frequencies.",
+  },
+];
+
+const FREQ_DATA = {
+  'deep-sleep': [
+    { id: 'ds-2',   hz: 2,   name: 'Deep Delta',           desc: 'Delta wave associated with deep dreamless sleep and unconscious cellular restoration.', source: 'Stapleton et al., 2016', binaural: true, carrierHz: 200 },
+    { id: 'ds-3',   hz: 3,   name: 'Delta Restoration',    desc: 'Deep delta wave for total unconscious restoration and immune system support.', source: 'Hobson & McCarley, 1977', binaural: true, carrierHz: 200 },
+    { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border',   desc: 'Border state between delta and theta — associated with whole-body healing and tissue repair.', source: 'Peng et al., 2019', binaural: true, carrierHz: 200 },
+  ],
+  'meditation': [
+    { id: 'med-45',   hz: 4.5,  name: 'Shamanic Trance',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', binaural: true, carrierHz: 200 },
+    { id: 'med-6',    hz: 6,    name: 'Deep Theta',           desc: 'Deep theta meditation state associated with vivid inner imagery and creative insight.', source: 'Banquet, 1973', binaural: true, carrierHz: 200 },
+    { id: 'med-7',    hz: 7,    name: 'Creative Theta',       desc: 'Deep meditation and creative visualization. Associated with REM sleep and hypnagogic imagery.', source: 'Niedermeyer & da Silva, 2004', binaural: true, carrierHz: 200 },
+    { id: 'med-783',  hz: 7.83, name: "Schumann Resonance",   desc: "Earth's fundamental electromagnetic resonance frequency — the alpha/theta border, also called Earth's heartbeat.", source: 'Schumann, 1952; König, 1979', binaural: true, carrierHz: 200 },
+  ],
+  'relaxation': [
+    { id: 'rel-8',    hz: 8,    name: 'Alpha Entry',          desc: 'Light alpha state for stress reduction and the transition from active thinking to calm awareness.', source: 'Berger, 1929; Klimesch, 1999', binaural: true, carrierHz: 200 },
+    { id: 'rel-10',   hz: 10,   name: 'Alpha Peak',           desc: 'Optimal alpha entrainment for calm alertness. Documented relief for insomnia and migraine prevention.', source: 'Walker & Duan, 2007', binaural: true, carrierHz: 200 },
+    { id: 'rel-105',  hz: 10.5, name: 'Healing Alpha',        desc: 'Associated with body imbalance awareness and healing meditation. Bridges active and rest states.', source: 'Fehmi & Robbins, 2007', binaural: true, carrierHz: 200 },
+    { id: 'rel-12',   hz: 12,   name: 'Stable Alpha',         desc: 'Mental stability and centered calm. Supports sensorimotor rhythm and physical relaxation.', source: 'Sterman & Friar, 1972', binaural: true, carrierHz: 200 },
+  ],
+  'focus': [
+    { id: 'foc-14',   hz: 14,   name: 'Schumann 2nd',         desc: 'Second harmonic of Schumann resonance. Alert concentration with a grounded quality.', source: 'Schumann, 1952', binaural: true, carrierHz: 200 },
+    { id: 'foc-15',   hz: 15,   name: 'Mental Sharpness',     desc: 'Low beta wave for mental sharpness, focused problem solving, and logical reasoning.', source: 'Engel & Fries, 2010', binaural: true, carrierHz: 200 },
+    { id: 'foc-18',   hz: 18,   name: 'Active Learning',      desc: 'Beta wave associated with active learning, information processing, and alertness.', source: 'Klimesch, 2012', binaural: true, carrierHz: 200 },
+    { id: 'foc-20',   hz: 20,   name: 'GABA Elevation',       desc: 'Associated with GABA neurotransmitter elevation for neural balance and anxiety reduction.', source: 'Herrmann et al., 2010', binaural: true, carrierHz: 200 },
+  ],
+  'neural': [
+    { id: 'neu-40',   hz: 40,   name: 'Gamma — Master Freq',  desc: 'The master therapeutic frequency. 81% fibromyalgia improvement, 53–68% amyloid-beta reduction in Alzheimer\'s research. Activates microglia and promotes neural repair.', source: 'Naghdi et al., 2019; Iaccarino et al., 2016', binaural: false },
+    { id: 'neu-10',   hz: 10,   name: 'Thalamic Alpha',       desc: 'Alpha thalamic frequency. When paired with 40 Hz gamma, optimizes the thalamocortical feedback loop.', source: 'Llinás & Ribary, 1993', binaural: true, carrierHz: 200 },
+  ],
+  'pain': [
+    { id: 'pai-26',   hz: 26,   name: 'Whole Body Vibration', desc: 'Whole body vibration frequency for enhanced blood flow and endothelial stimulation.', source: 'Rittweger et al., 2000' },
+    { id: 'pai-30',   hz: 30,   name: 'Bone Activation',      desc: 'Stimulates bone cell activation and osteogenic differentiation. Used in fracture healing research.', source: 'Tanaka et al., 2003', binaural: true, carrierHz: 200 },
+    { id: 'pai-40',   hz: 40,   name: 'Fibromyalgia Relief',  desc: '40 Hz gamma frequency — 81% improvement in fibromyalgia clinical study. Chronic pain relief via thalamocortical entrainment.', source: 'Naghdi et al., 2019', binaural: false },
+    { id: 'pai-50',   hz: 50,   name: 'Nitric Oxide (+374%)', desc: 'Documented 374% increase in nitric oxide production for cardiovascular support and vascular health.', source: 'Lundeberg et al., 2004' },
+    { id: 'pai-52',   hz: 52,   name: 'Pain Relief',          desc: 'Associated with low back pain and menstrual pain relief in clinical frequency therapy.', source: 'Laufer et al., 2005' },
+    { id: 'pai-86',   hz: 86,   name: 'CRPS Relief',          desc: 'Complex Regional Pain Syndrome therapy — approximately 50% pain reduction in controlled studies.', source: 'Raso et al., 2005' },
+    { id: 'pai-100',  hz: 100,  name: 'Blood Flow',           desc: 'Enhances blood flow via endothelial nitric oxide release. Cardiovascular and tissue healing support.', source: 'Weintraub, 2004' },
+  ],
+  'chakra': [
+    { id: 'cha-144',  hz: 144,  name: 'Root Chakra',          desc: 'Muladhara — grounding, stability, survival instinct. Foundation of the energetic body.', source: 'OM spectral analysis (Bhattacharya, 2015)' },
+    { id: 'cha-194',  hz: 194,  name: 'Sacral Chakra',        desc: 'Svadhisthana — creativity, sexuality, emotional flow. Center of pleasure and creative force.', source: 'OM spectral analysis' },
+    { id: 'cha-225',  hz: 225,  name: 'Solar Plexus',         desc: 'Manipura — personal power, will, digestion of experience. The fire center of the body.', source: 'OM spectral analysis' },
+    { id: 'cha-275',  hz: 275,  name: 'Heart Chakra',         desc: 'Anahata — love, compassion, connection. Bridge between the lower and upper chakras.', source: 'OM spectral analysis' },
+    { id: 'cha-325',  hz: 325,  name: 'Throat Chakra',        desc: 'Vishuddha — expression, truth, communication. Center of authentic voice and creative expression.', source: 'OM spectral analysis' },
+    { id: 'cha-375',  hz: 375,  name: 'Third Eye Chakra',     desc: 'Ajna — intuition, inner sight, wisdom. The seat of expanded perception beyond the physical.', source: 'OM spectral analysis' },
+    { id: 'cha-475',  hz: 475,  name: 'Crown Chakra',         desc: 'Sahasrara — unity consciousness, spiritual connection. The highest center of the energetic body.', source: 'OM spectral analysis' },
+  ],
+  'solfeggio': [
+    { id: 'sol-396',  hz: 396,  name: 'UT — Liberation',      desc: 'Liberating guilt and fear. Associated with grounding and transformation of negative emotional patterns.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-417',  hz: 417,  name: 'RE — Change',          desc: 'Facilitating change and undoing situations. Reconnects to the capacity for positive transformation.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-528',  hz: 528,  name: 'MI — Love Frequency',  desc: 'Transformation and miracles. Known as the "love frequency" — associated with DNA repair and heart coherence.', source: 'Rein, 1988; Horowitz, 1998' },
+    { id: 'sol-639',  hz: 639,  name: 'FA — Connection',      desc: 'Connecting and harmonizing relationships. Enhances communication, understanding, and tolerance.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-741',  hz: 741,  name: 'SOL — Expression',     desc: 'Expression and problem solving. Cleans cells and promotes a healthy electromagnetic field.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-852',  hz: 852,  name: 'LA — Intuition',       desc: 'Awakening intuition and returning to spiritual order. Associated with pineal gland activation.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-963',  hz: 963,  name: 'Crown Activation',     desc: 'Crown chakra activation and connection to pure consciousness. The frequency of divine light.', source: 'Horowitz & Puleo, 1999' },
+  ],
+  'earth': [
+    { id: 'ear-783',  hz: 7.83,  name: 'Schumann 1st',        desc: "Earth's fundamental electromagnetic resonance. The planet's natural brainwave — syncs biological rhythms.", source: 'Schumann, 1952', binaural: true, carrierHz: 200 },
+    { id: 'ear-141',  hz: 14.1,  name: 'Schumann 2nd',        desc: 'Second harmonic of Earth\'s resonance. Associated with alert yet grounded mental states.', source: 'Schumann & König, 1954', binaural: true, carrierHz: 200 },
+    { id: 'ear-203',  hz: 20.3,  name: 'Schumann 3rd',        desc: "Third Schumann harmonic — subtle cognitive enhancement within Earth's natural electromagnetic field.", source: 'Williams, 1992', binaural: true, carrierHz: 200 },
+    { id: 'ear-264',  hz: 26.4,  name: 'Schumann 4th',        desc: 'Fourth Schumann harmonic. Physical and energetic stabilization within the Earth\'s resonant field.', source: 'Williams, 1992', binaural: true, carrierHz: 200 },
+    { id: 'ear-338',  hz: 33.8,  name: 'Schumann 5th',        desc: "Fifth Schumann harmonic. High gamma-adjacent resonance with Earth's electromagnetic field.", source: 'Williams, 1992', binaural: true, carrierHz: 200 },
+  ],
+};
+
+// ═══════════════════════════════════════════════
+// 2. STATE
+// ═══════════════════════════════════════════════
+
+const State = {
+  activeCategoryId: 'deep-sleep',
+  mode: 'single',          // 'single' | 'layer'
+  waveformType: 'sine',    // 'sine' | 'binaural'
+  // Map<freqId, { freq, gainNode, oscillators[], isBinaural }>
+  activeSounds: new Map(),
+  masterVolume: 0.3,
+  isPlaying: false,
+  selectedFreqId: null,
+  // Timer
+  timerDuration: 0,
+  timerRemaining: 0,
+  timerIntervalId: null,
+  timerFading: false,
+  // Audio nodes (created lazily)
+  ctx: null,
+  masterGain: null,
+  analyser: null,
+  // RAF handles
+  waveformRafId: null,
+  infoPulseRafId: null,
+  infoPulsePhase: 0,
+};
+
+// ═══════════════════════════════════════════════
+// 3. AUDIO ENGINE
+// ═══════════════════════════════════════════════
+
+const Audio = {
+  ensureContext() {
+    if (State.ctx) return;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    State.ctx = new Ctx();
+    State.masterGain = State.ctx.createGain();
+    State.masterGain.gain.setValueAtTime(State.masterVolume, State.ctx.currentTime);
+    State.analyser = State.ctx.createAnalyser();
+    State.analyser.fftSize = 2048;
+    State.analyser.smoothingTimeConstant = 0.8;
+    State.masterGain.connect(State.analyser);
+    State.analyser.connect(State.ctx.destination);
+  },
+
+  resumeCtx() {
+    if (State.ctx && State.ctx.state === 'suspended') State.ctx.resume();
+  },
+
+  _isBinaural(freq) {
+    return State.waveformType === 'binaural' || freq.binaural || freq.hz < 20;
+  },
+
+  _createSine(freq) {
+    const ctx = State.ctx;
+    const osc = ctx.createOscillator();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(freq.hz, ctx.currentTime);
+    const gainNode = ctx.createGain();
+    gainNode.gain.setValueAtTime(0, ctx.currentTime);
+    gainNode.gain.linearRampToValueAtTime(1.0, ctx.currentTime + 0.2);
+    osc.connect(gainNode);
+    gainNode.connect(State.masterGain);
+    osc.start();
+    return { oscillators: [osc], gainNode, isBinaural: false };
+  },
+
+  _createBinaural(freq) {
+    const ctx = State.ctx;
+    const carrier = freq.carrierHz || 200;
+    const beat = freq.hz;
+
+    const gainNode = ctx.createGain();
+    gainNode.gain.setValueAtTime(0, ctx.currentTime);
+    gainNode.gain.linearRampToValueAtTime(1.0, ctx.currentTime + 0.2);
+
+    const merger = ctx.createChannelMerger(2);
+
+    // Left: carrier
+    const oscL = ctx.createOscillator();
+    oscL.type = 'sine';
+    oscL.frequency.setValueAtTime(carrier, ctx.currentTime);
+    const splitterL = ctx.createGain();
+    splitterL.gain.setValueAtTime(1, ctx.currentTime);
+    oscL.connect(splitterL);
+    splitterL.connect(merger, 0, 0);
+
+    // Right: carrier + beat
+    const oscR = ctx.createOscillator();
+    oscR.type = 'sine';
+    oscR.frequency.setValueAtTime(carrier + beat, ctx.currentTime);
+    const splitterR = ctx.createGain();
+    splitterR.gain.setValueAtTime(1, ctx.currentTime);
+    oscR.connect(splitterR);
+    splitterR.connect(merger, 0, 1);
+
+    merger.connect(gainNode);
+    gainNode.connect(State.masterGain);
+
+    oscL.start();
+    oscR.start();
+    return { oscillators: [oscL, oscR], gainNode, isBinaural: true };
+  },
+
+  play(freq) {
+    if (State.activeSounds.has(freq.id)) return;
+    Audio.ensureContext();
+    Audio.resumeCtx();
+    // Restore master gain if it was faded by timer
+    if (State.masterGain && State.masterGain.gain.value < State.masterVolume * 0.5) {
+      Audio.resetMasterGain();
+    }
+    const sound = Audio._isBinaural(freq)
+      ? Audio._createBinaural(freq)
+      : Audio._createSine(freq);
+    sound.freq = freq;
+    State.activeSounds.set(freq.id, sound);
+  },
+
+  stopSound(freqId) {
+    const sound = State.activeSounds.get(freqId);
+    if (!sound) return;
+    const ctx = State.ctx;
+    const { gainNode, oscillators } = sound;
+    const now = ctx.currentTime;
+    gainNode.gain.cancelScheduledValues(now);
+    gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+    gainNode.gain.linearRampToValueAtTime(0, now + 0.2);
+    setTimeout(() => {
+      oscillators.forEach(o => { try { o.stop(); o.disconnect(); } catch (e) {} });
+      try { gainNode.disconnect(); } catch (e) {}
+      State.activeSounds.delete(freqId);
+    }, 250);
+    State.activeSounds.delete(freqId); // remove from map immediately so UI updates
+  },
+
+  stopAll() {
+    const ids = [...State.activeSounds.keys()];
+    // Restore map entries briefly for fade logic
+    const saved = new Map(State.activeSounds);
+    State.activeSounds.clear();
+    if (!State.ctx) return;
+    const ctx = State.ctx;
+    for (const [, sound] of saved) {
+      const { gainNode, oscillators } = sound;
+      const now = ctx.currentTime;
+      gainNode.gain.cancelScheduledValues(now);
+      gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+      gainNode.gain.linearRampToValueAtTime(0, now + 0.2);
+      setTimeout(() => {
+        oscillators.forEach(o => { try { o.stop(); o.disconnect(); } catch (e) {} });
+        try { gainNode.disconnect(); } catch (e) {}
+      }, 250);
+    }
+  },
+
+  setMasterVolume(vol) {
+    State.masterVolume = vol;
+    if (!State.masterGain) return;
+    const now = State.ctx.currentTime;
+    State.masterGain.gain.cancelScheduledValues(now);
+    // Clamp current value in case it was faded to near-zero
+    const current = Math.max(State.masterGain.gain.value, 0.001);
+    State.masterGain.gain.setValueAtTime(current, now);
+    State.masterGain.gain.linearRampToValueAtTime(vol, now + 0.05);
+  },
+
+  setLayerVolume(freqId, vol) {
+    const sound = State.activeSounds.get(freqId);
+    if (!sound || !State.ctx) return;
+    const now = State.ctx.currentTime;
+    sound.gainNode.gain.cancelScheduledValues(now);
+    sound.gainNode.gain.setValueAtTime(sound.gainNode.gain.value, now);
+    sound.gainNode.gain.linearRampToValueAtTime(vol, now + 0.05);
+  },
+
+  fadeOutAll(seconds) {
+    if (!State.masterGain || !State.ctx) return;
+    const now = State.ctx.currentTime;
+    State.masterGain.gain.cancelScheduledValues(now);
+    State.masterGain.gain.setValueAtTime(State.masterGain.gain.value, now);
+    State.masterGain.gain.exponentialRampToValueAtTime(0.001, now + seconds);
+  },
+
+  resetMasterGain() {
+    if (!State.masterGain || !State.ctx) return;
+    const now = State.ctx.currentTime;
+    State.masterGain.gain.cancelScheduledValues(now);
+    State.masterGain.gain.setValueAtTime(0.001, now);
+    State.masterGain.gain.linearRampToValueAtTime(State.masterVolume, now + 0.1);
+  },
+};
+
+// ═══════════════════════════════════════════════
+// 4. TIMER ENGINE
+// ═══════════════════════════════════════════════
+
+const Timer = {
+  start(seconds) {
+    Timer.stop();
+    if (seconds === 0) {
+      UI.updateTimerDisplay();
+      return;
+    }
+    State.timerDuration = seconds;
+    State.timerRemaining = seconds;
+    State.timerFading = false;
+    UI.updateTimerDisplay();
+    State.timerIntervalId = setInterval(Timer.tick, 1000);
+  },
+
+  tick() {
+    State.timerRemaining--;
+    UI.updateTimerDisplay();
+    if (State.timerRemaining <= 5 && !State.timerFading) {
+      State.timerFading = true;
+      Audio.fadeOutAll(5);
+    }
+    if (State.timerRemaining <= 0) {
+      Timer.stop();
+      Audio.stopAll();  // properly fades and disconnects oscillators
+      State.isPlaying = false;
+      // Restore master gain so next session plays at correct volume
+      setTimeout(() => Audio.resetMasterGain(), 300);
+      UI.syncPlayState();
+      UI.renderLayerPanel();
+      Canvas.stopWaveform();
+    }
+  },
+
+  stop() {
+    if (State.timerIntervalId) {
+      clearInterval(State.timerIntervalId);
+      State.timerIntervalId = null;
+    }
+    State.timerDuration = 0;
+    State.timerRemaining = 0;
+    State.timerFading = false;
+    UI.updateTimerDisplay();
+  },
+};
+
+// ═══════════════════════════════════════════════
+// 5. CANVAS RENDERERS
+// ═══════════════════════════════════════════════
+
+const Canvas = {
+  // ── Waveform (Now Playing bar) ──────────────
+  startWaveform() {
+    if (State.waveformRafId) return;
+    const canvas = document.getElementById('waveform-canvas');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const bufLen = State.analyser ? State.analyser.frequencyBinCount : 1024;
+    const data = new Uint8Array(bufLen);
+
+    function draw() {
+      State.waveformRafId = requestAnimationFrame(draw);
+      if (!State.analyser) return;
+      State.analyser.getByteTimeDomainData(data);
+
+      ctx.clearRect(0, 0, W, H);
+
+      // Accent color from CSS var
+      const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+
+      ctx.beginPath();
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = accent;
+      ctx.shadowColor = accent;
+      ctx.shadowBlur = 8;
+
+      const sliceW = W / bufLen;
+      let x = 0;
+      for (let i = 0; i < bufLen; i++) {
+        const v = data[i] / 128.0;
+        const y = (v * H) / 2;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+        x += sliceW;
+      }
+      ctx.lineTo(W, H / 2);
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+    }
+    draw();
+  },
+
+  stopWaveform() {
+    if (State.waveformRafId) {
+      cancelAnimationFrame(State.waveformRafId);
+      State.waveformRafId = null;
+    }
+    const canvas = document.getElementById('waveform-canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Draw flat line
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+    ctx.beginPath();
+    ctx.strokeStyle = accent;
+    ctx.globalAlpha = 0.2;
+    ctx.lineWidth = 1;
+    ctx.moveTo(0, canvas.height / 2);
+    ctx.lineTo(canvas.width, canvas.height / 2);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  },
+
+  // ── Info pulse (info panel) ──────────────────
+  startInfoPulse(freq) {
+    if (State.infoPulseRafId) {
+      cancelAnimationFrame(State.infoPulseRafId);
+      State.infoPulseRafId = null;
+    }
+    State.infoPulsePhase = 0;
+
+    const canvas = document.getElementById('info-pulse-canvas');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+
+    // Speed is mapped loosely to frequency class (not literal Hz)
+    const speed = freq.hz < 10 ? 0.015
+      : freq.hz < 30 ? 0.04
+      : freq.hz < 100 ? 0.08
+      : 0.12;
+
+    function draw() {
+      State.infoPulseRafId = requestAnimationFrame(draw);
+      ctx.clearRect(0, 0, W, H);
+      ctx.beginPath();
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = accent;
+      ctx.shadowColor = accent;
+      ctx.shadowBlur = 6;
+
+      for (let x = 0; x <= W; x++) {
+        const t = (x / W) * Math.PI * 4 + State.infoPulsePhase;
+        const y = H / 2 + Math.sin(t) * (H * 0.35);
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      State.infoPulsePhase += speed;
+    }
+    draw();
+  },
+
+  stopInfoPulse() {
+    if (State.infoPulseRafId) {
+      cancelAnimationFrame(State.infoPulseRafId);
+      State.infoPulseRafId = null;
+    }
+  },
+};
+
+// ═══════════════════════════════════════════════
+// 6. UI RENDERERS
+// ═══════════════════════════════════════════════
+
+const UI = {
+  // Apply category accent to CSS vars + body class
+  applyAccent(cat) {
+    const root = document.documentElement;
+    root.style.setProperty('--accent', cat.color);
+    root.style.setProperty('--accent-rgb', cat.rgb);
+    root.style.setProperty('--accent-glow', cat.glow);
+    // Body class for chakra gradient
+    document.body.className = 'cat-' + cat.id;
+  },
+
+  renderCategoryTags() {
+    const scroll = document.getElementById('category-tags-scroll');
+    scroll.innerHTML = '';
+    CATEGORIES.forEach((cat, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'category-tag' + (cat.id === State.activeCategoryId ? ' active' : '');
+      btn.textContent = cat.icon + ' ' + cat.name;
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', cat.id === State.activeCategoryId ? 'true' : 'false');
+      btn.dataset.catId = cat.id;
+      scroll.appendChild(btn);
+    });
+  },
+
+  renderCards() {
+    const cat = CATEGORIES.find(c => c.id === State.activeCategoryId);
+    const freqs = FREQ_DATA[State.activeCategoryId] || [];
+
+    // Update heading
+    document.getElementById('cat-title').textContent = cat.icon + '  ' + cat.name;
+    document.getElementById('cat-desc').textContent = cat.desc;
+
+    // Apply accent
+    UI.applyAccent(cat);
+
+    const grid = document.getElementById('cards-grid');
+    grid.innerHTML = '';
+    freqs.forEach(freq => {
+      const isActive = State.activeSounds.has(freq.id);
+      const needsBinaural = freq.binaural || freq.hz < 20;
+
+      const card = document.createElement('div');
+      card.className = 'freq-card' + (isActive ? ' active' : '');
+      card.setAttribute('role', 'listitem');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', `${freq.hz} Hz — ${freq.name}`);
+      card.dataset.freqId = freq.id;
+
+      card.innerHTML = `
+        <div class="card-playing-indicator" aria-hidden="true"></div>
+        <div class="card-hz">${freq.hz}<span>Hz</span></div>
+        <div class="card-name">${freq.name}</div>
+        <div class="card-desc">${freq.desc}</div>
+        ${needsBinaural ? '<span class="card-binaural-badge">🎧 Binaural</span>' : ''}
+      `;
+      grid.appendChild(card);
+    });
+
+    // Hide info panel when switching categories
+    UI.hideInfoPanel();
+    State.selectedFreqId = null;
+  },
+
+  showInfoPanel(freq) {
+    State.selectedFreqId = freq.id;
+    const panel = document.getElementById('info-panel');
+    const needsBinaural = freq.binaural || freq.hz < 20;
+
+    document.getElementById('info-hz-badge').innerHTML = `${freq.hz}<small> Hz</small>`;
+    document.getElementById('info-name').textContent = freq.name;
+    document.getElementById('info-description').textContent = freq.desc;
+    document.getElementById('info-source').textContent = freq.source ? 'Source: ' + freq.source : '';
+
+    const binInd = document.getElementById('info-binaural-indicator');
+    binInd.classList.toggle('visible', !!needsBinaural);
+
+    panel.classList.add('visible');
+    Canvas.startInfoPulse(freq);
+  },
+
+  hideInfoPanel() {
+    document.getElementById('info-panel').classList.remove('visible');
+    Canvas.stopInfoPulse();
+  },
+
+  renderLayerPanel() {
+    const panel = document.getElementById('layer-panel');
+    const list = document.getElementById('layer-list');
+
+    if (State.mode !== 'layer' || State.activeSounds.size === 0) {
+      panel.classList.remove('visible');
+      return;
+    }
+    panel.classList.add('visible');
+    list.innerHTML = '';
+
+    for (const [freqId, sound] of State.activeSounds) {
+      const freq = sound.freq;
+      const row = document.createElement('div');
+      row.className = 'layer-row';
+      row.dataset.freqId = freqId;
+      row.innerHTML = `
+        <div class="layer-dot" style="background:var(--accent)"></div>
+        <div class="layer-name">${freq.name}</div>
+        <div class="layer-hz">${freq.hz} Hz</div>
+        <input type="range" class="layer-vol" min="0" max="1" step="0.01" value="1"
+               aria-label="Volume for ${freq.name}">
+        <button class="layer-remove" aria-label="Remove ${freq.name}">✕</button>
+      `;
+      list.appendChild(row);
+    }
+  },
+
+  syncPlayState() {
+    const btn = document.getElementById('play-pause-btn');
+    const hasSound = State.activeSounds.size > 0;
+    btn.disabled = !hasSound && State.mode === 'single';
+    if (hasSound) {
+      btn.textContent = '⏸';
+      btn.setAttribute('aria-label', 'Pause');
+    } else {
+      btn.textContent = '▶';
+      btn.setAttribute('aria-label', 'Play');
+      btn.disabled = true;
+    }
+    if (hasSound) {
+      Canvas.startWaveform();
+    } else {
+      Canvas.stopWaveform();
+    }
+  },
+
+  updateNowPlaying() {
+    const nameEl = document.getElementById('now-playing-name');
+    const subEl = document.getElementById('now-playing-sub');
+    const binEl = document.getElementById('binaural-indicator');
+
+    if (State.activeSounds.size === 0) {
+      nameEl.textContent = 'Select a frequency';
+      subEl.textContent = '';
+      binEl.classList.remove('visible');
+      return;
+    }
+
+    const sounds = [...State.activeSounds.values()];
+    if (State.mode === 'single' || sounds.length === 1) {
+      const s = sounds[0];
+      nameEl.textContent = `${s.freq.hz} Hz — ${s.freq.name}`;
+      const cat = CATEGORIES.find(c => FREQ_DATA[c.id]?.some(f => f.id === s.freq.id));
+      subEl.textContent = cat ? cat.name : '';
+      binEl.classList.toggle('visible', !!s.isBinaural);
+    } else {
+      nameEl.textContent = `${sounds.length} frequencies active`;
+      subEl.textContent = sounds.map(s => s.freq.hz + ' Hz').join(' · ');
+      const anyBinaural = sounds.some(s => s.isBinaural);
+      binEl.classList.toggle('visible', anyBinaural);
+    }
+  },
+
+  updateTimerDisplay() {
+    const el = document.getElementById('timer-display');
+    if (!State.timerDuration || State.timerRemaining <= 0) {
+      el.textContent = '';
+      return;
+    }
+    const m = Math.floor(State.timerRemaining / 60);
+    const s = State.timerRemaining % 60;
+    el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  },
+
+  selectCategory(catId) {
+    State.activeCategoryId = catId;
+    // Stop any playing sounds when switching categories in single mode
+    if (State.mode === 'single') {
+      Audio.stopAll();
+      State.activeSounds.clear();
+      State.isPlaying = false;
+    }
+    UI.renderCategoryTags();
+    UI.renderCards();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+  },
+
+  selectFrequency(freq) {
+    Audio.ensureContext();
+    Audio.resumeCtx();
+
+    if (State.mode === 'single') {
+      // Toggle: if already playing this freq, stop it
+      if (State.activeSounds.has(freq.id)) {
+        Audio.stopAll();
+        State.activeSounds.clear();
+        State.isPlaying = false;
+      } else {
+        Audio.stopAll();
+        State.activeSounds.clear();
+        Audio.play(freq);
+        State.isPlaying = true;
+      }
+    } else {
+      // Layer mode: toggle
+      if (State.activeSounds.has(freq.id)) {
+        Audio.stopSound(freq.id);
+        // stopSound clears from map immediately
+      } else {
+        Audio.play(freq);
+      }
+      State.isPlaying = State.activeSounds.size > 0;
+    }
+
+    // Refresh card active states
+    document.querySelectorAll('.freq-card').forEach(card => {
+      card.classList.toggle('active', State.activeSounds.has(card.dataset.freqId));
+    });
+
+    UI.showInfoPanel(freq);
+    UI.renderLayerPanel();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+  },
+};
+
+// ═══════════════════════════════════════════════
+// 7. EVENT WIRING
+// ═══════════════════════════════════════════════
+
+function bindEvents() {
+  // Category tags (event delegation)
+  document.getElementById('category-tags-scroll').addEventListener('click', e => {
+    const btn = e.target.closest('.category-tag');
+    if (btn) UI.selectCategory(btn.dataset.catId);
+  });
+
+  // Cards grid (event delegation — click + keyboard)
+  document.getElementById('cards-grid').addEventListener('click', e => {
+    const card = e.target.closest('.freq-card');
+    if (!card) return;
+    const freq = FREQ_DATA[State.activeCategoryId]?.find(f => f.id === card.dataset.freqId);
+    if (freq) UI.selectFrequency(freq);
+  });
+  document.getElementById('cards-grid').addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const card = e.target.closest('.freq-card');
+      if (!card) return;
+      e.preventDefault();
+      const freq = FREQ_DATA[State.activeCategoryId]?.find(f => f.id === card.dataset.freqId);
+      if (freq) UI.selectFrequency(freq);
+    }
+  });
+
+  // Mode toggle
+  document.getElementById('mode-toggle').addEventListener('click', () => {
+    Audio.resumeCtx();
+    State.mode = State.mode === 'single' ? 'layer' : 'single';
+    const isLayer = State.mode === 'layer';
+    document.getElementById('mode-toggle').setAttribute('aria-checked', isLayer ? 'true' : 'false');
+    document.getElementById('lbl-single').classList.toggle('active', !isLayer);
+    document.getElementById('lbl-layer').classList.toggle('active', isLayer);
+
+    // If switching to single and multiple sounds active, stop all
+    if (!isLayer && State.activeSounds.size > 1) {
+      Audio.stopAll();
+      State.activeSounds.clear();
+      State.isPlaying = false;
+    }
+    UI.renderLayerPanel();
+    UI.renderCards();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+  });
+
+  // Play/Pause
+  document.getElementById('play-pause-btn').addEventListener('click', () => {
+    Audio.resumeCtx();
+    if (State.activeSounds.size > 0) {
+      Audio.stopAll();
+      State.activeSounds.clear();
+      State.isPlaying = false;
+      UI.renderCards();
+      UI.renderLayerPanel();
+      UI.syncPlayState();
+      UI.updateNowPlaying();
+    }
+  });
+
+  // Waveform selector
+  document.getElementById('waveform-selector').addEventListener('click', e => {
+    const btn = e.target.closest('.wave-btn');
+    if (!btn) return;
+    Audio.resumeCtx();
+    State.waveformType = btn.dataset.wave;
+    document.querySelectorAll('.wave-btn').forEach(b => b.classList.toggle('active', b === btn));
+    // Restart active sounds with new mode
+    const activeCopy = [...State.activeSounds.values()].map(s => s.freq);
+    Audio.stopAll();
+    State.activeSounds.clear();
+    setTimeout(() => {
+      activeCopy.forEach(freq => Audio.play(freq));
+      UI.renderLayerPanel();
+      UI.syncPlayState();
+      UI.updateNowPlaying();
+    }, 300);
+  });
+
+  // Master volume
+  document.getElementById('master-volume').addEventListener('input', e => {
+    Audio.resumeCtx();
+    Audio.setMasterVolume(parseFloat(e.target.value));
+  });
+
+  // Timer select
+  document.getElementById('timer-select').addEventListener('change', e => {
+    Timer.start(parseInt(e.target.value, 10));
+  });
+
+  // Info panel close
+  document.getElementById('info-close').addEventListener('click', UI.hideInfoPanel);
+
+  // Layer list (event delegation)
+  document.getElementById('layer-list').addEventListener('input', e => {
+    if (e.target.classList.contains('layer-vol')) {
+      const row = e.target.closest('.layer-row');
+      if (row) Audio.setLayerVolume(row.dataset.freqId, parseFloat(e.target.value));
+    }
+  });
+  document.getElementById('layer-list').addEventListener('click', e => {
+    const btn = e.target.closest('.layer-remove');
+    if (!btn) return;
+    const row = btn.closest('.layer-row');
+    if (!row) return;
+    Audio.stopSound(row.dataset.freqId);
+    // activeSounds already cleared by stopSound
+    UI.renderCards();
+    UI.renderLayerPanel();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+  });
+
+  // Clear all
+  document.getElementById('clear-all-btn').addEventListener('click', () => {
+    Audio.stopAll();
+    State.activeSounds.clear();
+    State.isPlaying = false;
+    UI.renderCards();
+    UI.renderLayerPanel();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+  });
+
+  // iOS Safari: resume AudioContext on any touch
+  document.addEventListener('touchstart', () => Audio.resumeCtx(), { passive: true });
+}
+
+// ═══════════════════════════════════════════════
+// 8. INIT
+// ═══════════════════════════════════════════════
+
+function init() {
+  UI.renderCategoryTags();
+  UI.renderCards();
+  UI.syncPlayState();
+  UI.updateNowPlaying();
+  Canvas.stopWaveform();
+  bindEvents();
+}
+
+init();
+
+})();
+</script>
+</body>
+</html>

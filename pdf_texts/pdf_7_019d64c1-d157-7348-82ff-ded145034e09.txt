@@ -1,0 +1,584 @@
+50 Years of Schumann Resonance
+Kristian Schlegel1 and Martin Füllekrug2
+1
+2
+
+Max-Planck-Institut für Sonnensystemforschung, Katlenburg-Lindau, Germany
+Department of Electronic and Electrical Engineering, University of Bath, UK
+
+(originally published in Physik in unserer Zeit, 33(6), 256-26, 2002. Translation: Catarina Geoghan, 2007)
+
+In 1952 Winfried Otto Schumann, at that time Director of the Electrophysical Institute at
+the Technical University of Munich, published his first paper about electromagnetic
+waves in the waveguide which is formed by the earth's surface and the ionosphere.
+Since this time the study of these, later referred to as Schumann resonance waves,
+has become an interesting subject for research. With modern measurement techniques
+the recording of these resonances opens up various application possibilities, ranging
+from global lightning triangulation, detection of space weather effects to tracking down
+global climate variations.
+
+1. Schumann Resonance Principles
+Each finite waveguide has its characteristic natural frequency (resonant
+frequency). Schumann (see box 1) recognised for the first time, that the space
+bounded by the highly conducting earth and the likewise highly conducting
+ionosphere represents such a waveguide (fig. 1).
+
+Fig.1 Original sketch by Schumann [1] for the illustration of the waveguide which is formed by
+the highly conducting earth and the highly conducting ionosphere (plasma), r signifies the earth
+radius, R-r ≈ 80 km.
+
+One can derive its resonant frequency approximately from the assumption that
+the resonance wavelength must be an integer part of the circumference of the
+earth. With this assumption one arrives at
+
+fn =
+
+λn
+c
+
+=
+
+c
+n ≈ 7.5n [ Hz]
+2πre
+
+(1)
+
+n=1 represents thereby the fundamental frequency, all larger n the higher
+harmonic waves.
+
+50 Years of Schumann Resonance
+
+1
+
+Schumann’s contribution consisted of the fact that he derived the eigen
+frequencies of this waveguide mathematically in a very general form [1]. Taking
+spherical geometry into account one obtains the resonant frequencies
+
+fn =
+
+V (σ )
+n ( n + 1) ≈ 6.0 n ( n + 1) [ Hz ]
+2πre
+(2)
+
+which also includes the damping of the waves because of the finite conductivity
+of the “upper” boundary of the waveguide, namely the ionospheric D-layer. Its
+propagation speed V therefore amounts to - depending on the conductivity σ about 80% of the speed of light (the relationship with the conductivity is
+described in somewhat more detail in box 2). While the conductivity of the
+ionospheric lower boundary is very variable at a height of 70-90 km with values
+between 10-5 to 10-3 S/m (see below), the average conductivity of the ground
+and the sea at approximately 10-3 S/m is practically constant and usually
+greater than the latter. It therefore does not contribute substantially to the
+damping of the waves.
+Schumann, who had for some years also dealt with so-called sferics, the
+electromagnetic emissions of lightning, recognised also that it is these impulselike emissions which excite oscillations in the earth-ionosphere waveguide. Fig. 2
+shows the time signal of these oscillations together with their spectrum for all
+modes up to n=7.
+
+Fig. 2 Time signal (left) and spectrum (right) of the first 7 Schumann resonances measured at
+Silberborn in Solling Mountains (Germany). Although the nearest electric railway is about 30 km
+away, the 16 2/3 Hz and the mains frequency signals are much stronger than the Schumann
+resonance. The increase in the spectrum at frequencies <5 Hz is caused by so-called magnetic
+micropulsations which originate in the earth’s magnetosphere.
+
+2
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+The spectrum for each mode can be characterised by three values: its centre
+frequency, its amplitude and its width (fig. 3), the latter is a measure of the
+damping of the mode in question.
+
+Fig. 3 The spectrum for each mode (here for n=1) can be identified by the three parameters
+Centre Frequency f0, Amplitude a and Width b.
+
+The first measurements were published by Schumann and König in 1954 [3].
+Between 1960 and 1970 further measurement results were published as well as
+extended theoretical work on the topic. Schumann resonance experienced a
+renaissance at the beginning of the 1990's, after measurement methods had
+improved and new applications appeared (see overview in [4]).
+
+2. Measurement Methods
+Since Schumann resonances involve electromagnetic waves, the electrical and/
+or the magnetic components can in principle be recorded. With the electrical
+component the potential between earth and a dish or ball mounted at a height of
+a few meters is measured as a function of time. Since the atmosphere exhibits
+very high impedance of the order of magnitude of 1014 Ω, the measuring
+amplifiers must be of extremely high impedance, but also at the same time fulfil
+the necessary frequency bandwidth of some 10 Hz. For the measurement of
+magnetic components induction coils are used, which are set up horizontally in
+two directions perpendicular to each other (N-S, E-W), in order to also include
+the polarisation of the waves (see fig. 2). Since the signal is of the order of
+magnitude of 0.001-1 pT (10-12 Tesla), coils with a core of high permeability as
+well as several 10000 turns are necessary. The measurement of the electrical
+component proved very error-prone because of charging of the ball/dish through
+
+50 Years of Schumann Resonance
+
+3
+
+the photoelectric effect or surface contamination, magnetic field measurement is
+therefore preferred nowadays. Measurement in industrialised areas is however
+always difficult, because of the interference with the 50 Hz mains frequency and
+the 16 2/3 Hz of the German railway, even at a greater distance of such sources
+(fig. 2). Narrow-band filters can thereby not be used because of the inevitable
+distortion of the wanted signal. Recording electronics must therefore cover a
+great dynamic range, in order to be able to eliminate the interference
+computationally. Clean measurements can be obtained, for instance, from
+stations in the Antarctic.
+Fig. 4 shows a coil as well as the appropriate electronics for measurements in
+the field.
+
+Fig. 4 Vertically placed coil for the measurement of the vertical component of the Schumann
+resonance (above) and electronics box for the detection and storage of the time signal (below).
+Because Schumann resonance must be measured far away from technical disturbances, the
+entire electronics is operated in the open with batteries.
+
+4
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+3. Schumann resonance Applications and Effects
+
+a. Lightning Detection
+A field of application of Schumann resonance, which was already recognised
+very early, is global lightning triangulation. Since each lightning induces
+oscillations in the earth-ionosphere waveguide, three stations are in principle
+sufficient, which should be at as large a distance as possible from each other.
+Thereby, the time signal of these oscillations are recorded with corresponding
+high time resolution (approx. 1/100s) (fig. 5).
+
+[ B ] = pT
+
+40
+20
+
+16.04.98 14:59:30
+
+SIL
+
+0
+−20
+−40
+30.4
+
+[ B ] = pT
+
+40
+20
+
+30.6
+
+30.8
+
+31
+
+31.2
+31.4
+[t]=s
+
+31.6
+
+31.8
+
+32
+
+32.2
+
+30.6
+
+30.8
+
+31
+
+31.2
+31.4
+[t]=s
+
+31.6
+
+31.8
+
+32
+
+32.2
+
+30.6
+
+30.8
+
+31
+
+31.2
+31.4
+[t]=s
+
+31.6
+
+31.8
+
+32
+
+32.2
+
+HOL
+
+0
+−20
+−40
+30.4
+
+[ B ] = pT
+
+40
+20
+
+LAM
+
+0
+−20
+−40
+30.4
+
+Fig. 5 Concurrent recording of the first Schumann resonance in Hollister/California (HOL),
+Silberborn/Germany (SIL) and Wellington/New Zealand (WEL). The triangulation showed that
+the flash, which released this signal, ignited over South America.
+
+50 Years of Schumann Resonance
+
+5
+
+Temporal synchronisation of the stations is ensured with the aid of GPS
+satellites. Through cross-correlation of these three time series, lightning can
+then be located with an accuracy of several 100 km with the aid of spherical
+geometry. Fig.6, for instance, shows the result of such measurements for one
+month, which can be used for the study of global thunderstorm activity [5]. A
+global network for monitoring of lightning is being developed as a warning
+system for air traffic.
+
+no.
+
+1000
+500
+90
+60
+30
+0
+−30
+−60
+−90
+−180 −135
+
+500 1000
+no.
+Fig. 6 The global distribution of flash frequency in April 1998 recorded with the help of
+Schumann resonance triangulation. There are generally three centres with increased flash
+frequency: over America, Africa and Southeast Asia, while only few thunderstorms appear over
+the oceans.
+−90
+
+−45
+
+0
+
+45
+
+90
+
+135
+
+180
+
+In the last few years these methods have also been used together with optical
+measurements for the observation of sprites. Sprites (see fig. 7 right) are
+transient, red-bluish light phenomena, which reach up from the top surface of
+the cloud to the ionosphere. These optical emissions were first discovered in
+1989 [6] and are induced by unusually strong lightning. The electromagnetic
+impulse of such lightning leads, in addition, to circular light phenomena in the
+ionosphere, which are referred to as elves. Besides sprites, blue jets have also
+been observed. These are relatively narrow, blue rays of light, which reach up
+from the thundercloud to 40-50 km. Despite intensive research it has not so far
+been unequivocally clarified whether these phenomena really are a question of
+natural gas discharges in the atmosphere. However, there has been a report in
+Nature [7] about a bright flash over an oceanic thunderstorm up to the
+ionosphere near Puerto Rico. The luminosity of this phenomenon is very
+suggestive of an electrical short-circuit between the troposphere and the
+ionosphere.
+
+6
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+In the framework of the space shuttle mission STS-107, the first Israeli
+astronaut in space will use a video camera for the determination of the global
+frequency of this recently discovered lightning in the mesosphere in the summer
+of 2002 (fig. 7).
+
+Fig. 7 From the space shuttle an Israeli astronaut will search for sprites and natural gas
+discharges in the mesosphere with a video camera. On the right below the original photo of a
+sprite is inserted (the picture was created with STK Software. With approval of M. Moalem, IAF).
+
+50 Years of Schumann Resonance
+
+7
+
+b. Global D-layer Monitoring and Space Weather
+As previously mentioned, the conductivity of the lower boundary of the
+ionosphere is very variable. It is ultimately determined by the electron density
+and the collision frequency between neutral particles and electrons within the
+ionospheric D-layer. The electron density changes regularly with the position of
+the sun, i.e. with the time of day and season, the collision frequency is
+proportional to the pressure in this height region, which likewise is subject to
+seasonal variation. In addition, there are irregular changes. During geomagnetic
+storms, electrons from the magnetosphere with energies of some keV are
+precipitating into the ionosphere and cause additional ionisation, whereby
+electron density can rise by more than an order of magnitude above normal
+values. Even stronger changes are caused by solar flares, as a result of which
+protons are emitted with energies of over 100 MeV. These particles can
+penetrate deeply into the atmosphere and cause additional ionisation down to a
+height of 50 km. As a result the conductivity is not only significantly increased,
+but the upper boundary of the waveguide is also shifted far downward (fig. 8).
+
+Fig. 8 Conductivity of the ionospheric D-layer under normal conditions and after a solar flare.
+The raised conductivity changes not only the electric properties of the earth-ionosphere
+waveguide and thereby the Schumann resonance parameters, the upper boundary of the
+waveguide is also shifted downwards substantially by such events [9].
+
+8
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+Such space weather events affect all three parameters of the Schumann
+resonance spectra in clearly measurable ways (fig. 9).
+
+Fig. 9 Changes in Schumann resonance parameters f0, b, a (cf. fig. 3) after two solar flares
+from 20.10.1989 (left) and from 22.3.1991 (right). Directly above the flux of high-energy protons
+is shown, which cause the additional ionisation below 80 km and thereby change the
+conductivity as shown in fig. 8 [9].
+
+These parameters can therefore be used in order to monitor the temporal
+variation in the D-layer conductivity, which Schumann already referred to in his
+second publication on this topic [2]. Naturally, in this way one arrives at a global
+average value, which is to be interpreted as a mean between the dayside and
+the nightside of the earth. A recording of this mean conductivity is nevertheless
+meaningful since, apart from regular seasonal variation, the above mentioned
+irregular deviations can also be recorded in a simple manner. Such monitoring
+of the D-layer is already possible with a single station in an interference-free
+environment [8] and a global tomography of the ionosphere becomes possible
+with a network of stations.
+
+50 Years of Schumann Resonance
+
+9
+
+c. Climate Change
+Schumann resonance is possibly suitable as a sensitive thermometer for global
+temperature changes. Global thunderstorm activity is essentially determined by
+meteorological factors, among other things by the temperature of the equatorial
+troposphere. On the other hand, Schumann resonance allows for the quantitative measurement of global thunderstorm activity, as pointed out above. In a
+sensational and exciting paper the American meteorologist E. Williams has
+published a comparison between the relative tropical temperatures during an ElNino cycle and the amplitude of the first Schumann resonance, whereby a
+significant positive correlation was found [10]. Although his data covers only a
+period of 5 1/2 years (fig. 10), these results are very promising for the understanding of long-term climate variations. A possible non-linear reinforcement of
+the greenhouse effect is thereby of special interest. It is well-known that global
+thunderstorm activity in the tropics transports large quantities of water vapour
+into the tropopause. Water vapour is, however, also the most important
+greenhouse gas. Therefore, the technically difficult measurement of the water
+vapour content in the tropopause can be realised with the help of Schumann
+resonance [11] and contribute to current questions in climate research.
+
+Fig. 10 The amplitude of the first Schumann resonance and relative change in the tropical
+surface temperature (thick line). From [10].
+
+10
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+d. Biological Effects
+Schumann himself was interested in the biological effects of sferics in general,
+and his student and later colleague Herbert König has continued this work. In a
+summary [12] the latter quotes many surprising results of such effects. They
+span from an influence on yeast cells and bacteria as well as plants and
+animals to humans. Human weather sensitivity is, for example, strengthened
+with increased amplitudes of natural oscillations at 10 Hz. With artificial
+application of such waves human circadian periodicity is significantly
+accelerated, test subjects show extended response time, or they cause
+headache. In many of these experiments effects showed a strong dependence
+on frequency. The so-called alpha waves during brain activity lie in the same
+frequency range as the first two modes of the Schumann resonance. Medics
+speculate that this is possibly no coincidence, but human adaptation to the
+electromagnetic environment in the course of evolution. In this border area
+between physics, biology and medicine there are perhaps still interesting results
+forthcoming.
+
+50 Years of Schumann Resonance
+
+11
+
+Literature
+[1]
+
+Schumann, W.O., Über die strahlungslosen Eigenschwingungen einer leitenden
+Kugel, die von einer Luftschicht und einer Ionosphärenhülle umgeben ist, Z.
+Naturforsch. 7a, 149, (1952)
+
+[2]
+
+Schumann, W.O., Über die Dämpfung der elektromagnetischen Eigenschwingungen des Systems Erde-Luft-Ionosphäre, Z. Naturforsch. 7a, 250,
+(1952)
+
+[3]
+
+Schumann, W.O. und H. König, Über die Beobachtung von Atmospherics bei
+geringsten Frequenzen, Naturwissensch., 41, 283, (1954)
+
+[4]
+
+Sentman, D.D., Schumann Resonances, in: Handbook of Atmospheric
+Electrodynamics, Vol. 1, H. Volland, Editor, CRC Press, Boca Raton, USA, 1995,
+p. 267.
+
+[5]
+
+Füllekrug, M. und S. Constable, Global triangulation of intense lightning
+discharges, Geophys. Res. Lett. 27, 333 (2000)
+
+[6]
+
+Franz, R.C., R.J. Nemzek und J.R. Winckler, Television image of a large upward
+electrical discharge above a thunderstorm system, Science, 249, 48, (1990)
+
+[7]
+
+Pasko, V.P., M.A. Stanley, J.D. Mathews, U.S. Inan und T.G. Wood, Electrical
+discharge from a thundercloud top to the lower ionosphere, Nature, 416, 152,
+(2002)
+
+[8]
+
+Füllekrug, M., Fraser-Smith, A.C. und K. Schlegel, Global ionospheric D-layer
+height monitoring, European Physics Letters, 59(4),626, (2002)
+
+[9]
+
+Schlegel, K. und M. Füllekrug, Schumann resonance parameter changes during
+high-energy particle precipitation, J. Geophys. Res. 104, 10111, (1999)
+
+[10] Williams, E.R., The Schumann resonance: A global tropical thermometer,
+Science 256, 1184, (1992)
+[11] Price, C., Evidence for a link between global lightning activity and upper
+tropospheric water vapour, Nature, 406, 290, (2000)
+[12] König, H.L., Unsichtbare Umwelt, Eigenverlag Herbert L. König, München, 1977
+
+12
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+Box 1
+
+W.O. Schumann
+Born on 20th of May 1888 in Tübingen, Winfried Otto Schumann spent his
+childhood and youth in Kassel, Bernsdorf near Vienna and Karolinental near
+Prague. After studying electrical engineering at the Technical College in
+Karlsruhe, and his doctorate (1912) on a subject of high-current technology, he
+worked as a manager at the High Voltage Laboratory at the Bown, Boveri and
+Cie Company up to the outbreak of the First World War. In 1920 Schumann
+qualified as a professor (Habilitation) at the Technical University in Stuttgart
+where he was employed as a research assistant. Immediately afterwards he
+was offered a position as a university professor of physics at the University of
+Jena. In 1924 he took up an offer as full professor and director of the newly
+established Electrophysical Laboratory at the Technical University of Munich.
+This was later upgraded to the Electrophysical Institute, and he remained there
+until his retirement in 1961. He practised his teaching, however, up to his 75th
+year. Schumann died at the age of 86 years on 22nd of September in 1974.
+While during his industrial activity he had dealt primarily with the disruptive field
+strength of gases, liquids and solid states, during his time in Munich his interest
+extended to high-frequency technology and plasma physics. In a series of very
+noteworthy publications Schumann worked on the behaviour of the ionosphere
+and plasma experiments in the laboratory under similar conditions.
+In a third productive period after 1950, Schumann dealt with questions of wave
+propagation and with electromagnetic waves which are induced by lightning.
+During this time the publications focussed on the resonances named after him.
+Schumann was respected both by colleagues as well as by students as an
+excellent academic teacher. His listeners were inspired by the master of the art
+of lecturing, the lectures distinguished themselves by exemplary descriptiveness and clarity, but at the same time were performed with wit and humour.
+
+50 Years of Schumann Resonance
+
+13
+
+W.O. Schumann during his popular lecture.
+
+14
+
+Kristian Schlegel and Martin Füllekrug : 2007
+
+Box 2
+
+The propagation velocity of the waves in the cavity between Earth and the
+ionosphere used in eq. (2) is V=c/n, where the complex index of refraction can
+be written in a first approximation as
+
+n = 1+ i
+
+c∆ i
+ωh1
+
+(A1)
+
+Here ∆i is the inverse index of refraction of the ionosphere, for which in the
+simplest description a lower boundary at a fixed height h1 (about 70-80 km) is
+assumed; c is the velocity of light. The relationship between this inverse index
+of refraction and the conductivity of the ionosphere σ0 is given as
+
+⎛
+σ ⎞
+∆ i = ⎜⎜1 + i 0 ⎟⎟
+ε 0ω ⎠
+⎝
+
+−1 / 2
+
+(A2)
+
+The surface of the Earth is assumed in this case as a perfect conductor.
+In a more realistic description instead of the constant conductivity σ0 a
+conductivity profile is used which is characterised either by one or by two scale
+heights (S1, S2). In the 2-scale-height model, instead of (A1) the index of
+refraction becomes
+
+n=
+
+h2 (ω ) − i
+h1 (ω ) − i
+
+π
+
+π
+
+2
+2
+
+S2
+,
+
+(A3)
+
+S1
+
+where we assume that the conductivity profile is described at height h1 by the
+scale height S1, and at height h2 by the scale height S2. The so-called
+conductivity boundary h1 is approximately located at an altitude of 50 km, the
+reflection boundary h2 at 75 to 85 km depending on the actual electron density
+profile of the ionosphere (c.f. fig. 8). Since the complex index of refraction
+(A1,A3) depends on the wave frequency ω, the centre frequency and the width
+of the spectrum (damping) are in turn related to the conductivity. This explains
+the results shown in fig. 9. A detailed derivation of the above expressions is
+documented in [4].
+
+50 Years of Schumann Resonance
+
+15
+
+

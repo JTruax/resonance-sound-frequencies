@@ -1,0 +1,911 @@
+NIH Public Access
+Author Manuscript
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+NIH-PA Author Manuscript
+
+Published in final edited form as:
+Lancet. 2014 April 12; 383(9925): 1325–1332. doi:10.1016/S0140-6736(13)61613-X.
+
+Auditory and non-auditory effects of noise on health
+Mathias Basner, MD,
+Unit for Experimental Psychiatry, Division of Sleep and Chronobiology, Department of Psychiatry,
+University of Pennsylvania Perelman School of Medicine, Philadelphia, PA, USA
+Wolfgang Babisch, PhD,
+Department of Environmental Hygiene, Federal Environment Agency, Berlin, Germany
+Prof. Adrian Davis, PhD,
+Public Health England, Wellington House, Waterloo Road, London, UK. Ear Institute, University
+College, London, UK
+
+NIH-PA Author Manuscript
+
+Mark Brink, PhD,
+D-MTEC Public and Organizational Health, ETH Zurich, Zurich, Switzerland
+Charlotte Clark, PhD,
+Centre for Psychiatry, Wolfson Institute of Preventive Medicine, Barts and London School of
+Medicine and Dentistry, Queen Mary University of London, UK
+Sabine Janssen, PhD, and
+Department of Urban Environment and Safety, TNO (Netherlands Organization for Applied
+Scientific Research), Delft, Netherlands
+Prof. Stephen Stansfeld, PhD
+Centre for Psychiatry, Wolfson Institute of Preventive Medicine, Barts and London School of
+Medicine and Dentistry, Queen Mary University of London, UK
+
+Abstract
+NIH-PA Author Manuscript
+
+Noise is pervasive in everyday life and can cause both auditory and non-auditory health effects.
+Noise-induced hearing loss remains highly prevalent in occupational settings, and is increasingly
+caused by social noise exposure (eg, through personal music players). Our understanding of
+molecular mechanisms involved in noise-induced hair-cell and nerve damage has substantially
+increased, and preventive and therapeutic drugs will probably become available within 10 years.
+Evidence of the non-auditory effects of environmental noise exposure on public health is growing.
+
+Correspondence to: Dr Mathias Basner, Unit for Experimental Psychiatry, Division of Sleep and Chronobiology, Department of
+Psychiatry, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104–6021, USA, basner@upenn.edu.
+Contributors
+MBA wrote the abstract, the section about noise effects on sleep, and the conclusion; did a literature search for the section about noise
+effects on sleep; contributed panel 2; and helped to design figure 1. WB wrote the introduction to the section about non-auditory
+health effects; did the literature search for and wrote the section on cardiovascular noise effects; and contributed figures 2 and 3. AD
+did the literature search for and wrote the chapter on auditory effects of noise on health. MBR did the literature search for and wrote
+the section on the effects of hospital noise. CC did the literature search for and wrote the section on the effects of noise on cognitive
+performance. SJ did the literature search for and wrote the section on community effects of noise. SS wrote the introduction. All
+authors read and revised the Review.
+Conflicts of interest
+We declare that we have no conflicts of interest.
+
+Basner et al.
+
+Page 2
+
+NIH-PA Author Manuscript
+
+Observational and experimental studies have shown that noise exposure leads to annoyance,
+disturbs sleep and causes daytime sleepiness, affects patient outcomes and staff performance in
+hospitals, increases the occurrence of hypertension and cardiovascular disease, and impairs
+cognitive performance in schoolchildren. In this Review, we stress the importance of adequate
+noise prevention and mitigation strategies for public health.
+
+Introduction
+
+NIH-PA Author Manuscript
+
+Evolution has programmed human beings to be aware of sounds as possible sources of
+danger.1 Noise, defined as unwanted sound, is a pollutant whose effects on health have been
+neglected, despite the ability to precisely measure or calculate exposure from peak levels or
+energy averaged over time (panel 1, figure 1). Although people tend to habituate to noise
+exposure, degree of habituation differs for individuals and is rarely complete.2 If exposure to
+noise is chronic and exceeds certain levels, then negative health outcomes can be seen.
+Health effects were first recognised in occupational settings, such as weaving mills, where
+high levels of noise were associated with noise-induced hearing loss.3 Occupational noise is
+the most frequently studied type of noise exposure. Research focus has broadened to social
+noise (eg, heard in bars or through personal music players) and environmental noise (eg,
+noise from road, rail, and air traffic, and industrial construction). These noise exposures
+have been linked to a range of non-auditory health effects including annoyance,4 sleep
+disturbance,5 cardiovascular disease,6,7 and impairment of cognitive performance in
+children.8 The health effects of noise from entertainment venues and from neighbours are
+elusive, but nevertheless, cause many complaints to local authorities. The meaning attributed
+to sounds might affect our response to them—eg, the response to aircraft noise might differ
+between an airport employee and a resident who fears long-term health consequences due to
+the noise exposure. Noise is pervasive in urban environments and the availability of quiet
+places is decreasing. In the European Union, about 56 million people (54%) living in areas
+with more than 250 000 inhabitants are exposed to road traffic noise of more than average
+LDEN 55 dB per year, which is thought to be risky to health.9 Thus, understanding of
+occupational and environmental noise is important for public health. In this Review, we
+summarise knowledge and research related to noise exposure and both auditory and nonauditory health effects.
+
+NIH-PA Author Manuscript
+
+Panel 1
+Glossary of terms used to describe sound
+Sound
+pressure
+level
+
+Sound pressure level is a logarithmic measure of the effective pressure
+of a sound relative to a reference value. It is measured in decibels (dB,
+see below) higher than a reference level. The reference sound pressure
+in air is 20 μPa (2×10−5 Pa), which is thought to be the human hearing
+threshold at a sound frequency of 1000 Hz.
+
+dB scale
+
+A logarithmic scale to measure sound pressure level. A two-fold
+increase in sound energy (eg, two identical jackhammers instead of
+one) will cause the sound pressure level to increase by 3 dB. A ten-
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 3
+
+NIH-PA Author Manuscript
+
+fold increase in sound energy (10 jackhammers) will cause the sound
+pressure level to increase by 10 dB, which is perceived as about twice
+as loud.
+
+NIH-PA Author Manuscript
+
+Lmax
+
+The highest sound pressure level in a given time period.
+
+Leq
+
+Average level of sound pressure within a certain time period. If the Afilter is used for frequency-weighting (figure 1), the average level is
+referred to as LAeq. The filter and time period used for averaging are
+often indicated in subscript—eg, LAeq8h, LAeq23–7h, or Lnight.
+
+LDEN
+
+LDEN (Day-Evening-Night-Level), also referred to as DENL, is the Afiltered average sound pressure level, measured over a 24 h period,
+with a 10 dB penalty added to the night (2300–0700 h or 2200–0600 h,
+respectively), and a 5 dB penalty added to the evening period (1900–
+2300 h or 1800–2200 h, respectively), and no penalty added to the
+average level in the daytime (0700–1900 h or 0600–1800 h,
+respectively). The LDN measure is similar to the LDEN, but omits the 5
+dB penalty during the evening period. The penalties are introduced to
+indicate people’s extra sensitivity to noise during the night and
+evening. Both LDEN and LDN are based on A-weighted sound pressure
+levels, although this factor is not usually indicated in subscript.
+
+Auditory health effects
+Noise-induced hearing loss
+
+NIH-PA Author Manuscript
+
+Noise is the major preventable cause of hearing loss. Noise-induced hearing loss can be
+caused by a one-time exposure to an intense impulse sound (such as gunfire), or by steady
+state long-term exposure with sound pressure levels higher than LA 75–85 dB—eg, in
+industrial settings. The characteristic pathological feature of noise-induced hearing loss is
+the loss of auditory sensory cells in the cochlea. Because these hair cells cannot regenerate
+in mammals, no remission can occur; prevention of noise-induced hearing loss is the only
+option to preserve hearing. Hearing loss leading to the inability to understand speech in
+everyday situations can have a severe social effect. It can also affect cognitive performance
+and decrease attention to tasks. Accidents and falls are also associated with undiagnosed
+hearing loss, with excess mortality of 10–20% in 20 years.10
+Noise-induced hearing loss is a public health problem. Global Burden of Disease 201011
+estimated that 1·3 billion people are affected by hearing loss and investigators rated hearing
+loss as the 13th most important contributor (19·9 million years, 2·6% of total number) to the
+global years lived with disability (YLD). Adult-onset hearing loss unrelated to a specific
+disease process accounted for 79% of YLD from hearing loss. In the USA and Europe, 26%
+of adults have a bilateral hearing disorder that impairs their ability to hear in noisy
+environments, and a further 2% have substantial unilateral hearing issues. Age-adjusted
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 4
+
+NIH-PA Author Manuscript
+
+prevalence is similar in Asia.12 WHO estimates that 10% of the world population is exposed
+to sound pressure levels that could potentially cause noise-induced hearing loss. In about
+half of these people, auditory damage can be attributed to exposure to intense noise.13
+Search strategy and selection criteria
+We searched PubMed, Science Citation Index Expanded, and Social Sciences Citation
+Index, and references from relevant articles for English language articles from Jan 1,
+1980, to Feb 1, 2013, using the search terms: “hearing loss”, “tinnitus”, “annoyance”,
+“cardiovascular disease”, “hypertension”, “high blood pressure”, “myocardial
+infarction”, “stroke”, “sleep”, “cognitive performance”, “reading ability”, and “hospital”,
+in combination with “noise”. Each author did their own search, and is also a subject
+matter expert in their field. We focused on articles published in the past 5 years;
+however, used older articles if they represent seminal research or are necessary to
+understand more recent findings. We included reports from recent meetings if we
+regarded them to be relevant.
+
+NIH-PA Author Manuscript
+
+Tinnitus—ie, change in sound perception, such as ringing, that cannot be attributed to an
+external source—often follows acute and chronic noise exposure, and persists in a high
+proportion of affected individuals for extended periods.14 Tinnitus can affect quality of life
+in several ways, including through sleep disturbance, depression, or the inability to sustain
+attention.15 The fact that hearing loss and tinnitus are reported in combination suggests that
+both symptoms share common pathophysiological pathways.
+Occupational noise-induced hearing loss
+Despite the introduction of standards for hearing protection, reduction in occupational noise
+exposure in developed countries, and extensive public health efforts, hearing loss induced by
+exposure to occupational noise remains a dilemma and is the focus of extensive research.
+Noise-induced hearing is the most common occupational disease in the USA: about 22
+million US workers are exposed to hazardous noise levels at work, and, annually, an
+estimated US$242 million is spent on compensation for hearing loss disability.16
+
+NIH-PA Author Manuscript
+
+Many countries enforce general health and safety legislation that specifies maximum
+exposure levels and requirements for action, including noise assessments, regular
+audiometric testing, protective equipment, and monitoring, which are intended to protect
+both workers and the public from excessive noise exposure. However, the available
+evidence for associations between occupational noise exposure and hearing loss is complex
+and its quality varies. Many studies have a lack of appropriate non-exposed controls, and
+longitudinal studies are scarce. Contributors to a Cochrane collaboration review17 concluded
+that “higher quality prevention programs, better quality of studies especially in the field of
+engineering controls and better implementation of legislation are needed to better prevent
+noise-induced hearing loss”. This Review also indicated that current efforts for hearing loss
+prevention focus on hearing protection rather than on noise control.
+The exact level of noise exposure in industrial settings that carries risk of hearing damage is
+debated internationally. For example, in the UK, the Control of Noise at Work Regulations
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 5
+
+NIH-PA Author Manuscript
+
+(2005)18 set levels for action at LAeq8h 80 dB (protection made available) and 85 dB
+(protection mandatory). A 3 year follow-up investigation of 19 UK companies that had
+varying degrees of compliance reported that these values were safe.19 However, studies with
+a longer follow-up are needed to lend support to these findings. The US Occupational Safety
+and Health Administration (OSHA) promotes less strict standards than do others and sets the
+permissible exposure limit at LAeq8h 90 dB. However, according to OSHA regulations,
+employers have to implement a hearing conservation programme if workers are exposed to
+levels higher than LAeq8h 85 dB. Although noise-induced hearing loss is well recognised in
+industrial settings, individuals with other occupations such as musicians20,21 or those
+working for the military,22,23 also contribute substantially to the overall burden of noiseinduced hearing loss.
+Social noise exposure
+
+NIH-PA Author Manuscript
+
+Excessive noise is often accepted as part of the recreational environment. Although
+occupational noise has decreased since the early 1980s, the number of young people with
+relevant degrees of social noise exposure has tripled in the same period.24 A growing body
+of work is assessing the risk of hearing loss in adolescents due to personal music player
+use.25 In one study, 66% of young adults attending nightclubs or rock concerts in the
+Nottingham area of England reported temporary auditory effects or tinnitus.24 Prospective
+cohort studies like OHRKAN26 are needed to conclude whether widespread exposure to
+loud music in adolescence increases the prevalence of hearing loss and tinnitus in older ages.
+Both safer products and public health campaigns are needed to reduce the risk of hearing
+loss from personal music player use. Noise-cancelling headphones are effective preventive
+measures for reducing hazards for users of personal music players.27
+Noise-induced hearing loss and age
+
+NIH-PA Author Manuscript
+
+Noise-induced hearing loss is determined by noise exposure and life-course events, all age
+groups can be affected. Exposure to different types of noise from early childhood might
+have cumulative effects on hearing impairment in adulthood. Evidence is increasing that
+early social and biological factors might affect hearing in middle age (eg, a study of patients
+assessed at age 45 years28). Prevalence of hearing loss is highly related to age.29 How noise
+and age interact is a major gap in the specialty’s knowledge. Data suggest that pathological
+but sublethal changes from early noise exposure substantially increase risk of inner ear
+ageing and related hearing loss.30,31 In addition to noise, factors such as alcohol and tobacco
+use and hyperglycaemia are associated with age-related hearing loss. Thus, public health
+initiatives need to address both general health and auditory health.
+Scientific advances and therapeutic strategies
+In the past 5 years, several studies and advances have improved understanding of the causes
+and factors affecting susceptibility to noise-induced hearing loss. Noise-induced hearing loss
+is widely accepted to be a symptom of a complex disease that results from the interaction of
+genetic and environmental factors. Heritability might explain up to 50% of hearing loss
+variability in individuals after exposure to noise, but definitive studies are needed.
+Identification of susceptibility genes might help to identify the population at high risk and
+improve targeted hearing protection in predisposed individuals.32 Much progress has been
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 6
+
+NIH-PA Author Manuscript
+
+made in the understanding of molecular mechanisms involved in hair-cell and nerve
+damage. Recent research from investigators using stem cells to recover the damaged sensory
+circuitry in the cochlea is at a very early stage, but could lead to potential therapeutic
+strategies.33 Attention is increasing on the risks of combined exposure to high-level noise
+and ototoxic drugs, which can affect the structures of the inner ear and the auditory
+nerves.34,35 A small but substantial number of people have hearing loss as a complication of
+cancer treatments such as cisplatin, which might be further exacerbated by high levels of
+noise (eg, in MRI scanners).
+
+NIH-PA Author Manuscript
+
+Several therapeutic avenues have been recently explored, and oral drugs to protect against
+noise-induced hearing loss are expected to become available in the next 10 years.13
+Investigators have reported that oxidative stress could contribute to cochlear cell damage;
+antioxidant compounds, such as glutathione, have improved noise-induced hearing loss in
+animals and might prevent noise-induced hearing loss.36,37 An oral otoprotective drug, Dmethionine, prevents noise-induced hearing loss in animals even when first given within
+hours after a noise exposure; however, only formal clinical trials will provide the data
+needed to assess safety and efficacy in human beings.38 Clinical trials of D-methionine in
+the US Army, funded by the US Department of Defense, are scheduled to begin soon
+(NCT01345474).38
+Diagnosis of noise-induced hearing loss
+The development of otoacoustic emission testing has been an important technological
+advance in audiological assessment. Otoacoustic emissions are a release of acoustic energy
+from the cochlea that can be recorded in the ear canal. Otoacoustic emission testing is used
+to identify hearing defects in newborn babies and young children. Hall and Lutman39
+reported that otoacoustic emission testing was twice as sensitive as was audiometry to detect
+a change in hearing threshold level and suggested that it could improve monitoring for
+noise-induced hearing loss in the workplace. A longitudinal study40 also suggested that
+otoacoustic emissions could indicate noise-induced changes in the inner ear undetected by
+audiometric tests. Otoacoustic emissions might therefore be a superior diagnostic predictor
+for noise-induced hearing loss, but further longitudinal studies are needed to show whether
+otoacoustic emission testing can replace standard audiometry or whether the two techniques
+have complementary roles.19
+
+NIH-PA Author Manuscript
+
+Non-auditory health effects
+Introduction
+The most investigated non-auditory health endpoints for noise exposure are perceived
+disturbance and annoyance, cognitive impairment (mainly in children), sleep disturbance,
+and cardiovascular health. WHO estimated that in high-income western European countries
+(population about 340 million people), at least 1 million healthy life-years (disabilityadjusted life-years) are lost every year because of environmental noise (figure 2).14
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 7
+
+Annoyance
+
+NIH-PA Author Manuscript
+
+Annoyance is the most prevalent community response in a population exposed to
+environmental noise. Noise annoyance can result from noise interfering with daily activities,
+feelings, thoughts, sleep, or rest, and might be accompanied by negative responses, such as
+anger, displeasure, exhaustion, and by stress-related symptoms.41 In severe forms, it could
+be thought to affect wellbeing and health, and because of the high number of people
+affected, annoyance substantially contributes to the burden of disease from environmental
+noise (figure 2).14 Investigators have proposed standardised questions about residents’ longterm annoyance in their home for use in surveys.42 Additionally, investigators have gathered
+substantial data for community annoyance in residents exposed to noise in their home, based
+on which exposure–response relationships were derived (eg, for wind turbines).4,43,44 These
+relations can be used in strategic or health impact assessments for estimating long-term
+annoyance in fairly stable situation s. Although the overall community response depends on
+societal values and is most relevant to the guidance of policy, several personal (eg, age and
+noise sensitivity) and situational characteristics (eg, dwelling insulation) might affect the
+individual degree of annoyance.41,44
+
+NIH-PA Author Manuscript
+
+Cardiovascular disease
+Both short-term laboratory studies of human beings and long-term studies of animals have
+provided biological mechanisms and plausibility for the theory that long-term exposure to
+environmental noise affects the cardiovascular system and causes manifest diseases
+(including hypertension, ischaemic heart diseases, and stroke).45 Acute exposure to different
+kinds of noise is associated with arousals of the autonomic nervous system and endocrine
+system.46 Investigators have repeatedly noted that noise exposure increases systolic and
+diastolic blood pressure, changes heart rate, and causes the release of stress hormones
+(including catecholamines and glucocorticoids).45 The general stress model is the rationale
+behind these reactions. Potential mechanisms are emotional stress reactions due to perceived
+discomfort (indirect pathway), and non-conscious physiological stress from interactions
+between the central auditory system and other regions of the CNS (direct pathway). The
+direct pathway might be the predominant mechanism in sleeping individuals, even at low
+noise levels.
+
+NIH-PA Author Manuscript
+
+Chronic exposure can cause an imbalance in an organism’s homoeostasis (allostatic load),
+which affects metabolism and the cardiovascular system, with increases in established
+cardiovascular disease risk factors such as blood pressure, blood lipid concentrations, blood
+viscosity, and blood glucose concentrations.45,47 These changes increase the risk of
+hypertension, arteriosclerosis, and are related to severe events, such as myocardial infarction
+and stroke. Studies of occupational48–50 and environmental7,51–53 epidemiology have shown
+a higher prevalence and incidence of cardiovascular diseases and mortality in highly noiseexposed groups. The risk estimates for occupational noise at ear-damaging intensities tend to
+be higher than are those for environmental noise (at lower noise levels). Because of different
+acoustic characteristics for different noise sources (sound level, frequency spectrum, time
+course, sound level rise time, and psycho-acoustic measures) noise levels from different
+noise sources cannot be merged into one indicator of decibels. Different exposure–response
+curves are needed for different noise sources. Meta-analyses were done to quantitatively
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 8
+
+NIH-PA Author Manuscript
+
+assess the exposure–response link for transportation noise (exposure to road traffic and
+aircraft noise) and health effects (hypertension and ischaemic heart diseases, including
+myocardial infarction).6,54,55 The investigators derived increases in risk of between 7% and
+17% per 10 dB increase in equivalent noise level LAeq (figure 3). Their results have been
+adjusted for known risk factors such as age, sex, socioeconomic status, smoking, body-mass
+index, and others. The researchers identified sex and age as effect modifiers. Studies of the
+combined effects of noise and air pollution showed largely independent effects,7,51–53 which
+can be explained by different mechanisms of how both exposures can affect health
+(cognitive and autonomic stress response vs inflammatory processes).
+Cognitive performance
+
+NIH-PA Author Manuscript
+
+WHO estimate that about 45 000 disability-adjusted life-years are lost every year in highincome western European countries for children aged 7–19 years because of environmental
+noise exposure (figure 2).14 Postulated mechanisms for noise effects on children’s cognition
+include communication difficulties, impaired attention, increased arousal, learned
+helplessness, frustration, noise annoyance, and consequences of sleep disturbance on
+performance.3,56 Investigators have also suggested psychological stress responses as a
+mechanism because children are poor at appraising threats from stressors and have less well
+developed coping strategies than do adults.3 Areas with high levels of environmental noise
+are often socially deprived, and children from areas with high social deprivation do worse on
+tests of cognition than do children not exposed to social deprivation. Therefore, measures of
+socioeconomic position should be taken into account in the assessment of associations
+between noise exposure and health and cognition.
+
+NIH-PA Author Manuscript
+
+More than 20 studies have shown environmental noise exposure has a negative effect on
+children’s learning outcomes and cognitive performance,57 and that children with chronic
+aircraft, road traffic, or rail noise exposure at school have poorer reading ability, memory,
+and performance on national standardised tests than do children who are not exposed to
+noise at school.58–60 Investigators have examined exposure–effect links between noise
+exposure and cognition to identify the exposure level at which noise effects begin.61,62 The
+RANCH study of 2844 children aged 9–10 years attending 89 schools around Heathrow
+(London, UK), Schiphol (Amsterdam, the Netherlands), and Madrid-Barajas (Spain) airports
+showed a linear exposure–effect relation between aircraft noise exposure at school and a
+child’s reading comprehension and recognition memory after adjusting for a range of
+socioeconomic factors.61,62 A LAeq 5 dB increase in aircraft noise exposure was associated
+with a 2 month delay in reading age in children in the UK and a 1 month delay in those in
+the Netherlands. These linear associations suggest that there is no threshold for effects and
+any reduction in noise level at school should improve a child’s cognition.
+WHO Community Noise Guidelines63 suggest that the background sound pressure level
+should not exceed LAeq 35 dB during teaching sessions. Intervention studies and natural
+experiments have shown that reductions in noise exposure from insulation or the closure of
+airports are associated with improvements in cognition, suggesting that noise reduction can
+eliminate noise effects on cognition.58,59
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 9
+
+Sleep disturbance
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+Sleep disturbance is thought to be the most deleterious non-auditory effect of environmental
+noise exposure (figure 2), because undisturbed sleep of a sufficient length is needed for
+daytime alertness and performance, quality of life, and health.5,14 Human beings perceive,
+evaluate, and react to environmental sounds, even while asleep.64 Maximum sound pressure
+levels as low as LAmax 33 dB can induce physiological reactions during sleep including
+autonomic, motor, and cortical arousals (eg, tachycardia, body movements, and
+awakenings).5,65 Whether noise will induce arousals depends not only on the number of
+noise events and their acoustical properties,2 but also on situational moderators (such as
+momentary sleep stage66) and individual noise susceptibility.64 Elderly people, children,
+shift-workers, and people with a pre-existing (sleep) disorder are thought of as at-risk groups
+for noise-induced sleep disturbance.5 Repeated noise-induced arousals interfere with sleep
+quality through changes in sleep structure, which include delayed sleep onset and early
+awakenings, reduced deep (slow-wave) and rapid eye movement sleep, and an increase in
+time spent awake and in superficial sleep stages.2,66 However, these effects are not specific
+for noise,67 and generally less severe than those in clinical sleep disorders such as
+obstructive sleep apnoea.68 Short-term effects of noise-induced sleep disturbance include
+impaired mood, subjectively and objectively increased daytime sleepiness, and impaired
+cognitive performance.69,70 Results of epidemiological studies indicate that nocturnal noise
+exposure might be more relevant for the creation of long-term health outcomes such as
+cardiovascular disease than is daytime noise exposure,71 probably because of repeated
+autonomic arousals that have been shown to habituate to a much lesser degree to noise than
+other—eg, cortical—arousals.2 In 2009, WHO published the Night Noise Guidelines for
+Europe, an expert consensus mapping four noise exposure groups to negative health
+outcomes ranging from no substantial biological effects to increased risk of cardiovascular
+disease (panel 2).72 WHO regards average nocturnal noise levels of less than LAeq,outside 55
+dB to be an interim goal and 40 dB a long-term goal for the prevention of noise-induced
+health effects.
+Panel 2
+WHO definitions of health effects of different average night noise levels72
+
+NIH-PA Author Manuscript
+
+Below 30 dB
+LAeq,night,outside
+
+Although individual sensitivities and circumstances may
+differ, it appears that up to this level no substantial
+biological effects are observed. LA,eq,night,outside of 30 dB is
+equivalent to the no observed effect level (NOEL) for night
+noise.
+
+30–40 dB
+LAeq,night,outside
+
+A number of effects on sleep are observed from this range:
+body movements, awakening, self-reported sleep
+disturbance, arousals. The intensity of the effect depends on
+the nature of the source and the number of events.
+Vulnerable groups (for example children, the chronically ill,
+and elderly people) are more susceptible. However, even in
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 10
+
+NIH-PA Author Manuscript
+
+the worst cases the effects seem modest. LA,eq,night,outside of
+40 dB is equivalent to the lowest observed adverse effect
+level (LOAEL) for night noise.
+40–55 dB
+LAeq,night,outside
+
+Adverse health effects are observed among the exposed
+population. Many people have to adapt their lives to cope
+with the noise at night. Vulnerable groups are more severely
+affected.
+
+Above 55 dB
+LAeq,night,outside
+
+The situation is considered increasingly dangerous for
+public health. Adverse health effects occur frequently, a
+sizeable proportion of the population is highly annoyed and
+sleep-disturbed. There is evidence that the risk of
+cardiovascular disease increases.
+
+Hospital noise
+
+NIH-PA Author Manuscript
+
+Although most environmental noise guidelines list hospitals as noise-sensitive facilities,
+studies of external (eg, traffic) noise effects on hospital environments are very rare.
+However, research on the understanding and prevention of indoor hospital noise effects on
+patients and staff has been increasing. An extensive meta-analysis of hospital sound levels
+indicated that hospital noise has increased by about LAeq 10 dB since the 1960s.73 Noise
+levels in hospitals are now typically more than LAeq 15–20 dB higher than those
+recommended by WHO.63 Hospital noise could therefore be an increasing threat to patient
+rehabilitation and staff performance.
+
+NIH-PA Author Manuscript
+
+The sound environment in hospitals, especially in intensive care units, can be characterised
+by irregularly occurring noises from sources such as medical devices (eg, alarms),
+telephones or pagers, conversations, door sounds, and nursing activities. Such noise worsens
+patient health outcomes through factors such as increased cardiovascular stress, longer
+healing times, increases in doses of pain-relief drugs, and increased patient readmission
+rates.74 Neonates, long-term patients, and elderly people are thought to be particularly atrisk to the effects of noise. Sleep disruption is the most common noise-related patient
+complaint.75,76 Researchers of a sleep laboratory study developed arousal probability curves
+for 14 noises typically encountered in hospitals.77 The most disturbing noises were
+intravenous pump alarms and telephone rings, which are intentionally designed to alert staff
+members.
+Evidence of negative effects of noise on hospital staff is increasing, particularly for nurses,
+with noise-induced stress linked to burnout, diminished wellbeing, and reduced work
+performance.78 Substantial proportions of staff report annoyance, irritation, fatigue, and
+tension headaches, which they assign to the noisy workplace environment.79 Noise also
+affects speech intelligibility and could therefore lead to misunderstandings that result in
+medical errors.73,78
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 11
+
+NIH-PA Author Manuscript
+
+Conclusions
+
+NIH-PA Author Manuscript
+
+Improved acoustics such as sound-absorbing ceilings are relevant factors for staff
+performance and reduced work strain,80 and have been associated with a decrease in rates of
+patients being readmitted to hospital.74 Reduction of background sound levels and ringtone
+volume of telephones is recommended to improve patient recovery at night.77 Researchers
+noted promise in reductions of rates of false alarms of medical devices and modification of
+staff behaviour to avoid unnecessary noise.81
+
+Acknowledgments
+
+Hearing loss caused by occupational or recreational noise exposure is highly prevalent and
+constitutes a public health threat needing preventive and therapeutic strategies. In this
+Review, we emphasise that non-auditory health effects of environmental noise are manifold,
+serious and, because of the widespread exposure, very prevalent. These factors stress the
+need to regulate and reduce environmental noise exposure (ideally at the source) and to
+enforce exposure limits to mitigate negative health consequences of chronic exposure to
+environmental noise. Educational campaigns for children and adults can promote both noiseavoiding and noise-reducing behaviours, and thus, mitigate negative health consequences.
+Efforts to reduce noise exposure will eventually be rewarded by lower amounts of
+annoyance, improved learning environments for children, improved sleep, lower prevalence
+of cardiovascular disease, and, in the case of noise exposure in hospitals, improved patient
+outcomes and shorter hospital stays.
+
+We thank Dietmar Wurzel for designing and providing figure 1. MBA is partly funded by National Institutes of
+Health grant NR004281. CC is a member of the Airports Commission’s External Advisory Panel in the UK. SS is a
+member of the Acoustics Review Group for ARUP High Speed Two (HS2).
+
+References
+
+NIH-PA Author Manuscript
+
+1. Hughes RW, Jones DM. Indispensable benefits and unavoidable costs of unattended sound for
+cognitive functioning. Noise Health. 2003; 6:63–76. [PubMed: 14965454]
+2. Basner M, Müller U, Elmenhorst EM. Single and combined effects of air, road, and rail traffic noise
+on sleep and recuperation. Sleep. 2011; 34:11–23. [PubMed: 21203365]
+3. Stansfeld S, Haines M, Brown B. Noise and health in the urban environment. Rev Environ Health.
+2000; 15:43–82. [PubMed: 10939085]
+4. Miedema HME, Oudshoorn CGM. Annoyance from transportation noise: relationships with
+exposure metrics DNL and DENL and their confidence intervals. Environ Health Perspect. 2001;
+109:409–16. [PubMed: 11335190]
+5. Muzet A. Environmental noise, sleep and health. Sleep Med Rev. 2007; 11:135–42. [PubMed:
+17317241]
+6. van Kempen E, Babisch W. The quantitative relationship between road traffic noise and
+hypertension: a meta-analysis. J Hypertens. 2012; 30:1075–86. [PubMed: 22473017]
+7. Sørensen M, Andersen ZJ, Nordsborg RB, et al. Road traffic noise and incident myocardial
+infarction: a prospective cohort study. PLoS One. 2012; 7:e39283. [PubMed: 22745727]
+8. Stansfeld SA, Matheson MP. Noise pollution: non-auditory effects on health. Br Med Bull. 2003;
+68:243–57. [PubMed: 14757721]
+9. Babisch, W. Exposure to environmental noise: risks for health and the environment. Workshop on
+“sound level of motor vehicles”. Directorate General for Internal Policies of the European
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 12
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+Parliament; Brussels: 2012. http://www.europarl.europa.eu/document/activities/cont/
+201205/20120524ATT45762/20120524ATT45762EN.pdf [accessed July 11, 2013]
+10. Karpa MJ, Gopinath B, Beath K, et al. Associations between hearing impairment and mortality risk
+in older persons: the Blue Mountains Hearing Study. Ann Epidemiol. 2010; 20:452–59. [PubMed:
+20470972]
+11. Vos T, Flaxman AD, Naghavi M, et al. Years lived with disability (YLDs) for 1160 sequelae of
+289 diseases and injuries 1990–2010: a systematic analysis for the Global Burden of Disease
+Study 2010. Lancet. 2012; 380:2163–96. [PubMed: 23245607]
+12. Fuente A, Hickson L. Noise-induced hearing loss in Asia. Int J Audiol. 2011; 50 (suppl):S3–10.
+[PubMed: 21288065]
+13. Oishi N, Schacht J. Emerging treatments for noise-induced hearing loss. Expert Opin Emerg
+Drugs. 2011; 16:235–45. [PubMed: 21247358]
+14. Fritschi, L.; Brown, AL.; Kim, R.; Schwela, DH.; Kephalopoulos, S., editors. Burden of disease
+from environmental noise. Bonn: World Health Organization; 2011.
+15. Davis, A.; El Refaie, A. The epidemiology of tinnitus. In: Tyler, R., editor. Tinnitus handbook.
+Hampshire: Cengage Learning; 2000. p. 1-23.
+16. National Institute for Occupational Safety and Health (NIOSH). [accessed July 11, 2013] noise and
+hearing loss prevention. 2013. http://www.cdc.gov/niosh/topics/noise/
+17. Verbeek JH, Kateman E, Morata TC, Dreschler WA, Mischke C. Interventions to prevent
+occupational noise-induced hearing loss. Cochrane Database Syst Rev. 2012; 10:CD006396.
+[PubMed: 23076923]
+18. Stationery Office. [accessed July 11, 2013] The Control of Noise at Work Regulations. 2005.
+http://www.legislation.gov.uk/uksi/2005/1643/contents/made
+19. Lutman, ME.; Davis, A.; Ferguson, M. [accessed July 11, 2013] Epidemiological evidence for the
+effectiveness of the noise at work regulations. 2008. http://www.hse.gov.uk/research/rrpdf/
+rr669.pdf
+20. Schmidt JH, Pedersen ER, Juhl PM, et al. Sound exposure of symphony orchestra musicians. Ann
+Occup Hyg. 2011; 55:893–905. [PubMed: 21841154]
+21. Jansen EJM, Helleman HW, Dreschler WA, de Laat JA. Noise induced hearing loss and other
+hearing complaints among musicians of symphony orchestras. Int Arch Occup Environ Health.
+2009; 82:153–64. [PubMed: 18404276]
+22. Muhr P, Rosenhall U. The influence of military service on auditory health and the efficacy of a
+Hearing Conservation Program. Noise Health. 2011; 13:320–27. [PubMed: 21768736]
+23. Yankaskas K. Prelude: noise-induced tinnitus and hearing loss in the military. Hear Res. 2013;
+295:3–8. [PubMed: 22575206]
+24. Smith PA, Davis A, Ferguson M, Lutman ME. The prevalence and type of social noise exposure in
+young adults in England. Noise Health. 2000; 2:41–56. [PubMed: 12689478]
+25. Scientific Committee on Emerging and Newly Identified Health Risks (SCENIHR) of the
+European Commission. [accessed July 11, 2013] Potential health risks of exposure to noise from
+personal music players and mobile phones including a music playing function. 2008. http://
+ec.europa.eu/health/ph_risk/committees/04_scenihr/docs/scenihr_o_017.pdf
+26. Twardella D, Perez Alvarez C, Steffens T, Fromme H, Raab U. Hearing loss in adolescents due to
+leisure noise. The OHRKAN study. Bundesgesundheitsbla. 2011; 54:965–71.
+27. Liang MJ, Zhao F, French D, Zheng YQ. Characteristics of noise-canceling headphones to reduce
+the hearing hazard for MP3 users. J Acoust Soc Am. 2012; 131:4526–34. [PubMed: 22712926]
+28. Ecob R, Russ S, Davis A. BMI over the lifecourse and hearing ability at age 45 years: a population
+based study. Longit Life Course Stud. 2011; 2:242–59.
+29. Davis A, Smith P, Ferguson M, Stephens D, Gianopoulos I. Acceptability, benefit and costs of
+early screening for hearing disability: a study of potential screening tests and models. Health
+Technol Assess. 2007; 11:1–294.
+30. Kujawa SG, Liberman MC. Acceleration of age-related hearing loss by early noise exposure:
+evidence of a misspent youth. J Neurosci. 2006; 26:2115–23. [PubMed: 16481444]
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 13
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+31. Campo P, Venet T, Rumeau C, et al. Impact of noise or styrene exposure on the kinetics of
+presbycusis. Hear Res. 2011; 280:122–32. [PubMed: 21616132]
+32. Sliwinska-Kowalska, M. Contribution of genetic factors to noise-induced hearing loss. In:
+Griefahn, B., editor. 10th international congress on noise as a public health problem of the
+international commission on biological effects of noise; London, UK. 2011. http://www.icben.org/
+proceedings.html
+33. Chen W, Jongkamonwiwat N, Abbas L, et al. Restoration of auditory evoked responses by human
+ES-cell-derived otic progenitors. Nature. 2012; 490:278–82. [PubMed: 22972191]
+34. Campo, P.; Maguin, K.; Gabriel, S., et al. [accessed July 11, 2013] Combined exposure to noise
+and ototoxic substances. European Agency for Safety and Health at Work (EU-OSHA). 2009.
+https://osha.europa.eu/en/publications/literature_reviews/combined-exposure-to-noise-andototoxic-substances
+35. Johnson, A-C.; Morata, TC. The Nordic Expert Group for Criteria Documentation of Health Risks
+from Chemicals: Occupational exposure to chemicals and hearing impairment. Gothenburg,
+Sweden: 2010. https://gupea.ub.gu.se/bitstream/2077/23240/1/gupea_2077_23240_1.pdf [accessed
+July 11, 2013]
+36. Le Prell CG, Dolan DF, Bennett DC, Boxer PA. Nutrient plasma levels achieved during treatment
+that reduces noise-induced hearing loss. Transl Res. 2011; 158:54–70. [PubMed: 21708356]
+37. Le Prell, CG.; Spankovich, C. Healthy diets and dietary supplements: recent changes in how we
+might think about hearing conservation. In: Griefahn, B., editor. 10th International Congress on
+Noise as a Public Health Problem of the International Commission on Biological Effects of Noise;
+London, UK. 2011. http://www.icben.org/proceedings.html
+38. Campbell, KCM. Oral pharmacologic otoprotective agents to prevent noise-induced hearing loss
+(NOISE-INDUCED HEARING LOSS): when dietary concentration isn’t enough. In: Griefahn, B.,
+editor. 10th International Congress on Noise as a Public Health Problem of the International
+Commission on Biological Effects of Noise; London, UK. 2011. http://www.icben.org/
+proceedings.html
+39. Lutman, ME.; Hall, AJ. Novel methods for early identification of noise-induced hearing loss.
+Sudbury: HSE Books; 2000.
+40. Lapsley Miller JA, Marshall L, Heller LM, Hughes LM. Low-level otoacoustic emissions may
+predict susceptibility to noise-induced hearing loss. J Acoust Soc Am. 2006; 120:280–96.
+[PubMed: 16875225]
+41. Ohrstrom E, Skanberg A, Svensson H, Gidlof-Gunnarsson A. Effects of road traffic noise and the
+benefit of access to quietness. J Sound Vibrat. 2006; 295:40–59.
+42. Fields JM, De Jong RG, Gjestland T, et al. Standardized general-purpose noise reaction questions
+for community noise surveys: research and a recommendation. J Sound Vibrat. 2001; 242:641–79.
+43. Fidell S, Mestre V, Schomer P, et al. A first-principles model for estimating the prevalence of
+annoyance with aircraft noise exposure. J Acoust Soc Am. 2011; 130:791–806. [PubMed:
+21877795]
+44. Janssen SA, Vos H, Eisses AR, Pedersen E. A comparison between exposure-response
+relationships for wind turbine annoyance and annoyance due to other noise sources. J Acoust Soc
+Am. 2011; 130:3746–53. [PubMed: 22225031]
+45. Babisch, W. Cardiovascular effects of noise. In: Nriagu, JO., editor. Encyclopedia of
+Environmental Health. Burlington: Elsevier; 2011. p. 532-42.
+46. Lusk SL, Gillespie B, Hagerty BM, Ziemba RA. Acute effects of noise on blood pressure and heart
+rate. Arch Environ Health. 2004; 59:392–99. [PubMed: 16268115]
+47. Babisch W. Cardiovascular effects of noise. Editorial. Noise Health. 2011; 13:201–04. [PubMed:
+21537102]
+48. van Kempen EEMM, Kruize H, Boshuizen HC, Ameling CB, Staatsen BAM, de Hollander AEM.
+The association between noise exposure and blood pressure and ischemic heart disease: a metaanalysis. Environ Health Perspect. 2002; 110:307–17. [PubMed: 11882483]
+49. Tomei G, Fioravanti M, Cerratti D, et al. Occupational exposure to noise and the cardiovascular
+system: a meta-analysis. Sci Total Environ. 2010; 408:681–89. [PubMed: 19931119]
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 14
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+50. Davies H, van Kamp IV. Noise and cardiovascular disease: a review of the literature 2008–2011.
+Noise Health. 2012; 14:287–91. [PubMed: 23257579]
+51. Huss A, Spoerri A, Egger M, Röösli M. for the Swiss National Cohort Study Group. Aircraft noise,
+air pollution, and mortality from myocardial infarction. Epidemiology. 2010; 21:829–36.
+[PubMed: 20881600]
+52. Sørensen M, Hvidberg M, Andersen ZJ, et al. Road traffic noise and stroke: a prospective cohort
+study. Eur Heart J. 2011; 32:737–44. [PubMed: 21266374]
+53. Gan WQ, Davies HW, Koehoorn M, Brauer M. Association of long-term exposure to community
+noise and traffic-related air pollution with coronary heart disease mortality. Am J Epidemiol.
+2012; 175:898–906. [PubMed: 22491084]
+54. Babisch W, Kamp I. Exposure-response relationship of the association between aircraft noise and
+the risk of hypertension. Noise Health. 2009; 11:161–68. [PubMed: 19602770]
+55. Babisch W. Road traffic noise and cardiovascular risk. Noise Health. 2008; 10:27–33. [PubMed:
+18270405]
+56. Evans GW. Child development and the physical environment. Annu Rev Psychol. 2006; 57:423–
+51. [PubMed: 16318602]
+57. Evans, G.; Hygge, S. Noise and performance in adults and children. In: Luxon, L.; Prasher, D.,
+editors. Noise and its effects. London: Whurr Publishers; 2007.
+58. Hygge S, Evans GW, Bullinger M. A prospective study of some effects of aircraft noise on
+cognitive performance in schoolchildren. Psychol Sci. 2002; 13:469–74. [PubMed: 12219816]
+59. Bronzaft AL. The effect of a noise abatement program on reading ability. J Environ Psychol. 1981;
+1:215–22.
+60. Lercher P, Evans GW, Meis M. Ambient noise and cognitive processes among primary
+schoolchildren. Environ Behav. 2003; 35:725–35.
+61. Stansfeld SA, Berglund B, Clark C, et al. for the RANCH study team. Aircraft and road traffic
+noise and children’s cognition and health: a cross-national study. Lancet. 2005; 365:1942–49.
+[PubMed: 15936421]
+62. Clark C, Martin R, van Kempen E, et al. Exposure-effect relations between aircraft and road traffic
+noise exposure at school and reading comprehension: the RANCH project. Am J Epidemiol. 2006;
+163:27–37. [PubMed: 16306314]
+63. Berglund, B.; Lindvall, T.; Schwela, DH. Guidelines for Community Noise. World Health
+Organization (WHO); Geneva: 1999. http://whqlibdoc.who.int/hq/1999/a68672.pdf [accessed July
+11, 2013]
+64. Dang-Vu TT, McKinney SM, Buxton OM, Solet JM, Ellenbogen JM. Spontaneous brain rhythms
+predict sleep stability in the face of noise. Curr Biol. 2010; 20:R626–27. [PubMed: 20692606]
+65. Basner M, Samel A, Isermann U. Aircraft noise effects on sleep: application of the results of a
+large polysomnographic field study. J Acoust Soc Am. 2006; 119:2772–84. [PubMed: 16708935]
+66. Basner M, Müller U, Griefahn B. Practical guidance for risk assessment of traffic noise effects on
+sleep. Appl Acoust. 2010; 71:518–22.
+67. Brink M, Basner M, Schierz C, et al. Determining physiological reaction probabilities to noise
+events during sleep. Somnologie. 2009; 13:236–43.
+68. Cassel W, Ploch T, Griefahn B, et al. Disturbed sleep in obstructive sleep apnea expressed in a
+single index of sleep disturbance (SDI). Somnologie. 2008; 12:158–64.
+69. Basner M. Nocturnal aircraft noise increases objectively assessed daytime sleepiness. Somnologie.
+2008; 12:110–17.
+70. Elmenhorst EM, Elmenhorst D, Wenzel J, et al. Effects of nocturnal aircraft noise on cognitive
+performance in the following morning: dose-response relationships in laboratory and field. Int
+Arch Occup Environ Health. 2010; 83:743–51. [PubMed: 20143082]
+71. Jarup L, Babisch W, Houthuijs D, et al. the HYENA study team. Hypertension and exposure to
+noise near airports: the HYENA study. Environ Health Perspect. 2008; 116:329–33. [PubMed:
+18335099]
+
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 15
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+72. Night noise guidelines for Europe. World Health Organisation (WHO); Copenhagen, Denmark:
+2009. http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf [accessed July 11,
+2013]
+73. Busch-Vishniac IJ, West JE, Barnhill C, Hunter T, Orellana D, Chivukula R. Noise levels in Johns
+Hopkins Hospital. J Acoust Soc Am. 2005; 118:3629–45. [PubMed: 16419808]
+74. Hagerman I, Rasmanis G, Blomkvist V, Ulrich R, Eriksen CA, Theorell T. Influence of intensive
+coronary care acoustics on the quality of care and physiological state of patients. Int J Cardiol.
+2005; 98:267–70. [PubMed: 15686777]
+75. Parthasarathy S, Tobin MJ. Sleep in the intensive care unit. Intensive Care Med. 2004; 30:197–
+206. [PubMed: 14564378]
+76. Xie H, Kang J, Mills GH. Clinical review: The impact of noise on patients’ sleep and the
+effectiveness of noise reduction strategies in intensive care units. Crit Care. 2009; 13:208.
+[PubMed: 19344486]
+77. Buxton OM, Ellenbogen JM, Wang W, et al. Sleep disruption due to hospital noises: a prospective
+evaluation. Ann Intern Med. 2012; 157:170–79. [PubMed: 22868834]
+78. Messingher G, Ryherd EE, Ackerman J. Hospital noise and staff performance. J Acoust Soc Am.
+2012; 132:2031.
+79. Ryherd EE, Waye KP, Ljungkvist L. Characterizing noise and perceived work environment in a
+neurological intensive care unit. J Acoust Soc Am. 2008; 123:747–56. [PubMed: 18247879]
+80. Blomkvist V, Eriksen CA, Theorell T, Ulrich R, Rasmanis G. Acoustics and psychosocial
+environment in intensive coronary care. Occup Environ Med. 2005; 62:e1. [PubMed: 15723873]
+81. Richardson A, Thompson A, Coghill E, Chambers I, Turnock C. Development and implementation
+of a noise reduction intervention programme: a pre- and postaudit of three hospital wards. J Clin
+Nurs. 2009; 18:3316–24. [PubMed: 19732242]
+
+NIH-PA Author Manuscript
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 16
+
+NIH-PA Author Manuscript
+Figure 1. Sound pressure levels
+
+NIH-PA Author Manuscript
+
+(A) The sensitivity of the auditory system depends on sound frequency and sensitivity is
+highest between 2000 Hz and 5000 Hz (green line). The A-filter (dark red line) is a
+frequency-weighting of sound pressure levels that mimics the sensitivity of the auditory
+system (eg, low-frequency sounds contribute little to the A-weighted dB level). (B) Aweighted sound pressure levels for several environmental sounds, emphasising that whether
+or not a sound is perceived as noise depends largely on the context and the individual, and is
+only partly determined by its sound pressure levels. For example, spectators attending a rock
+concert might not perceive the music as noise, whereas residents in the vicinity of the venue
+might call it noise, even though sound pressure levels are much lower there than for inside.
+
+NIH-PA Author Manuscript
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 17
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+Figure 2. DALYs attributed to environmental noise exposure in Europe
+
+According to WHO,14 more than 1 million healthy life years (DALYs) are lost annually
+because of environmental noise exposure in European A-member states alone. Most of these
+DALYs can be attributed to noise-induced sleep disturbance and annoyance.
+DALYs=Disability-adjusted life years.
+
+NIH-PA Author Manuscript
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+Basner et al.
+
+Page 18
+
+NIH-PA Author Manuscript
+NIH-PA Author Manuscript
+
+Figure 3. Exposure–response curves of road and aircraft noise and cardiovascular endpoints
+
+RTN and hypertension (24 studies, noise indicator LAeq16h); RTN and myocardial infarction
+(five studies, noise indicator LAeq16h); RTN and stroke (one study, noise indicator LDEN);
+AN and hypertension (five studies, noise indicator LDN); and AN and MI (one study, noise
+indicator LDN). RTN=road traffic noise. AN=aircraft noise.
+
+NIH-PA Author Manuscript
+Lancet. Author manuscript; available in PMC 2014 November 20.
+
+

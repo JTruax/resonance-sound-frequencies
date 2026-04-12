@@ -1,0 +1,1093 @@
+original article
+
+The effect of low-frequency sound stimulation on
+patients with fibromyalgia: A clinical study
+Lili Naghdi MD CCFP1,2, Heidi Ahonen PhD MTA1,3, Pasqualino Macario DC2, Lee Bartel PhD1,4
+L Naghdi, H Ahonen, P Macario, L Bartel. The effect of lowfrequency sound stimulation on patients with fibromyalgia: A
+clinical study. Pain Res Manag 2015;20(1):e21-e27.
+Background: The search for effective treatments for fibromyalgia
+(FM) has continued for years. The present study premises that thalamocortical dysrhythmia is implicated in fibromyalgia and that low-frequency
+sound stimulation (LFSS) can play a regulatory function by driving neural
+rhythmic oscillatory activity.
+Objective: To assess the effect of LFSS on FM.
+Method: The present open-label study with no control group used a
+repeated-measures design with no noncompleters. Nineteen female volunteers (median age 51 years; median duration of FM 5.76 years) were administered 10 treatments (twice per week for five weeks). Treatments involved
+23 min of LFSS at 40 Hz, delivered using transducers in a supine position.
+Measures (repeated before and after treatment) included the Fibromyalgia
+Impact Questionnaire, Jenkins Sleep Scale, Pain Disability Index, sitting and
+standing without pain (in minutes), cervical muscle range of motion and
+muscle tone. Mean percentages were calculated on end of treatment selfreports of improvement on pain, mood, insomnia and activities of daily living.
+Results: Significant improvements were observed with median scores:
+Fibromyalgia Impact Questionnaire, 81% (P<0.0001); Jenkins Sleep Scale,
+90% (P<0.0001); and Pain Disability Index, 49.1% (P<0.0001).
+Medication dose was reduced in 73.68% of patients and completely discontinued in 26.32%. Time sitting and standing without pain increased significantly (P<0.0001). Cervical muscle range of motion increased from
+25% to 75% (P=0.001), while muscle tone changed from hypertonic to
+normal (P=0.0002).
+Conclusion: In the present study, the LFSS treatment showed no
+adverse effects and patients receiving the LFSS treatment showed statistically and clinically relevant improvement. Further phase 2 and 3 trials are
+warranted.
+Key Words: 40 Hz; Fibromyalgia; Low frequency; Music medicine; Neural
+circuit dysrhythmia; Rhythmic sensory stimulation
+
+F
+
+ibromyalgia (FM) is a syndrome involving diffuse body pain with associations of fatigue, sleep disturbance, cognitive changes, mood disturbance and other variable somatic symptoms (1). FM is a common pain
+disorder estimated to affect 2% to 4 % of the population, of whom 80%
+are women (2); it is most prevalent in the third to fifth decade of life.
+Pain is the primary complaint in patients with FM. Fatigue is the
+most common associated complaint and is present in >90% of patients
+(1). Sleep abnormalities result in changes in sleep latency, sleep disturbance and fragmented sleep, leading to impaired daytime function (3,4).
+Mood disorders, including depression and anxiety, are present in up to
+three-quarters of patients with FM (5). Due to the nature of FM, many
+patients experience problems with their activities of daily living (ADL)
+and poor quality of life, and may end up on disability, which has a significant impact on them and their families. In the United States, the cost
+
+L’effet de la stimulation sonore à basse
+fréquence chez les patients atteints de
+fibromyalgie : une étude clinique
+HISTORIQUE : La recherche de traitements efficaces contre la fibromyalgie (FM) se poursuit depuis des années. Selon la prémisse de la présente
+étude, la dysrythmie thalamocorticale contribue à la FM et la stimulation
+sonore à basse fréquence (SSBF) peut avoir une fonction régulatrice en
+stimulant l’activité rythmique oscillatoire neuronale.
+OBJECTIF : Évaluer l’effet de la SSBF sur la FM.
+MÉTHODOLOGIE : La présente étude ouverte sans groupe témoin a fait
+appel à des mesures répétées que tous ont terminées. Dix-neuf volontaires
+de sexe féminin (âge médian de 51 ans; durée médiane de FM de 5,76 ans)
+se sont fait administrer dix traitements (deux fois par semaine pendant cinq
+semaines). Ces traitements consistaient en une SSBF de 40 Hz pendant
+23 minutes, transmise par transducteurs aux patientes en décubitus dorsal.
+Les mesures (répétées avant et après le traitement) incluaient le questionnaire sur les effets de la fibromyalgie, l’échelle de sommeil de Jenkins,
+l’indice d’incapacité causée par la douleur, la période de position assise et
+debout sans ressentir de douleur (en minutes), l’amplitude de mouvement
+des muscles cervicaux et le tonus musculaire. Les pourcentages moyens
+étaient calculés d’après les autodéclarations d’atténuation de la douleur, de
+l’humeur, de l’insomnie et des activités de la vie quotidienne à la fin du
+traitement.
+RÉSULTATS : Les chercheurs ont observé des améliorations considérables aux indices médians : questionnaire sur les effets de la fibromyalgie, 81 % (P<0,0001); échelle de sommeil de Jenkins, 90 % (P<0,0001), et
+indice d’incapacité de la douleur, 49,1 % (P<0,0001). La dose du médicament était réduite chez 73,68 % des patientes et complètement abandonnée chez 26,32 % d’entre elles. La période en position assise et debout sans
+ressentir de douleur augmentait considérablement (P<0,0001). L’amplitude
+de mouvement des muscles cervicaux passait de 25 % à 75 % (P=0,001),
+tandis que le tonus musculaire passait d’hypertonique à normal (P=0,0002).
+CONCLUSION : Dans la présente étude, le traitement par SSBF ne provoquait pas de réactions indésirables, et les patientes qui le recevaient
+présentaient une amélioration pertinente sur le plan statistique et clinique.
+Des essais de phase 2 et de phase 3 s’imposent.
+
+for service utilization in an individual FM patient was >$2000 in 1997,
+with reports in the order of $4000 per year per patient for Canada and
+Europe (6-9). There is currently no cure for FM. Ideal management
+includes both nonpharmacological and pharmacological treatments
+using a multimodal approach, with active patient participation fostered
+by a strong patient-centred locus of control (10).
+Abnormalities in pain processing have been identified at various
+levels in the peripheral, central and sympathetic nervous systems,
+as well as the hypothalamo-pituitary-adrenal axis stress-response
+system. Documented abnormalities include evidence of peripheral
+sensitization and wind-up phenomenon, central sensitization with
+changes in functional magnetic resonance imaging and single-photon
+emission computed tomography scans of the brain, increased levels of
+substance P in the cerebrospinal fluid and impairment of descending
+
+1Music and Health Research Collaboratory, University of Toronto, Toronto; 2Sound Therapy Centre of Vaughan, Vaughan; 3Conrad Institute for
+
+Music Therapy Research, Wilfrid Laurier University, Waterloo; 4Faculty of Music, University of Toronto, Toronto, Ontario
+Correspondence: Dr Lee Bartel, Faculty of Music, University of Toronto, 80 Queen’s Park Crescent, Toronto, Ontario M5S 2C5. Telephone
+416-489-2822, e-mail lbartel@chass.utoronto.ca
+
+This open-access article is distributed under the terms of the Creative Commons Attribution Non-Commercial License (CC BY-NC) (http://
+creativecommons.org/licenses/by-nc/4.0/), which permits reuse, distribution and reproduction of the article, provided that the original work is
+properly cited and the reuse is restricted to noncommercial purposes. For commercial reuse, contact support@pulsus.com
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+e21
+
+Naghdi et al
+
+noxious inhibitory control (11,12). Some forms of chronic pain appear
+to alter thalamocortical connections, causing a disruption of thalamic
+feedback and the possibility that chronic pain may be related to thalamocortical dysrhythmia (TCD) (13). There is increasing evidence for
+altered thalamic function in pain patients with chronic pain (14,15)
+and FM (16-18). Previous literature suggests that lowered thalamic
+function in FM patients represents a ceiling effect of descending pain
+inhibition (16) maintained by the persistent excitatory input of pain
+signals. Support for this mechanism was found in a study in which
+normalization of reduced thalamic activity was observed in response
+to analgesic treatment (nerve blockade) in patients with peripheral
+neuropathic pain (19). In TCD, normal thalamocortical resonance
+is disrupted by changes in the behaviour of neurons in the thalamus.
+Music and pain
+Pain theory and music: Although there have been numerous studies
+investigating music and pain (20), few have been adequately theorized in
+relation to dominant pain theories to explain why music reduces pain.
+This may be due, in part, to the inadequacy of early pain theories, such as
+the discredited specificity theory, intensity theory and pattern theory (21),
+and to weaknesses in the gate control theory (GCT), which has been
+been proposed as the basis for some music effects. Although GCT (22)
+postulated that affective and cognitive responses, such as music-responsive
+attention and psychological states, influenced the gate through efferent
+descending fibres, research has shown that GCT oversimplified neural
+systems (21). Melzack (23) proposed a more adequate pain theory that
+explains the effects of music as a unified brain mechanism-based body-self
+neuromatrix (NM). Sensory, cognitive and affective dimensions are fully
+credited with affecting pain perception, and these dimensions are subject
+to cognitive-evaluative (attention, expectation, anxiety, valence) and
+motivational-affective (neurotransmitter, hormonal, limbic) inputs.
+Although exact mechanisms are not yet understood, NM offers an
+explanation as to why functions of music, such as distraction, stress and
+anxiety reduction, and aesthetic pleasure, reduce pain perception.
+Although GCT was superseded by NM to explain typical music functions,
+GCT does explain why stimulation of touch fibres can reduce pain perception, as has been demonstrated with certain applications of lowfrequency sound stimulation (LFSS), which induces mechanical
+vibrotactile stimulation of mechanoreceptors and spinal cord functioning,
+not unlike electrical skin and spinal cord stimulation (24). However, neither the GCT nor NM allow explanation of experiential phenomena,
+including pain, associated with rhythmic oscillatory coherence (25,26)
+and how music as rhythmic vibration can drive oscillatory coherence. The
+correlation of thalamocortical oscillatory dysrhythmia with pain has been
+demonstrated (27,28) but no definitive theory has been established
+Cognitive and affective effects of music: Given the role that neurotransmitters, hormones and the limbic system play in pain according to
+the NM theory, it is highly relevant that music has been shown to affect
+the release of endorphins (29-37), dopamine (38,39) and serotonin
+(40,41), and decrease cortisol levels (39,42-47). A recent review (45) of
+400 published scientific articles investigating music as medicine found
+strong evidence that music has effects on brain chemistry, has mental
+and physical health benefits on management of mood and stress reduction, and that it is the rhythmic stimulation of music, rather than the
+melody, that has the greatest antipain effect in the brain.
+GCT and sensory effect of sound: GCT suggests that stimulating the
+touch senses in the nerve origin region of pain will serve to ‘close the
+gate’ to the transmission of pain. LFSS, variously known as vibroacoustic or physioacoustic therapy, stimulates the mechanoreceptors in the
+body and cellular structures more deeply, thereby potentially serving to
+block pain transmission. LFSS, usually delivered through chairs or
+beds specially fitted with low frequency transducers, has been found to
+improve mobility (48), increase circulation (49), decrease low-density
+lipoprotein levels and blood pressure (50), help decrease pain (49,50),
+and reduce muscle strain and stiffness (49).
+Studies involving LFSS have examined specific pain conditions:
+rheumatoid arthritis using 40 Hz (51); polyarthritis in hands and chest
+
+e22
+
+using 40 Hz (52,53); low back pain using 52 Hz (52,53); knee replacement pain (54); postoperative gynecological pain (55); menstrual pain
+and dysmenorrhea using 52 Hz (52,53); and sports injuries (52,53,56).
+Music and FM: The effect of music on pain though sensory, cognitive
+and affective dimensions has been demonstrated. The effect of LFSS on
+various pains conditions has also been demonstrated. Little research has
+specifically focused on the effects of music or LFSS on FM. Chesky et al
+(57) studied the immediate effects of music and musically fluctuating
+vibration (60 Hz to 300 Hz) on tender point pain in patients with FM.
+According to the results, musically fluctuating vibration failed to alter
+pain perception in FM. Onieva-Zafra et al (58) studied the effect of four
+weeks of daily music listening to unspecified ‘classical’ music mixed with
+salsa music. The music listening group showed significant reductions in
+pain, measured using the McGill Pain Scale (sensory [P=0.04] and
+evaluative [P=0.02]). The control group received no treatment and
+showed no significant change. Müller-Busch and Hoffmann (59) studied
+chronic pain patients, including patients with FM, with a treatment of
+active music therapy using unspecified performed music. Results found
+significant reduction in reported pain intensity but no change in depression and anxiety scores. Leão and da Silva (60) found that women with
+chronic pain experienced less pain (P=0.001) after listening to classical
+music. The few studies of sound and FM that exist primarily draw on
+cognitive and affective effects of music. LFSS and FM research has not
+previously been theorized and conducted as in the present study.
+TCD as a basis for chronic pain
+TCD is an abnormal condition of the oscillatory network between the
+thalamus and cortex characterized by an increase in resonant low-frequency oscillations in the theta range, with attendant ‘dark’ areas of
+reduced 40 Hz coherent oscillation in the cortex. TCD disrupts normal intrabrain connectivity and results in disturbed sensation, cognition, affect and motor performance (27,61-63). One of the conditions
+known to be associated with TCD is chronic pain (63-67). Specifically,
+reduced connectivity between the thalamus and the orbitofrontal
+cortex has been observed in FM patients (68). Although there is not
+complete scientific agreement on the basis of FM, the present study is
+based on the assumption that it is at least partially neurogenic and that
+TCD is, therefore, implicated.
+Rhythmic sensory stimulation
+Music essentially consists of vibration at multiple frequencies. When frequencies are beyond 16 Hz, they are heard as pitches, but each individual
+sound wave can be considered to be a separate stimulative event.
+Consequently, a pitch of 40 Hz, heard as a low pitch close to the lowest ‘E’
+on the piano, is not a singular stimulation, but rather exerts 40 stimuli per
+second. When this stimulus is applied to the ears as sound waves it ‘drives’
+a brain response through the auditory system. The same effect can be
+obtained with an isochronous sound created with amplitude modulation
+(69). When the 40 Hz sound is processed by transducers installed in a
+chair, the effect is felt as vibrotactile and can ‘drive’ a response through
+the somatosensory system. The effect can also be created and brain
+response observed with mechanical vibration (70-72). Rhythmic sensory
+stimulation (RSS) similarly extends to the visual domain (73-75).
+TCD as a malfunction of coherent rhythmic oscillation should be
+subject to ‘stabilization’ through rhythmic driving of oscillatory neural
+activity. Llinás and Ribary (76) showed a reset of the thalamocortical
+oscillation with auditory stimulation. Ross et al (70) showed an effect
+of 40 Hz steady-state oscillation with vibratory stimulus. Theoretically,
+the effect of RSS to regulate the TCD related to neurogenic pain is the
+foundational premise of the present study.
+The present study speculates that TCD is implicated in FM and
+that RSS can play a rehabilitative role through driving neural rhythmic oscillatory activity, and resetting or regulating the dysrhythmia.
+However, RSS, when applied as full body vibrotactile stimulation, as
+in the present study, may also contribute to a reduction in FM symptoms by blocking pain perception through GCT, or by improving
+lymphatic drainage and lowering vascular congestion (77).
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+Effect of sound stimulation on fibromyalgia
+
+Table 1
+Demographic and medical characteristics at recruitment
+Range
+Minimum Maximum
+Age, years, median (q1, q3)
+
+51 (46, 56)
+
+38
+
+65
+
+8
+
+19
+
+0.16
+
+16
+
+Sex, n (%)
+Female
+
+19 (100)
+
+Male
+
+0 (0)
+
+FM diagnostic criteria
+assessment, median (q1, q3)
+
+15 (10, 19)
+
+Duration of FM, years, mean ± SD
+
+5±2.9
+
+Main FM symptom
+
+Pain (100%)
+
+FM Fibromyalgia; q Quartile
+
+Figure 1) Fibromyalgia Impact Questionnaire (FIQ) before and after
+comparison
+
+Table 2
+Fibromyalgia Impact Questionnaire (FIQ) and Jenkins
+Sleep Scale (JSS) results
+Range
+
+Test
+
+Median
+
+Signed
+Mean ± SD Minimum Maximum rank
+
+FIQ initial
+
+88.8
+
+85.8±10.9
+
+47.0
+
+94.9
+
+3.3
+
+55.5
+
+FIQ final
+
+16.8
+
+19.9±13.8
+
+Difference
+
+72
+
+65.9
+
+JSS initial
+
+20
+
+19.16±2.36
+
+10
+
+20
+
+0
+
+16
+
+JSS final
+
+2
+
+4.11±4.21
+
+Difference
+
+18
+
+15.05
+
+P
+
+95
+
+<0.0001
+
+95
+
+<0.0001
+
+Table 3
+Pain Disability Index reduction
+Reduction in Pain
+Disability Index score
+
+Minimum
+
+Maximum
+
+Mean ± SD
+
+P
+
+11.0
+
+44.0
+
+26.89±9.67
+
+<0.0001
+
+Methods
+Participants
+Following Research Ethics Board approval from Wilfrid Laurier
+University (Waterloo, Ontario), a total of 19 female volunteer subjects,
+with a median age of 51 years and median duration of FM of 5.76 years,
+were recruited for the present study. At recruitment, patients’ FM diagnostic criteria assessment (78) was 15 (median) with a minimum of
+eight and maximum of 19. Information regarding study design, treatments, contraindications and theoretical basis for the therapy was given
+to each participant. Informed consent was obtained from the participants. Table 1 shows the characteristics of the participants.
+Intervention
+The treatment consisted of two sessions per week for five weeks, for a
+total of 10 treatments. At each session, patients received 23 min of LFSS
+at a 40 Hz frequency (79), delivered with the SL5 lounge from Nexneuro
+(USA). The power level of the sound was the same for all subjects (decibel level not measured). They were not specifically instructed to do
+anything other than lie back and relax. Participants experienced a mild
+vibrotactile sensation on their body as well as a low-level hum. No
+patient reported any discomfort or annoyance. Blood pressure and pulse
+rate were checked and documented in every session before and after the
+treatment while patients were on the lounge.
+Instrumentation – assessment and outcome measures
+Initial assessment: An initial assessment was conducted by a medical
+doctor consisting of a complete physical examination addressing the
+history of previous therapies, most offending symptom, and medications and dosage used. Subjects were asked to give a subjective rating
+of pain, mood, insomnia and ADL. The same medical doctor then
+examined the participants’ ability to sit and stand without pain (measured as length of time in minutes) based on participant self-report,
+referenced to tasks such as watching television or washing dishes. No
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+standardized scale was used. Each subject was then examined separately by a doctor of chiropractic medicine to determine range of
+motion (ROM) and muscle tone in different areas of their body. Each
+subject then completed the Fibromyalgia Impact Questionnaire (FIQ)
+(80), the Jenkins Sleep Scale (JSS) (81) and the Pain Disability Index
+(PDI) (82,83). This comprehensive pretreatment assessment was performed as an indicator of steady baseline condition on which to make
+treatment effect comparisons.
+Although not part of the standard diagnostic criteria for FM,
+physical dysfunction is associated with the constellation of signs and
+symptoms of FM patients. ROM was included in the present study to
+identify whether functional improvements were achieved with
+vibroaccoustic therapy. Other studies have used ROM measurements
+to quantify similar improvements of physical function when performing different forms of therapies (84,85). Similarly, muscle tone
+was examined as an outcome based on an extensive literature describing how pathophysiology can be expressed as pain, increased muscle
+tone and tension (86-88). One study by Kokebie et al (89) quantified
+this presentation using a pressure gauge. Furthermore, there are several
+studies that have used this sign as an indicator for condition improvement, albeit through other forms of therapeutic techniques (90,91).
+Outcome assessment: Immediately after the 10th LFSS treatment session, each participant was assessed on the 12 measures used in the
+initial assessment.
+Second outcome assessment: Precisely two weeks after their 10th
+LFSS session, during which they received no LFSS treatment, subjects
+were further assessed regarding when symptoms reoccurred (in days),
+with a retrospective self-report related to pain and sleep and, of the
+standardized measures, only the PDI. The JSS was not reassessed
+because its standardized follow-up interval is one month.
+Analysis
+The present study used a repeated measures design. There were no
+noncompleters. The Wilcoxon signed rank test (WSR) was used compare initial and final values on FIQ, JSS, PDI, length of ability to sit
+and stand without pain (in minutes), ROM and cervical muscle tone.
+Mean percentages were calculated on self reports of improvement on
+pain, mood, insomnia and ADL
+
+Results and Discussion
+
+Highly significant results were found in the present study; thus, caution
+needs to be taken in interpretation and we urge follow-up research with
+a blinded controlled trial. Pain is a highly subjective experience and difficult to measure objectively. The impact of pain is more amenable to
+measurement; therefore, three measures of the impact of pain were used:
+the FIQ, JSS and PDI. Table 2 presents the before-treatment (score
+88.8) to after-treatment (score 16.8) reduction in pain impact (81%)
+measured using the FIQ, which was statistically significant (P<0.0001;
+WSR). A comparable impact was measured using the PDI (Table 3)
+with a 49% before-after treatment reduction (P<0.0001; WSR). Sleep is
+
+e23
+
+Naghdi et al
+
+Figure 3) Length of time sitting before and after treatment
+
+Figure 2) Jenkins Sleep Scale (JSS) before and after comparison
+Table 4
+Self-report following treatment
+Range
+Minimum
+
+Maximum
+
+Medication intake, n (%)
+Reduced dosage
+
+14 (73.68)
+
+Stopped totally
+
+5 (26.32)
+
+Subjective improvement, %,
+median (q1, q3)
+Pain
+
+70 (50, 80)
+
+35
+
+90
+
+Mood
+
+65 (45, 85)
+
+35
+
+100
+
+Insomnia
+
+65 (40, 85)
+
+30
+
+95
+
+Activities of daily living
+
+70 (50, 80)
+
+35
+
+90
+
+Global impression of change, n (%)
+Negative
+
+0 (0)
+
+Slightly better
+
+2 (10.53)
+
+Much better
+
+8 (42.11)
+
+Very much better
+
+9 (47.37)
+
+q Quartile
+
+strongly affected by FM, with some studies reporting 90% of patients
+having disturbed sleep (92,93). The before-treatment JSS median score
+of 20 was reduced after treatment to 2, an improvement of 90%
+(P<0.0001; WSR) (Table 1). Figures 1 and 2 graphically illustrate the
+changes in FIQ and JSS. Although the after-treatment scores are significantly different than before treatment, there is less uniformity in the
+‘after’ scores, as indicated by the greater scatter in Figures 1 and 2 and by
+the higher SDs in Table 1.
+A highly important indicator of the impact of FM is the number of
+days patients miss work. This single scale from the FIQ indicated that
+the median days of missed work before treatment was four days per
+week, which was reduced to one day per week after the treatment
+(P<0.0001 WSR).
+A strong indicator of pain experienced is the amount of medication used. Table 4 shows that after treatment, 73.68% of patients
+reported using a reduced dose of medication and 26.32% of patients
+had completely discontinued use of pain medicine.
+Table 4 shows patients’ subjective self-report of the degree of
+improvement during the course of treatment on pain, mood, insomnia
+and ADL. Median scores were are improved by >65%. Subjective
+assessment of pain and ADL are >70% in median. Patients were asked
+for a global impression of change in their condition following treatment. Slightly less than 90% reported their condition to be much or
+very much better, with none reporting it being worse.
+
+e24
+
+Figure 4) Length of time standing before and after treatment
+One way to triangulate the patients’ self report of pain reduction is
+with two test items from FIQ – the single-scale pain assessment and
+the single-scale tiredness reduction assessment. On the FIQ pain scale,
+the median pain level was 9 before treatment and 2 after treatment
+(P<0.0001; WSR). The FIQ tiredness scale showed a reduction from
+10 before treatment to 2 after treatment (P<0.0001; WSR).
+Because FM is known to cause stiffness, and pain decreases length
+of time individuals can stand or sit, sitting, standing and ROM tests
+were used. Table 5 reports the results of the physical assessments before
+and after treatment. The length of time patients can sit increased significantly (P<0.0001), as did the length of time standing (P<0.0001).
+These results are presented in Figures 3 and 4.
+Table 5 presents the changes in cervical ROM and cervical tone
+before and after treatment. Figure 5 shows that most patients (11 of
+19) had 25% ROM and none had full ROM at baseline, while nine of
+19 patients had >75% ROM and only three of 19 had <25% ROM
+after treatment. Similarly, Figure 6 shows that 13 of 19 patients were
+more hypertonic and none had normal tone at baseline, while there
+were seven patients with normal tone, six who were hypertonic and
+none who were more hypertonic after treatment.
+The median cervical muscle ROM increased from a baseline of 25%
+to 75% following treatment (P=0.001; WSR), while muscle tone
+changed from hypertonic at baseline to normal tone (P=0.0002; WSR).
+With highly significant reductions in pain and impact of FM on quality of life, it is important to observe the return of FM symptoms following
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+Effect of sound stimulation on fibromyalgia
+
+Table 5
+Physical ability results
+Range
+Test
+
+Median
+
+Mean ± SD
+
+Minimum
+
+Maximum
+
+Signed rank
+
+P
+
+Sitting, min
+Initial
+
+10.0
+
+17.37±12.84
+
+5
+
+60
+
+Final
+
+30.0
+
+52.63±37.61
+
+20
+
+180
+
+Difference
+
+20.0
+
+35.26
+
+Initial
+
+10.0
+
+16.32±9.10
+
+5
+
+30
+
+Final
+
+25.9
+
+55.26±41.07
+
+20
+
+180
+
+Difference
+
+15.0
+
+38.95
+
+Initial
+
+1.0
+
+1.16±0.76
+
+0.0
+
+3.0
+
+Final
+
+3.0
+
+2.77±1.17
+
+1.0
+
+4.0
+
+Difference
+
+2.0
+
+1.54
+
+Initial
+
+2.0
+
+1.68±0.48
+
+1.0
+
+2.0
+
+Final
+
+0.0
+
+0.46±0.52
+
+0.0
+
+1.0
+
+Difference
+
+2.0
+
+1.31
+
+95
+
+<0.0001
+
+95
+
+<0.0001
+
+33
+
+0.001
+
+−45.5
+
+0.0002
+
+Standing, min
+
+Range of motion*
+
+Cervical muscle tone†
+
+*Range of motion (ROM) scores: 0 = no ROM; 1 = 25% ROM; 2 = 50% ROM; 3 = 75% ROM; 4 = 100% ROM; †Muscle tone: 0 = normal tone; 1 = hypertonic;
+2 = more hypertonic
+
+Figure 5) Range of motion (ROM) before and after treatment
+the end of treatment. Table 6 presents results of symptom recurrence.
+Although three patients (15.8%) reported no recurrence of symptoms
+within 14 days, 84.2% experienced a recurrence of pain (68.4%) or sleep
+disturbance (17.8%). For patients with recurring pain, the pain recurred
+within a mean of eight days (minimum seven days, maximum 14 days).
+For patients with recurring insomnia, the symptom recurred within a
+mean of 10 days (minimum seven days, maximum 14 days).
+
+Conclusion
+
+The results of the present study suggest that LFSS may be beneficial in
+the treatment of FM. It is important to note that the present study was
+an open-label investigation, with no group or baseline control. The
+contribution to quality of life appears to be highly significant and the
+reduction in medication important. The mechanisms by which the
+effects were obtained in the present study cannot be definitely identified, but highlight the need for further exploration of the effect of
+LFSS on muscular and joint mobility through cellular stimulation and
+the need for brain imaging to determine the effect of LFSS on possible
+neural dysrhythmias that may underlie FM. Because personal-choice
+music listening has been shown to have an effect on pain, further
+research should explore variants of the treatment used including the
+combination of LFSS with music listening and the use of auditory
+isochronous 40 Hz sound as an alternative or adjunct to LFSS.
+Furthermore, it must be noted that the present analysis was a pilot
+study that had limitations as an open-label study without an initial
+baseline, with limited follow-up and with no comparison group.
+However, the results are strong enough to warrant further research and
+exploration of continued dosing effects.
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+Figure 6) Muscle tone before and after treatment
+Table 6
+Recurrence of symptoms following treatment
+Range
+
+First recurrence of
+symptoms (total n=19)
+Pain, n (%)
+Time to recurrence, days
+Insomnia, n (%)
+Time to recurrence, days
+None, n (%)
+
+q1, q3
+
+Minimum Maximum
+
+13 (68.4)
+8
+
+7, 10
+
+7
+
+14
+
+7, 11
+
+7
+
+11
+
+3 (15.8)
+10
+3 (15.8)
+
+q Quartile
+
+Acknowledgements: The authors gratefully acknowledge the
+assistance of Chang Ye in the statistical analysis of the data.
+Funding: Conrad Institute for Music Therapy Research, Wilfrid
+Laurier University, Waterloo, Ontario.
+
+References
+
+1. Mease P, Arnold LM, Choy EH, et al. Fibromyalgia syndrome
+module at OMERACT 9: Domain construct. J Rheumatol
+2009;36:2318-29.
+2. Wolfe F, Ross, K, Anderson J, Russell IJ, Hebert L. The prevalence
+and characteristics of fibromyalgia in the general population.
+Arthritis Rheum 1995;38:19-28.
+3. Osorio CD, Gallinaro AL, Lorenzi-Filho G, Lage LV. Sleep quality
+in patients with fibromyalgia using the Pittsburgh Sleep Quality
+Index. J Rheumatol 2006;33:1863-5.
+
+e25
+
+Naghdi et al
+4. Moldofsky H. The significance of the sleeping-waking brain for the
+understanding of widespread musculoskeletal pain and fatigue in
+fibromyalgia syndrome and allied syndromes. Joint Bone Spine
+2008;75:397-402.
+5. Epstein SA, Kay G, Clauw D, et al. Psychiatric disorders in patients
+with fibromyalgia. A multicenter investigation. Psychosomatics
+1999;40:57-63.
+6. Lachaine J, Beauchemin C, Landry PA. Clinical and economic
+characteristics of patients with fibromyalgia syndrome.
+Clin J Pain 2010;26:284-90.
+7. Penrod JR, Bernatsky S, Adam V, Baron M, Dayan N, Dobkin PL.
+Health services costs and their determinants in women with
+fibromyalgia. J Rheumatol 2004;31:1391-8.
+8. Rivera J, Rejas J, Esteve-Vives J, et al. Resource utilisation and
+health care costs in patients diagnosed with fibromyalgia in Spain.
+Clin Exp Rheumatol 2009;27(5 Suppl 56):S39-45.
+9. Wolfe F, Anderson J, Harkness D, et al. A prospective, longitudinal,
+multicenter study of service utilization and costs in fibromyalgia.
+Arthritis Rheum 1997;40:1560-70.
+10. Rossy LA, Buckelew SP, Dorr N, et al. A meta-analysis of fibromyalgia
+treatment interventions. Ann Behav Med 1999;21:180-91.
+11. Perrot S, Dickenson AH, Bennett RM. Fibromyalgia: Harmonizing
+science with clinical practice considerations. Pain Pract
+2008;8:177-89.
+12. Julien N, Goffaux P, Arsenault P, Marchand S. Widespread pain in
+fibromyalgia is related to a deficit of endogenous pain inhibition.
+Pain 2005;114:295-302.
+13. Cauda F, Sacco K, D’Agata F, et al. Low-frequency BOLD
+fluctuations demonstrate altered thalamocortical connectivity in
+diabetic neuropathic pain. BMC Neurosci 2009;26:138.
+14. Hsieh JC, Belfrage M, Stone-Elander S, Hansson P, Ingvar M.
+Central representation of chronic ongoing neuropathic pain studied
+by positron emission tomography. Pain 1995;63:225-36.
+15. Iadarola MJ, Max MB, Berman KF, et al. Unilateral decrease in
+thalamic activity observed with positron emission tomography in
+patients with chronic neuropathic pain. Pain 1995;63:55-64.
+16. Gracely RH, Petzke F, Wolf M, Clauw D. Functional magnetic
+resonance imaging evidence of augmented pain processing in
+fibromyalgia. Arthritis Rheum 2002;46:1333-43.
+17. Kwiatek R, Barnden L, Tedman R, et al. Regional cerebral blood
+flow in fibromyalgia: Single-photon-emission computed tomography
+evidence of reduction in the pontine tegmentum and thalami.
+Arthritis Rheum 2000;43:2823-33.
+18. Mountz J, Bradley L, Modell J, et al. Fibromyalgia in women.
+Abnormalities of regional cerebral blood flow in the thalamus and
+the caudate nucleus are associated with low pain threshold levels.
+Arthritis Rheum 1995;38:926-38.
+19. Hsieh J-C, Belfrage M, Stone-Elander S, Hansson P, Ingvar M.
+Central representation of chronic ongoing neuropathic pain studied
+by positron emission tomography. Pain 1995;63:225-36.
+20. Dileo C, Bradt J. Medical Music Therapy: A Meta-analysis &
+Agenda for Future Research. Cherry Hill: Jeffrey Books, 2005.
+21. Moayedi M, Davis KD. Theories of pain: From specificity to gate
+control. J Neurophysiol 2013;109:5-12.
+22. Melzack R, Wall PD. Pain mechanisms: A new theory.
+Science 1965;150:971-9.
+23. Melzack R. Pain and the neuromatrix in the brain. J Dental Educ
+2001;65:1378-82.
+24. Meyerson BA, Linderoth B. Mechanisms of spinal cord stimulation
+in neuropathic pain. Neurol Res 2000;22:285-92.
+25. Fries P. A mechanism for cognitive dynamics: Neuronal
+communication through neuronal coherence. Trends Cogn Sci
+2005;9:474-80.
+26. Ward LM. Synchronous neural oscillations and cognitive processes.
+Trends Cogn Sci 2003;7:553-9.
+27. Llinás R, Ribary U, Jeanmonod D, Kronberg, E, Mitra PP.
+Thalamocortical dysrhythmia: A neurological and neuropsychiatric
+syndrome characterized by magnetoencephalography. Proc Natl
+Acad Sci U S A 1999;96:15222-7.
+28. Walton KD, Llinás RR. Central pain as a thalamocortical
+dysrhythmia. In: Kruger L, Light AR, eds. Translational Pain
+Research: From Mouse to Man. Boca Raton: CRC Press, 2010.
+29. Bhatara AK, Levitin DJ, Tirovolas AK, Duan LM, Levy B.
+Perception of emotional expression in musical performance.
+J Exp Psychol Hum Percept Perform 2011;37:921-34.
+30. Menon V, Levitin DJ. The rewards of music listening: Response and
+
+e26
+
+physiological connectivity of the mesolimbic system.
+Neuroimage 2005;28:175-84.
+31. Levitin DJ. The neural correlates of temporal structure in music.
+Music Med 2009;1:9-13
+32. McKinney CH, Tims FC, Kumar AM, Kumar M. The effect of
+selected classical music and spontaneous imagery on plasma
+β-endorphin. J Behav Med 1997;20:85-99.
+33. Kuhn D. The effects of active and passive participation in musical
+activity on the immune system as measured by salivary
+immunoglobulin A (SIgA). J Music Ther 2002;39:30-9.
+34. Liégeois-Chauvel C, Peretz I, Babaï M, Laguitton V, Chauvel P.
+Contribution of different cortical areas in the temporal lobes to
+music processing. Brain 1998;121:1853-67
+35. Peretz I, Zatorre RQ. Brain organization for music processing.
+Ann Rev Psychol 2005;56:89-114
+36. Blood AJ, Zatorre RJ, Bermudez P, Evans AC. Emotional responses
+to pleasant and unpleasant music correlate with activity in
+paralimbic brain regions. Nat Neurosci 1999;2:382-7
+37. Salimpoor VN, Benovoy M, Longo G, Cooperstock JR, Zatorre RJ.
+The rewarding aspects of music listening are related to degree of
+emotional arousal. PLoS ONE 2009;4:e7487.
+38. Salimpoor VN, Benovoy M, Larcher K, Dagher A, Zatorre RJ.
+Anatomically distinct dopamine release during anticipation and
+experience of peak emotion to music. Nat Neurosci 2011;14:257-62.
+39. Gangrade A. The effect of music on the production of
+neurotransmitters, hormones, cytokines, and peptides: A review.
+Music Med 2012;4:40-3.
+40. Brandes VM, Terris D, Fischer C, et al. Receptive music therapy for the
+treatment of depression: A proof-of-concept study and prospective
+controlled trial of efficacy. Psychother Psychosom 2010;79:321-2
+41. Erkkilä J, Punkanen M, Fachner J, et al. Individual music therapy
+for depression: Randomised controlled trial. Br J Psychiatry
+2011;199:132-9.
+42. Khalfa S, Bella SD, Roy M, Peretz I, Lupien SJ. Effects of relaxing
+music on salivary cortisol level after psychological stress.
+Ann N Y Acad Sci 2003;999:374-6.
+43. Fukui H, Yamashita M. The effects of music and visual stress on
+testosterone and cortisol in men and women. Neuro Endocrinol Lett
+2003;24:173-80.
+44. Levitin DJ. This is Your Brain on Music. New York: Plume/Penguin,
+2007.
+45. Chanda M, Levitin DJ. The neurochemistry of music.
+Trends Cogn Sci 2013;17:179-93.
+46. Möckel M, Röcker L, Störk T. Immediate physiological responses of
+healthy volunteers to different types of music: Cardiovascular,
+hormonal and mental changes. Eur J Appl Physiol 1994;68:451-9.
+47. Möckel M, Stork T, Vollert J, et al. Stress reduction through
+listening to music: Effects on stress hormones, hemodynamics and
+mental state in patients with arterial hypertension and in healthy
+persons. Dtsch Med Wochenschr 1995;120:745-52.
+48. Wigram, T. The effect of vibroacoustic therapy compared with
+music and movement based physiotherapy on multiply handicapped
+patients with high muscle tone and spasticity. In: Wigram T,
+Dileo C, eds. Music Vibration and Health. Cherry Hill: Jeffrey
+Books, 1997:69-85.
+49. Karkkainen M, Mitsui J. The effects of sound based vibration
+treatment on the human mind and body: The physioacoustic
+method. J Int Soc Life Inf Sci 2006;24:155-9
+50. Zheng A, Sakari R, Cheng SM, et al. Effects of a low-frequency
+sound wave therapy programme on functional capacity, blood
+circulation and bone metabolism in frail old men and women.
+Clin Rehabil 2009;23:897-908.
+51. Chesky K, Rubin B, Frische E. The pain relieving effect of music
+vibration on rheumatoid arthitis patients as related to just music
+and placebo. International Society for Music Education Conference
+Abstracts, 1992.
+52. Skille O. Vibro acoustic therapy. Music Therapy 1989;8:61-77.
+53. Skille O, Wigram T. The effects of music, vocalization and
+vibrations on brain and muscle tissue: Studies in vibroacoustic
+therapy. In: Wigram T, Saperston B, West R, eds. The Art and
+Science of Music Therapy: A Handbook. London: Harwood
+Academic, 1995;23-57.
+54. Burke M, Thomas K. Use of physioacoustic therapy to reduce pain
+during physical therapy for total knee replacement patients over age
+55. In: Wigram T, Dileo C, eds. Music Vibration and Health.
+Cherry Hill: Jeffrey Books, 1997:99-106.
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+Effect of sound stimulation on fibromyalgia
+55. Burke M. Effects of physioacoustic intervention on pain
+management of post operative gynecological patients. In: Wigram T,
+Dileo C, eds. Music Vibration and Health. Cherry Hill: Jeffrey
+Books, 1997:107-23.
+56. Skille O, Wigram T, Weeks L. Vibroacoustic therapy:
+The therapeutic effect of low frequency sound on specific physical
+disorders and disabilities. J Br Music Ther 1989;3:6-10.
+57. Chesky KS, Russell IJ, Lopez Y, Kondraske GV. Fibromyalgia tender
+point pain: A double-blind, placebo-controlled pilot study of music
+vibration using the music vibration table. J Musculoskeletal Pain
+1997;5:33-52.
+58. Onieva-Zafra MD, Castro-Sanchez AM, Matarán-Peñarrocha GA,
+Moreno-Lorenzo C. Effect of music as nursing intervention for people
+diagnosed with fibromyalgia. Pain Manag Nurs 2013;14:e39-46.
+59. Müller-Busch HC, Hoffmann P. Aktive Musiktherapie bei
+chronischen Schmerzen: Eine prospektive Untersuchung. Schmerz.
+1997;11:91-100.
+60. Leão ER, da Silva MJ. Música e dor crônica músculoesquelética:
+o potencial evocativo de imagens mentais. Rev Lat Am Enfermagem.
+2004;12:235-41.
+61. Llinás RR, Ribary U, Jeanmonod D, Kronberg E, Mitra PP.
+Thalamocortical dysrhythmia: A neurological and neuropsychiatric
+syndrome characterized by magnetoencephalography.
+Proc Natl Acad Sci U S A 1999;96:15222-7.
+62. Llinás R, Ribary U, Jeanmonod D, et al. Thalamocortical
+dysrhythmia I: Functional and imaging aspects. Thalamus & Related
+Systems 1 2001;237-44
+63. Schmidt S, Naranjo JR, Brenneisen C, et al. Pain ratings,
+psychological functioning and quantitative EEG in a controlled
+study of chronic back pain patients. PLoS One 2012;7:1-11.
+64. Sarnthein J, Jeanmonod D. High thalamocortical theta coherence in
+patients with neurogenic pain. NeuroImage 2008;39:1910-7.
+65. Stern J, Jeanmonod D, Sarnthein J. Persistent EEG overactivation in
+the cortical pain matrix of neurogenic pain patients.
+NeuroImage 2006;31:721-31.
+66. Walton KD, Dubois M, Llinás RR. Abnormal thalamocortical
+activity in patients with complex regional pain syndrome (CRPS)
+type I. Pain 2010;150:41-51.
+67. Cardoso-Cruz H, Sameshima K, Lima D, Galhardo V. Dynamics of
+circadian thalamocortical flow of information during a peripheral
+neuropathic pain condition. Front Integr Neurosci 2011;5:1-19.
+68. Jensen KB, Loitoile R, Kosek E, et al. Patients with fibromyalgia
+display less functional connectivity in the brain’s pain inhibitory
+network. Mol Pain 2012;8:32.
+69. Patel A. A new approach to the cognitive neuroscience of melody.
+In: Peretz I, Zatorre R, eds. The Cognitive Neuroscience of Music.
+Oxford: Oxford University Press 2003:325-45.
+70. Ross B, Jamali S, Miyazaki T, Fujioka T. Synchronization of beta and
+gamma oscillations in the somatosensory evoked neuromagnetic
+steady-state response. Exper Neurol 2013;245:40-51.
+71. Jamali S, Fujioka T, Ross B. Neuromagnetic beta and gamma
+oscillations in the somatosensory cortex after music training in
+healthy older adults and a chronic stroke patient.
+Clin Neurophysiol 2014;125:1213-22.
+72. Jamali, S, Ross, B. Somatotopic finger mapping using MEG: Toward
+an optimal stimulation paradigm. Clin Neurophysiol 2013;124:1659.
+73. Herrmann CS. Human EEG responses to 1–100 Hz flicker:
+Resonance phenomena in visual cortex and their potential
+correlation to cognitive phenomena. Exp Brain Res
+2001;137:346-53.
+
+Pain Res Manag Vol 20 No 1 January/February 2015
+
+74. Birca A, Carmant L, Lortie A, Lassonde M. Interaction between the
+flash evoked SSVEPs and the spontaneous EEG activity in children
+and adults. Clin Neurophysiol 2006;117:279-88.
+75. Pastor MA, Artieda J, Arbizu J, Valencia M, Masdeu JC. Human
+cerebral activation during steady-state visual-evoked responses.
+J Neurosci 2003;23:11621-7.
+76. Llinás R, Ribary U. Coherent 40-Hz oscillation characterizes dream
+state in humans. Proc Natl Acad Sci USA 1993;90:2078-81.
+78. Ekici G, Bakar Y, Akbayrak T, Yuksel I. Comparison of manual
+lymph drainage therapy and connective tissue massage in women
+with fibromyalgia: A randomized controlled trial. J Manipulative
+Physiol Ther 2009;32:127-33.
+78. Wolfe F, Clauw DJ, Fitzcharles MA, et al. The American College of
+Rheumatology preliminary diagnostic criteria for fibromyalgia and
+measurement of symptom severity. Arthritis Care Res (Hoboken).
+2010;62:600-10.
+79. Skille O. Fibro Recording. VibroAcoustic Solutions. <http://avigaili.
+wix.com/olav#!vibroacoustic-solutions> (Accessed November 10,
+2013).
+80. Bennett R. The Fibromyalgia Impact Questionnaire (FIQ): A review
+of its development, current version, operating characteristics and uses.
+Clin Exp Rheumatol 2005;23(5 Suppl 39):S154-62.
+81. Jenkins CD, Stanton BA, Niemcryk SJ, Rose RM. A scale for the
+estimation of sleep problems in clinical research. J Clin Epidemiol
+1988;41:313-21.
+82. Pollard CA. Preliminary validity study of the pain disability index.
+Percept Mot Skills 1984;59:974.
+83. Tait RC, Chibnall JT, Krause S. The Pain Disability Index:
+Psychometric properties. Pain 1990;40:171-82.
+84. Wennemer HK, Borg-Stein J, Gomba L, et al. Functionally oriented
+rehabilitation program for patients with fibromyalgia: Preliminary
+results. Am J Phys Med Rehabil 2006;85:659-66.
+85. Marcus DA, Bernstein CD, Haq A, Breuer P. Including range of
+outcome targets offers a broader view of fibromyalgia treatment
+outcome: Results from a retrospective review of multidisciplinary
+treatment. Musculoskeletal Care 2014;12:74-81.
+86. Willis WD. The somatosensory system, with emphasis on structures
+important for pain. Brain Res Rev 2007;55:297-313.
+87. Gamsa A. The role of psychological factors in chronic pain: I.
+A half century of study. Pain 1994;57:5-15.
+88. Apkarian AV, Bushnell MC, Treede RD, Zubieta JK. Human brain
+mechanisms of pain perception and regulation in health and disease.
+Eur J Pain 2005;9:463-84.
+89. Kokebie R, Aggarwal R, Kahn S, Kartz RS. Muscle tension is
+increased in fibromyalgia: Use of a pressure gauge. Abstract 1935,
+American College of Rheumatology 2008 Annual Scientific
+Meeting. October 24 to 29, 2008; San Francisco, California.
+90. Kulshreshtha P, Deepak KK. Autonomic nervous system profile in
+fibromyalgia patients and its modulation by exercise: A mini review.
+Clin Physiol Funct Imaging 2013;33:83-91.
+91. Carolyn R, McMakin MA, Oschman J. Visceral and somatic
+disorders: Tissue softening with frequency-specific microcurrent.
+J Altern Complement Med 2013;19:170-7.
+92. Theadom A, Cropley M, Humphrey KL. Exploring the role of sleep
+and coping in quality of life in fibromyalgia. J Psychosom Res
+2007;62:145-51.
+93. Bigatti SM, Hernandez AM, Cronan TA, Rand KL. Sleep
+disturbances in fibromyalgia syndrome: Relationship to pain and
+depression. Arthritis Rheum 2008;59:961-7.
+
+e27
+
+

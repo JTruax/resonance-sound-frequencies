@@ -1,0 +1,2308 @@
+Schumann Resonances, a plausible
+biophysical mechanism for the human health
+effects of Solar/Geomagnetic Activity
+
+Dr Neil Cherry
+Associate Professor of Environmental Health
+
+6th September 2002
+
+Neil.Cherry@ecan.govt.nz
+© Dr Neil Cherry 2002-2005
+
+Human Sciences Department
+P.O. Box 84
+Lincoln University
+Canterbury, New Zealand
+
+Schumann Resonances, a plausible biophysical mechanism
+for the human health effects of Solar/Geomagnetic Activity
+Neil Cherry
+Human Sciences Department
+Lincoln University
+New Zealand
+2/3/2001, updated 6/9/02
+Abstract
+A large number of studies have identified significant physical, biological and health
+effects associated with changes in Solar and Geomagnetic Activity (S-GMA).
+Variations in solar activity, geomagnetic activity and ionospheric ion/electron
+concentrations are all mutually highly correlated and strongly linked by geophysical
+processes. A key scientific question is, what factor is it in the natural environment
+that causes the observed biological and physical effects? The effects include
+altered blood pressure and melatonin, increased cancer, reproductive, cardiac and
+neurological disease and death. Many occupational studies have found that
+exposure to ELF fields between 16.7 Hz and 50/60 Hz significantly reduces
+melatonin. They are also associated with the same and very similar health effects as
+the S-GMA effects. The cell membrane has an electric field of the order of 105 V/cm.
+The ELF brain waves, the EEG, operates at about 10-1 V/cm. Fish, birds, animals and
+people have been shown to respond to ELF signals that produce tissue electric
+gradients of ULF/ELF oscillating signals at a threshold of 10-7 to 10-8 V/cm. This
+involves non-linear resonant absorption of ULF/ELF oscillating signals into systems
+that use natural ion oscillation signals in the same frequency range. A long-lived,
+globally available natural ULF/ELF signal, the Schumann Resonance signal, was
+investigated as the possible plausible biophysical mechanism for the observed SGMA effects. It is found that the Schumann Resonance signal is extremely highly
+correlated with S-GMA indices of sunspot number and the Kp index. The physical
+mechanism is the ionospheric D-region ion/electron density that varies with S-GMA
+and forms the upper boundary of the resonant cavity in which the Schumann
+Resonance signal is formed. This provides strong support for identifying the
+Schumann Resonance signals as the S-GMA biophysical mechanism, primarily
+through a melatonin mechanism. It strongly supports the classification of S-GMA as
+a natural hazard.
+Introduction:
+The idea that spots on the sun or solar flares might influence human health on earth at
+first appears to lack scientific credibility. However, when significant correlations between
+hospital admissions and health registers and Solar-Geomagnetic Activity (S-GMA) are
+found, then the challenge is to conceive of and to document a scientifically plausible and
+observationally supported mechanism and model. There is a large body of research
+correlating S-GMA with biological effects and human health effects. There is currently an
+absence of a known and credible biophysical mechanism to link the S-GMA with these
+effects. The hypothesis promoted here is that the Schumann Resonance (SR) signal is the
+plausible biophysical mechanism to link the S-GMA levels to biological and human health
+
+2
+effects. This operates by being resonantly absorbed by brain systems and altering the
+serotonin/melatonin balance. Confirmation of this hypothesis will strengthen the proposal
+the S-GMA is a natural hazard for humans, animals and other species.
+This study is in a context of fundamental biological concepts relating to homeostasis and
+adaptation. On one hand the survival of organisms in changing environments requires
+adaptation. On the other hand mammals have very advanced neurological and
+physiological systems that must be maintained within narrow activity ranges because of
+homeostatic requirements. Homeostasis is partly maintained in variable environments,
+such as daily climate cycles, through the use of external reference signals called
+Zeitgebers (time givers). The daily solar cycle is detected by mammal's eyes and brains.
+This induces a diurnal cycle of endocrine hormones that regulate a whole body system of
+diurnal changes. Isolating people or birds from the daily solar/climate signals leads to a
+significant lengthening of the circadian period, Wever (1973, 1974). Wever also showed
+that there is a natural ULF/ELF electromagnetic signal that also acts as a circadian
+Zeitgeber. The characteristics of this signal are contained in the Schumann Resonance
+signal and there is no other known natural signal with the appropriate characteristics.
+Schumann Resonance Signal:
+The SR phenomenon was first conceived and proposed by German physicist Dr W.O.
+Schumann, Schumann (1952). The existence of the signals was confirmed by
+measurements in the mid-1950's, Schumann and König (1954), Polk (1982). The SR
+signal is a globally available ULF/ELF signal that has been generated since the
+ionosphere was formed and thunderstorms have existed. Hence they pre-date animal
+evolution on earth. The SR signal was investigated for this purpose because of its strong
+similarity to the human EEG spectrum and evidence that environmental signals of the
+same frequency range do interact with brains, Figure 1.
+
+Figure 1: A typical daytime spectrum for the vertical electric field measured near Kingston,
+Rhode Island, showing the first five Schumann Resonances modes, Polk
+(1982).
+The first five SR modes (0-35 Hz) coincide with the frequency range of the first four EEG
+bands. The primary EEG frequency bands are: Delta, 0.5 to 4 Hz, Theta, 4-8 Hz, Alpha, 813 Hz and 13 to 30 Hz, Malmivuo and Plonsey (1995). Hence resonant absorption and
+reaction is biophysically plausible.
+
+3
+Resonant absorption of an oscillating signal is a classical physics phenomena used to
+detect extremely weak signals with particular frequency matching characteristics, even in
+the presence strong static fields and other oscillating fields. This is used in the
+telecommunication systems. It is also used for vital biological telecommunication in brainto-cell and cell-to-cell communication that is necessary to maintain healthy homeostatic
+relationships. The SR signal also has diurnal and seasonal variations in parallel with the
+local sunlight Zeitgeber and it persists through cloudy periods and during Arctic and
+Antarctic dark winters.
+SR Signal Frequency:
+The Schumann Resonance signal is generated by tropical thunderstorms and is a set of
+resonant modes within the resonant cavity formed between the earth's surface and the DRegion of the ionosphere. It consists of a spectrum of ULF/ELF resonant peaks with a
+fundamental frequency of about 7.8 Hz and broad resonant peaks typically at 14, 20, 26,
+33, 39, 45 and 51 Hz. An example of the measured daytime spectrum of the first five
+modes is given in Figure 1. The frequencies vary systematically diurnally primarily with the
+local D-region height, but also with the tropical thunderstorm activity.
+SR Signal Strength:
+Balser and Wagner (1960) recorded the SR signal over several days in June 1960 in
+Boston, USA. They measured a mean RMS vertical electric field strength of this ELF
+signal of 0.6 mV/m. Polk (1982) summarized several measurement programmes, covering
+the first three resonant peaks. He gives the vertical electric field range as 0.22-1.12 mV/m
+(0.013-0.33 pW/cm2). König (1974a) gives the typical electric field strength as 1 mV/m
+(0.27 pW/cm2) and the magnetic field as 10-5 A/m (12.6 pT). Williams (1992) reports 5
+years of SR magnetic field intensity measurements from Rhode Island with monthly mean
+8Hz mode intensities in the range 1.3 to 6.3 pT.
+Diurnal and D-Region effects:
+Readings from M.I.T. in Boston were the first to show the frequency spectrum of the SR
+signal, Balser and Wagner (1960). They found that there was a frequency and intensity
+shift between day and night. The first five modes dominated the daytime. At night their
+intensity and frequency decreased and a large proportion of signals were less than 4 Hz.
+This frequency and intensity shift is the result of increasing the depth of the resonant
+cavity in the nocturnal hemisphere. The ion/electron density in the D-Region reduces
+rapidly after sunset as the solar production of ions ceases and recombination dominates.
+The dependence of the SR signal on the D-Region was established by initial theoretical
+models, Tran and Polk (1979). They showed that the Q-value of the resonant cavity
+depended on the conductivity of the atmosphere between 40 and 100 km, most strongly
+between 40 and 60 km altitude. Sentman and Fraser (1991) confirmed the sensitivity of
+the SR signal to the local height of the D-Region. The D-Region correction increases the
+correlation coefficient from r=0.39 to r=0.82, a highly significant improvement.
+Role of Tropical Thunderstorms:
+The dominant diurnal pattern in the SR signal frequency and intensity is primarily the
+result of the D-Region diurnal electron density variation, but it is also modulated by the
+diurnal incidence of tropical thunderstorms, Polk (1982). These produce peaks of intensity
+
+4
+as the peak of daily solar heating passes progressively from Africa to the Americas and
+then Asia, Nickolaenko, Hayakawa and Hobara (1996). This produces a single peak in
+January (southern summer) and three peaks at 0800, 1400 and 2200 UST in August
+(northern summer), Sentman and Fraser (1991). The close correlation between the
+monthly tropical temperature anomaly and 8Hz SR signal intensity was shown by Williams
+(1992). His data also reveals the strong influence of the El Nino/La Nina events. El Nino
+produces hotter mean conditions and La Nina cooler conditions. There are corresponding
+increases and decreases in SR signal intensity.
+D-Region Characteristics:
+The D-Region of the Ionosphere has electron density profiles that vary significantly with
+diurnal, 27-day, seasonal and sunspot cycles, and with solar flares and storms, Nicolet
+and Aikin (1960), King and Lawden (1962), Titheridge (1962), Craig (1965), Matsushita
+and Campbell (1967), Akasofu and Chapman (1972), Coyne and Belrose (1972), Mitre
+(1974), Rawer (1984). Craven and Essex (1986), and Hargreaves (1992).
+Following a solar flare there is a prompt enhancement of the D-Region through the
+enhanced ionization from the arrival of cosmic rays. These events are called Sudden
+Ionospheric Disturbances (SID). A SID increases the ion density of the D-Region by a
+factor of 10 compared with quiet solar days, Belrose and Cetiner (1962). SID monthly
+incidence is very closely correlated with Solar Flares and the Solar X-Ray flux, Davies
+(1996).
+Prolonged enhancement of the D-Region electron density was observed for at least 5
+days, Craven and Essex (1987) and Balon and Rao (1990), and for at least 6 days,
+Belrose (1968). The enhancement was particularly strong at night. This effect has been
+called the post storm effect (PSE). The most probable explanation is the induced
+precipitation of electrons from the Van Allen Radiation Belt, Hargreaves (1992).
+The dependency of the SR signal on the D-Region and the sensitivity of the D-Region to
+the S-GMA strongly indicates that the SR signal should be closely following the changes
+in solar and geomagnetic activity. This predicts that the SR signal will be highly correlated
+with the solar cycles and the S-GMA events. The solar cycles include the diurnal, 3.5 day,
+weekly, 13.5 day, 27-28 day solar rotation, semiannual, annual, 11 year and 22 year
+cycles, and a number of harmonics, Chapman (1936), Cliver, Boriakoff and Bounar (1996)
+and Cornelissen et al. (1998). During solar flares the electron pattern in the D-Region
+predicts that there will be a prompt enhancement for a day of 2 and then a prolonged
+enhancement for 6 to 7 days and then falling off quickly. If a second or subsequent SGMA events occur within this period the effects should be cumulative.
+ULF/ELF Resonant Absorption:
+It is noted above that the EEG and SR signal share a ULF/ELF frequency range making
+resonant absorption possible. Extensive research shows that it is highly likely. Adey
+(1990) summarized observations of cellular level electric field strengths. The cell
+membrane potential, a static DC field across the cell membrane, is of the order of 105
+V/cm. The EEG brain waves have a typical amplitude of 10-1 V/cm. The brain successfully
+operates using oscillating signals a million times smaller than the membrane potential.
+Fish, birds, primates and humans have been shown to detect and react to ULF/ELF
+signals in the range 10-7 to 10-8 V/cm, more than a million times less than the EEG electric
+
+5
+field. A recent study involving flat worms (Planarian Dugesia tigrina) identified a threshold
+for 60 Hz electric fields of 5 x 10-8 V/cm for induced reproductive anomalies, Jenrow,
+Smith and Liboff (1996).
+The biophysical mechanism for these effects was found when seeking to understand why
+ULF/ELF signals alter primate and human reactions times and their EEG signals, Adey
+(1981). It was shown that environmental electromagnetic fields in this frequency range
+significantly altered the cellular calcium ion fluxes and EEGs in brain tissue, Bawin,
+Gavalas-Medici and Adey (1973), Bawin and Adey (1976) and Adey (1980). The field
+strength involved was 10-7 V/cm. Since then the calcium ion efflux/influx effect has been
+observed in many independent laboratories. The effect is taken as established by
+overwhelming evidence in a review, Blackman (1990). The effect is a function of the
+modulation frequency more than the signal intensity since it is a resonant phenomenon
+involving non-linear, non-equilibrium reactions, Adey (1993).
+Thus the evidence trail goes from environmental ULF/ELF signals altering cellular calcium
+ion homeostasis and altering the EEG which alters reaction times. The modulation
+frequencies involved are in the ULF/ELF range and these are the frequencies of the EEG,
+ECG and cell-to-cell communication oscillating ion systems. All of these systems primarily
+use oscillating calcium ion currents, Alberts et al. (1995). Kandel, Schwartz and Jessell
+(2000). In order to react to a very low intensity entrained signal a "receiver" must be able
+to resonantly absorb the signal and adjust by tuning into it. The tuning aspects of brains
+and cells involve cortical hormone related phase-locked loop circuits, Ahissar et al. (1997).
+A phase-locked loop circuit produces a feed-back signal in proportion to the phase
+difference between the entrained signal and the reference signal. This shows that brains
+absorb, detect and respond to extremely low intensity ULF/ELF environmental
+electromagnetic signals. The evidence shows that it is possible for the brain to detect,
+tune into, and respond to the SR signal.
+König, a student of Schumann's, took readings of the SR signal. He observed the close
+similarity of the SR signal with the EEG alpha rhythm, both of which dominate the daytime,
+and the local sferics 3 Hz signal with the EEG delta rhythm, that dominate the night, König
+(1974a). The close similarity, including the diurnal pattern and extensive laboratory
+experiments, prompted König to postulate that the EEG had evolved to use these natural
+signals, König (1974). This study supports the hypothesis of this study. The SR signal has
+a reliable, long-lived and globally available diurnal pattern, with ULF/ELF frequency
+ranges that match natural biological frequency ranges. It is plausible and reasonable that
+if the SR signal is detected by mammal brains then this has a purpose. The SR signal
+could be used to help to synchronize ULF/ELF biological oscillators as a Zeitgeber (time
+giver). Without an external reference signal biological systems tend to drift into longer
+period cycles as part of their adaptive flexibility. It is the role of the circadian Zeitgeber to
+synchronize the biological cycles with the daily cycles. A daily Zeitgeber is not
+appropriately precise to synchronize ULF/ELF oscillations. A ULF/ELF environmental
+signal is necessary for this ULF/ELF Zeitgeber function.
+The Schumann Resonance is proposed for this role. It then makes logical sense to extend
+it to be the biophysical mechanism for the biological and health effects of S-GMA. It is
+postulated that when the SR signal is in its normal range, associated with normal levels of
+S-GMA, the synchronization process is healthy. When extreme levels of S-GMA carry the
+intensity and frequency of the SR signal to extreme values, then this is proposed as the
+mechanism for altering the EEG, altering the melatonin/serotonin balance, primarily
+
+6
+through melatonin reduction during enhanced activity such as solar maximum and solar
+storms. This provides a logical and testable model to evaluate the hypothesis.
+The Circadian Cycle:
+The natural diurnal metabolic system that has developed to maintain thermal homeostasis
+within a highly variable climate provides a direct mechanism for a wide range of health
+effects. The primary endocrine system involved in the diurnal (circadian) cycle is the
+Melatonin/Serotonin system initially operating between the pineal gland and the
+hypothalamus. A particular part of the hypothalamus is the suprachiamatic nucleus (SCN).
+It contains the "biological clock". There are high affinity melatonin and serotonin receptors
+in the brain and throughout the central nervous system (CNS). This includes the
+autonomic and sympathetic nervous systems, Chabot et al. (1998), Beresford et al.
+(1998), Naitoh et al. (1998), Andrade (1998), Al-Ghoul et al. (1998), Verge and Calas
+(2000) and Hunt et al. (2001). Melatonin modulates the functional sensitivity of the
+serotonin receptors, Dugovic, Leyson and Wauquier (1991).
+The cardiovascular system is regulated with melatonin receptors in the heart, arteries and
+lungs, Pang et al. (1993), Viswanathan et al. (1993) and Guardiola-Lemaitre (1997). Heart
+rate variability (HRV) is used to monitor the autonomic nervous system, Salo et al. (2000),
+and reduced HRV is a risk factor for heart disease, Carney et al. (2000). Savitz et al.
+(1999a) quote a conclusion from a recent National Heart, Lung and Blood Institute
+workshop that epidemiological evidence strongly implicates activation of the autonomic
+nervous system as a causal link in the onset of cardiovascular disease.
+There are also melatonin receptors in the vital organs throughout the body that are part of
+the diurnal cycle system. This includes the pituitary gland, to regulate the production of
+Growth Hormone and Thyroid Stimulating Hormone, Vriend, Borer and Thliveris (1987).
+Melatonin has direct action in the immune system through the T-Lymphocytes (T-Helper
+Cells), interleukin-2 and -6 (IL-2. IL-6) and natural killer cells (NK-cells) through melatonin
+receptors on the T-Cells. This enhances the natural and acquired immunity, Poon et al.
+(1994), Maestroni (1995), Garcia-Maurino et al. (1999) and Currier, Sun and Miller (2000).
+Melatonin receptors have been identified in a number of peripheral organs and tissues.
+For example, melatonin receptors maintain intraocular pressure (IOP) in the eye, Osborne
+(1994). The reproductive regulation is coordinated using melatonin receptors in the testes,
+prostate, ovary, mammary gland and other reproductive organs, Pang et al. (1998). The
+fetus has many melatonin receptors so that the maternal melatonin can communicate daily
+and seasonal cycles in utero, Naitoh et al. (1998) and Thomas et al. (1998).
+Through receptors melatonin regulates the diurnal and seasonal activity. This involves
+metabolism, body temperature, blood pressure, heart beat, peripheral blood flow,
+respiratory activity, sleep-wake cycle, reaction times, hormone levels and immune system
+blood cells. It also involves the humoral organs of the lung, heart, kidney, spleen, liver and
+lymphocytes of the immune system, Wever (1974) and Ishida, Kaneko and Allada (1999).
+The body has a highly regulated and strongly integrated system that has developed to
+produce healthy living in the face of diurnal and seasonal climatic variations. Melatonin
+plays a central role. Environmental factors that alter the melatonin/serotonin balance have
+the ability to influence all of the functions and organs that the circadian
+melatonin/serotonin cycle uses for thermal homeostasis. This includes blood pressure,
+
+7
+impairment of the immune system, cardiac, neurological and reproductive diseases, and in
+the extreme, death. Melatonin is also a highly potent antioxidant that scavenges free
+radicals from cells, Reiter (1994). This implicates reduced melatonin in neurological,
+cardiac, reproductive and carcinogenic illness and death, Reiter and Robinson (1995).
+The Schumann Resonance Hypothesis:
+The hypothesis of this study is that:
+"The Schumann Resonance signal is detected by the brain where it interacts with the EEG
+and through altering the melatonin/serotonin balance, it is the biophysical mechanism for
+the health effects of S-GMA".
+As a corollary, it provides an ULF/ELF, diurnal and seasonal synchronization reference
+signal, a Zeitgeber (time giver).
+A systematic evaluation of the SR Hypothesis and the GMA Melatonin mechanism will be
+carried out in the context of a model. The Model outlines all of the linking elements, from
+the solar, geomagnetic and ionospheric activity to the biological and health effects
+associated with S-GMA, with the SR signal and induced melatonin reduction at its core.
+The Model:
+This model was conceived with the Schumann Resonance Hypothesis at its core, assisted
+by the Melatonin Mechanism. It involves the following elements:
+a.
+
+Solar activity is highly variable and the level of activity is transferred to the earth
+promptly through cosmic radiation and over several days through large clouds of
+ionized plasma transported in the solar wind. These produce significant
+characteristic changes to the earth's magnetosphere and ionosphere, including the
+lowest layer, the D-Region.
+
+b.
+
+The Schumann Resonances are a spectrum of ULF/ELF radio signals generated by
+tropical thunderstorms, radiating around the world at the speed of light, ducted
+within the resonant cavity formed between the lowest layers of the ionosphere (DRegion) and the earth's surface.
+
+c.
+
+A combination of seasonal and diurnal changes in the D-Region and in tropical
+thunderstorm activity, induces strong diurnal and seasonal changes in the SR
+signal. Solar sunspot cycles, solar rotation and solar flares and storms produce
+characteristic changes in the D-Region which cause characteristic changes in the
+SR signal. This leads to highly significant correlations between S-GMA indices and
+SR signals.
+
+d.
+
+Human and animal brains naturally use highly reactive, non-linear alterations of
+ULF/ELF oscillating calcium ions in neurons and other cells to regulate the basic
+cell functions, such as neurotransmitter release and cell-to-cell communication.
+
+e.
+
+Environmental electromagnetic fields in the ULF/ELF frequency range, including the
+SR signal, resonantly interact with the natural signals, inducing changes in the
+
+8
+cellular calcium ion signals, EEG patterns and reaction times. This produces altered
+melatonin/serotonin production.
+f.
+
+By altering the neurohormone regulation of the natural cycles, as demonstrated by
+the circadian cycle, a wide range of body organs and processes are altered.
+Melatonin reduction alters blood pressure and heart rate with cardiovascular and
+cardiopulmonary consequences. It also produces neurological, reproductive and
+carcinogenic effects and impairment of the immune system. The vast majority of
+people cope with these induced changes but the exacerbation of effects in the
+weak and vulnerable causes detectable increases in illness and death rates.
+
+g.
+
+Significant alterations in S-GMA cause significant changes in the intensity of the SR
+signal. This takes the SR signal strength and frequency outside the normal range,
+inducing alteration of brain and heart synchronization and changes the melatonin.
+All of the biological and health effects of altered melatonin are produced by these
+extreme changes, showing that S-GMA is a natural hazard.
+
+If all the above can be demonstrated, justified and confirmed then there is strong evidence
+that the SR signal is the plausible biophysical mechanism for the biological and health
+effects of S-GMA, primarily through altered melatonin. This would confirm that S-GMA is a
+natural hazard for human beings. The Model Elements (a) to (d) are established by
+published research cited above.
+Two corollaries arise from the hypothesis and model. The first relates to the public health
+implications of residential, occupational and military exposures to ELF and ELF modulated
+signals. If extreme variations of natural extremely low intensity ELF signals causes human
+health effects, then it is highly probable that humanly produced ELF fields that are many
+orders of magnitude higher than the naturally occurring signals, are also causing
+significant similar health effects. Since residential and occupational studies are available,
+this evidence is used to independently test the hypotheses.
+The second corollary arises because of the strong dependence of the SR intensity on the
+tropical temperature anomaly, Williams (1992). This means that the more extreme weather
+associated with Global Warming, including extremes of El Nino/La Nina events, will cause
+stronger extremes of SR signals. Especially around sunspot maximum and during periods
+of strong solar storms, this is predicted to accentuate the adverse health effects
+associated with S-GMA.
+Methods:
+The steps taken to evaluate the hypothesis and the model are:
+1. Seek correlation between S-GMA indices Ns and Kp and the SR signal.
+2. Review of the studies relating ULF/ELF signals, including SR signals and human
+reaction times and circadian rhythms.
+3. Review of the evidence that ULF/ELF electromagnetic fields reduce melatonin.
+4. Summarize the biological and clinical studies relating reduced melatonin to health
+effects.
+
+9
+
+5. Give an example of sunspot data relationship to human health effects to illustrate the
+principles and problems of environmental epidemiological studies in an EMR polluted
+world.
+6. Summarize the studies relating S-GMA to biological and health effects under the
+headings of reproductive, cardiac, neurological and cancer effects in order to evaluate
+the role of melatonin and homeostatic patterns.
+7. The prediction from the hypothesis that similar effects should occur in residential and
+occupational studies is evaluated to determine conflict or confirmation of the
+hypothesis.
+8. A brief review of the use of Schumann-like signals for therapy in neurological patients
+is presented as a further evaluation of the hypothesis.
+9. Conclusions are drawn and further clarifying research is suggested.
+Correlation to Causation:
+If variable A is correlated with variable B, and variable B is correlated with variable C, then
+variable A is correlated with variable C. However, none of these relationships necessarily
+imply a causal relationship. The S-GMA indices are highly correlated with biological and
+health effects. The observed and established characteristics of the atmosphere predict
+that through the S-GMA effects on the D-Region, the SR signal should be closely
+correlated with the S-GMA indices. Hence if this correlation is confirmed then the SR
+signal will also be correlated with the biological and health effects.
+A plausible and supported mechanism that explains the connective processes is crucial in
+moving towards establishing a causal link. The Schumann Resonance signal is favoured
+for this purpose because of the matched frequency range allowing resonant absorption in
+the brain. It is supported by the existence of a natural ULF/ELF Zeitgeber, Wever (1974),
+for which the SR signal characteristics comply. The close dependence of the SR signal on
+the D-Region implies that there should be a correlation with the biological and health
+effects correlated with S-GMA.
+Statistical Methods:
+Sunspot Number (Ns) and GMA indices Ap and Kp, and the Schumann Resonance
+frequency and intensity data for two US sites, were downloaded from publicly accessible
+web sites in the United States. Statistical analysis involves several standard methods.
+Time series cycle frequency analysis uses the Maximum Entropy Spectrum method. Trend
+analysis uses the least squares fit (LSF), linear correlation coefficient, and the MantelHaenszel t-test using a two-tail method to estimate the probability, p-value. For a sample
+size = N there are N-2 degrees of freedom. The t-value is calculated from the correlation
+coefficient (r) and the degrees of freedom, t = r [(N-2)/(1-r2)]0.5.
+For large samples of N>120 elements, using the Student t-distribution, the threshold for
+significance is p=0.05 and t=1.96. When p=0.01 it is highly significant and has t=2.576.
+The very highly significant, p=0.005 has t=2.795 and the extremely significant, p=0.001
+
+10
+has t=3.291, Robson (1967), Chou (1972) and Sprott (1990). A sample with 1002 data
+points, N=1000, and if r = 0.4 then t = 13.8 and p<10-12.
+For some samples in this analysis the t-value exceeds 5 and occasionally even >10. A
+log/linear graphic method was used to estimate the p-values for large samples with higher
+t-values. For t=4.85, p=10-6; for t=6.3, p=10-9; and for t=7.8, p=10-12. Any value more
+significant than this is referred to as p<10-12.
+Data-sets used for this analysis:
+The geomagnetic field strength is measured at a large number of stations. A global
+network of 12 stations are integrated to produce 3-hour averaged indices. One is a linear
+index, Ap or ap, and another is a pseudo-logarithmic index, Kp. The subscript "p" refers to
+a planetary index. A common index of solar activity is the sunspot number, Ns. Sunspots
+are indicative of long-term changes in the solar activity and the Ap and Kp indices of the
+short-term activity experiences at the surface of the earth, such as the effects of solar
+flares or solar storms, Campbell (1997).
+Solar and Geomagnetic Indexes were down-loaded from the U.S. NGDC-NOAA web-site
+[ftp://ftp.ngdc.noaa.gov/STP/GEOMAGNETIC_DATA/INDICES]. The 3-hourly global index
+Kp, a semi-logarithmic measure of GMA was used for most calculations. Daily sunspot
+number was also used.
+The SR data for two sites in California was downloaded from the University of California,
+Berkeley web-site [ftp://quake.geo.berkeley.edu/pub/em/]. A three-year data-set was
+assembled covering the period 13th January 1997 to 31 December 1999.
+The two SR recording sites were Parkfield (PKB) (lat. 35.8892; long. -120.4249) and
+Hollister (SAO) (lat. 36.765, long. -121.445). Two sets of data files were available. The first
+contained 15-minute measurements of the east-west and north-south components of the
+0-20 Hz field intensity in pT and the center frequency of the 8Hz peak. The intensity data
+was vectorially added and the frequency was averaged.
+The PKB and SAO hourly data were extremely strongly correlated, p<10-12. Hence missing
+data was replaced through a linear least squares fit relationship. Some signal instability
+was detected with large changes in single 15-minute data points. These were removed
+using a linear interpolation filter. Smoothing using 1/4-1/2-1/4 was applied prior to
+averaging to a form an hourly mean data set for PKB for the period 1997-1999. The first
+12 days of 1997 were rejected because of clear data errors.
+The second SR set of data involved three orthogonal components with the signals
+analysed into 13 frequency ranges. This data was used to characterize the ways in which
+diurnal frequency changes occurred. The 11th column contained the 1-2 Hz SR intensity.
+The three components were combined vectorially. The unit of pT/Hz1/2 was converted to
+pT by multiplying by √2. This data was compiled to form a 3-year data set of hourly mean
+observations to carry out correlations with Kp and Sunspot numbers.
+Figure 2 shows the 20-day mean values of the measured 0-20 Hz SR intensity from the
+PKB site for the three years of the study period.
+
+11
+
+Figure 2: The time sequence of 20-day averaged Schumann Resonance signal intensity in
+the 0-20 Hz range. From the UC Berkeley dataset, for the three years used in
+this study. The trend is highly significant, p<0.0001.
+The SR 20-day mean signal is extremely highly correlated with the 20-day mean sunspot
+number, r=0.881 N = 54, t=13.4, p<10-6. The trend in Figure 2 is primarily due to the mean
+rise in sunspots over this period toward the sunspot maximum in the year 2000. The
+seasonal pattern is related to tropical thunderstorm activity. It is lower during the southern
+summer and higher during the northern summer.
+Annual variations relate to the El Nino/La Nina oscillation. The year 1997 was an El Nino
+year with higher than average tropical temperatures. By May 1998 it had switched to a La
+Nina event with lower than average tropical mean temperatures. The La Nina was weak
+during 1999. Hence the temperature effect raised the 1997 SR intensity and lowered the
+1998 SR intensity. Adjusting for this would increase the significant correlation with the
+sunspot number. Figure 2 reveals the prime of factors, sunspot activity and tropical
+temperature, that change the long-term mean SR signal intensity.
+Graphical and statistical comparison between Kp and SR:
+A GMA storm was shown to significantly increase the frequency of the primary SR models,
+Cannon and Rycroft (1982). Consistent with the effect of the D-Region, this also implies
+that the SR intensity was significantly increased. This is evaluated with the data set
+available comparing the Kp index with the SR 0-20 Hz intensity. An initial relationship
+between the 3-hour Kp GMA index and the 0-20Hz SR intensity from the PKB site shows
+some vital features and confirms the earlier observations. Figure 3 shows the 0-20Hz SR
+signal and the Kp Index for March 1999.
+The SR signal, Figure 3, shows the distinctive regular diurnal oscillation. Kp shows strong
+GMA in the first half of the month, weak GMA from the 15th to 27th and then a GMA event
+starting on the 28th. The overall SR signal reflects these broad changes. The first 10 days
+show an upward trend suggesting a cumulative effect. Individual GMA events, e.g. on the
+4th, 10th, 14th appear to show a time delay. A lagged linear correlation analysis of the 3-
+
+12
+hourly mean data, reveals the highest correlation with a 6-hour lag, r=0.312, t=5.123,
+p<10-6.
+
+Figure 3: Schumann Intensity (0-20Hz) from the UC Berkeley PKB site (upper graph) and
+Kp Index (lower graph) for March 1999.
+
+Figure 4: Schumann Intensity (0-20Hz) from the UC Berkeley PKB site (upper graph) and
+Kp Index (lower graph) for May 1997.
+Figure 4 shows an example of a more periodic variation of GMA, from May 1997. The
+periodic Kp variation is clearly reflected in periodic changes in SR intensity with a small
+time lag. Lagged correlation analysis shows a significant correlation of with a 24 hour time
+lag, r=0.290, t=4.66, p<10-5.
+Both of these patterns are consistent with the characteristics of the D-Region during and
+following GMA events. There is strong support for the process suggested that prolonged
+leakage of ions and the cumulative effect of repeated events builds up the ion density and
+elevates the SR signal following GMA events. The whole 3-year data set was used in two
+
+13
+analyses to see if a lagged correlation analysis and a superimposed epoch analysis would
+confirm or contradict the patterns seen in Figures 3 and 4.
+Lagged correlation between Kp index and SR signal:
+The Kp index is a reliable measure of diurnal GMA activity. Since it is available as a 3hour mean value, the SR signal was averaged over 3-hours to form a comparable data
+set. The lagged correlation analysis was carried out using a statistical packaged based on
+GWBASIC. This had a limited memory allocation that restricted the analysis to a maximum
+of 28 months of 3 hourly data. The period September 1997 to December 1999 was
+chosen because it contained the most reliable SR data. Lagged correlation analysis for
+the total period of 2.33 years, 3406 data points, shows extremely significant correlations
+for the 0-20Hz SR intensity dataset, Figure 5, and significant correlations with the 1-2 Hz
+dataset, Figure 6.
+The Student t-value was used for the y-axis in Figures 5 and 6 because it is directly
+related to the significance of the correlation coefficient. This has also been converted to
+the statistical probability, p-value for a data set for which n = 6575.
+
+Figure 5: The statistical Student T-value of the time lagged correlation between the 3-hour
+Kp index and the 3-hr mean Schumann Resonance Intensity for the 0-20Hz
+band, for the period September 1996 to December 1999.
+This analysis shows extremely significant correlations between the Kp index and the SR
+signal intensity. The patterns in both Figures 5 and 6 confirm the influence of electron
+densities in the D-Region with highly extremely significant correlations. They both show a
+strong and extremely significant initial increase, a prompt response for the first night and
+day and a persistent relationship that extends out for 6 to 7 days after the day of the event
+(Day 0) and then it drops off significantly. The correlation also shows a 24-hour diurnal
+oscillation. This final drop-off after 7 days is stronger in the 1-2 Hz signal, Figure 6, that is
+more dominant at night.
+
+14
+
+Figure 6: The statistical Student T-value of the time lagged correlation between the 3-hour
+Kp index and the 3-hr mean Schumann Resonance Intensity for the 1-2 Hz
+band, for the period September 1996 to December 1999.
+These analyses give strong confirmation of the part of the model proposing that the SR
+intensity is strongly dependent on the D-Region electron density. It shows that through
+slow electron leakage the solar storm events last for about 7 days and this is shown by the
+SR signal.
+Superimposed Epoch Analysis:
+The above analysis uses the continuous time series of data over 28 months. An
+alternative approach is to identify isolated GMA events and to carry out a Super Imposed
+Epoch Analysis to produce the average signal during before, during and after the
+moderate to strong GMA events. In the 3-year period being studied 69 relatively isolated
+GMA events were identified. The intensity of the 0-20 Hz SR signal and the frequency of
+the 8 Hz signal were averaged over the 3 days prior to and the 6 days following each
+event, Figures 7 and 8. The overall variance of the hourly data over this period was 0.017
+pT for the SR intensity and 0.0026 Hz for the SR frequency.
+Figure 7 shows prompt response of an elevated 0-20Hz SR intensity, especially over the
+first two days. The SR signal is still elevated, especially at nighttime, for at least 6 days
+after the GMA event. The SR 8 Hz band frequency, Figure 8, shows a smaller response
+on average, with a large prompt response of increased frequency and a faster recovery of
+the nocturnal signal frequency. The prolonged effect is small but still evident after 6 days.
+Both the signal intensity and frequency are consistent with the lagged correlation analysis
+above showing a prompt response and a prolonged recovery period of 6 to 7 days.
+
+15
+
+Figure 7: Superimposed epoch analysis of the impact of a Geomagnetic events, as
+defined by the Kp Index, for the mean anomaly in the Schumann Resonance 020 Hz intensity for 69 events in 1997 to 1999. GMA events occurred on day
+zero.
+
+Figure 8: Superimposed epoch analysis of the impact of a Geomagnetic events, as
+defined by the Kp Index, for the Schumann Resonance 8Hz band frequency
+anomaly for 69 events in 1997 to 1999.
+Thus the individual months, the lagged correlation and superimposed epoch analyses
+confirm that the SR intensity reliably, consistently and extremely significantly varies with
+the GMA as indicated by the Kp index. The results are fully consistent with a prompt and a
+prolonged D-Region electron density effect. Hence the biological and health effects that
+are correlated with GMA indices are also correlated with the GMA related changes in the
+SR signal.
+
+16
+Correlations with Sunspot Number:
+Sunspot number (Ns) is a direct indicator of solar activity. On a monthly basis Ns is highly
+correlated with GMA over a 100 year period from 1830 to 1930, Chapman (1936).
+Chapman also shows that sunspot activity peaks at about 3.5 days prior to a magnetic
+disturbance and that there is a 27 to 28-day cycle in the GMA index, and that there is a
+semi-annual cycle in the GMA. Using the daily data for the nearly 3 year period from
+12/1/97 to 31/12/99 both the 0-20 Hz intensity and the 8 Hz frequency variations as a
+function of daily sunspot number are extremely significantly correlated, N=1085.
+For the SR intensity r = 0.376, t = 13.33, p<10-12, for the SR frequency r = 0.436, t = 15.91,
+p<10-12. Figure 9 shows the scatter diagram for the daily intensity data as a function of
+daily sunspot number.
+
+Figure 9: Daily mean SR intensity (0-20Hz) as a function of daily sunspot number for the
+period 12/1/97 to 31/12/99.
+Figure 9 shows a distinct and significant rise in SR intensity with daily sunspot number. As
+shown above the tropical temperature anomaly also has an impact, Figure 2. It adds a
+great deal to the scatter. For example, of the 42 days with SR intensity 0.15 pT below the
+trend line, 40 occur in the 1998/99 period that was dominated by La Nina when negative
+temperature anomalies produce lower than average SR intensities. The daily tropical
+temperature anomaly was not available so the data could not be adjusted for this factor.
+The SR intensity and frequency is extremely highly correlated with daily and the 20-day
+average sunspot number, confirming that effects that are correlated with Ns are also very
+highly correlated with the SR signal.
+Cyclic Analysis:
+A cyclic analysis has been used in other studies to identify causative relationships through
+closely matched cyclic factors, Komarov et al. (1998). The sun's mean rotation period of
+
+17
+about 27-28 days has a series of recognised sub-harmonics of about 18, 14, 9, 7, 5.5 and
+3.5 days. Hence a Maximum Entropy Power Spectrum analysis was carried out on the 35
+good data months of the SR intensity record, Figure 10.
+
+Figure 10: Maximum entropy spectrum for the 2-day average 0-20 Hz Schumann
+Resonance Intensity for the period February 1997 to December 1999.
+Figure 10 shows a distinct peak at 27 days and weak peaks at 9 and 14 days
+corresponding to solar cycles. This confirms that the SR intensity varies in a cyclic manner
+with a dominant 27-day period that coincides with the solar and GMA primary subseasonal period. This shows that the S-GMA modulates the SR intensity and reinforces
+the extremely strong correlations already identified. There is also weak evidence of a cycle
+with a period between 3.2 and 3.5 days in the SR intensity. This is near the
+circasemiseptan cycle identified above that has important biological consequences.
+Using the 20-day average data for the 3-year period shows a strong semi annual, 185 day
+peak in the SR intensity signal.
+SR Signal and S-GMA relationships:
+The first test of whether the SR signal is the plausible biophysical mechanism for the
+biological and health effects of S-GMA was to see if the SR signal was correlated with
+sunspot number and the Kp GMA index. This analysis shows that all correlations are
+extremely significant and supported by superimposed epoch and cyclic analyses. Hence it
+is confirmed that the SR signal has all of the necessary and appropriate characteristics to
+link S-GMA cycles and events with biological and health effects. This supports and
+confirms the Model Element (c).
+
+18
+
+Biophysical Mechanisms:
+ULF/ELF Reaction Time experiments:
+The original work of Dr Ross Adey's laboratory on calcium ion efflux, was stimulated by
+observations of ULF/ELF environmental fields altering monkey reaction times in a field
+strength dose-response manner with a 7 Hz signal, Gavalas-Medici and Day-Magdaleno
+(1976), and human reaction times, Hamer (1965, 1969) and König (1974). They were also
+aware of Wever's circadian rhythm experiments. Dr Adey's research showed that the
+altered reaction times were associated with altered EEG patterns and altered calcium ion
+efflux from neurons, Adey (1981). Calcium ion efflux was significantly altered between 0.5
+and 30 Hz, Adey (1980), and in windows of frequency up to 510 Hz, Blackman et al.
+(1988). Hence there is an established biophysical pathway between the resonant
+absorption of very weak ULF/ELF environmental fields in the brain, altered cellular calcium
+ion homeostasis, altered EEG pattern and altered reaction times.
+The frequency range involved in the reaction time, EEG and calcium ion alterations
+include those of the primary SR signal, 0-32 Hz. Thus it is biophysically plausible that the
+SR signal could be associated with altered brain activity and reaction times through
+resonant interactions with neurons involving changed calcium ion signals.
+Human reaction time experiments in association with ULF frequencies, primarily 3 Hz and
+8 to 10 Hz, were carried out in Germany and the United States in the 1950s and 1960s.
+This was stimulated by observations that a large experiment involving nearly 50,000
+members of the public found that human reaction time were significantly correlated with
+the intensity of the 8-10 Hz SR signal, König (1974b), Figure 11.
+
+Figure 11: Human reaction times as a function of Schumann Resonance 8-10 Hz relative
+intensity. Reaction times measured using a light flash and a Morse key, tested
+during 18 days in September 1953, at the German Traffic exhibition in Munich.
+Each point represents 4500 subjects, with the mean variance of 3.6 ms shown
+as error bars. Trend: t = 10.414, 2-tailed p<0.0001. Data is derived from Figure
+3 of König (1974b). The relative intensity is estimated to be in the range 0.6 to 1
+pT for the 0-20 Hz band.
+
+19
+
+The first power spectrum analysis of the SR signal was Balser and Wagner (1960). König
+and his colleagues had recorded the SR signal on chart recorders and so they
+characterized the signal as a "10 Hz" oscillation, when it contained up to 32-40 Hz
+oscillations but the 8 Hz and 14 Hz signal dominated. As a consequence in laboratory
+experiments a 10 Hz signal was used to approximate the SR signal. Both König and
+Hamer confirmed that the "10 Hz" signal sped up reaction times. Hamer showed that
+moving the frequency from 7.5 to 8.5 Hz and 8.5 to 9.5 Hz significantly altered reaction
+times with an rms electric field intensity of 3.8 mV/m.
+König also found that a superimposed epoch analysis related to the arrival of 3 Hz signals
+locally generated thunderstorms, significantly slowed reaction times. This was tested and
+confirmed in a series of laboratory experiments using human volunteers. König found that
+with a range of field strengths, 1 to 5 V/m, the "3 Hz" signal consistently slowed people's
+reactions and a "10 Hz" signal consistently accelerated people's reaction times. Reactions
+were also correlated with the more objective test for galvanic skin response (GSR), using
+a 5 V/m 3 Hz signal, König (1974b).
+König reviewed the experiments carried out by Hamer (1965, 1969) and agreed with
+Hamer that human reaction times are influenced by ELF fields in a predictable way.
+Hamer showed that this occurred with field strengths down to 3.8 mV/m. He observed
+significant reaction time changes occurred with frequency changes from 8 Hz to 9 Hz.
+Also, the minimum voltage threshold or field strength is very low and in the range of the
+natural fields in the atmosphere. This includes the SR signal at around 1 mV/m.
+Circadian ELF Zeitgeber Experiments:
+Support for the role of the SR signal as a diurnal Zeitgeber came from the Max Planck
+Institute's long-term isolation experiments, Wever (1974). The Max Planck Institute set up
+an elaborate, large and careful experiment to investigate the hypothesis that there was a
+natural electromagnetic field, such as the Schumann Resonance, that acted as a circadian
+Zeitgeber. This was promoted because of König's experiments. Because the daily sunlight
+cycle is a very dominant Zeitgeber, the hypothesis was tested by constructing two identical
+rooms in which all signs of the usual daily variation, sunlight, temperature, humidity etc,
+were removed. The second room (Room 2) was also shielded to significantly reduce (by
+over 40 db) all external oscillating electromagnetic fields.
+From introductory experiments, rectal temperature was identified as a reliable objective
+measure of the daily circadian rhythm. In the isolation rooms the free running day length
+was significantly lengthened in Room 1 from 24 to 24.87 hr. In Room 2 it was significantly
+longer than Room 1, 25.26 hr, p<0.01. The standard deviation of the variation of day
+lengths was also significantly higher in Room 2 compared with Room 1, p<0.01. An
+additional feature was a phenomenon termed internal desynchronization. In this case
+individuals showed much longer and highly erratic daylengths. While 15 of 50 subjects in
+the shielded Room 2 internally desynchronized, none of the 34 subjects did in Room 1,
+p<0.001. The desynchronized subjects were followed up because of their evident
+sensitivity.
+König had characterized the primary mode of the SR signal as a "10 Hz" signal. Hence
+Wever's team used a square-wave 10 Hz, 2.5 V/m signal in Room 2 to see what would
+happen if a Schumann-like signal was introduced. Without the subjects knowledge a 10
+
+20
+Hz signal was turned on and off at varying intervals. This signal consistently removed the
+desynchronization and reduced the mean daylength for those subjects, Wever (1967,
+1968). The longer the circadian cycle in the absence of the field, the greater was the
+shortening by the 10 Hz signal, r = 0.928, n=10, p<0.001. This showed that not only was a
+highly significant phenomenon occurring, but it also varied in an very significant and
+reasonable manner.
+Wever concludes that his team found "significant proof that electromagnetic fields in the
+ELF range influence human circadian rhythms, and therefore, human beings". They
+proved that there is a ULF/ELF electromagnetic signal that is a circadian Zeitgeber. By
+design the corrective signal mimics an aspect of the SR signal. While it could be another
+signal there is no other known signal has the appropriate characteristics. Hence it is highly
+likely that the ULF/ELF circadian Zeitgeber is the SR signal.
+Taken together the experiments of König, Hamer and Wever give very strong support for
+the hypothesis that the SR signal is involved as a diurnal Zeitgeber, that it is detectable by
+the human brain and that it causes induced alterations in reaction times. This is highly
+consistent and gives considerable support for the SR hypothesis.
+Laboratory evidence that ULF/ELF signals alter reaction times, animal and human EEGs,
+neuron cell calcium ions and neurotransmitters gives further support. This makes the
+hypothesis biophysically plausible and observationally supported and therefore, largely but
+not finally confirmed.
+Evidence of ULF/ELF induced Melatonin Reduction:
+The SR signal has ULF/ELF frequencies. Hence evidence that ULF/ELF electromagnetic
+fields reduce melatonin or increase serotonin in animals and people is relevant to the
+Hypothesis and its GMA Melatonin Mechanism.
+There is extensive evidence that ELF signals increase serotonin and reduce melatonin in
+animals and in people. Rosen, Barber and Lyle (1998) state that seven different
+laboratories have reported suppression of nighttime rise in pineal melatonin production in
+laboratory animals. They show that a 50 µT, 60 Hz field with a 0.06µT DC field, over 10
+experiments, averages a significant 46% reduction in melatonin production from
+pinealocytes. Yaga et al. (1993) showed that rat pineal response to pulsed ELF magnetic
+fields varied significantly during the light- dark-cycle. They showed that magnetic field
+exposure significantly suppressed the rate-limiting enzyme in melatonin synthesis, Nacetyltransferase (NAT) activity, during the mid- to late-dark phase.
+Suppression of melatonin in rodents is frequently observed when they are exposed to
+weak electromagnetic fields. A question has been raised as to whether the pineal gland or
+the eyes are the sensors of the fields. Brendel, Niehaus and Lerchl (2000) carried out an
+experiment to resolve this question using hamsters. They concluded that there was
+significant suppression of melatonin with 16.7 Hz, p<0.01, and with 50 Hz, p<0.001 as a
+result of primarily mechanisms in the pineal gland.
+Stark et al. (1997) observed a significant increase in salival melatonin in a group of 5 cows
+when the short-wave radio transmitter at Schwarzenberg, Switzerland, was turned off for
+three days, compared to 5 cows that had much lower RF exposure. Hence, despite the
+high natural levels of variability of melatonin, there are now at least ten independent
+
+21
+observations of significant melatonin reduction in animals from ULF/ELF and RF
+exposure.
+Many human studies that show significant alteration of the melatonin/serotonin balance by
+electromagnetic fields. Wang (1989) observed a dose-response increase in serotonin in
+workers exposed to ELF fields and Davis (1997) a dose-response decrease in melatonin
+in workers. Human melatonin reduction studies from ULF/ELF electromagnetic fields
+include: Wilson et al. (1990), Graham et al. (1994, 2000), Pfluger and Minder (1996),
+Arnetz et al. (1996), Davis (1997), Wood et al. (1998), Karasek et al. (1998), Burch et al.
+(1998, 1999a, 2000) and Juutilainen et al. (2000). For a residential population exposed to
+a SW radio signal in Switzerland, Abelin (1999). Seven directly involve correlation of
+melatonin reduction with GMA variation, Bardasano et al. (1989), Bartsch et al. (1994),
+Burch et al. (1999b), Rapoport et al. (1997, 1998, 2001), and Weydahl et al. (2001).
+Thus there is very strong evidence that ULF/ELF electromagnetic fields, down to very low
+mean intensity levels, with dose-response relationships, and in association with GMA,
+reduce melatonin in people and in animals. Under normal criteria this level of evidence
+would be assessed as a causal biological effect.
+S-GMA and melatonin reduction:
+In addition to Burch et al. and Rapoport et al, additional direct evidence that reduced
+melatonin is significantly correlated with S-GMA is available. Bardasano et al. (1989)
+observed an extremely significant reduction (p<0.001) in synaptic ribbons of pinealocytes
+of rats during geomagnetic storms compared with quiet solar days. Thyroxine levels in a
+single limbic epileptic patient were highly correlated (r = 0.66) in a dose-response manner,
+with daily GMA, O'Connor and Persinger (1996). The strongest association (r = 0.76) was
+found between thyroxine levels and the Kp index during the previous night (2 am to 5 am).
+These analyses were carried out specifically to test the GMA Melatonin mechanism and
+they support it.
+Seasonal melatonin variation in rats was correlated with the seasonal variation in the
+earth's geomagnetic field, Bartsch et al. (1994). A group of hospital patients with
+cardiovascular pathology and a control group of healthy people were both monitored
+during magnetic storms. In both groups magnetic storms increased the cortisone,
+activated the sympathoadrehenal system and reduced melatonin, Rapoport et al. (1998).
+Burch et al. (1999a,b) measured urinary melatonin metabolite in 149 workers exposed to
+60 Hz magnetic fields. Reduced melatonin was correlated with 3-phase conductor
+exposure, cellphone use and overall magnetic fields, with a dose-response decrease in
+workers exposed to low light levels. When all of these effects were removed from the data,
+it also showed a highly significant reduction of melatonin for GMA fields above 35nT,
+p<0.01. When the data was stratified over 6 GMA levels a very highly significant (p<0.005)
+dose-response decrease in melatonin from people was found using a Global 36 hr aaindex, Figure 12.
+
+22
+
+Figure 12: Reduction in the melatonin metabolite 6-OHMS in µg in urine from U.S. electric
+utility workers, as a function of the 36 hr global GMA aa-index, Burch et al.
+(1999b).
+There are multiple studies showing that ULF/ELF fields and those specifically involving SGMA, reduce melatonin with high levels of significance and with a highly significant doseresponses. These are indicative of a causal relationship with melatonin reduction and
+GMA. This gives very strong support to Model Element (e), the GMA Melatonin
+Mechanism and the Schumann Resonance Hypothesis through the widespread
+involvement of ULF/ELF signals in laboratory, occupational studies and involving GMA.
+Biological implications of reduced melatonin:
+Melatonin is a ubiquitous neurohormone whose production is low during the day and high
+at night. It passes through cell membranes and acts as a highly potent antioxidant to
+scavenge free radicals that cause damage to DNA, Reiter (1995). Hence melatonin
+reduction is involved with diseases produced by free radicals, including cancer, aging,
+neurological diseases, acute heart disease and heart attack, Reiter and Robinson (1995).
+The circadian cycle involvement of melatonin shows that reduced melatonin will alter
+blood pressure and heart rate, neurological cardiopulmonary and reproductive functions. It
+suggests that it will also reduce immune system competence and enhances the risk of
+cardiac, neurological and carcinogenic disease and death through reducing its antioxidant
+activity. These predictions are checked against clinical studies.
+Melatonin reduction and health effects:
+Reiter and Robinson (1995) and Brzezinski (1997) review the clinical studies involved with
+reduced melatonin. Dr Brzezinski identifies roles for melatonin in sleep and circadian
+rhythm, mood, sexual maturation and reproduction, cancer, immune system response and
+aging. Dr Russell Reiter, an eminent melatonin researcher, is the founder and editor-inchief of the Journal of Pineal Research. Reiter and Robinson confirm all of the effects
+identified by Brzezinski, and add arthritis, asthma, diabetes, hypertension, blood clotting
+
+23
+and stroke, cardiac arrhythmia, ischemic heart disease, heart attack, epilepsy, manic
+depression, suicide, sudden infant death syndrome (SIDS), Alzheimer's and Parkinson's
+Diseases. Published papers are cited to justify each of these health effects. Most of the
+associated conditions relate to the oxidative damage by free radicals and melatonin's
+multiple roles as a potent antioxidant, sleep enhancer and immune system booster. But
+melatonin also acts as a neurohormone and a cellular messenger with receptors in the
+nuclei of many cells.
+In his conclusion Brzezinski favours high clinical doses for melatonin-related therapy.
+However he cites three trials where 0.1 to 0.3 mg/day was effective at enhancing sleep.
+Reiter also cites the M.I.T. study of Dollins et al. (1994). He uses it to confirm the long
+known effect of melatonin on sleep. In the M.I.T. study, by far the biggest incremental
+effect of melatonin on sleep onset latency and sleep duration was the first 0.1 mg dose.
+With at least two other studies confirming the M.I.T. study this confirms that very low daily
+doses of melatonin have very significant clinical effects.
+Since S-GMA significantly reduces melatonin in a dose-response manner, all of these
+health effects have the potential to be associated with S-GMA. There are four primary
+areas that are of particular interest in S-GMA related studies. They are cancer, SIDS, and
+cardiac and neurological disease and death, including heart attack and suicide. These are
+all related to reduced melatonin in clinical studies and through the diurnal regulatory
+mechanisms.
+
+S-GMA related health effects:
+Principles and problems with environmental epidemiology studies:
+In seeking to identify and confirm environmental disease agents human populations are
+studied in attempts to correlate health effects with exposures to agents. Often other
+factors produce complex variations in the health effects. These are called confounders.
+Methods have been developed to deal with complex situations and to identify individual
+agents where possible. Time series analysis where cyclic frequencies can identify
+common features can be helpful. Multiple regression analysis can also assist. When
+erratic events are involved the problem can be reduced significantly.
+In seeking to identify the effects of natural electromagnetic fields generated by Solar
+activity through the Geomagnetic System, the "disease agent", extremely low intensity
+electromagnetic fields, are being masked and interfered with in developed societies with
+power supply systems, telecommunications, appliances, computers, etc. This means that
+earlier records and records from less developed populations could well have "cleaner"
+relationships with S-GMA indices. This effect is referred to by Villoresi et al. (1998) who
+found significant correlations between heart attack incidence rate and GMA storm events
+in the data from 14 large hospitals in St Petersburg for 1989-1990. Weekly analysis
+showed a rather constant rate during Monday to Friday and sharp decrease in rates over
+the weekend and during mid-week festivities. They associated this with different EMR
+exposures during work days and holidays, mainly due to the electrified public transport.
+This is confirmed by studies showing significantly higher hypertension and coronary heart
+disease in electric train drivers, Ptitsyna et al. (1996).
+To illustrate the principles and problems, an analysis of annual time series data for suicide
+in Southeast Asia was carried out for the period 1974-1992. The data was extracted from
+
+24
+Table II-3-24-1 from a report of the Southeast Asian Medical Information Centre, SEAMIC
+(1997). Suicide is a good bio-indicator for this purpose because of its clear diagnosis and
+its direct connection to clinical depression and altered melatonin homeostasis. Data is
+given for the Philippines, Thailand, Singapore, and Japan. The period and the range of
+countries, give a range of development, with its stress levels, health recording systems
+and EMR exposures. The order of the countries reflects increasing development, health
+recording systems and exposures to artificial EMR. The data shows an increase in the
+recorded annual mean male suicide rate from 0.66 in the Philippines, 6.9 in Thailand, 12.4
+in Singapore, and 23.1 in Japan (per 100,000 population).
+The period covers just less than two solar cycles with two sunspot maximums in 1979/80
+and 1989/90 and sunspot minimum in 1986. The suicide rates are generally higher in the
+later half of the period than the earlier years. When linear trends are removed it is found
+that Thailand and the Philippines are positively correlated with the sunspot cycle and the
+highly developed Singapore and Japan it is weakly negatively correlated. The principle of
+signal to noise ratio, associated with more EMR exposures in developed societies and
+more complete and more accurate data recording promotes Thailand as the most likely
+country to detect a sunspot cycle in the annual suicide data. This relationship has been
+expressed as annual sunspot number vs the annual male suicide rate in Figure 13.
+
+Figure 13: Annual male suicide rate per 100,000 for Thailand from 1974 to 1992, in
+relation to the annual sunspot number. The correlation coefficient is r = 0.817,
+p<0.0001.
+Figure 13 shows an extremely significant correlation between annual sunspot number and
+annual male suicide rate in Thailand over the period 1974-1992. This is consistent with the
+S-GMA melatonin link.
+Cancer, especially leukaemia and breast cancer, is associated with melatonin reduction.
+In this data-set the four countries cancer rates are ranked similarly, except Thailand is
+lower than the Philippines. Thailand's annual male leukaemia rate is correlated with
+sunspot number, r = 0.473, p<0.05. So is the female Breast Cancer rate, r = 0.687,
+p<0.005 and the male Cerebrovascular Disease mortality, r = 0.696, p<0.002.
+
+25
+This data is consistent with the SR hypothesis in that it significantly correlates human
+health effects with a S-GMA index (Ns) that is highly correlated with the SR signal.
+Secondly, it is consistent with the GMA Melatonin Mechanism as it also involves the
+increases in the health effects associated with reduced melatonin. The failure for the
+sunspot activity to be seen in the Singapore and Japan data is probably being masked by
+increased nighttime light levels and elevation of exposures to artificial electromagnetic
+fields, Reiter (1994).
+These analyses show how it is becoming more difficult to detect sunspot cycles in human
+health records. The erratic nature of GMA events still allows the detection of their effects
+despite the increasing UHF/ELF noise which is reducing the signal to noise ratio. Of
+particular concern is the use of technologies, such as the GSM mobile phone, that uses a
+217 Hz pulse rate with an 8.34 Hz modulation, Stewart (2000). This is in the range of the
+primary mode SR spectrum signal and the EEG Alpha-Rhythm.
+S-GMA related reproductive effects:
+The fetus has melatonin receptors to detect mother's diurnal cycle. Sparks and Hunsaker
+(1988) reported the results of necropsy samples of infants who died of Sudden Infant
+Death Syndrome (SIDS). They found that their pineal gland was highly significantly
+smaller than aged-matched controls, p<0.005. In follow up measurements of 111 SIDS
+infant's showed smaller pineal glands in 106 infants, raising the significant to p<0.0001.
+This strongly implied that reduced melatonin was associated with SIDS. This suggests that
+since GMA is strongly correlated with reduced melatonin then it could well enhance the
+rate of SIDS.
+O'Connor and Persinger (1997) showed the GMA does cause SIDS. They used monthly
+SIDS statistics from 1960-1961 in Ontario, Canada. They compared the monthly SIDS rate
+with the monthly average aa GMA index. The data was stratified within the levels of aa in
+10 nT intervals. This showed that there was a highly significant increase in SIDS for the
+number of days with aa in the 11 to 20 nT range, r=0.91, p<0.001, and in the 31 to 40 nT
+range, r = 0.65, p<0.01. For the intermediate range, 21 to 30 nT there was a highly
+significant reduction of SIDS, r = -0.79, p<0.001. Their strongest correlation occurred for a
+reduction of SIDS between days with 21 to 25 nT, r = -0.96, p<0.0001. This shows a
+homeostatic relationship between the GMA level and the rates of SIDS with far lower SIDS
+rates near the mean GMA level 21-30 nT and significantly higher rates for lower and
+higher GMA levels. Since melatonin levels are linearly reduced with elevated GMA levels,
+and SIDS is a melatonin-related syndrome, this study implies that both elevated and
+reduced melatonin can induce increased SIDS rates.
+The possible role of micropulsations (PC1: 0.2-5 Hz) on SIDS rates during periods of very
+low GMA was then studied, O'Connor and Persinger (1999). Using a similar method they
+found that stratifying the data into 11, 5 nT interval levels, there was a marginally
+significant correlation with increased micropulsations levels, r = 0.63, p<0.05. Consistent
+with O'Connor and Persinger (1997), they also found a negative correlation r = -0.79) at an
+intermediate level of PC1, 15 to 20 nT. They noted that the PC1's usually occur in 1 to 4
+hour periods over 5 to 7 quiet days following an isolated geomagnetic storm. This shows
+that the effects would also be correlated with the SR signal that has the same pattern of
+lasting up to 7 days after a solar storm, Figures 5 and 6.
+
+26
+Hence both of these studies are consistent with the SR mechanism and a melatonin
+reduction homeostatic effect causing biological damage to the fetus at both very low and
+very high GMA levels that correspond to significantly reduced and increased intensities of
+the SR signal, respectively.
+S-GMA related Cardiac effects:
+A 35-year old cardiologist, with a family history of hypertension and stroke used an
+electronic blood pressure monitor to record his blood pressure every 15 minutes for 3
+years. This revealed a significant periodicity of 27.7 days in systolic and diastolic blood
+pressure and heart rate, which was coherent with the GMA Kp index, Watanabe et al.
+(1994).
+An Italian study of 447 patients with hypertension also found very significant correlations
+between systolic and diastolic blood pressure and GMA indices over a 5-year period,
+Ghione et al. (1998). A multiple correlation with potential confounding factors, such as age
+and date, confirmed the significant correlation with GMA. Stratifying the days into quiet,
+disturbed and highly disturbed GMA days always showed significantly higher values in the
+highly disturbed days for all blood pressure parameters except systolic night-time
+pressure. The difference between quiet and highly disturbed GMA days was 6 to 8 mm for
+the 24 hour systolic and diastolic blood pressure. The GMA indices and the blood
+pressure measurements contain the 27-day period. The authors concluded that these
+results seem to reflect a real relation between geomagnetic disturbances and blood
+pressure.
+Two independent studies show that human blood pressure is significantly correlated with
+GMA. Melatonin is a diurnal blood pressure regulator and S-GMA modulates human
+melatonin levels, therefore these studies confirm that blood pressure change is a
+melatonin-related biological effect of S-GMA. Hence it is biologically plausible that extreme
+levels of S-GMA will cause a wide range of cardiac health effects and death.
+Reduced melatonin produces arrhythmic cardiac activity. The cardiac activity of rabbits
+was monitored during two GMA storms, Chibisov et al. (1995). At the initial and main
+phase of the storm the normal circadian structure of the cardiovascular parameter was
+lost. Desynchronization grew during the storm, leading to an abrupt drop of cardiac activity
+during the main phase of the storm. This was followed by the destruction and degradation
+of cardiomyocytes. The parameters of cardiac activity became significantly synchronized
+and the circadian rhythm restored during the storm's recovery period.
+Human patients with ischemic heart disease (47-men and 33-women) were monitored for
+cardiac parameters daily over for 2-3 weeks, Gurfinkel'lul et al. (1995). Changes in their
+microcirculations were related to GMA and to changes of atmospheric pressure. In the first
+day of a GMA storm pathological changes of capillary flow were detected in 71.5% of
+patients with acute myocardial infarction (men: 73.7%, women: 69.2%). They also
+observed perivascular edema, red blood aggregation, delay and slowing down of capillary
+flow. Similar changes were detected in 64.8% of patients with angina pectoris, (men:
+73.3%, women: 56.3%). The reactions of these patients to GMA disturbances were over
+2.5-times higher than the effects of atmospheric pressure changes.
+GMA events are significantly correlated with increased blood coagulation and platelet
+aggregation, Pikin, Gurfinkel and Oraevskii (1998). Actual blood pressure, capillary flow
+
+27
+and blood coagulation and aggregation changes are observed during GMA events,
+consistent with the effect expected with reduced melatonin in people with heart disease.
+Therefore, we can reasonably predict that GMA will be associated with observable
+changes in cardiac disease and death when large populations are studied.
+GMA related Human Cardiac Disease and Death:
+Early correlations between S-GMA and heart attacks were assumed by some authors to
+be spurious, inaccurate and inconsistent, Malin and Srivastava (1979, 1980) and Knox et
+al. (1979). Results found in India were not confirmed in populations in the U.S.. These
+were seen as inconsistent. The lack of a plausible mechanism also made these results not
+credible to some researchers. Artificial EMR exposures in the developed countries
+masking the natural signals effects is a plausible explanation of the results. In the 1990's
+many other studies identified relationships that are highly significant and consistent with
+the original results.
+With clinical measurement being able to identify highly significant changes in blood
+pressure, blood flow, aggregation and coagulation during GMA events, these results are
+extremely strong. They are mediated by melatonin in the normal diurnal and seasonal
+cycles. Since melatonin is also significantly correlated with levels of GMA during solar
+storms this will also have cardiac effects. Reduced melatonin is associated with cardiac
+arrhythmia and heart rate variability in clinical studies cited above.
+De Bruyne et al. (1999) studied older heart patients (>55 years) and compared their heart
+rate variability (HRV) with their increased risk or mortality from myocardial infarction. They
+found that both decreased and increased HRV were significant risk factors, with increased
+HRV being the greater risk factor. This shows a timing related homeostatic relationship
+and GMA events are related to desynchronization of cardiac rhythms. HRV also
+demonstrates anomalies in myocardial infarction, sudden death, heart failure, autonomic
+neuropathy and hypertension, Kerut, McKinnie and Giles (1999).
+The EEG, pulse rate, blood pressure and rate of sensomotor reaction was measured in a
+group of people. They significantly correlated these physiological variables with the Kp
+index, Doronin et al. (1998). They noted that the oscillations in the Kp index had identical
+periods in the monitored EEG Alpha-Rhythm. This confirms the whole-body changes that
+occur in conjunction with GMA alteration by changing the brain and heart patterns. This
+supports the model that suggests that the brain wave pattern is changed, involving
+alteration of ELF brain signals, and this is transferred through melatonin receptors and the
+autonomic nervous system to the cardiovascular system.
+Cardiac Effects of High GMA:
+During periods of Active Sun and increased GMA the following statistically significant
+effects have been observed:
+• Cardiac Arrhythmia in children, Markarov (1998).
+•
+
+Novikova and Ryvkin (1977) observed a consistent and significant increase in heart
+attack incidence and death between active and quiet GMA conditions for 1961-66 at
+Sverdlovsk, USSR.
+
+28
+• GMA is highly correlated with daily myocardial infarction incidence rates during big
+GMA storms, Villoresi et. al. (1998).
+• GMA activity is also correlated with sudden cardiovascular death, Sitar (1990), and
+Ischaemic Heart Disease mortality, Otto et al. (1982).
+•
+
+Stoupel and Shimshoni (1991) found that monthly solar activity was highly significantly
+correlated with monthly hospital heaths for cardiovascular disease. Solar activity is
+highly correlated with GMA and SR intensity.
+
+•
+
+Stoupel et al. (1997) observed that during periods of low solar and geomagnetic
+activity, solar proton fluxes were correlated with cardiovascular deaths.
+
+• Oraevskii et al. (1998a) found that 75 % of GMA storms caused an increased of the
+hospitalization of patients with myocardial infarction by 30 to 80%.
+•
+
+Oraevskii et al. (1998b) report that MIR space orbital station staff experienced a
+significant increase and stabilization of heart rate, reduced heart rate variability and
+decreased respiratory waves, corresponding with a specific adaptation of stressreaction. At the same time hospital patients with ischemic heart disease had a similar
+reaction including deterioration of the physiological status, rheologic blood
+characteristics and heart rate disturbances.
+
+•
+
+Breus et al. (1998) also report different of cardiovascular activity on MIR astronauts
+during the main phase of solar storms compared to the recovery phase. Similar effects
+were observed in rabbits.
+
+Cardiac Effects of Low GMA;
+Periods of Quiet Sun are significantly associated with:
+• Stoupel et al. (1990) found a highly significant correlation (p=0.01) for higher pregnancy
+induced hypertension for monthly periods of low GMA.
+• Sudden death from cardiac arrhythmia, especially paroxymal atrial fibrillation, and
+stroke, Stoupel (1993) and Stoupel et al. (1995a). Stoupel, Martfel and Rotenberg
+(1994). Stoupel, Martfel and Rotenberg conclude that their results are consistent with
+previous studies showing increased heart electrical instability during periods of lowest
+geomagnetic activity.
+• Ischaemic Heart Disease for ages >70 years. Stoupel et al. (1995b).
+• Stoupel et al. (1999) found an extremely significant inverse correlation (r= -0.64,
+p=0.0001) for a 72 month period between solar activity and stroke/ischemic heart
+disease death. They concluded that monthly ratio of deaths from stroke/ischemic heart
+disease is related to environmental physical activity.
+The cardiac studies are consistent with the Schumann Resonance Hypothesis and add
+considerable weight to the melatonin, homeostatic and arrhythmic factors in the
+Hypothesis. Blood pressure, coagulation, heart attack, cardiac arrhythmia and sudden
+
+29
+cardiac death are highly correlated with GMA in a homeostatic (U shaped) manner. This
+data is consistent with the involvement of melatonin. Being directly supported by clinical
+cardiovascular monitored changes of blood pressure, capillary flow and blood
+aggregation, multiple studies and extremely significant correlations with solar activity and
+GMA. This gives very strong evidence pointing to a causal relationship between Ischemic
+and arrhythmic cardiovascular disease, heart attack and death and GMA. The highly
+significant correlation between S-GMA and the SR signal intensity gives strong support for
+the SR hypothesis through a melanin mechanism.
+Neurological Effects:
+The brain is a very sensitive electromagnetic organ. The model and hypothesis proposes
+a direct mechanism for SR signals to interact with the brain, altering the EEG and
+neurohormones in response. Altered reaction time is a prompt and acute indication of this
+interaction. It has been shown that exogenous ELF signals affect melatonin/serotonin,
+dopamine and opiate systems, Frey (1995). This is plausible through interference with
+endogenous ELF systems and the vital role of calcium ion signalling. Melatonin reduction
+is directly correlated with S-GMA levels that are highly correlated with a natural exogenous
+ELF field, the SR signal. Given the biological effects of reduced melatonin, this predicts
+that there could well be a wide range of melatonin related neurological effects correlated
+with solar cycles and GMA events. A large number of studies have been carried out and
+are summarized below.
+Epileptics are primary subjects for the detection of acute effects of GMA on human
+neurological functions because of the frequency-based dysfunction that they suffer from.
+Karlov, Selitskii and Sorokina (1996) compared the reactions of 18 healthy individuals and
+20 epileptic patients to magnetic fields modulated in the EEG frequency range. They
+showed that alteration of the magnetic field elevated the functional activity of the brain
+synchronizing structures and increased either epileptic activity or activation of epileptic
+focus. Sandyk and Anninos (1992a and b) report success in reducing epileptic seizures
+with picoTesla ULF magnetic fields with SR-like frequencies. Sandyk (1992) relates these
+results to the alteration of the EEG alpha rhythm (8-13 Hz), pineal melatonin and magnetic
+field altered circadian seizure incidences.
+Belisheva et al. (1995) concluded that their observations showed that local GMA
+variations can be a principle reason for modulation of the brain's functional state. They
+also conclude that this means that an optimal level of GMA, manifested in periodic
+oscillations in certain amplitude frequency range is demanded for steady brain's function
+state. The decrease of optimal GMA activity level and the appearance of aperiodic
+disturbances of GMA can be a reason of unsteady brain's state. This gives strong support
+for the role of the SR spectrum in the homeostasis of brain activity.
+The EEG, pulse rate, blood pressure and rate of sensomotor reaction on a group of
+people were significantly correlated with the Kp index, Doronin et al. (1998). They noted
+that the oscillations in the Kp index had identical periods in the monitored EEG alpharhythm. This confirms a GMA-related modulation of the EEG alpha rhythm, which could
+well be the SR signal. This was independently confirmed by Belov, Kanunikov and Kiselev
+(1998), who monitored the EEGs in 26 human subjects.
+A positive correlation between the EEG data and GMA was revealed, being most obvious
+in the frontal and central lobes of the brain. A negative correlation between some local
+
+30
+EEG synchronization and indices of solar activity was also observed. They concluded that
+the degree of synchronization of the spontaneous EEG seemed to reflect sensitivity of the
+human nervous system to the earth's magnetic field. This confirms a role for a S-GMArelated mechanism, most likely the SR signal. They observed a stressor response to
+strong GMA events and a sedative effect from low frequency magnetic oscillations. This is
+consistent with the experiments of König and Hamer who showed that the alpha-rhythm
+related 10 Hz signal stimulated people and the 3 Hz delta-rhythm related signal slows
+people.
+Neurological Effects of High GMA:
+•
+
+Tambiev, Medvedev and Egorova (1995) found a significant correlation between GMA
+and memory and attention. Aviation accidents are positively correlated with solar
+storms, Komarov et al. (1998). Through cyclic analysis the authors concluded that
+there was a causal relationship because of strong frequency matching between
+aviation accidents and GMA event cycles.
+
+•
+
+This was confirmed by Selitskii, Karlov and Sorokina (1999) who, by artificially
+reducing GMA, were able to increase the synchronization of alpha-rhythm EEG and
+generalized slow-wave discharges in epileptics. This shows that increased GMA
+produces de-synchronization of the EEG alpha-rhythm and results in significantly more
+frequent convulsive seizures.
+
+•
+
+GMA disturbances suppress the cortical reactivity to external receptive stimuli and
+raise the functional activity of the cerebral inhibitory components, such as the caudate
+nucleus in awake cats, Makarova (2000).
+
+•
+
+A total of 40 men and women were tested for the effects of changes in the local
+geomagnetic field and their writing of pleasant and unpleasant stories, Persinger,
+Richards and Koren (1994). A double-blind method was used in the application of 10
+mG fields over the right and left temporal lobes separately and together. Men and
+women receiving the stimulation showed significantly more pleasantness when
+exposed to the right hemisphere than the left. Covariance with changes in the natural
+geomagnetic field was negatively correlated with pleasantness, increasing the
+significance of the experimental treatment.
+
+•
+
+A group of 127 human volunteers were studied over a 4-year period and were
+observed to show a step-like increase in partial sensory deprivation (mainly hearing
+and seeing) for GMA levels above 15 nT, r = 0.33. The strongest correlation was found
+for the GMA during the 3-hr period at the beginning of the previous nights sleep,
+Persinger and Richards (1995).
+
+•
+
+Rats being studied for chronic limbic epileptic effects showed significantly more
+aggression (r = 0.5) during GMA events, Persinger (1997). Intense aggression was
+observed for aa> 40 nT.
+
+•
+
+St Pierre and Persinger (1998) found that aggressive biting in rats was positively
+correlated with GMA. Persinger (1999) identified a moderate association between
+annual GMA and the probability of war in the same year.
+
+31
+•
+
+Avdonina EN, Samovichev EG (1995) evaluated relationships between S-GMA,
+especially for the days that serial crimes were committed during 1980-1990 in USSR.
+The analysis of 150 episodes (ten separate series) shows that the crimes are most
+probable immediately or 1-3 days after sharp decrease of solar activity (Wolf numbers),
+geomagnetic activity (A3 and K indices) and of lowest daily surface and air
+temperature.
+
+•
+
+Bureau and Persinger (1995) investigated the time taken to initiate an epileptic seizure
+as a function of the level of GMA. They found that the latency decreased in a doseresponse manner with GMA level. A 20-25 nT level reduced the latency by 12 %.
+Bureau, Persinger and Parker (1996) were studying rats with induced limbic seizure
+hypothermia. During high GMA, >35nT, depth of hypothermia was significantly reduced
+(p<0.001). In the subsequent 5 days mortality was increased when GMA >20 nT.
+
+•
+
+In three separate experiments, Michon, Koren and Persinger (1996) tried to clarify the
+means by which GMA levels affected spontaneous epileptic seizures in rats. A 700 nT
+constant intensity signal inhibited the seizures. At lower levels, in the range of natural
+GMA a 7 Hz signal, for 5 mins, once per hour, in the period midnight to 8 am,
+increased the incidence of seizures the following morning during the presentation of
+food. This appears to explain persistent effects of GMA on epileptic seizures.
+
+•
+
+Rajaram and Mitra (1981) found a very significant, p<0.01, correlation between annual
+percentage of patients with convulsive seizures in Calcutta and annual mean GMA
+over the period 1955-1971.
+
+•
+
+Epileptic seizures and dizziness are correlated with monthly and annual solar activity.
+This revealed significant differences between males and females, Stoupel, Martfel and
+Rotenberg (1991), Epileptic attacks were highly correlated jointly with GMA and
+lunisolar tides, Mikulecky, Moravcikova and Czanner (1996).
+
+•
+
+Persinger (1995) identified a significant correlation between sudden epileptic death
+and periods following high daily average GMA, >50 nT. Monthly incidence of sudden
+unexplained death was correlated with the monthly incidence of GMA events over 50
+nT. They concluded that these results supported the role of the "anticonvulsant"
+melatonin.
+
+•
+
+Persinger (1995a) observed a 35 % variance (multiple r = 0.59) for the portion of
+seizures related to increased GMA at the same time as the seizure and during the
+previous overnight period.
+
+•
+
+Renton and Persinger (1998) monitored the partial epileptic-like experiences in 12
+women over two months. Five of the women displayed significant increases when the
+daily GMA level exceeded 40 nT.
+
+•
+
+Nikolaev et al. (1976) compared a daily variation of a psychopathological index for a
+group in a Moscow mental hospital with the Ap index over a period of 9 months. There
+was a very high correlation.
+
+•
+
+Urgent hospitalization for mental disorders and suicide rise significantly with solar
+activity, Oraevskii et al. (1998a). Psychiatric admissions increase with solar radio flux
+activity (p<0.05) and sudden magnetic storms (p<0.01) and decrease with GMA
+
+32
+(p<0.05), Raps, Stoupel and Shimshoni (1991). Admission for Depression increases
+significantly after solar storms, Kay (1994).
+•
+
+GMA can be considered as a trigger of migraine attacks, De Matteis et al. (1994). They
+confirmed this by finding a significant correlation between migraine attack and GMA in
+a small geographic area to minimize the climatic differences.
+
+•
+
+Conesa (1995, 1997) associated high GMA with isolated sleep paralysis.
+
+•
+
+The geographic incidence of Multiple Sclerosis is strongly correlated with the
+Geomagnetic field rather than latitude, Resch (1995).
+
+Neurological effects of Low GMA:
+•
+
+Highly anxious pilots have greater anxiety on days of quiet sun, Usenko (1992).
+
+•
+
+Conesa (1995, 1997) associated low GMA with vivid dreaming.
+
+•
+
+Serial Crime in Moscow increased 3 days after a low solar activity period. Avdonina
+and Samovichev (1995).
+
+•
+
+Tunyi and Tesarova (1991) found that suicide, sports injuries, fatal work injuries,
+alcoholism are more prevalent during periods of low solar activity.
+
+•
+
+Stoupel et al. (1995a) found that suicide in those older than 70 years was greater
+during periods of low solar activity. Stoupel et al. (1995b) found on a monthly mean
+basis that suicide was negatively correlated (r = -0.22, p=0.03) with GMA levels.
+
+•
+
+Raps, Stoupel and Shimshoni (1992) found negative correlations for psychiatric
+admissions between 1977 and 1987, involving 1829 patients, against sudden
+ionospheric disturbances (r = -0.274), GMA index (r = -0.216) and hours of positive
+ionization in the ionosphere (r = -0.262).
+
+Neurological Summary:
+Acute clinical effects of altered EEG rhythms have been observed in several studies.
+Geomagnetic Storms are strongly related to human health effects and death. Increased
+GMA, consistent with reduced melatonin, causes arrhythmic brain activity in the form of
+epilepsy. The occurrence of epilepsy and sudden unexpected death is highly correlated
+with increased solar activity and GMA storm events in many studies involving rats and
+people. Suicide is also strongly correlated with enhanced GMA and solar cycles.
+There is weak evidence of effects for low GMA activity. For the elderly, >70 years, the risk
+is increased for low levels of S-GMA. Low S-GMA has also been associated with anxiety,
+vivid dreaming, injuries and alcoholism.
+This adds very strong support for the SR hypothesis for elevated S-GMA and melatonin
+reduction through altered brain function. Weak support is given for the "U shaped"
+homeostatic relationship.
+
+33
+S-GMA related Mortality and Birth Rate:
+If the above arguments are true than GMA should be correlated with mortality amongst the
+very old and very young.
+•
+
+Zaitseva and Pudovkin (1995) used a multiple regression analysis involving the annual
+sunspot number (Ns) and deviation of the Kp index from average with a 30-year
+mortality and birth rate record, 1867-1897 from Russia. They determined that mortality
+rate rose significantly (r=0.78) and birth rate dropped significantly (r=-0.67) with
+changes in the S-GMA indices Ns and ∆Kp.
+
+•
+
+Shumilov et al. (1998) observed high correlations between traumas, deaths and
+sudden diseases with both enhanced and extremely low S-GMA levels, for miners
+working at high latitudes in the Spitsbergen mines.
+
+•
+
+Kopanev, Efimenka and Shakula (1979) experimented with rabbits to test the effect of
+shielding from the geomagnetic field. They found significantly higher mortality in the
+animals shielded from GMF, compared to unshielded controls.
+
+•
+
+A 100-fold shielding of guinea-pigs from the earth's GM field produced a reduction in
+ferment antioxidizing activity and non-ferment mechanisms in the heart, along with
+reduced carbohydrate metabolism for lipid metabolism, Babych (1995). A similar field
+reduction caused an inhibitory effect, down to complete stoppage, of the ciliate
+neuronal development of new born rats, Svanidze et al. (1994) and Sandodze,
+Svanidze and Didimova (1995).
+
+Cancer Incidence with Sunspot Cycles:
+SR signals and S-GMA vary significantly with the sunspot activity, and S-GMA is highly
+correlated with reduced melatonin. Melatonin is a highly potent antioxidant and therefore
+reduced melatonin causes enhanced DNA damage that can initiate, promote and progress
+cancer. Childhood cancer develops very quickly. Most adult cancer has long latencies.
+Hence a sunspot cycle related cancer could cluster increased childhood cancer and
+cancer initiation around sunspot maximum. Solar cycles could be induced into cancer
+cycles. In a similar manner to acute air pollution events in relation to cardiovascular death,
+sunspot maximum, a period of years with reduced melatonin, could cluster and "harvest"
+those with terminal cancer, accelerating their death. The following studies report some
+results.
+•
+
+Riabykh and Bodrova (1992) found a significant correlation between Wolf sunspot
+numbers and benign breast cancer for women in the middle and late menarche.
+
+•
+
+Dimitrov (1993) found some significant lagged-correlations with malignant melanoma in
+Czechoslovakia and solar 7.5 and 11 year cycles.
+
+•
+
+Dimitrov (1999) identified significant solar cycle related Malignant Melanoma and NonHodgkin's Lymphoma (NHL) in adult U.S. populations, and Dimitrov (1999a) correlated
+childhood NHL in the U.S. with solar cycles, p<0.05.
+
+This study found significant correlation with male leukaemia and female breast cancer in
+Thailand with annual sunspot numbers. There is consistent but limited data to correlate
+
+34
+cancer with sunspot activity. The possibility that this related to UV radiation was
+considered. Malignant Melanoma (MM) is linked to UV radiation, which varies very slightly
+with sunspot activity, 0.16%, Haigh (1996). MM is also significantly elevated in
+telecommunications industry in Sweden, Vagero et al. (1985). MM is also associated with
+the review of ELF exposures in electrical occupations, Hardell et al. (1995) and with the
+highest ELF exposures in Tynes, Reitan and Andersen (1994). Hence it is highly probable
+that the relationships found by Dimitrov (1993, 1999) can be related to the SR signal and
+unlikely to be caused by sunspot cycle related UV changes.
+Other effects:
+•
+
+Reproductive and survival rates of micro-organisms, Escherichia (E Coli), Shigella and
+Salmonella, were highly correlated with GMA events. The experiments that started 2-4
+days prior to a GM storm showed suppression of reproductive capacity followed by its
+stimulation. If the storm started on the first day of the experiment then there was a
+sharp drop in reproductive capacity and population death occurred within 1 to 5 days.
+In periods of low GMA the suppression of reproductive capacity was commonly
+recorded, Chernoshchekov (1989).
+
+•
+
+Petrichuk et al. (1992) report on a study of 35 premature and 35 healthy children over
+a period of 11 years. GMA was correlated with a range of significant factors, including
+a progressive increase in lymphocytes. If intrauterine development took place during a
+period of high solar activity, then early development resulted. For both groups the
+energetic age-dependent factors vary with the GMA. Lymphocytes that are associated
+with fetal and newborn hypoxia are perturbed by a combination of high atmospheric
+pressure and GMA, Petrichuk et al. (1998).
+
+•
+
+Stoupel et al. (1993) found that Intra-ocular pressure in relation to four levels of daily
+GMA was lowest on stormy days and highest on quiet solar days. This is a melatoninrelated effect.
+
+•
+
+A range of mouse, hamster and pisces cell lines were studied in situations of changing
+GMA, Belisheva and Popov (1995). Morpho-functional characteristics, including the
+percentage of polynuclear cells, were estimated. GMA causes an abrupt, step-wise
+change in the state of the cell cultures. Changes in properties of the cell surface
+related to cell fusion, the appearance of heterokaryons, enlargement of cellular
+adhesion and aggregation.
+
+•
+
+Polikarpov (1996) studied the biological activity in soil, including DNA synthesis. The
+study found that during periods of increased solar and GMA the cell culture S.aureus
+209 showed significantly greater biological activity.
+
+Summary about S-GMA biological and health effects:
+These studies consistently show that GMA events produce significant biological changes
+in micro-organisms (E.Coli and Salmonella) and soil organisms, animal cell-lines, human
+lymphocytes and eyes. This is in addition to the above studies showing cancer,
+reproductive, cardiac and extensive neurological effects in people that are largely
+consistent with melatonin reduction by S-GMA.
+
+35
+There is very strong evidence for extreme variations of S-GMA to be classified as a
+Natural Hazard for all forms of life on earth. There is strong evidence for the GMA
+Melatonin Mechanism and strong evidence for the Schumann Resonance Hypothesis.
+The hypothesis and mechanism are supported by ULF/ELF studies showing reduced
+melatonin in animals and people.
+Residential and Occupational exposures prediction:
+Further evaluation of the SR Hypothesis is to evaluate its prediction that if it is valid than
+there should be significant increases in cancer, reproductive, cardiac and neurological
+effects in human populations exposed to residential ELF and radio/microwave fields.
+Typically these fields are about a thousand times higher in terms of the electric field and a
+million times higher in terms of exposure intensity and the magnetic field. For example a 1
+mV/m SR signal converts to 0.27 pW/cm2. A survey of 15 U.S. cities in 1979/80, Tell and
+Mantiply (1980), found the median exposure level was 5 nW/cm2. Around 1 % of the
+population was exposed to more than 1 µW/cm2, over 1 million times higher than the SR
+intensity. Living near high voltage powerlines are chronically exposes people to ELF
+magnetic fields in the range 0.1 to 0.5 µT, about a million times higher than the 0-20 Hz
+SR signal at 0.5 pT. If these health effects are found then this strengthens both the SR
+Hypothesis and the GMA Melatonin Mechanism.
+Electrical occupation and residential health studies:
+Cancer Studies:
+Hardell et al. (1995) reviewed almost 100 studies carried out up to 1994 and described
+significant increases in cancer as possible associations. They concluded that there were
+many possible associations. These included an increased risk of leukaemia in children
+and the existence of, or distance to, powerlines in the vicinity of their residence.
+Occupation exposure to ELF electromagnetic fields showed an increased risk of chronic
+lymphatic leukaemia, breast cancer, malignant melanoma of the skin, nervous system
+tumours, non-Hodgkin lymphoma, acute lymphatic leukaemia or acute myeloid leukaemia.
+Since 1995 many other studies have confirmed and strengthened these conclusions.
+For example, Cantor et al. (1995) found that occupational exposure to RF fields
+significantly increased female breast cancer. In a very large study, Szmigielski (1996),
+showed that RF/MW exposure from radar and radio in Polish military personnel caused
+significant increases in cancer mortality across many organs in the body, including brain
+tumours (p<0.05) and leukaemia (p<0.001). When the leukaemia was divided into various
+types, Lymphoma, Chronic Myelocytic and Acute myeloblastic Leukaemia were all
+individually extremely significant, p<0.001. Feychting et al. (1995) found a dose response
+increase in childhood leukaemia with exposure to high voltage powerlines, ≥0.5µT RR=
+5.1 (95%CI: 2.1-12.6) and Savitz et al. (2000) found a dose-response increase in brain
+cancer in electrical workers with the highest exposure giving RR = 2.5 (95% CI = 1.0-6.3).
+Reproductive Studies:
+Pregnant physiotherapists experience a dose-response increase in early pregnancy
+miscarriage using pulsed microwaves for diathermy, Ouellet-Hellstrom and Stewart
+(1993). Later pregnancy miscarriage was found in physiotherapists using shortwave
+diathermy, Kallen et al. (1982), Larsen et al. (1991) and Taskinen et al. (1990). Kallen et
+
+36
+al. and Larsen et al. also showed significant congenital malformation. Miscarriage is also
+associated with electronic technicians, Vaughan et al. (1990), and electric blanket use,
+Wertheimer and Leeper (1986) and Belanger et al. (1998). It is also associated with
+powerline exposure, Juutilainen et al. (1993).
+Electrical workers also pass on higher cancer risks to their children, Hicks et al. (1984),
+Spitz and Johnson (1985), Johnson and Spitz (1989), Wilkins and Hundley (1990), Bunin
+et al. (1990), Wilkins and Wellage (1996), Olshan et al. (1999), Smulevich et al. (1999)
+and Feychting, Floderus and Ahlbom (2000). This is likely to be from genetic damage of
+sperm associated with reduced melatonin.
+Cardiac Studies:
+Cardiac effects include reduced Heart Rate Variability with 60 Hz fields, Sastre, Cook and
+Graham (1998) and for RF exposure in TV transmission stations. Bortkiewicz et al. (1995,
+1996, 1997). Male physiotherapists had significant dose-response increases in Ischemic
+heart disease from both short-wave and microwave exposure, Hamburger et al. (1983).
+Naval technicians exposed to radar during the Korean War were diagnosed with
+significantly higher (p<0.001) cardiovascular disease, Robinette et al. (1980). Savitz et al.
+(1999) carried out the most extensive exposure related study and identified significantly
+increased and significant dose-response increases in cardiovascular disease mortality in
+electric utility workers. This was particularly for Arrhythmia and Acute myocardial
+infarction. Significantly elevated risk occurred for all cumulative exposures above 0.6 µTyears. The consistent elevation and exposure gradient effects were found for Arrhythmia
+and heart attack but not for atherosclerosis and chronic coronary heart disease. The latter
+two were elevated inconsistently. In contrast, Ptitsyna et al. (1996) found a doubling of
+chronic heart diseases in train drivers chronically exposed to ULF fields (0.001-10 Hz),
+consistent with SR frequencies.
+Neurological Studies:
+Children chronically exposures to a radar pulsed at 24.4 Hz showed significant impairment
+of learning and physical performance, Kolodynski and Kolodynska (1996). ELF exposed
+people show significantly more Clinical Depression, Verkasalo et al. (1997); Amyotropic
+lateral sclerosis, Deapen and Henderson (1986), Davanipour et al. (1997) and Savitz et al.
+(1998), Johansen et al. (1999); Alzheimer's Disease, Sobel et al. (1995, 1996); and Senile
+Dementia, Epilepsy, and Motor Neuron Disease, Johansen (2000). Significant increases in
+suicide from ELF exposures was reported by Perry et al. (1981) and Baris and Armstrong
+(1990). This was confirmed by Van Wijngaarden et al. (2000). They found a significant
+dose-response increase relative to recent ELF exposures with a zero exposure threshold.
+They relate this to melatonin reduction.
+Public Health Conclusions:
+Multiple published studies show that residential and occupational exposures to
+electromagnetic fields and radiation results in significant increases, including doseresponse relationships, for cancer, reproductive, cardiac and neurological health effects
+and mortality. The prediction from the SR Hypothesis is very well confirmed. There is
+considerable consistency between the S-GMA studies and the residential and
+occupational ELF/RF/MW exposures. The very recent dose-response studies of ELF
+
+37
+exposure and heart disease death, suicide and brain cancer all point towards a near zero
+threshold of ELF exposure for the level of no effect.
+Therapeutic Confirmation:
+Solar flares and storms cause a disruption of the SR signal, and are associated with a
+range of neurological disorders that are largely melatonin-reduction related. Electrical
+occupations, exposed to above average ELF fields, show reduced melatonin and
+increased neurological disorders and diseases. If the occupational ELF fields were
+masking the SR signal as part of their effect, then a therapeutic treatment to correct the
+disorders would be to use a "Schumann-like" signal. Evidence of the effectiveness of such
+treatments would support both the SR Hypothesis and the GMA Melatonin Mechanism.
+Published papers document an over 20 year history of this being carried out by Dr R
+Sandyk in his work with patients who have melatonin related neurological disorders.
+Successful individual treatments on hundred of patients have been reported, forming a
+highly significant dataset. The treatment primarily involves exposing the heads of patients
+to a 7.5 pT magnetic field sinusoidally modulated at a frequency between 4 and 8 Hz,
+primarily at 7 Hz. To illustrate this large body of work some recent examples are given.
+Disorders successfully treated includes the symptoms of Parkinson's Disease, Sandyk
+(1994, 1996, 1997a-d, 1998a, 1999a,b, 1999c), Multiple Sclerosis, Sandyk (1997e-g,
+1998b,d). The effectiveness of EMF treatment in MS is reviewed in Sandyk (1997h) and
+the melatonin role in MS in Sandyk (1997i). Tourette's Syndrome has also been
+successfully treated, Sandyk (1997j).
+This confirms that ULF frequency electromagnetic fields near the 7-8Hz Schumann
+Resonance peak have strong positive therapeutic effects of correcting the melatoninrelated arrhythmia in neurological diseases. This adds further independent support for the
+SR Hypotheses and the involvement of melatonin.
+Recommended research to test the Hypothesis:
+At the core of the Hypothesis is the postulate that human brains detect and respond to the
+SR signal. The response involves altered EEG, reaction times, melatonin production,
+blood pressure and heart rate. These need to be tested directly in relation to actual or
+experimental SR signals. Experimental design must deal with possible confounders. The
+physiological parameters could be monitored during isolated GMA events using local
+measurements of the SR signal. Tests need to be developed to detect whether the
+physiological parameters are more closely related to Kp or the SR signal. Isolation
+experiments, as used by Wever (1974), may be necessary. Correlation of SR signals with
+acute health effects, such as SIDS, cardiac arrhythmia, heart attack and suicide could also
+be evaluated for indirect but supportive or challenging evidence.
+Summary and Conclusions:
+S-GMA indices are correlated with the biological and health effects Confirmation of the
+Schumann Resonance Hypothesis first required that the SR Signal be highly correlated
+with that are correlated with S-GMA. This would show that the SR signal was also
+correlated with the observed effects. The SR signal is shown to be extremely highly
+correlated with sunspot number and the GMA Kp index. The GMA event analysis confirms
+
+38
+that the characteristics of the SR signal closely follow the Kp index and the electron
+density patterns in the D-Region. Hence this aspect of the hypothesis is confirmed.
+The second aspect was the biological plausibility of the SR signal interacting with the brain
+and altering the melatonin production. This is theoretically predicted and plausible through
+resonant absorption made possible through frequency matching and tuned circuits. It is
+shown conclusively that environmental ULF/ELF electromagnetic fields at extremely low
+intensity do interact with brain tissue, changing the calcium ion fluxes, the EEG and
+reaction times. Brains and cells use phase-locked loop circuits to detect and respond to
+natural ULF/ELF electric signals. Laboratory experiments show that "Schumann-like"
+signals do change human and monkey reaction times using ULF to electric field levels
+approaching the SR intensity. Human reaction times are also highly correlated, in a doseresponse manner, with SR intensity, confirming this interaction.
+The Melatonin Mechanism is strongly supported by multiple independent studies showing
+that ULF/ELF fields reduce melatonin in animals and people. The GMA connection is
+confirmed directly and with significant dose-response relationships. The GMA health
+studies and the occupational and residential health studies are almost all associated with
+reduced melatonin, strongly supporting each other and the Melatonin Mechanism of the
+SR hypothesis. Independent support is also given by successful neurological therapies
+using Schumann-like signals with patients who have melatonin related neurological
+illnesses.
+Mammals have advanced physiological systems to deal with diurnal and seasonal climate
+variations. This involves the melatonin/serotonin system communicating with all the vital
+organs in the body in order to maintain thermal homeostasis. External ULF/ELF signals
+help to regulate this through providing a Zeitgeber signal. It is highly probable that the
+Schumann Resonances provide this signal. It is thus plausible that alteration of the SR
+signal by S-GMA is transferred to mammal pineal glands and can affect their vital organs,
+especially their brains, CNS, hearts, reproduction and immune systems
+The theoretical, experimental and observational data involving animals and people gives
+very strong support for the Schumann Resonance Hypothesis and its Melatonin
+Mechanism. There is overwhelming evidence that S-GMA is a natural hazard causing
+reproductive, neurological cardiac and carcinogenic illness and death with cyclic and
+extreme swings in Solar/Geomagnetic Activity. This is supported with the highly plausible
+hypothesis that requires only a small amount of confirming research to establish a causal
+relationship.
+References:
+Abelin, T., 1999: "Sleep disruption and melatonin reduction from exposure to a shortwave radio
+signal in Switzerland". Seminar at Environment Canterbury, New Zealand. August 1999.
+Adey, W.R., 1980: "Frequency and power windowing in tissue interactions with weak
+electromagnetic fields". Proc IEEE 68(1), 119-125.
+Adey, W.R., 1981: "Tissue interactions with nonionizing electromagnetic fields". Physiol Rev
+61(2): 435-514.
+Adey, W.R., 1990: "Joint actions of environmental nonionizing electromagnetic fields and
+chemical pollution in cancer promotion". Environ Health Perspectives 86: 297-305.
+
+39
+
+Adey, W.R., (1993): "Biological effects of electromagnetic fields". J Cell Biochem 51(4): 410-416.
+Ahissar, E., Haidarliu, S. and Zacksenhouse, M., 1997: "Decoding temporally encoded sensory
+input by cortical oscillations and thalamic phase comparators". Proc. Natl. Acad.
+Sci.(USA), 94(21): 11633-11638.
+Alberts, B., Bray, D., Lewis, J., Raff, M., Roberts, K. and Watson, J.D., 1994: "Molecular Biology
+of the cell". 3rd edition, New York, Garland Publishing,
+Al-Ghoul, W.M., Herman, M.D. and Dubocovich, M.L., 1998: "Melatonin receptor expression in
+human cerebellum". Neuroreport 9(18): 4063-4068.
+Akasofu, S.I. and Chapman, S., 1972: "Solar and Terrestrial Physics". Publ. Oxford University
+Press, London.
+Andrade, R., 1998: "Regulation of membrane excitability in the central nervous system by
+serotonin receptor subtypes". Ann NY Acad Sci 861: 190-203.
+Arnetz, B.B. and Berg, M., 1996: "Melatonin and Andrenocorticotropic Hormone levels in video
+display unit workers during work and leisure. J Occup Med 38(11): 1108-1110.
+Avdonina, E.N., and Samovichev, E.G., 1995: "Some heliogeophysical characteristics of a series
+of especially dangerous crimes". Biofizika, 40(5): 1060-1063.
+Babych, V.I., 1995: "The characteristics of tissue lipid peroxidation in the internal organs and the
+lipid metabolic indices of the blood plasma in a low geomagnetic field". Fiziol Zh 41(5-6):
+44-49.
+Balon, N. and Rao, P.B., 1990: "Dependence of ionospheric response on the local time of sudden
+commencement and the intensity of geomagnetic storms". J. Atmospheric and Terrestrial
+Physics, 52(4): 269-275.
+Balser, M. and Wagner, C.A., 1960: "Observations of earth-ionosphere cavity resonances".
+Nature, 188 (Nov 19), 638-641.
+Bardasano, J.L., Cos, S. and Picazo, M.L., 1989: "Numerical variation in synaptic ribbons of rat
+pinealocytes under magnetic storm conditions and on calm days".[In German] J Hirnforsch
+30(60: 639-643.
+Baris, D. and Armstrong, B., 1990: "Suicide among electric utility workers in England and Wales".
+Br J Indust Med 47:788-789.
+Bartsch, H., Bartsch, C., Mecke, D. and Lippert, T.H., 1994: "Seasonality of pineal melatonin
+production in the rat: possible synchronization by the geomagnetic field". Chronobiol Int
+11(1):21-26.
+Bawin, S.M., Gavalas-Medici, R and Adey, W.R., 1973: "Effects of modulated very high frequency
+fields on specific brain rhythms in cats". Brain Res 58: 365-384.
+Bawin, S.M. and Adey, W.R., 1976: "Sensitivity of calcium binding in cerebral tissue to weak
+environmental oscillating low frequency electric fields". Proc Nat Acad Sci USA 73: 19992003.
+
+40
+Belanger, K., Leaderer, B., Hellenbrand, K., Holford, T.R., McSharry, J-E., Power, M-E, and
+Bracken, M.B., 1998: "Spontaneous abortion and exposure to electric blankets and heated
+water beds". Epidemiology, 9: 36-42.
+Belisheva, N.K. and Popov, A.N., 1995: "Dynamics of the morphofunctional status of cell cultures
+exposed to variations in the geomagnetic field at high latitudes". Biofizika 40(4): 755-764.
+Belisheva, N.K., Popov, A.N., Petukhova, N.V., Pavlova, L.P., Osipov, K.S., Tkachenko, S.E. and
+Varanova, T.I., 1995: "Qualitative and quantitative assessment of exposure to
+geomagnetic field variations on the functional status of the human brain". [In Russian].
+Biofizika, 40(5):1005-1012.
+Belov, D.R., Kanunikov, I.E. and Kiselev, B.V., 1998: "Dependence of human EEG
+synchronization on the geomagnetic activity on the day of experiment". Ross Fiziol Zh Im I
+M Sechenova, Aug; 84(8): 761-774.
+Belrose, J.S., 1968: "AGARD Report 29, 1968, cited in Hargreaves J.K., 1992 "The Solarterrestrial environment", Publ. Cambridge University Press, Cambridge, United Kingdom.
+Belrose, J.S. and Cetiner, C., 1962: "Measurement of electron densities in the ionospheric DRegion at the time of a 2+ solar flare". Nature 195: 688-690.
+Beresford, I.J., Browning, C., Starkley, S.J., Brown, J., Foord, S.M., Coughlan, J., North, P.C.,
+Dubocovich, M.L. and Hagan, R.M., 1998: "GR196429: a nonindolic antagonist at highaffinity melatonin receptors". J Parmocol Exp Ther 285(3): 1239-1245.
+Blackman, C.F., Benane, S.G., Elliott, D.J., and Pollock, M.M., 1988: “Influence of
+Electromagnetic Fields on the Efflux of Calcium Ions from Brain Tissue in Vitro: A ThreeModel Analysis Consistent with the Frequency Response up to 510 Hz”.
+Bioelectromagnetics, 9:215-227.
+Blackman, C.F., 1990: "ELF effects on calcium homeostasis". In "Extremely low frequency
+electromagnetic fields: The question of cancer", BW Wilson, RG Stevens, LE Anderson
+Eds, Publ. Battelle Press Columbus: 1990; 187-208.
+Bortkiewicz, A., Zmyslony, M., Palczynski, C., Gadzicka, E. and Szmigielski, S., 1995:
+"Dysregulation of autonomic control of cardiac function in workers at AM broadcasting
+stations (0.738-1.503 MHz)". Electro- and Magnetobiology 14(3): 177-191.
+Bortkiewicz, A., Gadzicka, E. and Zmyslony, M., 1996: "Heart rate in workers exposed to mediumfrequency electromagnetic fields". J Auto Nerv Sys 59: 91-97.
+Bortkiewicz, A., Zmyslony, M., Gadzicka, E., Palczynski, C. and Szmigielski, S., 1997:
+"Ambulatory ECG monitoring in workers exposed to electromagnetic fields". J Med Eng
+and Tech 21(2): 41-46.
+Brendel, H., Niehaus, M. and Lerchl, A., 2000: "Direct suppression effects of weak magnetic fields
+(50Hz and 16 2/3 Hz) on melatonin synthesis in the pineal gland of Djungarian hamsters
+(Phodopus sungorus)" J Pineal Res 29(4): 228-233.
+Breus, T.K., Baevskii, R.M., Nikulina, G.A., Chibisov, S.M., Chernikova, A.G., Pukhlianko, M.,
+Oraevskii, V.N., Halberg, F., Cornelissen, G. and Petrov, V.M., 1998: "Effect of
+geomagnetic activity on the human body in extreme conditions and correlation with data
+from laboratory observations". Biofizika 43(5): 811-818.
+Brzezinski, A., 1997: "Melatonin in humans". N Engl J Med 336(3): 186-195.
+
+41
+
+Bunin, G.R., Ward, E., Kramer, S., Rhee, C.A. and Meadows, A.T., 1990: "Neuroblastoma and
+parental occupation". Am J Epidemiol 131(5): 776-780.
+Burch, J.B., Reif, J.S., Pittrat, C.A., Keefe, T.J. and Yost, M.G., 1997: "Cellular telephone use and
+excretion of a urinary melatonin metabolite". In: Annual review of Research in Biological
+Effects of electric and magnetic fields from the generation, delivery and use of electricity,
+San Diego, CA, Nov. 9-13, P-52.
+Burch, J.B., Reif, J.S., Yost, M.G., Keefe, T.J. and Pittrat, C.A., 1998: "Nocturnal excretion of
+urinary melatonin metabolite among utility workers". Scand J Work Environ Health 24(3):
+183-189.
+Burch, J.B., Reif, J.S., Yost, M.G., Keefe, T.J. and Pittrat, C.A., 1999a: "Reduced excretion of a
+melatonin metabolite among workers exposed to 60 Hz magnetic fields" Am J
+Epidemiology 150(1): 27-36.
+Burch, J.B., Reif, J.S. and Yost, M.G., 1999b: "Geomagnetic disturbances are associated with
+reduced nocturnal excretion of melatonin metabolite in humans". Neurosci Lett
+266(3):209-212.
+Burch, J.B., Reif, J.S., Noonan, C.W. and Yost, M.G., 2000: "Melatonin metabolite levels in
+workers exposed to 60-Hz magnetic fields: work in substations and with 3-phase
+conductors". J of Occupational and Environmental Medicine, 42(2): 136-142.
+Bureau, Y.R. and Persinger, M.A., 1995: "Decreased latencies for limbic seizures induced in rats
+by lithium-pilocarpine occur when daily average geomagnetic activity exceeds 20
+nanoTesla". Neurosci Lett 192(2): 142-144.
+Bureau, Y.R., Persinger, M.A. and Parker, G.H., 1996: "Effect of enhanced geomagnetic activity
+on hypothermia and mortality in rats". Int J Biometeorology 39(4): 197-200.
+Campbell, W.H., 1997: "Introduction to Geomagnetic Fields". Publ. Cambridge University Press,
+Cambridge, U.K.
+Cannon, P.S. and Rycroft, M.J., 1982: "Schumann resonance frequency variations during sudden
+ionospheric disturbances". J Atmos Terrest Physics 44(2): 201-206.
+Cantor, K.P., Stewart, P.A., Brinton, L.A., and Dosemeci, M., 1995: “Occupational exposures and
+female breast cancer mortality in the United States”. Journal of Occupational Medicine,
+37(3): 336-348.
+Carney, R.M., Freedland, K.E., Stein, P.K., Skala, J.A., Hoffman, P. and Jaffe, A.S., 2000:
+"Change in heart rate and heart rate variability during treatment for depression in patients
+with coronary heart disease". Psychosom Med 62(5): 639-647.
+Chabot, V., Caldani, M., de Reviers, M.M. and Pelletier, J., 1998: "Localization and quantification
+of melatonin receptors in the diencephalon and posterior telencephalon of the sheep
+brain". J Pineal Res 24(1): 50-57.
+Chapman, S., 1936: "The Earth's Magnetism". Methuen's Monographs on physical subjects, Publ.
+Methuen Co. Ltd, London.
+Chapman, F.W. and Jones, D.L., 1964: "Earth-Ionosphere resonances and the propagation of
+extremely low frequency radio waves". Nature 202 (May 16): 654-657.
+
+42
+Chernoshchekov, K.A., 1989: "A method for studying the effect of the geomagnetic field on the
+vital activities of microorganisms in the enteric family". Zh Mikrobiol Epidemiol Immunobiol
+9: 28-34.
+Chibisov, S.M., Breus, T.K., Levitin, A.E. and Drogova, G.M., 1995: "Biological effects of planetary
+magnetic storms". Biofizika 40(5): 959-968.
+Chou, Y.L., 1972: "Probability and statistics for decision making". Publ. Holt, Rinehart and
+Winston, New York.
+Cliver, E.W., Boriakoff, V. and Bounar, K.H., 1996: "The 22-year cycle of geomagnetic and solar
+wind activity". J Geophys Res 101(A12): 27091-27109.
+Conesa, J., 1995: "Relationship between isolated sleep paralysis and geomagnetic influences: a
+case study". Percept. Mot. Skills, 80(3 Pt2): 1263-1273.
+Conesa, J., 1997: "Isolated sleep paralysis, vivid dreams and geomagnetic influences: II."
+Percept. Mot. Skills, 85(2): 579-584.
+Cornelissen, G., Halberg, F., Obridko, V.N. and Breus, T.K., 1998: "Quasi-eleven year modulation
+of global and spectral features of geomagnetic disturbances". Biofizika 43(4): 677-680.
+Coyne, T.N.R. and Belrose, J.S., 1972: "The diurnal and seasonal variation of electron densities
+in the midlatitude D region under quiet conditions". Radio Science, 7(1): 163-174.
+Craig, R.A., 1965: "The Upper Atmosphere: Meteorology and Physics". International Geophysics
+Series Vol 8. Publ. Academic Press, New York and London.
+Craven, M. and Essex, E.A., 1987: "Diurnal, seasonal and storm-time variability of the total
+electron content of the atmosphere north of Macquarie Island". Australian National
+Antarctic Research Expeditions, Research Note 56.
+Currier, N.L., Sun, L.Z. and Miller, S.C., 2000: "Exogenous melatonin: quantitative enhancement
+in vivo of cells mediating non-specific immunity". J Neuroimmunol 104(2): 101-108.
+Davanipour, Z., Sobel, E., Bowman, J.D., Qian, Z. and Will, A.D., 1997: "Amyotropic lateral
+sclerosis and occupational exposure to electromagnetic fields". Bioelectromagnetics 18(1):
+28-35.
+Davies, K., 1996: "Sudden Ionospheric Disturbances". Chapter III.3.11 in "The upper atmosphere:
+data analysis and interpretation". Eds W Dieminger, G.K. Hartmann and R. Leitinger. Publ.
+Spriner-Verlag, Berlin, Heidelberg and New York.
+Davis, S., 1997: "Weak residential Magnetic Fields affect Melatonin in Humans", Microwave
+News, Nov/Dec 1997.
+Deapen, D.M. and Henderson, B.E., 1986: "A case-control study of Amyotrophic Lateral
+Sclerosis". Am. J. Epidemiol 123(5): 790-799.
+De Bruyne, M.C., Kors, J.A., Hoes, A.W., Klootwijk, P., Dekker, J.M., Hofman, A., van Bemmel,
+J.H. and Grobbee, D.E., 1999: "Both decreased and increased heart rate variability on the
+standard 10-second electrocardiogram predict cardiac mortality in the elderly". Am. J.
+Epidemiol., 150(12): 1282-1288.
+
+43
+De Matteis, G., Vellante, M., Marrelli, A., Villante, U., Santalucia, P., Tuzi, P. and Prencipe, M,
+1994: "Geomagnetic Activity, humidity, temperature and headache: is there any
+correlation?". Headache, 34(1): 41-43.
+Dimitrov, B.D., 1993: "Heliophysical activity and incidence variations of skin malignant melanoma
+in Czechoslovakia: a regional study". Int. J. Biometeorology 37(2): 68-71.
+Dimitrov, B.D., 1999: "Malignant Melanoma of the skin and Non-Hodgkin's lymphoma in USA: a
+comparative epidemiological study". Folia Med (Plovdiv) 41(1): 121-125.
+Dimitrov, B.D., 1999a: "Non-Hodgkin's lymphoma in US children: biometeorological approach".
+Folia Med (Plovdiv) 41(1): 29-33.
+Dollins, A.B., Zhdanova, I.V., Wurtman, R.J., Lynch, H.J. and Deng, M.H., 1994: "Effect of
+inducing nocturnal serum melatonin concentrations in daytime on sleep, mood, body
+temperature and performance". Proc Nat Acad Sci USA 91(5): 1824-1828.
+Doronin, V.N., Parfentev, V.A., Tleulin, S.Zh,, Namvar, R.A., Somsikov, V.M., Drobzhev, V.I. and
+Chemeris, A.V., 1998: "Effect of variations of the geomagnetic field and solar activity on
+human physiological indicators". Biofizika 43(4): 647-653.
+Dugovic, C., Leyson, J.E. and Wauquier, A., 1991: "Serotonin and sleep in the rat: the role of
+5HT2 receptors". In Serotonin and sleep disorder, Ed C. Idzikowski and P.J. Cowen, Publ.
+Wrightson Biomedical Publishing Co. Petersfield, U.K.
+Elliot, W.H. and Elliot, D.C., 1997: "Biochemistry and molecular biology". Publ. Oxford University
+Press, Oxford.
+Feychting, M., Schulgen, G., Olsen J.H. and Ahlbom, A., 1995: "Magnetic fields and childhood
+cancer- a poled analysis of two Scandinavian studies". European J of Cancer, 12: 20352039.
+Feychting, M., Floderous, B. and Ahlbom, A., 2000: "Parental occupational exposure to magnetic
+fields and childhood cancer (Sweden)". Cancer Causes Control 11(2): 151-156.
+Frey, A.H., 1995: "On the nature of electromagnetic field interactions with biological systems".
+Publ. Springer-Verlag, New York and R.G. Landes Co, Austin.
+Garcia-Maurino, S., Pozo, D., Carrillo-Vico, A., Calvo, J.R. and Guerrero, J.M., 1999: "Melatonin
+activates Th1 lymphocytes by increasing IL-12 production". Life Sci 65(20): 2143-2150.
+Gavalas-Medici, R. and Day-Magdaleno, S.R., 1976: "Extremely low frequency, weak electric
+fields affect schedule controlled behaviour of monkeys". Nature (London) 261: 256-258.
+Ghione, S., Mezzasalma, L., Del Seppia, C. and Papi, F., 1998: "Do geomagnetic disturbances of
+solar origin affect arterial blood pressure?". J. Hum Hypertension, 12(11): 749-754.
+Graham, C., Cook, M.R., Cohen, H.D. and Gerkovich, M.M., 1994: "A dose response study of
+human exposure to 60Hz electric and magnetic fields". Bioelectromagnetics 15: 447-463.
+Graham, C., Cook, M.R., Sastre, A., Riffle, D.W. and Gerkovich, M.M., 2000: "Multi-night
+exposure to 60 Hz magnetic fields: effects on melatonin and its enzymatic metabolite". J
+Pineal Res 28(1): 1-8.
+Guardiola-Lemaitre, B., 1998: "Development of animal models for the chronobiotics of melatonin
+analogs". Therapie 53(5): 439-444.
+
+44
+
+Gurfinkel' IuI, Liubimov, VV., Oraevskii, V.N., Parfenova, L.M. and Iur'ev, A.S., 1995: "The effect
+of geomagnetic disturbances in capillary blood flow in ischemic heart disease patients"
+Biofizika 40(4): 793-799.
+Haigh, J.D., 1996: "The impact of solar variability on climate". Science 272: 981-984.
+Hamburger, S., Logue, J.N., and Sternthal, P.M., 1983: "Occupational exposure to non-ionizing
+radiation and an association with heart disease: an exploratory study". J Chronic Diseases
+36: 791-802.
+Hamer, J.R., 1965 :Biological entrainment of the human brain by low frequency radiation". NSL
+65-199, Northrop Space Labs.
+Hamer, J.R., 1969: "Effects of low level, low frequency electric fields on time judgement". Fifth
+Intern. Biometeorological Congress, Montreaux, Switzerland.
+Hardell, L., Holmberg, B., Malker, H., and Paulsson, L.E., 1995: "Exposure to extremely low
+frequency electromagnetic fields and the risk of malignant diseases--an evaluation of
+epidemiological and experimental findings". Eur. J. Cancer Prevention, Suppl 1:3-107.
+Hargreaves J.K., 1992 "The Solar-terrestrial environment", Publ. Cambridge University Press,
+Cambridge, United Kingdom.
+Hicks, N., Zack, M., Caldwell, G.G., Fernbach, D.J. and Falletta, J.M., 1984: "Childhood cancer
+and occupational radiation exposure in parents". Cancer 53(8): 1637-1643.
+Hunt, A.E., Al-Ghoul, W.M., Gillette, M.U. and Dubocovich, M.L., 2001: "Activation of MT(2)
+melatonin receptors in rat suprachiasmatic nucleus phase advances the circadian clock".
+Am J Physiol Cell Physiol 280(1): C110-118.
+Ishida, N., Kaneka, M. and Allada, R., 1999: "Biological clocks". Proc Nat Acad Sci USA 96: 88198820.
+Jenrow,, K.A., Smith, C.H. and Liboff, A.R., 1996: "Weak extremely low frequency magnetic
+fields-induced regeneration anomalies in Planarian Dugesia tigrina". Bioelectromagnetics
+17: 467-474.
+Johansen, C., Kock-Henriksen, N., Rasmussen, S. and Olsen, J.H., 1999: "Multiple Sclerosis
+among utility workers". Neurology 52: 1279-1282.
+Johansen, C., 2000: "Exposure to electromagnetic fields and risk of central nervous system
+disease in utility workers". Epidemiology 11(5): 539-543.
+Johnson, C.C. and Spitz, M.R., 1989: "Childhood nervous system tumors: an assessment of risk
+associated with parental occupations involving the use, repair or manufacture of electrical
+and electronic equipment". Int J Epidemiol 18(4): 756-762.
+Juutilainen, J., Matilainen, P., Saarikoski, S., Laara, E. and Suonio, S., 1993: "Early pregnancy
+loss and exposure to 50 Hz magnetic fields". Bioelectromagnetics, 14(3): 229-236.
+Juutilainen, J., Stevens, R.G., Anderson, L.E., Hansen, N.H., Kilpelainen, M., Laitinen, J.T.,
+Sobel, E. and Wilson, B.W., 2000: "Nocturnal 6-hydroxymelatonin sulphate excretion in
+female workers exposed to magnetic fields". J Pineal Res 28(2): 97-104.
+
+45
+Kallen, B., Malmquist, G., and Moritz, U., 1982: “Delivery Outcome among Physiotherapists in
+Sweden: is Non-ionizing Radiation a Fetal Hazard? Archives of Environmental Health,
+37(2): 81-84.
+Kandel, E.R., Schwartz, J.H. and Jessell, J.M., 2000: "Principles of Neural Science". Publ.
+McGraw-Hill, New York.
+Karasek, M., Woldanska-Okonska, M., Czernicki, J., Zylinska, K. and Swietoslawski, J., 1998:
+"Chronic exposure to 2.9 mT, 40 Hz magnetic field reduces melatonin concentrations in
+humans". J. Pineal Rese., 25(4): 240-244.
+Karlov, V.A., Selitskii, G.V. and Sorokina, N.D., 1996: "The action of a magnetic field on the
+bioelectrical activity of the brain in healthy subjects and epilepsy patients". Zh Nevropatol
+Psikhiatr Im S S Korsakova 96(2) :54-58.
+Kaczmarek, L.K. and Adey, W.R., 1973: "The efflux of 45 Ca 2+ and 3H-gamma-aminobutyric
+acid from the cat cerebral cortex". Brain Res 63: 331-342.
+Kay, R.W., 1994: "Geomagnetic Storms: association with incidence of depression as measured
+by hospital admission". Br J Psychiatry 164(3): 403-409.
+Kerut, E.K., McKinnie, J.J. and Giles, T.D., 1999: "Modern evaluation of the hypertensive patient:
+autonomic tone in cardiovascular disease and assessment of heart rate variability". Blood
+Press Monit 4(Suppl 1): S7-S14.
+King, G.A.M. and Lawden, M.D., 1962: "Variations of some ionospheric parameters over a solar
+cycle". J Atmos Terrest Physics 24: 565-568.
+Knox, E.G., Armstrong, E., Lancashire, R., Wall, M. and Hayes, R., 1979: "Heart attacks and
+geomagnetic activity". Nature 281 (18 October 1979): 564-565.
+Kolodynski, A.A. and Kolodynska, V.V., 1996: “Motor and psychological functions of school
+children living in the area of the Skrunda Radio Location Station in Latvia”. The Science of
+the Total Environment, Vol 180, pp 87-93.
+Komarov, F.I., Oraevskii, V.N., Sizov, Iu.P., Tsirul'nik, L.B., Kanoidi, Kh.D., Ushakov, I.B.,
+Shalimov, P.M., Kimlyk, M.V., and Glukhov,.D.V., 1998: "Heliogeophysical factors and
+aviation accidents". Biofizika, 43(4): 742-745.
+König, H.L., 1974a: “ELF and VLF signal properties: physical characteristics". In “ELF and VLF
+electromagnetic field effects”, M.A. Persinger Ed, Publ. Plenum Press, New York.
+König, H.L., 1974b: “Behavioural changes in human subjects associated with ELF electric fields”.
+In “ELF and VLF electromagnetic field effects”, M.A. Persinger Ed, Publ. Plenum Press,
+New York.
+Kopanev, V.I., Efimenko, G.D. and Shakula, A.V., 1979: "Biological effect of a hypogeomagnetic
+environment on an organism". Biol Bull Acad Sci USSR 6(3): 289-298.
+Larsen, A.I., Olsen, J., and Svane, O., 1991: "Gender specific reproductive outcome and
+exposure to high frequency electromagnetic radiation among physiotherapists". Scand. J.
+Work Environ. Health, Vol.17, pp 324-329.
+Maestroni, G.J., 1995: "T-Helper-2 Lymphocytes as peripheral target of melatonin signalling". J
+Pineal Res 18: 84-89.
+
+46
+
+Makarov, L.M., 1998: "Role of geomagnetic field in development of biorhythm profile of venticular
+arrhythmia onset". Klin. Med. (Mosk), 76(6):31-35.
+Makarova, I.I., 2000: "Geomagnetic effects on cortico-caudal mechanisms of auditory stimuli
+processing in cats". Aviakosm Ekolog Med 34(3) :47-51.
+Malin, S. R.C. and Srivastava, B.J., 1979: "Correlation between heart attacks and magnetic
+activity". Nature 277 (22 Feb 1979): 646-648.
+Malmivuo, J. and Plonsey, R., 1995: "Bioelectromagnetism: Principles and applications of
+bioelectric and biomagnetic fields". Publ. Oxford Univ. Press, Oxford, England.
+Matsushita, S. and Campbell, W.H., 1967: "Physics of geophysical phenomena". Academic Press,
+New York.
+Michon, A., Koren, S.A. and Persinger, M.A., 1996: "Attempts to simulate the association between
+geomagnetic activity and spontaneous seizures in rats using experimentally generated
+magnetic fields". Percept Mot Skills 82(2): 619-626.
+Mikulecky, M., Moravcikova, C. and Czanner, S., 1996: "Lunisolar tidal waves, geomagnetic
+activity and epilepsy in the light of multivariate coherence". Braz J Med Biol Res 29(8):
+1069-1072.
+Mitre, A.P., 1974: "Ionospheric effects of solar flares". Publ. D. Reidel Publi, Co. Boston, U.S.A.
+Naitoh, N., Watanabe, Y., Matsumura, K., Murai, I., Kobayashi, K., Imai-Matsumura, K., Ohtuka,
+H., Takagi, K., Miyake, Y., Satoh, K. and Watanabe, Y., 1998: "Alteration by maternal
+pinealectomy of fetal and neonatal melatonin and dopamine D1 receptor binding in the
+suprachaismatic neclei". Biochem Biophys Res Commun 253(3): 850-854.
+Nicholaenka, A.P., Hayakawa, M. and Hobara, Y., 1996: "Temporal variations of the global
+lightning activity deduced from the Schumann resonance data". J. Atmosph Terrest
+Physics 58(15): 1699-1709.
+Nicolet, M. and Aikin, A.C., 1960: "The formation of the D region of the ionosphere". J.
+Geophysical Research, 65: 1469-1483.
+Nikolaev, Y.S., Rudakov, Y.Y., Mansurov, S.M. and Mansurova, L.G., 1976: "Interplanetary
+magnetic field sector structure and disturbances of the central nervous system activity".
+Reprint N 17a, Acad. Sci USSR, 29pp, IZMIRAN, Moscow.
+Novikova, K.F. and Ryvkin, B.A., 1977: "Solar activity and cardiovascular diseases". In "Effects of
+solar Activity on the Earth's Atmosphere and Biosphere". M.N.. Gnevyshev and A.I. Ol' ,
+eds. Pp 184-200, Acad. Sci. USSR, English trans, Israel Prog. Sci. Trans, Jerusalem.
+O'Connor, R.P. and Persinger, M.A., 1996: Increases in geomagnetic activity associated with
+increases in thyroxine levels in a single patient: implications for melatonin levels".
+International Journal of Neuroscience, 88(3-4): 243-247.
+O'Connor, R.P. and Persinger, M.A., 1997: "Geophysical variables and behavior LXXXII. Strong
+association between sudden infant death syndrome and increments of global geomagnetic
+activity - possible support for the melatonin hypothesis". Percept. Mot. Skills, 84(2): 395402.
+
+47
+O'Connor, R.P. and Persinger, M.A., 1999: "Geophysical variables and behavior: LXXXV. Sudden
+infant death, bands of geomagnetic activity, and pcl (0.2-5 Hz) geomagnetic
+micropulsations". Percept Mot Skills, 88(2): 391-397.
+Olshan, A.F., De Roos, A.J., Teschke, K., Neglia, J.P., Stram, D.O., Pollock, B.H. and
+Castleberry, R.P., 1999: "Neuroblastoma and parental occupation". Cancer Causes
+Control 10(6): 539-549.
+Oraevskii, V.N., Kuleshova, V.P., Gurfinkel', Iu.F., Guseva, A.V., and Rapoport, S.I., 1998a:
+"Medico-biological effect of natural electromagnetic variations". Biofizika, 43(5): 844-888.
+Oraevskii, V.N., Breus, T.K., Baevskii, R.M., Rapoport, S.I., Petrov, V.M., Barsukova, Zh.V.,
+Gurfinkel' IuI, and Rogoza, A.T., 1998b: "Effect of geomagnetic activity on the functional
+status of the body". Biofizika 43(5): 819-826.
+Osborne, N.N., 1994: "Serotonin and melatonin on the iris/ciliary processes and their involvement
+in intraocular pressure". Acta Neurobiolo Exp (Warsz) 54 Suppl: 57-64.
+Otto, W., Hempel, W.E., Wagner, C.U. and Best, A., 1982: "Various periodical and aperiodical
+variations of heart infarct mortality in the DRG". [In German], Z Gesamte Inn Med 37(22):
+756-763.
+Ouellet-Hellstrom, R. and Stewart, W.F., 1993: “Miscarriages among Female Physical Therapists
+who report using radio- and microwave- frequency electromagnetic radiation.” American J.
+of Epidemiology, 138 (10): 775-86.
+Pang, S.F., Li, L., Ayre, E.A., Pang, C.S., Lee, P.P., Xu, R.K., Chao, P.H., Yu, Z.H. and Shiu,
+S.Y., 1998: "Neuroendocrinology of melatonin in reproduction: recent developments". J
+Chem Neuroanat 14(3-4): 157-166.
+Perry, F.S., Reichmanis, M., Marino, A. and Becker, R.O., 1981: "Environmental power-frequency
+magnetic fields and suicide". Health Phys 41(2): 267-277.
+Persinger, M.A., Richards, P.M. and Koren, S.A., 1994: "Differential ratings of pleasantness
+following right and left hemispheric application of low energy magnetic fields that stimulate
+long-term potentiation". Int J Neurosci 79(3-4): 191-197.
+Persinger, M.A., 1995: "Sudden unexpected death in epileptics following sudden, intense,
+increases in geomagnetic activity: prevalence of effect and potential mechanisms". Int J
+Biometeorol 38(4):180-187.
+Persinger, M.A., 1995a: "Geophysical variables and behavior: LXXIX. Overt limbic seizures are
+associated with concurrent and premidscotophase geomagnetic activity: synchronization
+by prenocturnal feeding". Percept Mot Skills 81(1): 83-93.
+Persinger, M.A. and Richards, P.M., 1995: "Vestibular experiences of humans during brief periods
+of partial sensory deprivation are enhanced when daily geomagnetic activity exceeds 1520 nT". Neurosci Lett 194(1-2): 69-72.
+Persinger, M.A., 1997: "Geomagnetic variables and behavior: LXXXIII. Increased geomagnetic
+activity and group aggression in chronic limbic epileptic male rats". Percept Mot Skills 85(3
+Pt 2):1376-1378.
+Persinger, M.A., 1999: "Wars and increased solar-geomagnetic activity: aggression or change in
+intraspecies dominance?". Percept Mot Skills 88(3 Pt 2): 1351-1355.
+
+48
+Petrichuk, S.V., Faitinova, A.A., Shishchenko, V.M. and Nartsissov, R.P., 1992: "Modulation of
+energy metabolism of lymphocytes in children by natural physical factors". Biofizika 37(4):
+720-728.
+Petrichuk, S.V., Shishchenko, V.M., Dukhova, Z.N., Gaitinova, A.A., Nartsissov, R.P. and Sizov,
+IuP., 1998: "Effect of natural physical factors of the environment on the condition of
+pregnant women with normal pregnancy". Biofizika 43(5): 853-856.
+Pfluger, D.M. and Minder, C.E., 1996: "Effects of 16.7 Hz magnetic fields on urinary 6hydroxymelatonin sulfate excretion of Swiss railway workers". J Pineal Research 21(2):
+91-100.
+Pikin, D.A., Gurginkel', Iu.I. and Oraevskii, V.N., 1998: "Effect of geomagnetic disturbances on the
+blood coagulation system in patients with ischemic heart disease and prospects for
+correction medication". [In Russian]. Biofizika, 43(4): 617-622.
+Polk, C., 1982: "Schumann Resonances". In CRC Handbook of Atmospherics, Vol 1, pp 111-177,
+Polikarpov, N.A., 1996: "The relationship of the indices of solar-geomagnetic activity and the
+autofluctuations in the biological properties of Staphylococcus aureus 209 subcultures in
+vitro". [Article in Russian] Zh Mikrobiol Epidemiol Immunobiol (1):27-30.
+Poon, A.M., Liu, Z.M., Pang, C.S., Brown, G.M. and Pang, S.F., 1994: "Evidence for a direct
+action of melatonin on the immune system". Biol Signals 3(2): 107-117.
+Ptitsyna, N.G., Villoresi, G., Kopytenko, Y.A., Kudrin, V.A., Tyasto, M.I., Kopytenko, E.A., Iucci,
+N., Voronov, P.M.. and Zaitsev, D.B., 1996" "Coronary heart diseases: assessment of
+risck associated with work exposure to ultalow-frequency magnetic fields".
+Bioelectromagnetics 17(6): 436-444.
+Rajaram, M. and Mitra, S., 1981: "Correlation between convulsive seizure and geomagnetic
+activity". Neurosci. Lett., 24(2): 187-191.
+Rapoport, S.I., Malinovskaia, N.K., Oraevskii, V.N., Komarov, F.I., Nosovskii, A.M. and
+Vetterberg, L., 1997: "Effects of disturbances of natural magnetic field of the Earth on
+melatonin production in patients with coronary heart disease". Klin Med (Mosk) 75(6): 2426.
+Rapoport, S.I., Blodypakova, T.D., Malinovskaia, N.K., Oraevskii, V.N., Meshcheriakova, S.A.,
+Breus, T.K. and Sosnovskii, A.M., 1998: "Magnetic storms as a stress factor". Biofizika
+43(4): 632-639.
+Rapoport, S.I., Shalalova, A.M., Oraevskii, V.N., Malinovskaia, N.K., and Vetterberg, L., 2001:
+"Melatonin production in hypertonic patients during magnetic storms". Ter Arkh 73(12): 2933.
+Raps, A., Stoupel, E., and Shimshoni, M., 1991: "Solar activity and admissions of psychiatric
+inpatients, relations and possible implications of seasonality". Isr. J. Psychiatry Relation.
+Sci., 28(2): 50-59.
+Rawer, K. 1984a: "Modelling of neutral and ionized atmospheres." In: Encyclopaedia of Physics,
+Vol 49/7. Springer, New York, 223-250.
+Resch, J., 1995: "Geographic distribution of multiple sclerosis and comparison with geophysical
+values". Soz Praventivmed 40(3): 161-171.
+
+49
+Reiter, R.J., 1994: “Melatonin suppression by static and extremely low frequency electromagnetic
+fields: relationship to the reported increased incidence of cancer”. Reviews on
+Environmental Health. 10(3-4): 171-86, 1994.
+Reiter, R.J., 1995: "Oxidative processes and antioxidative defense mechanisms in the aging
+brain". FASEB J 9(7): 526-533.
+Riabykh, T.P. and Bodrova, N.B., 1992: "Correlation of the probability of occurrence of breast
+neoplasms with solar activity". Biofizika, 37(4): 710-715.
+Reiter, R.J. and Robinson, J, 1995: "Melatonin: Your body's natural wonder drug". Publ. Bantam
+Books, New York.
+Renton, C.M. and Persinger, M.A., 1997: "Elevations of complex partial epileptic-like experiences
+during increased geomagnetic activity for women reporting "pre-menstral syndrome".
+Percept. Mot. Skills, 86(1):240-242.
+Robinette, C.D., Silverman, C. and Jablon, S., 1980: “Effects upon health of occupational
+exposure to microwave radiation (radar)”. American Journal of Epidemiology, 112(1):3953, 1980.
+Robson, J., 1967: "Basic Tables in Physics". Publ. McGraw-Hill Book Company, New York.
+Rosen, L.A., Barber, I. and Lyle D.B., 1998: "A 0.5 G, 60 HZ magnetic field suppresses melatonin
+production in pinealocytes". Bioelectromagnetics 19: 123-127.
+Salo, T.M., Jula, A.M., Fiha, J.S., Kantola, I.M., Pelttari, L., Rauhala, E., Metsala, T.M., Jalonen,
+J.O., Viopoi-Pulkki, L.M. and Viikari, J.S., 2000" :Comparison of autonomic withdrawal in
+men with onstructive sleep apnea syndrome, systemic hypotension, and neither
+condition". Am J Cardiol 85(2):232-238.
+Sandodze V.I., Svanidze, I.K. and Didimova, E.V., 1995: "Effects of hypomagnetic fields on
+motility of the cilia of ependymal cells in vivo". Radiats Biol Radioecol 35(1): 19-22.
+Sandyk, R. 1992: "Alpha rhythm and the pineal gland". Int J Neurosci 63(3-4): 221-227.
+Sandyk, R. and Anninos, P.A., 1992a: "Attenuation of epilepsy with application of external
+magnetic fields: a case report". Int J Neurosci 66(1-2): 75-85.
+Sandyk, R. and Anninos, P.A., 1992b: "Magnetic fields alter the circadian periodicity of seizures".
+Int J Neurosci 63 (3-4): 265-274.
+Sandyk, R., 1994: "Improvement in word-fluency performance in Parkinson's disease by
+administration of electromagnetic fields". Int. J Neurosci 77(1-2): 23-46.
+Sandyk R., 1996: "Brief communication: electromagnetic fields improve visuospatial performance
+and reverse agraphia in a Parkinsonian patient". Int J Neurosci. 87(3-4): 209-17.
+Satori, G., 1996: "Monitoring Schumann Resonances - I Methodology". J. Atmos. Terrest. Physics
+58(13): 1475-1481.
+Sandyk R, 1997: "Immediate recovery of cognitive functions and resolution of fatigue by treatment
+with weak electromagnetic fields in a patient with multiple sclerosis". Int J Neurosci. 90(12):59-74.
+
+50
+Sandyk, R., 1997a: "Speech impairment in Parkinson's disease is improved by transcranial
+application of electromagnetic fields". Int J Neurosci. 92(1-2): 63-72.
+Sandyk, R., 1997b: "Treatment with AC pulsed electromagnetic fields improves the response to
+levodopa in Parkinson's disease". Int J Neurosci. 91(3-4): 189-97.
+Sandyk, R. 1997c: "Reversal of cognitive impairment in an elderly Parkinsonian patient by
+transcranial application of picotesla electromagnetic fields". Int J Neurosci. 91(1-2): 57-68.
+Sandyk, R., 1997d: "Treatment with weak electromagnetic fields restores dream recall in a
+parkinsonian patient". Int J Neurosci. 90(1-2): 75-86.
+Sandyk, R., 1997e: "Treatment with electromagnetic fields improves dual-task performance
+(talking while walking) in multiple sclerosis". Int J Neurosci. 92(1-2): 95-102.
+Sandyk, R., 1997f: "Treatment with electromagnetic fields reverses the long-term clinical course
+of a patient with chronic progressive multiple sclerosis". Int J Neurosci. 90(3-4): 177-85.
+Sandyk, R., 1997g: "Resolution of sleep paralysis by weak electromagnetic fields in a patient with
+multiple sclerosis". Int J Neurosci. 90(3-4): 145-57.
+Sandyk, R., 1997h: "Therapeutic effects of alternating current pulsed electromagnetic fields in
+multiple sclerosis". J Altern Complement Med. 3(4): 365-86.
+Sandyk, R., 1997i: "Role of the pineal gland in multiple sclerosis: a hypothesis". J Altern
+Complement Med. 3(3): 267-90.
+Sandyk, R., 1997j: "Reversal of a visuoconstructional disorder by weak electromagnetic fields in a
+child with Tourette's syndrome". Int J Neurosci. 90(3-4): 159-67.
+Sandyk, R., 1998a: "Reversal of a body image disorder (macrosomatognosia) in Parkinson's
+Disease by treatment with AC pulsed electromagnetic fields". Int J Neurosci. 93(1-2):4354.
+Sandyk, R., 1998b:"Treatment with AC pulsed electromagnetic fields normalizes the latency of the
+visual evoked response in a multiple sclerosis patient with optic atrophy". Int J Neurosci.
+93(3-4): 239-50.
+Sandyk, R., 1998c: "Transcranial AC pulsed applications of weak electromagnetic fields reduces
+freezing and falling in progressive supranuclear palsy: a case report". Int J Neurosci.
+94(1-2): 41-54.
+Sandyk, R., 1999a: "Yawning and stretching induced by transcranial application of AC pulsed
+electromagnetic fields in Parkinson's disease". Int J Neurosci. 97(1-2): 139-45.
+Sandyk, R.,1999b: "AC pulsed electromagnetic fields-induced sexual arousal and penile erections
+in Parkinson's disease". Int J Neurosci. 99(1-4): 139-49.
+Sandyk, R., 1999c: "Treatment with AC pulsed electromagnetic fields improves olfactory function
+in Parkinson's disease". Int J Neurosci. 97(3-4): 225-33.
+Sandyk, R. 1999d: "Impairment of depth perception in multiple sclerosis is improved by treatment
+with AC pulsed electromagnetic fields". Int J Neurosci. 98(1-2): 83-94.
+Sastre, A., Cook, M.R. and Graham, C., 1998: "Nocturnal exposure to intermittent 60 Hz magnetic
+fields alters human cardiac rhythm". Bioelectromagnetics 19: 98-106.
+
+51
+
+Satori, G., 1996: "Monitoring Schumann Resonances - II Daily and Seasonal frequency
+variations". J. Atmos. Terrest. Physics 58(13): 1483-1488.
+Savitz, D.A,, Loomis, D.P. and Tse, C.K., 1998: "Electrical occupations and neurodegenerative
+disease: analysis of U.S. mortality data". Arch Environ Health 53(1): 71-74.
+Savitz, D.A., Liao, D., Sastre, A., Kleckner, R.C. and Kavet, R., 1999: "Magnetic field exposure
+and cardiovascular disease mortality among electric utility workers". Am. J. Epid. 149(20:
+135-142.
+Savitz, D.A., Liao, D., Sastre, A., Kleckner, R.C. and Kavet, R., 1999a: Re: "Magnetic field
+exposure and cardiovascular disease mortality among electric utility workers". The authors
+reply. Am. J. Epid. 150(11): 1258-1259.
+Savitz, D.A., Cai, J., Van Wijngaarden, E., Loomis, D., Mihlan, G., Dufort, V., Kleckner, R.C.,
+Nylander-French, L. Kromhout, H. and Zhou, H., 2000: Am J Indd Med 38(4): 417-425.
+Schneggenburger, R. and Neher, E., 2000: "Intracellular calcium dependence of transmitter
+release rates at a fast central synapse". Nature 406(6798): 889-93.
+Schumann, W.O., 1952: "Uber de strahlundslosen Eigenschwingungen einer leitenden Kugel, die
+von einer Luftschicht und einer Ionospharenhulle umgeben ist". Z. Naturforsch 7a 149.
+Schumann, W.O. and König, H.L., 1954: " Uber die beobachtung von atmospherics bei geringsten
+frequenzen". Naturwissenschaften, 41: 183.
+Schwartz, J.L., House, D.E., and Mealing, A.R., 1990: “Exposure of frog hearts to CW or
+amplitude modulated VHF fields: selective efflux of calcium ions at 16 Hz.”
+Bioelectromagnetics 11: 349-358.
+SEAMIC 1997: "Recent trends in health statistics in Southeast Asia 1974-1993". Publication No.
+77, Southeast Asian Medical Information Center, Tokyo.
+Selitskii, G.V., Karlov, V.A. and Sorokina, N.D., 1999: "The influence of hypogeomagnetic field on
+the bioelectric activity of the brain in epilepsy". Zh. Nevrol. Psikhiatr. Im. S.S. Korsakova.,
+99(4): 48-50.
+Sentman, D.D. and Fraser, B.J., 1991: "Simultaneous observations of Schumann Resonances in
+California and Australia: Evidence for intensity modulation by local height of the D
+Region". J. Geophysical Res. 96(A9): 15973-15984.
+Sitar, J., 1990: "The causality of lunar changes on cardiovascular mortality". [In Czech.] Cas. Lek.
+Cesk. 129(45):1425-1430.
+Smulevich, V.B., Solionova, L.G. and Belyakova, S.V., 1999: "Parental occupation and other
+factors and cancer risk in children II". Int J Cancer 83(60: 718-722,
+Shumilov, O.I., Kasatkina, E.A. and Raspopov, O.M., 1998: "Heliomagnetic activity and level of
+extreme situations at the Polar cap" [In Russian] Biofizika 43(4): 670-676.
+Sobel, E., Davanipour, Z., Sulkava, R., Erkinjuntti, T., Wikstrom, J., Henderson, V.W., Bucjwalter,
+G., Bowman, D. and Lee, P-J., 1995: "Occupations with exposure to electromagnetic
+fields: a possible risk factor for Alzheimer’s Disease". Am J Epidemiol 142(5): 515-524.
+
+52
+Sobel, E., Dunn, M., Davanipour, D.V.M., Qian, M.S. and Chui, M.D., 1996: "Elevated risk of
+Alzheimer’s disease among workers with likely electromagnetic field exposure. Neurology
+47(12): 1477-1481.
+Sparks, D.L. and Hunsaker, J.C., 1988: "The pineal gland in sudden infant death syndrome:
+preliminary observations". J Pineal Res 5: 111-118.
+Spitz, M.R. and Johnson, C.C., 1985: "Neuroblastoma and parental occupation. A case-control
+analysis". Am J Epidemiol 121(6): 924-929.
+Sprott, J.C., 1990: "Numerical recipes: Routines and examples in Basic". Publ. Cambridge
+University Press, Cambridge.
+Stark, K.D.C., Krebs, T., Altpeter, E., Manz, B., Griol, C. and Abelin, T., 1997: "Absence of chronic
+effect of exposure to short-wave radio broadcast signal on salivary melatonin
+concentrations in dairy cattle". J Pineal Research 22: 171-176.
+Stewart, W., 2000: "Mobile phones and health" Independent Expert Group on Mobile Phones,
+(IEGMP) U.K. Parliamentary Enquiry, London.
+Stoupel, E., Hod, M., Shimshoni, M., Friedman, S., Ovadia, J. and Keith, L., 1990: "Monthly
+cosmic activity and pregnancy induced hypertension". Clin Exp Obstet Gynecol 17(1): 712.
+Stoupel, E., Martfel, J. and Rotenberg, Z., 1991: "Admissions of patients with epileptic seizures
+(E) and dizziness (D) related to geomagnetic and solar activity levels: differences in
+female and male patients". Med. Hypothesis, 36(4): 384-388.
+Stoupel, E. and Shimshoni, M., 1991: "Hospital cardiovascular deaths and total distribution of
+deaths in 180 consecutive months with difference cosmic physical activity: a correlation
+study (1974-1988)". Int. J. Biometeorology 35(1): 6-9.
+Stoupel, E., 1993: "Sudden cardiac deaths and ventricular extrasystoles on days of four levels of
+geomagnetic activity". J. Basic Physiol. Pharmacol., 4(4): 357-366.
+Stoupel, E., Goldenfeld, M., Shimshoni, M. and Siegel, R., 1993: "Intraocular pressure (IOP) in
+relation to four levels of daily geomagnetic and extreme yearly solar activity". Int. J.
+Biometeorology, 37(1): 42-45.
+Stoupel, E., Martfel, J.N., and Rotenberg, Z., 1994: "Paroxysmal atrial fibrulation and stroke
+(cerebrovasular accidents) in males and females above and below the age 65 on days of
+different geomagnetic activity levels". J. Basic. Clin. Physiol. Pharmacol., 5(3-4): 315-329.
+Stoupel, E., Abramson, E., Sulkes, J., Martfel, J., Stein, N., Handelman, M., Shimshoni, M.,
+Zadka, P. and Gabbay, U., 1995a: "Relationship between suicide and myocardial
+infarction with regard to changing physical environmental conditions". Int J Biometeorol
+38(4): 199-203
+Stoupel, E., Petrauskiene, J., Kalediene, R., Abramson, E. and Sulkes, J., 1995b: "Clinical
+cosmobiology: the Lithuanian study 1990-1992". Int. J. Biometeorology, 38(4): 204-208.
+Stoupel, E., Petrauskiene, J., Kalediene, R., Domarkiene, S., Abramson, E. and Sulkes, J., 1996:
+"Distribution of deaths from ischemic heart disease and stroke. Environmental and aging
+influences in men and women". J. Basic. Clinical Physiol. Pharmacol., 7(4): 303-319.
+
+53
+Stoupel, E., Abramson, J., Domarkiene, S., Shimshoni, M. and Sulkes, J., 1997: "Space proton
+flux and the temporal distribution of cardiovascular deaths". Int J Biometeorol 40(2): 113116.
+Stoupel, E., Petrauskiene, J., Abramson, E., Kalediene, R., Israelovich, P. and Sulkes, J., 1999:
+"Relationship between deaths from stroke and ischemic heart disease: Environmental
+implications". J. Basic. Clinical Physiol. Pharmacol., 10(2): 135-145.
+St Pierre, L. and Persinger, M.A., 1998: "Geophysical variables and behavior: LXXXIV.
+Quantitative increases in group aggression in male epileptic rats during increases in
+geomagnetic activity". Percept. Mot. Skills, 86(3 Pt2):1392-1394.
+Svanidze, I.K., Sandodze, V.Ia., Didimova, E.V., Chkhikvadze, T.I., Portnoi, V.N. and Razdol'skii,
+A.S., 1994: "The effect of hypo- and hypermagnetic fields on the motor activity of the
+ciliary apparatus of the ependymal cells". [Article in Russian]. Radiats. Biol. Radioecol.,
+34(1): 100-104 .
+Szmigielski, S., 1996: “Cancer morbidity in subjects occupationally exposed to high frequency
+(radiofrequency and microwave) electromagnetic radiation”. Science of the Total
+Environment, Vol 180, 1996, pp 9-17.
+Tambiev, A.E., Medvedev, S.D. and Egorova, E.V., 1995: "The effect of geomagnetic
+disturbances on the functions of attention and memory". [In Russian]. Aviakosm. Ekolog.
+Med., 29(3): 43-45.
+Tang, Y. and Othmer, H.G., 1995: "Frequency encoding in excitable systems with applications to
+calcium oscillations". Proc Natl Acad Sci USA, 92(17): 7869-7873.
+Taskinen, H., Kyyronen, P., and Hemminki, K., 1990: “Effects of ultrasound, shortwaves and
+physical exertion on pregnancy outcome in physiotherapists”. J. of Epidemiology and
+Community Health, 44:196-210.
+Tell, R.A. and Mantiply, E.D., 1980: "Population exposure to VHF and UHF broadcast radaition in
+the United States". Proc IEEE 68(1): 4-10.
+Tran, A. and Polk, C., 1979: "Schumann resonances and electrical conductivity of the atmosphere
+and lower ionosphere- I. Effects of conductivity at various altitudes on resonance
+frequencies and attenuation". J Atmos Terrest Physics 41: 1241-1248.
+Thomas, L., Drew, J.E., Abramovich, D.R. and Williams, L.M., 1998: "The role of melatonin in the
+human fetus". Int J Mol Med 1(3): 539-543.
+Titheridge, J.E., 1962: "The electron density in the lower ionosphere". J Atmosph and Terr Phys
+24: 269-282
+Tunyi, I. And Tesarova, O., 1991: "Suicide and geomagnetic activity". [In Slovak]. Soud. Lek.
+36(1-2): 1-11.
+Tynes, T., Reitan, J.B. and Andersen, A., 1994: "Incidence of cancer among workers in
+Norwegian hydroelectric power companies", Scan J Work Environ Health 20(5): 339-344.
+Usenko, G.A., 1992: "Psychosomatic status and the quality of the piloting in fliers during
+geomagnetic disturbances". Aviakosm. Ekolog. Med., 26(4): 23-27.
+Vagero, D., Ahlbom, A., Olin, R. and Sahlsten, S., 1985: "cancer morbidity among workers in the
+telecommunication industry". Br J Ind Med 42: 191-195.
+
+54
+
+Van Wijngaarden, E., Savitz, D.A., Kleckner, R.C., Cai, J. and Loomis, D., 2000: "Exposure to
+electromagnetic fields and suicide among electric utility workers: a nested case-control
+study". Occup Environ Med 57: 258-263.
+Vanecek, J., 1998: "Cellular mechanisms of melatonin action". Physiol Rev 78(3): 687-721.
+Vaughan, T.L., Daling, J.R. and Starzyk, P.M., 1984: "Fetal death and maternal occupation". J.
+Occup. Med. 676-678.
+Verge, D. and Calas, A., 2000: "Serotoninergic neurons and serotonin receptors: gains from
+cytochemical approaches". J Chem Neuroanat 18(1-2): 41-56.
+Verkasalo, P.K., Kaprio, J., Varjonen, J., Romanov, K., Heikkila, K., and Koskenvuo, M., 1997:
+"Magnetic fields of transmission lines and depression". Am. J. Epidemiology, 146(12):
+1037-45.
+Vignati, M. and Giuliani, L., 1997: “Radiofrequency exposure nerar high-voltage lines”.
+Environmental Health Perspectives, 105 (Suppl 6): 1569-1573.
+Villoresi, G., Ptitsyna, N.G., Tiasto, M.I. and Iucci, N., 1998: "Myocardial infarct and geomagnetic
+disturbances: analysis of data on morbidity and mortality". [In Russian]. Biofizika, 43(4):
+623-632.
+Viswanathan, M., Laitinen, J.T. and Saavedra, J.M., 1993: "Vascular melatonin receptors". Biol
+Signals 2(4): 221-227.
+Vriend, J., Borer, K.T. and Thliveris, J.A., 1987: "Melatonin, its antagonism of thyroxine's
+antisomatotrophic activity in male Syrian hamsters". Growth 51(1): 35-43.
+Wang, S.G. 1989: "5-HT contents change in peripheral blood of workers exposed to microwave
+and high frequency radiation". Chung Hua Yu Fang I Hsueh Tsa Chih 23(4): 207-210.
+Walleczek, J, 1992: "Electromagnetic field effects on cells of the immune system: the role of
+calcium signalling". FASEB J 6(13): 3177-3185.
+Watanabe, Y., Hillman, D.C.,, Otsuka, K., Bingham, C., Breus, T.K., Cornelissen, G. and Halberg,
+F., 1994: "Cross-spectral coherence between geomagnetic disturbance and human
+cardiovascular variables at non-societal frequencies". Chronobiologia 21(3-4):265-272.
+Wertheimer, N, and Leeper, E., 1986: "Possible effects of electric blankets and heated waterbeds
+on fetal development". Bioelectromagnetics 7:13-22.
+Wever, R., 1967: "Uber die Beeinflussung der circadianen Periodik ees Menschen durch
+schwache elektromagnetische Felder". Z. vergl Physiol 56: 111-128.
+Wever, R., 1968: "Einfluss schwacher elektro-magnetischer Felder auf die circadiane Periodik des
+Menschen". Naturwissenschaften 55: 29-32.
+Wever, R., 1973: "Human circadian rhythms under the influence of weak electric fields and
+different aspects of these studies". Int. J. Biometeorology 17: 227-232.
+Wever, R., 1974: “ELF-effects on Human Circadian Rhythms”, pp 101-144 in “ELF and VLF
+Electromagnetic Field Effects”, Ed. M.A. Persinger, Publ. Plenum Press, New York.
+
+55
+Weydahl, A. Sothern, R.B., Cornelissen, G. and Wetterberg, L., 2001: “Geomagnetic activity
+influences the Melatonin secretion at latitude 70 degrees N”. Biomed Parmacother
+55(Suppli 1): 57s-62s.
+Whitfield, J.F., 1992: "Calcium signals and cancer". Crit Rev Oncolog 3(1-2): 55-90.
+Wilkins, J.R. and Hundley, V.D., 1990: "Parental occupational exposure to electromagnetic fields
+and neuroblastoma in offspring". Am J Epidemiol 131(6): 995-1008.
+Wilkins, J.R. and Wellage, L.C., 1996: "Brain tumor risk in offspring of men occupationally
+exposed to electric and magnetic fields". Scand J Work Environ Health 22(5): 339-345.
+Williams, E.R., 1992: "The Schumann Resonance: A global tropical thermometer". Science 256
+(23 May 1992) 1184-1187.
+Wilson, B.W., Wright, C.W., Morris, J.E., Buschbom, R.L., Brown, D.P., Miller, D.L., SommersFlannigan, R. and Anderson, L.E., 1990: "Evidence of an effect of ELF electromagnetic
+fields on human pineal gland function". J Pineal Research 9(4): 259-269.
+Wood, A.W., Armstrong, S.M., Sait, M.L., Devine, L. and Martin, M.J., 1998: "Changes in human
+plasma melatonin profiles in response to 50 Hz magnetic field exposure". J Pineal
+Research 25(2): 116-127.
+Yaga, K., Reiter, R.J., Manchester, L.C., Nieves, H., Sun, J.H. and Chen L.D., 1993: "Pineal
+sensitivity to pulsed static magnetic fields changes during the photoperiod". Brain Res Bull
+30(1-2): 153-156.
+Zaitseva, S.A. and Pudovkin, M.I., 1995: "Effect of solar and geomagnetic activity on population
+dynamics among residents of Russia". [In Russian]. Biofizika, 40(4): 861-864.
+Zatz, M., 1989: "Relationship between linght, calcium influx and cAMP in the acute regulation of
+melatonin production in cultured chick pineal cells". Brain Res 477: 14-18.
+Zawilska, J.B. and Nowak, J.Z., 1990: "Calcium influx through voltage-sensitive calcium channels
+regulates in vivo serotonin N-acetyltransferase (NAT) activity in hen retina and pineal
+gland". Neurosci Lett 118(1): 17-20.
+Zawilska, J.B., Woldan-Tambor, A. and Nowak, J.Z., 1998: "Effects of calcium ions and
+substances affecting Ca 2+-regulated mechanisms on histamine-evoked stimulation of
+cyclic AMP formation in chick pineal gland". Pol J Pharmacol 50(4-5): 307-314.
+
+
