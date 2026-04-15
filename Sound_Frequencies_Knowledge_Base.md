@@ -1,7 +1,5 @@
 # Sound Frequencies & Human Consciousness Knowledge Base
 
-**Project Goal:** Use sound frequencies to uplift humans into an altered state of vibration.
-
 **Sources:** 29 research documents spanning scientific studies, ancient traditions, frequency analysis, cymatics, shamanic practices, singing bowl therapy, trance states, and gamma entrainment research.
 
 ---
