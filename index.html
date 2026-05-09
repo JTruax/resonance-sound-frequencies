@@ -138,6 +138,49 @@
       background: #fff;
     }
 
+    /* ── MOOD PRESETS ── */
+    #presets-nav {
+      background: var(--bg-base);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: var(--space-md) 0;
+    }
+    #presets-scroll {
+      display: flex;
+      gap: var(--space-sm);
+      padding: 0 var(--space-lg);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    #presets-scroll::-webkit-scrollbar { display: none; }
+
+    .preset-card {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-mid);
+      background: var(--bg-interactive);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+    }
+    .preset-card:hover {
+      background: var(--bg-hover);
+      color: var(--text-primary);
+      border-color: rgba(255,255,255,0.22);
+    }
+    .preset-card .cat-icon {
+      width: 18px; height: 18px;
+      margin-right: 0;
+    }
+
     /* ── CATEGORY NAV ── */
     #category-nav {
       position: sticky;
@@ -788,7 +831,7 @@
       left: 0;
       right: 0;
       bottom: var(--bar-h);
-      z-index: 95;
+      z-index: 160;
       background: var(--bg-surface);
       border-top: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-lg);
@@ -880,6 +923,73 @@
       stroke-linejoin: round;
     }
 
+    #ambiance-active-list {
+      display: none;
+      margin-top: var(--space-md);
+      padding: 4px 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+    #ambiance-active-list.has-rows { display: block; }
+    .ambiance-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .ambiance-row:last-child { border-bottom: none; }
+    .ambiance-row-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--ambiance-accent);
+      flex-shrink: 0;
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    .ambiance-row-name {
+      font-size: 13px;
+      color: var(--text-primary);
+      font-weight: 500;
+      min-width: 80px;
+    }
+    .ambiance-vol {
+      flex: 1;
+      height: 3px;
+      border-radius: 2px;
+      accent-color: var(--ambiance-accent);
+    }
+    .ambiance-vol::-webkit-slider-runnable-track {
+      height: 3px;
+      background: var(--bg-interactive);
+      border-radius: var(--radius-pill);
+    }
+    .ambiance-vol::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--ambiance-accent);
+      margin-top: -4.5px;
+    }
+    .ambiance-vol::-moz-range-track {
+      height: 3px;
+      background: var(--bg-interactive);
+      border-radius: var(--radius-pill);
+    }
+    .ambiance-vol::-moz-range-thumb {
+      width: 12px; height: 12px;
+      border: none;
+      border-radius: 50%;
+      background: var(--ambiance-accent);
+    }
+    .ambiance-row-remove {
+      color: var(--text-muted);
+      font-size: 16px;
+      width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ambiance-row-remove:hover { background: rgba(239,68,68,0.1); color: #ef4444; }
+
     #ambiance-volume-wrap {
       margin-top: var(--space-md);
       display: flex;
@@ -958,6 +1068,11 @@
       <span class="mode-label" id="lbl-layer">Layer</span>
     </div>
   </header>
+
+  <!-- ── MOOD PRESETS ── -->
+  <nav id="presets-nav" aria-label="Mood presets">
+    <div id="presets-scroll" role="tablist"></div>
+  </nav>
 
   <!-- ── CATEGORY NAV ── -->
   <nav id="category-nav" aria-label="Frequency categories">
@@ -1058,6 +1173,7 @@
         <span>Forest</span>
       </button>
     </div>
+    <div id="ambiance-active-list" aria-label="Active ambiance layers"></div>
     <div id="ambiance-volume-wrap">
       <span>Ambiance volume</span>
       <input type="range" id="ambiance-volume" min="0" max="1" step="0.01" value="0.6" aria-label="Ambiance volume">
@@ -1207,6 +1323,51 @@ const CATEGORIES = [
   },
 ];
 
+// Mood presets — curated frequency + ambiance combinations for one-tap setup.
+// Each preset switches to its category, plays its frequency, and starts the
+// listed ambiance sounds at the given volumes.
+const MOOD_PRESETS = [
+  {
+    id: 'sleep',
+    name: 'Deep Sleep',
+    icon: _ico('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'),
+    categoryId: 'deep-sleep',
+    frequencyId: 'ds-2',          // 2 Hz Deep Delta
+    natureMasterVolume: 0.5,
+    ambianceSounds: [{ soundId: 'rain', volume: 0.6 }],
+  },
+  {
+    id: 'focus',
+    name: 'Focus',
+    icon: _ico('<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>'),
+    categoryId: 'focus',
+    frequencyId: 'foc-15',        // 15 Hz Mental Sharpness
+    natureMasterVolume: 0.4,
+    ambianceSounds: [{ soundId: 'forest', volume: 0.5 }],
+  },
+  {
+    id: 'meditate',
+    name: 'Meditate',
+    icon: _ico('<path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>'),
+    categoryId: 'solfeggio',
+    frequencyId: 'sol-528',       // 528 Hz Love Frequency
+    natureMasterVolume: 0.55,
+    ambianceSounds: [{ soundId: 'ocean', volume: 0.7 }],
+  },
+  {
+    id: 'unwind',
+    name: 'Unwind',
+    icon: _ico('<path d="M2 12c1.5 0 1.5-1.5 3-1.5s1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/><path d="M2 17c1.5 0 1.5-1.5 3-1.5s1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/>'),
+    categoryId: 'relaxation',
+    frequencyId: 'rel-10',        // 10 Hz Alpha Peak
+    natureMasterVolume: 0.5,
+    ambianceSounds: [
+      { soundId: 'fire', volume: 0.5 },
+      { soundId: 'wind', volume: 0.3 },
+    ],
+  },
+];
+
 const FREQ_DATA = {
   'deep-sleep': [
     { id: 'ds-2',   hz: 2,   name: 'Deep Delta',           desc: 'Delta wave associated with deep dreamless sleep and unconscious cellular restoration.', source: 'Stapleton et al., 2016', binaural: true, carrierHz: 200 },
@@ -1300,7 +1461,13 @@ const State = {
   // Nature ambiance
   natureMasterVolume: 0.6,
   activeNature: new Map(),  // Map<soundId, { gainNode, nodes[], stopFns[] }>
+  ambianceVolumes: {},      // { [soundId]: 0..1 } — user's preferred per-sound volume
   isAmbianceDrawerOpen: false,
+};
+
+const NATURE_LABELS = {
+  rain: 'Rain', ocean: 'Ocean', wind: 'Wind',
+  fire: 'Fire', thunder: 'Thunder', forest: 'Forest',
 };
 
 // ═══════════════════════════════════════════════
@@ -1484,6 +1651,10 @@ const Nature = {
     Nature.masterGain = ctx.createGain();
     Nature.masterGain.gain.setValueAtTime(State.natureMasterVolume, ctx.currentTime);
     Nature.masterGain.connect(State.masterGain);
+    // Pre-generate noise buffers eagerly to avoid first-tap stutter on slow devices
+    ['white', 'pink', 'brown'].forEach(t => {
+      if (!Nature._buffers[t]) Nature._buffers[t] = Nature._makeNoiseBuffer(t);
+    });
   },
 
   _makeNoiseBuffer(type) {
@@ -1869,10 +2040,11 @@ const Nature = {
     if (!recipe) return;
     const sound = recipe();
     const now = ctx.currentTime;
-    // Fade in
+    const targetVolume = State.ambianceVolumes[soundId] ?? 1.0;
+    // Fade in to the user's preferred per-sound volume
     sound.gainNode.gain.cancelScheduledValues(now);
     sound.gainNode.gain.setValueAtTime(sound.gainNode.gain.value || 0, now);
-    sound.gainNode.gain.linearRampToValueAtTime(1.0, now + 0.4);
+    sound.gainNode.gain.linearRampToValueAtTime(targetVolume, now + 0.4);
     State.activeNature.set(soundId, sound);
   },
 
@@ -1917,6 +2089,53 @@ const Nature = {
     Nature.masterGain.gain.setValueAtTime(Nature.masterGain.gain.value, now);
     Nature.masterGain.gain.linearRampToValueAtTime(v, now + 0.05);
   },
+
+  setSoundVolume(soundId, vol) {
+    State.ambianceVolumes[soundId] = vol;
+    const sound = State.activeNature.get(soundId);
+    if (!sound || !State.ctx) return;
+    const now = State.ctx.currentTime;
+    sound.gainNode.gain.cancelScheduledValues(now);
+    sound.gainNode.gain.setValueAtTime(sound.gainNode.gain.value, now);
+    sound.gainNode.gain.linearRampToValueAtTime(vol, now + 0.05);
+  },
+};
+
+// ═══════════════════════════════════════════════
+// 3c. PREFERENCES STORAGE (localStorage)
+// ═══════════════════════════════════════════════
+
+const Storage = {
+  KEY: 'resonance-prefs-v1',
+
+  save() {
+    try {
+      localStorage.setItem(Storage.KEY, JSON.stringify({
+        masterVolume: State.masterVolume,
+        natureMasterVolume: State.natureMasterVolume,
+        ambianceVolumes: State.ambianceVolumes,
+        waveformType: State.waveformType,
+        mode: State.mode,
+        activeCategoryId: State.activeCategoryId,
+      }));
+    } catch (e) { /* quota exceeded / private mode — silent */ }
+  },
+
+  load() {
+    try {
+      const raw = localStorage.getItem(Storage.KEY);
+      if (!raw) return;
+      const p = JSON.parse(raw);
+      if (typeof p.masterVolume === 'number') State.masterVolume = p.masterVolume;
+      if (typeof p.natureMasterVolume === 'number') State.natureMasterVolume = p.natureMasterVolume;
+      if (p.ambianceVolumes && typeof p.ambianceVolumes === 'object') State.ambianceVolumes = p.ambianceVolumes;
+      if (p.waveformType === 'sine' || p.waveformType === 'binaural') State.waveformType = p.waveformType;
+      if (p.mode === 'single' || p.mode === 'layer') State.mode = p.mode;
+      if (typeof p.activeCategoryId === 'string' && CATEGORIES.some(c => c.id === p.activeCategoryId)) {
+        State.activeCategoryId = p.activeCategoryId;
+      }
+    } catch (e) { /* corrupt JSON — silent */ }
+  },
 };
 
 // ═══════════════════════════════════════════════
@@ -1956,6 +2175,7 @@ const Timer = {
       Canvas.stopWaveform();
       // Reset ambiance button states
       document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
+      UI.renderAmbianceLayers();
     }
   },
 
@@ -2137,7 +2357,7 @@ const UI = {
   renderCategoryTags() {
     const scroll = document.getElementById('category-tags-scroll');
     scroll.innerHTML = '';
-    CATEGORIES.forEach((cat, i) => {
+    [...CATEGORIES].reverse().forEach((cat, i) => {
       const btn = document.createElement('button');
       btn.className = 'category-tag' + (cat.id === State.activeCategoryId ? ' active' : '');
       btn.innerHTML = cat.icon + ' ' + cat.name;
@@ -2146,6 +2366,69 @@ const UI = {
       btn.dataset.catId = cat.id;
       scroll.appendChild(btn);
     });
+  },
+
+  renderPresets() {
+    const scroll = document.getElementById('presets-scroll');
+    scroll.innerHTML = '';
+    MOOD_PRESETS.forEach(preset => {
+      const btn = document.createElement('button');
+      btn.className = 'preset-card';
+      btn.innerHTML = preset.icon + '<span>' + preset.name + '</span>';
+      btn.dataset.presetId = preset.id;
+      btn.setAttribute('aria-label', `Apply ${preset.name} preset`);
+      scroll.appendChild(btn);
+    });
+  },
+
+  applyPreset(presetId) {
+    const preset = MOOD_PRESETS.find(p => p.id === presetId);
+    if (!preset) return;
+    Audio.ensureContext();
+    Audio.resumeCtx();
+
+    // 1. Switch to layer mode (presets always layer freq + ambiance)
+    if (State.mode !== 'layer') {
+      State.mode = 'layer';
+      const isLayer = true;
+      document.getElementById('mode-toggle').setAttribute('aria-checked', 'true');
+      document.getElementById('lbl-single').classList.toggle('active', !isLayer);
+      document.getElementById('lbl-layer').classList.toggle('active', isLayer);
+    }
+
+    // 2. Stop everything currently playing (frequencies + ambiance)
+    Audio.stopAll();
+    State.activeSounds.clear();
+    Nature.stopAll();
+    document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
+
+    // 3. Switch category + play frequency
+    State.activeCategoryId = preset.categoryId;
+    history.replaceState(null, '', '#' + preset.categoryId);
+    UI.renderCategoryTags();
+    UI.renderCards();
+    const freq = FREQ_DATA[preset.categoryId]?.find(f => f.id === preset.frequencyId);
+    if (freq) {
+      Audio.play(freq);
+      State.isPlaying = true;
+    }
+
+    // 4. Set ambiance master volume + play each ambiance sound at its preset volume
+    Nature.setMasterVolume(preset.natureMasterVolume);
+    document.getElementById('ambiance-volume').value = preset.natureMasterVolume;
+    preset.ambianceSounds.forEach(({ soundId, volume }) => {
+      State.ambianceVolumes[soundId] = volume;
+      Nature.play(soundId);
+      document.querySelector(`.ambiance-btn[data-sound="${soundId}"]`)?.classList.add('active');
+    });
+
+    // 5. Refresh dependent UI + persist
+    UI.renderLayerPanel();
+    UI.renderAmbianceLayers();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+    document.getElementById('ambiance-toggle').classList.toggle('active', State.isAmbianceDrawerOpen || State.activeNature.size > 0);
+    Storage.save();
   },
 
   renderCards() {
@@ -2237,6 +2520,31 @@ const UI = {
     }
   },
 
+  renderAmbianceLayers() {
+    const list = document.getElementById('ambiance-active-list');
+    list.innerHTML = '';
+    if (State.activeNature.size === 0) {
+      list.classList.remove('has-rows');
+      return;
+    }
+    list.classList.add('has-rows');
+    for (const soundId of State.activeNature.keys()) {
+      const label = NATURE_LABELS[soundId] || soundId;
+      const vol = State.ambianceVolumes[soundId] ?? 1.0;
+      const row = document.createElement('div');
+      row.className = 'ambiance-row';
+      row.dataset.sound = soundId;
+      row.innerHTML = `
+        <div class="ambiance-row-dot"></div>
+        <div class="ambiance-row-name">${label}</div>
+        <input type="range" class="ambiance-vol" min="0" max="1" step="0.01" value="${vol}"
+               aria-label="Volume for ${label}">
+        <button class="ambiance-row-remove" aria-label="Remove ${label}">✕</button>
+      `;
+      list.appendChild(row);
+    }
+  },
+
   syncPlayState() {
     const btn = document.getElementById('play-pause-btn');
     const hasSound = State.activeSounds.size > 0;
@@ -2309,6 +2617,7 @@ const UI = {
     UI.renderCards();
     UI.syncPlayState();
     UI.updateNowPlaying();
+    Storage.save();
   },
 
   selectFrequency(freq) {
@@ -2355,6 +2664,12 @@ const UI = {
 // ═══════════════════════════════════════════════
 
 function bindEvents() {
+  // Mood presets (event delegation)
+  document.getElementById('presets-scroll').addEventListener('click', e => {
+    const btn = e.target.closest('.preset-card');
+    if (btn) UI.applyPreset(btn.dataset.presetId);
+  });
+
   // Category tags (event delegation)
   document.getElementById('category-tags-scroll').addEventListener('click', e => {
     const btn = e.target.closest('.category-tag');
@@ -2397,6 +2712,7 @@ function bindEvents() {
     UI.renderCards();
     UI.syncPlayState();
     UI.updateNowPlaying();
+    Storage.save();
   });
 
   // Play/Pause
@@ -2430,12 +2746,14 @@ function bindEvents() {
       UI.syncPlayState();
       UI.updateNowPlaying();
     }, 300);
+    Storage.save();
   });
 
   // Master volume
   document.getElementById('master-volume').addEventListener('input', e => {
     Audio.resumeCtx();
     Audio.setMasterVolume(parseFloat(e.target.value));
+    Storage.save();
   });
 
   // Timer select
@@ -2480,12 +2798,15 @@ function bindEvents() {
   // Ambiance drawer toggle
   const ambianceToggleBtn = document.getElementById('ambiance-toggle');
   const ambianceDrawer = document.getElementById('ambiance-drawer');
+  function syncAmbianceToggle() {
+    ambianceToggleBtn.classList.toggle('active', State.isAmbianceDrawerOpen || State.activeNature.size > 0);
+  }
   function setAmbianceDrawer(open) {
     State.isAmbianceDrawerOpen = open;
     ambianceDrawer.classList.toggle('open', open);
     ambianceDrawer.setAttribute('aria-hidden', open ? 'false' : 'true');
-    ambianceToggleBtn.classList.toggle('active', open);
     ambianceToggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    syncAmbianceToggle();
   }
   ambianceToggleBtn.addEventListener('click', () => {
     Audio.ensureContext();
@@ -2505,6 +2826,29 @@ function bindEvents() {
     const id = btn.dataset.sound;
     Nature.toggle(id);
     btn.classList.toggle('active', State.activeNature.has(id));
+    syncAmbianceToggle();
+    UI.renderAmbianceLayers();
+  });
+
+  // Ambiance active layers list (per-sound volume + remove)
+  document.getElementById('ambiance-active-list').addEventListener('input', e => {
+    if (!e.target.classList.contains('ambiance-vol')) return;
+    const row = e.target.closest('.ambiance-row');
+    if (row) {
+      Nature.setSoundVolume(row.dataset.sound, parseFloat(e.target.value));
+      Storage.save();
+    }
+  });
+  document.getElementById('ambiance-active-list').addEventListener('click', e => {
+    const removeBtn = e.target.closest('.ambiance-row-remove');
+    if (!removeBtn) return;
+    const row = removeBtn.closest('.ambiance-row');
+    if (!row) return;
+    const id = row.dataset.sound;
+    Nature.stopSound(id);
+    document.querySelector(`.ambiance-btn[data-sound="${id}"]`)?.classList.remove('active');
+    UI.renderAmbianceLayers();
+    syncAmbianceToggle();
   });
 
   // Ambiance volume
@@ -2512,6 +2856,7 @@ function bindEvents() {
     Audio.ensureContext();
     Audio.resumeCtx();
     Nature.setMasterVolume(parseFloat(e.target.value));
+    Storage.save();
   });
 
   // iOS Safari: create and resume AudioContext inside a trusted gesture so it's never suspended
@@ -2523,11 +2868,29 @@ function bindEvents() {
 // ═══════════════════════════════════════════════
 
 function init() {
-  // Restore category from URL hash if present
+  // Load saved preferences (volumes, mode, waveform, last category, ambiance volumes)
+  Storage.load();
+
+  // URL hash always wins over loaded category for deep-link support
   const hashCat = location.hash.slice(1);
   if (hashCat && CATEGORIES.some(c => c.id === hashCat)) {
     State.activeCategoryId = hashCat;
   }
+
+  // Reflect loaded preferences into DOM controls
+  document.getElementById('master-volume').value = State.masterVolume;
+  document.getElementById('ambiance-volume').value = State.natureMasterVolume;
+  // Mode toggle
+  const isLayer = State.mode === 'layer';
+  document.getElementById('mode-toggle').setAttribute('aria-checked', isLayer ? 'true' : 'false');
+  document.getElementById('lbl-single').classList.toggle('active', !isLayer);
+  document.getElementById('lbl-layer').classList.toggle('active', isLayer);
+  // Waveform selector
+  document.querySelectorAll('.wave-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.wave === State.waveformType);
+  });
+
+  UI.renderPresets();
   UI.renderCategoryTags();
   UI.renderCards();
   UI.syncPlayState();
