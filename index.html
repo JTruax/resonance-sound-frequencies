@@ -138,49 +138,6 @@
       background: #fff;
     }
 
-    /* ── MOOD PRESETS ── */
-    #presets-nav {
-      background: var(--bg-base);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: var(--space-md) 0;
-    }
-    #presets-scroll {
-      display: flex;
-      gap: var(--space-sm);
-      padding: 0 var(--space-lg);
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-    }
-    #presets-scroll::-webkit-scrollbar { display: none; }
-
-    .preset-card {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 16px;
-      border-radius: var(--radius-pill);
-      border: 1px solid var(--border-mid);
-      background: var(--bg-interactive);
-      color: var(--text-secondary);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      transition: background 0.2s, border-color 0.2s, color 0.2s;
-    }
-    .preset-card:hover {
-      background: var(--bg-hover);
-      color: var(--text-primary);
-      border-color: rgba(255,255,255,0.22);
-    }
-    .preset-card .cat-icon {
-      width: 18px; height: 18px;
-      margin-right: 0;
-    }
-
     /* ── CATEGORY NAV ── */
     #category-nav {
       position: sticky;
@@ -687,6 +644,10 @@
       letter-spacing: 0.01em;
     }
     #timer-wrap:hover::after { opacity: 1; }
+    #timer-icon {
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
     #timer-select {
       background: var(--bg-interactive);
       color: var(--text-secondary);
@@ -855,10 +816,10 @@
       color: var(--text-primary);
     }
     #ambiance-close {
-      font-size: 22px;
+      font-size: 24px;
       line-height: 1;
       color: var(--text-secondary);
-      padding: 4px 10px;
+      padding: 0px 0px 4px 10px;
       border-radius: var(--radius-pill);
       transition: color 0.15s, background 0.15s;
     }
@@ -897,6 +858,155 @@
       color: var(--ambiance-accent);
       box-shadow: 0 0 18px rgba(var(--ambiance-accent-rgb), 0.25);
     }
+
+    /* ── PRESETS FAB + BOTTOM SHEET ── */
+    #presets-fab {
+      position: fixed;
+      right: var(--space-lg);
+      bottom: calc(var(--bar-h) + var(--space-md));
+      z-index: 150;
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 20px var(--accent-glow), var(--shadow-md);
+      transition: transform 0.18s ease, box-shadow 0.2s, background 0.2s;
+    }
+    #presets-fab:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-glow), var(--shadow-md); }
+    #presets-fab:active { transform: scale(0.96); }
+    #presets-fab:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+    #presets-fab #presets-fab-icon {
+      width: 24px; height: 24px;
+      margin: 0;
+      stroke: #fff;
+      fill: #fff;
+      stroke-width: 0.5;
+      transition: transform 0.25s ease;
+    }
+    #presets-fab[aria-expanded="true"] #presets-fab-icon {
+      transform: rotate(45deg) scale(0.85);
+    }
+
+    #presets-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 155;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    #presets-backdrop.open { opacity: 1; }
+
+    #presets-sheet {
+      position: fixed;
+      left: 0; right: 0;
+      bottom: var(--bar-h);
+      z-index: 160;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-radius: 16px 16px 0 0;
+      box-shadow: var(--shadow-lg);
+      padding: var(--space-md) var(--space-lg) var(--space-lg);
+      transform: translateY(110%);
+      transition: transform 0.28s cubic-bezier(.2,.8,.2,1);
+    }
+    #presets-sheet.open { transform: translateY(0); }
+
+    #presets-sheet-handle {
+      width: 40px; height: 4px;
+      background: var(--border-mid);
+      border-radius: 2px;
+      margin: 0 auto var(--space-md);
+    }
+    #presets-sheet-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-md);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+    #presets-sheet-close {
+      font-size: 24px;
+      line-height: 1;
+      color: var(--text-secondary);
+      padding: 0px 0px 4px 10px;
+      border-radius: var(--radius-pill);
+      transition: color 0.15s, background 0.15s;
+    }
+    #presets-sheet-close:hover {
+      color: var(--text-primary);
+      background: var(--bg-hover);
+    }
+
+    #presets-sheet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-sm);
+    }
+    .preset-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      padding: var(--space-md);
+      background: var(--bg-interactive);
+      border: 1px solid transparent;
+      border-radius: var(--radius-card);
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .preset-card:hover {
+      background: var(--bg-hover);
+      border-color: var(--border-mid);
+      transform: translateY(-1px);
+    }
+    .preset-card:focus-visible {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-glow);
+      outline: none;
+    }
+    .preset-card .cat-icon {
+      width: 22px; height: 22px;
+      color: var(--accent);
+      margin: 0 0 2px;
+    }
+    .preset-card .preset-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.005em;
+    }
+    .preset-card .preset-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+    }
+
+    @media (min-width: 640px) {
+      #presets-sheet-grid { grid-template-columns: repeat(4, 1fr); }
+      #presets-sheet {
+        max-width: 720px;
+        left: 50%;
+        right: auto;
+        bottom: calc(var(--bar-h) + var(--space-md));
+        border-radius: 16px;
+        transform: translate(-50%, calc(110% + var(--bar-h)));
+      }
+      #presets-sheet.open { transform: translate(-50%, 0); }
+    }
+
     .cat-icon {
       width: 17px; height: 17px;
       display: inline-block; vertical-align: middle;
@@ -1069,11 +1179,6 @@
     </div>
   </header>
 
-  <!-- ── MOOD PRESETS ── -->
-  <nav id="presets-nav" aria-label="Mood presets">
-    <div id="presets-scroll" role="tablist"></div>
-  </nav>
-
   <!-- ── CATEGORY NAV ── -->
   <nav id="category-nav" aria-label="Frequency categories">
     <div id="category-tags-scroll" role="tablist"></div>
@@ -1180,6 +1285,26 @@
     </div>
   </div>
 
+  <!-- ── MOOD PRESETS (FAB + bottom sheet) ── -->
+  <button id="presets-fab" aria-label="Open mood presets" aria-expanded="false" aria-controls="presets-sheet">
+    <svg id="presets-fab-icon" class="cat-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3l1.6 4.2L18 9l-4.4 1.8L12 15l-1.6-4.2L6 9l4.4-1.8z"/>
+      <path d="M19 14l.7 1.8L21 17l-1.3.7L19 19l-.7-1.3L17 17l1.3-1.2z"/>
+      <path d="M5 16l.6 1.4L7 18l-1.4.6L5 20l-.6-1.4L3 18l1.4-.6z"/>
+    </svg>
+  </button>
+
+  <div id="presets-backdrop" hidden></div>
+
+  <div id="presets-sheet" aria-hidden="true" role="dialog" aria-label="Mood presets" aria-modal="true">
+    <div id="presets-sheet-handle" aria-hidden="true"></div>
+    <div id="presets-sheet-header">
+      <span>Quick Start</span>
+      <button id="presets-sheet-close" aria-label="Close mood presets">×</button>
+    </div>
+    <div id="presets-sheet-grid" role="list"></div>
+  </div>
+
   <!-- ── NOW PLAYING BAR ── -->
   <div id="now-playing-bar" role="region" aria-label="Now playing">
     <canvas id="waveform-canvas" width="140" height="52"></canvas>
@@ -1217,6 +1342,7 @@
       </div>
 
       <div id="timer-wrap">
+        <svg id="timer-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 1 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg>
         <select id="timer-select" aria-label="Session timer">
           <option value="0">∞</option>
           <option value="300">5 min</option>
@@ -1798,147 +1924,337 @@ const Nature = {
 
     fire() {
       const ctx = State.ctx;
-      // Bed roar
-      const bed = Nature._noiseSource('brown');
-      const bedFilter = ctx.createBiquadFilter();
-      bedFilter.type = 'lowpass';
-      bedFilter.frequency.setValueAtTime(200, ctx.currentTime);
-      const bedGain = ctx.createGain();
-      bedGain.gain.setValueAtTime(0.15, ctx.currentTime);
-      const outGain = ctx.createGain();
-      outGain.gain.setValueAtTime(0, ctx.currentTime);
-
-      bed.connect(bedFilter).connect(bedGain).connect(outGain).connect(Nature.masterGain);
-
-      // Crackle scheduler
-      let timeoutId = null;
+      const now = ctx.currentTime;
       let stopped = false;
-      const scheduleCrackle = () => {
-        if (stopped) return;
-        const burstCount = 1 + Math.floor(Math.random() * 4);
-        for (let i = 0; i < burstCount; i++) {
-          setTimeout(() => {
-            if (stopped) return;
-            const t = ctx.currentTime;
-            const burst = ctx.createBufferSource();
-            burst.buffer = Nature._buffers.white || (Nature._buffers.white = Nature._makeNoiseBuffer('white'));
-            const bp = ctx.createBiquadFilter();
-            bp.type = 'bandpass';
-            bp.frequency.setValueAtTime(1500 + Math.random() * 3500, t);
-            bp.Q.setValueAtTime(8, t);
-            const g = ctx.createGain();
-            g.gain.setValueAtTime(0, t);
-            g.gain.linearRampToValueAtTime(0.4, t + 0.002);
-            g.gain.exponentialRampToValueAtTime(0.001, t + 0.04);
-            burst.connect(bp).connect(g).connect(outGain);
-            burst.start(t);
-            burst.stop(t + 0.06);
-          }, i * 25);
-        }
-        const delay = 30 + Math.random() * 170;
-        timeoutId = setTimeout(scheduleCrackle, delay);
+
+      const outGain = ctx.createGain();
+      outGain.gain.setValueAtTime(0, now);
+      outGain.connect(Nature.masterGain);
+
+      // ── Bed layers (steady, no LFO modulation — modulation is what makes wind sounds) ──
+
+      // Combustion hiss: mid-band pink noise, the "burning" texture
+      const hiss = Nature._noiseSource('pink');
+      const hissHP = ctx.createBiquadFilter();
+      hissHP.type = 'highpass';
+      hissHP.frequency.setValueAtTime(900, now);
+      const hissLP = ctx.createBiquadFilter();
+      hissLP.type = 'lowpass';
+      hissLP.frequency.setValueAtTime(4500, now);
+      const hissGain = ctx.createGain();
+      hissGain.gain.setValueAtTime(0.07, now);
+      hiss.connect(hissHP).connect(hissLP).connect(hissGain).connect(outGain);
+
+      // Modest low warmth: brown noise gently lowpassed — body without bass dominance
+      const warm = Nature._noiseSource('brown');
+      const warmLP = ctx.createBiquadFilter();
+      warmLP.type = 'lowpass';
+      warmLP.frequency.setValueAtTime(350, now);
+      const warmHP = ctx.createBiquadFilter();
+      warmHP.type = 'highpass';
+      warmHP.frequency.setValueAtTime(80, now);
+      const warmGain = ctx.createGain();
+      warmGain.gain.setValueAtTime(0.12, now);
+      warm.connect(warmHP).connect(warmLP).connect(warmGain).connect(outGain);
+
+      // ── Crackle helper: broadband transient with shaped filter & exponential decay ──
+      const crackle = (t, opts) => {
+        const burst = ctx.createBufferSource();
+        burst.buffer = Nature._buffers.white || (Nature._buffers.white = Nature._makeNoiseBuffer('white'));
+        const hp = ctx.createBiquadFilter();
+        hp.type = 'highpass';
+        hp.frequency.setValueAtTime(opts.hpFreq, t);
+        const peak = ctx.createBiquadFilter();
+        peak.type = 'peaking';
+        peak.frequency.setValueAtTime(opts.peakFreq, t);
+        peak.Q.setValueAtTime(opts.peakQ ?? 1.2, t);
+        peak.gain.setValueAtTime(opts.peakBoost ?? 6, t);
+        const g = ctx.createGain();
+        g.gain.setValueAtTime(0, t);
+        g.gain.linearRampToValueAtTime(opts.amp, t + (opts.attack ?? 0.002));
+        g.gain.exponentialRampToValueAtTime(0.0005, t + opts.decay);
+        burst.connect(hp).connect(peak).connect(g).connect(outGain);
+        burst.start(t);
+        burst.stop(t + opts.decay + 0.02);
       };
-      scheduleCrackle();
+
+      // Stream A: constant fizzle ticks — the always-on fire texture (frequent, tiny)
+      let fizzleId = null;
+      const scheduleFizzle = () => {
+        if (stopped) return;
+        crackle(ctx.currentTime, {
+          hpFreq: 2500,
+          peakFreq: 3500 + Math.random() * 2500,
+          peakQ: 1.0,
+          amp: 0.02 + Math.random() * 0.04,
+          decay: 0.005 + Math.random() * 0.012,
+        });
+        // Tight gaps — 60–320 ms — gives steady fire shimmer
+        const gap = 60 + Math.random() * 260;
+        fizzleId = setTimeout(scheduleFizzle, gap);
+      };
+      scheduleFizzle();
+
+      // Stream B: mid-band crackles — the recognizable "snap" pops
+      let snapId = null;
+      const scheduleSnap = () => {
+        if (stopped) return;
+        // Sometimes a doublet (fast pair), mostly single
+        const doublet = Math.random() < 0.25;
+        const fire1 = () => crackle(ctx.currentTime, {
+          hpFreq: 800,
+          peakFreq: 1400 + Math.random() * 1800,
+          peakQ: 1.5,
+          peakBoost: 8,
+          amp: 0.08 + Math.random() * 0.10,
+          decay: 0.025 + Math.random() * 0.05,
+        });
+        fire1();
+        if (doublet) setTimeout(() => { if (!stopped) fire1(); }, 30 + Math.random() * 70);
+        // 600 ms – 2.6 s between snaps — clearly audible, not constant
+        const gap = 600 + Math.random() * 2000;
+        snapId = setTimeout(scheduleSnap, gap);
+      };
+      scheduleSnap();
+
+      // Stream C: deep wood pops — occasional log-shift / ember-cracking thuds
+      let popId = null;
+      const schedulePop = () => {
+        if (stopped) return;
+        crackle(ctx.currentTime, {
+          hpFreq: 200,
+          peakFreq: 350 + Math.random() * 350,
+          peakQ: 1.8,
+          peakBoost: 9,
+          amp: 0.18 + Math.random() * 0.14,
+          attack: 0.004,
+          decay: 0.10 + Math.random() * 0.18,
+        });
+        // 5 – 18 s between deep pops — sparse and sporadic
+        const gap = 5000 + Math.random() * 13000;
+        popId = setTimeout(schedulePop, gap);
+      };
+      // Stagger the first pop so it doesn't fire right at start
+      popId = setTimeout(schedulePop, 3000 + Math.random() * 6000);
 
       return {
-        nodes: [bed, bedFilter, bedGain, outGain],
+        nodes: [hiss, hissHP, hissLP, hissGain, warm, warmHP, warmLP, warmGain, outGain],
         gainNode: outGain,
-        stopFns: [() => { stopped = true; if (timeoutId) clearTimeout(timeoutId); }],
+        stopFns: [() => {
+          stopped = true;
+          if (fizzleId) clearTimeout(fizzleId);
+          if (snapId) clearTimeout(snapId);
+          if (popId) clearTimeout(popId);
+        }],
       };
     },
 
     thunder() {
       const ctx = State.ctx;
-      // Layer 1: rain
+      const now = ctx.currentTime;
+
+      const outGain = ctx.createGain();
+      outGain.gain.setValueAtTime(0, now);
+      outGain.connect(Nature.masterGain);
+
+      // Layer 1: rain (subdued — thunder is the focus)
       const rainPart = Nature._recipes.rain();
-      // Pull rain gain back to 0.7 of recipe default (we'll reach it via the recipe's outGain on play)
-      // Layer 2: low rumble
+      rainPart.gainNode.disconnect();
+      rainPart.gainNode.gain.cancelScheduledValues(now);
+      rainPart.gainNode.gain.setValueAtTime(1.0, now);
+      const rainScale = ctx.createGain();
+      rainScale.gain.setValueAtTime(0.32, now);
+      rainPart.gainNode.connect(rainScale).connect(outGain);
+
+      // Layer 2: continuous low storm rumble bed (very quiet, sets atmospheric floor)
       const rumble = Nature._noiseSource('brown');
       const rumbleFilter = ctx.createBiquadFilter();
       rumbleFilter.type = 'lowpass';
-      rumbleFilter.frequency.setValueAtTime(80, ctx.currentTime);
+      rumbleFilter.frequency.setValueAtTime(70, now);
       const rumbleGain = ctx.createGain();
-      rumbleGain.gain.setValueAtTime(0.25, ctx.currentTime);
+      rumbleGain.gain.setValueAtTime(0.12, now);
       const rumbleLfo = ctx.createOscillator();
-      rumbleLfo.frequency.setValueAtTime(0.03, ctx.currentTime);
+      rumbleLfo.frequency.setValueAtTime(0.04, now);
       const rumbleLfoGain = ctx.createGain();
-      rumbleLfoGain.gain.setValueAtTime(0.1, ctx.currentTime);
+      rumbleLfoGain.gain.setValueAtTime(0.06, now);
       rumbleLfo.connect(rumbleLfoGain).connect(rumbleGain.gain);
       rumbleLfo.start();
-
-      const outGain = ctx.createGain();
-      outGain.gain.setValueAtTime(0, ctx.currentTime);
-
       rumble.connect(rumbleFilter).connect(rumbleGain).connect(outGain);
-      // Reroute rain into our outGain (disconnect from masterGain, reconnect to outGain)
-      // Rain's gainNode is at 0 (expects external fade-in); set it to 1.0 directly since
-      // our outer outGain handles the fade for the entire thunder composite.
-      rainPart.gainNode.disconnect();
-      rainPart.gainNode.gain.cancelScheduledValues(ctx.currentTime);
-      rainPart.gainNode.gain.setValueAtTime(1.0, ctx.currentTime);
-      const rainScale = ctx.createGain();
-      rainScale.gain.setValueAtTime(0.7, ctx.currentTime);
-      rainPart.gainNode.connect(rainScale).connect(outGain);
-      outGain.connect(Nature.masterGain);
 
-      // Thunder scheduler
+      // Thunder strikes — three archetypes for variety
       let stopped = false;
       let timeoutId = null;
+
+      // DISTANT: subtle low rumble swell, no crack — felt more than heard
+      const distantStrike = (t) => {
+        const dur = 5 + Math.random() * 3;
+        // Brown noise, heavily lowpassed
+        const n = Nature._noiseSource('brown');
+        const f = ctx.createBiquadFilter();
+        f.type = 'lowpass';
+        f.frequency.setValueAtTime(180, t);
+        f.frequency.exponentialRampToValueAtTime(60, t + dur);
+        const g = ctx.createGain();
+        g.gain.setValueAtTime(0, t);
+        g.gain.linearRampToValueAtTime(0.28, t + 0.8 + Math.random() * 0.6);
+        g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        n.connect(f).connect(g).connect(outGain);
+        n.stop(t + dur + 0.1);
+
+        // Sub swell
+        const sub = ctx.createOscillator();
+        sub.type = 'sine';
+        sub.frequency.setValueAtTime(42 + Math.random() * 10, t);
+        const sg = ctx.createGain();
+        sg.gain.setValueAtTime(0, t);
+        sg.gain.linearRampToValueAtTime(0.22, t + 0.6);
+        sg.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        sub.connect(sg).connect(outGain);
+        sub.start(t);
+        sub.stop(t + dur + 0.1);
+      };
+
+      // MID: rolling thunder with body, occasional soft crack
+      const midStrike = (t) => {
+        const dur = 4 + Math.random() * 2.5;
+        const n = ctx.createBufferSource();
+        n.buffer = Nature._buffers.white || (Nature._buffers.white = Nature._makeNoiseBuffer('white'));
+        n.loop = true;
+        const f = ctx.createBiquadFilter();
+        f.type = 'lowpass';
+        f.Q.setValueAtTime(1.2, t);
+        f.frequency.setValueAtTime(500, t);
+        f.frequency.exponentialRampToValueAtTime(110, t + dur);
+        const g = ctx.createGain();
+        // Two-stage envelope — initial body then a secondary roll
+        g.gain.setValueAtTime(0, t);
+        g.gain.linearRampToValueAtTime(0.6, t + 0.15);
+        g.gain.linearRampToValueAtTime(0.35, t + 1.4);
+        g.gain.linearRampToValueAtTime(0.5, t + 1.4 + Math.random() * 0.6 + 0.4);
+        g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        n.connect(f).connect(g).connect(outGain);
+        n.start(t);
+        n.stop(t + dur + 0.1);
+
+        // Sub
+        const sub = ctx.createOscillator();
+        sub.type = 'sine';
+        sub.frequency.setValueAtTime(55 + Math.random() * 8, t);
+        const sg = ctx.createGain();
+        sg.gain.setValueAtTime(0, t);
+        sg.gain.linearRampToValueAtTime(0.5, t + 0.1);
+        sg.gain.setValueAtTime(0.5, t + 0.4);
+        sg.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        sub.connect(sg).connect(outGain);
+        sub.start(t);
+        sub.stop(t + dur + 0.1);
+
+        // Soft crack (30%)
+        if (Math.random() < 0.3) {
+          const c = ctx.createBufferSource();
+          c.buffer = Nature._buffers.white;
+          const cf = ctx.createBiquadFilter();
+          cf.type = 'highpass';
+          cf.frequency.setValueAtTime(800, t);
+          const cg = ctx.createGain();
+          cg.gain.setValueAtTime(0, t);
+          cg.gain.linearRampToValueAtTime(0.18, t + 0.005);
+          cg.gain.exponentialRampToValueAtTime(0.001, t + 0.18);
+          c.connect(cf).connect(cg).connect(outGain);
+          c.start(t);
+          c.stop(t + 0.25);
+        }
+      };
+
+      // CLOSE: prominent boom with sharp crack and multi-stage rolling decay (reflections)
+      const closeStrike = (t) => {
+        const dur = 6 + Math.random() * 2.5;
+        // Initial slam — broadband, fast attack
+        const slam = ctx.createBufferSource();
+        slam.buffer = Nature._buffers.white;
+        slam.loop = true;
+        const slamF = ctx.createBiquadFilter();
+        slamF.type = 'lowpass';
+        slamF.Q.setValueAtTime(1.5, t);
+        slamF.frequency.setValueAtTime(2200, t);
+        slamF.frequency.exponentialRampToValueAtTime(150, t + dur);
+        const slamG = ctx.createGain();
+        // Multi-peak envelope: instant crack, body, rolling reflection peaks
+        slamG.gain.setValueAtTime(0, t);
+        slamG.gain.linearRampToValueAtTime(1.0, t + 0.02);
+        slamG.gain.linearRampToValueAtTime(0.7, t + 0.5);
+        slamG.gain.linearRampToValueAtTime(0.55, t + 1.5);
+        slamG.gain.linearRampToValueAtTime(0.65, t + 2.3);
+        slamG.gain.linearRampToValueAtTime(0.3, t + 3.5);
+        slamG.gain.linearRampToValueAtTime(0.4, t + 4.2);
+        slamG.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        slam.connect(slamF).connect(slamG).connect(outGain);
+        slam.start(t);
+        slam.stop(t + dur + 0.1);
+
+        // Sharp crack — broadband transient at strike
+        const crack = ctx.createBufferSource();
+        crack.buffer = Nature._buffers.white;
+        const cf = ctx.createBiquadFilter();
+        cf.type = 'highpass';
+        cf.frequency.setValueAtTime(1200, t);
+        const cg = ctx.createGain();
+        cg.gain.setValueAtTime(0, t);
+        cg.gain.linearRampToValueAtTime(0.55, t + 0.003);
+        cg.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+        crack.connect(cf).connect(cg).connect(outGain);
+        crack.start(t);
+        crack.stop(t + 0.3);
+
+        // Deep sub-bass boom
+        const sub = ctx.createOscillator();
+        sub.type = 'sine';
+        const subF = 48 + Math.random() * 10;
+        sub.frequency.setValueAtTime(subF * 1.4, t);
+        sub.frequency.exponentialRampToValueAtTime(subF, t + 0.4);
+        const sg = ctx.createGain();
+        sg.gain.setValueAtTime(0, t);
+        sg.gain.linearRampToValueAtTime(0.95, t + 0.03);
+        sg.gain.linearRampToValueAtTime(0.6, t + 1.0);
+        sg.gain.linearRampToValueAtTime(0.35, t + 2.5);
+        sg.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        sub.connect(sg).connect(outGain);
+        sub.start(t);
+        sub.stop(t + dur + 0.1);
+
+        // Second sub harmonic for thickness
+        const sub2 = ctx.createOscillator();
+        sub2.type = 'sine';
+        sub2.frequency.setValueAtTime(subF * 2, t);
+        const sg2 = ctx.createGain();
+        sg2.gain.setValueAtTime(0, t);
+        sg2.gain.linearRampToValueAtTime(0.3, t + 0.05);
+        sg2.gain.exponentialRampToValueAtTime(0.001, t + 2.5);
+        sub2.connect(sg2).connect(outGain);
+        sub2.start(t);
+        sub2.stop(t + 3);
+      };
+
+      const fireStrike = () => {
+        if (stopped) return;
+        const t = ctx.currentTime;
+        const r = Math.random();
+        if (r < 0.45) distantStrike(t);
+        else if (r < 0.82) midStrike(t);
+        else closeStrike(t);
+      };
+
       const scheduleThunder = () => {
         if (stopped) return;
-        const delay = (8 + Math.random() * 17) * 1000;
+        // Sporadic spacing: most 5–22s, occasional very long quiet (25–55s),
+        // rare quick echo (1.5–4s after a strike)
+        const r = Math.random();
+        let delay;
+        if (r < 0.08) delay = (1.5 + Math.random() * 2.5) * 1000;       // quick echo doublet
+        else if (r < 0.22) delay = (25 + Math.random() * 30) * 1000;     // long quiet stretch
+        else delay = (5 + Math.random() * 17) * 1000;                    // typical gap
         timeoutId = setTimeout(() => {
-          if (stopped) return;
-          const t = ctx.currentTime;
-          // Main rumble: 3-5s noise with sweeping lowpass
-          const dur = 3 + Math.random() * 2;
-          const tn = ctx.createBufferSource();
-          tn.buffer = Nature._buffers.white || (Nature._buffers.white = Nature._makeNoiseBuffer('white'));
-          tn.loop = true;
-          const tnFilter = ctx.createBiquadFilter();
-          tnFilter.type = 'lowpass';
-          tnFilter.Q.setValueAtTime(1.5, t);
-          tnFilter.frequency.setValueAtTime(800, t);
-          tnFilter.frequency.exponentialRampToValueAtTime(120, t + dur);
-          const tnGain = ctx.createGain();
-          tnGain.gain.setValueAtTime(0, t);
-          tnGain.gain.linearRampToValueAtTime(0.9, t + 0.05);
-          tnGain.gain.setValueAtTime(0.9, t + 0.25);
-          tnGain.gain.exponentialRampToValueAtTime(0.001, t + dur);
-          tn.connect(tnFilter).connect(tnGain).connect(outGain);
-          tn.start(t);
-          tn.stop(t + dur + 0.1);
-
-          // Sub-bass
-          const sub = ctx.createOscillator();
-          sub.type = 'sine';
-          sub.frequency.setValueAtTime(60, t);
-          const subGain = ctx.createGain();
-          subGain.gain.setValueAtTime(0, t);
-          subGain.gain.linearRampToValueAtTime(0.6, t + 0.05);
-          subGain.gain.setValueAtTime(0.6, t + 0.25);
-          subGain.gain.exponentialRampToValueAtTime(0.001, t + dur);
-          sub.connect(subGain).connect(outGain);
-          sub.start(t);
-          sub.stop(t + dur + 0.1);
-
-          // Optional crack at start
-          if (Math.random() < 0.6) {
-            const crack = ctx.createBufferSource();
-            crack.buffer = Nature._buffers.white;
-            const cf = ctx.createBiquadFilter();
-            cf.type = 'bandpass';
-            cf.frequency.setValueAtTime(3000, t);
-            cf.Q.setValueAtTime(6, t);
-            const cg = ctx.createGain();
-            cg.gain.setValueAtTime(0, t);
-            cg.gain.linearRampToValueAtTime(0.3, t + 0.005);
-            cg.gain.exponentialRampToValueAtTime(0.001, t + 0.08);
-            crack.connect(cf).connect(cg).connect(outGain);
-            crack.start(t);
-            crack.stop(t + 0.1);
-          }
-
+          fireStrike();
           scheduleThunder();
         }, delay);
       };
@@ -2369,15 +2685,24 @@ const UI = {
   },
 
   renderPresets() {
-    const scroll = document.getElementById('presets-scroll');
-    scroll.innerHTML = '';
+    const grid = document.getElementById('presets-sheet-grid');
+    grid.innerHTML = '';
     MOOD_PRESETS.forEach(preset => {
+      const freq = FREQ_DATA[preset.categoryId]?.find(f => f.id === preset.frequencyId);
+      const hzLabel = freq ? `${freq.hz} Hz` : '';
+      const ambSummary = preset.ambianceSounds.map(s => s.soundId).join(' + ');
+      const meta = [hzLabel, ambSummary].filter(Boolean).join(' · ');
+
       const btn = document.createElement('button');
       btn.className = 'preset-card';
-      btn.innerHTML = preset.icon + '<span>' + preset.name + '</span>';
       btn.dataset.presetId = preset.id;
-      btn.setAttribute('aria-label', `Apply ${preset.name} preset`);
-      scroll.appendChild(btn);
+      btn.setAttribute('role', 'listitem');
+      btn.setAttribute('aria-label', `Apply ${preset.name} preset — ${meta}`);
+      btn.innerHTML =
+        preset.icon +
+        '<span class="preset-name">' + preset.name + '</span>' +
+        '<span class="preset-meta">' + meta + '</span>';
+      grid.appendChild(btn);
     });
   },
 
@@ -2664,10 +2989,12 @@ const UI = {
 // ═══════════════════════════════════════════════
 
 function bindEvents() {
-  // Mood presets (event delegation)
-  document.getElementById('presets-scroll').addEventListener('click', e => {
+  // Mood presets (event delegation in bottom sheet)
+  document.getElementById('presets-sheet-grid').addEventListener('click', e => {
     const btn = e.target.closest('.preset-card');
-    if (btn) UI.applyPreset(btn.dataset.presetId);
+    if (!btn) return;
+    UI.applyPreset(btn.dataset.presetId);
+    closePresetsSheet();
   });
 
   // Category tags (event delegation)
@@ -2815,6 +3142,50 @@ function bindEvents() {
   });
   document.getElementById('ambiance-close').addEventListener('click', () => {
     setAmbianceDrawer(false);
+  });
+
+  // Mood presets — FAB + bottom sheet
+  const presetsFab = document.getElementById('presets-fab');
+  const presetsSheet = document.getElementById('presets-sheet');
+  const presetsBackdrop = document.getElementById('presets-backdrop');
+  let presetsSheetOpen = false;
+
+  function openPresetsSheet() {
+    if (presetsSheetOpen) return;
+    presetsSheetOpen = true;
+    presetsBackdrop.hidden = false;
+    // force reflow so the transition runs from the un-hidden state
+    void presetsBackdrop.offsetWidth;
+    presetsBackdrop.classList.add('open');
+    presetsSheet.classList.add('open');
+    presetsSheet.setAttribute('aria-hidden', 'false');
+    presetsFab.setAttribute('aria-expanded', 'true');
+    const firstCard = presetsSheet.querySelector('.preset-card');
+    if (firstCard) firstCard.focus({ preventScroll: true });
+  }
+
+  function closePresetsSheet() {
+    if (!presetsSheetOpen) return;
+    presetsSheetOpen = false;
+    presetsSheet.classList.remove('open');
+    presetsBackdrop.classList.remove('open');
+    presetsSheet.setAttribute('aria-hidden', 'true');
+    presetsFab.setAttribute('aria-expanded', 'false');
+    presetsFab.focus({ preventScroll: true });
+    setTimeout(() => {
+      if (!presetsSheetOpen) presetsBackdrop.hidden = true;
+    }, 280);
+  }
+
+  presetsFab.addEventListener('click', () => {
+    Audio.ensureContext();
+    Audio.resumeCtx();
+    presetsSheetOpen ? closePresetsSheet() : openPresetsSheet();
+  });
+  presetsBackdrop.addEventListener('click', closePresetsSheet);
+  document.getElementById('presets-sheet-close').addEventListener('click', closePresetsSheet);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && presetsSheetOpen) closePresetsSheet();
   });
 
   // Ambiance sound buttons (event delegation)
