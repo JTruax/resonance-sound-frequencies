@@ -859,154 +859,6 @@
       box-shadow: 0 0 18px rgba(var(--ambiance-accent-rgb), 0.25);
     }
 
-    /* ── PRESETS FAB + BOTTOM SHEET ── */
-    #presets-fab {
-      position: fixed;
-      right: var(--space-lg);
-      bottom: calc(var(--bar-h) + var(--space-md));
-      z-index: 150;
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 6px 20px var(--accent-glow), var(--shadow-md);
-      transition: transform 0.18s ease, box-shadow 0.2s, background 0.2s;
-    }
-    #presets-fab:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-glow), var(--shadow-md); }
-    #presets-fab:active { transform: scale(0.96); }
-    #presets-fab:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: 3px;
-    }
-    #presets-fab #presets-fab-icon {
-      width: 24px; height: 24px;
-      margin: 0;
-      stroke: #fff;
-      fill: #fff;
-      stroke-width: 0.5;
-      transition: transform 0.25s ease;
-    }
-    #presets-fab[aria-expanded="true"] #presets-fab-icon {
-      transform: rotate(45deg) scale(0.85);
-    }
-
-    #presets-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 155;
-      background: rgba(0,0,0,0.5);
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    #presets-backdrop.open { opacity: 1; }
-
-    #presets-sheet {
-      position: fixed;
-      left: 0; right: 0;
-      bottom: var(--bar-h);
-      z-index: 160;
-      background: var(--bg-surface);
-      border-top: 1px solid var(--border-subtle);
-      border-radius: 16px 16px 0 0;
-      box-shadow: var(--shadow-lg);
-      padding: var(--space-md) var(--space-lg) var(--space-lg);
-      transform: translateY(110%);
-      transition: transform 0.28s cubic-bezier(.2,.8,.2,1);
-    }
-    #presets-sheet.open { transform: translateY(0); }
-
-    #presets-sheet-handle {
-      width: 40px; height: 4px;
-      background: var(--border-mid);
-      border-radius: 2px;
-      margin: 0 auto var(--space-md);
-    }
-    #presets-sheet-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: var(--space-md);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text-primary);
-    }
-    #presets-sheet-close {
-      font-size: 24px;
-      line-height: 1;
-      color: var(--text-secondary);
-      padding: 0px 0px 4px 10px;
-      border-radius: var(--radius-pill);
-      transition: color 0.15s, background 0.15s;
-    }
-    #presets-sheet-close:hover {
-      color: var(--text-primary);
-      background: var(--bg-hover);
-    }
-
-    #presets-sheet-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-sm);
-    }
-    .preset-card {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 6px;
-      padding: var(--space-md);
-      background: var(--bg-interactive);
-      border: 1px solid transparent;
-      border-radius: var(--radius-card);
-      text-align: left;
-      cursor: pointer;
-      transition: background 0.15s, border-color 0.15s, transform 0.15s;
-    }
-    .preset-card:hover {
-      background: var(--bg-hover);
-      border-color: var(--border-mid);
-      transform: translateY(-1px);
-    }
-    .preset-card:focus-visible {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 2px var(--accent-glow);
-      outline: none;
-    }
-    .preset-card .cat-icon {
-      width: 22px; height: 22px;
-      color: var(--accent);
-      margin: 0 0 2px;
-    }
-    .preset-card .preset-name {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-      letter-spacing: -0.005em;
-    }
-    .preset-card .preset-meta {
-      font-size: 11px;
-      color: var(--text-muted);
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
-    }
-
-    @media (min-width: 640px) {
-      #presets-sheet-grid { grid-template-columns: repeat(4, 1fr); }
-      #presets-sheet {
-        max-width: 720px;
-        left: 50%;
-        right: auto;
-        bottom: calc(var(--bar-h) + var(--space-md));
-        border-radius: 16px;
-        transform: translate(-50%, calc(110% + var(--bar-h)));
-      }
-      #presets-sheet.open { transform: translate(-50%, 0); }
-    }
-
     .cat-icon {
       width: 17px; height: 17px;
       display: inline-block; vertical-align: middle;
@@ -1285,26 +1137,6 @@
     </div>
   </div>
 
-  <!-- ── MOOD PRESETS (FAB + bottom sheet) ── -->
-  <button id="presets-fab" aria-label="Open mood presets" aria-expanded="false" aria-controls="presets-sheet">
-    <svg id="presets-fab-icon" class="cat-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 3l1.6 4.2L18 9l-4.4 1.8L12 15l-1.6-4.2L6 9l4.4-1.8z"/>
-      <path d="M19 14l.7 1.8L21 17l-1.3.7L19 19l-.7-1.3L17 17l1.3-1.2z"/>
-      <path d="M5 16l.6 1.4L7 18l-1.4.6L5 20l-.6-1.4L3 18l1.4-.6z"/>
-    </svg>
-  </button>
-
-  <div id="presets-backdrop" hidden></div>
-
-  <div id="presets-sheet" aria-hidden="true" role="dialog" aria-label="Mood presets" aria-modal="true">
-    <div id="presets-sheet-handle" aria-hidden="true"></div>
-    <div id="presets-sheet-header">
-      <span>Quick Start</span>
-      <button id="presets-sheet-close" aria-label="Close mood presets">×</button>
-    </div>
-    <div id="presets-sheet-grid" role="list"></div>
-  </div>
-
   <!-- ── NOW PLAYING BAR ── -->
   <div id="now-playing-bar" role="region" aria-label="Now playing">
     <canvas id="waveform-canvas" width="140" height="52"></canvas>
@@ -1446,51 +1278,6 @@ const CATEGORIES = [
     rgb: '16,185,129',
     glow: 'rgba(16,185,129,0.25)',
     desc: "Schumann resonances — Earth's electromagnetic cavity frequencies.",
-  },
-];
-
-// Mood presets — curated frequency + ambiance combinations for one-tap setup.
-// Each preset switches to its category, plays its frequency, and starts the
-// listed ambiance sounds at the given volumes.
-const MOOD_PRESETS = [
-  {
-    id: 'sleep',
-    name: 'Deep Sleep',
-    icon: _ico('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'),
-    categoryId: 'deep-sleep',
-    frequencyId: 'ds-2',          // 2 Hz Deep Delta
-    natureMasterVolume: 0.5,
-    ambianceSounds: [{ soundId: 'rain', volume: 0.6 }],
-  },
-  {
-    id: 'focus',
-    name: 'Focus',
-    icon: _ico('<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>'),
-    categoryId: 'focus',
-    frequencyId: 'foc-15',        // 15 Hz Mental Sharpness
-    natureMasterVolume: 0.4,
-    ambianceSounds: [{ soundId: 'forest', volume: 0.5 }],
-  },
-  {
-    id: 'meditate',
-    name: 'Meditate',
-    icon: _ico('<path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>'),
-    categoryId: 'solfeggio',
-    frequencyId: 'sol-528',       // 528 Hz Love Frequency
-    natureMasterVolume: 0.55,
-    ambianceSounds: [{ soundId: 'ocean', volume: 0.7 }],
-  },
-  {
-    id: 'unwind',
-    name: 'Unwind',
-    icon: _ico('<path d="M2 12c1.5 0 1.5-1.5 3-1.5s1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/><path d="M2 17c1.5 0 1.5-1.5 3-1.5s1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/>'),
-    categoryId: 'relaxation',
-    frequencyId: 'rel-10',        // 10 Hz Alpha Peak
-    natureMasterVolume: 0.5,
-    ambianceSounds: [
-      { soundId: 'fire', volume: 0.5 },
-      { soundId: 'wind', volume: 0.3 },
-    ],
   },
 ];
 
@@ -2684,78 +2471,6 @@ const UI = {
     });
   },
 
-  renderPresets() {
-    const grid = document.getElementById('presets-sheet-grid');
-    grid.innerHTML = '';
-    MOOD_PRESETS.forEach(preset => {
-      const freq = FREQ_DATA[preset.categoryId]?.find(f => f.id === preset.frequencyId);
-      const hzLabel = freq ? `${freq.hz} Hz` : '';
-      const ambSummary = preset.ambianceSounds.map(s => s.soundId).join(' + ');
-      const meta = [hzLabel, ambSummary].filter(Boolean).join(' · ');
-
-      const btn = document.createElement('button');
-      btn.className = 'preset-card';
-      btn.dataset.presetId = preset.id;
-      btn.setAttribute('role', 'listitem');
-      btn.setAttribute('aria-label', `Apply ${preset.name} preset — ${meta}`);
-      btn.innerHTML =
-        preset.icon +
-        '<span class="preset-name">' + preset.name + '</span>' +
-        '<span class="preset-meta">' + meta + '</span>';
-      grid.appendChild(btn);
-    });
-  },
-
-  applyPreset(presetId) {
-    const preset = MOOD_PRESETS.find(p => p.id === presetId);
-    if (!preset) return;
-    Audio.ensureContext();
-    Audio.resumeCtx();
-
-    // 1. Switch to layer mode (presets always layer freq + ambiance)
-    if (State.mode !== 'layer') {
-      State.mode = 'layer';
-      const isLayer = true;
-      document.getElementById('mode-toggle').setAttribute('aria-checked', 'true');
-      document.getElementById('lbl-single').classList.toggle('active', !isLayer);
-      document.getElementById('lbl-layer').classList.toggle('active', isLayer);
-    }
-
-    // 2. Stop everything currently playing (frequencies + ambiance)
-    Audio.stopAll();
-    State.activeSounds.clear();
-    Nature.stopAll();
-    document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
-
-    // 3. Switch category + play frequency
-    State.activeCategoryId = preset.categoryId;
-    history.replaceState(null, '', '#' + preset.categoryId);
-    UI.renderCategoryTags();
-    UI.renderCards();
-    const freq = FREQ_DATA[preset.categoryId]?.find(f => f.id === preset.frequencyId);
-    if (freq) {
-      Audio.play(freq);
-      State.isPlaying = true;
-    }
-
-    // 4. Set ambiance master volume + play each ambiance sound at its preset volume
-    Nature.setMasterVolume(preset.natureMasterVolume);
-    document.getElementById('ambiance-volume').value = preset.natureMasterVolume;
-    preset.ambianceSounds.forEach(({ soundId, volume }) => {
-      State.ambianceVolumes[soundId] = volume;
-      Nature.play(soundId);
-      document.querySelector(`.ambiance-btn[data-sound="${soundId}"]`)?.classList.add('active');
-    });
-
-    // 5. Refresh dependent UI + persist
-    UI.renderLayerPanel();
-    UI.renderAmbianceLayers();
-    UI.syncPlayState();
-    UI.updateNowPlaying();
-    document.getElementById('ambiance-toggle').classList.toggle('active', State.isAmbianceDrawerOpen || State.activeNature.size > 0);
-    Storage.save();
-  },
-
   renderCards() {
     const cat = CATEGORIES.find(c => c.id === State.activeCategoryId);
     const freqs = FREQ_DATA[State.activeCategoryId] || [];
@@ -2989,14 +2704,6 @@ const UI = {
 // ═══════════════════════════════════════════════
 
 function bindEvents() {
-  // Mood presets (event delegation in bottom sheet)
-  document.getElementById('presets-sheet-grid').addEventListener('click', e => {
-    const btn = e.target.closest('.preset-card');
-    if (!btn) return;
-    UI.applyPreset(btn.dataset.presetId);
-    closePresetsSheet();
-  });
-
   // Category tags (event delegation)
   document.getElementById('category-tags-scroll').addEventListener('click', e => {
     const btn = e.target.closest('.category-tag');
@@ -3144,50 +2851,6 @@ function bindEvents() {
     setAmbianceDrawer(false);
   });
 
-  // Mood presets — FAB + bottom sheet
-  const presetsFab = document.getElementById('presets-fab');
-  const presetsSheet = document.getElementById('presets-sheet');
-  const presetsBackdrop = document.getElementById('presets-backdrop');
-  let presetsSheetOpen = false;
-
-  function openPresetsSheet() {
-    if (presetsSheetOpen) return;
-    presetsSheetOpen = true;
-    presetsBackdrop.hidden = false;
-    // force reflow so the transition runs from the un-hidden state
-    void presetsBackdrop.offsetWidth;
-    presetsBackdrop.classList.add('open');
-    presetsSheet.classList.add('open');
-    presetsSheet.setAttribute('aria-hidden', 'false');
-    presetsFab.setAttribute('aria-expanded', 'true');
-    const firstCard = presetsSheet.querySelector('.preset-card');
-    if (firstCard) firstCard.focus({ preventScroll: true });
-  }
-
-  function closePresetsSheet() {
-    if (!presetsSheetOpen) return;
-    presetsSheetOpen = false;
-    presetsSheet.classList.remove('open');
-    presetsBackdrop.classList.remove('open');
-    presetsSheet.setAttribute('aria-hidden', 'true');
-    presetsFab.setAttribute('aria-expanded', 'false');
-    presetsFab.focus({ preventScroll: true });
-    setTimeout(() => {
-      if (!presetsSheetOpen) presetsBackdrop.hidden = true;
-    }, 280);
-  }
-
-  presetsFab.addEventListener('click', () => {
-    Audio.ensureContext();
-    Audio.resumeCtx();
-    presetsSheetOpen ? closePresetsSheet() : openPresetsSheet();
-  });
-  presetsBackdrop.addEventListener('click', closePresetsSheet);
-  document.getElementById('presets-sheet-close').addEventListener('click', closePresetsSheet);
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && presetsSheetOpen) closePresetsSheet();
-  });
-
   // Ambiance sound buttons (event delegation)
   document.getElementById('ambiance-grid').addEventListener('click', e => {
     const btn = e.target.closest('.ambiance-btn');
@@ -3261,7 +2924,6 @@ function init() {
     b.classList.toggle('active', b.dataset.wave === State.waveformType);
   });
 
-  UI.renderPresets();
   UI.renderCategoryTags();
   UI.renderCards();
   UI.syncPlayState();
