@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resonance — Therapeutic Sound Frequencies</title>
-  <meta name="description" content="Free browser-based sound therapy app. Stream binaural beats, solfeggio frequencies, and brainwave entrainment tones for sleep, focus, meditation, and healing." />
+  <meta name="description" content="Free browser-based sound app. Binaural beats, isochronic tones, shamanic drumming and guided frequency journeys for sleep, focus, meditation and trance." />
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.ico" />
@@ -377,12 +377,30 @@
       line-height: 1.55;
       margin-top: 8px;
     }
+    #info-source-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 8px;
+      margin-top: 8px;
+    }
     #info-source {
       font-size: 11px;
       color: var(--text-muted);
-      margin-top: 8px;
       font-style: italic;
     }
+    .evidence-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-mid);
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    .evidence-tag[hidden] { display: none; }
     #info-voice {
       font-size: 12px;
       color: var(--text-secondary);
@@ -1091,7 +1109,7 @@
           <div id="info-hz-badge"></div>
           <div id="info-name" aria-live="polite"></div>
           <p id="info-description"></p>
-          <p id="info-source"></p>
+          <p id="info-source-row"><span id="info-evidence" class="evidence-tag" hidden></span><span id="info-source"></span></p>
           <p id="info-voice"></p>
           <details id="info-guide" hidden>
             <summary>Journey guide</summary>
@@ -1263,7 +1281,7 @@ const CATEGORIES = [
     color: '#6366f1',
     rgb: '99,102,241',
     glow: 'rgba(99,102,241,0.25)',
-    desc: 'Delta brainwave frequencies for deep sleep and cellular restoration.',
+    desc: 'Delta brainwave rates for winding down toward deep sleep.',
   },
   {
     id: 'meditation',
@@ -1272,7 +1290,7 @@ const CATEGORIES = [
     color: '#8b5cf6',
     rgb: '139,92,246',
     glow: 'rgba(139,92,246,0.25)',
-    desc: 'Theta frequencies used in shamanic and deep meditative traditions.',
+    desc: 'Shamanic drumming and theta rates for trance and deep meditation.',
   },
   {
     id: 'relaxation',
@@ -1281,7 +1299,7 @@ const CATEGORIES = [
     color: '#06b6d4',
     rgb: '6,182,212',
     glow: 'rgba(6,182,212,0.25)',
-    desc: 'Alpha frequencies for calm alertness, stress reduction, and rest.',
+    desc: 'Alpha rates for calm alertness, stress reduction and rest.',
   },
   {
     id: 'focus',
@@ -1290,7 +1308,7 @@ const CATEGORIES = [
     color: '#f59e0b',
     rgb: '245,158,11',
     glow: 'rgba(245,158,11,0.25)',
-    desc: 'Low beta frequencies for sharpened concentration and active learning.',
+    desc: 'Beta rates (14–20 Hz) for alert, focused attention.',
   },
   {
     id: 'neural',
@@ -1299,16 +1317,16 @@ const CATEGORIES = [
     color: '#3b82f6',
     rgb: '59,130,246',
     glow: 'rgba(59,130,246,0.25)',
-    desc: 'Gamma frequencies with documented therapeutic effects on brain health.',
+    desc: "The 40 Hz gamma click train studied in Alzheimer's research.",
   },
   {
     id: 'pain',
-    name: 'Pain & Physical Healing',
+    name: 'Vibroacoustic',
     icon: _ico('<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>'),
     color: '#22c55e',
     rgb: '34,197,94',
     glow: 'rgba(34,197,94,0.25)',
-    desc: 'Clinically studied frequencies for pain relief and physical restoration.',
+    desc: "Frequencies studied as body vibration. Use a vibroacoustic transducer or bass shaker — headphones and phone speakers can't deliver them as vibration.",
   },
   {
     id: 'chakra',
@@ -1317,7 +1335,7 @@ const CATEGORIES = [
     color: '#a855f7',
     rgb: '168,85,247',
     glow: 'rgba(168,85,247,0.25)',
-    desc: 'Frequencies derived from spectral analysis of the OM vibration, mapped to chakra centers.',
+    desc: 'Frequency bands from a spectral analysis of chanted OM, mapped to chakras by tradition.',
   },
   {
     id: 'solfeggio',
@@ -1326,7 +1344,7 @@ const CATEGORIES = [
     color: '#ec4899',
     rgb: '236,72,153',
     glow: 'rgba(236,72,153,0.25)',
-    desc: 'Ancient solfège scale frequencies associated with healing and transformation.',
+    desc: 'A modern numerological scale popularized by Puleo & Horowitz (1999), not a historical one. Associations come from that tradition.',
   },
   {
     id: 'earth',
@@ -1335,7 +1353,7 @@ const CATEGORIES = [
     color: '#10b981',
     rgb: '16,185,129',
     glow: 'rgba(16,185,129,0.25)',
-    desc: "Schumann resonances — Earth's electromagnetic cavity frequencies.",
+    desc: "Beat rates set to the Schumann resonances, Earth's electromagnetic cavity modes. The match is numerical — sound doesn't couple to that field.",
   },
   {
     id: 'journeys',
@@ -1348,86 +1366,87 @@ const CATEGORIES = [
   },
 ];
 
+// evidence: how strong the support is for each card's main claim —
+// 'Clinical pilot' (small/uncontrolled trials) · 'Human study' · 'Animal / cell' · 'Traditional' · 'Speculative'
 const FREQ_DATA = {
   'deep-sleep': [
-    { id: 'ds-2',   hz: 2,   name: 'Deep Delta',           desc: 'Delta wave associated with deep dreamless sleep and unconscious cellular restoration.', source: 'Stapleton et al., 2016', kind: 'rate' },
-    { id: 'ds-3',   hz: 3,   name: 'Delta Restoration',    desc: 'Deep delta wave for total unconscious restoration and immune system support.', source: 'Hobson & McCarley, 1977', kind: 'rate' },
-    { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border',   desc: 'Border state between delta and theta — associated with whole-body healing and tissue repair.', source: 'Peng et al., 2019', kind: 'rate' },
+    { id: 'ds-2',   hz: 2,   name: 'Deep Delta',         desc: 'Delta (0.5–4 Hz) is the dominant EEG rhythm of deep, dreamless sleep. A 2 Hz beat is used as a sleep wind-down; evidence that beats alone deepen sleep is limited.', source: 'EEG band definitions (delta 0.5–4 Hz)', evidence: 'Human study', kind: 'rate' },
+    { id: 'ds-3',   hz: 3,   name: 'Delta Wind-Down',    desc: 'Mid-delta beat for settling toward sleep. Delta beats accompany rest rather than reliably producing slow-wave sleep.', source: 'EEG band definitions (delta 0.5–4 Hz)', evidence: 'Human study', kind: 'rate' },
+    { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border', desc: 'Sits near the 4 Hz boundary between delta and theta — the drowsy transition into sleep.', source: 'EEG band definitions', evidence: 'Human study', kind: 'rate' },
   ],
   'meditation': [
-    { id: 'drm-37',   hz: 3.7,  bpm: 220,   name: 'Shamanic Drum · 220 BPM', desc: 'Steady frame-drum beat at the tempo of Michael Harner\'s Core Shamanism journeys. Set a timer to hear the rattle callback near the end.', source: 'Harner (via Gingras et al., 2014)', kind: 'drum' },
-    { id: 'drm-42',   hz: 4.2,  bpm: 254.7, name: 'Shamanic Drum · 255 BPM', desc: 'The drumming tempo used by Gingras et al. (2014), where drumming plus journey instructions produced dreamlike experiences.', source: 'Gingras, Pohler & Fitch, 2014', kind: 'drum' },
-    { id: 'drm-45',   hz: 4.5,  bpm: 270,   name: 'Shamanic Drum · 270 BPM', desc: 'A slightly faster journey tempo at the upper end of theta-range sonic driving.', source: 'Harner & Harner (sonic driving at 4–7 Hz)', kind: 'drum' },
-    { id: 'med-45',   hz: 4.5,  name: 'Theta 4.5',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', kind: 'rate' },
-    { id: 'med-6',    hz: 6,    name: 'Deep Theta',           desc: 'Deep theta meditation state associated with vivid inner imagery and creative insight.', source: 'Banquet, 1973', kind: 'rate' },
-    { id: 'med-7',    hz: 7,    name: 'Creative Theta',       desc: 'Deep meditation and creative visualization. Associated with REM sleep and hypnagogic imagery.', source: 'Niedermeyer & da Silva, 2004', kind: 'rate' },
-    { id: 'med-783',  hz: 7.83, name: "Schumann Resonance",   desc: "Earth's fundamental electromagnetic resonance frequency — the alpha/theta border, also called Earth's heartbeat.", source: 'Schumann, 1952; König, 1979', kind: 'rate' },
+    { id: 'drm-37', hz: 3.7, bpm: 220,   name: 'Shamanic Drum · 220 BPM', desc: "Steady frame-drum beat at the tempo of Michael Harner's Core Shamanism journeys. Set a timer to hear the rattle callback near the end.", source: 'Harner (as described in Gingras et al., 2014)', evidence: 'Traditional', kind: 'drum' },
+    { id: 'drm-42', hz: 4.2, bpm: 254.7, name: 'Shamanic Drum · 255 BPM', desc: 'The drumming tempo used by Gingras et al. (2014): with journey instructions, listeners reported dreamlike states far more often than with relaxation instructions.', source: 'Gingras, Pohler & Fitch, 2014', evidence: 'Human study', kind: 'drum' },
+    { id: 'drm-45', hz: 4.5, bpm: 270,   name: 'Shamanic Drum · 270 BPM', desc: 'A slightly faster journey tempo, inside the 4–7 Hz "sonic driving" range shamanic practitioners describe.', source: 'Harner & Harner (sonic driving at 4–7 Hz)', evidence: 'Traditional', kind: 'drum' },
+    { id: 'med-45', hz: 4.5, name: 'Theta 4.5',      desc: 'A 4.5 Hz theta beat — the rate of shamanic drumming, delivered as a tone. For a trance session the drum cards are closer to what studies used.', source: 'Harner & Harner; Gingras et al., 2014', evidence: 'Human study', kind: 'rate' },
+    { id: 'med-6',  hz: 6,   name: 'Deep Theta',     desc: 'Theta (4–8 Hz) rises during meditation — by 29% overall in one EEG study of novice meditators — and is linked with vivid inner imagery.', source: 'Stapleton et al., 2020', evidence: 'Human study', kind: 'rate' },
+    { id: 'med-7',  hz: 7,   name: 'Creative Theta', desc: 'Upper theta, prominent in drowsiness and the hypnagogic imagery of sleep onset.', source: 'Niedermeyer & Lopes da Silva (EEG reference text)', evidence: 'Human study', kind: 'rate' },
   ],
   'relaxation': [
-    { id: 'rel-8',    hz: 8,    name: 'Alpha Entry',          desc: 'Light alpha state for stress reduction and the transition from active thinking to calm awareness.', source: 'Berger, 1929; Klimesch, 1999', kind: 'rate' },
-    { id: 'rel-10',   hz: 10,   name: 'Alpha Peak',           desc: 'Optimal alpha entrainment for calm alertness. Documented relief for insomnia and migraine prevention.', source: 'Walker & Duan, 2007', kind: 'rate' },
-    { id: 'rel-105',  hz: 10.5, name: 'Healing Alpha',        desc: 'Associated with body imbalance awareness and healing meditation. Bridges active and rest states.', source: 'Fehmi & Robbins, 2007', kind: 'rate' },
-    { id: 'rel-12',   hz: 12,   name: 'Stable Alpha',         desc: 'Mental stability and centered calm. Supports sensorimotor rhythm and physical relaxation.', source: 'Sterman & Friar, 1972', kind: 'rate' },
+    { id: 'rel-8',   hz: 8,    name: 'Alpha Entry',  desc: 'Low alpha — the rhythm that appears when you close your eyes and relax, marking the shift from active thinking to calm awareness.', source: 'Berger, 1929 (discovery of the alpha rhythm)', evidence: 'Human study', kind: 'rate' },
+    { id: 'rel-10',  hz: 10,   name: 'Alpha Peak',   desc: '10 Hz is the typical peak of the human alpha rhythm. Across studies, binaural beats show small-to-moderate effects on anxiety.', source: 'Garcia-Argibay, Santed & Reales, 2019 (meta-analysis)', evidence: 'Human study', kind: 'rate' },
+    { id: 'rel-105', hz: 10.5, name: 'Alpha 10.5',   desc: "Mid alpha. A Vedic-chanting paper lists 10.5 Hz under 'body awareness' in its alpha sub-bands; that mapping hasn't been tested experimentally.", source: 'Nalluri et al., 2023', evidence: 'Speculative', kind: 'rate' },
+    { id: 'rel-12',  hz: 12,   name: 'Stable Alpha', desc: 'Upper alpha, bordering the 12–15 Hz sensorimotor rhythm (SMR) linked with still, relaxed alertness. SMR research trained the rhythm with neurofeedback, not sound.', source: 'Sterman & Friar, 1972 (SMR neurofeedback)', evidence: 'Human study', kind: 'rate' },
   ],
   'focus': [
-    { id: 'foc-14',   hz: 14,   name: 'Schumann 2nd',         desc: 'Second harmonic of Schumann resonance. Alert concentration with a grounded quality.', source: 'Schumann, 1952', kind: 'rate' },
-    { id: 'foc-15',   hz: 15,   name: 'Mental Sharpness',     desc: 'Low beta wave for mental sharpness, focused problem solving, and logical reasoning.', source: 'Engel & Fries, 2010', kind: 'rate' },
-    { id: 'foc-18',   hz: 18,   name: 'Active Learning',      desc: 'Beta wave associated with active learning, information processing, and alertness.', source: 'Klimesch, 2012', kind: 'rate' },
-    { id: 'foc-20',   hz: 20,   name: 'GABA Elevation',       desc: 'Associated with GABA neurotransmitter elevation for neural balance and anxiety reduction.', source: 'Herrmann et al., 2010', kind: 'rate' },
+    { id: 'foc-14', hz: 14, name: 'Low Beta',     desc: 'The transition from relaxed alpha into alert, focused attention.', source: 'EEG band definitions (beta 13–32 Hz)', evidence: 'Human study', kind: 'rate' },
+    { id: 'foc-15', hz: 15, name: 'Focused Beta', desc: 'Low-to-mid beta associated with active concentration. Beta-range beats (16 and 24 Hz) improved vigilance and mood in one controlled study.', source: 'Lane et al., 1998', evidence: 'Human study', kind: 'rate' },
+    { id: 'foc-18', hz: 18, name: 'Alert Beta',   desc: 'Mid beta, present during active thinking and information processing.', source: 'EEG band definitions (beta 13–32 Hz)', evidence: 'Human study', kind: 'rate' },
+    { id: 'foc-20', hz: 20, name: 'Beta 20',      desc: 'Upper-mid beta. In rats, 20 Hz whole-body vibration raised brain GABA — a finding about vibration, not about hearing a 20 Hz beat.', source: 'Safarov & Kerimov, 1991 (via Bartel & Mosabbir, 2021)', evidence: 'Animal / cell', kind: 'rate' },
   ],
   'neural': [
-    { id: 'neu-40',   hz: 40,   name: 'Gamma — Master Freq',  desc: 'The master therapeutic frequency. 81% fibromyalgia improvement, 53–68% amyloid-beta reduction in Alzheimer\'s research. Activates microglia and promotes neural repair.', source: 'Naghdi et al., 2019; Iaccarino et al., 2016', kind: 'clicks' },
+    { id: 'neu-40', hz: 40, name: 'Gamma 40 Hz', desc: "A 40 Hz click train like MIT's GENUS device (1 ms pulses). In mice, 40 Hz light flicker reduced amyloid, though a 2023 study failed to replicate that; a small human pilot (Chan 2022) found slower brain-volume loss.", source: 'Chan et al., 2022; Iaccarino et al., 2016; Soula et al., 2023', evidence: 'Clinical pilot', kind: 'clicks' },
   ],
   'pain': [
-    { id: 'pai-26',   hz: 26,   name: 'Whole Body Vibration', desc: 'Whole body vibration frequency for enhanced blood flow and endothelial stimulation.', source: 'Rittweger et al., 2000', kind: 'vibration' },
-    { id: 'pai-30',   hz: 30,   name: 'Bone Activation',      desc: 'Stimulates bone cell activation and osteogenic differentiation. Used in fracture healing research.', source: 'Tanaka et al., 2003', kind: 'vibration' },
-    { id: 'pai-40',   hz: 40,   name: 'Fibromyalgia Relief',  desc: '40 Hz gamma frequency — 81% improvement in fibromyalgia clinical study. Chronic pain relief via thalamocortical entrainment.', source: 'Naghdi et al., 2019', kind: 'vibration' },
-    { id: 'pai-50',   hz: 50,   name: 'Nitric Oxide (+374%)', desc: 'Documented 374% increase in nitric oxide production for cardiovascular support and vascular health.', source: 'Lundeberg et al., 2004', kind: 'vibration' },
-    { id: 'pai-52',   hz: 52,   name: 'Pain Relief',          desc: 'Associated with low back pain and menstrual pain relief in clinical frequency therapy.', source: 'Laufer et al., 2005', kind: 'vibration' },
-    { id: 'pai-86',   hz: 86,   name: 'CRPS Relief',          desc: 'Complex Regional Pain Syndrome therapy — approximately 50% pain reduction in controlled studies.', source: 'Raso et al., 2005', kind: 'vibration' },
-    { id: 'pai-100',  hz: 100,  name: 'Blood Flow',           desc: 'Enhances blood flow via endothelial nitric oxide release. Cardiovascular and tissue healing support.', source: 'Weintraub, 2004', kind: 'vibration' },
+    { id: 'pai-26',  hz: 26,  name: 'Whole-Body Vibration', desc: 'Whole-body vibration at 26 Hz on a platform increased skin blood flow in people with type 2 diabetes.', source: 'Johnson et al., 2014', evidence: 'Human study', kind: 'vibration' },
+    { id: 'pai-30',  hz: 30,  name: 'Bone Cell Vibration',  desc: 'Vibration in the 30–90 Hz range stimulated bone cells grown in culture.', source: 'Tanaka et al., 2003; Lau et al. (via Bartel & Mosabbir, 2021)', evidence: 'Animal / cell', kind: 'vibration' },
+    { id: 'pai-40',  hz: 40,  name: 'Fibromyalgia Study',   desc: '40 Hz through transducers in a lounge, 23 min twice a week for 5 weeks: fibromyalgia impact scores fell 81% in an open-label study of 19 women with no control group.', source: 'Naghdi et al., 2015', evidence: 'Clinical pilot', kind: 'vibration' },
+    { id: 'pai-50',  hz: 50,  name: 'Forearm Vibration',    desc: 'Five minutes of 50 Hz vibration on the forearm raised nitric oxide 374% in healthy adults and 236% in adults with type 2 diabetes.', source: 'Maloney-Hinds et al., 2009', evidence: 'Human study', kind: 'vibration' },
+    { id: 'pai-52',  hz: 52,  name: 'Vibroacoustic 52 Hz',  desc: 'Used in early vibroacoustic therapy for low back pain and menstrual pain.', source: 'Skille, 1989; Skille & Wigram (via Naghdi et al., 2015)', evidence: 'Clinical pilot', kind: 'vibration' },
+    { id: 'pai-86',  hz: 86,  name: 'CRPS Study',           desc: '86 Hz vibration to the hand and wrist, 20 min a day alongside rehab: pain was about 50% lower than with rehab alone in an 11-patient pilot.', source: 'Gay et al., 2007', evidence: 'Clinical pilot', kind: 'vibration' },
+    { id: 'pai-100', hz: 100, name: 'Chest Vibration',      desc: 'Vibroacoustic stimulation of the chest at 100 Hz improved heart function in rats after a heart attack (conference abstract).', source: 'Uryash & Adams, 2018 (via Bartel & Mosabbir, 2021)', evidence: 'Animal / cell', kind: 'vibration' },
   ],
   'chakra': [
-    { id: 'cha-144',  hz: 144,  name: 'Root Chakra',          desc: 'Muladhara — grounding, stability, survival instinct. Foundation of the energetic body.', source: 'OM spectral analysis (Bhattacharya, 2015)', kind: 'pitch' },
-    { id: 'cha-194',  hz: 194,  name: 'Sacral Chakra',        desc: 'Svadhisthana — creativity, sexuality, emotional flow. Center of pleasure and creative force.', source: 'OM spectral analysis', kind: 'pitch' },
-    { id: 'cha-225',  hz: 225,  name: 'Solar Plexus',         desc: 'Manipura — personal power, will, digestion of experience. The fire center of the body.', source: 'OM spectral analysis', kind: 'pitch' },
-    { id: 'cha-275',  hz: 275,  name: 'Heart Chakra',         desc: 'Anahata — love, compassion, connection. Bridge between the lower and upper chakras.', source: 'OM spectral analysis', kind: 'pitch' },
-    { id: 'cha-325',  hz: 325,  name: 'Throat Chakra',        desc: 'Vishuddha — expression, truth, communication. Center of authentic voice and creative expression.', source: 'OM spectral analysis', kind: 'pitch' },
-    { id: 'cha-375',  hz: 375,  name: 'Third Eye Chakra',     desc: 'Ajna — intuition, inner sight, wisdom. The seat of expanded perception beyond the physical.', source: 'OM spectral analysis', kind: 'pitch' },
-    { id: 'cha-475',  hz: 475,  name: 'Crown Chakra',         desc: 'Sahasrara — unity consciousness, spiritual connection. The highest center of the energetic body.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-144', hz: 144, name: 'Root Chakra',      desc: 'Traditionally associated with Muladhara — grounding and stability. Midpoint of the 137.5–150 Hz band in the OM analysis.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-194', hz: 194, name: 'Sacral Chakra',    desc: 'Traditionally associated with Svadhisthana — creativity and emotional flow. Midpoint of the 187.5–200 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-225', hz: 225, name: 'Solar Plexus',     desc: 'Traditionally associated with Manipura — personal power and will. Midpoint of the 200–250 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-275', hz: 275, name: 'Heart Chakra',     desc: 'Traditionally associated with Anahata — love and compassion. Midpoint of the 250–300 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-325', hz: 325, name: 'Throat Chakra',    desc: 'Traditionally associated with Vishuddha — expression and communication. Midpoint of the 300–350 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-375', hz: 375, name: 'Third Eye Chakra', desc: 'Traditionally associated with Ajna — intuition and inner sight. Midpoint of the 350–400 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'cha-475', hz: 475, name: 'Crown Chakra',     desc: 'Traditionally associated with Sahasrara — unity and spiritual connection. Midpoint of the 450–500 Hz band.', source: 'Wani, Upasani & Deshpande, 2021 (OM spectral analysis)', evidence: 'Traditional', kind: 'pitch' },
   ],
   'solfeggio': [
-    { id: 'sol-396',  hz: 396,  name: 'UT — Liberation',      desc: 'Liberating guilt and fear. Associated with grounding and transformation of negative emotional patterns.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
-    { id: 'sol-417',  hz: 417,  name: 'RE — Change',          desc: 'Facilitating change and undoing situations. Reconnects to the capacity for positive transformation.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
-    { id: 'sol-528',  hz: 528,  name: 'MI — Love Frequency',  desc: 'Transformation and miracles. Known as the "love frequency" — associated with DNA repair and heart coherence.', source: 'Rein, 1988; Horowitz, 1998', kind: 'pitch' },
-    { id: 'sol-639',  hz: 639,  name: 'FA — Connection',      desc: 'Connecting and harmonizing relationships. Enhances communication, understanding, and tolerance.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
-    { id: 'sol-741',  hz: 741,  name: 'SOL — Expression',     desc: 'Expression and problem solving. Cleans cells and promotes a healthy electromagnetic field.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
-    { id: 'sol-852',  hz: 852,  name: 'LA — Intuition',       desc: 'Awakening intuition and returning to spiritual order. Associated with pineal gland activation.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
-    { id: 'sol-963',  hz: 963,  name: 'Crown Activation',     desc: 'Crown chakra activation and connection to pure consciousness. The frequency of divine light.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-396', hz: 396, name: 'UT — Liberation',     desc: 'Traditionally associated with releasing guilt and fear.', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-417', hz: 417, name: 'RE — Change',         desc: 'Traditionally associated with facilitating change and "undoing situations".', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-528', hz: 528, name: 'MI — Love Frequency', desc: 'Called the "love frequency" in solfeggio lore and linked with transformation. Claims that it repairs DNA have no supporting evidence.', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-639', hz: 639, name: 'FA — Connection',     desc: 'Traditionally associated with harmonizing relationships and communication.', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-741', hz: 741, name: 'SOL — Expression',    desc: 'Traditionally associated with expression and problem solving.', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-852', hz: 852, name: 'LA — Intuition',      desc: 'Traditionally associated with awakening intuition.', source: 'Puleo & Horowitz, 1999', evidence: 'Traditional', kind: 'pitch' },
+    { id: 'sol-963', hz: 963, name: '963 — Crown',         desc: 'A later addition to the original six tones, traditionally linked with the crown and a sense of oneness.', source: 'Modern solfeggio tradition', evidence: 'Traditional', kind: 'pitch' },
   ],
   'journeys': [
-    { id: 'jny-theta', hz: 6,  hzLabel: '10→6',      name: 'Theta Descent',    kind: 'program', minutes: 25,
+    { id: 'jny-theta', hz: 6,  hzLabel: '10→6',   name: 'Theta Descent',    kind: 'program', minutes: 25,
       stages: [{ at: 0, hz: 10 }, { at: 15 * 60, hz: 6 }],
       desc: 'Starts at 10 Hz alpha and glides to 6 Hz theta over 15 minutes, then holds. A gradual way into deep meditation.', source: 'Program built from the alpha and theta bands' },
-    { id: 'jny-hypna', hz: 4.5, hzLabel: '10→4.5',   name: 'Hypnagogic Drift', kind: 'program', minutes: 30,
+    { id: 'jny-hypna', hz: 4.5, hzLabel: '10→4.5', name: 'Hypnagogic Drift', kind: 'program', minutes: 30,
       stages: [{ at: 0, hz: 10 }, { at: 8 * 60, hz: 7 }, { at: 20 * 60, hz: 4.5 }],
       desc: 'Alpha to 7 Hz, then down to 4.5 Hz theta over 20 minutes — the drowsy edge of sleep where vivid imagery tends to appear.', source: 'Program built from the alpha and theta bands' },
-    { id: 'jny-focus', hz: 16, hzLabel: '10→16',     name: 'Focus Ramp',       kind: 'program', minutes: 45,
+    { id: 'jny-focus', hz: 16, hzLabel: '10→16',  name: 'Focus Ramp',       kind: 'program', minutes: 45,
       stages: [{ at: 0, hz: 10 }, { at: 5 * 60, hz: 16 }],
       desc: 'Settles at 10 Hz, rises to 16 Hz beta over 5 minutes and holds for a work block.', source: 'Lane et al., 1998 (beta beats and vigilance)' },
-    { id: 'jny-sleep', hz: 2,  hzLabel: '10→2',      name: 'Sleep Descent',    kind: 'program', minutes: 45,
+    { id: 'jny-sleep', hz: 2,  hzLabel: '10→2',   name: 'Sleep Descent',    kind: 'program', minutes: 45,
       stages: [{ at: 0, hz: 10 }, { at: 12 * 60, hz: 6 }, { at: 30 * 60, hz: 2 }],
       desc: 'Alpha to theta over 12 minutes, then down to 2 Hz delta by 30 minutes. A wind-down for falling asleep.', source: 'Program built from the alpha, theta and delta bands' },
-    { id: 'jny-thal',  hz: 10, hzLabel: '10+40',     name: 'Thalamocortical 10 + 40', kind: 'combo',
+    { id: 'jny-thal',  hz: 10, hzLabel: '10+40',  name: 'Thalamocortical 10 + 40', kind: 'combo',
       layers: [{ kind: 'rate', hz: 10 }, { kind: 'clicks', hz: 40 }],
-      desc: 'A 10 Hz alpha beat together with a 40 Hz click train, after the idea that thalamocortical loops pair alpha and gamma rhythms.', source: 'Llinás et al., 1999 (thalamocortical dysrhythmia)' },
+      desc: 'A 10 Hz alpha beat together with a 40 Hz click train, after the hypothesis that thalamocortical loops pair alpha and gamma rhythms.', source: 'Llinás et al., 1999 (thalamocortical dysrhythmia)', evidence: 'Speculative' },
   ],
   'earth': [
-    { id: 'ear-783',  hz: 7.83,  name: 'Schumann 1st',        desc: "Earth's fundamental electromagnetic resonance. The planet's natural brainwave — syncs biological rhythms.", source: 'Schumann, 1952', kind: 'rate' },
-    { id: 'ear-141',  hz: 14.1,  name: 'Schumann 2nd',        desc: 'Second harmonic of Earth\'s resonance. Associated with alert yet grounded mental states.', source: 'Schumann & König, 1954', kind: 'rate' },
-    { id: 'ear-203',  hz: 20.3,  name: 'Schumann 3rd',        desc: "Third Schumann harmonic — subtle cognitive enhancement within Earth's natural electromagnetic field.", source: 'Williams, 1992', kind: 'rate' },
-    { id: 'ear-264',  hz: 26.4,  name: 'Schumann 4th',        desc: 'Fourth Schumann harmonic. Physical and energetic stabilization within the Earth\'s resonant field.', source: 'Williams, 1992', kind: 'rate' },
-    { id: 'ear-338',  hz: 33.8,  name: 'Schumann 5th',        desc: "Fifth Schumann harmonic. High gamma-adjacent resonance with Earth's electromagnetic field.", source: 'Williams, 1992', kind: 'rate' },
+    { id: 'ear-783', hz: 7.83, name: 'Schumann 1st', desc: "Earth's fundamental Schumann resonance, near the theta/alpha border. The resonance is a very weak electromagnetic field; this is an acoustic beat at the same rate.", source: 'Stolc et al., 2021 (NASA white paper)', evidence: 'Speculative', kind: 'rate' },
+    { id: 'ear-143', hz: 14.3, name: 'Schumann 2nd', desc: 'Second Schumann mode, in the low-beta range.', source: 'Stolc et al., 2021 (NASA white paper)', evidence: 'Speculative', kind: 'rate' },
+    { id: 'ear-208', hz: 20.8, name: 'Schumann 3rd', desc: 'Third Schumann mode, in the beta range.', source: 'Stolc et al., 2021 (NASA white paper)', evidence: 'Speculative', kind: 'rate' },
+    { id: 'ear-273', hz: 27.3, name: 'Schumann 4th', desc: 'Fourth Schumann mode, in upper beta.', source: 'Stolc et al., 2021 (NASA white paper)', evidence: 'Speculative', kind: 'rate' },
+    { id: 'ear-338', hz: 33.8, name: 'Schumann 5th', desc: 'Fifth Schumann mode, at the beta/gamma border. Binaural beats this fast are faint; isochronic mode carries them better.', source: 'Stolc et al., 2021 (NASA white paper)', evidence: 'Speculative', kind: 'rate' },
   ],
 };
 
@@ -3099,6 +3118,9 @@ const UI = {
     document.getElementById('info-name').textContent = freq.name;
     document.getElementById('info-description').textContent = freq.desc;
     document.getElementById('info-source').textContent = freq.source ? 'Source: ' + freq.source : '';
+    const evEl = document.getElementById('info-evidence');
+    evEl.textContent = freq.evidence || '';
+    evEl.hidden = !freq.evidence;
     UI.refreshInfoVoice();
 
     panel.classList.add('visible');

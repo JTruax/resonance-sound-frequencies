@@ -11,25 +11,29 @@ An interactive web app and open knowledge base for therapeutic sound frequencies
 [Resonance](index.html) is a single-file, zero-dependency web app that lets you play therapeutic frequencies directly in your browser using the Web Audio API.
 
 **Features:**
-- 9 curated frequency categories with scientific and traditional context
-- Single-tone and layer modes — stack multiple frequencies simultaneously
-- Binaural beat generation with stereo channel separation
-- Per-layer volume control
-- Session timer with auto-fade
+- 10 frequency categories, including timed Journeys and shamanic drumming
+- Brainwave-rate tones play as binaural beats or isochronic pulses; audible tones can carry an optional beat
+- 40 Hz click train modelled on the GENUS stimulus (1 ms pulses, 40 per second)
+- Single-tone and layer modes with per-layer volume
+- Procedural nature ambiance: rain, ocean, wind, fire, thunder and forest
+- Session timer with fade-out, plus pause/resume for tones and ambiance together
+- Output limiter and loudness matching across frequencies
+- Each card shows what actually plays, its source and an evidence level
 - Real-time waveform visualizer
 
 **Frequency categories:**
-| Category | Frequency Range | Purpose |
+| Category | Frequencies | What plays |
 |---|---|---|
-| Deep Sleep & Restoration | 2–3.5 Hz | Delta brainwave entrainment |
-| Meditation & Trance | 4.5–7.83 Hz | Theta / shamanic states |
-| Relaxation & Stress Relief | 8–12 Hz | Alpha entrainment |
-| Focus & Cognition | 14–20 Hz | Low beta, GABA elevation |
-| Neural Coherence & Brain Health | 10 / 40 Hz | Gamma therapy, Alzheimer's research |
-| Pain & Physical Healing | 26–100 Hz | Fibromyalgia, CRPS, nitric oxide |
-| Chakra Frequencies | 144–475 Hz | OM spectral analysis |
-| Solfeggio Frequencies | 396–963 Hz | Ancient solfège scale |
-| Earth & Cosmic Resonance | 7.83–33.8 Hz | Schumann resonances |
+| Journeys | 10→6, 10→4.5, 10→16, 10→2 Hz; 10 + 40 Hz | Beat-rate glides over 25–45 min; alpha beat with a 40 Hz click train |
+| Deep Sleep & Restoration | 2–3.5 Hz | Delta beats |
+| Meditation & Trance | 3.7–7 Hz | Shamanic frame drum (220–270 BPM) and theta beats |
+| Relaxation & Stress Relief | 8–12 Hz | Alpha beats |
+| Focus & Cognition | 14–20 Hz | Beta beats |
+| Neural Coherence & Brain Health | 40 Hz | GENUS-style click train |
+| Vibroacoustic | 26–100 Hz | Plain sines for vibroacoustic transducers or bass shakers |
+| Chakra Frequencies | 144–475 Hz | Bands from a spectral analysis of chanted OM, mapped to chakras by tradition |
+| Solfeggio Frequencies | 396–963 Hz | Modern numerological scale (Puleo & Horowitz, 1999) |
+| Earth & Cosmic Resonance | 7.83–33.8 Hz | Beats at the Schumann resonance values |
 
 ---
 
@@ -66,11 +70,11 @@ It distills 29 source documents spanning:
 
 ### Highlighted findings
 
-- **40 Hz** — 81% reduction in fibromyalgia scores; 53–68% amyloid-beta reduction in Alzheimer's research; activates microglia; drives thalamocortical repair
-- **50 Hz** — 374% increase in nitric oxide production in endothelial cells
-- **7.83 Hz** — Earth's fundamental Schumann resonance; documented Zeitgeber for human circadian rhythms
-- **Shamanic drumming** at 4–4.5 Hz produces theta brainwave entrainment consistent across 30,000+ years of cross-cultural practice
-- **OM chanting** produces 7–8 spectral peaks mapping to traditional chakra frequency bands
+- **40 Hz** — Fibromyalgia impact scores fell 81% with 40 Hz body vibration in an open-label pilot of 19 women with no control group (Naghdi et al., 2015). In mice, 40 Hz light flicker cut amyloid-beta by roughly 40–67% depending on the measure (Iaccarino et al., 2016), though a 2023 study failed to replicate this; a 15-person pilot of 40 Hz light and sound found slower brain-volume loss (Chan et al., 2022).
+- **50 Hz** — Five minutes of 50 Hz vibration on the forearm raised nitric oxide 374% in healthy adults (Maloney-Hinds et al., 2009).
+- **7.83 Hz** — Earth's fundamental Schumann resonance. Isolation experiments by Wever suggested extremely-low-frequency fields can influence human circadian rhythms.
+- **Shamanic drumming** at 220–255 BPM (3.7–4.2 Hz) — with journey instructions, listeners reported dreamlike states far more often than with relaxation instructions (Gingras et al., 2014), and experienced practitioners showed higher gamma power while drumming (Huels et al., 2021).
+- **OM chanting** — a spectral analysis found 7–8 peaks, which the authors mapped to traditional chakra bands (Wani et al., 2021).
 
 ---
 
@@ -80,7 +84,7 @@ The knowledge base is **MIT licensed** — take it, adapt it, build on it.
 
 Some ideas:
 
-- Build your own frequency therapy app (the raw source data lives in `pdf_texts/`)
+- Build your own frequency app
 - Train or prompt an AI model with the research synthesis
 - Create a meditation or binaural beat generator
 - Build a data visualization of frequency-effect relationships
