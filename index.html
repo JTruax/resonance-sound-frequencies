@@ -882,6 +882,22 @@
       background: var(--bg-hover);
     }
 
+    #ambiance-context {
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--text-secondary);
+      margin: calc(-1 * var(--space-sm)) 0 var(--space-md);
+    }
+    #ambiance-context[hidden] { display: none; }
+    .ambiance-kind {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .ambiance-btn.active .ambiance-kind { color: inherit; opacity: 0.75; }
+
     #ambiance-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1144,6 +1160,7 @@
       <span>Nature Ambiance</span>
       <button id="ambiance-close" aria-label="Close ambiance drawer">×</button>
     </div>
+    <p id="ambiance-context" hidden></p>
     <div id="ambiance-grid">
       <button class="ambiance-btn" data-sound="rain">
         <!-- Cloud with three rain drops below -->
@@ -1154,6 +1171,7 @@
           <line x1="16" y1="19" x2="16" y2="21"/>
         </svg>
         <span>Rain</span>
+        <span class="ambiance-kind">Steady</span>
       </button>
       <button class="ambiance-btn" data-sound="ocean">
         <!-- Two sinusoidal wave lines -->
@@ -1162,6 +1180,7 @@
           <path d="M2 17c1.5 0 1.5-1.5 3-1.5s1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/>
         </svg>
         <span>Ocean</span>
+        <span class="ambiance-kind">Steady</span>
       </button>
       <button class="ambiance-btn" data-sound="wind">
         <!-- Three horizontal arcs curling right, varying lengths -->
@@ -1171,6 +1190,7 @@
           <path d="M3 16h7"/>
         </svg>
         <span>Wind</span>
+        <span class="ambiance-kind">Steady</span>
       </button>
       <button class="ambiance-btn" data-sound="fire">
         <!-- Flame with inner smaller flame -->
@@ -1178,6 +1198,7 @@
           <path d="M12 2c0 0-5 5-5 11a5 5 0 0 0 10 0c0-3-1.5-5-3-6.5 0 1.5-.5 3-.5 3C13 8 12 2 12 2z"/>
         </svg>
         <span>Fire</span>
+        <span class="ambiance-kind">Eventful</span>
       </button>
       <button class="ambiance-btn" data-sound="thunder">
         <!-- Cloud with lightning bolt -->
@@ -1186,6 +1207,7 @@
           <polyline points="13 11 9 17 13 17 9 23"/>
         </svg>
         <span>Thunder</span>
+        <span class="ambiance-kind">Eventful</span>
       </button>
       <button class="ambiance-btn" data-sound="forest">
         <!-- Pine tree: two stacked triangles + trunk -->
@@ -1194,6 +1216,7 @@
           <line x1="12" y1="19" x2="12" y2="22"/>
         </svg>
         <span>Forest</span>
+        <span class="ambiance-kind">Eventful</span>
       </button>
     </div>
     <div id="ambiance-active-list" aria-label="Active ambiance layers"></div>
@@ -1493,6 +1516,9 @@ const State = {
   isAmbianceDrawerOpen: false,
 };
 
+// Category object a frequency card belongs to
+const categoryOf = freqId => CATEGORIES.find(c => FREQ_DATA[c.id]?.some(f => f.id === freqId));
+
 const NATURE_LABELS = {
   rain: 'Rain', ocean: 'Ocean', wind: 'Wind',
   fire: 'Fire', thunder: 'Thunder', forest: 'Forest',
@@ -1529,6 +1555,11 @@ const THUNDER_MID_PEAK = 0.4;
 const THUNDER_CLOSE_PEAK = 0.35;
 // Forest layers: continuous leaf-air bed, irregular crickets, sparse soft birds
 const FOREST_AIR_LEVEL = 0.12;
+// Session-aware ambiance: steady beds vs sounds with discrete events
+const NATURE_KIND = { rain: 'steady', ocean: 'steady', wind: 'steady', fire: 'eventful', thunder: 'eventful', forest: 'eventful' };
+const NATURE_EVENTFUL_DUCK = 0.4;  // −8 dB for eventful sounds in focus, gamma, Journeys and drum sessions
+const NATURE_DRUM_DUCK = 0.4;      // −8 dB for all ambiance under the drum
+const NATURE_LOWCUT_HZ = 100;      // rumble cut when 40 Hz clicks, vibroacoustic tones or the drum play
 const FOREST_CRICKET_LEVEL = 1.5;
 const FOREST_BIRD_PEAK = 0.07;
 
@@ -1649,8 +1680,13 @@ const Audio = {
     }
   },
 
+  // Whether a voice (or any part of a combo) is of the given type
+  voiceHas(v, type) {
+    return v.type === type || (v.parts || []).some(p => Audio.voiceHas(p, type));
+  },
+
   usesBinaural(v) {
-    return v.type === 'binaural' || (v.parts || []).some(Audio.usesBinaural);
+    return Audio.voiceHas(v, 'binaural');
   },
 
   // Display label for a card's frequency (programs and combos show a range or pair)
@@ -1904,6 +1940,10 @@ const Audio = {
 
 const Nature = {
   masterGain: null,
+  buses: null,     // { steady, eventful } — each sound plays into its group
+  lowCuts: null,   // two cascaded highpass stages (24 dB/octave)
+  duck: null,
+  context: { focus: false, drum: false, lowCut: false },
   _buffers: {},
 
   _ensure() {
@@ -1914,11 +1954,44 @@ const Nature = {
     Nature.masterGain.gain.setValueAtTime(State.natureMasterVolume, ctx.currentTime);
     const trim = ctx.createGain();
     trim.gain.setValueAtTime(NATURE_TRIM, ctx.currentTime);
-    Nature.masterGain.connect(trim).connect(State.masterGain);
+    // sound → steady/eventful bus → slider (masterGain) → low-cut ×2 → drum duck → trim → master
+    Nature.buses = { steady: ctx.createGain(), eventful: ctx.createGain() };
+    Nature.buses.steady.connect(Nature.masterGain);
+    Nature.buses.eventful.connect(Nature.masterGain);
+    Nature.lowCuts = [0, 1].map(() => {
+      const hp = ctx.createBiquadFilter();
+      hp.type = 'highpass';
+      hp.frequency.setValueAtTime(20, ctx.currentTime);
+      // Web Audio highpass Q is a resonance in dB; −3.01 dB is a flat (Butterworth) response
+      hp.Q.setValueAtTime(-3.01, ctx.currentTime);
+      return hp;
+    });
+    Nature.duck = ctx.createGain();
+    Nature.masterGain.connect(Nature.lowCuts[0]).connect(Nature.lowCuts[1])
+      .connect(Nature.duck).connect(trim).connect(State.masterGain);
     // Pre-generate noise buffers eagerly to avoid first-tap stutter on slow devices
     ['white', 'pink', 'brown'].forEach(t => {
       if (!Nature._buffers[t]) Nature._buffers[t] = Nature._makeNoiseBuffer(t);
     });
+    Nature.syncContext();
+  },
+
+  // Adapt the ambiance to what's playing: eventful sounds step back in focus, gamma, Journeys
+  // and drum sessions, everything steps back under the drum, and rumble is cut when it would
+  // compete with 40 Hz clicks, vibroacoustic tones or the drum's low end
+  syncContext() {
+    const sounds = [...State.activeSounds.values()];
+    const drum = sounds.some(s => s.freq.kind === 'drum');
+    const focus = drum || sounds.some(s => ['focus', 'neural', 'journeys'].includes(categoryOf(s.freq.id)?.id));
+    const lowCut = sounds.some(s => s.freq.kind === 'vibration' || Audio.voiceHas(s.voice, 'clicks') || Audio.voiceHas(s.voice, 'drum'));
+    Nature.context = { focus, drum, lowCut };
+    if (Nature.masterGain) {
+      const now = State.ctx.currentTime;
+      Nature.buses.eventful.gain.setTargetAtTime(focus ? NATURE_EVENTFUL_DUCK : 1, now, 0.5);
+      Nature.duck.gain.setTargetAtTime(drum ? NATURE_DRUM_DUCK : 1, now, 0.5);
+      Nature.lowCuts.forEach(hp => hp.frequency.setTargetAtTime(lowCut ? NATURE_LOWCUT_HZ : 20, now, 0.5));
+    }
+    UI.renderAmbianceContext();
   },
 
   _makeNoiseBuffer(type) {
@@ -2536,7 +2609,7 @@ const Nature = {
     const ctx = State.ctx;
     const recipe = Nature._recipes[soundId];
     if (!recipe) return;
-    const sound = recipe(Nature.masterGain);
+    const sound = recipe(Nature.buses[NATURE_KIND[soundId]]);
     const now = ctx.currentTime;
     const targetVolume = State.ambianceVolumes[soundId] ?? 1.0;
     // Fade in to the user's preferred per-sound volume
@@ -3262,6 +3335,7 @@ const UI = {
     if (hasAny) Canvas.startWaveform();
     else Canvas.stopWaveform();
     UI.syncWakeLock();
+    Nature.syncContext();
     Media.update(document.getElementById('now-playing-name').textContent);
   },
 
@@ -3269,6 +3343,19 @@ const UI = {
     const hasAny = State.activeSounds.size > 0 || State.activeNature.size > 0;
     if (hasAny && !State.userPaused) WakeLock.acquire();
     else WakeLock.release();
+  },
+
+  // Drawer note listing how the ambiance is being adjusted for the current session
+  renderAmbianceContext() {
+    const el = document.getElementById('ambiance-context');
+    const c = Nature.context;
+    const db = g => Math.round(20 * Math.log10(g));
+    const parts = [];
+    if (c.focus) parts.push(`eventful sounds ${db(NATURE_EVENTFUL_DUCK)} dB`);
+    if (c.drum) parts.push(`all ambiance ${db(NATURE_DRUM_DUCK)} dB under the drum`);
+    if (c.lowCut) parts.push(`rumble cut below ${NATURE_LOWCUT_HZ} Hz`);
+    el.textContent = parts.length ? 'Adjusted for this session: ' + parts.join(' · ').replace(/-/g, '−') : '';
+    el.hidden = !parts.length;
   },
 
   syncAmbianceToggle() {
@@ -3292,7 +3379,7 @@ const UI = {
     if (State.mode === 'single' || sounds.length === 1) {
       const s = sounds[0];
       nameEl.textContent = `${Audio.hzLabel(s.freq)} Hz — ${s.freq.name}`;
-      const cat = CATEGORIES.find(c => FREQ_DATA[c.id]?.some(f => f.id === s.freq.id));
+      const cat = categoryOf(s.freq.id);
       subEl.textContent = cat ? cat.name : '';
       binEl.classList.toggle('visible', Audio.usesBinaural(s.voice));
     } else {

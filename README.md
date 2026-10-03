@@ -16,6 +16,7 @@ An interactive web app and open knowledge base for therapeutic sound frequencies
 - 40 Hz click train modelled on the GENUS stimulus (1 ms pulses, 40 per second)
 - Single-tone and layer modes with per-layer volume
 - Procedural nature ambiance: rain, ocean, wind, fire, thunder and forest
+- Ambiance adapts to the session: eventful sounds step back during focus, gamma, Journeys and drum sessions, and everything steps back under the drum
 - Session timer with fade-out, plus pause/resume for tones and ambiance together
 - Output limiter and loudness matching across frequencies
 - Each card shows what actually plays, its source and an evidence level
