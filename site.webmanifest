@@ -1,6 +1,7 @@
 {
   "name": "Resonance - Therapeutic Sound Frequencies",
   "short_name": "Resonance",
+  "start_url": "./",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
@@ -15,7 +16,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#121212",
+  "background_color": "#121212",
   "display": "standalone"
 }

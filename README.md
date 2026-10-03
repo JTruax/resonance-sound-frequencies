@@ -2,7 +2,7 @@
 
 An interactive web app and open knowledge base for therapeutic sound frequencies, grounded in peer-reviewed research, ancient traditions, and cymatics.
 
-**[Live Demo](https://jtruax.github.io/resonance-sound-frequencies)** &nbsp;|&nbsp; **[Knowledge Base](Sound_Frequencies_Knowledge_Base.md)**
+**[Live Demo](https://jtruax.github.io/resonance-sound-frequencies)** &nbsp;|&nbsp; **[Knowledge Base](Sound_Frequencies_Knowledge_Base.md)** &nbsp;|&nbsp; **[Sources](SOURCES.md)**
 
 ---
 
@@ -80,7 +80,7 @@ It distills 29 source documents spanning:
 
 ## Use the Knowledge Base in Your Project
 
-The knowledge base is **MIT licensed** — take it, adapt it, build on it.
+The knowledge base text is **MIT licensed** — take it, adapt it, build on it. The source papers it draws on belong to their authors; see [SOURCES.md](SOURCES.md).
 
 Some ideas:
 
@@ -109,18 +109,17 @@ open index.html   # macOS
 
 ## Sources
 
-The `pdf_texts/` directory contains the raw text extracted from the 29 source documents used to compile the knowledge base, including studies by:
+[SOURCES.md](SOURCES.md) lists the 29 documents behind the knowledge base, with DOIs and links where available, plus the other studies the app cites. They include:
 
-- Naghdi et al. (fibromyalgia / 40 Hz)
-- Iaccarino et al. (Alzheimer's / gamma entrainment)
-- Schumann & König (Earth resonance / biological effects)
-- Stapleton et al. (meditation EEG, 223 subjects)
-- Horowitz & Puleo (solfeggio frequencies)
-- Neher & Maxfield (shamanic drumming / trance)
-- Rein (DNA repair / frequency)
+- Naghdi et al., 2015 (fibromyalgia / 40 Hz vibration)
+- Iaccarino et al., 2016 and Chan et al., 2022 (gamma stimulation and Alzheimer's)
+- Stolc et al., 2021 and Schlegel & Füllekrug (Schumann resonance)
+- Stapleton et al., 2020 (meditation EEG, 223 participants)
+- Gingras et al., 2014 and Huels et al., 2021 (shamanic drumming and trance)
+- Hungerford, 2017 (a critical look at the solfeggio frequencies)
 
 ---
 
 ## License
 
-MIT — use freely, attribution appreciated but not required.
+[MIT](LICENSE) for the code and the knowledge base text — use freely, attribution appreciated but not required. The third-party works in [SOURCES.md](SOURCES.md) aren't covered.
