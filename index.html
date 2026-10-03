@@ -1521,6 +1521,9 @@ const DRUM_LEVEL = 0.45;
 const PROGRAM_TIME_SCALE = DEBUG && URL_PARAMS.get('pscale') ? parseFloat(URL_PARAMS.get('pscale')) : 1;
 // Ambiance sits under the tones
 const NATURE_TRIM = 0.5;
+// Noise loops: long enough that listeners don't learn the repeat, with a crossfaded seam
+const NOISE_BUFFER_S = 12;
+const NOISE_XFADE_S = 0.25;
 
 // ISO 226:2003 40-phon equal-loudness contour (Hz, dB SPL)
 const LOUDNESS_40PHON = [
@@ -1913,14 +1916,16 @@ const Nature = {
 
   _makeNoiseBuffer(type) {
     const ctx = State.ctx;
-    const len = ctx.sampleRate * 2;
-    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
-    const d = buf.getChannelData(0);
+    const len = Math.round(ctx.sampleRate * NOISE_BUFFER_S);
+    const xf = Math.round(ctx.sampleRate * NOISE_XFADE_S);
+    // Generate an extra crossfade's worth so the tail can be blended into the head
+    const n = len + xf;
+    const d = new Float32Array(n);
     if (type === 'white') {
-      for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+      for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
     } else if (type === 'pink') {
       let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
-      for (let i = 0; i < len; i++) {
+      for (let i = 0; i < n; i++) {
         const w = Math.random() * 2 - 1;
         b0 = 0.99886 * b0 + w * 0.0555179;
         b1 = 0.99332 * b1 + w * 0.0750759;
@@ -1932,23 +1937,42 @@ const Nature = {
         b6 = w * 0.115926;
       }
     } else { // brown
-      let last = 0;
-      for (let i = 0; i < len; i++) {
+      let last = 0, sum = 0;
+      for (let i = 0; i < n; i++) {
         const w = Math.random() * 2 - 1;
         last = (last + 0.02 * w) / 1.02;
         d[i] = last * 3.5;
+        sum += d[i];
       }
+      // Remove any drift so the loop doesn't carry a DC step
+      const mean = sum / n;
+      for (let i = 0; i < n; i++) d[i] -= mean;
+    }
+    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+    const out = buf.getChannelData(0);
+    out.set(d.subarray(0, len));
+    // Equal-power crossfade of the overflow into the start: the sample after out[len - 1]
+    // is out[0] = d[len], which continues the generated signal, so the loop has no seam
+    for (let i = 0; i < xf; i++) {
+      const th = (i / xf) * Math.PI / 2;
+      out[i] = d[i] * Math.sin(th) + d[len + i] * Math.cos(th);
     }
     return buf;
   },
 
+  // Looping noise from a random point, so sources sharing a buffer never line up
   _noiseSource(type) {
     if (!Nature._buffers[type]) Nature._buffers[type] = Nature._makeNoiseBuffer(type);
     const src = State.ctx.createBufferSource();
     src.buffer = Nature._buffers[type];
     src.loop = true;
-    src.start();
+    src.start(0, Math.random() * src.buffer.duration);
     return src;
+  },
+
+  // Random read position for one-shot bursts from a noise buffer
+  _randomOffset(buffer, length = 1) {
+    return Math.random() * Math.max(0, buffer.duration - length);
   },
 
   // Schedulers keep ticking while the context is suspended (user pause); they must not
@@ -2108,7 +2132,7 @@ const Nature = {
         g.gain.linearRampToValueAtTime(opts.amp, t + (opts.attack ?? 0.002));
         g.gain.exponentialRampToValueAtTime(0.0005, t + opts.decay);
         burst.connect(hp).connect(peak).connect(g).connect(outGain);
-        burst.start(t);
+        burst.start(t, Nature._randomOffset(burst.buffer));
         burst.stop(t + opts.decay + 0.02);
       };
 
@@ -2269,7 +2293,7 @@ const Nature = {
         g.gain.linearRampToValueAtTime(0.5, t + 1.4 + Math.random() * 0.6 + 0.4);
         g.gain.exponentialRampToValueAtTime(0.001, t + dur);
         n.connect(f).connect(g).connect(outGain);
-        n.start(t);
+        n.start(t, Nature._randomOffset(n.buffer));
         n.stop(t + dur + 0.1);
 
         // Sub
@@ -2297,7 +2321,7 @@ const Nature = {
           cg.gain.linearRampToValueAtTime(0.18, t + 0.005);
           cg.gain.exponentialRampToValueAtTime(0.001, t + 0.18);
           c.connect(cf).connect(cg).connect(outGain);
-          c.start(t);
+          c.start(t, Nature._randomOffset(c.buffer));
           c.stop(t + 0.25);
         }
       };
@@ -2325,7 +2349,7 @@ const Nature = {
         slamG.gain.linearRampToValueAtTime(0.4, t + 4.2);
         slamG.gain.exponentialRampToValueAtTime(0.001, t + dur);
         slam.connect(slamF).connect(slamG).connect(outGain);
-        slam.start(t);
+        slam.start(t, Nature._randomOffset(slam.buffer));
         slam.stop(t + dur + 0.1);
 
         // Sharp crack — broadband transient at strike
@@ -2339,7 +2363,7 @@ const Nature = {
         cg.gain.linearRampToValueAtTime(0.55, t + 0.003);
         cg.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
         crack.connect(cf).connect(cg).connect(outGain);
-        crack.start(t);
+        crack.start(t, Nature._randomOffset(crack.buffer));
         crack.stop(t + 0.3);
 
         // Deep sub-bass boom
