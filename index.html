@@ -389,6 +389,20 @@
       margin-top: 6px;
       font-variant-numeric: tabular-nums;
     }
+    #info-guide {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+    #info-guide summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    #info-guide ol { margin: 8px 0 6px 18px; }
+    #info-guide li { margin-bottom: 3px; }
+    #info-guide[hidden] { display: none; }
     #info-binaural-indicator {
       display: none;
       margin-top: 10px;
@@ -1079,6 +1093,17 @@
           <p id="info-description"></p>
           <p id="info-source"></p>
           <p id="info-voice"></p>
+          <details id="info-guide" hidden>
+            <summary>Journey guide</summary>
+            <ol>
+              <li>Lie down somewhere comfortable and cover your eyes.</li>
+              <li>Set a simple intention or question for the journey.</li>
+              <li>Picture an opening into the earth that you know or imagine — a cave, a hollow tree, a crater or a lake — and go through it.</li>
+              <li>Let the drum carry you. Notice what you see, hear and feel without steering it.</li>
+              <li>When the fast rattle starts, retrace your path back through the opening and return.</li>
+            </ol>
+            <p>Set a session timer to hear the rattle callback in the final 45 seconds.</p>
+          </details>
           <div id="info-binaural-indicator">🎧 Binaural — Use headphones</div>
         </div>
       </div>
@@ -1312,6 +1337,15 @@ const CATEGORIES = [
     glow: 'rgba(16,185,129,0.25)',
     desc: "Schumann resonances — Earth's electromagnetic cavity frequencies.",
   },
+  {
+    id: 'journeys',
+    name: 'Journeys',
+    icon: _ico('<circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/>'),
+    color: '#f97316',
+    rgb: '249,115,22',
+    glow: 'rgba(249,115,22,0.25)',
+    desc: 'Timed sessions that glide the beat rate between brain states, plus combined stimuli.',
+  },
 ];
 
 const FREQ_DATA = {
@@ -1321,7 +1355,10 @@ const FREQ_DATA = {
     { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border',   desc: 'Border state between delta and theta — associated with whole-body healing and tissue repair.', source: 'Peng et al., 2019', kind: 'rate' },
   ],
   'meditation': [
-    { id: 'med-45',   hz: 4.5,  name: 'Shamanic Trance',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', kind: 'rate' },
+    { id: 'drm-37',   hz: 3.7,  bpm: 220,   name: 'Shamanic Drum · 220 BPM', desc: 'Steady frame-drum beat at the tempo of Michael Harner\'s Core Shamanism journeys. Set a timer to hear the rattle callback near the end.', source: 'Harner (via Gingras et al., 2014)', kind: 'drum' },
+    { id: 'drm-42',   hz: 4.2,  bpm: 254.7, name: 'Shamanic Drum · 255 BPM', desc: 'The drumming tempo used by Gingras et al. (2014), where drumming plus journey instructions produced dreamlike experiences.', source: 'Gingras, Pohler & Fitch, 2014', kind: 'drum' },
+    { id: 'drm-45',   hz: 4.5,  bpm: 270,   name: 'Shamanic Drum · 270 BPM', desc: 'A slightly faster journey tempo at the upper end of theta-range sonic driving.', source: 'Harner & Harner (sonic driving at 4–7 Hz)', kind: 'drum' },
+    { id: 'med-45',   hz: 4.5,  name: 'Theta 4.5',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', kind: 'rate' },
     { id: 'med-6',    hz: 6,    name: 'Deep Theta',           desc: 'Deep theta meditation state associated with vivid inner imagery and creative insight.', source: 'Banquet, 1973', kind: 'rate' },
     { id: 'med-7',    hz: 7,    name: 'Creative Theta',       desc: 'Deep meditation and creative visualization. Associated with REM sleep and hypnagogic imagery.', source: 'Niedermeyer & da Silva, 2004', kind: 'rate' },
     { id: 'med-783',  hz: 7.83, name: "Schumann Resonance",   desc: "Earth's fundamental electromagnetic resonance frequency — the alpha/theta border, also called Earth's heartbeat.", source: 'Schumann, 1952; König, 1979', kind: 'rate' },
@@ -1340,7 +1377,6 @@ const FREQ_DATA = {
   ],
   'neural': [
     { id: 'neu-40',   hz: 40,   name: 'Gamma — Master Freq',  desc: 'The master therapeutic frequency. 81% fibromyalgia improvement, 53–68% amyloid-beta reduction in Alzheimer\'s research. Activates microglia and promotes neural repair.', source: 'Naghdi et al., 2019; Iaccarino et al., 2016', kind: 'clicks' },
-    { id: 'neu-10',   hz: 10,   name: 'Thalamic Alpha',       desc: 'Alpha thalamic frequency. When paired with 40 Hz gamma, optimizes the thalamocortical feedback loop.', source: 'Llinás & Ribary, 1993', kind: 'rate' },
   ],
   'pain': [
     { id: 'pai-26',   hz: 26,   name: 'Whole Body Vibration', desc: 'Whole body vibration frequency for enhanced blood flow and endothelial stimulation.', source: 'Rittweger et al., 2000', kind: 'vibration' },
@@ -1368,6 +1404,23 @@ const FREQ_DATA = {
     { id: 'sol-741',  hz: 741,  name: 'SOL — Expression',     desc: 'Expression and problem solving. Cleans cells and promotes a healthy electromagnetic field.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
     { id: 'sol-852',  hz: 852,  name: 'LA — Intuition',       desc: 'Awakening intuition and returning to spiritual order. Associated with pineal gland activation.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
     { id: 'sol-963',  hz: 963,  name: 'Crown Activation',     desc: 'Crown chakra activation and connection to pure consciousness. The frequency of divine light.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+  ],
+  'journeys': [
+    { id: 'jny-theta', hz: 6,  hzLabel: '10→6',      name: 'Theta Descent',    kind: 'program', minutes: 25,
+      stages: [{ at: 0, hz: 10 }, { at: 15 * 60, hz: 6 }],
+      desc: 'Starts at 10 Hz alpha and glides to 6 Hz theta over 15 minutes, then holds. A gradual way into deep meditation.', source: 'Program built from the alpha and theta bands' },
+    { id: 'jny-hypna', hz: 4.5, hzLabel: '10→4.5',   name: 'Hypnagogic Drift', kind: 'program', minutes: 30,
+      stages: [{ at: 0, hz: 10 }, { at: 8 * 60, hz: 7 }, { at: 20 * 60, hz: 4.5 }],
+      desc: 'Alpha to 7 Hz, then down to 4.5 Hz theta over 20 minutes — the drowsy edge of sleep where vivid imagery tends to appear.', source: 'Program built from the alpha and theta bands' },
+    { id: 'jny-focus', hz: 16, hzLabel: '10→16',     name: 'Focus Ramp',       kind: 'program', minutes: 45,
+      stages: [{ at: 0, hz: 10 }, { at: 5 * 60, hz: 16 }],
+      desc: 'Settles at 10 Hz, rises to 16 Hz beta over 5 minutes and holds for a work block.', source: 'Lane et al., 1998 (beta beats and vigilance)' },
+    { id: 'jny-sleep', hz: 2,  hzLabel: '10→2',      name: 'Sleep Descent',    kind: 'program', minutes: 45,
+      stages: [{ at: 0, hz: 10 }, { at: 12 * 60, hz: 6 }, { at: 30 * 60, hz: 2 }],
+      desc: 'Alpha to theta over 12 minutes, then down to 2 Hz delta by 30 minutes. A wind-down for falling asleep.', source: 'Program built from the alpha, theta and delta bands' },
+    { id: 'jny-thal',  hz: 10, hzLabel: '10+40',     name: 'Thalamocortical 10 + 40', kind: 'combo',
+      layers: [{ kind: 'rate', hz: 10 }, { kind: 'clicks', hz: 40 }],
+      desc: 'A 10 Hz alpha beat together with a 40 Hz click train, after the idea that thalamocortical loops pair alpha and gamma rhythms.', source: 'Llinás et al., 1999 (thalamocortical dysrhythmia)' },
   ],
   'earth': [
     { id: 'ear-783',  hz: 7.83,  name: 'Schumann 1st',        desc: "Earth's fundamental electromagnetic resonance. The planet's natural brainwave — syncs biological rhythms.", source: 'Schumann, 1952', kind: 'rate' },
@@ -1399,6 +1452,7 @@ const State = {
   timerRemaining: 0,
   timerEndsAt: 0,           // Date.now() deadline while running
   timerPausedMs: 0,         // remaining ms captured on pause
+  timerOwnerId: null,       // program that auto-started the timer
   timerIntervalId: null,
   // Audio nodes (created lazily)
   ctx: null,
@@ -1441,6 +1495,10 @@ const CLICK_LEVEL = 0.3;
 const DEFAULT_CARRIER_HZ = 300;
 // Beat choices for audible (pitch) tones; 0 = pure tone
 const BEAT_OPTIONS = [0, 2, 4.5, 6, 7.83, 10, 16, 40];
+// Peak level of the shamanic drum bus
+const DRUM_LEVEL = 0.45;
+// Journey programs run at real time; ?debug&pscale=0.05 compresses them for testing
+const PROGRAM_TIME_SCALE = DEBUG && URL_PARAMS.get('pscale') ? parseFloat(URL_PARAMS.get('pscale')) : 1;
 // Ambiance sits under the tones
 const NATURE_TRIM = 0.5;
 
@@ -1550,15 +1608,36 @@ const Audio = {
       case 'pitch':
         if (!State.beatHz) return { type: 'pure', audibleHz: freq.hz };
         return { type: State.stimMode, audibleHz: freq.hz, rateHz: State.beatHz };
+      case 'drum':
+        return { type: 'drum', audibleHz: 150, rateHz: freq.bpm / 60 };
+      case 'combo':
+        return { type: 'combo', parts: freq.layers.map(l => Audio.resolveVoice(l)) };
+      case 'program':
+        return { type: State.stimMode, audibleHz: DEFAULT_CARRIER_HZ, rateHz: freq.stages[0].hz, program: freq.stages };
       default: // 'rate' — hz is a beat/pulse rate on an audible carrier
         return { type: State.stimMode, audibleHz: freq.carrierHz || DEFAULT_CARRIER_HZ, rateHz: freq.hz };
     }
   },
 
+  usesBinaural(v) {
+    return v.type === 'binaural' || (v.parts || []).some(Audio.usesBinaural);
+  },
+
+  // Display label for a card's frequency (programs and combos show a range or pair)
+  hzLabel(freq) {
+    return freq.hzLabel || String(freq.hz);
+  },
+
   // One-line description of what a voice actually plays
   describeVoice(v) {
     const hz = n => +n.toFixed(2) + ' Hz';
+    if (v.program) {
+      const path = v.program.map(st => st.hz).join(' → ');
+      return `${v.type === 'binaural' ? 'Binaural beat' : 'Isochronic pulse'} gliding ${path} Hz on a ${hz(v.audibleHz)} tone`;
+    }
     switch (v.type) {
+      case 'combo':      return v.parts.map(Audio.describeVoice).join(' + ');
+      case 'drum':       return `Frame drum · ${+(v.rateHz * 60).toFixed(1)} BPM (${+v.rateHz.toFixed(2)} Hz)`;
       case 'binaural':   return `Binaural · ${hz(v.audibleHz)} left / ${hz(v.audibleHz + v.rateHz)} right`;
       case 'isochronic': return `Isochronic · ${hz(v.audibleHz)} tone pulsed ${+v.rateHz.toFixed(2)}× per second`;
       case 'clicks':     return `Click train · 1 ms pulses, ${+v.rateHz.toFixed(2)}× per second`;
@@ -1621,6 +1700,19 @@ const Audio = {
       return { nodes: [carrier, lfo, offset, shaper, scale, pulseGain], rateParam: lfo.frequency, rateOffset: 0 };
     },
 
+    // Several voices under one gain node (each part keeps its own level)
+    combo(out, v) {
+      const parts = v.parts.map(p => Audio._build(p, out));
+      return {
+        nodes: parts.flatMap(p => [...p.nodes, p.gainNode]),
+        stopFns: parts.flatMap(p => p.stopFns || []),
+      };
+    },
+
+    drum(out, v) {
+      return Drum.build(out, v);
+    },
+
     // GENUS-style 40 Hz stimulus: a 1 ms rectangular pulse each period (Chan et al., 2022)
     clicks(out, v) {
       const ctx = State.ctx;
@@ -1647,19 +1739,48 @@ const Audio = {
   },
 
   _levelFor(v) {
-    return v.type === 'clicks' ? CLICK_LEVEL : VOICE_GAIN * Audio._loudness(v.audibleHz);
+    if (v.type === 'clicks') return CLICK_LEVEL;
+    if (v.type === 'drum') return DRUM_LEVEL;
+    if (v.type === 'combo') return 1;  // parts carry their own levels
+    return VOICE_GAIN * Audio._loudness(v.audibleHz);
   },
 
   // Build a voice under its own fade-in gain node
-  _build(v) {
+  _build(v, out = State.masterGain) {
     const ctx = State.ctx;
     const level = Audio._levelFor(v);
     const gainNode = ctx.createGain();
     gainNode.gain.setValueAtTime(0, ctx.currentTime);
     gainNode.gain.linearRampToValueAtTime(level, ctx.currentTime + 0.2);
-    gainNode.connect(State.masterGain);
+    gainNode.connect(out);
     const built = Audio._voices[v.type](gainNode, v);
     return { ...built, gainNode, level, voice: v };
+  },
+
+  // Programs: every stage is scheduled up front on the audio clock, so tab throttling can't
+  // delay it and a user pause (context suspend) freezes it in place
+  // `elapsed` (audio seconds) resumes a program part-way, e.g. after a mode switch
+  _scheduleProgram(sound, elapsed = 0) {
+    const { rateParam, rateOffset, voice } = sound;
+    const now = State.ctx.currentTime;
+    sound.t0 = now - elapsed;
+    rateParam.cancelScheduledValues(now);
+    rateParam.setValueAtTime(rateOffset + Audio.programHz(sound), now);
+    voice.program.slice(1).forEach(st => {
+      const at = sound.t0 + st.at * PROGRAM_TIME_SCALE;
+      if (at > now) rateParam.linearRampToValueAtTime(rateOffset + st.hz, at);
+    });
+  },
+
+  // Current beat rate of a running program
+  programHz(sound) {
+    const stages = sound.voice.program;
+    const t = (State.ctx.currentTime - sound.t0) / PROGRAM_TIME_SCALE;
+    for (let i = 1; i < stages.length; i++) {
+      const a = stages[i - 1], b = stages[i];
+      if (t <= b.at) return a.hz + (b.hz - a.hz) * Math.max(0, t - a.at) / (b.at - a.at);
+    }
+    return stages[stages.length - 1].hz;
   },
 
   play(freq) {
@@ -1671,6 +1792,7 @@ const Audio = {
     const sound = Audio._build(Audio.resolveVoice(freq));
     sound.freq = freq;
     sound.userVol = 1;
+    if (sound.voice.program) Audio._scheduleProgram(sound);
     State.activeSounds.set(freq.id, sound);
   },
 
@@ -2452,6 +2574,123 @@ const Storage = {
 };
 
 // ═══════════════════════════════════════════════
+// 3d. SHAMANIC DRUM ENGINE
+// ═══════════════════════════════════════════════
+
+const Drum = {
+  LOOKAHEAD_S: 1.5,     // hits are scheduled this far ahead on the audio clock
+  TICK_MS: 100,
+  JITTER_SD_S: 0.001,   // Gingras et al. measured ~0.5% tempo variation in recorded journey drumming
+  CALLBACK_S: 45,       // rattle callback length when a session timer is running
+  RATTLE_HZ: 314.4 / 60, // rattle callback tempo (Gingras et al., 2014)
+
+  _noise(type) {
+    return Nature._buffers[type] || (Nature._buffers[type] = Nature._makeNoiseBuffer(type));
+  },
+
+  // One frame-drum stroke: pitched membrane + slap + body
+  _hit(out, t, vel) {
+    const ctx = State.ctx;
+    // Membrane: sine dropping 95 → 60 Hz
+    const osc = ctx.createOscillator();
+    osc.frequency.setValueAtTime(95, t);
+    osc.frequency.exponentialRampToValueAtTime(60, t + 0.12);
+    const og = ctx.createGain();
+    og.gain.setValueAtTime(0, t);
+    og.gain.linearRampToValueAtTime(0.9 * vel, t + 0.004);
+    og.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+    osc.connect(og).connect(out);
+    osc.start(t);
+    osc.stop(t + 0.27);
+
+    // Slap: white-noise burst through a ~1.2 kHz bandpass
+    const slap = ctx.createBufferSource();
+    slap.buffer = Drum._noise('white');
+    const bp = ctx.createBiquadFilter();
+    bp.type = 'bandpass';
+    bp.frequency.setValueAtTime(1200, t);
+    bp.Q.setValueAtTime(0.8, t);
+    const sg = ctx.createGain();
+    sg.gain.setValueAtTime(0, t);
+    sg.gain.linearRampToValueAtTime(0.35 * vel, t + 0.002);
+    sg.gain.exponentialRampToValueAtTime(0.001, t + 0.03);
+    slap.connect(bp).connect(sg).connect(out);
+    slap.start(t, Math.random());
+    slap.stop(t + 0.05);
+
+    // Body: pink noise through a ~400 Hz lowpass
+    const body = ctx.createBufferSource();
+    body.buffer = Drum._noise('pink');
+    const lp = ctx.createBiquadFilter();
+    lp.type = 'lowpass';
+    lp.frequency.setValueAtTime(400, t);
+    const bg = ctx.createGain();
+    bg.gain.setValueAtTime(0, t);
+    bg.gain.linearRampToValueAtTime(0.5 * vel, t + 0.005);
+    bg.gain.exponentialRampToValueAtTime(0.001, t + 0.15);
+    body.connect(lp).connect(bg).connect(out);
+    body.start(t, Math.random());
+    body.stop(t + 0.17);
+  },
+
+  // Rattle shake for the callback: short high-passed noise burst
+  _rattle(out, t, vel) {
+    const ctx = State.ctx;
+    const src = ctx.createBufferSource();
+    src.buffer = Drum._noise('white');
+    const hp = ctx.createBiquadFilter();
+    hp.type = 'highpass';
+    hp.frequency.setValueAtTime(3000, t);
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(0.3 * vel, t + 0.003);
+    g.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+    src.connect(hp).connect(g).connect(out);
+    src.start(t, Math.random());
+    src.stop(t + 0.08);
+  },
+
+  _gauss() {
+    return Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+  },
+
+  // Seconds of session timer left at audio time t (Infinity when no timer is running)
+  _timerLeftAt(t) {
+    if (!State.timerEndsAt) return Infinity;
+    return (State.timerEndsAt - Date.now()) / 1000 - (t - State.ctx.currentTime);
+  },
+
+  // Voice builder (wired through Audio._voices.drum). A lookahead scheduler places strokes on
+  // the audio clock; the grid itself never drifts, only each stroke is jittered.
+  build(out, v) {
+    const ctx = State.ctx;
+    const period = 1 / v.rateHz;
+    let next = ctx.currentTime + 0.1;
+    let beat = 0;
+    let stopped = false;
+    const tick = () => {
+      if (stopped || ctx.state !== 'running') return;
+      const horizon = ctx.currentTime + Drum.LOOKAHEAD_S;
+      while (next < horizon) {
+        const t = Math.max(ctx.currentTime, next + Drum._gauss() * Drum.JITTER_SD_S);
+        const vel = (beat % 2 === 0 ? 1 : 0.85) * (0.9 + Math.random() * 0.2);
+        if (Drum._timerLeftAt(next) <= Drum.CALLBACK_S) {
+          Drum._rattle(out, t, vel);
+          next += 1 / Drum.RATTLE_HZ;
+        } else {
+          Drum._hit(out, t, vel);
+          next += period;
+        }
+        beat++;
+      }
+    };
+    const id = setInterval(tick, Drum.TICK_MS);
+    tick();
+    return { nodes: [], stopFns: [() => { stopped = true; clearInterval(id); }] };
+  },
+};
+
+// ═══════════════════════════════════════════════
 // 4. TIMER ENGINE
 // ═══════════════════════════════════════════════
 
@@ -2479,7 +2718,7 @@ const Timer = {
 
   expire() {
     Timer.stop({ keepFade: true });
-    document.getElementById('timer-select').value = '0';
+    UI.setTimerSelect(0);
     Audio.stopAll();  // properly fades and disconnects oscillators
     Nature.stopAll(); // cancel ambiance schedulers and disconnect nature nodes
     State.isPlaying = false;
@@ -2496,6 +2735,7 @@ const Timer = {
   },
 
   stop({ keepFade = false } = {}) {
+    State.timerOwnerId = null;
     if (State.timerIntervalId) {
       clearInterval(State.timerIntervalId);
       State.timerIntervalId = null;
@@ -2607,10 +2847,12 @@ const Canvas = {
     const { W, H } = Canvas._size(canvas);
     const bufLen = State.analyser ? State.analyser.frequencyBinCount : 1024;
     const data = new Uint8Array(bufLen);
+    let frame = 0;
 
     function draw() {
       State.waveformRafId = requestAnimationFrame(draw);
       if (!State.analyser) return;
+      if (++frame % 30 === 0) UI.updateProgramStatus();
       State.analyser.getByteTimeDomainData(data);
 
       ctx.clearRect(0, 0, W, H);
@@ -2767,12 +3009,12 @@ const UI = {
       card.setAttribute('role', 'button');
       card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       card.setAttribute('tabindex', '0');
-      card.setAttribute('aria-label', `${freq.hz} Hz — ${freq.name}`);
+      card.setAttribute('aria-label', `${Audio.hzLabel(freq)} Hz — ${freq.name}`);
       card.dataset.freqId = freq.id;
 
       card.innerHTML = `
         <div class="card-playing-indicator" aria-hidden="true"></div>
-        <div class="card-hz">${freq.hz}<span>Hz</span></div>
+        <div class="card-hz">${Audio.hzLabel(freq)}<span>Hz</span></div>
         <div class="card-name">${freq.name}</div>
         <div class="card-desc">${freq.desc}</div>
         <span class="card-binaural-badge"></span>
@@ -2788,7 +3030,9 @@ const UI = {
   },
 
   _voiceBadge(v) {
-    return { binaural: '🎧 Binaural', isochronic: 'Isochronic', clicks: 'Click train' }[v.type] || '';
+    if (v.type === 'combo') return v.parts.map(UI._voiceBadge).filter(Boolean).join(' + ');
+    const base = { binaural: '🎧 Binaural', isochronic: 'Isochronic', clicks: 'Click train', drum: 'Drum' }[v.type] || '';
+    return v.program && base ? base + ' · ' + v.program.length + ' stages' : base;
   },
 
   // Badges show how each card would play under the current mode/beat
@@ -2819,11 +3063,16 @@ const UI = {
 
   // Rebuild active sounds after a mode/beat change, keeping each layer's volume
   restartActiveSounds() {
-    const activeCopy = [...State.activeSounds.values()].map(s => ({ freq: s.freq, userVol: s.userVol }));
+    const now = State.ctx ? State.ctx.currentTime : 0;
+    const activeCopy = [...State.activeSounds.values()].map(s => ({
+      freq: s.freq, userVol: s.userVol, elapsed: s.t0 != null ? now - s.t0 : 0,
+    }));
     Audio.stopAll();
     setTimeout(() => {
-      activeCopy.forEach(({ freq, userVol }) => {
+      activeCopy.forEach(({ freq, userVol, elapsed }) => {
         Audio.play(freq);
+        const sound = State.activeSounds.get(freq.id);
+        if (sound && sound.voice.program && elapsed) Audio._scheduleProgram(sound, elapsed);
         if (userVol !== 1) Audio.setLayerVolume(freq.id, userVol);
       });
       UI.renderLayerPanel();
@@ -2845,7 +3094,8 @@ const UI = {
     State.selectedFreqId = freq.id;
     const panel = document.getElementById('info-panel');
 
-    document.getElementById('info-hz-badge').innerHTML = `${freq.hz}<small> Hz</small>`;
+    document.getElementById('info-hz-badge').innerHTML = `${Audio.hzLabel(freq)}<small> Hz</small>`;
+    document.getElementById('info-guide').hidden = freq.kind !== 'drum';
     document.getElementById('info-name').textContent = freq.name;
     document.getElementById('info-description').textContent = freq.desc;
     document.getElementById('info-source').textContent = freq.source ? 'Source: ' + freq.source : '';
@@ -2861,7 +3111,7 @@ const UI = {
     if (!freq) return;
     const v = Audio.resolveVoice(freq);
     document.getElementById('info-voice').textContent = 'Plays as: ' + Audio.describeVoice(v);
-    document.getElementById('info-binaural-indicator').classList.toggle('visible', v.type === 'binaural');
+    document.getElementById('info-binaural-indicator').classList.toggle('visible', Audio.usesBinaural(v));
   },
 
   hideInfoPanel() {
@@ -2927,6 +3177,11 @@ const UI = {
     const hasAny = State.activeSounds.size > 0 || State.activeNature.size > 0;
     // Nothing left to resume — drop the paused state so the next sound just plays
     if (!hasAny && State.userPaused) Audio.unpause();
+    // A program's auto-started timer ends with the program, however it was stopped
+    if (State.timerOwnerId && !State.activeSounds.has(State.timerOwnerId)) {
+      Timer.stop();
+      UI.setTimerSelect(0);
+    }
     btn.disabled = !hasAny;
     if (hasAny && !State.userPaused) {
       btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
@@ -2967,17 +3222,39 @@ const UI = {
     const sounds = [...State.activeSounds.values()];
     if (State.mode === 'single' || sounds.length === 1) {
       const s = sounds[0];
-      nameEl.textContent = `${s.freq.hz} Hz — ${s.freq.name}`;
+      nameEl.textContent = `${Audio.hzLabel(s.freq)} Hz — ${s.freq.name}`;
       const cat = CATEGORIES.find(c => FREQ_DATA[c.id]?.some(f => f.id === s.freq.id));
       subEl.textContent = cat ? cat.name : '';
-      binEl.classList.toggle('visible', s.voice.type === 'binaural');
+      binEl.classList.toggle('visible', Audio.usesBinaural(s.voice));
     } else {
       nameEl.textContent = `${sounds.length} frequencies active`;
-      subEl.textContent = sounds.map(s => s.freq.hz + ' Hz').join(' · ');
-      const anyBinaural = sounds.some(s => s.voice.type === 'binaural');
-      binEl.classList.toggle('visible', anyBinaural);
+      subEl.textContent = sounds.map(s => Audio.hzLabel(s.freq) + ' Hz').join(' · ');
+      binEl.classList.toggle('visible', sounds.some(s => Audio.usesBinaural(s.voice)));
     }
+    UI.updateProgramStatus();
     Media.update(nameEl.textContent);
+  },
+
+  // Live beat rate of a running program, shown under the now-playing title
+  updateProgramStatus() {
+    const sounds = [...State.activeSounds.values()];
+    if (sounds.length !== 1 || !sounds[0].voice.program) return;
+    const hz = Audio.programHz(sounds[0]);
+    document.getElementById('now-playing-sub').textContent = `Journey · now ${hz.toFixed(1)} Hz`;
+  },
+
+  // Select a timer duration, adding an option when it isn't one of the presets (program lengths)
+  setTimerSelect(seconds) {
+    const sel = document.getElementById('timer-select');
+    sel.querySelectorAll('option[data-custom]').forEach(o => o.remove());
+    if (![...sel.options].some(o => o.value === String(seconds))) {
+      const opt = document.createElement('option');
+      opt.value = String(seconds);
+      opt.dataset.custom = '';
+      opt.textContent = seconds >= 60 ? Math.round(seconds / 60) + ' min' : seconds + ' s';
+      sel.appendChild(opt);
+    }
+    sel.value = String(seconds);
   },
 
   updateTimerDisplay() {
@@ -3037,6 +3314,17 @@ const UI = {
         Audio.play(freq);
       }
       State.isPlaying = State.activeSounds.size > 0;
+    }
+
+    // Programs start the timer at their length (unless one is already running) and cancel
+    // that timer again if they're stopped early
+    if (freq.kind === 'program') {
+      if (State.activeSounds.has(freq.id) && !State.timerEndsAt) {
+        const seconds = Math.max(15, Math.round(freq.minutes * 60 * PROGRAM_TIME_SCALE));
+        UI.setTimerSelect(seconds);
+        Timer.start(seconds);
+        State.timerOwnerId = freq.id;
+      }
     }
 
     UI.refreshCardStates();
@@ -3266,7 +3554,7 @@ function bindEvents() {
 
 const Debug = {
   init() {
-    window.__res = { State, Audio, Nature, Timer, UI, Debug, FREQ_DATA };
+    window.__res = { State, Audio, Nature, Drum, Timer, UI, Debug, FREQ_DATA };
     const opt = document.createElement('option');
     opt.value = '15';
     opt.textContent = '15 s';
