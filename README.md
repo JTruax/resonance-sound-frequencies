@@ -95,8 +95,8 @@ If you build something with it, feel free to open an issue or discussion — I w
 No build step required. Just open `index.html` in a browser:
 
 ```bash
-git clone https://github.com/JTruax/sound-frequencies-knowledge-base.git
-cd sound-frequencies-knowledge-base
+git clone https://github.com/JTruax/resonance-sound-frequencies.git
+cd resonance-sound-frequencies
 open index.html   # macOS
 # or: xdg-open index.html (Linux) / start index.html (Windows)
 ```
