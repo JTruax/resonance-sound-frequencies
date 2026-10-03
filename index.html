@@ -1524,6 +1524,13 @@ const NATURE_TRIM = 0.5;
 // Noise loops: long enough that listeners don't learn the repeat, with a crossfaded seam
 const NOISE_BUFFER_S = 12;
 const NOISE_XFADE_S = 0.25;
+// Thunder strike peaks (before the ambiance chain), kept near the tones' level
+const THUNDER_MID_PEAK = 0.4;
+const THUNDER_CLOSE_PEAK = 0.35;
+// Forest layers: continuous leaf-air bed, irregular crickets, sparse soft birds
+const FOREST_AIR_LEVEL = 0.12;
+const FOREST_CRICKET_LEVEL = 1.5;
+const FOREST_BIRD_PEAK = 0.07;
 
 // ISO 226:2003 40-phon equal-loudness contour (Hz, dB SPL)
 const LOUDNESS_40PHON = [
@@ -1982,9 +1989,9 @@ const Nature = {
   },
 
   // ── Recipes ─────────────────────────────────────
-  // Each recipe returns { nodes:[], gainNode, stopFns:[] }
+  // Each recipe plays into `out` and returns { nodes:[], gainNode, stopFns:[] }
   _recipes: {
-    rain() {
+    rain(out) {
       const ctx = State.ctx;
       const noise = Nature._noiseSource('pink');
       const bandpass = ctx.createBiquadFilter();
@@ -2005,11 +2012,11 @@ const Nature = {
       lfo.connect(lfoGain).connect(bandpass.frequency);
       lfo.start();
 
-      noise.connect(bandpass).connect(highpass).connect(gain).connect(Nature.masterGain);
+      noise.connect(bandpass).connect(highpass).connect(gain).connect(out);
       return { nodes: [noise, bandpass, highpass, gain, lfo, lfoGain], gainNode: gain, stopFns: [] };
     },
 
-    ocean() {
+    ocean(out) {
       const ctx = State.ctx;
       const noise = Nature._noiseSource('brown');
       const lowpass = ctx.createBiquadFilter();
@@ -2037,19 +2044,20 @@ const Nature = {
       lfo2.connect(lfo2Gain).connect(lowpass.frequency);
       lfo2.start();
 
-      noise.connect(lowpass).connect(waveGain).connect(outGain).connect(Nature.masterGain);
+      noise.connect(lowpass).connect(waveGain).connect(outGain).connect(out);
       return { nodes: [noise, lowpass, waveGain, outGain, lfo, lfoGain, lfo2, lfo2Gain], gainNode: outGain, stopFns: [] };
     },
 
-    wind() {
+    wind(out) {
       const ctx = State.ctx;
       const noise = Nature._noiseSource('pink');
       const bandpass = ctx.createBiquadFilter();
       bandpass.type = 'bandpass';
-      bandpass.frequency.setValueAtTime(800, ctx.currentTime);
+      // Centre wanders 350–1450 Hz; below that the band empties and gusts drop to near-silence
+      bandpass.frequency.setValueAtTime(900, ctx.currentTime);
       bandpass.Q.setValueAtTime(4, ctx.currentTime);
       const innerGain = ctx.createGain();
-      innerGain.gain.setValueAtTime(0.5, ctx.currentTime);
+      innerGain.gain.setValueAtTime(0.6, ctx.currentTime);
       const outGain = ctx.createGain();
       outGain.gain.setValueAtTime(0, ctx.currentTime);
 
@@ -2057,37 +2065,37 @@ const Nature = {
       const lfoA = ctx.createOscillator();
       lfoA.frequency.setValueAtTime(0.07, ctx.currentTime);
       const lfoAGain = ctx.createGain();
-      lfoAGain.gain.setValueAtTime(600, ctx.currentTime);
+      lfoAGain.gain.setValueAtTime(400, ctx.currentTime);
       lfoA.connect(lfoAGain).connect(bandpass.frequency);
       lfoA.start();
 
       const lfoB = ctx.createOscillator();
       lfoB.frequency.setValueAtTime(0.31, ctx.currentTime);
       const lfoBGain = ctx.createGain();
-      lfoBGain.gain.setValueAtTime(200, ctx.currentTime);
+      lfoBGain.gain.setValueAtTime(150, ctx.currentTime);
       lfoB.connect(lfoBGain).connect(bandpass.frequency);
       lfoB.start();
 
-      // Gain LFO
+      // Gain LFO: 0.3–0.9, gusts without silent troughs
       const lfoC = ctx.createOscillator();
       lfoC.frequency.setValueAtTime(0.13, ctx.currentTime);
       const lfoCGain = ctx.createGain();
-      lfoCGain.gain.setValueAtTime(0.5, ctx.currentTime);
+      lfoCGain.gain.setValueAtTime(0.3, ctx.currentTime);
       lfoC.connect(lfoCGain).connect(innerGain.gain);
       lfoC.start();
 
-      noise.connect(bandpass).connect(innerGain).connect(outGain).connect(Nature.masterGain);
+      noise.connect(bandpass).connect(innerGain).connect(outGain).connect(out);
       return { nodes: [noise, bandpass, innerGain, outGain, lfoA, lfoAGain, lfoB, lfoBGain, lfoC, lfoCGain], gainNode: outGain, stopFns: [] };
     },
 
-    fire() {
+    fire(out) {
       const ctx = State.ctx;
       const now = ctx.currentTime;
       let stopped = false;
 
       const outGain = ctx.createGain();
       outGain.gain.setValueAtTime(0, now);
-      outGain.connect(Nature.masterGain);
+      outGain.connect(out);
 
       // ── Bed layers (steady, no LFO modulation — modulation is what makes wind sounds) ──
 
@@ -2209,22 +2217,21 @@ const Nature = {
       };
     },
 
-    thunder() {
+    thunder(out) {
       const ctx = State.ctx;
       const now = ctx.currentTime;
 
       const outGain = ctx.createGain();
       outGain.gain.setValueAtTime(0, now);
-      outGain.connect(Nature.masterGain);
+      outGain.connect(out);
 
       // Layer 1: rain (subdued — thunder is the focus)
-      const rainPart = Nature._recipes.rain();
-      rainPart.gainNode.disconnect();
-      rainPart.gainNode.gain.cancelScheduledValues(now);
-      rainPart.gainNode.gain.setValueAtTime(1.0, now);
       const rainScale = ctx.createGain();
       rainScale.gain.setValueAtTime(0.32, now);
-      rainPart.gainNode.connect(rainScale).connect(outGain);
+      rainScale.connect(outGain);
+      const rainPart = Nature._recipes.rain(rainScale);
+      rainPart.gainNode.gain.cancelScheduledValues(now);
+      rainPart.gainNode.gain.setValueAtTime(1.0, now);
 
       // Layer 2: continuous low storm rumble bed (very quiet, sets atmospheric floor)
       const rumble = Nature._noiseSource('brown');
@@ -2274,7 +2281,7 @@ const Nature = {
         sub.stop(t + dur + 0.1);
       };
 
-      // MID: rolling thunder with body, occasional soft crack
+      // MID: rolling thunder with body (attacks >= 0.3 s so it swells rather than startles)
       const midStrike = (t) => {
         const dur = 4 + Math.random() * 2.5;
         const n = ctx.createBufferSource();
@@ -2288,9 +2295,9 @@ const Nature = {
         const g = ctx.createGain();
         // Two-stage envelope — initial body then a secondary roll
         g.gain.setValueAtTime(0, t);
-        g.gain.linearRampToValueAtTime(0.6, t + 0.15);
-        g.gain.linearRampToValueAtTime(0.35, t + 1.4);
-        g.gain.linearRampToValueAtTime(0.5, t + 1.4 + Math.random() * 0.6 + 0.4);
+        g.gain.linearRampToValueAtTime(THUNDER_MID_PEAK, t + 0.3);
+        g.gain.linearRampToValueAtTime(THUNDER_MID_PEAK * 0.6, t + 1.4);
+        g.gain.linearRampToValueAtTime(THUNDER_MID_PEAK * 0.8, t + 1.4 + Math.random() * 0.6 + 0.4);
         g.gain.exponentialRampToValueAtTime(0.001, t + dur);
         n.connect(f).connect(g).connect(outGain);
         n.start(t, Nature._randomOffset(n.buffer));
@@ -2302,34 +2309,19 @@ const Nature = {
         sub.frequency.setValueAtTime(55 + Math.random() * 8, t);
         const sg = ctx.createGain();
         sg.gain.setValueAtTime(0, t);
-        sg.gain.linearRampToValueAtTime(0.5, t + 0.1);
-        sg.gain.setValueAtTime(0.5, t + 0.4);
+        sg.gain.linearRampToValueAtTime(THUNDER_MID_PEAK * 0.8, t + 0.3);
+        sg.gain.setValueAtTime(THUNDER_MID_PEAK * 0.8, t + 0.5);
         sg.gain.exponentialRampToValueAtTime(0.001, t + dur);
         sub.connect(sg).connect(outGain);
         sub.start(t);
         sub.stop(t + dur + 0.1);
-
-        // Soft crack (30%)
-        if (Math.random() < 0.3) {
-          const c = ctx.createBufferSource();
-          c.buffer = Nature._buffers.white;
-          const cf = ctx.createBiquadFilter();
-          cf.type = 'highpass';
-          cf.frequency.setValueAtTime(800, t);
-          const cg = ctx.createGain();
-          cg.gain.setValueAtTime(0, t);
-          cg.gain.linearRampToValueAtTime(0.18, t + 0.005);
-          cg.gain.exponentialRampToValueAtTime(0.001, t + 0.18);
-          c.connect(cf).connect(cg).connect(outGain);
-          c.start(t, Nature._randomOffset(c.buffer));
-          c.stop(t + 0.25);
-        }
       };
 
-      // CLOSE: prominent boom with sharp crack and multi-stage rolling decay (reflections)
+      // CLOSE: the biggest boom, with rolling reflections — but no crack, and it swells in
+      // over 0.3 s instead of slamming, so it reads as near without being a startle
       const closeStrike = (t) => {
         const dur = 6 + Math.random() * 2.5;
-        // Initial slam — broadband, fast attack
+        const P = THUNDER_CLOSE_PEAK;
         const slam = ctx.createBufferSource();
         slam.buffer = Nature._buffers.white;
         slam.loop = true;
@@ -2339,32 +2331,18 @@ const Nature = {
         slamF.frequency.setValueAtTime(2200, t);
         slamF.frequency.exponentialRampToValueAtTime(150, t + dur);
         const slamG = ctx.createGain();
-        // Multi-peak envelope: instant crack, body, rolling reflection peaks
+        // Multi-peak envelope: body, then rolling reflection peaks
         slamG.gain.setValueAtTime(0, t);
-        slamG.gain.linearRampToValueAtTime(1.0, t + 0.02);
-        slamG.gain.linearRampToValueAtTime(0.7, t + 0.5);
-        slamG.gain.linearRampToValueAtTime(0.55, t + 1.5);
-        slamG.gain.linearRampToValueAtTime(0.65, t + 2.3);
-        slamG.gain.linearRampToValueAtTime(0.3, t + 3.5);
-        slamG.gain.linearRampToValueAtTime(0.4, t + 4.2);
+        slamG.gain.linearRampToValueAtTime(P, t + 0.3);
+        slamG.gain.linearRampToValueAtTime(P * 0.7, t + 0.8);
+        slamG.gain.linearRampToValueAtTime(P * 0.55, t + 1.5);
+        slamG.gain.linearRampToValueAtTime(P * 0.65, t + 2.3);
+        slamG.gain.linearRampToValueAtTime(P * 0.3, t + 3.5);
+        slamG.gain.linearRampToValueAtTime(P * 0.4, t + 4.2);
         slamG.gain.exponentialRampToValueAtTime(0.001, t + dur);
         slam.connect(slamF).connect(slamG).connect(outGain);
         slam.start(t, Nature._randomOffset(slam.buffer));
         slam.stop(t + dur + 0.1);
-
-        // Sharp crack — broadband transient at strike
-        const crack = ctx.createBufferSource();
-        crack.buffer = Nature._buffers.white;
-        const cf = ctx.createBiquadFilter();
-        cf.type = 'highpass';
-        cf.frequency.setValueAtTime(1200, t);
-        const cg = ctx.createGain();
-        cg.gain.setValueAtTime(0, t);
-        cg.gain.linearRampToValueAtTime(0.55, t + 0.003);
-        cg.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
-        crack.connect(cf).connect(cg).connect(outGain);
-        crack.start(t, Nature._randomOffset(crack.buffer));
-        crack.stop(t + 0.3);
 
         // Deep sub-bass boom
         const sub = ctx.createOscillator();
@@ -2374,9 +2352,9 @@ const Nature = {
         sub.frequency.exponentialRampToValueAtTime(subF, t + 0.4);
         const sg = ctx.createGain();
         sg.gain.setValueAtTime(0, t);
-        sg.gain.linearRampToValueAtTime(0.95, t + 0.03);
-        sg.gain.linearRampToValueAtTime(0.6, t + 1.0);
-        sg.gain.linearRampToValueAtTime(0.35, t + 2.5);
+        sg.gain.linearRampToValueAtTime(P, t + 0.3);
+        sg.gain.linearRampToValueAtTime(P * 0.65, t + 1.0);
+        sg.gain.linearRampToValueAtTime(P * 0.35, t + 2.5);
         sg.gain.exponentialRampToValueAtTime(0.001, t + dur);
         sub.connect(sg).connect(outGain);
         sub.start(t);
@@ -2388,7 +2366,7 @@ const Nature = {
         sub2.frequency.setValueAtTime(subF * 2, t);
         const sg2 = ctx.createGain();
         sg2.gain.setValueAtTime(0, t);
-        sg2.gain.linearRampToValueAtTime(0.3, t + 0.05);
+        sg2.gain.linearRampToValueAtTime(P * 0.3, t + 0.3);
         sg2.gain.exponentialRampToValueAtTime(0.001, t + 2.5);
         sub2.connect(sg2).connect(outGain);
         sub2.start(t);
@@ -2406,13 +2384,12 @@ const Nature = {
 
       const scheduleThunder = () => {
         if (stopped) return;
-        // Sporadic spacing: most 5–22s, occasional very long quiet (25–55s),
-        // rare quick echo (1.5–4s after a strike)
+        // Sporadic spacing: most 5–22s, occasional very long quiet (25–55s). No quick
+        // follow-up strikes — a second surprise right after the first is what startles.
         const r = Math.random();
-        let delay;
-        if (r < 0.08) delay = (1.5 + Math.random() * 2.5) * 1000;       // quick echo doublet
-        else if (r < 0.22) delay = (25 + Math.random() * 30) * 1000;     // long quiet stretch
-        else delay = (5 + Math.random() * 17) * 1000;                    // typical gap
+        const delay = r < 0.15
+          ? (25 + Math.random() * 30) * 1000   // long quiet stretch
+          : (5 + Math.random() * 17) * 1000;   // typical gap
         timeoutId = setTimeout(() => {
           fireStrike();
           scheduleThunder();
@@ -2430,39 +2407,85 @@ const Nature = {
       };
     },
 
-    forest() {
+    forest(out) {
       const ctx = State.ctx;
+      const now = ctx.currentTime;
       const outGain = ctx.createGain();
-      outGain.gain.setValueAtTime(0, ctx.currentTime);
-      outGain.connect(Nature.masterGain);
+      outGain.gain.setValueAtTime(0, now);
+      outGain.connect(out);
 
-      // Cricket bed
-      const cricketNoise = Nature._noiseSource('pink');
-      const cricketFilter = ctx.createBiquadFilter();
-      cricketFilter.type = 'bandpass';
-      cricketFilter.frequency.setValueAtTime(4500, ctx.currentTime);
-      cricketFilter.Q.setValueAtTime(25, ctx.currentTime);
-      const cricketGain = ctx.createGain();
-      cricketGain.gain.setValueAtTime(0.05, ctx.currentTime);
-      // 12 Hz pulse modulation via sine LFO with offset
-      const cricketLfo = ctx.createOscillator();
-      cricketLfo.frequency.setValueAtTime(12, ctx.currentTime);
-      const cricketLfoGain = ctx.createGain();
-      cricketLfoGain.gain.setValueAtTime(0.04, ctx.currentTime);
-      cricketLfo.connect(cricketLfoGain).connect(cricketGain.gain);
-      cricketLfo.start();
-      cricketNoise.connect(cricketFilter).connect(cricketGain).connect(outGain);
-
-      // Bird chirp scheduler
       let stopped = false;
-      let timeoutId = null;
+      const timers = new Set();
+      const later = (fn, ms) => {
+        const id = setTimeout(() => { timers.delete(id); fn(); }, ms);
+        timers.add(id);
+      };
+
+      // Leaf-air bed: quiet and continuous, so chirps never rise out of silence.
+      // Two slow, unrelated LFOs keep it from sounding static.
+      const air = Nature._noiseSource('pink');
+      const airHP = ctx.createBiquadFilter();
+      airHP.type = 'highpass';
+      airHP.frequency.setValueAtTime(800, now);
+      const airLP = ctx.createBiquadFilter();
+      airLP.type = 'lowpass';
+      airLP.frequency.setValueAtTime(3000, now);
+      const airGain = ctx.createGain();
+      airGain.gain.setValueAtTime(FOREST_AIR_LEVEL, now);
+      const airLfoA = ctx.createOscillator();
+      airLfoA.frequency.setValueAtTime(0.05, now);
+      const airLfoAGain = ctx.createGain();
+      airLfoAGain.gain.setValueAtTime(FOREST_AIR_LEVEL * 0.2, now);
+      airLfoA.connect(airLfoAGain).connect(airGain.gain);
+      const airLfoB = ctx.createOscillator();
+      airLfoB.frequency.setValueAtTime(0.083, now);
+      const airLfoBGain = ctx.createGain();
+      airLfoBGain.gain.setValueAtTime(FOREST_AIR_LEVEL * 0.15, now);
+      airLfoB.connect(airLfoBGain).connect(airGain.gain);
+      airLfoA.start();
+      airLfoB.start();
+      air.connect(airHP).connect(airLP).connect(airGain).connect(outGain);
+
+      // Crickets: three independent insects chirping at irregular (exponentially distributed)
+      // intervals, so there's no fixed pulse rate to act as a competing entrainment rhythm
+      const cricketChirp = (hz, pan) => {
+        const t = ctx.currentTime;
+        const dur = 0.04 + Math.random() * 0.05;
+        const src = ctx.createBufferSource();
+        src.buffer = Nature._buffers.pink || (Nature._buffers.pink = Nature._makeNoiseBuffer('pink'));
+        const bp = ctx.createBiquadFilter();
+        bp.type = 'bandpass';
+        bp.frequency.setValueAtTime(hz, t);
+        bp.Q.setValueAtTime(20, t);
+        const g = ctx.createGain();
+        g.gain.setValueAtTime(0, t);
+        g.gain.linearRampToValueAtTime(FOREST_CRICKET_LEVEL, t + 0.01);
+        g.gain.setValueAtTime(FOREST_CRICKET_LEVEL, t + dur - 0.01);
+        g.gain.linearRampToValueAtTime(0, t + dur);
+        const panner = ctx.createStereoPanner();
+        panner.pan.setValueAtTime(pan, t);
+        src.connect(bp).connect(g).connect(panner).connect(outGain);
+        src.start(t, Nature._randomOffset(src.buffer));
+        src.stop(t + dur + 0.02);
+      };
+      const scheduleCricket = (hz, pan) => {
+        if (stopped) return;
+        if (Nature._isRunning()) cricketChirp(hz, pan);
+        const gap = Math.max(120, -Math.log(1 - Math.random()) * 350);
+        later(() => scheduleCricket(hz, pan), gap);
+      };
+      [[4200, -0.3], [4600, 0.3], [5000, 0]].forEach(([hz, pan]) => {
+        later(() => scheduleCricket(hz, pan), Math.random() * 500);
+      });
+
+      // Birds: sparse and soft, with a gentle 20 ms attack
       const chirp = (panVal) => {
         const t = ctx.currentTime;
         const carrier = ctx.createOscillator();
         carrier.type = 'sine';
         const startF = 2000 + Math.random() * 2500;
         const sweep = (Math.random() - 0.5) * 1600;
-        const endF = Math.max(800, startF + sweep);
+        const endF = Math.max(1500, startF + sweep);
         const dur = 0.08 + Math.random() * 0.07;
         carrier.frequency.setValueAtTime(startF, t);
         carrier.frequency.exponentialRampToValueAtTime(endF, t + dur);
@@ -2478,7 +2501,7 @@ const Nature = {
 
         const g = ctx.createGain();
         g.gain.setValueAtTime(0, t);
-        g.gain.linearRampToValueAtTime(0.18, t + 0.005);
+        g.gain.linearRampToValueAtTime(FOREST_BIRD_PEAK, t + 0.02);
         g.gain.exponentialRampToValueAtTime(0.001, t + dur);
 
         const panner = ctx.createStereoPanner();
@@ -2491,19 +2514,18 @@ const Nature = {
       const scheduleBird = () => {
         if (stopped) return;
         const panVal = (Math.random() - 0.5) * 1.4;
-        const burstCount = Math.random() < 0.35 ? 2 + Math.floor(Math.random() * 2) : 1;
+        const burstCount = Math.random() < 0.25 ? 2 : 1;
         for (let i = 0; i < burstCount; i++) {
-          setTimeout(() => { if (!stopped && Nature._isRunning()) chirp(panVal); }, i * 60);
+          later(() => { if (!stopped && Nature._isRunning()) chirp(panVal); }, i * 90);
         }
-        const delay = 600 + Math.random() * 1900;
-        timeoutId = setTimeout(scheduleBird, delay);
+        later(scheduleBird, 3000 + Math.random() * 6000);
       };
-      scheduleBird();
+      later(scheduleBird, 1000 + Math.random() * 2000);
 
       return {
-        nodes: [cricketNoise, cricketFilter, cricketGain, cricketLfo, cricketLfoGain, outGain],
+        nodes: [air, airHP, airLP, airGain, airLfoA, airLfoAGain, airLfoB, airLfoBGain, outGain],
         gainNode: outGain,
-        stopFns: [() => { stopped = true; if (timeoutId) clearTimeout(timeoutId); }],
+        stopFns: [() => { stopped = true; timers.forEach(clearTimeout); timers.clear(); }],
       };
     },
   },
@@ -2514,7 +2536,7 @@ const Nature = {
     const ctx = State.ctx;
     const recipe = Nature._recipes[soundId];
     if (!recipe) return;
-    const sound = recipe();
+    const sound = recipe(Nature.masterGain);
     const now = ctx.currentTime;
     const targetVolume = State.ambianceVolumes[soundId] ?? 1.0;
     // Fade in to the user's preferred per-sound volume
