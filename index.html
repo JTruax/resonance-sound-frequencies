@@ -293,6 +293,7 @@
       font-weight: 600;
       letter-spacing: 0.05em;
     }
+    .card-binaural-badge[hidden] { display: none; }
     .card-playing-indicator {
       position: absolute;
       top: 12px; right: 12px;
@@ -381,6 +382,12 @@
       color: var(--text-muted);
       margin-top: 8px;
       font-style: italic;
+    }
+    #info-voice {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 6px;
+      font-variant-numeric: tabular-nums;
     }
     #info-binaural-indicator {
       display: none;
@@ -661,6 +668,20 @@
       font-family: inherit;
     }
     #timer-select:focus { border-color: var(--accent); }
+    #beat-select {
+      background: var(--bg-interactive);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      cursor: pointer;
+      outline: none;
+      font-family: inherit;
+    }
+    #beat-select:focus { border-color: var(--accent); }
+    #beat-select[hidden] { display: none; }
     #timer-display {
       font-size: 13px;
       font-weight: 700;
@@ -1057,6 +1078,7 @@
           <div id="info-name" aria-live="polite"></div>
           <p id="info-description"></p>
           <p id="info-source"></p>
+          <p id="info-voice"></p>
           <div id="info-binaural-indicator">🎧 Binaural — Use headphones</div>
         </div>
       </div>
@@ -1148,10 +1170,21 @@
     </div>
 
     <div id="bar-controls">
-      <div id="waveform-selector" role="group" aria-label="Waveform type">
-        <button class="wave-btn active" data-wave="sine">Sine</button>
-        <button class="wave-btn" data-wave="binaural">Binaural</button>
+      <div id="waveform-selector" role="group" aria-label="How beat rates are delivered">
+        <button class="wave-btn active" data-mode="binaural" aria-pressed="true">Binaural</button>
+        <button class="wave-btn" data-mode="isochronic" aria-pressed="false">Isochronic</button>
       </div>
+
+      <select id="beat-select" aria-label="Beat added to audible tones" hidden>
+        <option value="0">No beat</option>
+        <option value="2">2 Hz δ</option>
+        <option value="4.5">4.5 Hz θ</option>
+        <option value="6">6 Hz θ</option>
+        <option value="7.83">7.83 Hz</option>
+        <option value="10">10 Hz α</option>
+        <option value="16">16 Hz β</option>
+        <option value="40">40 Hz γ</option>
+      </select>
 
       <button id="ambiance-toggle" aria-label="Nature ambiance" aria-expanded="false">
         <!-- Pine tree matching the Forest icon style -->
@@ -1283,65 +1316,65 @@ const CATEGORIES = [
 
 const FREQ_DATA = {
   'deep-sleep': [
-    { id: 'ds-2',   hz: 2,   name: 'Deep Delta',           desc: 'Delta wave associated with deep dreamless sleep and unconscious cellular restoration.', source: 'Stapleton et al., 2016', binaural: true, carrierHz: 200 },
-    { id: 'ds-3',   hz: 3,   name: 'Delta Restoration',    desc: 'Deep delta wave for total unconscious restoration and immune system support.', source: 'Hobson & McCarley, 1977', binaural: true, carrierHz: 200 },
-    { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border',   desc: 'Border state between delta and theta — associated with whole-body healing and tissue repair.', source: 'Peng et al., 2019', binaural: true, carrierHz: 200 },
+    { id: 'ds-2',   hz: 2,   name: 'Deep Delta',           desc: 'Delta wave associated with deep dreamless sleep and unconscious cellular restoration.', source: 'Stapleton et al., 2016', kind: 'rate' },
+    { id: 'ds-3',   hz: 3,   name: 'Delta Restoration',    desc: 'Deep delta wave for total unconscious restoration and immune system support.', source: 'Hobson & McCarley, 1977', kind: 'rate' },
+    { id: 'ds-35',  hz: 3.5, name: 'Delta/Theta Border',   desc: 'Border state between delta and theta — associated with whole-body healing and tissue repair.', source: 'Peng et al., 2019', kind: 'rate' },
   ],
   'meditation': [
-    { id: 'med-45',   hz: 4.5,  name: 'Shamanic Trance',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', binaural: true, carrierHz: 200 },
-    { id: 'med-6',    hz: 6,    name: 'Deep Theta',           desc: 'Deep theta meditation state associated with vivid inner imagery and creative insight.', source: 'Banquet, 1973', binaural: true, carrierHz: 200 },
-    { id: 'med-7',    hz: 7,    name: 'Creative Theta',       desc: 'Deep meditation and creative visualization. Associated with REM sleep and hypnagogic imagery.', source: 'Niedermeyer & da Silva, 2004', binaural: true, carrierHz: 200 },
-    { id: 'med-783',  hz: 7.83, name: "Schumann Resonance",   desc: "Earth's fundamental electromagnetic resonance frequency — the alpha/theta border, also called Earth's heartbeat.", source: 'Schumann, 1952; König, 1979', binaural: true, carrierHz: 200 },
+    { id: 'med-45',   hz: 4.5,  name: 'Shamanic Trance',     desc: 'Theta frequency used in shamanic practice for 30,000+ years. Facilitates trance states and altered perception.', source: 'Neher, 1961; Maxfield, 1990', kind: 'rate' },
+    { id: 'med-6',    hz: 6,    name: 'Deep Theta',           desc: 'Deep theta meditation state associated with vivid inner imagery and creative insight.', source: 'Banquet, 1973', kind: 'rate' },
+    { id: 'med-7',    hz: 7,    name: 'Creative Theta',       desc: 'Deep meditation and creative visualization. Associated with REM sleep and hypnagogic imagery.', source: 'Niedermeyer & da Silva, 2004', kind: 'rate' },
+    { id: 'med-783',  hz: 7.83, name: "Schumann Resonance",   desc: "Earth's fundamental electromagnetic resonance frequency — the alpha/theta border, also called Earth's heartbeat.", source: 'Schumann, 1952; König, 1979', kind: 'rate' },
   ],
   'relaxation': [
-    { id: 'rel-8',    hz: 8,    name: 'Alpha Entry',          desc: 'Light alpha state for stress reduction and the transition from active thinking to calm awareness.', source: 'Berger, 1929; Klimesch, 1999', binaural: true, carrierHz: 200 },
-    { id: 'rel-10',   hz: 10,   name: 'Alpha Peak',           desc: 'Optimal alpha entrainment for calm alertness. Documented relief for insomnia and migraine prevention.', source: 'Walker & Duan, 2007', binaural: true, carrierHz: 200 },
-    { id: 'rel-105',  hz: 10.5, name: 'Healing Alpha',        desc: 'Associated with body imbalance awareness and healing meditation. Bridges active and rest states.', source: 'Fehmi & Robbins, 2007', binaural: true, carrierHz: 200 },
-    { id: 'rel-12',   hz: 12,   name: 'Stable Alpha',         desc: 'Mental stability and centered calm. Supports sensorimotor rhythm and physical relaxation.', source: 'Sterman & Friar, 1972', binaural: true, carrierHz: 200 },
+    { id: 'rel-8',    hz: 8,    name: 'Alpha Entry',          desc: 'Light alpha state for stress reduction and the transition from active thinking to calm awareness.', source: 'Berger, 1929; Klimesch, 1999', kind: 'rate' },
+    { id: 'rel-10',   hz: 10,   name: 'Alpha Peak',           desc: 'Optimal alpha entrainment for calm alertness. Documented relief for insomnia and migraine prevention.', source: 'Walker & Duan, 2007', kind: 'rate' },
+    { id: 'rel-105',  hz: 10.5, name: 'Healing Alpha',        desc: 'Associated with body imbalance awareness and healing meditation. Bridges active and rest states.', source: 'Fehmi & Robbins, 2007', kind: 'rate' },
+    { id: 'rel-12',   hz: 12,   name: 'Stable Alpha',         desc: 'Mental stability and centered calm. Supports sensorimotor rhythm and physical relaxation.', source: 'Sterman & Friar, 1972', kind: 'rate' },
   ],
   'focus': [
-    { id: 'foc-14',   hz: 14,   name: 'Schumann 2nd',         desc: 'Second harmonic of Schumann resonance. Alert concentration with a grounded quality.', source: 'Schumann, 1952', binaural: true, carrierHz: 200 },
-    { id: 'foc-15',   hz: 15,   name: 'Mental Sharpness',     desc: 'Low beta wave for mental sharpness, focused problem solving, and logical reasoning.', source: 'Engel & Fries, 2010', binaural: true, carrierHz: 200 },
-    { id: 'foc-18',   hz: 18,   name: 'Active Learning',      desc: 'Beta wave associated with active learning, information processing, and alertness.', source: 'Klimesch, 2012', binaural: true, carrierHz: 200 },
-    { id: 'foc-20',   hz: 20,   name: 'GABA Elevation',       desc: 'Associated with GABA neurotransmitter elevation for neural balance and anxiety reduction.', source: 'Herrmann et al., 2010', binaural: true, carrierHz: 200 },
+    { id: 'foc-14',   hz: 14,   name: 'Schumann 2nd',         desc: 'Second harmonic of Schumann resonance. Alert concentration with a grounded quality.', source: 'Schumann, 1952', kind: 'rate' },
+    { id: 'foc-15',   hz: 15,   name: 'Mental Sharpness',     desc: 'Low beta wave for mental sharpness, focused problem solving, and logical reasoning.', source: 'Engel & Fries, 2010', kind: 'rate' },
+    { id: 'foc-18',   hz: 18,   name: 'Active Learning',      desc: 'Beta wave associated with active learning, information processing, and alertness.', source: 'Klimesch, 2012', kind: 'rate' },
+    { id: 'foc-20',   hz: 20,   name: 'GABA Elevation',       desc: 'Associated with GABA neurotransmitter elevation for neural balance and anxiety reduction.', source: 'Herrmann et al., 2010', kind: 'rate' },
   ],
   'neural': [
-    { id: 'neu-40',   hz: 40,   name: 'Gamma — Master Freq',  desc: 'The master therapeutic frequency. 81% fibromyalgia improvement, 53–68% amyloid-beta reduction in Alzheimer\'s research. Activates microglia and promotes neural repair.', source: 'Naghdi et al., 2019; Iaccarino et al., 2016', binaural: false },
-    { id: 'neu-10',   hz: 10,   name: 'Thalamic Alpha',       desc: 'Alpha thalamic frequency. When paired with 40 Hz gamma, optimizes the thalamocortical feedback loop.', source: 'Llinás & Ribary, 1993', binaural: true, carrierHz: 200 },
+    { id: 'neu-40',   hz: 40,   name: 'Gamma — Master Freq',  desc: 'The master therapeutic frequency. 81% fibromyalgia improvement, 53–68% amyloid-beta reduction in Alzheimer\'s research. Activates microglia and promotes neural repair.', source: 'Naghdi et al., 2019; Iaccarino et al., 2016', kind: 'clicks' },
+    { id: 'neu-10',   hz: 10,   name: 'Thalamic Alpha',       desc: 'Alpha thalamic frequency. When paired with 40 Hz gamma, optimizes the thalamocortical feedback loop.', source: 'Llinás & Ribary, 1993', kind: 'rate' },
   ],
   'pain': [
-    { id: 'pai-26',   hz: 26,   name: 'Whole Body Vibration', desc: 'Whole body vibration frequency for enhanced blood flow and endothelial stimulation.', source: 'Rittweger et al., 2000' },
-    { id: 'pai-30',   hz: 30,   name: 'Bone Activation',      desc: 'Stimulates bone cell activation and osteogenic differentiation. Used in fracture healing research.', source: 'Tanaka et al., 2003', binaural: true, carrierHz: 200 },
-    { id: 'pai-40',   hz: 40,   name: 'Fibromyalgia Relief',  desc: '40 Hz gamma frequency — 81% improvement in fibromyalgia clinical study. Chronic pain relief via thalamocortical entrainment.', source: 'Naghdi et al., 2019', binaural: false },
-    { id: 'pai-50',   hz: 50,   name: 'Nitric Oxide (+374%)', desc: 'Documented 374% increase in nitric oxide production for cardiovascular support and vascular health.', source: 'Lundeberg et al., 2004' },
-    { id: 'pai-52',   hz: 52,   name: 'Pain Relief',          desc: 'Associated with low back pain and menstrual pain relief in clinical frequency therapy.', source: 'Laufer et al., 2005' },
-    { id: 'pai-86',   hz: 86,   name: 'CRPS Relief',          desc: 'Complex Regional Pain Syndrome therapy — approximately 50% pain reduction in controlled studies.', source: 'Raso et al., 2005' },
-    { id: 'pai-100',  hz: 100,  name: 'Blood Flow',           desc: 'Enhances blood flow via endothelial nitric oxide release. Cardiovascular and tissue healing support.', source: 'Weintraub, 2004' },
+    { id: 'pai-26',   hz: 26,   name: 'Whole Body Vibration', desc: 'Whole body vibration frequency for enhanced blood flow and endothelial stimulation.', source: 'Rittweger et al., 2000', kind: 'vibration' },
+    { id: 'pai-30',   hz: 30,   name: 'Bone Activation',      desc: 'Stimulates bone cell activation and osteogenic differentiation. Used in fracture healing research.', source: 'Tanaka et al., 2003', kind: 'vibration' },
+    { id: 'pai-40',   hz: 40,   name: 'Fibromyalgia Relief',  desc: '40 Hz gamma frequency — 81% improvement in fibromyalgia clinical study. Chronic pain relief via thalamocortical entrainment.', source: 'Naghdi et al., 2019', kind: 'vibration' },
+    { id: 'pai-50',   hz: 50,   name: 'Nitric Oxide (+374%)', desc: 'Documented 374% increase in nitric oxide production for cardiovascular support and vascular health.', source: 'Lundeberg et al., 2004', kind: 'vibration' },
+    { id: 'pai-52',   hz: 52,   name: 'Pain Relief',          desc: 'Associated with low back pain and menstrual pain relief in clinical frequency therapy.', source: 'Laufer et al., 2005', kind: 'vibration' },
+    { id: 'pai-86',   hz: 86,   name: 'CRPS Relief',          desc: 'Complex Regional Pain Syndrome therapy — approximately 50% pain reduction in controlled studies.', source: 'Raso et al., 2005', kind: 'vibration' },
+    { id: 'pai-100',  hz: 100,  name: 'Blood Flow',           desc: 'Enhances blood flow via endothelial nitric oxide release. Cardiovascular and tissue healing support.', source: 'Weintraub, 2004', kind: 'vibration' },
   ],
   'chakra': [
-    { id: 'cha-144',  hz: 144,  name: 'Root Chakra',          desc: 'Muladhara — grounding, stability, survival instinct. Foundation of the energetic body.', source: 'OM spectral analysis (Bhattacharya, 2015)' },
-    { id: 'cha-194',  hz: 194,  name: 'Sacral Chakra',        desc: 'Svadhisthana — creativity, sexuality, emotional flow. Center of pleasure and creative force.', source: 'OM spectral analysis' },
-    { id: 'cha-225',  hz: 225,  name: 'Solar Plexus',         desc: 'Manipura — personal power, will, digestion of experience. The fire center of the body.', source: 'OM spectral analysis' },
-    { id: 'cha-275',  hz: 275,  name: 'Heart Chakra',         desc: 'Anahata — love, compassion, connection. Bridge between the lower and upper chakras.', source: 'OM spectral analysis' },
-    { id: 'cha-325',  hz: 325,  name: 'Throat Chakra',        desc: 'Vishuddha — expression, truth, communication. Center of authentic voice and creative expression.', source: 'OM spectral analysis' },
-    { id: 'cha-375',  hz: 375,  name: 'Third Eye Chakra',     desc: 'Ajna — intuition, inner sight, wisdom. The seat of expanded perception beyond the physical.', source: 'OM spectral analysis' },
-    { id: 'cha-475',  hz: 475,  name: 'Crown Chakra',         desc: 'Sahasrara — unity consciousness, spiritual connection. The highest center of the energetic body.', source: 'OM spectral analysis' },
+    { id: 'cha-144',  hz: 144,  name: 'Root Chakra',          desc: 'Muladhara — grounding, stability, survival instinct. Foundation of the energetic body.', source: 'OM spectral analysis (Bhattacharya, 2015)', kind: 'pitch' },
+    { id: 'cha-194',  hz: 194,  name: 'Sacral Chakra',        desc: 'Svadhisthana — creativity, sexuality, emotional flow. Center of pleasure and creative force.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-225',  hz: 225,  name: 'Solar Plexus',         desc: 'Manipura — personal power, will, digestion of experience. The fire center of the body.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-275',  hz: 275,  name: 'Heart Chakra',         desc: 'Anahata — love, compassion, connection. Bridge between the lower and upper chakras.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-325',  hz: 325,  name: 'Throat Chakra',        desc: 'Vishuddha — expression, truth, communication. Center of authentic voice and creative expression.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-375',  hz: 375,  name: 'Third Eye Chakra',     desc: 'Ajna — intuition, inner sight, wisdom. The seat of expanded perception beyond the physical.', source: 'OM spectral analysis', kind: 'pitch' },
+    { id: 'cha-475',  hz: 475,  name: 'Crown Chakra',         desc: 'Sahasrara — unity consciousness, spiritual connection. The highest center of the energetic body.', source: 'OM spectral analysis', kind: 'pitch' },
   ],
   'solfeggio': [
-    { id: 'sol-396',  hz: 396,  name: 'UT — Liberation',      desc: 'Liberating guilt and fear. Associated with grounding and transformation of negative emotional patterns.', source: 'Horowitz & Puleo, 1999' },
-    { id: 'sol-417',  hz: 417,  name: 'RE — Change',          desc: 'Facilitating change and undoing situations. Reconnects to the capacity for positive transformation.', source: 'Horowitz & Puleo, 1999' },
-    { id: 'sol-528',  hz: 528,  name: 'MI — Love Frequency',  desc: 'Transformation and miracles. Known as the "love frequency" — associated with DNA repair and heart coherence.', source: 'Rein, 1988; Horowitz, 1998' },
-    { id: 'sol-639',  hz: 639,  name: 'FA — Connection',      desc: 'Connecting and harmonizing relationships. Enhances communication, understanding, and tolerance.', source: 'Horowitz & Puleo, 1999' },
-    { id: 'sol-741',  hz: 741,  name: 'SOL — Expression',     desc: 'Expression and problem solving. Cleans cells and promotes a healthy electromagnetic field.', source: 'Horowitz & Puleo, 1999' },
-    { id: 'sol-852',  hz: 852,  name: 'LA — Intuition',       desc: 'Awakening intuition and returning to spiritual order. Associated with pineal gland activation.', source: 'Horowitz & Puleo, 1999' },
-    { id: 'sol-963',  hz: 963,  name: 'Crown Activation',     desc: 'Crown chakra activation and connection to pure consciousness. The frequency of divine light.', source: 'Horowitz & Puleo, 1999' },
+    { id: 'sol-396',  hz: 396,  name: 'UT — Liberation',      desc: 'Liberating guilt and fear. Associated with grounding and transformation of negative emotional patterns.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-417',  hz: 417,  name: 'RE — Change',          desc: 'Facilitating change and undoing situations. Reconnects to the capacity for positive transformation.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-528',  hz: 528,  name: 'MI — Love Frequency',  desc: 'Transformation and miracles. Known as the "love frequency" — associated with DNA repair and heart coherence.', source: 'Rein, 1988; Horowitz, 1998', kind: 'pitch' },
+    { id: 'sol-639',  hz: 639,  name: 'FA — Connection',      desc: 'Connecting and harmonizing relationships. Enhances communication, understanding, and tolerance.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-741',  hz: 741,  name: 'SOL — Expression',     desc: 'Expression and problem solving. Cleans cells and promotes a healthy electromagnetic field.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-852',  hz: 852,  name: 'LA — Intuition',       desc: 'Awakening intuition and returning to spiritual order. Associated with pineal gland activation.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
+    { id: 'sol-963',  hz: 963,  name: 'Crown Activation',     desc: 'Crown chakra activation and connection to pure consciousness. The frequency of divine light.', source: 'Horowitz & Puleo, 1999', kind: 'pitch' },
   ],
   'earth': [
-    { id: 'ear-783',  hz: 7.83,  name: 'Schumann 1st',        desc: "Earth's fundamental electromagnetic resonance. The planet's natural brainwave — syncs biological rhythms.", source: 'Schumann, 1952', binaural: true, carrierHz: 200 },
-    { id: 'ear-141',  hz: 14.1,  name: 'Schumann 2nd',        desc: 'Second harmonic of Earth\'s resonance. Associated with alert yet grounded mental states.', source: 'Schumann & König, 1954', binaural: true, carrierHz: 200 },
-    { id: 'ear-203',  hz: 20.3,  name: 'Schumann 3rd',        desc: "Third Schumann harmonic — subtle cognitive enhancement within Earth's natural electromagnetic field.", source: 'Williams, 1992', binaural: true, carrierHz: 200 },
-    { id: 'ear-264',  hz: 26.4,  name: 'Schumann 4th',        desc: 'Fourth Schumann harmonic. Physical and energetic stabilization within the Earth\'s resonant field.', source: 'Williams, 1992', binaural: true, carrierHz: 200 },
-    { id: 'ear-338',  hz: 33.8,  name: 'Schumann 5th',        desc: "Fifth Schumann harmonic. High gamma-adjacent resonance with Earth's electromagnetic field.", source: 'Williams, 1992', binaural: true, carrierHz: 200 },
+    { id: 'ear-783',  hz: 7.83,  name: 'Schumann 1st',        desc: "Earth's fundamental electromagnetic resonance. The planet's natural brainwave — syncs biological rhythms.", source: 'Schumann, 1952', kind: 'rate' },
+    { id: 'ear-141',  hz: 14.1,  name: 'Schumann 2nd',        desc: 'Second harmonic of Earth\'s resonance. Associated with alert yet grounded mental states.', source: 'Schumann & König, 1954', kind: 'rate' },
+    { id: 'ear-203',  hz: 20.3,  name: 'Schumann 3rd',        desc: "Third Schumann harmonic — subtle cognitive enhancement within Earth's natural electromagnetic field.", source: 'Williams, 1992', kind: 'rate' },
+    { id: 'ear-264',  hz: 26.4,  name: 'Schumann 4th',        desc: 'Fourth Schumann harmonic. Physical and energetic stabilization within the Earth\'s resonant field.', source: 'Williams, 1992', kind: 'rate' },
+    { id: 'ear-338',  hz: 33.8,  name: 'Schumann 5th',        desc: "Fifth Schumann harmonic. High gamma-adjacent resonance with Earth's electromagnetic field.", source: 'Williams, 1992', kind: 'rate' },
   ],
 };
 
@@ -1352,8 +1385,9 @@ const FREQ_DATA = {
 const State = {
   activeCategoryId: 'deep-sleep',
   mode: 'single',          // 'single' | 'layer'
-  waveformType: 'sine',    // 'sine' | 'binaural'
-  // Map<freqId, { freq, gainNode, oscillators[], isBinaural }>
+  stimMode: 'binaural',    // 'binaural' | 'isochronic' — how beat rates are delivered
+  beatHz: 0,               // beat added to audible (pitch) tones; 0 = pure tone
+  // Map<freqId, { freq, voice, gainNode, nodes[], level, userVol, rateParam? }>
   activeSounds: new Map(),
   masterVolume: 0.5,
   isPlaying: false,
@@ -1401,6 +1435,12 @@ const BG_AUDIO = URL_PARAMS.has('bg');
 
 // Per-voice peak level before loudness correction — leaves headroom for layers + ambiance
 const VOICE_GAIN = 0.5;
+// Peak level of the 40 Hz click train (broadband, 4% duty cycle)
+const CLICK_LEVEL = 0.3;
+// Audible tone that carries brainwave-rate beats and pulses
+const DEFAULT_CARRIER_HZ = 300;
+// Beat choices for audible (pitch) tones; 0 = pure tone
+const BEAT_OPTIONS = [0, 2, 4.5, 6, 7.83, 10, 16, 40];
 // Ambiance sits under the tones
 const NATURE_TRIM = 0.5;
 
@@ -1499,61 +1539,127 @@ const Audio = {
     return t[t.length - 1][1];
   },
 
-  _isBinaural(freq) {
-    return State.waveformType === 'binaural' || freq.binaural || freq.hz < 20;
+  // How a frequency is rendered right now, given its kind and the global mode/beat controls.
+  // Returns { type: 'pure'|'binaural'|'isochronic'|'clicks', audibleHz, rateHz }
+  resolveVoice(freq) {
+    switch (freq.kind) {
+      case 'vibration':
+        return { type: 'pure', audibleHz: freq.hz };
+      case 'clicks':
+        return { type: 'clicks', audibleHz: 1000, rateHz: freq.hz };
+      case 'pitch':
+        if (!State.beatHz) return { type: 'pure', audibleHz: freq.hz };
+        return { type: State.stimMode, audibleHz: freq.hz, rateHz: State.beatHz };
+      default: // 'rate' — hz is a beat/pulse rate on an audible carrier
+        return { type: State.stimMode, audibleHz: freq.carrierHz || DEFAULT_CARRIER_HZ, rateHz: freq.hz };
+    }
   },
 
-  _createSine(freq) {
+  // One-line description of what a voice actually plays
+  describeVoice(v) {
+    const hz = n => +n.toFixed(2) + ' Hz';
+    switch (v.type) {
+      case 'binaural':   return `Binaural · ${hz(v.audibleHz)} left / ${hz(v.audibleHz + v.rateHz)} right`;
+      case 'isochronic': return `Isochronic · ${hz(v.audibleHz)} tone pulsed ${+v.rateHz.toFixed(2)}× per second`;
+      case 'clicks':     return `Click train · 1 ms pulses, ${+v.rateHz.toFixed(2)}× per second`;
+      default:           return `Pure tone · ${hz(v.audibleHz)}`;
+    }
+  },
+
+  // Voice builders: each connects into `out` and returns
+  // { nodes, rateParam?, rateOffset? } — rateParam is what programs automate (value = rateOffset + rate)
+  _voices: {
+    pure(out, v) {
+      const ctx = State.ctx;
+      const osc = ctx.createOscillator();
+      osc.frequency.setValueAtTime(v.audibleHz, ctx.currentTime);
+      osc.connect(out);
+      osc.start();
+      return { nodes: [osc] };
+    },
+
+    binaural(out, v) {
+      const ctx = State.ctx;
+      const merger = ctx.createChannelMerger(2);
+      // Left: carrier · Right: carrier + beat
+      const oscL = ctx.createOscillator();
+      oscL.frequency.setValueAtTime(v.audibleHz, ctx.currentTime);
+      oscL.connect(merger, 0, 0);
+      const oscR = ctx.createOscillator();
+      oscR.frequency.setValueAtTime(v.audibleHz + v.rateHz, ctx.currentTime);
+      oscR.connect(merger, 0, 1);
+      merger.connect(out);
+      oscL.start();
+      oscR.start();
+      return { nodes: [oscL, oscR, merger], rateParam: oscR.frequency, rateOffset: v.audibleHz };
+    },
+
+    // Carrier gated on/off at the rate; works on speakers and drives a stronger cortical
+    // following response than binaural beats
+    isochronic(out, v) {
+      const ctx = State.ctx;
+      const now = ctx.currentTime;
+      const carrier = ctx.createOscillator();
+      carrier.frequency.setValueAtTime(v.audibleHz, now);
+      const pulseGain = ctx.createGain();
+      pulseGain.gain.setValueAtTime(0, now);
+      // Envelope: sine LFO → soft-clip shaper (smooth edges, ~11% of the period) → 0..1
+      const lfo = ctx.createOscillator();
+      lfo.frequency.setValueAtTime(v.rateHz, now);
+      const shaper = ctx.createWaveShaper();
+      shaper.curve = Audio._pulseCurve || (Audio._pulseCurve = Audio._makePulseCurve());
+      const scale = ctx.createGain();
+      scale.gain.setValueAtTime(0.5, now);
+      const offset = ctx.createConstantSource();
+      offset.offset.setValueAtTime(0.5, now);
+      lfo.connect(shaper).connect(scale).connect(pulseGain.gain);
+      offset.connect(pulseGain.gain);
+      carrier.connect(pulseGain).connect(out);
+      carrier.start();
+      lfo.start();
+      offset.start();
+      return { nodes: [carrier, lfo, offset, shaper, scale, pulseGain], rateParam: lfo.frequency, rateOffset: 0 };
+    },
+
+    // GENUS-style 40 Hz stimulus: a 1 ms rectangular pulse each period (Chan et al., 2022)
+    clicks(out, v) {
+      const ctx = State.ctx;
+      const len = Math.round(ctx.sampleRate / v.rateHz);
+      const pulse = Math.round(ctx.sampleRate * 0.001);
+      const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+      const d = buf.getChannelData(0);
+      const duty = pulse / len;
+      // Zero-mean rectangle so the train carries no DC offset
+      for (let i = 0; i < len; i++) d[i] = i < pulse ? 1 - duty : -duty;
+      const src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.loop = true;
+      src.connect(out);
+      src.start();
+      return { nodes: [src] };
+    },
+  },
+
+  _makePulseCurve() {
+    const n = 1025, curve = new Float32Array(n), k = 3, norm = Math.tanh(k);
+    for (let i = 0; i < n; i++) curve[i] = Math.tanh(k * (i / (n - 1) * 2 - 1)) / norm;
+    return curve;
+  },
+
+  _levelFor(v) {
+    return v.type === 'clicks' ? CLICK_LEVEL : VOICE_GAIN * Audio._loudness(v.audibleHz);
+  },
+
+  // Build a voice under its own fade-in gain node
+  _build(v) {
     const ctx = State.ctx;
-    const osc = ctx.createOscillator();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(freq.hz, ctx.currentTime);
-    const level = VOICE_GAIN * Audio._loudness(freq.hz);
+    const level = Audio._levelFor(v);
     const gainNode = ctx.createGain();
     gainNode.gain.setValueAtTime(0, ctx.currentTime);
     gainNode.gain.linearRampToValueAtTime(level, ctx.currentTime + 0.2);
-    osc.connect(gainNode);
     gainNode.connect(State.masterGain);
-    osc.start();
-    return { oscillators: [osc], gainNode, isBinaural: false, level };
-  },
-
-  _createBinaural(freq) {
-    const ctx = State.ctx;
-    const carrier = freq.carrierHz || 200;
-    const beat = freq.hz;
-
-    const level = VOICE_GAIN * Audio._loudness(carrier);
-    const gainNode = ctx.createGain();
-    gainNode.gain.setValueAtTime(0, ctx.currentTime);
-    gainNode.gain.linearRampToValueAtTime(level, ctx.currentTime + 0.2);
-
-    const merger = ctx.createChannelMerger(2);
-
-    // Left: carrier
-    const oscL = ctx.createOscillator();
-    oscL.type = 'sine';
-    oscL.frequency.setValueAtTime(carrier, ctx.currentTime);
-    const splitterL = ctx.createGain();
-    splitterL.gain.setValueAtTime(1, ctx.currentTime);
-    oscL.connect(splitterL);
-    splitterL.connect(merger, 0, 0);
-
-    // Right: carrier + beat
-    const oscR = ctx.createOscillator();
-    oscR.type = 'sine';
-    oscR.frequency.setValueAtTime(carrier + beat, ctx.currentTime);
-    const splitterR = ctx.createGain();
-    splitterR.gain.setValueAtTime(1, ctx.currentTime);
-    oscR.connect(splitterR);
-    splitterR.connect(merger, 0, 1);
-
-    merger.connect(gainNode);
-    gainNode.connect(State.masterGain);
-
-    oscL.start();
-    oscR.start();
-    return { oscillators: [oscL, oscR], gainNode, isBinaural: true, level };
+    const built = Audio._voices[v.type](gainNode, v);
+    return { ...built, gainNode, level, voice: v };
   },
 
   play(freq) {
@@ -1562,49 +1668,43 @@ const Audio = {
     Audio.resumeCtx();
     // A finished timer leaves the session gain faded until its restore ramp runs
     if (!State.timerEndsAt && State.sessionGain.gain.value < 1) Audio.clearSessionFade();
-    const sound = Audio._isBinaural(freq)
-      ? Audio._createBinaural(freq)
-      : Audio._createSine(freq);
+    const sound = Audio._build(Audio.resolveVoice(freq));
     sound.freq = freq;
     sound.userVol = 1;
     State.activeSounds.set(freq.id, sound);
   },
 
-  stopSound(freqId) {
-    const sound = State.activeSounds.get(freqId);
-    if (!sound) return;
+  // Fade a sound out and release its nodes
+  _release(sound) {
     const ctx = State.ctx;
-    const { gainNode, oscillators } = sound;
+    const { gainNode } = sound;
     const now = ctx.currentTime;
     gainNode.gain.cancelScheduledValues(now);
     gainNode.gain.setValueAtTime(gainNode.gain.value, now);
     gainNode.gain.linearRampToValueAtTime(0, now + 0.2);
+    (sound.stopFns || []).forEach(fn => { try { fn(); } catch (e) {} });
     setTimeout(() => {
-      oscillators.forEach(o => { try { o.stop(); o.disconnect(); } catch (e) {} });
+      sound.nodes.forEach(n => {
+        try { if (typeof n.stop === 'function') n.stop(); } catch (e) {}
+        try { n.disconnect(); } catch (e) {}
+      });
       try { gainNode.disconnect(); } catch (e) {}
     }, 250);
+  },
+
+  stopSound(freqId) {
+    const sound = State.activeSounds.get(freqId);
+    if (!sound) return;
+    Audio._release(sound);
     // Remove from map now (not in the timeout) so a quick re-select of the same id isn't orphaned
     State.activeSounds.delete(freqId);
   },
 
   stopAll() {
-    const ids = [...State.activeSounds.keys()];
-    // Restore map entries briefly for fade logic
-    const saved = new Map(State.activeSounds);
+    const saved = [...State.activeSounds.values()];
     State.activeSounds.clear();
     if (!State.ctx) return;
-    const ctx = State.ctx;
-    for (const [, sound] of saved) {
-      const { gainNode, oscillators } = sound;
-      const now = ctx.currentTime;
-      gainNode.gain.cancelScheduledValues(now);
-      gainNode.gain.setValueAtTime(gainNode.gain.value, now);
-      gainNode.gain.linearRampToValueAtTime(0, now + 0.2);
-      setTimeout(() => {
-        oscillators.forEach(o => { try { o.stop(); o.disconnect(); } catch (e) {} });
-        try { gainNode.disconnect(); } catch (e) {}
-      }, 250);
-    }
+    saved.forEach(Audio._release);
   },
 
   setMasterVolume(vol) {
@@ -2316,7 +2416,8 @@ const Nature = {
 // ═══════════════════════════════════════════════
 
 const Storage = {
-  KEY: 'resonance-prefs-v1',
+  KEY: 'resonance-prefs-v2',
+  LEGACY_KEY: 'resonance-prefs-v1',  // v1 stored waveformType ('sine'|'binaural'); both map to v2 defaults
 
   save() {
     try {
@@ -2324,7 +2425,8 @@ const Storage = {
         masterVolume: State.masterVolume,
         natureMasterVolume: State.natureMasterVolume,
         ambianceVolumes: State.ambianceVolumes,
-        waveformType: State.waveformType,
+        stimMode: State.stimMode,
+        beatHz: State.beatHz,
         mode: State.mode,
         activeCategoryId: State.activeCategoryId,
       }));
@@ -2333,13 +2435,14 @@ const Storage = {
 
   load() {
     try {
-      const raw = localStorage.getItem(Storage.KEY);
+      const raw = localStorage.getItem(Storage.KEY) || localStorage.getItem(Storage.LEGACY_KEY);
       if (!raw) return;
       const p = JSON.parse(raw);
       if (typeof p.masterVolume === 'number') State.masterVolume = p.masterVolume;
       if (typeof p.natureMasterVolume === 'number') State.natureMasterVolume = p.natureMasterVolume;
       if (p.ambianceVolumes && typeof p.ambianceVolumes === 'object') State.ambianceVolumes = p.ambianceVolumes;
-      if (p.waveformType === 'sine' || p.waveformType === 'binaural') State.waveformType = p.waveformType;
+      if (p.stimMode === 'binaural' || p.stimMode === 'isochronic') State.stimMode = p.stimMode;
+      if (BEAT_OPTIONS.includes(p.beatHz)) State.beatHz = p.beatHz;
       if (p.mode === 'single' || p.mode === 'layer') State.mode = p.mode;
       if (typeof p.activeCategoryId === 'string' && CATEGORIES.some(c => c.id === p.activeCategoryId)) {
         State.activeCategoryId = p.activeCategoryId;
@@ -2658,7 +2761,6 @@ const UI = {
     grid.innerHTML = '';
     freqs.forEach(freq => {
       const isActive = State.activeSounds.has(freq.id);
-      const needsBinaural = freq.binaural || freq.hz < 20;
 
       const card = document.createElement('div');
       card.className = 'freq-card' + (isActive ? ' active' : '');
@@ -2673,14 +2775,61 @@ const UI = {
         <div class="card-hz">${freq.hz}<span>Hz</span></div>
         <div class="card-name">${freq.name}</div>
         <div class="card-desc">${freq.desc}</div>
-        ${needsBinaural ? '<span class="card-binaural-badge">🎧 Binaural</span>' : ''}
+        <span class="card-binaural-badge"></span>
       `;
       grid.appendChild(card);
     });
+    UI.refreshCardBadges();
+    UI.syncStimControls();
 
     // Hide info panel when switching categories
     UI.hideInfoPanel();
     State.selectedFreqId = null;
+  },
+
+  _voiceBadge(v) {
+    return { binaural: '🎧 Binaural', isochronic: 'Isochronic', clicks: 'Click train' }[v.type] || '';
+  },
+
+  // Badges show how each card would play under the current mode/beat
+  refreshCardBadges() {
+    document.querySelectorAll('.freq-card').forEach(card => {
+      const freq = FREQ_DATA[State.activeCategoryId]?.find(f => f.id === card.dataset.freqId);
+      const badge = card.querySelector('.card-binaural-badge');
+      if (!freq || !badge) return;
+      const text = UI._voiceBadge(Audio.resolveVoice(freq));
+      badge.textContent = text;
+      badge.hidden = !text;
+    });
+  },
+
+  // Mode buttons + beat select reflect State; beat select only matters for audible (pitch) tones
+  syncStimControls() {
+    document.querySelectorAll('.wave-btn').forEach(b => {
+      const on = b.dataset.mode === State.stimMode;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    const beatSel = document.getElementById('beat-select');
+    beatSel.value = String(State.beatHz);
+    const pitchInView = (FREQ_DATA[State.activeCategoryId] || []).some(f => f.kind === 'pitch');
+    const pitchActive = [...State.activeSounds.values()].some(s => s.freq.kind === 'pitch');
+    beatSel.hidden = !(pitchInView || pitchActive);
+  },
+
+  // Rebuild active sounds after a mode/beat change, keeping each layer's volume
+  restartActiveSounds() {
+    const activeCopy = [...State.activeSounds.values()].map(s => ({ freq: s.freq, userVol: s.userVol }));
+    Audio.stopAll();
+    setTimeout(() => {
+      activeCopy.forEach(({ freq, userVol }) => {
+        Audio.play(freq);
+        if (userVol !== 1) Audio.setLayerVolume(freq.id, userVol);
+      });
+      UI.renderLayerPanel();
+      UI.syncPlayState();
+      UI.updateNowPlaying();
+    }, 300);
   },
 
   // Update active/pressed state on the existing cards without re-rendering
@@ -2695,18 +2844,24 @@ const UI = {
   showInfoPanel(freq) {
     State.selectedFreqId = freq.id;
     const panel = document.getElementById('info-panel');
-    const needsBinaural = freq.binaural || freq.hz < 20;
 
     document.getElementById('info-hz-badge').innerHTML = `${freq.hz}<small> Hz</small>`;
     document.getElementById('info-name').textContent = freq.name;
     document.getElementById('info-description').textContent = freq.desc;
     document.getElementById('info-source').textContent = freq.source ? 'Source: ' + freq.source : '';
-
-    const binInd = document.getElementById('info-binaural-indicator');
-    binInd.classList.toggle('visible', !!needsBinaural);
+    UI.refreshInfoVoice();
 
     panel.classList.add('visible');
     Canvas.startInfoPulse(freq);
+  },
+
+  // "What actually plays" line + headphone hint for the selected card
+  refreshInfoVoice() {
+    const freq = FREQ_DATA[State.activeCategoryId]?.find(f => f.id === State.selectedFreqId);
+    if (!freq) return;
+    const v = Audio.resolveVoice(freq);
+    document.getElementById('info-voice').textContent = 'Plays as: ' + Audio.describeVoice(v);
+    document.getElementById('info-binaural-indicator').classList.toggle('visible', v.type === 'binaural');
   },
 
   hideInfoPanel() {
@@ -2815,11 +2970,11 @@ const UI = {
       nameEl.textContent = `${s.freq.hz} Hz — ${s.freq.name}`;
       const cat = CATEGORIES.find(c => FREQ_DATA[c.id]?.some(f => f.id === s.freq.id));
       subEl.textContent = cat ? cat.name : '';
-      binEl.classList.toggle('visible', !!s.isBinaural);
+      binEl.classList.toggle('visible', s.voice.type === 'binaural');
     } else {
       nameEl.textContent = `${sounds.length} frequencies active`;
       subEl.textContent = sounds.map(s => s.freq.hz + ' Hz').join(' · ');
-      const anyBinaural = sounds.some(s => s.isBinaural);
+      const anyBinaural = sounds.some(s => s.voice.type === 'binaural');
       binEl.classList.toggle('visible', anyBinaural);
     }
     Media.update(nameEl.textContent);
@@ -2965,26 +3120,26 @@ function bindEvents() {
     UI.syncPlayState();
   });
 
-  // Waveform selector
+  // Stimulus mode (Binaural | Isochronic)
   document.getElementById('waveform-selector').addEventListener('click', e => {
     const btn = e.target.closest('.wave-btn');
-    if (!btn) return;
+    if (!btn || btn.dataset.mode === State.stimMode) return;
     Audio.resumeCtx();
-    State.waveformType = btn.dataset.wave;
-    document.querySelectorAll('.wave-btn').forEach(b => b.classList.toggle('active', b === btn));
-    // Restart active sounds with new mode, keeping each layer's volume
-    const activeCopy = [...State.activeSounds.values()].map(s => ({ freq: s.freq, userVol: s.userVol }));
-    Audio.stopAll();
-    State.activeSounds.clear();
-    setTimeout(() => {
-      activeCopy.forEach(({ freq, userVol }) => {
-        Audio.play(freq);
-        if (userVol !== 1) Audio.setLayerVolume(freq.id, userVol);
-      });
-      UI.renderLayerPanel();
-      UI.syncPlayState();
-      UI.updateNowPlaying();
-    }, 300);
+    State.stimMode = btn.dataset.mode;
+    UI.syncStimControls();
+    UI.refreshCardBadges();
+    UI.refreshInfoVoice();
+    UI.restartActiveSounds();
+    Storage.save();
+  });
+
+  // Beat added to audible tones
+  document.getElementById('beat-select').addEventListener('change', e => {
+    Audio.resumeCtx();
+    State.beatHz = parseFloat(e.target.value);
+    UI.refreshCardBadges();
+    UI.refreshInfoVoice();
+    UI.restartActiveSounds();
     Storage.save();
   });
 
@@ -3182,10 +3337,7 @@ function init() {
   document.getElementById('mode-toggle').setAttribute('aria-checked', isLayer ? 'true' : 'false');
   document.getElementById('lbl-single').classList.toggle('active', !isLayer);
   document.getElementById('lbl-layer').classList.toggle('active', isLayer);
-  // Waveform selector
-  document.querySelectorAll('.wave-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.wave === State.waveformType);
-  });
+  UI.syncStimControls();
 
   Canvas.setupHiDPI(document.getElementById('waveform-canvas'));
   Canvas.setupHiDPI(document.getElementById('info-pulse-canvas'));
