@@ -1037,16 +1037,16 @@
   </nav>
 
   <!-- ── MAIN ── -->
-  <main id="main-content">
+  <main id="main-content" role="tabpanel">
     <div id="category-heading">
       <h2 id="cat-title"></h2>
       <p id="cat-desc"></p>
     </div>
 
-    <div id="cards-grid" role="list"></div>
+    <div id="cards-grid" role="group" aria-label="Frequencies"></div>
 
     <!-- Info panel -->
-    <aside id="info-panel" aria-live="polite" aria-label="Frequency details">
+    <aside id="info-panel" aria-label="Frequency details">
       <button id="info-close" aria-label="Close">✕</button>
       <div id="info-panel-inner">
         <div id="info-viz-container">
@@ -1054,7 +1054,7 @@
         </div>
         <div id="info-details">
           <div id="info-hz-badge"></div>
-          <div id="info-name"></div>
+          <div id="info-name" aria-live="polite"></div>
           <p id="info-description"></p>
           <p id="info-source"></p>
           <div id="info-binaural-indicator">🎧 Binaural — Use headphones</div>
@@ -1357,16 +1357,23 @@ const State = {
   activeSounds: new Map(),
   masterVolume: 0.5,
   isPlaying: false,
+  userPaused: false,
   selectedFreqId: null,
+  accentColor: '#8b5cf6',
   // Timer
   timerDuration: 0,
   timerRemaining: 0,
+  timerEndsAt: 0,           // Date.now() deadline while running
+  timerPausedMs: 0,         // remaining ms captured on pause
   timerIntervalId: null,
-  timerFading: false,
   // Audio nodes (created lazily)
   ctx: null,
   masterGain: null,
+  sessionGain: null,
+  limiter: null,
+  limiterTrim: null,
   analyser: null,
+  bgAudioEl: null,
   // RAF handles
   waveformRafId: null,
   infoPulseRafId: null,
@@ -1387,22 +1394,109 @@ const NATURE_LABELS = {
 // 3. AUDIO ENGINE
 // ═══════════════════════════════════════════════
 
+const URL_PARAMS = new URLSearchParams(location.search);
+const DEBUG = URL_PARAMS.has('debug');
+// Experimental: route output through an <audio> element so mobile browsers may keep playing with the screen locked
+const BG_AUDIO = URL_PARAMS.has('bg');
+
+// Per-voice peak level before loudness correction — leaves headroom for layers + ambiance
+const VOICE_GAIN = 0.5;
+// Ambiance sits under the tones
+const NATURE_TRIM = 0.5;
+
+// ISO 226:2003 40-phon equal-loudness contour (Hz, dB SPL)
+const LOUDNESS_40PHON = [
+  [20, 99.85], [25, 93.94], [31.5, 88.17], [40, 82.63], [50, 77.78], [63, 73.08],
+  [80, 68.48], [100, 64.37], [125, 60.59], [160, 56.70], [200, 53.41], [250, 50.40],
+  [315, 47.58], [400, 44.98], [500, 43.05], [630, 41.34], [800, 40.06], [1000, 40.01], [1250, 41.82],
+];
+const LOUDNESS_REF_HZ = 150;    // no cut at or below this
+const LOUDNESS_MAX_CUT_DB = 18;
+
+const LIMITER_THRESHOLD_DB = -3;
+const LIMITER_RATIO = 20;
+// DynamicsCompressorNode adds automatic makeup gain ((1 / fullRangeGain) ^ 0.6 per spec);
+// this trim cancels it so the limiter is unity gain below threshold
+const LIMITER_TRIM = Math.pow(10, LIMITER_THRESHOLD_DB * (1 - 1 / LIMITER_RATIO) * 0.6 / 20);
+
 const Audio = {
   ensureContext() {
     if (State.ctx) return;
     const Ctx = window.AudioContext || window.webkitAudioContext;
-    State.ctx = new Ctx();
-    State.masterGain = State.ctx.createGain();
-    State.masterGain.gain.setValueAtTime(State.masterVolume, State.ctx.currentTime);
-    State.analyser = State.ctx.createAnalyser();
+    const ctx = State.ctx = new Ctx();
+    const now = ctx.currentTime;
+    State.masterGain = ctx.createGain();
+    State.masterGain.gain.setValueAtTime(State.masterVolume, now);
+    // Timer fade lives on its own node so master-volume changes never cancel it
+    State.sessionGain = ctx.createGain();
+    // Limiter: catches peaks from stacked layers + ambiance before they clip
+    State.limiter = ctx.createDynamicsCompressor();
+    State.limiter.threshold.setValueAtTime(LIMITER_THRESHOLD_DB, now);
+    State.limiter.knee.setValueAtTime(0, now);
+    State.limiter.ratio.setValueAtTime(LIMITER_RATIO, now);
+    State.limiter.attack.setValueAtTime(0.003, now);
+    State.limiter.release.setValueAtTime(0.25, now);
+    State.limiterTrim = ctx.createGain();
+    State.limiterTrim.gain.setValueAtTime(LIMITER_TRIM, now);
+    State.analyser = ctx.createAnalyser();
     State.analyser.fftSize = 2048;
     State.analyser.smoothingTimeConstant = 0.8;
-    State.masterGain.connect(State.analyser);
-    State.analyser.connect(State.ctx.destination);
+    State.masterGain.connect(State.sessionGain).connect(State.limiter).connect(State.limiterTrim).connect(State.analyser);
+    Audio._connectOutput();
+    if (DEBUG) Debug.attach();
+  },
+
+  _connectOutput() {
+    if (BG_AUDIO && State.ctx.createMediaStreamDestination) {
+      const dest = State.ctx.createMediaStreamDestination();
+      State.analyser.connect(dest);
+      const el = document.createElement('audio');
+      el.setAttribute('playsinline', '');
+      el.srcObject = dest.stream;
+      document.body.appendChild(el);
+      State.bgAudioEl = el;
+      el.play().catch(() => {});
+    } else {
+      State.analyser.connect(State.ctx.destination);
+    }
   },
 
   resumeCtx() {
+    if (State.userPaused) return;
     if (State.ctx && State.ctx.state === 'suspended') State.ctx.resume();
+    if (State.bgAudioEl && State.bgAudioEl.paused) State.bgAudioEl.play().catch(() => {});
+  },
+
+  // User pause: freezes tones, ambiance and the timer together
+  pause() {
+    if (!State.ctx || State.userPaused) return;
+    State.userPaused = true;
+    Timer.pause();
+    State.ctx.suspend();
+    if (State.bgAudioEl) State.bgAudioEl.pause();
+  },
+
+  unpause() {
+    if (!State.userPaused) return;
+    State.userPaused = false;
+    Timer.resume();
+    Audio.resumeCtx();
+  },
+
+  // Cut-only equal-loudness correction: frequencies the ear is more sensitive to are turned down
+  _loudness(hz) {
+    const cut = Math.min(LOUDNESS_MAX_CUT_DB, Math.max(0, Audio._phon40(LOUDNESS_REF_HZ) - Audio._phon40(hz)));
+    return Math.pow(10, -cut / 20);
+  },
+
+  _phon40(hz) {
+    const t = LOUDNESS_40PHON;
+    if (hz <= t[0][0]) return t[0][1];
+    for (let i = 0; i < t.length - 1; i++) {
+      const [f0, l0] = t[i], [f1, l1] = t[i + 1];
+      if (hz <= f1) return l0 + (l1 - l0) * Math.log(hz / f0) / Math.log(f1 / f0);
+    }
+    return t[t.length - 1][1];
   },
 
   _isBinaural(freq) {
@@ -1414,13 +1508,14 @@ const Audio = {
     const osc = ctx.createOscillator();
     osc.type = 'sine';
     osc.frequency.setValueAtTime(freq.hz, ctx.currentTime);
+    const level = VOICE_GAIN * Audio._loudness(freq.hz);
     const gainNode = ctx.createGain();
     gainNode.gain.setValueAtTime(0, ctx.currentTime);
-    gainNode.gain.linearRampToValueAtTime(1.0, ctx.currentTime + 0.2);
+    gainNode.gain.linearRampToValueAtTime(level, ctx.currentTime + 0.2);
     osc.connect(gainNode);
     gainNode.connect(State.masterGain);
     osc.start();
-    return { oscillators: [osc], gainNode, isBinaural: false };
+    return { oscillators: [osc], gainNode, isBinaural: false, level };
   },
 
   _createBinaural(freq) {
@@ -1428,9 +1523,10 @@ const Audio = {
     const carrier = freq.carrierHz || 200;
     const beat = freq.hz;
 
+    const level = VOICE_GAIN * Audio._loudness(carrier);
     const gainNode = ctx.createGain();
     gainNode.gain.setValueAtTime(0, ctx.currentTime);
-    gainNode.gain.linearRampToValueAtTime(1.0, ctx.currentTime + 0.2);
+    gainNode.gain.linearRampToValueAtTime(level, ctx.currentTime + 0.2);
 
     const merger = ctx.createChannelMerger(2);
 
@@ -1457,21 +1553,20 @@ const Audio = {
 
     oscL.start();
     oscR.start();
-    return { oscillators: [oscL, oscR], gainNode, isBinaural: true };
+    return { oscillators: [oscL, oscR], gainNode, isBinaural: true, level };
   },
 
   play(freq) {
     if (State.activeSounds.has(freq.id)) return;
     Audio.ensureContext();
     Audio.resumeCtx();
-    // Restore master gain if it was faded by timer
-    if (State.masterGain && State.masterGain.gain.value < State.masterVolume * 0.5) {
-      Audio.resetMasterGain();
-    }
+    // A finished timer leaves the session gain faded until its restore ramp runs
+    if (!State.timerEndsAt && State.sessionGain.gain.value < 1) Audio.clearSessionFade();
     const sound = Audio._isBinaural(freq)
       ? Audio._createBinaural(freq)
       : Audio._createSine(freq);
     sound.freq = freq;
+    sound.userVol = 1;
     State.activeSounds.set(freq.id, sound);
   },
 
@@ -1487,9 +1582,9 @@ const Audio = {
     setTimeout(() => {
       oscillators.forEach(o => { try { o.stop(); o.disconnect(); } catch (e) {} });
       try { gainNode.disconnect(); } catch (e) {}
-      State.activeSounds.delete(freqId);
     }, 250);
-    State.activeSounds.delete(freqId); // remove from map immediately so UI updates
+    // Remove from map now (not in the timeout) so a quick re-select of the same id isn't orphaned
+    State.activeSounds.delete(freqId);
   },
 
   stopAll() {
@@ -1517,35 +1612,37 @@ const Audio = {
     if (!State.masterGain) return;
     const now = State.ctx.currentTime;
     State.masterGain.gain.cancelScheduledValues(now);
-    // Clamp current value in case it was faded to near-zero
-    const current = Math.max(State.masterGain.gain.value, 0.001);
-    State.masterGain.gain.setValueAtTime(current, now);
+    State.masterGain.gain.setValueAtTime(State.masterGain.gain.value, now);
     State.masterGain.gain.linearRampToValueAtTime(vol, now + 0.05);
   },
 
   setLayerVolume(freqId, vol) {
     const sound = State.activeSounds.get(freqId);
     if (!sound || !State.ctx) return;
+    sound.userVol = vol;
     const now = State.ctx.currentTime;
     sound.gainNode.gain.cancelScheduledValues(now);
     sound.gainNode.gain.setValueAtTime(sound.gainNode.gain.value, now);
-    sound.gainNode.gain.linearRampToValueAtTime(vol, now + 0.05);
+    sound.gainNode.gain.linearRampToValueAtTime(sound.level * vol, now + 0.05);
   },
 
-  fadeOutAll(seconds) {
-    if (!State.masterGain || !State.ctx) return;
+  // Timer fade, scheduled on the audio clock so background-tab throttling can't delay it
+  scheduleSessionFade(endTime) {
+    const g = State.sessionGain.gain;
     const now = State.ctx.currentTime;
-    State.masterGain.gain.cancelScheduledValues(now);
-    State.masterGain.gain.setValueAtTime(State.masterGain.gain.value, now);
-    State.masterGain.gain.exponentialRampToValueAtTime(0.001, now + seconds);
+    g.cancelScheduledValues(now);
+    g.setValueAtTime(1, now);
+    g.setValueAtTime(1, Math.max(now, endTime - 5));
+    g.exponentialRampToValueAtTime(0.001, Math.max(now + 0.01, endTime));
   },
 
-  resetMasterGain() {
-    if (!State.masterGain || !State.ctx) return;
+  clearSessionFade() {
+    if (!State.sessionGain) return;
+    const g = State.sessionGain.gain;
     const now = State.ctx.currentTime;
-    State.masterGain.gain.cancelScheduledValues(now);
-    State.masterGain.gain.setValueAtTime(0.001, now);
-    State.masterGain.gain.linearRampToValueAtTime(State.masterVolume, now + 0.1);
+    g.cancelScheduledValues(now);
+    g.setValueAtTime(Math.max(g.value, 0.001), now);
+    g.linearRampToValueAtTime(1, now + 0.1);
   },
 };
 
@@ -1563,7 +1660,9 @@ const Nature = {
     const ctx = State.ctx;
     Nature.masterGain = ctx.createGain();
     Nature.masterGain.gain.setValueAtTime(State.natureMasterVolume, ctx.currentTime);
-    Nature.masterGain.connect(State.masterGain);
+    const trim = ctx.createGain();
+    trim.gain.setValueAtTime(NATURE_TRIM, ctx.currentTime);
+    Nature.masterGain.connect(trim).connect(State.masterGain);
     // Pre-generate noise buffers eagerly to avoid first-tap stutter on slow devices
     ['white', 'pink', 'brown'].forEach(t => {
       if (!Nature._buffers[t]) Nature._buffers[t] = Nature._makeNoiseBuffer(t);
@@ -1608,6 +1707,12 @@ const Nature = {
     src.loop = true;
     src.start();
     return src;
+  },
+
+  // Schedulers keep ticking while the context is suspended (user pause); they must not
+  // queue nodes then, or every queued hit fires at once on resume.
+  _isRunning() {
+    return State.ctx && State.ctx.state === 'running';
   },
 
   // ── Recipes ─────────────────────────────────────
@@ -1769,7 +1874,7 @@ const Nature = {
       let fizzleId = null;
       const scheduleFizzle = () => {
         if (stopped) return;
-        crackle(ctx.currentTime, {
+        if (Nature._isRunning()) crackle(ctx.currentTime, {
           hpFreq: 2500,
           peakFreq: 3500 + Math.random() * 2500,
           peakQ: 1.0,
@@ -1796,8 +1901,10 @@ const Nature = {
           amp: 0.08 + Math.random() * 0.10,
           decay: 0.025 + Math.random() * 0.05,
         });
-        fire1();
-        if (doublet) setTimeout(() => { if (!stopped) fire1(); }, 30 + Math.random() * 70);
+        if (Nature._isRunning()) {
+          fire1();
+          if (doublet) setTimeout(() => { if (!stopped && Nature._isRunning()) fire1(); }, 30 + Math.random() * 70);
+        }
         // 600 ms – 2.6 s between snaps — clearly audible, not constant
         const gap = 600 + Math.random() * 2000;
         snapId = setTimeout(scheduleSnap, gap);
@@ -1808,7 +1915,7 @@ const Nature = {
       let popId = null;
       const schedulePop = () => {
         if (stopped) return;
-        crackle(ctx.currentTime, {
+        if (Nature._isRunning()) crackle(ctx.currentTime, {
           hpFreq: 200,
           peakFreq: 350 + Math.random() * 350,
           peakQ: 1.8,
@@ -2023,7 +2130,7 @@ const Nature = {
       };
 
       const fireStrike = () => {
-        if (stopped) return;
+        if (stopped || !Nature._isRunning()) return;
         const t = ctx.currentTime;
         const r = Math.random();
         if (r < 0.45) distantStrike(t);
@@ -2120,7 +2227,7 @@ const Nature = {
         const panVal = (Math.random() - 0.5) * 1.4;
         const burstCount = Math.random() < 0.35 ? 2 + Math.floor(Math.random() * 2) : 1;
         for (let i = 0; i < burstCount; i++) {
-          setTimeout(() => { if (!stopped) chirp(panVal); }, i * 60);
+          setTimeout(() => { if (!stopped && Nature._isRunning()) chirp(panVal); }, i * 60);
         }
         const delay = 600 + Math.random() * 1900;
         timeoutId = setTimeout(scheduleBird, delay);
@@ -2248,49 +2355,62 @@ const Storage = {
 const Timer = {
   start(seconds) {
     Timer.stop();
-    if (seconds === 0) {
-      UI.updateTimerDisplay();
-      return;
-    }
+    if (seconds === 0) return;
+    Audio.ensureContext();
     State.timerDuration = seconds;
     State.timerRemaining = seconds;
-    State.timerFading = false;
+    // Deadline-based so a throttled background tab can't drift the countdown
+    State.timerEndsAt = Date.now() + seconds * 1000;
+    if (State.userPaused) State.timerPausedMs = seconds * 1000;
+    Audio.scheduleSessionFade(State.ctx.currentTime + seconds);
     UI.updateTimerDisplay();
-    State.timerIntervalId = setInterval(Timer.tick, 1000);
+    State.timerIntervalId = setInterval(Timer.tick, 250);
   },
 
   tick() {
-    State.timerRemaining--;
+    if (State.userPaused) return;
+    State.timerRemaining = Math.max(0, Math.ceil((State.timerEndsAt - Date.now()) / 1000));
     UI.updateTimerDisplay();
-    if (State.timerRemaining <= 5 && !State.timerFading) {
-      State.timerFading = true;
-      Audio.fadeOutAll(5);
-    }
-    if (State.timerRemaining <= 0) {
-      Timer.stop();
-      Audio.stopAll();  // properly fades and disconnects oscillators
-      Nature.stopAll(); // cancel ambiance schedulers and disconnect nature nodes
-      State.isPlaying = false;
-      // Restore master gain so next session plays at correct volume
-      setTimeout(() => Audio.resetMasterGain(), 300);
-      UI.syncPlayState();
-      UI.renderLayerPanel();
-      Canvas.stopWaveform();
-      // Reset ambiance button states
-      document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
-      UI.renderAmbianceLayers();
-    }
+    if (State.timerRemaining <= 0) Timer.expire();
   },
 
-  stop() {
+  expire() {
+    Timer.stop({ keepFade: true });
+    document.getElementById('timer-select').value = '0';
+    Audio.stopAll();  // properly fades and disconnects oscillators
+    Nature.stopAll(); // cancel ambiance schedulers and disconnect nature nodes
+    State.isPlaying = false;
+    // Restore the session gain once the stop fades have finished
+    setTimeout(() => { if (!State.timerEndsAt) Audio.clearSessionFade(); }, 300);
+    UI.renderCards();
+    UI.renderLayerPanel();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
+    // Reset ambiance button states
+    document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
+    UI.renderAmbianceLayers();
+    UI.syncAmbianceToggle();
+  },
+
+  stop({ keepFade = false } = {}) {
     if (State.timerIntervalId) {
       clearInterval(State.timerIntervalId);
       State.timerIntervalId = null;
     }
     State.timerDuration = 0;
     State.timerRemaining = 0;
-    State.timerFading = false;
+    State.timerEndsAt = 0;
+    State.timerPausedMs = 0;
+    if (!keepFade) Audio.clearSessionFade();
     UI.updateTimerDisplay();
+  },
+
+  pause() {
+    if (State.timerEndsAt) State.timerPausedMs = Math.max(0, State.timerEndsAt - Date.now());
+  },
+
+  resume() {
+    if (State.timerEndsAt) State.timerEndsAt = Date.now() + State.timerPausedMs;
   },
 };
 
@@ -2322,22 +2442,66 @@ const WakeLock = {
 
 // Re-acquire wake lock when tab becomes visible again (OS releases it on hide)
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible' && State.activeSounds.size > 0) {
-    WakeLock.acquire();
-  }
+  if (document.visibilityState === 'visible') UI.syncWakeLock();
 });
+
+// ═══════════════════════════════════════════════
+// 6. MEDIA SESSION
+// ═══════════════════════════════════════════════
+
+const Media = {
+  init() {
+    // Safari: let Web Audio play with the ring/silent switch on
+    try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
+    if (!('mediaSession' in navigator)) return;
+    const ms = navigator.mediaSession;
+    try {
+      ms.setActionHandler('play', () => { Audio.unpause(); UI.syncPlayState(); });
+      ms.setActionHandler('pause', () => { Audio.pause(); UI.syncPlayState(); });
+    } catch (e) {}
+  },
+
+  update(title) {
+    if (!('mediaSession' in navigator)) return;
+    const ms = navigator.mediaSession;
+    const anyActive = State.activeSounds.size > 0 || State.activeNature.size > 0;
+    try {
+      ms.metadata = anyActive && window.MediaMetadata
+        ? new MediaMetadata({ title, artist: 'Resonance', album: 'Therapeutic Frequencies' })
+        : null;
+      ms.playbackState = !anyActive ? 'none' : State.userPaused ? 'paused' : 'playing';
+    } catch (e) {}
+  },
+};
 
 // ═══════════════════════════════════════════════
 // 7. CANVAS RENDERERS
 // ═══════════════════════════════════════════════
 
 const Canvas = {
+  // Size the backing store for the device pixel ratio; drawing code keeps using CSS pixels
+  setupHiDPI(canvas) {
+    const W = canvas.width, H = canvas.height;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    canvas.width = Math.round(W * dpr);
+    canvas.height = Math.round(H * dpr);
+    canvas.getContext('2d').setTransform(dpr, 0, 0, dpr, 0, 0);
+    canvas.dataset.cssW = W;
+    canvas.dataset.cssH = H;
+  },
+
+  _size(canvas) {
+    return { W: +canvas.dataset.cssW || canvas.width, H: +canvas.dataset.cssH || canvas.height };
+  },
+
   // ── Waveform (Now Playing bar) ──────────────
   startWaveform() {
     if (State.waveformRafId) return;
     const canvas = document.getElementById('waveform-canvas');
     const ctx = canvas.getContext('2d');
-    const W = canvas.width, H = canvas.height;
+    const { W, H } = Canvas._size(canvas);
     const bufLen = State.analyser ? State.analyser.frequencyBinCount : 1024;
     const data = new Uint8Array(bufLen);
 
@@ -2348,8 +2512,7 @@ const Canvas = {
 
       ctx.clearRect(0, 0, W, H);
 
-      // Accent color from CSS var
-      const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+      const accent = State.accentColor;
 
       ctx.beginPath();
       ctx.lineWidth = 1.5;
@@ -2380,15 +2543,15 @@ const Canvas = {
     }
     const canvas = document.getElementById('waveform-canvas');
     const ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const { W, H } = Canvas._size(canvas);
+    ctx.clearRect(0, 0, W, H);
     // Draw flat line
-    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
     ctx.beginPath();
-    ctx.strokeStyle = accent;
+    ctx.strokeStyle = State.accentColor;
     ctx.globalAlpha = 0.2;
     ctx.lineWidth = 1;
-    ctx.moveTo(0, canvas.height / 2);
-    ctx.lineTo(canvas.width, canvas.height / 2);
+    ctx.moveTo(0, H / 2);
+    ctx.lineTo(W, H / 2);
     ctx.stroke();
     ctx.globalAlpha = 1;
   },
@@ -2403,8 +2566,8 @@ const Canvas = {
 
     const canvas = document.getElementById('info-pulse-canvas');
     const ctx = canvas.getContext('2d');
-    const W = canvas.width, H = canvas.height;
-    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+    const { W, H } = Canvas._size(canvas);
+    const accent = State.accentColor;
 
     // Speed is mapped loosely to frequency class (not literal Hz)
     const speed = freq.hz < 10 ? 0.015
@@ -2453,6 +2616,7 @@ const UI = {
     root.style.setProperty('--accent', cat.color);
     root.style.setProperty('--accent-rgb', cat.rgb);
     root.style.setProperty('--accent-glow', cat.glow);
+    State.accentColor = cat.color;
     // Body class for chakra gradient
     document.body.className = 'cat-' + cat.id;
   },
@@ -2461,14 +2625,22 @@ const UI = {
     const scroll = document.getElementById('category-tags-scroll');
     scroll.innerHTML = '';
     [...CATEGORIES].reverse().forEach((cat, i) => {
+      const isActive = cat.id === State.activeCategoryId;
       const btn = document.createElement('button');
-      btn.className = 'category-tag' + (cat.id === State.activeCategoryId ? ' active' : '');
+      btn.className = 'category-tag' + (isActive ? ' active' : '');
       btn.innerHTML = cat.icon + ' ' + cat.name;
+      btn.id = 'tab-' + cat.id;
       btn.setAttribute('role', 'tab');
-      btn.setAttribute('aria-selected', cat.id === State.activeCategoryId ? 'true' : 'false');
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      btn.setAttribute('aria-controls', 'main-content');
+      btn.tabIndex = isActive ? 0 : -1;
       btn.dataset.catId = cat.id;
       scroll.appendChild(btn);
     });
+    document.getElementById('main-content').setAttribute('aria-labelledby', 'tab-' + State.activeCategoryId);
+    // Tabs render in reverse order, so the default category can start off-screen on mobile
+    const active = scroll.querySelector('.category-tag.active');
+    if (active) active.scrollIntoView({ inline: 'center', block: 'nearest' });
   },
 
   renderCards() {
@@ -2490,7 +2662,8 @@ const UI = {
 
       const card = document.createElement('div');
       card.className = 'freq-card' + (isActive ? ' active' : '');
-      card.setAttribute('role', 'listitem');
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       card.setAttribute('tabindex', '0');
       card.setAttribute('aria-label', `${freq.hz} Hz — ${freq.name}`);
       card.dataset.freqId = freq.id;
@@ -2508,6 +2681,15 @@ const UI = {
     // Hide info panel when switching categories
     UI.hideInfoPanel();
     State.selectedFreqId = null;
+  },
+
+  // Update active/pressed state on the existing cards without re-rendering
+  refreshCardStates() {
+    document.querySelectorAll('.freq-card').forEach(card => {
+      const isActive = State.activeSounds.has(card.dataset.freqId);
+      card.classList.toggle('active', isActive);
+      card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
   },
 
   showInfoPanel(freq) {
@@ -2552,7 +2734,7 @@ const UI = {
         <div class="layer-dot" style="background:var(--accent)"></div>
         <div class="layer-name">${freq.name}</div>
         <div class="layer-hz">${freq.hz} Hz</div>
-        <input type="range" class="layer-vol" min="0" max="1" step="0.01" value="1"
+        <input type="range" class="layer-vol" min="0" max="1" step="0.01" value="${sound.userVol}"
                aria-label="Volume for ${freq.name}">
         <button class="layer-remove" aria-label="Remove ${freq.name}">✕</button>
       `;
@@ -2587,23 +2769,31 @@ const UI = {
 
   syncPlayState() {
     const btn = document.getElementById('play-pause-btn');
-    const hasSound = State.activeSounds.size > 0;
-    btn.disabled = !hasSound && State.mode === 'single';
-    if (hasSound) {
+    const hasAny = State.activeSounds.size > 0 || State.activeNature.size > 0;
+    // Nothing left to resume — drop the paused state so the next sound just plays
+    if (!hasAny && State.userPaused) Audio.unpause();
+    btn.disabled = !hasAny;
+    if (hasAny && !State.userPaused) {
       btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
       btn.setAttribute('aria-label', 'Pause');
     } else {
       btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
-      btn.setAttribute('aria-label', 'Play');
-      btn.disabled = true;
+      btn.setAttribute('aria-label', hasAny ? 'Resume' : 'Play');
     }
-    if (hasSound) {
-      Canvas.startWaveform();
-      WakeLock.acquire();
-    } else {
-      Canvas.stopWaveform();
-      WakeLock.release();
-    }
+    if (hasAny) Canvas.startWaveform();
+    else Canvas.stopWaveform();
+    UI.syncWakeLock();
+    Media.update(document.getElementById('now-playing-name').textContent);
+  },
+
+  syncWakeLock() {
+    const hasAny = State.activeSounds.size > 0 || State.activeNature.size > 0;
+    if (hasAny && !State.userPaused) WakeLock.acquire();
+    else WakeLock.release();
+  },
+
+  syncAmbianceToggle() {
+    document.getElementById('ambiance-toggle').classList.toggle('active', State.isAmbianceDrawerOpen || State.activeNature.size > 0);
   },
 
   updateNowPlaying() {
@@ -2612,9 +2802,10 @@ const UI = {
     const binEl = document.getElementById('binaural-indicator');
 
     if (State.activeSounds.size === 0) {
-      nameEl.textContent = 'Select a frequency';
+      nameEl.textContent = State.activeNature.size > 0 ? 'Nature ambiance' : 'Select a frequency';
       subEl.textContent = '';
       binEl.classList.remove('visible');
+      Media.update(nameEl.textContent);
       return;
     }
 
@@ -2631,6 +2822,7 @@ const UI = {
       const anyBinaural = sounds.some(s => s.isBinaural);
       binEl.classList.toggle('visible', anyBinaural);
     }
+    Media.update(nameEl.textContent);
   },
 
   updateTimerDisplay() {
@@ -2653,7 +2845,10 @@ const UI = {
       State.activeSounds.clear();
       State.isPlaying = false;
     }
+    // Tags are rebuilt, so carry keyboard focus over to the new active tag
+    const hadTagFocus = document.activeElement && document.activeElement.classList.contains('category-tag');
     UI.renderCategoryTags();
+    if (hadTagFocus) document.getElementById('tab-' + catId).focus();
     UI.renderCards();
     UI.syncPlayState();
     UI.updateNowPlaying();
@@ -2662,6 +2857,8 @@ const UI = {
 
   selectFrequency(freq) {
     Audio.ensureContext();
+    // Choosing a frequency is an explicit request for sound — it ends a user pause
+    Audio.unpause();
     Audio.resumeCtx();
 
     if (State.mode === 'single') {
@@ -2687,11 +2884,7 @@ const UI = {
       State.isPlaying = State.activeSounds.size > 0;
     }
 
-    // Refresh card active states
-    document.querySelectorAll('.freq-card').forEach(card => {
-      card.classList.toggle('active', State.activeSounds.has(card.dataset.freqId));
-    });
-
+    UI.refreshCardStates();
     UI.showInfoPanel(freq);
     UI.renderLayerPanel();
     UI.syncPlayState();
@@ -2708,6 +2901,22 @@ function bindEvents() {
   document.getElementById('category-tags-scroll').addEventListener('click', e => {
     const btn = e.target.closest('.category-tag');
     if (btn) UI.selectCategory(btn.dataset.catId);
+  });
+  // Roving focus across tabs; Enter/Space activates (selecting stops sounds in single mode)
+  document.getElementById('category-tags-scroll').addEventListener('keydown', e => {
+    const tags = [...document.querySelectorAll('.category-tag')];
+    const i = tags.indexOf(document.activeElement);
+    if (i === -1) return;
+    let next = null;
+    if (e.key === 'ArrowRight') next = tags[(i + 1) % tags.length];
+    else if (e.key === 'ArrowLeft') next = tags[(i - 1 + tags.length) % tags.length];
+    else if (e.key === 'Home') next = tags[0];
+    else if (e.key === 'End') next = tags[tags.length - 1];
+    if (!next) return;
+    e.preventDefault();
+    tags.forEach(t => { t.tabIndex = t === next ? 0 : -1; });
+    next.focus();
+    next.scrollIntoView({ inline: 'nearest', block: 'nearest' });
   });
 
   // Cards grid (event delegation — click + keyboard)
@@ -2749,18 +2958,11 @@ function bindEvents() {
     Storage.save();
   });
 
-  // Play/Pause
+  // Play/Pause — suspends tones, ambiance and the timer together
   document.getElementById('play-pause-btn').addEventListener('click', () => {
-    Audio.resumeCtx();
-    if (State.activeSounds.size > 0) {
-      Audio.stopAll();
-      State.activeSounds.clear();
-      State.isPlaying = false;
-      UI.renderCards();
-      UI.renderLayerPanel();
-      UI.syncPlayState();
-      UI.updateNowPlaying();
-    }
+    if (State.userPaused) Audio.unpause();
+    else Audio.pause();
+    UI.syncPlayState();
   });
 
   // Waveform selector
@@ -2770,12 +2972,15 @@ function bindEvents() {
     Audio.resumeCtx();
     State.waveformType = btn.dataset.wave;
     document.querySelectorAll('.wave-btn').forEach(b => b.classList.toggle('active', b === btn));
-    // Restart active sounds with new mode
-    const activeCopy = [...State.activeSounds.values()].map(s => s.freq);
+    // Restart active sounds with new mode, keeping each layer's volume
+    const activeCopy = [...State.activeSounds.values()].map(s => ({ freq: s.freq, userVol: s.userVol }));
     Audio.stopAll();
     State.activeSounds.clear();
     setTimeout(() => {
-      activeCopy.forEach(freq => Audio.play(freq));
+      activeCopy.forEach(({ freq, userVol }) => {
+        Audio.play(freq);
+        if (userVol !== 1) Audio.setLayerVolume(freq.id, userVol);
+      });
       UI.renderLayerPanel();
       UI.syncPlayState();
       UI.updateNowPlaying();
@@ -2832,15 +3037,12 @@ function bindEvents() {
   // Ambiance drawer toggle
   const ambianceToggleBtn = document.getElementById('ambiance-toggle');
   const ambianceDrawer = document.getElementById('ambiance-drawer');
-  function syncAmbianceToggle() {
-    ambianceToggleBtn.classList.toggle('active', State.isAmbianceDrawerOpen || State.activeNature.size > 0);
-  }
   function setAmbianceDrawer(open) {
     State.isAmbianceDrawerOpen = open;
     ambianceDrawer.classList.toggle('open', open);
     ambianceDrawer.setAttribute('aria-hidden', open ? 'false' : 'true');
     ambianceToggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    syncAmbianceToggle();
+    UI.syncAmbianceToggle();
   }
   ambianceToggleBtn.addEventListener('click', () => {
     Audio.ensureContext();
@@ -2856,12 +3058,16 @@ function bindEvents() {
     const btn = e.target.closest('.ambiance-btn');
     if (!btn) return;
     Audio.ensureContext();
-    Audio.resumeCtx();
     const id = btn.dataset.sound;
+    // Starting a sound ends a user pause; stopping one doesn't
+    if (!State.activeNature.has(id)) Audio.unpause();
+    Audio.resumeCtx();
     Nature.toggle(id);
     btn.classList.toggle('active', State.activeNature.has(id));
-    syncAmbianceToggle();
+    UI.syncAmbianceToggle();
     UI.renderAmbianceLayers();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
   });
 
   // Ambiance active layers list (per-sound volume + remove)
@@ -2882,7 +3088,9 @@ function bindEvents() {
     Nature.stopSound(id);
     document.querySelector(`.ambiance-btn[data-sound="${id}"]`)?.classList.remove('active');
     UI.renderAmbianceLayers();
-    syncAmbianceToggle();
+    UI.syncAmbianceToggle();
+    UI.syncPlayState();
+    UI.updateNowPlaying();
   });
 
   // Ambiance volume
@@ -2896,6 +3104,61 @@ function bindEvents() {
   // iOS Safari: create and resume AudioContext inside a trusted gesture so it's never suspended
   document.addEventListener('touchstart', () => { Audio.ensureContext(); Audio.resumeCtx(); }, { passive: true });
 }
+
+// ═══════════════════════════════════════════════
+// 9b. DEBUG (only with ?debug — signal-measurement hooks for testing)
+// ═══════════════════════════════════════════════
+
+const Debug = {
+  init() {
+    window.__res = { State, Audio, Nature, Timer, UI, Debug, FREQ_DATA };
+    const opt = document.createElement('option');
+    opt.value = '15';
+    opt.textContent = '15 s';
+    document.getElementById('timer-select').appendChild(opt);
+  },
+
+  // Per-channel analysers after the limiter
+  attach() {
+    const ctx = State.ctx;
+    const split = ctx.createChannelSplitter(2);
+    State.limiterTrim.connect(split);
+    Debug.left = ctx.createAnalyser();
+    Debug.right = ctx.createAnalyser();
+    [Debug.left, Debug.right].forEach(a => { a.fftSize = 32768; a.smoothingTimeConstant = 0; });
+    split.connect(Debug.left, 0);
+    split.connect(Debug.right, 1);
+  },
+
+  // Strongest spectral peak on a channel, with parabolic interpolation
+  peakHz(ch = 'left', minHz = 20) {
+    const a = Debug[ch];
+    const bins = new Float32Array(a.frequencyBinCount);
+    a.getFloatFrequencyData(bins);
+    const hzPerBin = State.ctx.sampleRate / a.fftSize;
+    let best = -Infinity, idx = 1;
+    for (let i = Math.max(1, Math.ceil(minHz / hzPerBin)); i < bins.length - 1; i++) {
+      if (bins[i] > best) { best = bins[i]; idx = i; }
+    }
+    const [y1, y2, y3] = [bins[idx - 1], bins[idx], bins[idx + 1]];
+    const p = 0.5 * (y1 - y3) / (y1 - 2 * y2 + y3);
+    return { hz: (idx + p) * hzPerBin, db: best };
+  },
+
+  samples(ch = 'left') {
+    const a = Debug[ch];
+    const d = new Float32Array(a.fftSize);
+    a.getFloatTimeDomainData(d);
+    return d;
+  },
+
+  levels(ch = 'left') {
+    const d = Debug.samples(ch);
+    let max = 0, sum = 0;
+    for (const v of d) { max = Math.max(max, Math.abs(v)); sum += v * v; }
+    return { max, rms: Math.sqrt(sum / d.length) };
+  },
+};
 
 // ═══════════════════════════════════════════════
 // 10. INIT
@@ -2923,6 +3186,11 @@ function init() {
   document.querySelectorAll('.wave-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.wave === State.waveformType);
   });
+
+  Canvas.setupHiDPI(document.getElementById('waveform-canvas'));
+  Canvas.setupHiDPI(document.getElementById('info-pulse-canvas'));
+  Media.init();
+  if (DEBUG) Debug.init();
 
   UI.renderCategoryTags();
   UI.renderCards();
