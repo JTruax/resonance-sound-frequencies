@@ -1336,6 +1336,7 @@ const CATEGORIES = [
   },
   {
     id: 'neural',
+    hidden: true, // kept in code, not shown on the front end
     name: 'Neural Coherence & Brain Health',
     icon: _ico('<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>'),
     color: '#3b82f6',
@@ -2705,7 +2706,7 @@ const Storage = {
       if (p.stimMode === 'binaural' || p.stimMode === 'isochronic') State.stimMode = p.stimMode;
       if (BEAT_OPTIONS.includes(p.beatHz)) State.beatHz = p.beatHz;
       if (p.mode === 'single' || p.mode === 'layer') State.mode = p.mode;
-      if (typeof p.activeCategoryId === 'string' && CATEGORIES.some(c => c.id === p.activeCategoryId)) {
+      if (typeof p.activeCategoryId === 'string' && CATEGORIES.some(c => !c.hidden && c.id === p.activeCategoryId)) {
         State.activeCategoryId = p.activeCategoryId;
       }
     } catch (e) { /* corrupt JSON — silent */ }
@@ -3108,7 +3109,7 @@ const UI = {
   renderCategoryTags() {
     const scroll = document.getElementById('category-tags-scroll');
     scroll.innerHTML = '';
-    [...CATEGORIES].reverse().forEach((cat, i) => {
+    [...CATEGORIES].filter(c => !c.hidden).reverse().forEach((cat, i) => {
       const isActive = cat.id === State.activeCategoryId;
       const btn = document.createElement('button');
       btn.className = 'category-tag' + (isActive ? ' active' : '');
@@ -3769,7 +3770,7 @@ function init() {
 
   // URL hash always wins over loaded category for deep-link support
   const hashCat = location.hash.slice(1);
-  if (hashCat && CATEGORIES.some(c => c.id === hashCat)) {
+  if (hashCat && CATEGORIES.some(c => !c.hidden && c.id === hashCat)) {
     State.activeCategoryId = hashCat;
   }
 
