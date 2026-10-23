@@ -57,6 +57,7 @@ These aren't among the 29 documents:
 
 - Berger, H. (1929). Über das Elektrenkephalogramm des Menschen. *Archiv für Psychiatrie und Nervenkrankheiten*, 87, 527–570.
 - Garcia-Argibay, M., Santed, M. A., & Reales, J. M. (2019). Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: A meta-analysis. *Psychological Research*, 83, 357–372.
+- Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. *Advances in Experimental Social Psychology*, 38, 69–119.
 - Lane, J. D., Kasian, S. J., Owens, J. E., & Marsh, G. R. (1998). Binaural auditory beats affect vigilance performance and mood. *Physiology & Behavior*, 63(2), 249–252.
 - Niedermeyer, E., & Lopes da Silva, F. (Eds.). *Electroencephalography: Basic Principles, Clinical Applications, and Related Fields.* Lippincott Williams & Wilkins.
 - Soula, M., et al. (2023). Forty-hertz light stimulation does not entrain native gamma oscillations or suppress amyloid-β levels in mouse models of Alzheimer's disease. *Nature Neuroscience*, 26, 570–578.

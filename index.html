@@ -422,6 +422,47 @@
     #info-guide ol { margin: 8px 0 6px 18px; }
     #info-guide li { margin-bottom: 3px; }
     #info-guide[hidden] { display: none; }
+    #info-intention {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+    #info-intention[hidden], #intention-close[hidden] { display: none; }
+    .intention-label {
+      display: block;
+      margin: 0 0 4px;
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .intention-field {
+      width: 100%;
+      background: var(--bg-interactive);
+      color: var(--text-primary);
+      border: 1px solid var(--border-mid);
+      border-radius: 8px;
+      font: inherit;
+      font-size: 13px;
+      padding: 6px 10px;
+      outline: none;
+      resize: vertical;
+    }
+    .intention-field:focus { border-color: var(--accent); }
+    .intention-hint { margin-top: 6px; }
+    .intention-hint .evidence-tag { margin-right: 6px; }
+    #intention-close { margin-top: 10px; }
+    #intention-close .intention-label { margin-top: 8px; }
+    #intention-close-btn {
+      margin-top: 6px;
+      background: none;
+      border: none;
+      padding: 0;
+      color: var(--accent);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    #intention-close-btn[hidden] { display: none; }
     #info-binaural-indicator {
       display: none;
       margin-top: 10px;
@@ -1128,14 +1169,30 @@
           <p id="info-description"></p>
           <p id="info-source-row"><span id="info-evidence" class="evidence-tag" hidden></span><span id="info-source"></span></p>
           <p id="info-voice"></p>
+          <div id="info-intention" hidden>
+            <label class="intention-label" for="intention-input">Your intention</label>
+            <input type="text" id="intention-input" class="intention-field" maxlength="140" autocomplete="off"
+                   placeholder="e.g. What do I need to understand about…?">
+            <p class="intention-hint"><span class="evidence-tag">Traditional</span>One clear question or aim. Journeying traditionally begins this way; the drum supports the state, not the intention itself.</p>
+            <button type="button" id="intention-close-btn">Close journey</button>
+            <div id="intention-close" hidden>
+              <label class="intention-label" for="journey-notes">What came up?</label>
+              <textarea id="journey-notes" class="intention-field" rows="3" maxlength="2000"></textarea>
+              <label class="intention-label" for="journey-next">Next step</label>
+              <input type="text" id="journey-next" class="intention-field" maxlength="200" autocomplete="off"
+                     placeholder="When ___, I will ___.">
+              <p class="intention-hint"><span class="evidence-tag">Human study</span>If-then plans make follow-through noticeably more likely (Gollwitzer &amp; Sheeran, 2006).</p>
+            </div>
+          </div>
           <details id="info-guide" hidden>
             <summary>Journey guide</summary>
             <ol>
-              <li>Lie down somewhere comfortable and cover your eyes.</li>
-              <li>Set a simple intention or question for the journey.</li>
-              <li>Picture an opening into the earth that you know or imagine — a cave, a hollow tree, a crater or a lake — and go through it.</li>
-              <li>Let the drum carry you. Notice what you see, hear and feel without steering it.</li>
-              <li>When the fast rattle starts, retrace your path back through the opening and return.</li>
+              <li>Write your intention above: one question you want answered, or one thing you want to understand or change.</li>
+              <li>Lie down, cover your eyes, and say it to yourself three times.</li>
+              <li>Picture an opening into the earth — a cave, a hollow tree, a crater or a lake — and go through it, carrying the intention with you.</li>
+              <li>Let the drum carry you. When your mind wanders, bring the intention back once, then let go and notice what you see, hear and feel without steering it.</li>
+              <li>When the fast rattle starts, gather what you received, retrace your path and return.</li>
+              <li>Straight away, write down what came up and turn it into one if-then next step.</li>
             </ol>
             <p>Set a session timer to hear the rattle callback in the final 45 seconds.</p>
           </details>
@@ -1515,6 +1572,10 @@ const State = {
   activeNature: new Map(),  // Map<soundId, { gainNode, nodes[], stopFns[] }>
   ambianceVolumes: {},      // { [soundId]: 0..1 } — user's preferred per-sound volume
   isAmbianceDrawerOpen: false,
+  // Drum journey intention flow (kept in this browser only)
+  intention: '',
+  journeyNotes: '',
+  journeyNextStep: '',
 };
 
 // Category object a frequency card belongs to
@@ -2691,6 +2752,9 @@ const Storage = {
         beatHz: State.beatHz,
         mode: State.mode,
         activeCategoryId: State.activeCategoryId,
+        intention: State.intention,
+        journeyNotes: State.journeyNotes,
+        journeyNextStep: State.journeyNextStep,
       }));
     } catch (e) { /* quota exceeded / private mode — silent */ }
   },
@@ -2709,6 +2773,9 @@ const Storage = {
       if (typeof p.activeCategoryId === 'string' && CATEGORIES.some(c => !c.hidden && c.id === p.activeCategoryId)) {
         State.activeCategoryId = p.activeCategoryId;
       }
+      if (typeof p.intention === 'string') State.intention = p.intention;
+      if (typeof p.journeyNotes === 'string') State.journeyNotes = p.journeyNotes;
+      if (typeof p.journeyNextStep === 'string') State.journeyNextStep = p.journeyNextStep;
     } catch (e) { /* corrupt JSON — silent */ }
   },
 };
@@ -2853,10 +2920,12 @@ const Timer = {
     if (State.userPaused) return;
     State.timerRemaining = Math.max(0, Math.ceil((State.timerEndsAt - Date.now()) / 1000));
     UI.updateTimerDisplay();
+    UI.updateIntentionStatus();
     if (State.timerRemaining <= 0) Timer.expire();
   },
 
   expire() {
+    const drum = [...State.activeSounds.values()].find(s => s.freq.kind === 'drum');
     Timer.stop({ keepFade: true });
     UI.setTimerSelect(0);
     Audio.stopAll();  // properly fades and disconnects oscillators
@@ -2872,6 +2941,11 @@ const Timer = {
     document.querySelectorAll('.ambiance-btn.active').forEach(b => b.classList.remove('active'));
     UI.renderAmbianceLayers();
     UI.syncAmbianceToggle();
+    // A drum journey with an intention ends on its close: what came up, and one next step
+    if (drum && State.intention.trim()) {
+      UI.showInfoPanel(drum.freq);
+      UI.showJourneyClose();
+    }
   },
 
   stop({ keepFade = false } = {}) {
@@ -3235,7 +3309,11 @@ const UI = {
     const panel = document.getElementById('info-panel');
 
     document.getElementById('info-hz-badge').innerHTML = `${Audio.hzLabel(freq)}<small> Hz</small>`;
-    document.getElementById('info-guide').hidden = freq.kind !== 'drum';
+    const isDrum = freq.kind === 'drum';
+    document.getElementById('info-guide').hidden = !isDrum;
+    document.getElementById('info-intention').hidden = !isDrum;
+    document.getElementById('intention-close').hidden = true;
+    document.getElementById('intention-close-btn').hidden = false;
     document.getElementById('info-name').textContent = freq.name;
     document.getElementById('info-description').textContent = freq.desc;
     document.getElementById('info-source').textContent = freq.source ? 'Source: ' + freq.source : '';
@@ -3389,7 +3467,26 @@ const UI = {
       binEl.classList.toggle('visible', sounds.some(s => Audio.usesBinaural(s.voice)));
     }
     UI.updateProgramStatus();
+    UI.updateIntentionStatus();
     Media.update(nameEl.textContent);
+  },
+
+  // Intention under the now-playing title while a drum plays; during the rattle callback it
+  // becomes the cue to return. Runs on every timer tick, so it only writes when the text changes.
+  updateIntentionStatus() {
+    const intention = State.intention.trim();
+    if (!intention || ![...State.activeSounds.values()].some(s => s.freq.kind === 'drum')) return;
+    const returning = State.timerEndsAt && State.timerRemaining <= Drum.CALLBACK_S;
+    const text = returning ? `Return now — bring back: “${intention}”` : `Intention: “${intention}”`;
+    const subEl = document.getElementById('now-playing-sub');
+    if (subEl.textContent !== text) subEl.textContent = text;
+  },
+
+  // Reveal the journey close (what came up + one if-then next step) for a drum card
+  showJourneyClose() {
+    document.getElementById('intention-close').hidden = false;
+    document.getElementById('intention-close-btn').hidden = true;
+    document.getElementById('journey-notes').focus();
   },
 
   // Live beat rate of a running program, shown under the now-playing title
@@ -3603,6 +3700,16 @@ function bindEvents() {
   // Info panel close
   document.getElementById('info-close').addEventListener('click', UI.hideInfoPanel);
 
+  // Drum journey intention flow
+  [['intention-input', 'intention'], ['journey-notes', 'journeyNotes'], ['journey-next', 'journeyNextStep']].forEach(([id, key]) => {
+    document.getElementById(id).addEventListener('input', e => {
+      State[key] = e.target.value;
+      Storage.save();
+      if (key === 'intention') UI.updateNowPlaying();
+    });
+  });
+  document.getElementById('intention-close-btn').addEventListener('click', UI.showJourneyClose);
+
   // Layer list (event delegation)
   document.getElementById('layer-list').addEventListener('input', e => {
     if (e.target.classList.contains('layer-vol')) {
@@ -3777,6 +3884,9 @@ function init() {
   // Reflect loaded preferences into DOM controls
   document.getElementById('master-volume').value = State.masterVolume;
   document.getElementById('ambiance-volume').value = State.natureMasterVolume;
+  document.getElementById('intention-input').value = State.intention;
+  document.getElementById('journey-notes').value = State.journeyNotes;
+  document.getElementById('journey-next').value = State.journeyNextStep;
   // Mode toggle
   const isLayer = State.mode === 'layer';
   document.getElementById('mode-toggle').setAttribute('aria-checked', isLayer ? 'true' : 'false');
