@@ -791,6 +791,11 @@
     }
 
     /* ── RESPONSIVE ── */
+    @media (min-width: 641px) {
+      #category-heading { margin-bottom: var(--space-xl); }
+      #category-heading p { margin-top: var(--space-sm); }
+      #cards-grid { gap: var(--space-lg); }
+    }
     @media (max-width: 640px) {
       #app-subtitle { display: none; }
       #cards-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
